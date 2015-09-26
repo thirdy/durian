@@ -20,6 +20,9 @@ package net.thirdy.durian.ui;
 import static net.thirdy.durian.util.FileUtil.fromClasspathAsStream;
 
 import java.awt.Desktop;
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.StringSelection;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -36,6 +39,7 @@ import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 
 import org.controlsfx.control.InfoOverlay;
+import org.controlsfx.control.Notifications;
 
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -185,7 +189,7 @@ public class DurianApplication extends Application {
 		
 		Button addButton = new Button();
 		addButton.setText("Add");
-		addButton.setPrefWidth(180);
+		addButton.setPrefWidth(140);
 		addButton.setOnAction(e -> {
 			String itemName = itemNamesListView.getSelectionModel().getSelectedItem().getName();
 			if (itemName != null) {
@@ -200,18 +204,24 @@ public class DurianApplication extends Application {
 		});
 		Button removeButton = new Button();
 		removeButton.setText("Remove");
-		removeButton.setPrefWidth(180);
+		removeButton.setPrefWidth(140);
 		removeButton.setOnAction(e -> {
 			ItemWatch itemWatch = itemsToWatchListView.getSelectionModel().getSelectedItem();
 			if (itemWatch != null) {
 				itemsToWatchList.remove(itemWatch);
 			}
 		});
+		Button forceBtn = new Button("Force");
+		forceBtn.setOnAction(e -> {
+			timer.cancel();
+			timer = new Timer();
+			startWatchThread();
+		});
 		
 		Button helpButton = new Button("?");
 		helpButton.setOnAction(e -> openDurianHomePage());
 		
-		FlowPane controlsPane = new FlowPane(5, 1, leaguesCmbx, amountSpinner, currencyLabel, addButton, removeButton, helpButton);
+		FlowPane controlsPane = new FlowPane(5, 1, leaguesCmbx, amountSpinner, currencyLabel, addButton, removeButton, forceBtn, helpButton);
 		controlsPane.setAlignment(Pos.CENTER);
 		centerPane.setCenter(gridPane);
 		centerPane.setBottom(controlsPane);
@@ -268,8 +278,18 @@ public class DurianApplication extends Application {
 							i.getCurrency().getAmount());
 					for (Item item : results) {
 						writeToConsole(item.toWTB());
+						 Notifications.create()
+			              .title("Item found: " + item.getName())
+			              .text("Click to cospy the following message to clipboard: " + item.toWTB())
+			              .onAction(e -> {
+			            	  	StringSelection stringSelection = new StringSelection(item.toWTB());
+			          			Clipboard clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard();
+			          			clpbrd.setContents(stringSelection, null);
+			              })
+			              .showInformation();
 					}
 				});
+				writeToConsole("Finished run.");
 			}
 		}, 0l, (long)Main.DURATION.toMillis());
 	}
