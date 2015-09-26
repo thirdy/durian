@@ -278,15 +278,19 @@ public class DurianApplication extends Application {
 							i.getCurrency().getAmount());
 					for (Item item : results) {
 						writeToConsole(item.toWTB());
-						 Notifications.create()
-			              .title("Item found: " + item.getName())
-			              .text("Click to cospy the following message to clipboard: " + item.toWTB())
-			              .onAction(e -> {
-			            	  	StringSelection stringSelection = new StringSelection(item.toWTB());
-			          			Clipboard clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard();
-			          			clpbrd.setContents(stringSelection, null);
-			              })
-			              .showInformation();
+						StringSelection stringSelection = new StringSelection(item.toWTB());
+	          			Clipboard clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard();
+	          			clpbrd.setContents(stringSelection, null);
+	          			// code below causes NPE
+//						 Notifications.create()
+//			              .title("Item found: " + item.getName())
+//			              .text("Click to cospy the following message to clipboard: " + item.toWTB())
+//			              .onAction(e -> {
+//			            	  	StringSelection stringSelection = new StringSelection(item.toWTB());
+//			          			Clipboard clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard();
+//			          			clpbrd.setContents(stringSelection, null);
+//			              })
+//			              .showInformation();
 					}
 				});
 				writeToConsole("Finished run.");
