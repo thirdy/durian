@@ -1,0 +1,6 @@
+; This is a comment
+; Each line represent 1 item watch
+; There are 4 required information, the League, Full Item Name, Currency and Amount, separated by a pipe '|'
+; These token will be trimmed, e.g. "   chaos   " will be read as "chaos"
+
+Standard|Tabula Rasa Simple Robe|chaos|2

@@ -15,58 +15,35 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
-package net.thirdy.durian.model;
+package net.thirdy.durian.util.config;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
 
 /**
- *
  * @author thirdy
+ *
  */
-public class Currency {
-    
-    String name;
-    Integer amount = 0;
-    
-    
-    
-    public Currency() {
-		super();
+interface Config {
+	default File load() throws IOException {
+		File file = new File(configDirectory(), fileName());
+		if (!file.exists()) {
+			file.createNewFile();
+		}
+		return file;
 	}
-
-
-
-	public Currency(Type name, Integer amount) {
-		super();
-		this.name = name.name();
-		this.amount = amount;
+	
+	default File configDirectory() {
+		File file = new File(System.getProperty("user.home"), ".blackmarket");
+		return file;
 	}
-
-
-
-	public String getName() {
-		return name;
+	
+	default List<String> loadLines() throws IOException {
+		return Files.readAllLines(Paths.get(load().toURI()));
 	}
-
-
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-
-
-	public Integer getAmount() {
-		return amount;
-	}
-
-
-
-	public void setAmount(Integer amount) {
-		this.amount = amount;
-	}
-
-
-
-	public enum Type {
-        chaos
-    }
+	
+	String fileName();
 }

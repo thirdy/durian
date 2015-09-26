@@ -15,58 +15,16 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
-package net.thirdy.durian.model;
+package net.thirdy.durian.util.config;
 
 /**
- *
  * @author thirdy
+ *
  */
-public class Currency {
-    
-    String name;
-    Integer amount = 0;
-    
-    
-    
-    public Currency() {
-		super();
+public class ConfigException extends RuntimeException {
+
+	public ConfigException(Throwable ex) {
+		super(ex);
 	}
 
-
-
-	public Currency(Type name, Integer amount) {
-		super();
-		this.name = name.name();
-		this.amount = amount;
-	}
-
-
-
-	public String getName() {
-		return name;
-	}
-
-
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-
-
-	public Integer getAmount() {
-		return amount;
-	}
-
-
-
-	public void setAmount(Integer amount) {
-		this.amount = amount;
-	}
-
-
-
-	public enum Type {
-        chaos
-    }
 }
