@@ -1,0 +1,35 @@
+{
+  "partial_fields" : {
+        "partial1" : {
+            "include" : ["info.icon", "shop.sellerIGN", "shop.threadid", "shop.currency", "shop.amount", "shop.sellerAccount", "uuid"]
+        }
+  },
+  "query" : {
+    "filtered" : {
+      "filter" : {
+        "bool" : {
+          "must" : [
+            { "term" : { "attributes.rarity" : "$RARITY" } },
+            { "term" : { "attributes.league" : "$LEAGUE" } },
+            { "term" : { "shop.verified" : "yes" } },
+            { "term" : { "info.fullName": "$FULLNAME" } },
+            { "range": {
+				  "shop.chaosEquiv": {
+					"gt": 0,
+					"lte": $PRICE_LESS_THAN_CHAOS
+			}}},
+			{ "term" : { "attributes.corrupted" : false } }
+           ]
+        }
+      }
+    }
+  },
+  "sort": [
+    {
+      "shop.chaosEquiv": {
+        "order": "asc"
+      }
+    }
+  ],
+  "size": 5
+}
