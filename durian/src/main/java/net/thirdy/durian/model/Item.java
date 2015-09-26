@@ -17,6 +17,8 @@
  */
 package net.thirdy.durian.model;
 
+import org.apache.commons.lang3.StringUtils;
+
 /**
  * @author thirdy
  *
@@ -31,6 +33,7 @@ public class Item {
 	String uuid;
 	String threadid;
 	String league;
+	String modified;
 	
 	
 	
@@ -38,7 +41,13 @@ public class Item {
 	public String toString() {
 		return "Item [name=" + name + ", amount=" + amount + ", sellerIGN=" + sellerIGN + ", sellerAccount="
 				+ sellerAccount + ", currency=" + currency + ", icon=" + icon + ", uuid=" + uuid + ", threadid="
-				+ threadid + ", league=" + league + "]";
+				+ threadid + ", league=" + league + ", modified=" + modified + "]";
+	}
+	public String getModified() {
+		return modified;
+	}
+	public void setModified(String modified) {
+		this.modified = modified;
 	}
 	public String getLeague() {
 		return league;
@@ -97,7 +106,9 @@ public class Item {
 	public String toWTB() {
 		return String.format(
 				"@%s Hi, I would like to buy your %s listed for %s %s in %s",
-				getSellerIGN(), getName(), getAmount(), getCurrency(), getLeague());
+				StringUtils.isBlank(getSellerIGN()) ? 
+						getThreadid()
+						: getSellerIGN(), getName(), getAmount(), getCurrency(), getLeague());
 	}
 	
 	

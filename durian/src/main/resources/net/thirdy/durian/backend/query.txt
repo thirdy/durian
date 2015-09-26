@@ -1,7 +1,7 @@
 {
   "partial_fields" : {
         "partial1" : {
-            "include" : ["info.icon", "shop.sellerIGN", "shop.threadid", "shop.currency", "shop.amount", "shop.sellerAccount", "uuid", "attributes.league"]
+            "include" : ["info.icon", "shop.sellerIGN", "shop.modified", "shop.threadid", "shop.currency", "shop.amount", "shop.sellerAccount", "uuid", "attributes.league"]
         }
   },
   "query" : {

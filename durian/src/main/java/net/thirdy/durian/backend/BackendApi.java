@@ -21,11 +21,13 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -48,7 +50,8 @@ public class BackendApi {
 	private static final Logger logger = Logger.getLogger(BackendApi.class.getName());
 
 	public static void setup() {
-		Unirest.setDefaultHeader("Authorization", "DEVELOPMENT-Indexer");
+		Unirest.setDefaultHeader("Authorization", "ed91748a4d2a4f597d69e2b05a058a0a");
+//		Unirest.setDefaultHeader("Authorization", "DEVELOPMENT-Indexer");
 		Unirest.setDefaultHeader("accept", "application/json");
 		// Only one time
 		Unirest.setObjectMapper(new ObjectMapper() {
@@ -84,13 +87,21 @@ public class BackendApi {
 		return result;
 	}
 
+	static String searchStrings(String url) throws UnirestException {
+		HttpResponse<String> response = Unirest.get(url)
+				.asString();
+		
+		return response.getBody();
+	}
 	public static List<Item> searchUnique(String league, String name, Integer chaosEquiv) {
 		List<Item> result = Collections.emptyList();
 		try {
 			String raw = FileUtil.fromClasspath(BackendApi.class, "query.txt");
 
-			long millisBack = (long)Main.DURATION.toMillis();
-			raw = raw.replace("$MODIFIED_GTE", String.valueOf(System.currentTimeMillis() - millisBack));
+			long overlap = 1000 * 60 * 10;
+			long millisBack = (long)Main.DURATION.toMillis() + overlap ;
+			long modifiedGte = System.currentTimeMillis() - millisBack;
+			raw = raw.replace("$MODIFIED_GTE", String.valueOf(modifiedGte));
 			raw = raw.replace("$LEAGUE", league);
 			raw = raw.replace("$RARITY", "Unique");
 			raw = raw.replace("$NAME", name);
@@ -98,7 +109,12 @@ public class BackendApi {
 			HttpResponse<JsonNode> response = Unirest.post("http://api.exiletools.com/index/_search?pretty")
 					.body(raw).asJson();
 			
-			logger.info("HTTP POST Status Response: " + response.getStatusText());
+			logger.info(String.format("Request: %s|%s|%s - %s -- HTTP POST Status Response: %s",
+					league,
+					name,
+					chaosEquiv,
+					new Date(modifiedGte),
+					response.getStatusText()));
 			
 			JSONObject jsonObject = response.getBody().getObject();
 			
@@ -121,6 +137,7 @@ public class BackendApi {
 				item.setCurrency(shopObject.getString("currency"));
 				item.setIcon(infoObject.getString("icon"));
 				item.setName(name);
+				item.setModified(new Date(Long.parseLong(shopObject.get("modified").toString())).toString());
 				item.setUuid(partial1Object.getString("uuid"));
 				item.setLeague(attributesObject.getString("league"));
 				result.add(item);
@@ -141,6 +158,12 @@ public class BackendApi {
 			logger.log(Level.SEVERE, null, ex);
 			throw new BackedException(ex);
 		}
+	}
+
+	public static String post(String url, String body) throws JSONException, UnirestException {
+		HttpResponse<JsonNode> asJson = Unirest.post(url)
+				.body(body).asJson();
+		return asJson.getBody().getObject().toString(1);
 	}
 
 }
