@@ -1,5 +1,0 @@
-; This is a comment
-; Each line represent 1 item watch
-
-Tabula Rasa Simple Robe
-Mjolner Gavel

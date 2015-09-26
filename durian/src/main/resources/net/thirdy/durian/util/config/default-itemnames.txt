@@ -1,0 +1,435 @@
+; This is a comment
+; Each line represent 1 item full name
+
+Abyssus
+Action's Nightmare
+Aegis Aurora
+Agnerod East
+Agnerod North
+Al Dhih
+Alberon's Warpath
+Alpha's Howl
+Ambu's Charge
+Ancient Waystones
+Andvarius
+The Anvil
+Apep's Rage
+Apparitions
+Araku Tiki
+Army of Bones
+Asenath's Gentle Touch
+Asenath's Mark
+Ashrend
+Asphyxia's Wrath
+Assassin's Haste
+Astramentis
+Atziri's Acuity
+Atziri's Disfavor
+Atziri's Foible
+Atziri's Mirror
+Atziri's Promise
+Atziri's Reign
+Atziri's Splendour
+Atziri's Step
+Aurseize
+Aurumvorax
+Auxium
+Bated Breath
+The Battle Born
+Belly of the Beast
+Belt of the Deceiver
+Berek's Grip
+Berek's Pass
+Berek's Respite
+Bino's Kitchen Knife
+Birth of the Three
+Black Sun Crest
+Blackgleam
+Blackheart
+The Blood Dance
+Blood of Corruption
+Blood of the Karui
+The Blood Reaper
+Blood Sacrifice
+The Blood Thorn
+Bloodboil
+Bloodseeker
+Bones of Ullr
+Bramblejack
+Brawn
+Brightbeak
+The Bringer of Rain
+Briskwrap
+Brittle Barrier
+The Brittle Emperor
+Broadstroke
+The Broken Crown
+Bronn's Lithe
+Brute Force Solution
+Brutus' Lead Sprinkler
+Callinellus Malleus
+Cannibalistic Habits
+Carcass Jack
+Careful Planning
+Carnage Heart
+The Carrion Crow
+The Cataclysm
+Chalice of Horrors
+Chaotic Disposition
+Chernobog's Pillar
+Cherrubim's Maleficence
+Chill of Corruption
+Chin Sol
+Chitus' Apex
+Chober Chaber
+Clear Mind
+Cloak of Defiance
+Cloak of Flame
+Coated Weapons
+Combustibles
+Conqueror's Efficiency
+Conqueror's Longevity
+Conqueror's Potency
+The Consuming Dark
+Controlled Energy
+Corrupted Energy
+The Covenant
+The Coward's Trial
+Craghead
+Crest of Perandus
+Crown of Eyes
+Crown of Thorns
+Cybil's Paw
+Daresso's Courage
+Daresso's Defiance
+Daresso's Salute
+The Dark Mage
+Dark Thoughts
+Darkray Vectors
+Darkscorn
+The Dark Seer
+Death and Taxes
+Death Rush
+Death's Hand
+Death's Harp
+Death's Oath
+Deerstalker
+Deidbell
+Demigod's Bounty
+Demigod's Eye
+Demigod's Presence
+Demigod's Stride
+Demigod's Touch
+Demigod's Triumph
+Deodre's Elixir
+Deodre's Scorn
+Devoto's Devotion
+Divinarius
+Divination Distillate
+The Doctor
+Doedre's Dreaming
+Doedre's Tenure
+Doom Cuebiyari
+Doomfletch
+Doomsower
+Doryani's Catalyst
+Doryani's Fist
+Doryani's Invitation
+The Dragon
+Dream Fragments
+Dreamfeather
+Drillneck
+The Drunken Aristocrat
+Dusktoe
+Dyadian Dawn
+Dyadus
+Dying Breath
+Edge of Madness
+Efficient Training
+Eldritch Knowledge
+Emperor's Luck
+Empire's Grasp
+Empyrean Apparatus
+Ephemeral Edge
+Essentia Sanguis
+Eye of Chayula
+Ezomyte Peak
+Facebreaker
+Fairgrave's Tricorne
+The Feast
+Fencoil
+Fertile Mind
+Fevered Mind
+Flesh and Spirit
+Fluid Motion
+Forbidden Taste
+Fortified Legion
+Foxshade
+Fragile Bloom
+Fragility
+Gang's Momentum
+The Gemcutter
+Geofri's Baptism
+Geofri's Crest
+Gifts from Above
+The Gladiator
+The Goddess Bound
+The Goddess Scorned
+Goldrim
+Goldwyrm
+Gorebreaker
+Great Old One's Ward
+Greed's Embrace
+The Gull
+Hall of Grandmasters
+The Harvest
+Headhunter
+Heartbound Loop
+Heartbreaker
+Heatshiver
+Hegemony's Era
+The Hermit
+Hidden Potential
+The Hoarder
+Honourhome
+Hope
+Hotfooted
+Hrimnor's Hymn
+Hrimnor's Resolve
+Hrimsorrow
+The Hunger
+Hungry Abyss
+Hyaon's Fury
+Hyrri's Bite
+Hyrri's Ire
+Icetomb
+Ichimonji
+The Ignomon
+Immortal Flesh
+Incandescent Heart
+Inertia
+Infernal Mantle
+Infractem
+Inspired Learning
+Intuitive Leap
+Jaws of Agony
+Kaltenhalt
+Kaom's Cache
+Kaom's Heart
+Kaom's Primacy
+Kaom's Roots
+Kaom's Sign
+Karui Ward
+The Key
+Kikazaru
+Kongor's Undying Rage
+Lakishu's Blade
+Lantador's Lost Love
+Last Resort
+Lavianga's Spirit
+Lavianga's Wisdom
+Le Heup of All
+Leer Cast
+Lifesprig
+Lightbane Raiment
+Lightning Coil
+Limbsplit
+Lioneye's Fall
+Lioneye's Glare
+Lioneye's Paws
+Lioneye's Remorse
+Lioneye's Vision
+Lion's Roar
+Lochtonial Caress
+Lori's Lantern
+The Lover
+Maelstrom of Chaos
+The Magnate
+Malachai's Artifice
+Malachai's Simula
+Malicious Intent
+Maligaro's Lens
+Maligaro's Restraint
+Maligaro's Virtuosity
+Maloney's Nightfall
+Mantra of Force
+Mao Kun
+Mark of the Doubting Knight
+Marohi Erqi
+Martial Artistry
+Marylene's Fallacy
+matua Tapuna
+Meginord's Girdle
+Meginord's Vise
+The Metalsmith's Gift
+Midnight Bargain
+Mightflay
+Mindspiral
+Ming's Heart
+Miser of Misery
+Mjolner
+Mokou's Embrace
+Mon'tregul's Grasp
+Moonsorrow
+Mortem Morsu
+Mutated Growth
+Mycta's Lantern
+Ngamahu's Sign
+Nomic's Storm
+Null and Void
+Null's Inclination
+Oba's Cursed Trove
+Olmec's Sanctum
+Ondar's Clasp
+Ondar's Flight
+Oro's Sacrifice
+Pacifism
+The Pack Leader
+Perandus Bank
+Perandus Blazon
+Perandus Signet
+The Peregrine
+Pillar of the Caged God
+Piscator's Vigil
+Pledge of Hands
+Poacher's Aim
+The Poet
+Poorjoy's Asylum
+Powerlessness
+Prism Guardian
+Prismatic Eclipse
+Prismweave
+Projected Force
+Pyre
+Quecholli
+Queen of the Forest
+Queen's Decree
+The Queen's Tenacity
+Quill Rain
+Rain of Splinters
+Rainbowstride
+Rashkaldor's Patience
+The Rat Cage
+Rat's Nest
+Rathpith Globe
+Reaper's Pursuit
+Rearguard
+Rebuke of the Vaal
+Redbeak
+Relentless Fury
+Repentance
+Reverberation Rod
+Rigvald's Charge
+Rime Gaze
+Rise of the Phoenix
+The Road to Power
+Romira's Banquet
+Rumi's Concoction
+Sacrificial Harvest
+Sadima's Touch
+Saffell's Frame
+The Scarred Meadow
+The Scholar
+Scold's Bridle
+The Screaming Eagle
+The Searing Touch
+Self-Flagellation
+Selfless Leadership
+Sentari's Answer
+Shackles of the Wretched
+Shadows and Dust
+Shaper's Seed
+Shavronne's Pace
+Shavronne's Revelation
+Shavronne's Wrappings
+Shiversting
+Sibyl's Lament
+Sidhebreath
+Silverbranch
+Sin Trek
+Sire of Shards
+Skullhead
+Slitherpinch
+Snakbite
+Solaris Lorica
+Song of the Sirens
+Soul Mantle
+Soul Strike
+Soul Taker
+Southbound
+Specialised
+Spire of Stone
+Springleaf
+Starkonja's Head
+Stimulated Growth
+Stone of Lazhwar
+Storm Cloud
+Strange Barrel
+Sturdy Growth
+The Summoner
+The Sun
+Sunblast
+Sundance
+The Supreme Truth
+Surplus
+Survival Instincts
+Survival Secrets
+Survival Skills
+Tabula Rasa
+Talisman of the Victor
+The Taming
+Taryn's Shiver
+Tasalio's Sign
+Taste of hate
+Tear of Purity
+Terminus Est
+The Restless Ward
+Thief's Torment
+Thousand Ribbons
+Thousand Teeth Temu
+The Three Dragons
+Three Faces in the Dark
+Thunderfist
+Timeclasp
+Titucius' Span
+Tremor Rod
+Twyzel
+Ungil's Gauche
+Ungil's Harmony
+Vaal Caress
+Vaal Sentencing
+Valako's Sign
+Vampire's Might
+Vaults of Atziri
+Veil of the Night
+Ventor's Gamble
+The Vertex
+Victario's Acuity
+Vinia's Token
+Vis Mortis
+Void Battery
+Voidbringer
+Voideye
+Voidhome
+Voll's Devotion
+Voll's Protector
+Voltaxic Rift
+Wake of Destruction
+Wanderlust
+The Warden
+Warlord's Reach
+Warped Timepiece
+Weight of Sin
+Whakawairua Tuahu
+Wheel of the Stormsail
+The Whispering Ice
+Wideswing
+The Wind
+Windripper
+Windscream
+Wings of Entropy
+Wisdom of the Path Not Taken
+Wondertrap
+Wurm's Molt
+Zahndethus' Cassock
+Zerohi's Youth

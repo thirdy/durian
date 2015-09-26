@@ -35,8 +35,9 @@ import com.mashape.unirest.http.ObjectMapper;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 
+import net.thirdy.durian.Main;
 import net.thirdy.durian.model.Item;
-import net.thirdy.durian.util.Util;
+import net.thirdy.durian.util.FileUtil;
 
 /**
  *
@@ -83,19 +84,24 @@ public class BackendApi {
 		return result;
 	}
 
-	public static List<Item> searchUnique(String league, String fullName, int chaosEquiv) {
+	public static List<Item> searchUnique(String league, String name, Integer chaosEquiv) {
 		List<Item> result = Collections.emptyList();
 		try {
-			String raw = Util.fromClasspath(BackendApi.class, "query.txt");
+			String raw = FileUtil.fromClasspath(BackendApi.class, "query.txt");
 
+			long millisBack = (long)Main.DURATION.toMillis();
+			raw = raw.replace("$MODIFIED_GTE", String.valueOf(System.currentTimeMillis() - millisBack));
 			raw = raw.replace("$LEAGUE", league);
 			raw = raw.replace("$RARITY", "Unique");
-			raw = raw.replace("$FULLNAME", fullName);
+			raw = raw.replace("$NAME", name);
 			raw = raw.replace("$PRICE_LESS_THAN_CHAOS", String.valueOf(chaosEquiv));
 			HttpResponse<JsonNode> response = Unirest.post("http://api.exiletools.com/index/_search?pretty")
 					.body(raw).asJson();
+			
+			logger.info("HTTP POST Status Response: " + response.getStatusText());
+			
 			JSONObject jsonObject = response.getBody().getObject();
-
+			
 			JSONArray jsonArray = jsonObject.getJSONObject("hits").getJSONArray("hits");
 
 			result = new ArrayList<>(jsonArray.length());
@@ -106,6 +112,7 @@ public class BackendApi {
 				JSONObject partial1Object = partial1Array.getJSONObject(0);
 				JSONObject shopObject = partial1Object.getJSONObject("shop");
 				JSONObject infoObject = partial1Object.getJSONObject("info");
+				JSONObject attributesObject = partial1Object.getJSONObject("attributes");
 				Item item = new Item();
 				item.setAmount(shopObject.getDouble("amount"));
 				item.setSellerIGN(shopObject.getString("sellerIGN"));
@@ -113,8 +120,9 @@ public class BackendApi {
 				item.setThreadid(shopObject.getString("threadid"));
 				item.setCurrency(shopObject.getString("currency"));
 				item.setIcon(infoObject.getString("icon"));
-				item.setFullName(fullName);
+				item.setName(name);
 				item.setUuid(partial1Object.getString("uuid"));
+				item.setLeague(attributesObject.getString("league"));
 				result.add(item);
 			}
 

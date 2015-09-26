@@ -20,20 +20,18 @@ package net.thirdy.durian.util;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URISyntaxException;
-import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+
+import org.apache.commons.io.IOUtils;
 
 /**
  * @author thirdy
  *
  */
-public class Util {
+public class FileUtil {
 	public static String fromClasspath(Class<?> clazz, String filename) throws IOException, URISyntaxException {
-		URL url = clazz.getResource(filename);
-        return new String(Files.readAllBytes(Paths.get(url.toURI())));
+		return new String(IOUtils.toByteArray(clazz.getResourceAsStream(filename)));
 	}
 	public static InputStream fromClasspathAsStream(String fullPath) throws IOException, URISyntaxException {
-		return Util.class.getResourceAsStream(fullPath);
+		return FileUtil.class.getResourceAsStream(fullPath);
 	}
 }

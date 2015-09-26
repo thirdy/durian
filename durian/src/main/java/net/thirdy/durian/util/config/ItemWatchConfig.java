@@ -2,6 +2,10 @@ package net.thirdy.durian.util.config;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.OpenOption;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -9,7 +13,7 @@ import java.util.stream.Collectors;
 import org.apache.commons.lang3.StringUtils;
 
 import net.thirdy.durian.model.Currency;
-import net.thirdy.durian.util.Util;
+import net.thirdy.durian.util.FileUtil;
 
 public class ItemWatchConfig implements Config {
 
@@ -20,18 +24,42 @@ public class ItemWatchConfig implements Config {
 
 	public List<ItemWatch> loadItemWatchList() {
 		try {
-			List<ItemWatch> list = loadLines().stream().map(e -> ItemWatch.fromConfig(e)).collect(Collectors.toList());
+			List<ItemWatch> list = loadLines().stream()
+					.filter(s -> !s.isEmpty() && !s.startsWith(";"))
+					.map(e -> ItemWatch.fromConfig(e))
+					.collect(Collectors.toList());
 			
 			if (list.isEmpty()) {
-				list = Arrays.asList(Util.fromClasspath(ItemWatchConfig.class, "default-itemwatch.txt").split(System.lineSeparator()))
+				String defaultRawConfig = FileUtil.fromClasspath(ItemWatchConfig.class, "default-itemwatch.txt");
+				list = Arrays.asList(defaultRawConfig.split(System.lineSeparator()))
 						.stream()
 						.filter(s -> !s.isEmpty() && !s.startsWith(";"))
 						.map(e -> ItemWatch.fromConfig(e))
 						.collect(Collectors.toList());
+				
+				Files.write(Paths.get(load().toURI()), defaultRawConfig.getBytes());
 			}
 			
 			return list;
 		} catch (IOException | URISyntaxException e) {
+			throw new ConfigException(e);
+		}
+	}
+	
+	public void save(List<ItemWatch> list) {
+		@SuppressWarnings("unchecked")
+		String s = StringUtils.join(Arrays.asList(
+				"; This is a comment"
+				, "; Each line represent 1 item watch"
+				, "; There are 4 required information, the League, Full Item Name, Currency and Amount, separated by a pipe '|'"
+				, "; These token will be trimmed, e.g. '   chaos   ' will be read as 'chaos'"
+				), System.lineSeparator());
+		s += System.lineSeparator() + list.stream()
+				.map(i -> i.toConfig())
+				.collect(Collectors.joining(System.lineSeparator()));
+		try {
+			Files.write(Paths.get(load().toURI()), s.getBytes(), StandardOpenOption.TRUNCATE_EXISTING);
+		} catch (IOException e) {
 			throw new ConfigException(e);
 		}
 	}
@@ -41,10 +69,16 @@ public class ItemWatchConfig implements Config {
 		public ItemWatch() {
 		}
 
-		public ItemWatch(String fullName, Currency currency) {
+		
+
+		public ItemWatch(String fullName, Currency currency, String league) {
+			super();
 			this.fullName = fullName;
 			this.currency = currency;
+			this.league = league;
 		}
+
+
 
 		String fullName;
 		Currency currency;
@@ -91,6 +125,11 @@ public class ItemWatchConfig implements Config {
 		public String toString() {
 			return league + " - " + fullName + " - " + currency.getAmount() + " " + currency.getName();
 		}
+
+		public String toConfig() {
+			return league + "|" + fullName + "|" + currency.getName() + "|" + currency.getAmount();
+		}
+	
 	}
 
 }

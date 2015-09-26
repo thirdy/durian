@@ -3,4 +3,13 @@
 ; There are 4 required information, the League, Full Item Name, Currency and Amount, separated by a pipe '|'
 ; These token will be trimmed, e.g. "   chaos   " will be read as "chaos"
 
-Standard|Tabula Rasa Simple Robe|chaos|2
+Standard|Tabula Rasa|chaos|5
+Standard|Maligaro's Virtuosity|chaos|10
+Standard|Aegis Aurora|chaos|15
+Standard|Belly of the Beast|chaos|15
+Standard|Alpha's Howl|chaos|10
+Standard|Pledge of Hands|chaos|10
+Standard|Lightning Coil|chaos|15
+Standard|Soul Taker|chaos|15
+Standard|Drillneck|chaos|10
+Standard|Carcass Jack|chaos|15

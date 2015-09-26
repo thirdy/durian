@@ -37,7 +37,10 @@ interface Config {
 	}
 	
 	default File configDirectory() {
-		File file = new File(System.getProperty("user.home"), ".blackmarket");
+		File file = new File(System.getProperty("user.home"), ".durian");
+		if (!file.exists()) {
+			file.mkdir();
+		}
 		return file;
 	}
 	

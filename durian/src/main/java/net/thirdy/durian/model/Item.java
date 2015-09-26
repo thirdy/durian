@@ -22,7 +22,7 @@ package net.thirdy.durian.model;
  *
  */
 public class Item {
-	String fullName;
+	String name;
 	double amount;
 	String sellerIGN;
 	String sellerAccount;
@@ -30,15 +30,21 @@ public class Item {
 	String icon;
 	String uuid;
 	String threadid;
+	String league;
 	
-
 	
-
+	
 	@Override
 	public String toString() {
-		return "Item [fullName=" + fullName + ", amount=" + amount + ", sellerIGN=" + sellerIGN + ", sellerAccount="
+		return "Item [name=" + name + ", amount=" + amount + ", sellerIGN=" + sellerIGN + ", sellerAccount="
 				+ sellerAccount + ", currency=" + currency + ", icon=" + icon + ", uuid=" + uuid + ", threadid="
-				+ threadid + "]";
+				+ threadid + ", league=" + league + "]";
+	}
+	public String getLeague() {
+		return league;
+	}
+	public void setLeague(String league) {
+		this.league = league;
 	}
 	public String getThreadid() {
 		return threadid;
@@ -58,11 +64,11 @@ public class Item {
 	public void setIcon(String icon) {
 		this.icon = icon;
 	}
-	public String getFullName() {
-		return fullName;
+	public String getName() {
+		return name;
 	}
-	public void setFullName(String fullName) {
-		this.fullName = fullName;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public double getAmount() {
 		return amount;
@@ -87,6 +93,11 @@ public class Item {
 	}
 	public void setCurrency(String currency) {
 		this.currency = currency;
+	}
+	public String toWTB() {
+		return String.format(
+				"@%s Hi, I would like to buy your %s listed for %s %s in %s",
+				getSellerIGN(), getName(), getAmount(), getCurrency(), getLeague());
 	}
 	
 	

@@ -18,6 +18,8 @@
 package net.thirdy.durian;
 
 import javafx.application.Application;
+import javafx.util.Duration;
+import net.thirdy.durian.backend.BackendApi;
 import net.thirdy.durian.ui.DurianApplication;
 
 /**
@@ -26,6 +28,11 @@ import net.thirdy.durian.ui.DurianApplication;
  */
 public class Main {
 	public static void main(String[] args) {
+		BackendApi.setup();
 		Application.launch(DurianApplication.class, args);
 	}
+
+	public static final Duration DURATION = Duration.minutes(15);
+	
+	// https://docs.google.com/spreadsheets/d/17evBWOCzVnbSmIvB-wvXRe5taE6Zyde04sol_jVtVnY/edit#gid=0
 }

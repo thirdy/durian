@@ -17,34 +17,32 @@
  */
 package net.thirdy.durian.ui;
 
-import static net.thirdy.durian.util.Util.fromClasspathAsStream;
+import static net.thirdy.durian.util.FileUtil.fromClasspathAsStream;
 
 import java.awt.Desktop;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.Date;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.swing.JOptionPane;
-
-import javafx.animation.Animation;
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
+import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import javafx.scene.control.Spinner;
 import javafx.scene.control.TextArea;
@@ -56,9 +54,11 @@ import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Priority;
 import javafx.stage.Stage;
-import javafx.util.Duration;
+import net.thirdy.durian.Main;
+import net.thirdy.durian.backend.BackendApi;
 import net.thirdy.durian.model.Currency;
-import net.thirdy.durian.util.config.ItemFullNamesConfig;
+import net.thirdy.durian.model.Item;
+import net.thirdy.durian.util.config.ItemNamesConfig;
 import net.thirdy.durian.util.config.ItemWatchConfig;
 import net.thirdy.durian.util.config.ItemWatchConfig.ItemWatch;
 
@@ -69,20 +69,26 @@ import net.thirdy.durian.util.config.ItemWatchConfig.ItemWatch;
 public class DurianApplication extends Application {
 	
 	Logger logger = Logger.getLogger(this.getClass().getName());
-
-	ObservableList<String> itemFullNamesList;
+	ObservableList<String> itemNamesList;
 	ObservableList<ItemWatch> itemsToWatchList;
 	
 	TextArea consoleTextArea;
-	Timeline watchTimeline;
+	Timer timer = new Timer();
 	
 	ItemWatchConfig itemWatchConfig = new ItemWatchConfig();
-	ItemFullNamesConfig itemFullNamesConfig = new ItemFullNamesConfig();
+	ItemNamesConfig itemNamesConfig = new ItemNamesConfig();
 	
 	@Override
 	public void start(Stage primaryStage) throws IOException, URISyntaxException {
-		itemFullNamesList = FXCollections.observableArrayList(itemFullNamesConfig.loadFullNamesList());
+		itemNamesList = FXCollections.observableArrayList(itemNamesConfig.loadNamesList());
 		itemsToWatchList = FXCollections.observableArrayList(itemWatchConfig.loadItemWatchList());
+		itemsToWatchList.addListener(new ListChangeListener<ItemWatch>() {
+
+			@Override
+			public void onChanged(ListChangeListener.Change<? extends ItemWatch> c) {
+				itemWatchConfig.save(itemsToWatchList);
+			}
+		});
 		
 		String title = "Durian v0.1";
 		primaryStage.setTitle(title);
@@ -102,8 +108,9 @@ public class DurianApplication extends Application {
 		gridPane.add(watchLbl, 2, 0);
 		GridPane.setHalignment(watchLbl, HPos.CENTER);
 		
-		ListView<String> itemFullNamesListView = new ListView<>(itemFullNamesList);
-		gridPane.add(itemFullNamesListView, 0, 1);
+		ListView<String> itemNamesListView = new ListView<>(itemNamesList);
+		gridPane.add(itemNamesListView, 0, 1);
+		itemNamesListView.setCellFactory(list -> new ItemListCell());
 		
 		ListView<ItemWatch> itemsToWatchListView = new ListView<>(itemsToWatchList);
 		gridPane.add(itemsToWatchListView, 2, 1);
@@ -114,27 +121,38 @@ public class DurianApplication extends Application {
 		Spinner<Integer> amountSpinner = new Spinner<>(1, 10000, 5);
 		amountSpinner.setPrefWidth(100);
 		
+		ComboBox<String> leaguesCmbx = new ComboBox<>(FXCollections.observableArrayList("Standard", "Hardcore", "Warbands", "Tempest"));
+		leaguesCmbx.getSelectionModel().select(0);
+		
 		Button addButton = new Button();
 		addButton.setText("Add");
 		addButton.setPrefWidth(180);
 		addButton.setOnAction(e -> {
-			String itemFullName = itemFullNamesListView.getSelectionModel().getSelectedItem();
-			
-			if (itemFullName != null) {
+			String itemName = itemNamesListView.getSelectionModel().getSelectedItem();
+			if (itemName != null) {
 				Integer amount = amountSpinner.getValue();
+				String league = leaguesCmbx.getSelectionModel().getSelectedItem();
 				Currency currency = new Currency(Currency.Type.chaos, amount);
-				ItemWatch itemWatch = new ItemWatch(itemFullName, currency);
+				ItemWatch itemWatch = new ItemWatch(itemName, currency, league);
 				
-				itemFullNamesListView.getSelectionModel().clearSelection();
+				itemNamesListView.getSelectionModel().clearSelection();
 				itemsToWatchList.add(itemWatch);
-				
-				startWatchThread();
 			}
 		});
+		Button removeButton = new Button();
+		removeButton.setText("Remove");
+		removeButton.setPrefWidth(180);
+		removeButton.setOnAction(e -> {
+			ItemWatch itemWatch = itemsToWatchListView.getSelectionModel().getSelectedItem();
+			if (itemWatch != null) {
+				itemsToWatchList.remove(itemWatch);
+			}
+		});
+		
 		Button helpButton = new Button("?");
 		helpButton.setOnAction(e -> openDurianHomePage());
 		
-		FlowPane controlsPane = new FlowPane(5, 1, amountSpinner, currencyLabel, addButton, helpButton);
+		FlowPane controlsPane = new FlowPane(5, 1, leaguesCmbx, amountSpinner, currencyLabel, addButton, removeButton, helpButton);
 		controlsPane.setAlignment(Pos.CENTER);
 		centerPane.setCenter(gridPane);
 		centerPane.setBottom(controlsPane);
@@ -152,11 +170,29 @@ public class DurianApplication extends Application {
 		primaryStage.setScene(scene);
 		primaryStage.show();
 		
-		setupWatchTimeline();
+		writeToConsole("Sucessfully started " + title + " Time now: " + new Date());
 		startWatchThread();
 		
-		writeToConsole("Sucessfully started " + title);
+		primaryStage.setOnCloseRequest(e -> {
+			timer.cancel();
+		});
 	}
+	
+	   private static class ItemListCell extends ListCell<String> {
+	        @Override
+	        public void updateItem(String item, boolean empty) {
+	            super.updateItem(item, empty);
+	            if (empty) {
+	                setGraphic(null);
+	                setText(null);
+	            } else {
+//	                Image fxImage = getFileIcon(item);
+//	                ImageView imageView = new ImageView(fxImage);
+//	                setGraphic(imageView);
+	                setText(item);
+	            }
+	        }
+	    }
 	
 	private void openDurianHomePage() {
 		String homePage = "http://thirdy.github.io/durian";
@@ -171,29 +207,26 @@ public class DurianApplication extends Application {
 		}
 	}
 
-	private void setupWatchTimeline() {
-		Duration duration = Duration.seconds(1);
-//		Duration duration = Duration.minutes(15);
-		watchTimeline = new Timeline(new KeyFrame(duration, (ActionEvent e) -> {
-			writeToConsole("Now running Durian Item watch.. ");
-			
-			for (ItemWatch itemWatch : itemsToWatchList) {
-				
-			}
-			
-		}));
-	}
-
 	private void writeToConsole(String line) {
 		Platform.runLater(() -> consoleTextArea.appendText(line + System.getProperty("line.separator")));
 	}
 	
 	private void startWatchThread() {
-		if (!itemsToWatchList.isEmpty() && watchTimeline.getStatus() == Animation.Status.STOPPED) {
-			writeToConsole("About to start watch thread to run every " + watchTimeline.getDelay().toString());
-	        watchTimeline.setCycleCount(Timeline.INDEFINITE);
-	        watchTimeline.play();
-		}
+		writeToConsole("Checking for items now. And will check items every " + Main.DURATION.toMinutes() + " mins.");
+		timer.scheduleAtFixedRate(new TimerTask() {
+
+			@Override
+			public void run() {
+				writeToConsole("Now running Durian Item watch.. ");
+				itemsToWatchList.stream().limit(10).forEach((i) -> {
+					List<Item> results = BackendApi.searchUnique(i.getLeague(), i.getFullName(),
+							i.getCurrency().getAmount());
+					for (Item item : results) {
+						writeToConsole(item.toWTB());
+					}
+				});
+			}
+		}, 0l, (long)Main.DURATION.toMillis());
 	}
 
 	private GridPane setupCenterGridPane() {

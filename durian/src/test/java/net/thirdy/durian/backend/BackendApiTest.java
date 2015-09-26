@@ -36,44 +36,56 @@ import org.junit.Ignore;
  * @author thirdy
  */
 public class BackendApiTest {
-    
-    public BackendApiTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-        BackendApi.setup();
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-        BackendApi.shutdown();
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
-    @Test
-    @Ignore
-    public void getAllMappings() throws Exception {
-        String result = BackendApi.getAllMappings();
-        System.out.println(result);
-    }
-    
-    @Test
-    public void searchUnique() throws Exception {
-        List<Item> result = BackendApi.searchUnique("Tempest", "Mjolner Gavel", 360);
-        result.stream().forEach(e -> System.out.println(e));
-    }
-    
-    @Test
-    public void searchUnique2() throws Exception {
-    	List<Item> result = BackendApi.searchUnique("Tempest", "Tabula Rasa Simple Robe", 15);
-    	result.stream().forEach(e -> System.out.println(e));
-    }
+	public BackendApiTest() {
+	}
+
+	@BeforeClass
+	public static void setUpClass() {
+		BackendApi.setup();
+	}
+
+	@AfterClass
+	public static void tearDownClass() {
+		BackendApi.shutdown();
+	}
+
+	@Before
+	public void setUp() {
+	}
+
+	@After
+	public void tearDown() {
+	}
+
+	@Test
+	@Ignore
+	public void getAllMappings() throws Exception {
+		String result = BackendApi.getAllMappings();
+		System.out.println(result);
+	}
+
+	@Test
+	public void searchUnique() throws Exception {
+		List<Item> result = BackendApi.searchUnique("Tempest", "Mjolner", 360);
+		result.stream().forEach(e -> System.out.println(e));
+	}
+
+	@Test
+	public void searchUnique2() throws Exception {
+		List<Item> result = BackendApi.searchUnique("Tempest", "Tabula Rasa", 15);
+		result.stream().forEach(e -> System.out.println(e));
+	}
+
+	@Test
+	public void searchUnique3() throws Exception {
+		List<Item> result = BackendApi.searchUnique("Tempest", "The Bringer of Rain", 500);
+		result.stream().forEach(e -> System.out.println(e));
+	}
+	
+	@Test
+	public void searchUnique4() throws Exception {
+		List<Item> result = BackendApi.searchUnique("Tempest", "Wurm's Molt", 500);
+		result.stream().forEach(e -> System.out.println(e));
+	}
 }
