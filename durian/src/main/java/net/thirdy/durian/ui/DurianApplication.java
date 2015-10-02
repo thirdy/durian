@@ -108,10 +108,10 @@ public class DurianApplication extends Application {
 			}
 		});
 		
-		String title = "Durian v0.1";
+		String title = "Durian v0.1.1";
 		primaryStage.setTitle(title);
 		BorderPane root = new BorderPane();
-		Scene scene = new Scene(root, 800, 550);
+		Scene scene = new Scene(root, 800, 650);
 		primaryStage.getIcons().add(loadImage("/images/48px-Durian.png"));
 		
 		// Center Pane
@@ -146,22 +146,24 @@ public class DurianApplication extends Application {
 			public void changed(ObservableValue<? extends ItemChoice> observable, ItemChoice oldValue,
 					ItemChoice newValue) {
 				Platform.runLater(() -> {
-					itemNameLbl.setText(newValue.getName());
-					if (!newValue.getIcon().isEmpty()) {
-						try {
-							String fileName = new URL(newValue.getIcon()).toURI().getRawPath();
-							InputStream is = FileUtil.fromClasspathAsStream(fileName);
-							Image img = new Image(is);
-							is.close();
-							imageView.setImage(img);
-							if (imageView.getImage().getHeight() > 300) {
-								imageView.setFitHeight(230);
-							} else {
-								imageView.setFitHeight(img.getHeight());
+					if (newValue != null) {
+						itemNameLbl.setText(newValue.getName());
+						if (!newValue.getIcon().isEmpty()) {
+							try {
+								String fileName = new URL(newValue.getIcon()).toURI().getRawPath();
+								InputStream is = FileUtil.fromClasspathAsStream(fileName);
+								Image img = new Image(is);
+								is.close();
+								imageView.setImage(img);
+								if (imageView.getImage().getHeight() > 300) {
+									imageView.setFitHeight(230);
+								} else {
+									imageView.setFitHeight(img.getHeight());
+								}
+									
+							} catch (Exception e) {
+								logger.log(Level.SEVERE, e.getMessage());
 							}
-								
-						} catch (Exception e) {
-							logger.log(Level.SEVERE, e.getMessage());
 						}
 					}
 				});
@@ -180,19 +182,20 @@ public class DurianApplication extends Application {
 		// Control Pane
 		ImageView chaosImage = new ImageView(loadImage("/images/chaos.png"));
 		Label currencyLabel = new Label("Amount", chaosImage);
-		Spinner<Integer> amountSpinner = new Spinner<>(1, 10000, 5);
+		Spinner<Integer> amountSpinner = new SpinnerAutoCommit<>(1, 10000, 5);
 		amountSpinner.setEditable(true);
 		amountSpinner.setPrefWidth(100);
 		
-		ComboBox<String> leaguesCmbx = new ComboBox<>(FXCollections.observableArrayList("Standard", "Hardcore", "Warbands", "Tempest"));
+		ComboBox<String> leaguesCmbx = new ComboBox<>(FXCollections.observableArrayList("Flashback Event (IC001)", "Flashback Event HC (IC002)", "Standard", "Hardcore"));
 		leaguesCmbx.getSelectionModel().select(0);
 		
 		Button addButton = new Button();
 		addButton.setText("Add");
 		addButton.setPrefWidth(140);
 		addButton.setOnAction(e -> {
-			String itemName = itemNamesListView.getSelectionModel().getSelectedItem().getName();
-			if (itemName != null) {
+			ItemChoice selectedItem = itemNamesListView.getSelectionModel().getSelectedItem();
+			if (selectedItem != null) {
+				String itemName = selectedItem.getName();
 				Integer amount = amountSpinner.getValue();
 				String league = leaguesCmbx.getSelectionModel().getSelectedItem();
 				Currency currency = new Currency(Currency.Type.chaos, amount);

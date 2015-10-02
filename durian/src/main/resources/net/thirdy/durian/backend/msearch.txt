@@ -1,0 +1,39 @@
+{}
+{
+  "query" : {
+    "filtered" : {
+      "filter" : {
+        "bool" : {
+          "must" : [
+            { "term" : { "attributes.rarity" : "Unique" } },
+            { "term" : { "attributes.league" : "Warbands" } },
+            { "term" : { "info.name" : "Gavel" } },
+            { "term" : { "shop.verified" : "yes" } },
+            { "term" : { "attributes.identified": true } },
+            { "term" : { "attributes.corrupted": false } }
+           ]
+        }
+      }
+    }
+  },
+  "aggs" : {
+    "uniques" : {
+	      "terms" : { 
+	        "field" : "info.icon",
+	        "size":0
+	      }
+     }
+  }
+}
+{}
+{
+  "fields" : [ "shop.updated" ],
+  "sort": [
+    {
+      "shop.updated": {
+        "order": "desc"
+      }
+    }
+  ],
+  "size": 1
+}

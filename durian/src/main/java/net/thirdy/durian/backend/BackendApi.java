@@ -31,11 +31,14 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.mashape.unirest.http.HttpMethod;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.ObjectMapper;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
+import com.mashape.unirest.request.GetRequest;
+import com.mashape.unirest.request.body.RequestBodyEntity;
 
 import net.thirdy.durian.Main;
 import net.thirdy.durian.model.Item;
@@ -76,9 +79,35 @@ public class BackendApi {
 	}
 
 	public static String getAllMappings() {
+		String url = "http://api.exiletools.com/index/_mapping?pretty";
+		String result = get(url);
+		return result;
+	}
+
+	public static String get(String url) {
 		String result = "";
 		try {
-			HttpResponse<String> response = Unirest.get("http://api.exiletools.com/index/_mapping?pretty").asString();
+			HttpResponse<String> response = Unirest.get(url).asString();
+			result = response.getBody();
+		} catch (UnirestException ex) {
+			logger.log(Level.SEVERE, null, ex);
+			throw new BackedException(ex);
+		}
+		return result;
+	}
+	
+	public static String xget(String url, String xbody) {
+		String result = "";
+		try {
+			
+			GetRequest xget = new GetRequest(HttpMethod.GET, url) {{
+				RequestBodyEntity b = new RequestBodyEntity(this).body(xbody);
+				this.body = b;
+			}};
+			
+			HttpResponse<String> response = xget
+			.asString();
+			
 			result = response.getBody();
 		} catch (UnirestException ex) {
 			logger.log(Level.SEVERE, null, ex);
@@ -108,7 +137,6 @@ public class BackendApi {
 			raw = raw.replace("$PRICE_LESS_THAN_CHAOS", String.valueOf(chaosEquiv));
 			HttpResponse<JsonNode> response = Unirest.post("http://api.exiletools.com/index/_search?pretty")
 					.body(raw).asJson();
-			
 			logger.info(String.format("Request: %s|%s|%s - %s -- HTTP POST Status Response: %s",
 					league,
 					name,

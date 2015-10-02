@@ -104,11 +104,20 @@ public class Item {
 		this.currency = currency;
 	}
 	public String toWTB() {
-		return String.format(
-				"@%s Hi, I would like to buy your %s listed for %s %s in %s",
-				StringUtils.isBlank(getSellerIGN()) ? 
-						getThreadid()
-						: getSellerIGN(), getName(), getAmount(), getCurrency(), getLeague());
+		String wtb = getThreadid();
+		
+		int amt = (int) getAmount();
+		if (!StringUtils.isBlank(getSellerIGN()) && getSellerIGN().length() > 1) {
+			wtb = String.format(
+					"@%s Hi, I would like to buy your %s listed for %s %s in %s",
+					getSellerIGN(), getName(), amt, getCurrency(), getLeague());
+		} else {
+			wtb = String.format("%s for %s%s - https://www.pathofexile.com/forum/view-thread/%s", 
+					getName(), amt, getCurrency(), getThreadid());
+		}
+		
+		
+		return wtb; 
 	}
 	
 	
