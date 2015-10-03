@@ -21,6 +21,8 @@ public class ItemWatchConfig implements Config {
 	public String fileName() {
 		return "itemwatch.txt";
 	}
+	
+	private static final String regexString = "^;.+|.+|.+|.+";
 
 	public List<ItemWatch> loadItemWatchList() {
 		try {
@@ -33,7 +35,7 @@ public class ItemWatchConfig implements Config {
 				String defaultRawConfig = FileUtil.fromClasspath(ItemWatchConfig.class, "default-itemwatch.txt");
 				list = Arrays.asList(defaultRawConfig.split(System.lineSeparator()))
 						.stream()
-						.filter(s -> !s.isEmpty() && !s.startsWith(";"))
+						.filter(s -> s.matches(regexString))
 						.map(e -> ItemWatch.fromConfig(e))
 						.collect(Collectors.toList());
 				
