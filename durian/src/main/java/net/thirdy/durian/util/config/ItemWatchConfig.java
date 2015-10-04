@@ -22,7 +22,7 @@ public class ItemWatchConfig implements Config {
 		return "itemwatch.txt";
 	}
 	
-	private static final String regexString = "^;.+|.+|.+|.+";
+	private static final String regexString = "[^;].+\\|.+\\|.+\\|.+";
 
 	public List<ItemWatch> loadItemWatchList() {
 		try {
@@ -87,6 +87,7 @@ public class ItemWatchConfig implements Config {
 		String league;
 
 		public static ItemWatch fromConfig(String line) {
+			System.out.println(line);
 			ItemWatch itemJob = new ItemWatch();
 			String[] split = StringUtils.split(line, "|");
 			int idx = 0;

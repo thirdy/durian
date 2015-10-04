@@ -19,7 +19,7 @@ public class ItemNamesConfig implements Config {
 		return "itemnames.txt";
 	}
 	
-	private static final String regexString = "^;.+|.+";
+	private static final String regexString = "[^;].+\\|.+";
 
 	public List<ItemChoice> loadNamesList() {
 		try {
