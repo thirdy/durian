@@ -18,6 +18,8 @@ public class ItemNamesConfig implements Config {
 	public String fileName() {
 		return "itemnames.txt";
 	}
+	
+	private static final String regexString = "^;.+|.+";
 
 	public List<ItemChoice> loadNamesList() {
 		try {
@@ -30,7 +32,7 @@ public class ItemNamesConfig implements Config {
 				String defaultRawConfig = loadDefault();
 				list = Arrays.asList(defaultRawConfig.split(System.lineSeparator()))
 						.stream()
-						.filter(s -> !s.isEmpty() && !s.startsWith(";"))
+						.filter(s -> s.matches(regexString))
 						.map(s -> ItemChoice.fromConfig(s))
 						.collect(Collectors.toList());
 				
