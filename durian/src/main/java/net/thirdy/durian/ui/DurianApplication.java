@@ -29,6 +29,7 @@ import java.io.InputStream;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.Timer;
@@ -38,6 +39,7 @@ import java.util.logging.Logger;
 
 import javax.imageio.ImageIO;
 
+import org.apache.commons.lang3.StringUtils;
 import org.controlsfx.control.InfoOverlay;
 import org.controlsfx.control.Notifications;
 
@@ -75,6 +77,9 @@ import net.thirdy.durian.backend.BackendApi;
 import net.thirdy.durian.model.Currency;
 import net.thirdy.durian.model.Item;
 import net.thirdy.durian.util.FileUtil;
+import net.thirdy.durian.util.SoundUtils;
+import net.thirdy.durian.util.Sounds;
+import net.thirdy.durian.util.UrlReaderUtil;
 import net.thirdy.durian.util.config.ItemNamesConfig;
 import net.thirdy.durian.util.config.ItemNamesConfig.ItemChoice;
 import net.thirdy.durian.util.config.ItemWatchConfig;
@@ -95,6 +100,7 @@ public class DurianApplication extends Application {
 	
 	ItemWatchConfig itemWatchConfig = new ItemWatchConfig();
 	ItemNamesConfig itemNamesConfig = new ItemNamesConfig();
+	private ComboBox<Sounds> soundCmbx;
 	
 	@Override
 	public void start(Stage primaryStage) throws IOException, URISyntaxException {
@@ -108,10 +114,10 @@ public class DurianApplication extends Application {
 			}
 		});
 		
-		String title = "Durian v0.1.1";
+		String title = "Durian v0.2";
 		primaryStage.setTitle(title);
 		BorderPane root = new BorderPane();
-		Scene scene = new Scene(root, 800, 650);
+		Scene scene = new Scene(root, 990, 660);
 		primaryStage.getIcons().add(loadImage("/images/48px-Durian.png"));
 		
 		// Center Pane
@@ -189,6 +195,9 @@ public class DurianApplication extends Application {
 		ComboBox<String> leaguesCmbx = new ComboBox<>(FXCollections.observableArrayList("Flashback Event (IC001)", "Flashback Event HC (IC002)", "Standard", "Hardcore"));
 		leaguesCmbx.getSelectionModel().select(0);
 		
+		soundCmbx = new ComboBox<>(FXCollections.observableArrayList(Sounds.values()));
+		soundCmbx.getSelectionModel().select(0);
+		
 		Button addButton = new Button();
 		addButton.setText("Add");
 		addButton.setPrefWidth(140);
@@ -221,10 +230,16 @@ public class DurianApplication extends Application {
 			startWatchThread();
 		});
 		
+		Button indexerStatusBtn = new Button("Indexer Status");
+		indexerStatusBtn.setOnAction(e -> {
+			String result = retrieveIndexerLastUpdate();
+			writeToConsole(result);
+		});
+		
 		Button helpButton = new Button("?");
 		helpButton.setOnAction(e -> openDurianHomePage());
 		
-		FlowPane controlsPane = new FlowPane(5, 1, leaguesCmbx, amountSpinner, currencyLabel, addButton, removeButton, forceBtn, helpButton);
+		FlowPane controlsPane = new FlowPane(5, 1, leaguesCmbx, amountSpinner, currencyLabel, addButton, removeButton, forceBtn, indexerStatusBtn, new Label("Sound: "), soundCmbx, helpButton);
 		controlsPane.setAlignment(Pos.CENTER);
 		centerPane.setCenter(gridPane);
 		centerPane.setBottom(controlsPane);
@@ -251,6 +266,17 @@ public class DurianApplication extends Application {
 		});
 	}
 
+	private String retrieveIndexerLastUpdate() {
+		String result = "Exile Tools Index Last Update: ";
+		String url = "http://exiletools.com/last-index-update.html";
+		try {
+			result += StringUtils.trimToEmpty(UrlReaderUtil.getString(url));
+		} catch (Exception e1) {
+			result += String.format("Error downloading indexer status from %s, error: %s", url, e1.getMessage());
+		}
+		return result;
+	}
+
 	private void openDurianHomePage() {
 		String homePage = "http://thirdy.github.io/durian";
 		if (Desktop.isDesktopSupported()) {
@@ -275,8 +301,8 @@ public class DurianApplication extends Application {
 			@Override
 			public void run() {
 				writeToConsole("Now running Durian Item watch.. ");
-				if(itemsToWatchList.size() > 20) writeToConsole("Items to watch exceeds max of 20, will ignore excess.");
-				itemsToWatchList.stream().limit(20).forEach((i) -> {
+				if(itemsToWatchList.size() > 300) writeToConsole("Items to watch exceeds max of 300, will ignore excess.");
+				itemsToWatchList.stream().limit(300).forEach((i) -> {
 					List<Item> results = BackendApi.searchUnique(i.getLeague(), i.getFullName(),
 							i.getCurrency().getAmount());
 					for (Item item : results) {
@@ -284,6 +310,10 @@ public class DurianApplication extends Application {
 						StringSelection stringSelection = new StringSelection(item.toWTB());
 	          			Clipboard clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard();
 	          			clpbrd.setContents(stringSelection, null);
+	          			
+	          			playSound();
+	          			
+	          			break;
 	          			// code below causes NPE
 //						 Notifications.create()
 //			              .title("Item found: " + item.getName())
@@ -322,6 +352,35 @@ public class DurianApplication extends Application {
 		} catch (IOException | URISyntaxException e) {
 			logger.log(Level.SEVERE, e.getMessage(), e);
 			throw new DurianUiException(e);
+		}
+	}
+
+	private void playSound() {
+		Sounds sound = soundCmbx.getSelectionModel().getSelectedItem();
+		try {
+			switch (sound) {
+			case laser:
+				SoundUtils.laser(3);
+				break;
+			case warp:
+				SoundUtils.warp(3);
+				break;
+			case bang:
+				SoundUtils.bang();
+				break;
+			case tone:
+				SoundUtils.tone(5000,100);
+				break;
+			case beep:
+				Toolkit.getDefaultToolkit().beep();
+				break;
+			default:
+				Toolkit.getDefaultToolkit().beep();
+				break;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			writeToConsole("Error playing laser sound: " + e.getMessage());
 		}
 	}
 

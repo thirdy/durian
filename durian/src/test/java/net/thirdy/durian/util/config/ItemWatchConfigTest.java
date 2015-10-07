@@ -61,5 +61,19 @@ public class ItemWatchConfigTest {
 			System.out.println(string);
 		}
 	}
+	
+	@Test
+	public void testLoad() throws Exception {
+		String regex = "^;.+|.+|.+|.+";
+		String defaultRawConfig = FileUtil.fromClasspath(ItemWatchConfig.class, "default-itemwatch.txt");
+		List<String> list = Arrays.asList(defaultRawConfig.split(System.lineSeparator()))
+				.stream()
+				.filter(s -> s.matches(regex))
+				.collect(Collectors.toList());
+
+		for (String string : list) {
+			System.out.println(string);
+		}
+	}
 
 }
