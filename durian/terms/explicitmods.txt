@@ -1,0 +1,48 @@
+;
+; Explicit Mods
+;
+
+ 
+life								=		mod_name=(pseudo) (total) +# to maximum Life&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)life							=		mod_name=(pseudo) (total) +# to maximum Life&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)life						=		mod_name=(pseudo) (total) +# to maximum Life&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
+mana								=		mod_name=(pseudo) (total) +# to maximum Mana&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)mana							=		mod_name=(pseudo) (total) +# to maximum Mana&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)mana						=		mod_name=(pseudo) (total) +# to maximum Mana&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
+res									=		mod_name=(pseudo) +#% total Resistance&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)res							=		mod_name=(pseudo) +#% total Resistance&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)res						=		mod_name=(pseudo) +#% total Resistance&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
+eleres								=		mod_name=(pseudo) +#% total Elemental Resistance&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)eleres							=		mod_name=(pseudo) +#% total Elemental Resistance&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)eleres					=		mod_name=(pseudo) +#% total Elemental Resistance&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
+fireres								=		mod_name=(pseudo) (total) +#% to Fire Resistance&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)fireres						=		mod_name=(pseudo) (total) +#% to Fire Resistance&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)fireres					=		mod_name=(pseudo) (total) +#% to Fire Resistance&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
+coldres								=		mod_name=(pseudo) (total) +#% to Cold Resistance&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)coldres						=		mod_name=(pseudo) (total) +#% to Cold Resistance&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)coldres					=		mod_name=(pseudo) (total) +#% to Cold Resistance&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
+lightres							=		mod_name=(pseudo) (total) +#% to Lightning Resistance&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)lightres						=		mod_name=(pseudo) (total) +#% to Lightning Resistance&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)lightres					=		mod_name=(pseudo) (total) +#% to Lightning Resistance&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
+ms									=		mod_name=#% increased Movement Speed&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)ms								=		mod_name=#% increased Movement Speed&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)ms						=		mod_name=#% increased Movement Speed&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
+iir									=		mod_name=(pseudo) (total) #% increased Rarity of Items found&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)iir							=		mod_name=(pseudo) (total) #% increased Rarity of Items found&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)iir						=		mod_name=(pseudo) (total) #% increased Rarity of Items found&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
+spelldmg|sdmg						=		mod_name=(pseudo) (total) #% increased Spell Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)(spelldmg|sdmg)				=		mod_name=(pseudo) (total) #% increased Spell Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)(spelldmg|sdmg)			=		mod_name=(pseudo) (total) #% increased Spell Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
+(\d+)dex							=		mod_name=(pseudo) (total) +# to Dexterity&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)str							=		mod_name=(pseudo) (total) +# to Strength&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)int							=		mod_name=(pseudo) (total) +# to Intelligence&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1

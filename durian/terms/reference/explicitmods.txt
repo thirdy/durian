@@ -1,0 +1,331 @@
+(pseudo) (total) # Life Regenerated per second
+(pseudo) (total) #% increased Burning Damage
+(pseudo) (total) #% increased Cast Speed
+(pseudo) (total) #% increased Cold Damage with Weapons
+(pseudo) (total) #% increased Cold Spell Damage
+(pseudo) (total) #% increased Critical Strike Chance for Spells
+(pseudo) (total) #% increased Elemental Damage with Weapons
+(pseudo) (total) #% increased Fire Area Damage
+(pseudo) (total) #% increased Fire Damage with Weapons
+(pseudo) (total) #% increased Fire Spell Damage
+(pseudo) (total) #% increased Global Critical Strike Chance
+(pseudo) (total) #% increased Global Critical Strike Multiplier
+(pseudo) (total) #% increased Lightning Damage with Weapons
+(pseudo) (total) #% increased Lightning Spell Damage
+(pseudo) (total) #% increased Mana Regeneration Rate
+(pseudo) (total) #% increased Physical Damage
+(pseudo) (total) #% increased Rarity of Items found
+(pseudo) (total) #% increased Spell Damage
+(pseudo) (total) #% of Physical Attack Damage Leeched as Life
+(pseudo) (total) +# to all Attributes
+(pseudo) (total) +# to Dexterity
+(pseudo) (total) +# to Intelligence
+(pseudo) (total) +# to Level of Socketed Aura Gems
+(pseudo) (total) +# to Level of Socketed Bow Gems
+(pseudo) (total) +# to Level of Socketed Cold Gems
+(pseudo) (total) +# to Level of Socketed Elemental Gems
+(pseudo) (total) +# to Level of Socketed Fire Gems
+(pseudo) (total) +# to Level of Socketed Lightning Gems
+(pseudo) (total) +# to Level of Socketed Melee Gems
+(pseudo) (total) +# to Level of Socketed Minion Gems
+(pseudo) (total) +# to Level of Socketed Movement Gems
+(pseudo) (total) +# to Level of Socketed Spell Gems
+(pseudo) (total) +# to Level of Socketed Strength Gems
+(pseudo) (total) +# to Level of Socketed Vaal Gems
+(pseudo) (total) +# to maximum Energy Shield
+(pseudo) (total) +# to maximum Life
+(pseudo) (total) +# to maximum Mana
+(pseudo) (total) +# to Strength
+(pseudo) (total) +#% to all Elemental Resistances
+(pseudo) (total) +#% to Cold Resistance
+(pseudo) (total) +#% to Fire Resistance
+(pseudo) (total) +#% to Lightning Resistance
+(pseudo) (total) Adds # Damage to Attacks
+(pseudo) (total) Adds # Damage to Spells
+(pseudo) (total) Adds # Elemental Damage to Attacks
+(pseudo) (total) Adds # Elemental Damage to Spells
+(pseudo) (total) Adds # Fire Damage to Attacks
+(pseudo) (total) Adds # Physical Damage to Attacks
+(pseudo) (total) # Life Regenerated per second
+(pseudo) (total) #% increased Burning Damage
+(pseudo) (total) #% increased Cast Speed
+(pseudo) (total) #% increased Cold Damage with Weapons
+(pseudo) (total) #% increased Cold Spell Damage
+(pseudo) (total) #% increased Critical Strike Chance for Spells
+(pseudo) (total) #% increased Elemental Damage with Weapons
+(pseudo) (total) #% increased Fire Area Damage
+(pseudo) (total) #% increased Fire Damage with Weapons
+(pseudo) (total) #% increased Fire Spell Damage
+(pseudo) (total) #% increased Global Critical Strike Chance
+(pseudo) (total) #% increased Global Critical Strike Multiplier
+(pseudo) (total) #% increased Lightning Damage with Weapons
+(pseudo) (total) #% increased Lightning Spell Damage
+(pseudo) (total) #% increased Mana Regeneration Rate
+(pseudo) (total) #% increased Physical Damage
+(pseudo) (total) #% increased Rarity of Items found
+(pseudo) (total) #% increased Spell Damage
+(pseudo) (total) #% of Physical Attack Damage Leeched as Life
+(pseudo) (total) +# to all Attributes
+(pseudo) (total) +# to Dexterity
+(pseudo) (total) +# to Intelligence
+(pseudo) (total) +# to Level of Socketed Aura Gems
+(pseudo) (total) +# to Level of Socketed Bow Gems
+(pseudo) (total) +# to Level of Socketed Cold Gems
+(pseudo) (total) +# to Level of Socketed Elemental Gems
+(pseudo) (total) +# to Level of Socketed Fire Gems
+(pseudo) (total) +# to Level of Socketed Lightning Gems
+(pseudo) (total) +# to Level of Socketed Melee Gems
+(pseudo) (total) +# to Level of Socketed Minion Gems
+(pseudo) (total) +# to Level of Socketed Movement Gems
+(pseudo) (total) +# to Level of Socketed Spell Gems
+(pseudo) (total) +# to Level of Socketed Strength Gems
+(pseudo) (total) +# to Level of Socketed Vaal Gems
+(pseudo) (total) +# to maximum Energy Shield
+(pseudo) (total) +# to maximum Life
+(pseudo) (total) +# to maximum Mana
+(pseudo) (total) +# to Strength
+(pseudo) (total) +#% to all Elemental Resistances
+(pseudo) (total) +#% to Cold Resistance
+(pseudo) (total) +#% to Fire Resistance
+(pseudo) (total) +#% to Lightning Resistance
+(pseudo) (total) Adds # Damage to Attacks
+(pseudo) (total) Adds # Damage to Spells
+(pseudo) (total) Adds # Elemental Damage to Attacks
+(pseudo) (total) Adds # Elemental Damage to Spells
+(pseudo) (total) Adds # Fire Damage to Attacks
+(pseudo) (total) Adds # Physical Damage to Attacks
+(pseudo) (total) # Life Regenerated per second
+(pseudo) (total) #% increased Burning Damage
+(pseudo) (total) #% increased Cast Speed
+(pseudo) (total) #% increased Cold Damage with Weapons
+(pseudo) (total) #% increased Cold Spell Damage
+(pseudo) (total) #% increased Critical Strike Chance for Spells
+(pseudo) (total) #% increased Elemental Damage with Weapons
+(pseudo) (total) #% increased Fire Area Damage
+(pseudo) (total) #% increased Fire Damage with Weapons
+(pseudo) (total) #% increased Fire Spell Damage
+(pseudo) (total) #% increased Global Critical Strike Chance
+(pseudo) (total) #% increased Global Critical Strike Multiplier
+(pseudo) (total) #% increased Lightning Damage with Weapons
+(pseudo) (total) #% increased Lightning Spell Damage
+(pseudo) (total) #% increased Mana Regeneration Rate
+(pseudo) (total) #% increased Physical Damage
+(pseudo) (total) #% increased Rarity of Items found
+(pseudo) (total) #% increased Spell Damage
+(pseudo) (total) #% of Physical Attack Damage Leeched as Life
+(pseudo) (total) +# to all Attributes
+(pseudo) (total) +# to Dexterity
+(pseudo) (total) +# to Intelligence
+(pseudo) (total) +# to Level of Socketed Aura Gems
+(pseudo) (total) +# to Level of Socketed Bow Gems
+(pseudo) (total) +# to Level of Socketed Cold Gems
+(pseudo) (total) +# to Level of Socketed Elemental Gems
+(pseudo) (total) +# to Level of Socketed Fire Gems
+(pseudo) (total) +# to Level of Socketed Lightning Gems
+(pseudo) (total) +# to Level of Socketed Melee Gems
+(pseudo) (total) +# to Level of Socketed Minion Gems
+(pseudo) (total) +# to Level of Socketed Movement Gems
+(pseudo) (total) +# to Level of Socketed Spell Gems
+(pseudo) (total) +# to Level of Socketed Strength Gems
+(pseudo) (total) +# to Level of Socketed Vaal Gems
+(pseudo) (total) +# to maximum Energy Shield
+(pseudo) (total) +# to maximum Life
+(pseudo) (total) +# to maximum Mana
+(pseudo) (total) +# to Strength
+(pseudo) (total) +#% to all Elemental Resistances
+(pseudo) (total) +#% to Cold Resistance
+(pseudo) (total) +#% to Fire Resistance
+(pseudo) (total) +#% to Lightning Resistance
+(pseudo) (total) Adds # Damage to Attacks
+(pseudo) (total) Adds # Damage to Spells
+(pseudo) (total) Adds # Elemental Damage to Attacks
+(pseudo) (total) Adds # Elemental Damage to Spells
+(pseudo) (total) Adds # Fire Damage to Attacks
+(pseudo) (total) Adds # Physical Damage to Attacks
+(pseudo) # Armour + Evasion
+(pseudo) # Elemental Resistances
+(pseudo) # Resistances
+(pseudo) +#% total Elemental Resistance
+(pseudo) +#% total Resistance
+(pseudo) # Armour + Evasion
+(pseudo) # Elemental Resistances
+(pseudo) # Resistances
+(pseudo) +#% total Elemental Resistance
+(pseudo) +#% total Resistance
+(pseudo) # Armour + Evasion
+(pseudo) # Elemental Resistances
+(pseudo) # Resistances
+(pseudo) +#% total Elemental Resistance
+(pseudo) +#% total Resistance
+# Life Regenerated per second
+#% increased Armour
+#% increased Armour and Energy Shield
+#% increased Attack Speed
+#% increased Cast Speed
+#% increased Cold Damage
+#% increased Critical Strike Chance
+#% increased Critical Strike Chance for Spells
+#% increased Elemental Damage
+#% increased Elemental Damage with Weapons
+#% increased Energy Shield
+#% increased Evasion Rating
+#% increased Fire Damage
+#% increased Global Critical Strike Chance
+#% increased Global Critical Strike Multiplier
+#% increased Lightning Damage
+#% increased Mana Regeneration Rate
+#% increased maximum Energy Shield
+#% increased Movement Speed
+#% increased Physical Damage
+#% increased Projectile Speed
+#% increased Quantity of Items found
+#% increased Rarity of Items found
+#% increased Spell Damage
+#% of Physical Attack Damage Leeched as Life
+#% of Physical Attack Damage Leeched as Mana
++# to Accuracy Rating
++# to all Attributes
++# to Armour
++# to Dexterity
++# to Intelligence
++# to Level of Socketed Aura Gems
++# to Level of Socketed Bow Gems
++# to Level of Socketed Cold Gems
++# to Level of Socketed Elemental Gems
++# to Level of Socketed Fire Gems
++# to Level of Socketed Gems
++# to Level of Socketed Lightning Gems
++# to Level of Socketed Melee Gems
++# to Level of Socketed Minion Gems
++# to Level of Socketed Movement Gems
++# to Level of Socketed Spell Gems
++# to Level of Socketed Strength Gems
++# to Level of Socketed Vaal Gems
++# to maximum Energy Shield
++# to maximum Life
++# to maximum Mana
++# to Strength
++#% to all Elemental Resistances
++#% to Chaos Resistance
++#% to Cold Resistance
++#% to Fire Resistance
++#% to Lightning Resistance
+Adds #-# Cold Damage
+Adds #-# Fire Damage
+Adds #-# Lightning Damage
+Adds #-# Physical Damage
+# Life Regenerated per second
+#% increased Armour
+#% increased Armour and Energy Shield
+#% increased Attack Speed
+#% increased Cast Speed
+#% increased Cold Damage
+#% increased Critical Strike Chance
+#% increased Critical Strike Chance for Spells
+#% increased Elemental Damage
+#% increased Elemental Damage with Weapons
+#% increased Energy Shield
+#% increased Evasion Rating
+#% increased Fire Damage
+#% increased Global Critical Strike Chance
+#% increased Global Critical Strike Multiplier
+#% increased Lightning Damage
+#% increased Mana Regeneration Rate
+#% increased maximum Energy Shield
+#% increased Movement Speed
+#% increased Physical Damage
+#% increased Projectile Speed
+#% increased Quantity of Items found
+#% increased Rarity of Items found
+#% increased Spell Damage
+#% of Physical Attack Damage Leeched as Life
+#% of Physical Attack Damage Leeched as Mana
++# to Accuracy Rating
++# to all Attributes
++# to Armour
++# to Dexterity
++# to Intelligence
++# to Level of Socketed Aura Gems
++# to Level of Socketed Bow Gems
++# to Level of Socketed Cold Gems
++# to Level of Socketed Elemental Gems
++# to Level of Socketed Fire Gems
++# to Level of Socketed Gems
++# to Level of Socketed Lightning Gems
++# to Level of Socketed Melee Gems
++# to Level of Socketed Minion Gems
++# to Level of Socketed Movement Gems
++# to Level of Socketed Spell Gems
++# to Level of Socketed Strength Gems
++# to Level of Socketed Vaal Gems
++# to maximum Energy Shield
++# to maximum Life
++# to maximum Mana
++# to Strength
++#% to all Elemental Resistances
++#% to Chaos Resistance
++#% to Cold Resistance
++#% to Fire Resistance
++#% to Lightning Resistance
+Adds #-# Cold Damage
+Adds #-# Fire Damage
+Adds #-# Lightning Damage
+Adds #-# Physical Damage
+# Life Regenerated per second
+#% increased Armour
+#% increased Armour and Energy Shield
+#% increased Attack Speed
+#% increased Cast Speed
+#% increased Cold Damage
+#% increased Critical Strike Chance
+#% increased Critical Strike Chance for Spells
+#% increased Elemental Damage
+#% increased Elemental Damage with Weapons
+#% increased Energy Shield
+#% increased Evasion Rating
+#% increased Fire Damage
+#% increased Global Critical Strike Chance
+#% increased Global Critical Strike Multiplier
+#% increased Lightning Damage
+#% increased Mana Regeneration Rate
+#% increased maximum Energy Shield
+#% increased Movement Speed
+#% increased Physical Damage
+#% increased Projectile Speed
+#% increased Quantity of Items found
+#% increased Rarity of Items found
+#% increased Spell Damage
+#% of Physical Attack Damage Leeched as Life
+#% of Physical Attack Damage Leeched as Mana
++# to Accuracy Rating
++# to all Attributes
++# to Armour
++# to Dexterity
++# to Intelligence
++# to Level of Socketed Aura Gems
++# to Level of Socketed Bow Gems
++# to Level of Socketed Cold Gems
++# to Level of Socketed Elemental Gems
++# to Level of Socketed Fire Gems
++# to Level of Socketed Gems
++# to Level of Socketed Lightning Gems
++# to Level of Socketed Melee Gems
++# to Level of Socketed Minion Gems
++# to Level of Socketed Movement Gems
++# to Level of Socketed Spell Gems
++# to Level of Socketed Strength Gems
++# to Level of Socketed Vaal Gems
++# to maximum Energy Shield
++# to maximum Life
++# to maximum Mana
++# to Strength
++#% to all Elemental Resistances
++#% to Chaos Resistance
++#% to Cold Resistance
++#% to Fire Resistance
++#% to Lightning Resistance
+Adds #-# Cold Damage
+Adds #-# Fire Damage
+Adds #-# Lightning Damage
+Adds #-# Physical Damage
+(crafted) Can have multiple Crafted Mods

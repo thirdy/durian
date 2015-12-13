@@ -1,0 +1,36 @@
+;
+; Item Types
+;
+1h								=		type=1h
+2h								=		type=2h
+bow								=		type=Bow
+claw							=		type=Claw
+dagger							=		type=Dagger
+axe|1haxe						=		type=One Hand Axe
+mace|1hmace						=		type=One Hand Mace
+sword|1hsword					=		type=One Hand Sword
+sceptre							=		type=Sceptre
+staff							=		type=Staff
+2haxe							=		type=Two Hand Axe
+2hmace							=		type=Two Hand Mace
+2hsword							=		type=Two Hand Sword
+wand							=		type=Wand
+
+chest|body|bodyarmour			=		type=Body Armour
+boots?							=		type=Boots
+gloves?							=		type=Gloves
+helmet|helm 					=		type=Helmet
+shield							=		type=Shield
+								
+amulet|ammy						=		type=Amulet
+belt							=		type=Belt
+curren|currency					=		type=Currency
+div|divination|divcard			=		type=Divination Card
+fish							=		type=Fishing Rods
+flsk|flask						=		type=Flask
+gem								=		type=Gem
+jwl|jewel						=		type=Jewel
+map								=		type=Map
+quiver|quiv						=		type=Quiver
+ring							=		type=Ring
+frag							=		type=Vaal Fragments

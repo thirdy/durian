@@ -1,0 +1,7 @@
+;
+; Leagues
+;
+standard|sc	= league=Standard
+hardcore|hc = league=Hardcore
+te?mpstandard|te?mpsc= league=Talisman
+te?mphardcore|te?mphc= league=Hardcore Talisman

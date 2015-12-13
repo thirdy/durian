@@ -1,0 +1,1 @@
+ring 30life 50res

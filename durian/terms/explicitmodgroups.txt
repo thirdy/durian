@@ -1,0 +1,8 @@
+;
+; Explicit Mod That Uses Groups
+;
+
+ 
+(\d+)bowchaostrap							=		mod_name=#% increased Area Damage&mod_min=&mod_max=&mod_name=#% increased Projectile Damage&mod_min=&mod_max=&mod_name=#% increased Chaos Damage&mod_min=&mod_max=&mod_name=#% increased Damage over Time&mod_min=&mod_max=&group_type=Sum&group_min=$GROUP1&group_max=&group_count=4
+
+dualreslifedex								=		mod_name=(pseudo) (total) +#% to Cold Resistance&mod_min=30&mod_max=&mod_name=(pseudo) (total) +#% to Fire Resistance&mod_min=30&mod_max=&mod_name=(pseudo) (total) +#% to Lightning Resistance&mod_min=30&mod_max=&group_type=Count&group_min=2&group_max=2&group_count=3&mod_name=(pseudo) (total) +# to maximum Life&mod_min=60&mod_max=&mod_name=(pseudo) (total) +# to Dexterity&mod_min=30&mod_max=&group_type=And&group_min=&group_max=&group_count=2

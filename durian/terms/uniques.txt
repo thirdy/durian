@@ -1,0 +1,438 @@
+;
+; Uniques
+;
+ArakuTiki                               =     name=Araku Tiki
+Sidhebreath                             =     name=Sidhebreath
+KaruiWard                               =     name=Karui Ward
+Stone(of)?Lazhwar                       =     name=Stone of Lazhwar
+Demigod'?s?Presence                     =     name=Demigod's Presence
+(The)?Ignomon                           =     name=The Ignomon
+Talisman(of)?(the)?Victor               =     name=Talisman of the Victor
+Atziri'?s?Foible                        =     name=Atziri's Foible
+Daresso'?s?Salute                       =     name=Daresso's Salute
+Shaper'?s?Seed                          =     name=Shaper's Seed
+Victario'?s?Acuity                      =     name=Victario's Acuity
+Astramentis                             =     name=Astramentis
+Blood(of)?Corruption                    =     name=Blood of Corruption
+CarnageHeart                            =     name=Carnage Heart
+Eye(of)?Chayula                         =     name=Eye of Chayula
+Tear(of)?Purity                         =     name=Tear of Purity
+Ungil'?s?Harmony                        =     name=Ungil's Harmony
+Voll'?s?Devotion                        =     name=Voll's Devotion
+Marylene'?s?Fallacy                     =     name=Marylene's Fallacy
+(The)?Anvil                             =     name=The Anvil
+WarpedTimepiece                         =     name=Warped Timepiece
+Bloodgrip                               =     name=Bloodgrip
+Rashkaldor'?s?Patience                  =     name=Rashkaldor's Patience
+(The)?ScreamingEagle                    =     name=The Screaming Eagle
+Limbsplit                               =     name=Limbsplit
+Dreadarc                                =     name=Dreadarc
+Wideswing                               =     name=Wideswing
+RelentlessFury                          =     name=Relentless Fury
+Reaper'?s?Pursuit                       =     name=Reaper's Pursuit
+(The)?Harvest                           =     name=The Harvest
+Moonbender'?s?Wing                      =     name=Moonbender's Wing
+(The)?BloodReaper                       =     name=The Blood Reaper
+Kaom'?s?Primacy                         =     name=Kaom's Primacy
+SoulTaker                               =     name=Soul Taker
+Wings(of)?Entropy                       =     name=Wings of Entropy
+Jack,(the)?Axe                          =     name=Jack, the Axe
+Kingmaker                               =     name=Kingmaker
+Dyadus                                  =     name=Dyadus
+Atziri'?s?Disfavour                     =     name=Atziri's Disfavour
+Demigod'?s?Bounty                       =     name=Demigod's Bounty
+Meginord'?s?Girdle                      =     name=Meginord's Girdle
+Wurm'?s?Molt                            =     name=Wurm's Molt
+PerandusBlazon                          =     name=Perandus Blazon
+(The)?Magnate                           =     name=The Magnate
+Belt(of)?(the)?Deceiver                 =     name=Belt of the Deceiver
+BatedBreath                             =     name=Bated Breath
+Prismweave                              =     name=Prismweave
+Sunblast                                =     name=Sunblast
+Headhunter                              =     name=Headhunter
+Maligaro'?s?Restraint                   =     name=Maligaro's Restraint
+Soulthirst                              =     name=Soulthirst
+ImmortalFlesh                           =     name=Immortal Flesh
+DyadianDawn                             =     name=Dyadian Dawn
+Doryani'?s?Invitation                   =     name=Doryani's Invitation
+Auxium                                  =     name=Auxium
+Wanderlust                              =     name=Wanderlust
+Wondertrap                              =     name=Wondertrap
+Demigod'?s?Stride                       =     name=Demigod's Stride
+Victario'?s?Flight                      =     name=Victario's Flight
+Nomic'?s?Storm                          =     name=Nomic's Storm
+Dusktoe                                 =     name=Dusktoe
+Bones(of)?Ullr                          =     name=Bones of Ullr
+Deerstalker                             =     name=Deerstalker
+Sundance                                =     name=Sundance
+Wake(of)?Destruction                    =     name=Wake of Destruction
+Lioneye'?s?Paws                         =     name=Lioneye's Paws
+Shavronne'?s?Pace                       =     name=Shavronne's Pace
+Windscream                              =     name=Windscream
+Goldwyrm                                =     name=Goldwyrm
+BrinerotWhalers                         =     name=Brinerot Whalers
+MutewindWhispersteps                    =     name=Mutewind Whispersteps
+(The)?BloodDance                        =     name=The Blood Dance
+RedbladeTramplers                       =     name=Redblade Tramplers
+Alberon'?s?Warpath                      =     name=Alberon's Warpath
+Rainbowstride                           =     name=Rainbowstride
+Gang'?s?Momentum                        =     name=Gang's Momentum
+SinTrek                                 =     name=Sin Trek
+DarkrayVectors                          =     name=Darkray Vectors
+SteppanEard                             =     name=Steppan Eard
+Kaom'?s?Roots                           =     name=Kaom's Roots
+Atziri'?s?Step                          =     name=Atziri's Step
+Silverbranch                            =     name=Silverbranch
+QuillRain                               =     name=Quill Rain
+StormCloud                              =     name=Storm Cloud
+Doomfletch                              =     name=Doomfletch
+Death'?s?Harp                           =     name=Death's Harp
+Infractem                               =     name=Infractem
+Null'?s?Inclination                     =     name=Null's Inclination
+ChinSol                                 =     name=Chin Sol
+Darkscorn                               =     name=Darkscorn
+VoltaxicRift                            =     name=Voltaxic Rift
+Lioneye'?s?Glare                        =     name=Lioneye's Glare
+Windripper                              =     name=Windripper
+Bramblejack                             =     name=Bramblejack
+tabula|TabulaRasa                       =     name=Tabula Rasa
+ThousandRibbons                         =     name=Thousand Ribbons
+Briskwrap                               =     name=Briskwrap
+Ashrend                                 =     name=Ashrend
+SolarisLorica                           =     name=Solaris Lorica
+Cloak(of)?Flame                         =     name=Cloak of Flame
+Foxshade                                =     name=Foxshade
+Voll'?s?Protector                       =     name=Voll's Protector
+Zahndethus'?Cassock                     =     name=Zahndethus' Cassock
+Icetomb                                 =     name=Icetomb
+Ambu'?s?Charge                          =     name=Ambu's Charge
+Belly(of)?(the)?Beast                   =     name=Belly of the Beast
+LightbaneRaiment                        =     name=Lightbane Raiment
+SoulMantle                              =     name=Soul Mantle
+(The)?Covenant                          =     name=The Covenant
+Cloak(of)?Defiance                      =     name=Cloak of Defiance
+Victario'?s?Influence                   =     name=Victario's Influence
+Bronn'?s?Lithe                          =     name=Bronn's Lithe
+Greed'?s?Embrace                        =     name=Greed's Embrace
+(The)?RatCage                           =     name=The Rat Cage
+Lioneye'?s?Vision                       =     name=Lioneye's Vision
+qotf|Queen(of)?(the)?Forest             =     name=Queen of the Forest
+VisMortis                               =     name=Vis Mortis
+LightningCoil                           =     name=Lightning Coil
+Kingsguard                              =     name=Kingsguard
+CarcassJack                             =     name=Carcass Jack
+Death'?s?Oath                           =     name=Death's Oath
+Shavronne'?s?Wrappings                  =     name=Shavronne's Wrappings
+Daresso'?s?Defiance                     =     name=Daresso's Defiance
+Hyrri'?s?Ire                            =     name=Hyrri's Ire
+InfernalMantle                          =     name=Infernal Mantle
+Kaom'?s?Heart                           =     name=Kaom's Heart
+Cherrubim'?s?Maleficence                =     name=Cherrubim's Maleficence
+IncandescentHeart                       =     name=Incandescent Heart
+(The)?RestlessWard                      =     name=The Restless Ward
+Atziri'?s?Splendour                     =     name=Atziri's Splendour
+LastResort                              =     name=Last Resort
+Wildslash                               =     name=Wildslash
+AlDhih                                  =     name=Al Dhih
+MortemMorsu                             =     name=Mortem Morsu
+Cybil'?s?Paw                            =     name=Cybil's Paw
+Ornament(of)?(the)?East                 =     name=Ornament of the East
+Bloodseeker                             =     name=Bloodseeker
+EssentiaSanguis                         =     name=Essentia Sanguis
+Izaro'?s?Dilemma                        =     name=Izaro's Dilemma
+Goredrill                               =     name=Goredrill
+Bloodplay                               =     name=Bloodplay
+Ungil'?s?Gauche                         =     name=Ungil's Gauche
+Mightflay                               =     name=Mightflay
+Heartbreaker                            =     name=Heartbreaker
+(The)?ConsumingDark                     =     name=The Consuming Dark
+Mark(of)?(the)?DoubtingKnight           =     name=Mark of the Doubting Knight
+Bino'?s?KitchenKnife                    =     name=Bino's Kitchen Knife
+Divinarius                              =     name=Divinarius
+Song(of)?(the)?Sirens                   =     name=Song of the Sirens
+Doedre'?s?Elixir                        =     name=Doedre's Elixir
+Taste(of)?Hate                          =     name=Taste of Hate
+ForbiddenTaste                          =     name=Forbidden Taste
+Lion'?s?Roar                            =     name=Lion's Roar
+DivinationDistillate                    =     name=Divination Distillate
+Blood(of)?(the)?Karui                   =     name=Blood of the Karui
+Lavianga'?s?Spirit                      =     name=Lavianga's Spirit
+Atziri'?s?Promise                       =     name=Atziri's Promise
+Rumi'?s?Concoction                      =     name=Rumi's Concoction
+LochtonialCaress                        =     name=Lochtonial Caress
+Ondar'?s?Clasp                          =     name=Ondar's Clasp
+Shackles(of)?(the)?Wretched             =     name=Shackles of the Wretched
+Hrimsorrow                              =     name=Hrimsorrow
+Sadima'?s?Touch                         =     name=Sadima's Touch
+Demigod'?s?Touch                        =     name=Demigod's Touch
+Doedre'?s?Tenure                        =     name=Doedre's Tenure
+FleshandSpirit                          =     name=Flesh and Spirit
+Facebreaker                             =     name=Facebreaker
+Maligaro'?s?Virtuosity                  =     name=Maligaro's Virtuosity
+Asenath'?s?GentleTouch                  =     name=Asenath's Gentle Touch
+Slitherpinch                            =     name=Slitherpinch
+VaalCaress                              =     name=Vaal Caress
+ShadowsandDust                          =     name=Shadows and Dust
+Meginord'?s?Vise                        =     name=Meginord's Vise
+Aurseize                                =     name=Aurseize
+Winds(of)?Change                        =     name=Winds of Change
+Southbound                              =     name=Southbound
+Empire'?s?Grasp                         =     name=Empire's Grasp
+Voidbringer                             =     name=Voidbringer
+NullandVoid                             =     name=Null and Void
+Snakebite                               =     name=Snakebite
+Doryani'?s?Fist                         =     name=Doryani's Fist
+Repentance                              =     name=Repentance
+Surgebinders                            =     name=Surgebinders
+Thunderfist                             =     name=Thunderfist
+Atziri'?s?Acuity                        =     name=Atziri's Acuity
+Crown(of)?Thorns                        =     name=Crown of Thorns
+EzomytePeak                             =     name=Ezomyte Peak
+Goldrim                                 =     name=Goldrim
+Asenath'?s?Mark                         =     name=Asenath's Mark
+Demigod'?s?Triumph                      =     name=Demigod's Triumph
+Fairgraves'?Tricorne                    =     name=Fairgraves' Tricorne
+Honourhome                              =     name=Honourhome
+Malachai'?s?Simula                      =     name=Malachai's Simula
+Heatshiver                              =     name=Heatshiver
+Veil(of)?(the)?Night                    =     name=Veil of the Night
+(The)?Peregrine                         =     name=The Peregrine
+LeerCast                                =     name=Leer Cast
+Deidbell                                =     name=Deidbell
+(The)?ThreeDragons                      =     name=The Three Dragons
+Skullhead                               =     name=Skullhead
+Mindspiral                              =     name=Mindspiral
+(The)?Gull                              =     name=The Gull
+Doedre'?s?Scorn                         =     name=Doedre's Scorn
+BlackSunCrest                           =     name=Black Sun Crest
+Crown(of)?(the)?PaleKing                =     name=Crown of the Pale King
+Geofri'?s?Crest                         =     name=Geofri's Crest
+Chitus'?Apex                            =     name=Chitus' Apex
+Hrimnor'?s?Resolve                      =     name=Hrimnor's Resolve
+Rat'?s?Nest                             =     name=Rat's Nest
+Abyssus                                 =     name=Abyssus
+Starkonja'?s?Head                       =     name=Starkonja's Head
+(The)?Vertex                            =     name=The Vertex
+(The)?BrokenCrown                       =     name=The Broken Crown
+Alpha'?s?Howl                           =     name=Alpha's Howl
+RimeGaze                                =     name=Rime Gaze
+Scold'?s?Bridle                         =     name=Scold's Bridle
+Devoto'?s?Devotion                      =     name=Devoto's Devotion
+(The)?Bringer(of)?Rain                  =     name=The Bringer of Rain
+Crown(of)?Eyes                          =     name=Crown of Eyes
+Ylfeban'?s?Trickery                     =     name=Ylfeban's Trickery
+AnatomicalKnowledge                     =     name=Anatomical Knowledge
+AncientWaystones                        =     name=Ancient Waystones
+Apparitions                             =     name=Apparitions
+Army(of)?Bones                          =     name=Army of Bones
+Assassin'?s?Haste                       =     name=Assassin's Haste
+Atziri'?s?Reign                         =     name=Atziri's Reign
+BloodSacrifice                          =     name=Blood Sacrifice
+Brawn                                   =     name=Brawn
+BrittleBarrier                          =     name=Brittle Barrier
+BruteForceSolution                      =     name=Brute Force Solution
+CarefulPlanning                         =     name=Careful Planning
+Chill(of)?Corruption                    =     name=Chill of Corruption
+ClearMind                               =     name=Clear Mind
+ColdSteel                               =     name=Cold Steel
+Combustibles                            =     name=Combustibles
+Conqueror'?s?Efficiency                 =     name=Conqueror's Efficiency
+Conqueror'?s?Longevity                  =     name=Conqueror's Longevity
+Conqueror'?s?Potency                    =     name=Conqueror's Potency
+CorruptedEnergy                         =     name=Corrupted Energy
+EfficientTraining                       =     name=Efficient Training
+EldritchKnowledge                       =     name=Eldritch Knowledge
+EnergisedArmour                         =     name=Energised Armour
+EnergyFromWithin                        =     name=Energy From Within
+FertileMind                             =     name=Fertile Mind
+FeveredMind                             =     name=Fevered Mind
+Fireborn                                =     name=Fireborn
+FluidMotion                             =     name=Fluid Motion
+FortifiedLegion                         =     name=Fortified Legion
+FragileBloom                            =     name=Fragile Bloom
+Fragility                               =     name=Fragility
+HealthyMind                             =     name=Healthy Mind
+HiddenPotential                         =     name=Hidden Potential
+Hotfooted                               =     name=Hotfooted
+HungryAbyss                             =     name=Hungry Abyss
+Inertia                                 =     name=Inertia
+InspiredLearning                        =     name=Inspired Learning
+IntuitiveLeap                           =     name=Intuitive Leap
+Izaro'?s?Turmoil                        =     name=Izaro's Turmoil
+Lioneye'?s?Fall                         =     name=Lioneye's Fall
+MaliciousIntent                         =     name=Malicious Intent
+Mantra(of)?Flames                       =     name=Mantra of Flames
+MartialArtistry                         =     name=Martial Artistry
+MightinAllForms                         =     name=Might in All Forms
+MutatedGrowth                           =     name=Mutated Growth
+Pacifism                                =     name=Pacifism
+Poacher'?s?Aim                          =     name=Poacher's Aim
+Powerlessness                           =     name=Powerlessness
+Pugilist                                =     name=Pugilist
+Rain(of)?Splinters                      =     name=Rain of Splinters
+SacrificialHarvest                      =     name=Sacrificial Harvest
+Self-?Flagellation                      =     name=Self-Flagellation
+Spire(of)?Stone                         =     name=Spire of Stone
+StaticElectricity                       =     name=Static Electricity
+SurvivalInstincts                       =     name=Survival Instincts
+SurvivalSecrets                         =     name=Survival Secrets
+SurvivalSkills                          =     name=Survival Skills
+VaalSentencing                          =     name=Vaal Sentencing
+Warlord'?s?Reach                        =     name=Warlord's Reach
+Weight(of)?Sin                          =     name=Weight of Sin
+Gorebreaker                             =     name=Gorebreaker
+Brightbeak                              =     name=Brightbeak
+Lavianga'?s?Wisdom                      =     name=Lavianga's Wisdom
+Flesh-?Eater                            =     name=Flesh-Eater
+Cameria'?s?Maul                         =     name=Cameria's Maul
+Mj[öo]lner                              =     name=Mjölner
+CallinellusMalleus                      =     name=Callinellus Malleus
+Hrimnor'?s?Hymn                         =     name=Hrimnor's Hymn
+Quecholli                               =     name=Quecholli
+Geofri'?s?Baptism                       =     name=Geofri's Baptism
+ChoberChaber                            =     name=Chober Chaber
+Jorrhast'?s?Blacksteel                  =     name=Jorrhast's Blacksteel
+Voidhome                                =     name=Voidhome
+MarohiErqi                              =     name=Marohi Erqi
+Kongor'?s?UndyingRage                   =     name=Kongor's Undying Rage
+Acton'?s?Nightmare                      =     name=Acton's Nightmare
+DeathandTaxes                           =     name=Death and Taxes
+Hall(of)?Grandmasters                   =     name=Hall of Grandmasters
+Maelstr[öo]m(of)?Chaos                  =     name=Maelström of Chaos
+MaoKun                                  =     name=Mao Kun
+Oba'?s?CursedTrove                      =     name=Oba's Cursed Trove
+Olmec'?s?Sanctum                        =     name=Olmec's Sanctum
+Poorjoy'?s?Asylum                       =     name=Poorjoy's Asylum
+(The)?Coward'?s?Trial                   =     name=The Coward's Trial
+Vaults(of)?Atziri                       =     name=Vaults of Atziri
+WhakawairuaTuahu                        =     name=Whakawairua Tuahu
+Craghead                                =     name=Craghead
+Broadstroke                             =     name=Broadstroke
+Asphyxia'?s?Wrath                       =     name=Asphyxia's Wrath
+Hyrri'?s?Bite                           =     name=Hyrri's Bite
+Blackgleam                              =     name=Blackgleam
+Rearguard                               =     name=Rearguard
+Drillneck                               =     name=Drillneck
+Maloney'?s?Nightfall                    =     name=Maloney's Nightfall
+SoulStrike                              =     name=Soul Strike
+Blackheart                              =     name=Blackheart
+Doedre'?s?Damning                       =     name=Doedre's Damning
+Kaom'?s?Sign                            =     name=Kaom's Sign
+PerandusSignet                          =     name=Perandus Signet
+Malachai'?s?Artifice                    =     name=Malachai's Artifice
+Andvarius                               =     name=Andvarius
+DreamFragments                          =     name=Dream Fragments
+Emberwake                               =     name=Emberwake
+Mokou'?s?Embrace                        =     name=Mokou's Embrace
+Pyre                                    =     name=Pyre
+Demigod'?s?Eye                          =     name=Demigod's Eye
+Berek'?s?Grip                           =     name=Berek's Grip
+Berek'?s?Pass                           =     name=Berek's Pass
+Berek'?s?Respite                        =     name=Berek's Respite
+Call(of)?(the)?Brotherhood              =     name=Call of the Brotherhood
+HeartboundLoop                          =     name=Heartbound Loop
+Kikazaru                                =     name=Kikazaru
+Tasalio'?s?Sign                         =     name=Tasalio's Sign
+Timeclasp                               =     name=Timeclasp
+Bloodboil                               =     name=Bloodboil
+LeHeup(of)?All                          =     name=Le Heup of All
+GiftsfromAbove                          =     name=Gifts from Above
+Ngamahu'?s?Sign                         =     name=Ngamahu's Sign
+Lori'?s?Lantern                         =     name=Lori's Lantern
+Shavronne'?s?Revelation                 =     name=Shavronne's Revelation
+(The)?Taming                            =     name=The Taming
+Thief'?s?Torment                        =     name=Thief's Torment
+Valako'?s?Sign                          =     name=Valako's Sign
+BrinerotMark                            =     name=Brinerot Mark
+MutewindSeal                            =     name=Mutewind Seal
+RedbladeBand                            =     name=Redblade Band
+Sibyl'?s?Lament                         =     name=Sibyl's Lament
+Voideye                                 =     name=Voideye
+DeathRush                               =     name=Death Rush
+Romira'?s?Banquet                       =     name=Romira's Banquet
+(The)?Pariah                            =     name=The Pariah
+Ventor'?s?Gamble                        =     name=Ventor's Gamble
+Ming'?s?Heart                           =     name=Ming's Heart
+Spine(of)?(the)?FirstClaimant           =     name=Spine of the First Claimant
+Brutus'?LeadSprinkler                   =     name=Brutus' Lead Sprinkler
+(The)?DarkSeer                          =     name=The Dark Seer
+Nycta'?s?Lantern                        =     name=Nycta's Lantern
+(The)?SupremeTruth                      =     name=The Supreme Truth
+Death'?s?Hand                           =     name=Death's Hand
+DoonCuebiyari                           =     name=Doon Cuebiyari
+Mon'?tregul'?s?Grasp                    =     name=Mon'tregul's Grasp
+Doryani'?s?Catalyst                     =     name=Doryani's Catalyst
+Wheel(of)?(the)?Stormsail               =     name=Wheel of the Stormsail
+Springleaf                              =     name=Springleaf
+Crest(of)?Perandus                      =     name=Crest of Perandus
+Demigod'?s?Beacon                       =     name=Demigod's Beacon
+Kaltenhalt                              =     name=Kaltenhalt
+TrolltimberSpire                        =     name=Trolltimber Spire
+(The)?DeepOne'?s?Hide                   =     name=The Deep One's Hide
+BrinerotFlag                            =     name=Brinerot Flag
+MatuaTupuna                             =     name=Matua Tupuna
+Chalice(of)?Horrors                     =     name=Chalice of Horrors
+Titucius'?Span                          =     name=Titucius' Span
+Sentari'?s?Answer                       =     name=Sentari's Answer
+RedbladeBanner                          =     name=Redblade Banner
+MutewindPennant                         =     name=Mutewind Pennant
+Maligaro'?s?Lens                        =     name=Maligaro's Lens
+GreatOldOne'?s?Ward                     =     name=Great Old One's Ward
+Atziri'?s?Mirror                        =     name=Atziri's Mirror
+Daresso'?s?Courage                      =     name=Daresso's Courage
+Saffell'?s?Frame                        =     name=Saffell's Frame
+Chernobog'?s?Pillar                     =     name=Chernobog's Pillar
+AegisAurora                             =     name=Aegis Aurora
+ThousandTeethTemu                       =     name=Thousand Teeth Temu
+Rise(of)?(the)?Phoenix                  =     name=Rise of the Phoenix
+BrokenFaith                             =     name=Broken Faith
+PrismGuardian                           =     name=Prism Guardian
+RathpithGlobe                           =     name=Rathpith Globe
+Jaws(of)?Agony                          =     name=Jaws of Agony
+Lioneye'?s?Remorse                      =     name=Lioneye's Remorse
+Fencoil                                 =     name=Fencoil
+(The)?BloodThorn                        =     name=The Blood Thorn
+Pillar(of)?(the)?CagedGod               =     name=Pillar of the Caged God
+Realmshaper                             =     name=Realmshaper
+DyingBreath                             =     name=Dying Breath
+(The)?Stormheart                        =     name=The Stormheart
+(The)?WhisperingIce                     =     name=The Whispering Ice
+TremorRod                               =     name=Tremor Rod
+Sire(of)?Shards                         =     name=Sire of Shards
+(The)?SearingTouch                      =     name=The Searing Touch
+Taryn'?s?Shiver                         =     name=Taryn's Shiver
+AgnerodEast                             =     name=Agnerod East
+AgnerodNorth                            =     name=Agnerod North
+AgnerodSouth                            =     name=Agnerod South
+Hegemony'?s?Era                         =     name=Hegemony's Era
+Pledge(of)?Hands                        =     name=Pledge of Hands
+Redbeak                                 =     name=Redbeak
+(The)?GoddessBound                      =     name=The Goddess Bound
+(The)?Princess                          =     name=The Princess
+Aurumvorax                              =     name=Aurumvorax
+Fidelitas'?Spike                        =     name=Fidelitas' Spike
+Lakishu'?s?Blade                        =     name=Lakishu's Blade
+(The)?GoddessScorned                    =     name=The Goddess Scorned
+Chitus'?Needle                          =     name=Chitus' Needle
+EphemeralEdge                           =     name=Ephemeral Edge
+PrismaticEclipse                        =     name=Prismatic Eclipse
+Ichimonji                               =     name=Ichimonji
+Hyaon'?s?Fury                           =     name=Hyaon's Fury
+Rebuke(of)?(the)?Vaal                   =     name=Rebuke of the Vaal
+Dreamfeather                            =     name=Dreamfeather
+Shiversting                             =     name=Shiversting
+Edge(of)?Madness                        =     name=Edge of Madness
+Queen'?s?Decree                         =     name=Queen's Decree
+Rigvald'?s?Charge                       =     name=Rigvald's Charge
+TerminusEst                             =     name=Terminus Est
+Doomsower                               =     name=Doomsower
+Oro'?s?Sacrifice                        =     name=Oro's Sacrifice
+Lifesprig                               =     name=Lifesprig
+Abberath'?s?Horn                        =     name=Abberath's Horn
+ReverberationRod                        =     name=Reverberation Rod
+Twyzel                                  =     name=Twyzel
+MidnightBargain                         =     name=Midnight Bargain
+Moonsorrow                              =     name=Moonsorrow
+Apep'?s?Rage                            =     name=Apep's Rage
+Piscator'?s?Vigil                       =     name=Piscator's Vigil
+VoidBattery                             =     name=Void Battery

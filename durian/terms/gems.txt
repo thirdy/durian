@@ -1,0 +1,251 @@
+AbyssalCry                              =     name=Abyssal Cry
+Anger                                   =     name=Anger
+AnimateGuardian                         =     name=Animate Guardian
+Cleave                                  =     name=Cleave
+DecoyTotem                              =     name=Decoy Totem
+Determination                           =     name=Determination
+DevouringTotem                          =     name=Devouring Totem
+DominatingBlow                          =     name=Dominating Blow
+EnduringCry                             =     name=Enduring Cry
+FlameTotem                              =     name=Flame Totem
+GlacialHammer                           =     name=Glacial Hammer
+GroundSlam                              =     name=Ground Slam
+HeavyStrike                             =     name=Heavy Strike
+HeraldofAsh                             =     name=Herald of Ash
+IceCrash                                =     name=Ice Crash
+ImmortalCall                            =     name=Immortal Call
+InfernalBlow                            =     name=Infernal Blow
+LeapSlam                                =     name=Leap Slam
+LightningStrike                         =     name=Lightning Strike
+MoltenShell                             =     name=Molten Shell
+MoltenStrike                            =     name=Molten Strike
+Punishment                              =     name=Punishment
+PurityofFire                            =     name=Purity of Fire
+RallyingCry                             =     name=Rallying Cry
+Reckoning                               =     name=Reckoning
+RejuvenationTotem                       =     name=Rejuvenation Totem
+SearingBond                             =     name=Searing Bond
+ShieldCharge                            =     name=Shield Charge
+ShockwaveTotem                          =     name=Shockwave Totem
+StaticStrike                            =     name=Static Strike
+SummonFlameGolem                        =     name=Summon Flame Golem
+Sweep                                   =     name=Sweep
+Vengeance                               =     name=Vengeance
+VigilantStrike                          =     name=Vigilant Strike
+Vitality                                =     name=Vitality
+Warlord'?sMark                          =     name=Warlord's Mark
+AnimateWeapon                           =     name=Animate Weapon
+ArcticArmour                            =     name=Arctic Armour
+Barrage                                 =     name=Barrage
+BearTrap                                =     name=Bear Trap
+BladeVortex                             =     name=Blade Vortex
+Bladefall                               =     name=Bladefall
+BlastRain                               =     name=Blast Rain
+BlinkArrow                              =     name=Blink Arrow
+BloodRage                               =     name=Blood Rage
+BurningArrow                            =     name=Burning Arrow
+Cyclone                                 =     name=Cyclone
+Desecrate                               =     name=Desecrate
+DetonateDead                            =     name=Detonate Dead
+DoubleStrike                            =     name=Double Strike
+DualStrike                              =     name=Dual Strike
+ElementalHit                            =     name=Elemental Hit
+EtherealKnives                          =     name=Ethereal Knives
+ExplosiveArrow                          =     name=Explosive Arrow
+FireTrap                                =     name=Fire Trap
+FlickerStrike                           =     name=Flicker Strike
+FreezeMine                              =     name=Freeze Mine
+Frenzy                                  =     name=Frenzy
+FrostBlades                             =     name=Frost Blades
+Grace                                   =     name=Grace
+Haste                                   =     name=Haste
+Hatred                                  =     name=Hatred
+HeraldofIce                             =     name=Herald of Ice
+IceShot                                 =     name=Ice Shot
+LightningArrow                          =     name=Lightning Arrow
+MirrorArrow                             =     name=Mirror Arrow
+PhaseRun                                =     name=Phase Run
+Poacher'?sMark                          =     name=Poacher's Mark
+PoisonArrow                             =     name=Poison Arrow
+ProjectileWeakness                      =     name=Projectile Weakness
+Puncture                                =     name=Puncture
+PurityofIce                             =     name=Purity of Ice
+RainofArrows                            =     name=Rain of Arrows
+Reave                                   =     name=Reave
+Riposte                                 =     name=Riposte
+ShrapnelShot                            =     name=Shrapnel Shot
+SiegeBallista                           =     name=Siege Ballista
+SmokeMine                               =     name=Smoke Mine
+SpectralThrow                           =     name=Spectral Throw
+SplitArrow                              =     name=Split Arrow
+SummonIceGolem                          =     name=Summon Ice Golem
+TemporalChains                          =     name=Temporal Chains
+TornadoShot                             =     name=Tornado Shot
+ViperStrike                             =     name=Viper Strike
+WhirlingBlades                          =     name=Whirling Blades
+WildStrike                              =     name=Wild Strike
+Arc                                     =     name=Arc
+ArcticBreath                            =     name=Arctic Breath
+Assassin'?sMark                         =     name=Assassin's Mark
+BallLightning                           =     name=Ball Lightning
+BoneOffering                            =     name=Bone Offering
+Clarity                                 =     name=Clarity
+ColdSnap                                =     name=Cold Snap
+Conductivity                            =     name=Conductivity
+Contagion                               =     name=Contagion
+ConversionTrap                          =     name=Conversion Trap
+Convocation                             =     name=Convocation
+Discharge                               =     name=Discharge
+Discipline                              =     name=Discipline
+ElementalWeakness                       =     name=Elemental Weakness
+Enfeeble                                =     name=Enfeeble
+EssenceDrain                            =     name=Essence Drain
+FireNovaMine                            =     name=Fire Nova Mine
+Fireball                                =     name=Fireball
+Firestorm                               =     name=Firestorm
+FlameDash                               =     name=Flame Dash
+FlameSurge                              =     name=Flame Surge
+Flameblast                              =     name=Flameblast
+Flammability                            =     name=Flammability
+FleshOffering                           =     name=Flesh Offering
+FreezingPulse                           =     name=Freezing Pulse
+FrostWall                               =     name=Frost Wall
+Frostbite                               =     name=Frostbite
+GlacialCascade                          =     name=Glacial Cascade
+HeraldofThunder                         =     name=Herald of Thunder
+IceNova                                 =     name=Ice Nova
+IceSpear                                =     name=Ice Spear
+Incinerate                              =     name=Incinerate
+KineticBlast                            =     name=Kinetic Blast
+LightningTendrils                       =     name=Lightning Tendrils
+LightningTrap                           =     name=Lightning Trap
+LightningWarp                           =     name=Lightning Warp
+MagmaOrb                                =     name=Magma Orb
+PowerSiphon                             =     name=Power Siphon
+PurityofElements                        =     name=Purity of Elements
+PurityofLightning                       =     name=Purity of Lightning
+RaiseSpectre                            =     name=Raise Spectre
+RaiseZombie                             =     name=Raise Zombie
+RighteousFire                           =     name=Righteous Fire
+ShockNova                               =     name=Shock Nova
+Spark                                   =     name=Spark
+StormCall                               =     name=Storm Call
+SummonChaosGolem                        =     name=Summon Chaos Golem
+SummonRagingSpirit                      =     name=Summon Raging Spirit
+SummonSkeletons                         =     name=Summon Skeletons
+TempestShield                           =     name=Tempest Shield
+Vulnerability                           =     name=Vulnerability
+Wither                                  =     name=Wither
+Wrath                                   =     name=Wrath
+DetonateMines                           =     name=Detonate Mines
+Portal                                  =     name=Portal
+AddedFireDamage                         =     name=Added Fire Damage
+BloodMagic                              =     name=Blood Magic
+Bloodlust                               =     name=Bloodlust
+CastonMeleeKill                         =     name=Cast on Melee Kill
+CastwhenDamageTaken                     =     name=Cast when Damage Taken
+ColdtoFire                              =     name=Cold to Fire
+Empower                                 =     name=Empower
+EnduranceChargeonMeleeStun              =     name=Endurance Charge on Melee Stun
+FirePenetration                         =     name=Fire Penetration
+Fortify                                 =     name=Fortify
+Generosity                              =     name=Generosity
+IncreasedBurningDamage                  =     name=Increased Burning Damage
+IncreasedDuration                       =     name=Increased Duration
+IronGrip                                =     name=Iron Grip
+IronWill                                =     name=Iron Will
+ItemQuantity                            =     name=Item Quantity
+Knockback                               =     name=Knockback
+LessDuration                            =     name=Less Duration
+LifeGainonHit                           =     name=Life Gain on Hit
+LifeLeech                               =     name=Life Leech
+MeleeDamageonFullLife                   =     name=Melee Damage on Full Life
+MeleePhysicalDamage                     =     name=Melee Physical Damage
+MeleeSplash                             =     name=Melee Splash
+Multistrike                             =     name=Multistrike
+RangedAttackTotem                       =     name=Ranged Attack Totem
+ReducedMana                             =     name=Reduced Mana
+SpellTotem                              =     name=Spell Totem
+Stun                                    =     name=Stun
+WeaponElementalDamage                   =     name=Weapon Elemental Damage
+AddedColdDamage                         =     name=Added Cold Damage
+AdditionalAccuracy                      =     name=Additional Accuracy
+Blind                                   =     name=Blind
+BlockChanceReduction                    =     name=Block Chance Reduction
+CastOnCriticalStrike                    =     name=Cast On Critical Strike
+CastonDeath                             =     name=Cast on Death
+Chain                                   =     name=Chain
+ChancetoFlee                            =     name=Chance to Flee
+ColdPenetration                         =     name=Cold Penetration
+CullingStrike                           =     name=Culling Strike
+Enhance                                 =     name=Enhance
+FasterAttacks                           =     name=Faster Attacks
+FasterProjectiles                       =     name=Faster Projectiles
+Fork                                    =     name=Fork
+GreaterMultipleProjectiles              =     name=Greater Multiple Projectiles
+Hypothermia                             =     name=Hypothermia
+IceBite                                 =     name=Ice Bite
+LesserMultipleProjectiles               =     name=Lesser Multiple Projectiles
+ManaLeech                               =     name=Mana Leech
+MultipleTraps                           =     name=Multiple Traps
+PhysicalProjectileAttackDamage          =     name=Physical Projectile Attack Damage
+Pierce                                  =     name=Pierce
+PointBlank                              =     name=Point Blank
+RapidDecay                              =     name=Rapid Decay
+SlowerProjectiles                       =     name=Slower Projectiles
+Trap                                    =     name=Trap
+TrapandMineDamage                       =     name=Trap and Mine Damage
+VoidManipulation                        =     name=Void Manipulation
+AddedChaosDamage                        =     name=Added Chaos Damage
+AddedLightningDamage                    =     name=Added Lightning Damage
+Blasphemy                               =     name=Blasphemy
+CastwhenStunned                         =     name=Cast when Stunned
+ChancetoIgnite                          =     name=Chance to Ignite
+ConcentratedEffect                      =     name=Concentrated Effect
+ControlledDestruction                   =     name=Controlled Destruction
+CurseonHit                              =     name=Curse on Hit
+ElementalProliferation                  =     name=Elemental Proliferation
+Enlighten                               =     name=Enlighten
+FasterCasting                           =     name=Faster Casting
+IncreasedAreaofEffect                   =     name=Increased Area of Effect
+IncreasedCriticalDamage                 =     name=Increased Critical Damage
+IncreasedCriticalStrikes                =     name=Increased Critical Strikes
+Innervate                               =     name=Innervate
+ItemRarity                              =     name=Item Rarity
+LightningPenetration                    =     name=Lightning Penetration
+MinionandTotemElementalResistance       =     name=Minion and Totem Elemental Resistance
+MinionDamage                            =     name=Minion Damage
+MinionLife                              =     name=Minion Life
+MinionSpeed                             =     name=Minion Speed
+PhysicaltoLightning                     =     name=Physical to Lightning
+PowerChargeOnCritical                   =     name=Power Charge On Critical
+RemoteMine                              =     name=Remote Mine
+SpellEcho                               =     name=Spell Echo
+VaalGlacialHammer                       =     name=Vaal Glacial Hammer
+VaalGroundSlam                          =     name=Vaal Ground Slam
+VaalImmortalCall                        =     name=Vaal Immortal Call
+VaalLightningStrike                     =     name=Vaal Lightning Strike
+VaalMoltenShell                         =     name=Vaal Molten Shell
+VaalBurningArrow                        =     name=Vaal Burning Arrow
+VaalCyclone                             =     name=Vaal Cyclone
+VaalDetonateDead                        =     name=Vaal Detonate Dead
+VaalDoubleStrike                        =     name=Vaal Double Strike
+VaalGrace                               =     name=Vaal Grace
+VaalHaste                               =     name=Vaal Haste
+VaalRainofArrows                        =     name=Vaal Rain of Arrows
+VaalReave                               =     name=Vaal Reave
+VaalSpectralThrow                       =     name=Vaal Spectral Throw
+VaalArc                                 =     name=Vaal Arc
+VaalClarity                             =     name=Vaal Clarity
+VaalColdSnap                            =     name=Vaal Cold Snap
+VaalDiscipline                          =     name=Vaal Discipline
+VaalFireball                            =     name=Vaal Fireball
+VaalFlameblast                          =     name=Vaal Flameblast
+VaalIceNova                             =     name=Vaal Ice Nova
+VaalLightningTrap                       =     name=Vaal Lightning Trap
+VaalLightningWarp                       =     name=Vaal Lightning Warp
+VaalPowerSiphon                         =     name=Vaal Power Siphon
+VaalRighteousFire                       =     name=Vaal Righteous Fire
+VaalSpark                               =     name=Vaal Spark
+VaalStormCall                           =     name=Vaal Storm Call
+VaalSummonSkeletons                     =     name=Vaal Summon Skeletons

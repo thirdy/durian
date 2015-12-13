@@ -1,0 +1,195 @@
+# Life Regenerated per second
+#% Chance to Block
+#% Chance to Block Spells
+#% Chance to Cause Monsters to Flee
+#% Chance to Dodge Attacks
+#% additional Block Chance With Staves
+#% additional Block Chance while Dual Wielding
+#% additional Chance to Block while Dual Wielding
+#% additional Chance to receive a Critical Strike
+#% chance of Arrows Piercing
+#% chance of Projectiles Piercing
+#% chance to Avoid being Frozen
+#% chance to Avoid being Ignited
+#% chance to Avoid being Shocked
+#% chance to Cause Monsters to Flee
+#% chance to Dodge Attacks
+#% chance to cause Bleeding on Hit
+#% increased Accuracy Rating
+#% increased Attack Speed
+#% increased Block Recovery
+#% increased Block and Stun Recovery
+#% increased Cast Speed
+#% increased Chaos Damage per equipped Corrupted Item
+#% increased Critical Strike Chance
+#% increased Damage while Dead
+#% increased Elemental Damage
+#% increased Elemental Damage with Weapons
+#% increased Endurance, Frenzy and Power Charge Duration
+#% increased Global Critical Strike Chance
+#% increased Global Critical Strike Multiplier
+#% increased Life Leeched per second per equipped Corrupted Item
+#% increased Mana Leeched per second per equipped Corrupted Item
+#% increased Mana Regeneration Rate
+#% increased Movement Speed
+#% increased Physical Damage
+#% increased Quantity of Fish Caught
+#% increased Radius of Area Skills
+#% increased Rarity of Fish Caught
+#% increased Rarity of Items found
+#% increased Skill Effect Duration
+#% increased Spell Damage
+#% increased Stun Duration on Enemies
+#% increased Stun Duration on enemies
+#% increased Stun Recovery
+#% increased Vaal Skill Damage
+#% of Cold Damage Leeched as Life
+#% of Damage taken Gained as Mana when Hit
+#% of Fire Damage Leeched as Life
+#% of Lightning Damage Leeched as Life
+#% of Physical Attack Damage Leeched as Life
+#% of Physical Damage Converted to Cold Damage
+#% of Physical Damage Converted to Fire Damage
+#% of Physical Damage Converted to Lightning Damage
+#% reduced Character Size
+#% reduced Chill Duration on You
+#% reduced Freeze Duration on You
+#% reduced Ignite Duration on You
+#% reduced Shock Duration on You
++# Life and Mana gained for each Enemy hit
++# Life gained for each Enemy hit by Attacks
++# Life gained for each Enemy hit by your Attacks
++# Life gained for each enemy hit by your Attacks
++# Mana gained for each Enemy hit by your Attacks
++# Mana gained for each enemy hit by your Attacks
++# Maximum Endurance Charge
++# Maximum Frenzy Charge
++# Maximum Power Charge
++# maximum Endurance Charge
++# maximum Frenzy Charge
++# maximum Power Charge
++# to Dexterity
++# to Dexterity and Intelligence
++# to Intelligence
++# to Level of Socketed Gems
++# to Level of Socketed Vaal Gems
++# to Strength
++# to Strength and Dexterity
++# to Strength and Intelligence
++# to Weapon range
++# to all Attributes
++# to maximum Energy Shield
++# to maximum Life
++# to maximum Mana
++#% to Chaos Resistance
++#% to Cold Resistance
++#% to Cold and Lightning Resistances
++#% to Fire Resistance
++#% to Fire and Cold Resistances
++#% to Fire and Lightning Resistances
++#% to Lightning Resistance
++#% to all Elemental Resistances
++#% to all maximum Resistances
+-# Physical Damage taken from Attacks
+Adds #-# Chaos Damage
+Adds #-# Chaos Damage to Attacks
+Adds #-# Cold Damage
+Adds #-# Cold Damage to Attacks
+Adds #-# Fire Damage
+Adds #-# Fire Damage to Attacks
+Adds #-# Fire Damage to Attacks with Bows
+Adds #-# Fire Damage to attacks with Bows
+Adds #-# Lightning Damage
+Adds #-# Lightning Damage to Attacks
+Adds #-# Physical Damage to Attacks
+Adds #-# Physical Damage to Attacks with Bows
+Adds #-# Physical Damage to attacks with Bows
+Adds 1-4 Physical Damage
+Adds an additional Arrow
+Can set up to 1 additional trap
+Cannot be Knocked Back
+Culling Strike
+Curse Enemies with level # Elemental Weakness on Hit
+Curse Enemies with level # Temporal Chains on Hit
+Curse Enemies with level # Vulnerability on Hit
+Damage Penetrates #% Elemental Resistances
+Enemies Cannot Leech Life From You
+Enemies can have # additional Curse
+Gems in this item are Supported by level # Added Fire Damage
+Gems in this item are Supported by level # Elemental Proliferation
+Gems in this item are Supported by level # Faster Casting
+Gems in this item are Supported by level # Increased Area of Effect
+Gems in this item are supported by level # Additional Accuracy
+Gems in this item are supported by level # Cast On Crit
+Gems in this item are supported by level # Cast when Stunned
+Gems in this item are supported by level # Fork
+Gems in this item are supported by level # Increased Critical Damage
+Gems in this item are supported by level # Life Leech
+Gems in this item are supported by level # Melee Splash
+Gems in this item are supported by level # Multistrike
+Gems in this item are supported by level # Stun
+Gems in this item are supported by level # Weapon Elemental Damage
+Grants level # Anger Skill
+Grants level # Anger supported by Gems in this item
+Grants level # Assassin's Mark Skill
+Grants level # Clarity Skill
+Grants level # Clarity supported by Gems in this item
+Grants level # Conductivity Skill
+Grants level # Conductivity supported by Gems in this item
+Grants level # Critical Weakness Skill
+Grants level # Critical Weakness supported by Gems in this item
+Grants level # Determination Skill
+Grants level # Determination supported by Gems in this item
+Grants level # Discipline Skill
+Grants level # Discipline supported by Gems in this item
+Grants level # Elemental Weakness Skill
+Grants level # Elemental Weakness supported by Gems in this item
+Grants level # Flammability Skill
+Grants level # Flammability supported by Gems in this item
+Grants level # Frostbite Skill
+Grants level # Frostbite supported by Gems in this item
+Grants level # Grace Skill
+Grants level # Grace supported by Gems in this item
+Grants level # Haste Skill
+Grants level # Haste supported by Gems in this item
+Grants level # Hatred Skill
+Grants level # Hatred supported by Gems in this item
+Grants level # Projectile Weakness Skill
+Grants level # Projectile Weakness supported by Gems in this item
+Grants level # Purity of Elements Skill
+Grants level # Purity of Elements supported by Gems in this item
+Grants level # Purity of Fire Skill
+Grants level # Purity of Fire supported by Gems in this item
+Grants level # Purity of Ice Skill
+Grants level # Purity of Ice supported by Gems in this item
+Grants level # Purity of Lightning Skill
+Grants level # Purity of Lightning supported by Gems in this item
+Grants level # Temporal Chains Skill
+Grants level # Temporal Chains supported by Gems in this item
+Grants level # Vitality Skill
+Grants level # Vitality supported by Gems in this item
+Grants level # Vulnerability Skill
+Grants level # Vulnerability supported by Gems in this item
+Grants level # Wrath Skill
+Grants level # Wrath supported by Gems in this item
+Has 1 Socket
+Minions deal #% increased Damage
+Reflects # Physical Damage to Melee Attackers
+Skill Gems in this item get a #% Mana Multiplier
+Socketed Gems are Supported by level # Added Fire Damage
+Socketed Gems are Supported by level # Elemental Proliferation
+Socketed Gems are Supported by level # Faster Casting
+Socketed Gems are Supported by level # Increased Area of Effect
+Socketed Gems are supported by level # Additional Accuracy
+Socketed Gems are supported by level # Cast On Crit
+Socketed Gems are supported by level # Cast when Stunned
+Socketed Gems are supported by level # Fork
+Socketed Gems are supported by level # Increased Critical Damage
+Socketed Gems are supported by level # Life Leech
+Socketed Gems are supported by level # Melee Splash
+Socketed Gems are supported by level # Multistrike
+Socketed Gems are supported by level # Stun
+Socketed Gems are supported by level # Weapon Elemental Damage
+Socketed Skill Gems get a #% Mana Multiplier
+When Hit, #% of Damage is taken from Mana before Life
+You are Immune to Silence

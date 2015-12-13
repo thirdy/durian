@@ -1,0 +1,22 @@
+;
+; Currency max buyout
+;
+(\d{1,2})(ch|chaos) 				= 		buyout_currency=chaos&buyout_max=$GROUP1
+ge(\d{1,2})(ch|chaos) 				= 		buyout_currency=chaos&buyout_min=$GROUP1
+(\d{1,2})-(\d{1,2})(ch|chaos) 		= 		buyout_currency=chaos&buyout_min=$GROUP1&buyout_max=$GROUP2
+
+(\d{1,2})(alc|alchemy) 				= 		buyout_currency=alchemy&buyout_max=$GROUP1
+ge(\d{1,2})(alc|alchemy) 			= 		buyout_currency=alchemy&buyout_min=$GROUP1
+(\d{1,2})-(\d{1,2})(alc|alchemy) 	= 		buyout_currency=alchemy&buyout_min=$GROUP1&buyout_max=$GROUP2
+
+(\d{1,2})(fuse|fusing) 				= 		buyout_currency=fusing&buyout_max=$GROUP1
+ge(\d{1,2})(fuse|fusing) 			= 		buyout_currency=fusing&buyout_min=$GROUP1
+(\d{1,2})-(\d{1,2})(fuse|fusing) 	= 		buyout_currency=fusing&buyout_min=$GROUP1&buyout_max=$GROUP2
+
+(\d{1,2})(ex|exalted) 				= 		buyout_currency=exalted&buyout_max=$GROUP1
+ge(\d{1,2})(ex|exalted) 			= 		buyout_currency=exalted&buyout_min=$GROUP1
+(\d{1,2})-(\d{1,2})(ex|exalted) 	= 		buyout_currency=exalted&buyout_min=$GROUP1&buyout_max=$GROUP2
+
+(\d{1,2})(alt|alteration) 			= 		buyout_currency=alteration&buyout_max=$GROUP1
+ge(\d{1,2})(alt|alteration) 		= 		buyout_currency=alteration&buyout_min=$GROUP1
+(\d{1,2})-(\d{1,2})(alt|alteration) = 		buyout_currency=alteration&buyout_min=$GROUP1&buyout_max=$GROUP2

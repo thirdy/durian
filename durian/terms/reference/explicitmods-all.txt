@@ -1,0 +1,3348 @@
+# Life Regenerated per second
+# Life Regenerated per second per Endurance Charge
+# Mana Regenerated per second
+# Physical Damage taken on Minion Death
+#% additional Block Chance
+#% additional Block Chance while Dual Wielding
+#% additional Block Chance while Dual Wielding Claws
+#% additional chance for Slain monsters to drop Scrolls of Wisdom
+#% additional Chance to Block Spells while Dual Wielding
+#% additional Chance to Block Spells with Shields
+#% additional Chance to Block Spells with Staves
+#% additional Chance to Block with Shields
+#% additional Chance to Block with Staves
+#% additional Elemental Resistances during flask effect
+#% chance of Projectiles Piercing
+#% chance on Block to create Consecrated Ground
+#% chance on Block to create Desecrated Ground
+#% chance to Avoid being Chilled
+#% chance to Avoid being Chilled during flask effect
+#% chance to Avoid being Frozen
+#% chance to Avoid being Frozen during flask effect
+#% chance to Avoid being Knocked Back
+#% chance to Avoid being Stunned
+#% chance to Avoid Elemental Status Ailments
+#% chance to Blind Enemies on hit
+#% Chance to Block
+#% Chance to Block during flask effect
+#% Chance to Block Spells
+#% Chance to Block Spells during flask effect
+#% chance to Cast Socketed Lightning Spells on Hit
+#% chance to cause Bleeding on Hit
+#% chance to cause Enemies to Flee on use
+#% Chance to Cause Monster to Flee on Block
+#% chance to Cause Monsters to Flee
+#% chance to create a Smoke Cloud when Hit
+#% chance to create Shocked Ground when Hit
+#% chance to Curse Enemies with a random Curse on Hit
+#% chance to Curse Enemies with Enfeeble on Hit
+#% chance to Dodge Attacks
+#% chance to Dodge Attacks per Frenzy Charge
+#% chance to Dodge Spell Damage
+#% chance to Freeze
+#% chance to Freeze, Shock and Ignite
+#% chance to gain a Frenzy Charge on Kill
+#% chance to gain a Power Charge if you Knock an Enemy Back with Melee Damage
+#% chance to gain a Power Charge on Kill
+#% chance to gain a Power Charge on Throwing a Trap
+#% chance to gain a Power Charge when you Stun
+#% chance to gain an additional Vaal Soul on Kill
+#% chance to gain an additional Vaal Soul per Enemy Shattered
+#% chance to gain an Endurance Charge when you Block
+#% chance to Gain Unholy Might for # seconds on Melee Kill
+#% chance to gain Unholy Might on block for # seconds
+#% chance to Ignite
+#% chance to Ignite when in Main Hand
+#% chance to Knock Enemies Back on hit
+#% chance to Recharge # Flask Charge when you take a Critical Strike
+#% chance to Shock
+#% chance to Steal Power, Frenzy, and Endurance Charges on Hit
+#% faster start of Energy Shield Recharge
+#% Global chance to Blind Enemies on hit
+#% increased Accuracy Rating
+#% increased Accuracy Rating per Frenzy Charge
+#% increased Amount Recovered
+#% increased Area Damage
+#% increased Area of Effect for Skills used by Totems
+#% increased Area of Effect Radius per 20 Intelligence
+#% Increased Area of Effect while Unarmed
+#% increased Armour
+#% increased Armour and Energy Shield
+#% increased Armour and Evasion
+#% increased Armour during flask effect
+#% increased Armour per # Strength when in Off Hand
+#% increased Armour while not Ignited, Frozen or Shocked
+#% increased Armour, Evasion and Energy Shield
+#% increased Attack and Cast Speed
+#% increased Attack Damage
+#% increased Attack Damage against Bleeding Enemies
+#% increased Attack Speed
+#% increased Attack Speed per 10 Dexterity
+#% increased Attack Speed per Frenzy Charge
+#% increased Attack Speed when on Full Life
+#% increased Attack Speed while Dual Wielding
+#% increased Attack Speed while holding a Shield
+#% increased Attack Speed while Ignited
+#% increased Attack Speed with Axes
+#% increased Attack Speed with Bows
+#% increased Attack Speed with Claws
+#% increased Attack Speed with Daggers
+#% increased Attack Speed with Maces
+#% increased Attack Speed with Movement Skills
+#% increased Attack Speed with One Handed Melee Weapons
+#% increased Attack Speed with Staves
+#% increased Attack Speed with Swords
+#% increased Attack Speed with Two Handed Melee Weapons
+#% increased Attack Speed with Wands
+#% increased Burning Damage
+#% increased Cast Speed
+#% increased Cast Speed while Dual Wielding
+#% increased Cast Speed while holding a Shield
+#% increased Cast Speed while Ignited
+#% increased Cast Speed while wielding a Staff
+#% increased Cast Speed with Cold Skills
+#% increased Cast Speed with Fire Skills
+#% increased Cast Speed with Lightning Skills
+#% increased Chaos Damage
+#% increased Chaos damage per # Intelligence from Allocated Passives in Radius
+#% increased Chaos Damage per Level
+#% increased Character Size
+#% increased Charge Recovery
+#% increased Charges used
+#% increased Chill Duration on Enemies
+#% increased Chill Duration on Enemies when in Off Hand
+#% increased Claw Physical Damage per # Dexterity Allocated in Radius
+#% increased Cold Damage
+#% increased Cold Damage with Weapons
+#% increased Critical Strike Chance
+#% increased Critical Strike Chance for Spells
+#% increased Critical Strike Chance with Cold Skills
+#% increased Critical Strike Chance with Elemental Skills
+#% increased Critical Strike Chance with Fire Skills
+#% increased Critical Strike Chance with Lightning Skills
+#% increased Critical Strike Chance with One Handed Melee Weapons
+#% increased Critical Strike Chance with Two Handed Melee Weapons
+#% increased Critical Strike Multiplier for Spells
+#% increased Critical Strike Multiplier while Dual Wielding
+#% increased Critical Strike Multiplier with Cold Skills
+#% increased Critical Strike Multiplier with Elemental Skills
+#% increased Critical Strike Multiplier with Fire Skills
+#% increased Critical Strike Multiplier with Lightning Skills
+#% increased Critical Strike Multiplier with One Handed Melee Weapons
+#% increased Critical Strike Multiplier with Two Handed Melee Weapons
+#% increased Curse Duration
+#% increased Damage
+#% increased Damage against Blinded Enemies
+#% increased Damage against Enemies on Low Life per Frenzy Charge
+#% increased Damage against Frozen Enemies
+#% increased Damage against Ignited Enemies
+#% increased Damage against Rare monsters
+#% increased Damage against Shocked Enemies
+#% increased Damage for each Magic Item you have equipped
+#% increased Damage on Burning Ground
+#% increased Damage over Time
+#% increased Damage per # Strength when in Main Hand
+#% increased Damage per Curse on Enemy
+#% increased Damage per Curse on You
+#% increased Damage per Freeze, Shock and Ignite on Enemy
+#% increased Damage taken
+#% increased Damage taken from Ghosts
+#% increased Damage taken from Skeletons
+#% increased Damage taken per Frenzy Charge
+#% increased Damage Taken while Energy Shield is Full
+#% increased Damage when on Low Life
+#% increased Damage when you have no Energy Shield
+#% increased Damage while Ignited
+#% increased Damage while Shocked
+#% increased Damage with Movement Skills
+#% increased Dexterity
+#% increased Duration of Curses on you
+#% increased Duration of Elemental Status Ailments on Enemies
+#% increased Duration of Shrine Effects on you
+#% increased effect of Auras you Cast
+#% increased Effect of Buffs on You
+#% increased effect of Flasks
+#% increased Effect of Shrine Buffs on you
+#% increased Effect of your Curses
+#% increased Elemental Damage
+#% increased Elemental Damage per Frenzy Charge
+#% increased Elemental Damage per Level
+#% increased Elemental Damage with Weapons
+#% increased Elemental Damage with Weapons during flask effect
+#% increased Elemental Resistances while on Low Life
+#% increased Endurance Charge Duration
+#% increased Endurance, Frenzy and Power Charge Duration
+#% increased Energy Shield
+#% increased Energy Shield Recharge Rate
+#% increased Evasion and Energy Shield
+#% increased Evasion Rating
+#% increased Evasion Rating during flask effect
+#% increased Evasion Rating per # Dexterity Allocated in Radius
+#% increased Experience gain
+#% increased Experience Gain for Corrupted Gems
+#% increased Fire Damage
+#% increased Fire Damage taken
+#% increased Fire Resistance while on Low Life
+#% increased Fishing Line Strength
+#% increased Fishing Range
+#% increased Flask Charges gained
+#% increased Flask effect duration
+#% increased Flask Life Recovery rate
+#% increased Flask Mana Recovery rate
+#% increased Freeze Duration on Enemies
+#% increased Global Attack Speed per Green Socket
+#% increased Global Critical Strike Chance
+#% increased Global Critical Strike Chance per Level
+#% increased Global Critical Strike Multiplier
+#% increased Global Defences
+#% increased Ignite Duration on Enemies
+#% increased Ignite Duration on You
+#% increased Intelligence
+#% increased Intelligence for each Unique Item you have equipped
+#% increased Intelligence Requirement
+#% increased Item Quantity per White Socket
+#% increased Life Leeched per second
+#% increased Life Recovered
+#% increased Life Recovery from Flasks
+#% increased Light Radius
+#% increased Light Radius during flask effect
+#% increased Lightning Damage
+#% increased Lightning Damage per Frenzy Charge
+#% increased Lightning Damage with Weapons
+#% increased Mana Cost of Skills
+#% increased Mana Leeched per second
+#% increased Mana Recovery from Flasks
+#% increased Mana Regeneration Rate
+#% increased maximum Energy Shield
+#% increased maximum Life
+#% increased maximum Mana
+#% increased Melee Critical Strike Chance
+#% increased Melee Critical Strike Multiplier
+#% increased Melee Damage
+#% increased Melee Damage when on Full Life
+#% increased Melee Physical Damage while holding a Shield
+#% increased Melee Physical Damage while Unarmed per # Dexterity Allocated in Radius
+#% increased Mine Damage
+#% increased Mine Laying Speed
+#% increased Monster Attack Speed
+#% increased Monster Cast Speed
+#% increased Monster Damage
+#% increased Monster Movement Speed
+#% increased Movement Speed
+#% increased Movement Speed during flask effect
+#% increased Movement Speed on Shocked Ground
+#% increased Movement Speed per # Evasion Rating
+#% increased Movement Speed per Frenzy Charge
+#% increased Movement Speed when on Full Energy Shield
+#% increased Movement Speed when on Full Life
+#% increased Movement Speed when on Low Life
+#% increased Movement Speed while Ignited
+#% increased Movement Speed while Shocked
+#% increased Physical Damage
+#% increased Physical Damage per Endurance Charge
+#% increased Physical Damage taken
+#% increased Physical Damage while Frozen
+#% increased Physical Damage with Axes
+#% increased Physical Damage with Bows
+#% increased Physical Damage with Claws
+#% increased Physical Damage with Daggers
+#% increased Physical Damage with Maces
+#% increased Physical Damage with One Handed Melee Weapons
+#% increased Physical Damage with Ranged Weapons
+#% increased Physical Damage with Staves
+#% increased Physical Damage with Swords
+#% increased Physical Damage with Two Handed Melee Weapons
+#% increased Physical Damage with Wands
+#% increased Physical Damage with Weapons per Red Socket
+#% increased Physical Weapon Damage per 10 Strength
+#% increased Physical Weapon Damage while Dual Wielding
+#% increased Projectile Damage
+#% increased Projectile Damage per Power Charge
+#% increased Projectile Speed
+#% increased Projectile Speed per Frenzy Charge
+#% increased Quantity of Fish Caught
+#% increased Quantity of Items Dropped by Slain Frozen Enemies
+#% increased Quantity of Items found
+#% increased Quantity of Items found during flask effect
+#% increased Radius of Area Skills
+#% increased Radius of Auras
+#% increased Radius of Curses
+#% increased Rarity of Fish Caught
+#% increased Rarity of Items Dropped by Enemies killed with a Critical Strike
+#% increased Rarity of Items Dropped by Frozen Enemies
+#% increased Rarity of Items Dropped by Slain Shocked Enemies
+#% increased Rarity of Items found
+#% increased Rarity of Items found during flask effect
+#% increased Rarity of Items found when on Low Life
+#% increased Recovery Speed
+#% increased Shock Duration on Enemies
+#% increased Shock Duration on You
+#% increased Skeleton Duration
+#% increased Skill Effect Duration
+#% increased Spell Damage
+#% increased Spell Damage per # Intelligence
+#% increased Spell Damage per 5% Block Chance
+#% increased Spell Damage per Power Charge
+#% increased Spell Damage taken when on Low Mana
+#% increased Spell Damage while Dual Wielding
+#% increased Spell Damage while holding a Shield
+#% increased Spell Damage while no Mana is Reserved
+#% increased Spell Damage while wielding a Staff
+#% increased Strength
+#% increased Strength Requirement
+#% increased Stun Duration on Enemies
+#% increased Stun Recovery
+#% increased Stun Recovery during flask effect
+#% increased Taunt Duration
+#% increased Totem Damage
+#% increased Totem Life
+#% increased Totem Life per # Strength Allocated in Radius
+#% increased Trap Damage
+#% increased Trap Throwing Speed
+#% increased Vaal Skill Critical Strike Chance
+#% increased Vaal Skill Effect Duration
+#% increased Weapon Critical Strike Chance while Dual Wielding
+#% increased Zombie Resistances
+#% increased Zombie Size
+#% less Animate Weapon Duration
+#% less Burning damage
+#% less Critical Strike Chance
+#% less Mine Damage
+#% less Weapon Damage
+#% more Magic Monsters
+#% more Melee Physical Damage during effect
+#% more Monster Life
+#% more Rare Monsters
+#% more Unarmed Physical Damage
+#% of Attack Damage Leeched as Life against Bleeding enemies
+#% of Block Chance applied to Spells
+#% of Block Chance applied to Spells when on Low Life
+#% of Chaos Damage Leeched as Life
+#% of Chaos Damage Leeched as Life during flask effect
+#% of Cold Damage Converted to Fire Damage
+#% of Cold Damage Leeched as Life
+#% of Damage against Frozen Enemies Leeched as Life
+#% of Damage against Shocked Enemies Leeched as Mana
+#% of Damage Leeched as Life against Shocked Enemies
+#% of Damage Leeched as Life for Skills used by Totems
+#% of Damage Leeched as Life on Critical Strike
+#% of Damage taken Gained as Mana when Hit
+#% of Damage you Reflect to enemies is gained as Life
+#% of Elemental Damage Leeched as Life
+#% of Elemental Damage taken as Chaos Damage
+#% of Fire Damage Converted to Chaos Damage
+#% of Fire Damage Leeched as Life
+#% of Fire Damage taken as Physical Damage
+#% of Life Regenerated per Second
+#% of Life Regenerated Per Second on Chilled Ground
+#% of Life Regenerated per Second per Frenzy Charge
+#% of Life Regenerated per Second while on Low Life
+#% of Lightning Damage Converted to Cold Damage
+#% of Lightning Damage Leeched as Life
+#% of maximum Life taken as Chaos Damage per Second
+#% of maximum Mana gained on Kill
+#% of Melee Physical Damage taken reflected to Attacker
+#% of Physical Attack Damage Leeched as Life
+#% of Physical Attack Damage Leeched as Mana
+#% of Physical Attack Damage Leeched as Mana per Blue Socket
+#% of Physical Attack Damage Leeched as Mana per Power Charge
+#% of Physical Damage Converted to Chaos Damage
+#% of Physical Damage Converted to Cold Damage
+#% of Physical Damage Converted to Fire Damage
+#% of Physical Damage Converted to Lightning Damage
+#% of Physical Damage Leeched as Life
+#% of Physical Damage taken as Chaos Damage
+#% of Physical Damage taken as Cold Damage during flask effect
+#% of Physical Damage taken as Fire Damage
+#% of Physical Damage taken as Lightning Damage
+#% reduced Accuracy Rating
+#% reduced Amount Recovered
+#% reduced Attack Speed
+#% reduced Attribute Requirements
+#% reduced Cast Speed
+#% reduced Chance to Block Attacks and Spells
+#% reduced Character Size
+#% reduced Chill Duration on You
+#% reduced Damage taken from Damage Over Time
+#% reduced Duration of Curses on you
+#% reduced Effect of Chill on You
+#% reduced Effect of Curses on You
+#% reduced Endurance, Frenzy and Power Charge Duration
+#% reduced Enemy Block Chance
+#% reduced Enemy Stun Threshold
+#% reduced Enemy Stun Threshold with this Weapon
+#% reduced Energy Shield Recharge Rate
+#% reduced Experience gain
+#% reduced Fishing Pool Consumption
+#% reduced Flask Charges used
+#% reduced Flask effect duration
+#% reduced Freeze Duration on You
+#% reduced Frenzy Charge Duration
+#% reduced Frenzy Charge Duration per Frenzy Charge
+#% reduced Global Critical Strike Multiplier
+#% reduced Ignite Duration on Enemies
+#% reduced Intelligence
+#% reduced Life Leeched per second
+#% reduced Light Radius
+#% reduced Mana Cost of Skills
+#% reduced Mana Cost of Skills when on Low Life
+#% reduced Mana Cost of Totem Skills that cast an Aura
+#% reduced Mana Regeneration Rate
+#% reduced Mana Reserved
+#% reduced maximum Energy Shield
+#% reduced maximum Life
+#% reduced maximum Mana
+#% reduced Movement Speed
+#% reduced Movement Speed when on Low Life
+#% reduced Physical Damage
+#% reduced Projectile Speed
+#% reduced Quantity of Fish Caught
+#% reduced Quantity of Items found
+#% reduced Radius of Curses
+#% reduced Rarity of Items found
+#% reduced Recovery Speed
+#% reduced Skeleton Duration
+#% reduced Skill Effect Duration
+#% reduced Strength Requirement
+#% reduced Stun Recovery
+#% reduced Totem Damage
+#% reduced Trap Duration
+#% slower start of Energy Shield Recharge
+#.#% of Attack Damage Leeched as Life against Chilled enemies
+#.#% of Physical Attack Damage Leeched as Life during Flask Effect
+#.#% of Physical Attack Damage Leeched as Mana during Flask Effect
++# Energy Shield gained for each Enemy hit by your Attacks
++# Energy Shield gained on Kill
++# Energy Shield gained on Kill per Level
++# Energy Shield gained on Killing a Shocked Enemy
++# Extra Charges
++# Intelligence Requirement
++# Life gained for each Enemy hit by Attacks
++# Life gained for each Enemy hit by your Attacks
++# Life gained for each Enemy hit by your Spells
++# Life gained for each Ignited Enemy hit by your Attacks
++# Life gained on Kill
++# Life gained on Kill per Frenzy Charge
++# Life gained on Kill per Level
++# Life gained on Killing Ignited Enemies
++# Life gained when you Block
++# Mana gained for each Enemy hit by your Attacks
++# Mana Gained on Kill
++# Mana gained on Kill per Level
++# Mana gained when you Block
++# Maximum Endurance Charge
++# Maximum Frenzy Charge
++# Maximum Power Charge
++# Strength Requirement
++# to Accuracy Rating
++# to all Attributes
++# to Armour
++# to Armour while Frozen
++# to Dexterity
++# to Dexterity and Intelligence
++# to Evasion Rating
++# to Intelligence
++# to Level of Active Socketed Skill Gems
++# to Level of Socketed Aura Gems
++# to Level of Socketed Bow Gems
++# to Level of Socketed Cold Gems
++# to Level of Socketed Curse Gems
++# to Level of Socketed Dexterity Gems
++# to Level of Socketed Elemental Gems
++# to Level of Socketed Fire Gems
++# to Level of Socketed Gems
++# to Level of Socketed Golem Gems
++# to Level of Socketed Lightning Gems
++# to Level of Socketed Melee Gems
++# to Level of Socketed Minion Gems
++# to Level of Socketed Movement Gems
++# to Level of Socketed Spell Gems
++# to Level of Socketed Strength Gems
++# to Level of Socketed Support Gems
++# to Level of Socketed Vaal Gems
++# to Level of Socketed Warcry Gems
++# to maximum Energy Shield
++# to Maximum Energy Shield per Blue Socket
++# to maximum Life
++# to Maximum Life per Red Socket
++# to maximum Mana
++# to Maximum Mana per Green Socket
++# to maximum number of Skeletons
++# to maximum number of Spectres
++# to maximum number of Zombies
++# to Melee Weapon and Unarmed range
++# to Melee Weapon Range per White Socket
++# to Strength
++# to Strength and Dexterity
++# to Strength and Intelligence
++# to Weapon range
++# to Zombie maximum Life
++#% chance to be Ignited
++#% chance to be Pierced by Projectiles
++#% Chance to Block
++#% Chance to Block with Shields
++#% Chance to Block@
++#% Chaos Resistance when on Low Life
++#% Monster Cold Resistance
++#% Monster Fire Resistance
++#% Monster Lightning Resistance
++#% Monster Physical Damage Reduction
++#% to all Elemental Resistances
++#% to all maximum Elemental Resistances during flask effect
++#% to all maximum Resistances
++#% to Chaos Resistance
++#% to Cold and Lightning Resistances
++#% to Cold Resistance
++#% to Cold Resistance when Socketed with a Green Gem
++#% to Fire and Cold Resistances
++#% to Fire and Lightning Resistances
++#% to Fire Resistance
++#% to Fire Resistance when Socketed with a Red Gem
++#% to Lightning Resistance
++#% to Lightning Resistance when Socketed with a Blue Gem
++#% to maximum Block Chance
++#% to maximum Cold Resistance
++#% to maximum Fire Resistance
++#% to maximum Lightning Resistance
++#% to Quality of Socketed Support Gems
++25% additional Block Chance against Projectiles
+-# Chaos Damage taken
+-# Maximum Endurance Charges
+-# Maximum Frenzy Charges
+-# Maximum Power Charges
+-# Physical Damage taken from Attacks
+-# Physical Damage taken from Projectile Attacks
+-# Physical Damage taken when hit by Animals
+-# to Mana Cost of Skills
+-#% Chance to Block
+-#% maximum Player Resistances
+-#% to all Elemental Resistances
+-#% to all maximum Resistances
+-#% to Cold Resistance
+-#% to Fire Resistance
+-#% to Lightning Resistance
+-#% to maximum Fire Resistance
+-100 to Accuracy Rating
+1% increased Attack Damage per 450 Evasion Rating
+10% increased Effect of Auras on You
+10% increased Effect of Auras on your Minions
+10% increased Radius of Area Skills
+100% increased Accuracy Rating when on Low Life
+100% increased Claw Physical Damage when on Low Life
+100% increased Recovery when on Low Life
+100% More Bow Damage at Close Range
+100% of Lightning Damage Converted to Chaos Damage
+135% increased Recovery Speed
+15% increased Skill Effect Duration
+20% reduced Strength Requirement
+200% increased Armour against Projectiles
+25% chance to Avoid being Chilled
+25% increased Attack Speed when on Low Life
+25% increased Strength Requirement
+3% reduced Attack and Cast Speed per Frenzy Charge
+30% increased Movement Speed for 9 seconds on Throwing a Trap
+30% of Melee Physical Damage taken reflected to Attacker
+30% reduced Damage
+30% reduced Endurance Charge Duration
+30% reduced Power Charge Duration
+33% reduced Recovery Speed
+5% chance to Curse Enemies with Enfeeble on Hit
+50% chance to Avoid being Frozen
+50% increased Amount Recovered
+50% increased Global Evasion Rating when on Low Life
+50% increased Recovery Speed
+50% of Recovery applied Instantly
+50% reduced Damage when on Low Life
+50% reduced number of Zombies allowed
+60% increased Life Recovered
+60% increased Mana Recovered
+60% increased Melee Damage when on Full Life
+8% reduced Mana Reserved
+80% reduced Spell Damage
+<corrupted>{Corrupted}
+<currencyitem>{#x Cartographer's Chisel}
+<currencyitem>{#x Chaos Orb}
+<currencyitem>{#x Currency}
+<currencyitem>{#x Exalted Orb}
+<currencyitem>{#x Gemcutter's Prism}
+<currencyitem>{#x Orb of Alchemy}
+<currencyitem>{#x Orb of Fusing}
+<currencyitem>{#x Orb of Regret}
+<currencyitem>{#x Regal Orb}
+<currencyitem>{#x Scroll of Wisdom}
+<currencyitem>{#x Vaal Orb}
+<currencyitem>{Chaos Orb}
+<currencyitem>{Exalted Orb}
+<currencyitem>{Gemcutter's Prism}
+<currencyitem>{Mirror of Kalandra}
+<currencyitem>{Vaal Orb}
+<default>{Item Level:} <normal>{#}
+<default>{Item Level:} <normal>{#}}
+<default>{Map Tier:} <normal>{#}
+<default>{Quality:} <augmented>{+#%}
+<divination>{Divination Card}
+<gemitem>{Level # Empower}
+<gemitem>{Level # Enhance}
+<gemitem>{Level # Enlighten}
+<gemitem>{Level # Gem}
+<gemitem>{Level # Spell Gem}
+<gemitem>{Level # Support Gem}
+<gemitem>{Summon Raging Spirit}
+<gemitem>{Superior Gem}
+<gemitem>{Superior Minion Gem}
+<gemitem>{Superior Mirror Arrow}
+<gemitem>{Superior Vaal Gem}
+<magicitem>{Dictator's Prophecy Wand}
+<magicitem>{Gemini Claw of Celebration}
+<magicitem>{Life Armour}
+<magicitem>{Runic One-Hand Weapon}
+<magicitem>{Seraphim's Armour}
+<magicitem>{Surgeon's Flask}
+<rareitem>{Amulet}
+<rareitem>{Jewellery}
+<rareitem>{Map}
+<rareitem>{Two-Stone Ring}
+<size:#>{<magicitem>{Bloodthirsty Eternal Sword}
+<size:#>{<magicitem>{Merciless Two-Hand Weapon}
+<uniqueitem>{Alpha's Howl}
+<uniqueitem>{Atziri's Acuity}
+<uniqueitem>{Atziri's Disfavour}
+<uniqueitem>{Axe}
+<uniqueitem>{Blood of Corruption}
+<uniqueitem>{Bow}
+<uniqueitem>{Crown of Eyes}
+<uniqueitem>{Dagger}
+<uniqueitem>{Divination Distillate}
+<uniqueitem>{Doedre Item}
+<uniqueitem>{Doryani's Fist}
+<uniqueitem>{Drillneck}
+<uniqueitem>{Headhunter}
+<uniqueitem>{Item}
+<uniqueitem>{Kaom's Heart}
+<uniqueitem>{Le Heup of All}
+<uniqueitem>{League-Specific Item}
+<uniqueitem>{Lifesprig}
+<uniqueitem>{Maligaro's Virtuosity}
+<uniqueitem>{Mao Kun}
+<uniqueitem>{Map}
+<uniqueitem>{Midnight Bargain}
+<uniqueitem>{Mjölner}
+<uniqueitem>{Mon'tregul's Grasp}
+<uniqueitem>{Nightmare Bascinet}
+<uniqueitem>{Pledge of Hands}
+<uniqueitem>{Prismatic Ring}
+<uniqueitem>{Ring}
+<uniqueitem>{Rise of the Phoenix}
+<uniqueitem>{Romira's Banquet}
+<uniqueitem>{Shavronne Item}
+<uniqueitem>{Shavronne's Revelation}
+<uniqueitem>{Shield}
+<uniqueitem>{Song of the Sirens}
+<uniqueitem>{Staff}
+<uniqueitem>{Sword}
+<uniqueitem>{Tabula Rasa}
+<uniqueitem>{Taste of Hate}
+<uniqueitem>{The Whispering Ice}
+<uniqueitem>{Voll's Devotion}
+<uniqueitem>{Voltaxic Rift}
+<uniqueitem>{Wake of Destruction}
+<uniqueitem>{Windripper}
+<whiteitem>{Five-Link Staff}
+<whiteitem>{Map}
+<whiteitem>{Mortal Hope}
+<whiteitem>{Prismatic Ring}
+<whiteitem>{Six-Link Astral Plate}
+<whiteitem>{Six-Link Body Armour}
+<whiteitem>{Six-Link Harbinger Bow}
+<whiteitem>{Six-Link Staff}
+Acrobatics
+Adds # maximum Lightning Damage to Attacks per # Dexterity Allocated in Radius
+Adds # to Maximum Life per # Intelligence in Radius
+Adds #-# Chaos Damage
+Adds #-# Chaos Damage in Off Hand
+Adds #-# Chaos Damage to Attacks
+Adds #-# Chaos Damage to Spells
+Adds #-# Cold Damage
+Adds #-# Cold Damage in Off Hand
+Adds #-# Cold Damage to Attacks
+Adds #-# Cold Damage to Spells
+Adds #-# Fire Attack Damage per Buff on You
+Adds #-# Fire Damage
+Adds #-# Fire Damage in Main Hand
+Adds #-# Fire Damage to Attacks
+Adds #-# Fire Damage to Attacks against Ignited Enemies
+Adds #-# Fire Damage to Attacks with Bows
+Adds #-# Fire Damage to Spells
+Adds #-# Fire Spell Damage per Buff on You
+Adds #-# Lightning Damage
+Adds #-# Lightning Damage to Attacks
+Adds #-# Lightning Damage to Attacks while Unarmed
+Adds #-# Lightning Damage to Spells
+Adds #-# Lightning Damage to Spells and Attacks
+Adds #-# Lightning Damage to Spells while Unarmed
+Adds #-# Physical Damage
+Adds #-# Physical Damage to Attacks
+Adds #-# Physical Damage to Attacks against Frozen Enemies
+Adds #-# Physical Damage to Attacks with Bows
+Adds an additional Arrow
+Adds Knockback during flask effect
+Adds Knockback to Melee Attacks during flask effect
+All Attack Damage Chills when you Stun
+All Sockets are White
+Allies' Aura Buffs do not affect you
+Applies level # Elemental Weakness on Blocking a Spell
+Applies level # Punishment on Blocking a Melee Attack
+Applies level # Temporal Chains on Blocking a Projectile Attack
+Area becomes fatal after some time
+Area contains a Large Chest
+Area contains many Totems
+Area contains no monsters
+Area contains two Unique Bosses
+Area has # seconds between monster waves
+Area has # waves of monsters
+Area has increased monster variety
+Area has patches of burning ground
+Area has patches of chilled ground
+Area has patches of desecrated ground
+Area has patches of shocking ground
+Area is #% larger
+Area is a large Maze
+Area is a Maze
+Area is inhabited by # additional Invasion Boss
+Area is inhabited by # additional Rogue Exiles
+Area is inhabited by Animals
+Area is inhabited by Bandits
+Area is inhabited by Demons
+Area is inhabited by Goatmen
+Area is inhabited by Humanoids
+Area is inhabited by ranged monsters
+Area is inhabited by Sea Witches and their Spawn
+Area is inhabited by Skeletons
+Area is inhabited by Undead
+Arrows always Pierce
+Attack Projectiles Return to You after hitting targets
+Attacks with this Weapon have #% increased Elemental Damage
+Blood Magic
+Bow Knockback at Close Range
+Can have multiple Crafted Mods
+Can summon up to 1 additional totem
+Can't use Chest armour
+Can't use other Rings
+Cannot be Blinded
+Cannot be Chilled
+Cannot be Chilled while you have Onslaught
+Cannot be Frozen
+Cannot be Ignited
+Cannot be Ignited while on Low Life
+Cannot be Knocked Back
+Cannot be Shocked
+Cannot be Stunned
+Cannot be Stunned when on Low Life
+Cannot be used with Chaos Inoculation
+Cannot Block Attacks
+Cannot Evade Enemy Attacks
+Cannot gain Power Charges
+Cannot Knock Enemies Back
+Cannot Leech
+Cannot Leech Life from Monsters
+Cannot Leech Mana
+Cannot Leech Mana from Monsters
+Cannot Leech when on Low Life
+Cannot roll Attack Mods
+Cannot roll Caster Mods
+Cannot roll Mods with Required Level above #
+Cast Socketed Minion Spells on Kill with this Weapon
+Causes Bleeding on Hit
+Chaos Damage does not bypass Energy Shield
+Chests have #% increased Item Rarity
+Chill and Freeze duration on you is based on #% of Energy Shield
+Conduit
+Contains the Immortalised Grandmasters
+Counts as Dual Wielding
+Creates a Smoke Cloud on Rampage
+Creates Consecrated Ground on Critical Strike
+Culling Strike
+Culling Strike against Burning Enemies
+Curse Enemies with Flammability on Hit
+Curse Enemies with level # Vulnerability on Block
+Curse Enemies with Temporal Chains on Hit
+Curse Reflection
+Curses have #% reduced effect on Monsters
+Curses in this item are reflected back to you
+Curses on Slain Enemies are transferred to a nearby Enemy
+Damage Penetrates #% Cold Resistance
+Damage Penetrates #% Fire Resistance
+Damage Penetrates #% Lightning Resistance
+Deal no Physical Damage
+Deals # Chaos Damage per second to nearby Enemies
+Dexterity and Intelligence from passives in Radius count towards Strength Melee Damage bonus
+Dexterity from Passives in Radius is Transformed to Intelligence
+Dexterity from Passives in Radius is Transformed to Strength
+Dispels Elemental Status Ailments on Rampage
+Elemental Resistances are Zero
+Enemies can have 1 additional Curse
+Enemies Cannot Leech Life From You
+Enemies Cannot Leech Mana From You
+Enemies Chilled by you take #% increased Burning Damage
+Enemies Frozen by you take 20% increased Damage
+Enemies Ignited by an Attack Burn #% faster
+Enemies killed by Zombies explode dealing Fire Damage
+Enemies killed explode dealing 10% of their Life as Fire Damage
+Eternal Iron Hook
+Extra gore
+Ezomite Shell Hook
+Final Boss drops higher Level Items
+Gain # Life when an Endurance Charge expires or is consumed
+Gain # Souls for Vaal Skills on Rampage
+Gain #% of Bow Physical Damage as Extra Damage of an Element
+Gain #% of Elemental Damage as Extra Chaos Damage during effect
+Gain #% of Physical Damage as Extra Chaos Damage
+Gain #% of Physical Damage as Extra Chaos Damage during effect
+Gain #% of Physical Damage as Extra Cold Damage
+Gain #% of Physical Damage as Extra Cold Damage during effect
+Gain +# Life when you Taunt an Enemy
+Gain +# Mana when you hit a Taunted Enemy
+Gain a Frenzy Charge if an Attack Ignites an Enemy
+Gain a Frenzy Charge on Critical Strike
+Gain a Power Charge for each Enemy you hit with a Critical Strike
+Gain a Power Charge on non-Critical Strike
+Gain an Endurance Charge when a Power Charge expires or is consumed
+Gain an Endurance Charge when you take a Critical Strike
+Gain Flask Charges when you deal a Critical Strike
+Gain Immunity to Physical Damage for # seconds on Rampage
+Gain Soul Eater during Flask Effect
+Gain Unholy Might for # seconds on Critical Strike
+Gain Unholy Might for # seconds on Rampage
+Ghost Reaver
+Gore Footprints
+Grants #% of Life Recovery to Minions
+Grants level # Bear Trap Skill
+Grants level # Gluttony of Elements Skill
+Grants level # Icestorm Skill
+Grants level # Lightning Warp Skill
+Grants level # Purity of Elements Skill
+Has no Sockets
+Hits can't be Evaded
+If # Notables are Allocated in Radius, When you Kill a Rare monster, you gain # of its mods for # seconds
+Ignite a nearby Enemy on Killing an Ignited Enemy
+Ignited Enemies Burn #% faster
+Ignited Enemies you hit are destroyed on Kill
+Immunity to Bleeding during flask effect
+Immunity to Curses during flask effect
+Immunity to Freeze and Chill during flask effect
+Immunity to Ignite during flask effect
+Immunity to Shock during flask effect
+Increases and Reductions to Cold Damage in Radius are Transformed to apply to Physical Damage
+Increases and Reductions to Energy Shield in Radius are Transformed to apply to Armour at #% of their value
+Increases and Reductions to Life in Radius are Transformed to apply to Energy Shield
+Increases and Reductions to Life in Radius are Transformed to apply to Mana at #% of their value
+Increases and Reductions to other Damage Types in Radius are Transformed to apply to Fire Damage
+Increases and Reductions to Physical Damage in Radius are Transformed to apply to Cold Damage
+Increases and Reductions to Spell Damage also apply to Attacks
+Inflicts a random level 20 Curse on you when your Totems die
+Instant Recovery
+Instant Recovery when on Low Life
+Insufficient Mana doesn't prevent your Melee Attacks
+Intelligence from Passives in Radius is Transformed to Dexterity
+Intelligence from Passives in Radius is Transformed to Strength
+Item drops on Death if equipped by an Animated Guardian
+Items and Gems have #% reduced Attribute Requirements
+Items and Gems have 25% reduced Attribute Requirements
+Karui Stone Hook
+Knockback direction is reversed
+Knocks Back Enemies in an Area on Flask use
+Leech applies instantly on Critical Strike
+Left ring slot: #% reduced Reflected Elemental Damage taken
+Left ring slot: 100% increased Mana Regeneration Rate
+Left ring slot: You cannot Recharge or Regenerate Energy Shield
+Life Leech from Hits with this Weapon applies instantly
+Light Radius is based on Energy Shield instead of Life
+Lose all Power Charges on Critical Strike
+Lose Souls gained from Soul Eater on Flask Use
+Magic Monster Packs each have a Bloodline Mod
+Melee and Melee Weapon Type modifiers in Radius are Transformed to Bow Modifiers
+Melee Critical Strikes cause Bleeding
+Melee Critical Strikes have #% chance to cause Bleeding
+Melee Critical Strikes have #% chance to Poison the Enemy
+Mercury Footprints
+Mind Over Matter
+Mines can be Detonated an additional time
+Minions deal #% increased Damage
+Minions deal #% increased Damage per # Dexterity
+Minions gain Unholy Might for # seconds on Kill
+Minions have #% additional chance to Dodge Attacks
+Minions have #% Chance to Block
+Minions have #% increased maximum Life
+Minions have #% increased Movement Speed
+Minions have #% increased Radius of Area Skills
+Minions have #% reduced maximum Life
+Minions have +# to Armour
+Minions have +#% to all Elemental Resistances
+Minions Recover #% of their Maximum Life when they Block
+Minions Regenerate #% Life per Second
+Monsters are Immune to Curses
+Monsters are immune to Elemental Status Ailments
+Monsters are immune to randomly chosen elemental status ailments or stun
+Monsters cannot be Stunned
+Monsters deal #% extra Damage as Cold
+Monsters deal #% extra Damage as Fire
+Monsters deal #% extra Damage as Lightning
+Monsters fire # additional Projectiles
+Monsters Fracture
+Monsters gain # Endurance Charge every # seconds
+Monsters gain # Endurance Charges every # seconds
+Monsters gain # Frenzy Charge every # seconds
+Monsters gain # Frenzy Charges every # seconds
+Monsters gain # Power Charge every # seconds
+Monsters gain # Power Charges every # seconds
+Monsters have #% chance to Avoid Elemental Status Ailments
+Monsters have #% increased Area of Effect
+Monsters have #% increased Critical Strike Chance
+Monsters have #% increased Critical Strike Multiplier
+Monsters Poison on Hit
+Monsters reflect #% of Elemental Damage
+Monsters reflect #% of Physical Damage
+Monsters reflect Curses
+Monsters' Melee Attacks apply random Curses on Hit
+Monsters' skills Chain 2 additional times
+Moving while Bleeding doesn't cause you to take extra Damage
+Nearby allies gain #% increased Damage
+Nearby Allies gain #% increased Mana Regeneration Rate
+Nearby Allies gain #% of Life Regenerated per Second
+Nearby Allies have #% increased Item Rarity
+Nearby allies Recover #% of your maximum Life when you Die
+Nearby Allies' spells have Culling Strike
+Nearby Enemies have #% increased Effect of Curses on them
+Never deal Critical Strikes
+No Life Recovery Applies during flask effect
+No Physical Damage
+Non-critical strikes deal #% Damage
+On Killing a Poisoned Enemy, nearby Allies Regenerate Life
+On Killing a Poisoned Enemy, nearby Enemies are Poisoned
+Pain Attunement
+Passives in Radius can be Allocated without being connected to your tree
+Players are cursed with Elemental Weakness
+Players are cursed with Enfeeble
+Players are cursed with Temporal Chains
+Players are cursed with Vulnerability
+Players are cursed with Warlord's Mark
+Players have Blood Magic
+Players have Elemental Equilibrium
+Players have no Life or Mana Regeneration
+Players Recover Life, Mana and Energy Shield #% slower
+Players take # Chaos Damage per second
+Poisonous Hit
+Prefixes Cannot Be Changed
+Projectile Damage increased by Arrow Pierce Chance
+Rare Monsters each have a Nemesis Mod
+Recharges 1 Charge when you deal a Critical Strike
+Recharges 3 Charges when you take a Critical Strike
+Recover #% of your Maximum Life on Rampage
+Recover #% of your maximum Life on use
+Recover Full Life at the end of the flask effect
+Reflects # Chaos Damage to Melee Attackers
+Reflects # Cold Damage to Melee Attackers
+Reflects # Fire Damage to Melee Attackers
+Reflects # Physical Damage to Attackers on Block
+Reflects # Physical Damage to Melee Attackers
+Reflects #-# Lightning Damage to Attackers on Block
+Reflects #-# Lightning Damage to Melee Attackers
+Reflects #-# Physical Damage to Attackers on Block
+Reflects #-# Physical Damage to Melee Attackers
+Reflects 200-250 Physical Damage to Attackers on Block
+Regenerate # Life over # second for each Spell you Cast
+Removes #% of maximum Energy Shield on Kill
+Removes #% of maximum Life on Kill
+Removes #% of your maximum Energy Shield on use
+Removes 10% of Life Recovered from Mana when used
+Removes 15% of Mana Recovered from Life when used
+Removes Bleeding on use
+Removes Burning on use
+Removes Curses on use
+Removes Freeze and Chill on use
+Removes Shock on use
+Replenishes Energy Shield by #% of Armour when you Block
+Reserves 30% of Life
+Restless Dead
+Rhoa Feather Lure
+Right ring slot: #% of Energy Shield Regenerated per second
+Right ring slot: #% reduced Reflected Physical Damage taken
+Right ring slot: You cannot Regenerate Mana
+Share Endurance Charges with nearby party members
+Shock a nearby Enemy for # seconds on Killing a Shocked Enemy
+Shocks you cause are reflected back to you
+Siren Worm Bait
+Skills Chain +# times
+Slaying Enemies close together can attract monsters from Beyond
+Socketed Gems are Supported by level # Added Chaos Damage
+Socketed Gems are Supported by level # Added Fire Damage
+Socketed Gems are Supported by level # Added Lightning Damage
+Socketed Gems are supported by level # Blind
+Socketed Gems are Supported by level # Blood Magic
+Socketed Gems are supported by level # Cast on Death
+Socketed Gems are supported by level # Chance to Flee
+Socketed Gems are Supported by level # Cold to Fire
+Socketed Gems are Supported by level # Concentrated Effect
+Socketed Gems are Supported by level # Elemental Proliferation
+Socketed Gems are Supported by level # Faster Attacks
+Socketed Gems are Supported by level # Fire Penetration
+Socketed Gems are Supported by level # Generosity
+Socketed Gems are Supported by level # Increased Area of Effect
+Socketed Gems are Supported by level # Increased Minion Damage
+Socketed Gems are Supported by level # Increased Minion Life
+Socketed Gems are Supported by level # Increased Minion Speed
+Socketed Gems are Supported by level # Iron Will
+Socketed Gems are Supported by level # Knockback
+Socketed Gems are Supported by level # Lesser Multiple Projectiles
+Socketed Gems are Supported by level # Melee Physical Damage
+Socketed Gems are supported by level # Multistrike
+Socketed Gems are Supported by level # Pierce
+Socketed Gems are Supported by level # Remote Mine
+Socketed Gems are Supported by level # Spell Echo
+Socketed Gems are Supported by level # Spell Totem
+Socketed Gems are Supported by level # Trap
+Socketed Gems fire # additional Projectiles
+Socketed Gems fire an additional Projectile
+Socketed Gems fire Projectiles in a Nova
+Socketed Gems have #% chance to cause Enemies to Flee on Hit
+Socketed Gems have #% reduced Elemental Equilibrium effect
+Socketed Gems have #% reduced Mana Cost
+Socketed Gems have #% reduced Mana Reservation
+Socketed Gems have Blood Magic
+Socketed Gems have Elemental Equilibrium
+Socketed Melee Gems have #% increased Area of Effect Radius
+Socketed Red Gems get #% Physical Damage as Extra Fire Damage
+Spreads Tar when you take a Critical Strike
+Strength from Passives in Radius is Transformed to Dexterity
+Strength from Passives in Radius is Transformed to Intelligence
+Take # Physical Damage when hit by Attacks
+Temporal Chains has #% reduced Effect on You
+Totemic Wood Lure
+Totems cannot be Stunned
+Totems fire # additional Projectiles
+Totems gain +#% to all Elemental Resistances
+Traps trigger at the end of their Duration
+Unaffected by Burning Ground
+Unaffected by Chilled Ground
+Unaffected by Desecrated Ground
+Unaffected by Shocked Ground
+Unique Boss deals #% increased Damage
+Unique Boss drops # additional Rare Amulets
+Unique Boss drops # additional Rare Belts
+Unique Boss drops # additional Rare Body Armours
+Unique Boss drops # additional Rare Boots
+Unique Boss drops # additional Rare Bows
+Unique Boss drops # additional Rare Claws
+Unique Boss drops # additional Rare Daggers
+Unique Boss drops # additional Rare Gloves
+Unique Boss drops # additional Rare Helmets
+Unique Boss drops # additional Rare One Handed Axes
+Unique Boss drops # additional Rare One Handed Maces
+Unique Boss drops # additional Rare One Handed Swords
+Unique Boss drops # additional Rare One Handed Thrusting Swords
+Unique Boss drops # additional Rare Quivers
+Unique Boss drops # additional Rare Rings
+Unique Boss drops # additional Rare Sceptres
+Unique Boss drops # additional Rare Shields
+Unique Boss drops # additional Rare Staves
+Unique Boss drops # additional Rare Two Handed Axes
+Unique Boss drops # additional Rare Two Handed Maces
+Unique Boss drops # additional Rare Two Handed Swords
+Unique Boss drops # additional Rare Wands
+Unique Boss gives #% increased Experience
+Unique Boss has #% increased Area of Effect
+Unique Boss has #% increased Attack and Cast Speed
+Unique Boss has #% increased Life
+Unwavering Stance
+Uses both hand slots
+Vaal Soul Hook
+Weapons you Animate create an additional copy
+When at maximum Frenzy Charges, Attacks Poison Enemies
+When Hit, #% of Damage is taken from Mana before Life
+When you Kill a Rare monster, you gain its mods for # seconds
+While on Low Life, Enemies are Unlucky when Damaging you
+With # Corrupted Items Equipped: #% of Chaos Damage does not bypass Energy Shield, and #% of Physical Damage bypasses Energy Shield
+With # Corrupted Items Equipped: Life Leech recovers based on your Chaos Damage instead
+You and nearby allies gain 15% increased Damage
+You can catch Exotic Fish
+You can have one additional Curse
+You can inflict multiple Ignites on an Enemy
+You can inflict up to # Ignites on an Enemy
+You can only deal Damage with this Weapon and Ignite
+You cannot be Chilled for # seconds after being Chilled
+You cannot be Frozen for # seconds after being Frozen
+You cannot be Ignited for # seconds after being Ignited
+You cannot be Shocked for # second after being Shocked
+You cannot be Shocked for # seconds after being Shocked
+You cannot be Shocked while Frozen
+You gain # Evasion Rating when on Full Life
+You gain # Evasion Rating when on Low Life
+You gain a Frenzy Charge on use
+You gain a Power Charge on use
+You gain an Endurance Charge on Kill
+You gain an Endurance Charge on use
+You gain Onslaught for # second per Endurance Charge when Hit
+You gain Onslaught for # seconds on Critical Strike
+You gain Onslaught for # seconds on Culling Strike
+You gain Onslaught for # seconds on Killing Taunted Enemies
+You gain Onslaught for # seconds on using a Vaal Skill
+You gain Onslaught for 2 seconds on Kill
+You grant # Frenzy Charges to allies on Death
+You lose all Endurance Charges when Hit
+You take # Chaos Damage per second for # seconds on Kill
+You take #% of your maximum Life as Chaos Damage on use
+You take #% reduced Extra Damage from Critical Strikes
+You take 450 Chaos Damage per second for 10 seconds on Kill
+Your Aura Buffs do not affect allies
+Your Chaos Damage can Shock
+Your Chaos Damage Poisons Enemies
+Your Cold Damage can Ignite but not Freeze or Chill
+Your Critical Strikes do not deal increased Damage
+Your Critical Strikes have Culling Strike
+Your Fire Damage can Shock but not Ignite
+Your Flasks grant #% chance to Freeze during flask effect
+Your Flasks grant #% chance to Ignite during flask effect
+Your Flasks grant #% chance to Shock during flask effect
+Your Flasks grant #% increased Rarity of Items found during flask effect
+Your Flasks grant #% reduced Enemy Stun Threshold during flask effect
+Your Flasks grant +#% to Chaos Resistance during flask effect
+Your Hits can only Kill Frozen enemies
+Your Lightning Damage can Freeze but not Shock
+Your Physical Damage can Chill
+Your Skills deal you #% of Mana Cost as Physical Damage
+Your Skills have no Mana Cost during flask effect
+Your spells have #% chance to Shock against Frozen enemies
+Your Spells have Culling Strike
+Zombies deal #% increased Physical Damage
+# Life Regenerated per second
+# Life Regenerated per second per Endurance Charge
+# Mana Regenerated per second
+# Physical Damage taken on Minion Death
+#% additional Block Chance
+#% additional Block Chance while Dual Wielding
+#% additional Block Chance while Dual Wielding Claws
+#% additional chance for Slain monsters to drop Scrolls of Wisdom
+#% additional Chance to Block Spells while Dual Wielding
+#% additional Chance to Block Spells with Shields
+#% additional Chance to Block Spells with Staves
+#% additional Chance to Block with Shields
+#% additional Chance to Block with Staves
+#% additional Elemental Resistances during flask effect
+#% chance of Projectiles Piercing
+#% chance on Block to create Consecrated Ground
+#% chance on Block to create Desecrated Ground
+#% chance to Avoid being Chilled
+#% chance to Avoid being Chilled during flask effect
+#% chance to Avoid being Frozen
+#% chance to Avoid being Frozen during flask effect
+#% chance to Avoid being Knocked Back
+#% chance to Avoid being Stunned
+#% chance to Avoid Elemental Status Ailments
+#% chance to Blind Enemies on hit
+#% Chance to Block
+#% Chance to Block during flask effect
+#% Chance to Block Spells
+#% Chance to Block Spells during flask effect
+#% chance to Cast Socketed Lightning Spells on Hit
+#% chance to cause Bleeding on Hit
+#% chance to cause Enemies to Flee on use
+#% Chance to Cause Monster to Flee on Block
+#% chance to Cause Monsters to Flee
+#% chance to create a Smoke Cloud when Hit
+#% chance to create Shocked Ground when Hit
+#% chance to Curse Enemies with a random Curse on Hit
+#% chance to Curse Enemies with Enfeeble on Hit
+#% chance to Dodge Attacks
+#% chance to Dodge Attacks per Frenzy Charge
+#% chance to Dodge Spell Damage
+#% chance to Freeze
+#% chance to Freeze, Shock and Ignite
+#% chance to gain a Frenzy Charge on Kill
+#% chance to gain a Power Charge if you Knock an Enemy Back with Melee Damage
+#% chance to gain a Power Charge on Kill
+#% chance to gain a Power Charge on Throwing a Trap
+#% chance to gain a Power Charge when you Stun
+#% chance to gain an additional Vaal Soul on Kill
+#% chance to gain an additional Vaal Soul per Enemy Shattered
+#% chance to gain an Endurance Charge when you Block
+#% chance to Gain Unholy Might for # seconds on Melee Kill
+#% chance to gain Unholy Might on block for # seconds
+#% chance to Ignite
+#% chance to Ignite when in Main Hand
+#% chance to Knock Enemies Back on hit
+#% chance to Recharge # Flask Charge when you take a Critical Strike
+#% chance to Shock
+#% chance to Steal Power, Frenzy, and Endurance Charges on Hit
+#% faster start of Energy Shield Recharge
+#% Global chance to Blind Enemies on hit
+#% increased Accuracy Rating
+#% increased Accuracy Rating per Frenzy Charge
+#% increased Amount Recovered
+#% increased Area Damage
+#% increased Area of Effect for Skills used by Totems
+#% increased Area of Effect Radius per 20 Intelligence
+#% Increased Area of Effect while Unarmed
+#% increased Armour
+#% increased Armour and Energy Shield
+#% increased Armour and Evasion
+#% increased Armour during flask effect
+#% increased Armour per # Strength when in Off Hand
+#% increased Armour while not Ignited, Frozen or Shocked
+#% increased Armour, Evasion and Energy Shield
+#% increased Attack and Cast Speed
+#% increased Attack Damage
+#% increased Attack Damage against Bleeding Enemies
+#% increased Attack Speed
+#% increased Attack Speed per 10 Dexterity
+#% increased Attack Speed per Frenzy Charge
+#% increased Attack Speed when on Full Life
+#% increased Attack Speed while Dual Wielding
+#% increased Attack Speed while holding a Shield
+#% increased Attack Speed while Ignited
+#% increased Attack Speed with Axes
+#% increased Attack Speed with Bows
+#% increased Attack Speed with Claws
+#% increased Attack Speed with Daggers
+#% increased Attack Speed with Maces
+#% increased Attack Speed with Movement Skills
+#% increased Attack Speed with One Handed Melee Weapons
+#% increased Attack Speed with Staves
+#% increased Attack Speed with Swords
+#% increased Attack Speed with Two Handed Melee Weapons
+#% increased Attack Speed with Wands
+#% increased Burning Damage
+#% increased Cast Speed
+#% increased Cast Speed while Dual Wielding
+#% increased Cast Speed while holding a Shield
+#% increased Cast Speed while Ignited
+#% increased Cast Speed while wielding a Staff
+#% increased Cast Speed with Cold Skills
+#% increased Cast Speed with Fire Skills
+#% increased Cast Speed with Lightning Skills
+#% increased Chaos Damage
+#% increased Chaos damage per # Intelligence from Allocated Passives in Radius
+#% increased Chaos Damage per Level
+#% increased Character Size
+#% increased Charge Recovery
+#% increased Charges used
+#% increased Chill Duration on Enemies
+#% increased Chill Duration on Enemies when in Off Hand
+#% increased Claw Physical Damage per # Dexterity Allocated in Radius
+#% increased Cold Damage
+#% increased Cold Damage with Weapons
+#% increased Critical Strike Chance
+#% increased Critical Strike Chance for Spells
+#% increased Critical Strike Chance with Cold Skills
+#% increased Critical Strike Chance with Elemental Skills
+#% increased Critical Strike Chance with Fire Skills
+#% increased Critical Strike Chance with Lightning Skills
+#% increased Critical Strike Chance with One Handed Melee Weapons
+#% increased Critical Strike Chance with Two Handed Melee Weapons
+#% increased Critical Strike Multiplier for Spells
+#% increased Critical Strike Multiplier while Dual Wielding
+#% increased Critical Strike Multiplier with Cold Skills
+#% increased Critical Strike Multiplier with Elemental Skills
+#% increased Critical Strike Multiplier with Fire Skills
+#% increased Critical Strike Multiplier with Lightning Skills
+#% increased Critical Strike Multiplier with One Handed Melee Weapons
+#% increased Critical Strike Multiplier with Two Handed Melee Weapons
+#% increased Curse Duration
+#% increased Damage
+#% increased Damage against Blinded Enemies
+#% increased Damage against Enemies on Low Life per Frenzy Charge
+#% increased Damage against Frozen Enemies
+#% increased Damage against Ignited Enemies
+#% increased Damage against Rare monsters
+#% increased Damage against Shocked Enemies
+#% increased Damage for each Magic Item you have equipped
+#% increased Damage on Burning Ground
+#% increased Damage over Time
+#% increased Damage per # Strength when in Main Hand
+#% increased Damage per Curse on Enemy
+#% increased Damage per Curse on You
+#% increased Damage per Freeze, Shock and Ignite on Enemy
+#% increased Damage taken
+#% increased Damage taken from Ghosts
+#% increased Damage taken from Skeletons
+#% increased Damage taken per Frenzy Charge
+#% increased Damage Taken while Energy Shield is Full
+#% increased Damage when on Low Life
+#% increased Damage when you have no Energy Shield
+#% increased Damage while Ignited
+#% increased Damage while Shocked
+#% increased Damage with Movement Skills
+#% increased Dexterity
+#% increased Duration of Curses on you
+#% increased Duration of Elemental Status Ailments on Enemies
+#% increased Duration of Shrine Effects on you
+#% increased effect of Auras you Cast
+#% increased Effect of Buffs on You
+#% increased effect of Flasks
+#% increased Effect of Shrine Buffs on you
+#% increased Effect of your Curses
+#% increased Elemental Damage
+#% increased Elemental Damage per Frenzy Charge
+#% increased Elemental Damage per Level
+#% increased Elemental Damage with Weapons
+#% increased Elemental Damage with Weapons during flask effect
+#% increased Elemental Resistances while on Low Life
+#% increased Endurance Charge Duration
+#% increased Endurance, Frenzy and Power Charge Duration
+#% increased Energy Shield
+#% increased Energy Shield Recharge Rate
+#% increased Evasion and Energy Shield
+#% increased Evasion Rating
+#% increased Evasion Rating during flask effect
+#% increased Evasion Rating per # Dexterity Allocated in Radius
+#% increased Experience gain
+#% increased Experience Gain for Corrupted Gems
+#% increased Fire Damage
+#% increased Fire Damage taken
+#% increased Fire Resistance while on Low Life
+#% increased Fishing Line Strength
+#% increased Fishing Range
+#% increased Flask Charges gained
+#% increased Flask effect duration
+#% increased Flask Life Recovery rate
+#% increased Flask Mana Recovery rate
+#% increased Freeze Duration on Enemies
+#% increased Global Attack Speed per Green Socket
+#% increased Global Critical Strike Chance
+#% increased Global Critical Strike Chance per Level
+#% increased Global Critical Strike Multiplier
+#% increased Global Defences
+#% increased Ignite Duration on Enemies
+#% increased Ignite Duration on You
+#% increased Intelligence
+#% increased Intelligence for each Unique Item you have equipped
+#% increased Intelligence Requirement
+#% increased Item Quantity per White Socket
+#% increased Life Leeched per second
+#% increased Life Recovered
+#% increased Life Recovery from Flasks
+#% increased Light Radius
+#% increased Light Radius during flask effect
+#% increased Lightning Damage
+#% increased Lightning Damage per Frenzy Charge
+#% increased Lightning Damage with Weapons
+#% increased Mana Cost of Skills
+#% increased Mana Leeched per second
+#% increased Mana Recovery from Flasks
+#% increased Mana Regeneration Rate
+#% increased maximum Energy Shield
+#% increased maximum Life
+#% increased maximum Mana
+#% increased Melee Critical Strike Chance
+#% increased Melee Critical Strike Multiplier
+#% increased Melee Damage
+#% increased Melee Damage when on Full Life
+#% increased Melee Physical Damage while holding a Shield
+#% increased Melee Physical Damage while Unarmed per # Dexterity Allocated in Radius
+#% increased Mine Damage
+#% increased Mine Laying Speed
+#% increased Monster Attack Speed
+#% increased Monster Cast Speed
+#% increased Monster Damage
+#% increased Monster Movement Speed
+#% increased Movement Speed
+#% increased Movement Speed during flask effect
+#% increased Movement Speed on Shocked Ground
+#% increased Movement Speed per # Evasion Rating
+#% increased Movement Speed per Frenzy Charge
+#% increased Movement Speed when on Full Energy Shield
+#% increased Movement Speed when on Full Life
+#% increased Movement Speed when on Low Life
+#% increased Movement Speed while Ignited
+#% increased Movement Speed while Shocked
+#% increased Physical Damage
+#% increased Physical Damage per Endurance Charge
+#% increased Physical Damage taken
+#% increased Physical Damage while Frozen
+#% increased Physical Damage with Axes
+#% increased Physical Damage with Bows
+#% increased Physical Damage with Claws
+#% increased Physical Damage with Daggers
+#% increased Physical Damage with Maces
+#% increased Physical Damage with One Handed Melee Weapons
+#% increased Physical Damage with Ranged Weapons
+#% increased Physical Damage with Staves
+#% increased Physical Damage with Swords
+#% increased Physical Damage with Two Handed Melee Weapons
+#% increased Physical Damage with Wands
+#% increased Physical Damage with Weapons per Red Socket
+#% increased Physical Weapon Damage per 10 Strength
+#% increased Physical Weapon Damage while Dual Wielding
+#% increased Projectile Damage
+#% increased Projectile Damage per Power Charge
+#% increased Projectile Speed
+#% increased Projectile Speed per Frenzy Charge
+#% increased Quantity of Fish Caught
+#% increased Quantity of Items Dropped by Slain Frozen Enemies
+#% increased Quantity of Items found
+#% increased Quantity of Items found during flask effect
+#% increased Radius of Area Skills
+#% increased Radius of Auras
+#% increased Radius of Curses
+#% increased Rarity of Fish Caught
+#% increased Rarity of Items Dropped by Enemies killed with a Critical Strike
+#% increased Rarity of Items Dropped by Frozen Enemies
+#% increased Rarity of Items Dropped by Slain Shocked Enemies
+#% increased Rarity of Items found
+#% increased Rarity of Items found during flask effect
+#% increased Rarity of Items found when on Low Life
+#% increased Recovery Speed
+#% increased Shock Duration on Enemies
+#% increased Shock Duration on You
+#% increased Skeleton Duration
+#% increased Skill Effect Duration
+#% increased Spell Damage
+#% increased Spell Damage per # Intelligence
+#% increased Spell Damage per 5% Block Chance
+#% increased Spell Damage per Power Charge
+#% increased Spell Damage taken when on Low Mana
+#% increased Spell Damage while Dual Wielding
+#% increased Spell Damage while holding a Shield
+#% increased Spell Damage while no Mana is Reserved
+#% increased Spell Damage while wielding a Staff
+#% increased Strength
+#% increased Strength Requirement
+#% increased Stun Duration on Enemies
+#% increased Stun Recovery
+#% increased Stun Recovery during flask effect
+#% increased Taunt Duration
+#% increased Totem Damage
+#% increased Totem Life
+#% increased Totem Life per # Strength Allocated in Radius
+#% increased Trap Damage
+#% increased Trap Throwing Speed
+#% increased Vaal Skill Critical Strike Chance
+#% increased Vaal Skill Effect Duration
+#% increased Weapon Critical Strike Chance while Dual Wielding
+#% increased Zombie Resistances
+#% increased Zombie Size
+#% less Animate Weapon Duration
+#% less Burning damage
+#% less Critical Strike Chance
+#% less Mine Damage
+#% less Weapon Damage
+#% more Magic Monsters
+#% more Melee Physical Damage during effect
+#% more Monster Life
+#% more Rare Monsters
+#% more Unarmed Physical Damage
+#% of Attack Damage Leeched as Life against Bleeding enemies
+#% of Block Chance applied to Spells
+#% of Block Chance applied to Spells when on Low Life
+#% of Chaos Damage Leeched as Life
+#% of Chaos Damage Leeched as Life during flask effect
+#% of Cold Damage Converted to Fire Damage
+#% of Cold Damage Leeched as Life
+#% of Damage against Frozen Enemies Leeched as Life
+#% of Damage against Shocked Enemies Leeched as Mana
+#% of Damage Leeched as Life against Shocked Enemies
+#% of Damage Leeched as Life for Skills used by Totems
+#% of Damage Leeched as Life on Critical Strike
+#% of Damage taken Gained as Mana when Hit
+#% of Damage you Reflect to enemies is gained as Life
+#% of Elemental Damage Leeched as Life
+#% of Elemental Damage taken as Chaos Damage
+#% of Fire Damage Converted to Chaos Damage
+#% of Fire Damage Leeched as Life
+#% of Fire Damage taken as Physical Damage
+#% of Life Regenerated per Second
+#% of Life Regenerated Per Second on Chilled Ground
+#% of Life Regenerated per Second per Frenzy Charge
+#% of Life Regenerated per Second while on Low Life
+#% of Lightning Damage Converted to Cold Damage
+#% of Lightning Damage Leeched as Life
+#% of maximum Life taken as Chaos Damage per Second
+#% of maximum Mana gained on Kill
+#% of Melee Physical Damage taken reflected to Attacker
+#% of Physical Attack Damage Leeched as Life
+#% of Physical Attack Damage Leeched as Mana
+#% of Physical Attack Damage Leeched as Mana per Blue Socket
+#% of Physical Attack Damage Leeched as Mana per Power Charge
+#% of Physical Damage Converted to Chaos Damage
+#% of Physical Damage Converted to Cold Damage
+#% of Physical Damage Converted to Fire Damage
+#% of Physical Damage Converted to Lightning Damage
+#% of Physical Damage Leeched as Life
+#% of Physical Damage taken as Chaos Damage
+#% of Physical Damage taken as Cold Damage during flask effect
+#% of Physical Damage taken as Fire Damage
+#% of Physical Damage taken as Lightning Damage
+#% reduced Accuracy Rating
+#% reduced Amount Recovered
+#% reduced Attack Speed
+#% reduced Attribute Requirements
+#% reduced Cast Speed
+#% reduced Chance to Block Attacks and Spells
+#% reduced Character Size
+#% reduced Chill Duration on You
+#% reduced Damage taken from Damage Over Time
+#% reduced Duration of Curses on you
+#% reduced Effect of Chill on You
+#% reduced Effect of Curses on You
+#% reduced Endurance, Frenzy and Power Charge Duration
+#% reduced Enemy Block Chance
+#% reduced Enemy Stun Threshold
+#% reduced Enemy Stun Threshold with this Weapon
+#% reduced Energy Shield Recharge Rate
+#% reduced Experience gain
+#% reduced Fishing Pool Consumption
+#% reduced Flask Charges used
+#% reduced Flask effect duration
+#% reduced Freeze Duration on You
+#% reduced Frenzy Charge Duration
+#% reduced Frenzy Charge Duration per Frenzy Charge
+#% reduced Global Critical Strike Multiplier
+#% reduced Ignite Duration on Enemies
+#% reduced Intelligence
+#% reduced Life Leeched per second
+#% reduced Light Radius
+#% reduced Mana Cost of Skills
+#% reduced Mana Cost of Skills when on Low Life
+#% reduced Mana Cost of Totem Skills that cast an Aura
+#% reduced Mana Regeneration Rate
+#% reduced Mana Reserved
+#% reduced maximum Energy Shield
+#% reduced maximum Life
+#% reduced maximum Mana
+#% reduced Movement Speed
+#% reduced Movement Speed when on Low Life
+#% reduced Physical Damage
+#% reduced Projectile Speed
+#% reduced Quantity of Fish Caught
+#% reduced Quantity of Items found
+#% reduced Radius of Curses
+#% reduced Rarity of Items found
+#% reduced Recovery Speed
+#% reduced Skeleton Duration
+#% reduced Skill Effect Duration
+#% reduced Strength Requirement
+#% reduced Stun Recovery
+#% reduced Totem Damage
+#% reduced Trap Duration
+#% slower start of Energy Shield Recharge
+#.#% of Attack Damage Leeched as Life against Chilled enemies
+#.#% of Physical Attack Damage Leeched as Life during Flask Effect
+#.#% of Physical Attack Damage Leeched as Mana during Flask Effect
++# Energy Shield gained for each Enemy hit by your Attacks
++# Energy Shield gained on Kill
++# Energy Shield gained on Kill per Level
++# Energy Shield gained on Killing a Shocked Enemy
++# Extra Charges
++# Intelligence Requirement
++# Life gained for each Enemy hit by Attacks
++# Life gained for each Enemy hit by your Attacks
++# Life gained for each Enemy hit by your Spells
++# Life gained for each Ignited Enemy hit by your Attacks
++# Life gained on Kill
++# Life gained on Kill per Frenzy Charge
++# Life gained on Kill per Level
++# Life gained on Killing Ignited Enemies
++# Life gained when you Block
++# Mana gained for each Enemy hit by your Attacks
++# Mana Gained on Kill
++# Mana gained on Kill per Level
++# Mana gained when you Block
++# Maximum Endurance Charge
++# Maximum Frenzy Charge
++# Maximum Power Charge
++# Strength Requirement
++# to Accuracy Rating
++# to all Attributes
++# to Armour
++# to Armour while Frozen
++# to Dexterity
++# to Dexterity and Intelligence
++# to Evasion Rating
++# to Intelligence
++# to Level of Active Socketed Skill Gems
++# to Level of Socketed Aura Gems
++# to Level of Socketed Bow Gems
++# to Level of Socketed Cold Gems
++# to Level of Socketed Curse Gems
++# to Level of Socketed Dexterity Gems
++# to Level of Socketed Elemental Gems
++# to Level of Socketed Fire Gems
++# to Level of Socketed Gems
++# to Level of Socketed Golem Gems
++# to Level of Socketed Lightning Gems
++# to Level of Socketed Melee Gems
++# to Level of Socketed Minion Gems
++# to Level of Socketed Movement Gems
++# to Level of Socketed Spell Gems
++# to Level of Socketed Strength Gems
++# to Level of Socketed Support Gems
++# to Level of Socketed Vaal Gems
++# to Level of Socketed Warcry Gems
++# to maximum Energy Shield
++# to Maximum Energy Shield per Blue Socket
++# to maximum Life
++# to Maximum Life per Red Socket
++# to maximum Mana
++# to Maximum Mana per Green Socket
++# to maximum number of Skeletons
++# to maximum number of Spectres
++# to maximum number of Zombies
++# to Melee Weapon and Unarmed range
++# to Melee Weapon Range per White Socket
++# to Strength
++# to Strength and Dexterity
++# to Strength and Intelligence
++# to Weapon range
++# to Zombie maximum Life
++#% chance to be Ignited
++#% chance to be Pierced by Projectiles
++#% Chance to Block
++#% Chance to Block with Shields
++#% Chance to Block@
++#% Chaos Resistance when on Low Life
++#% Monster Cold Resistance
++#% Monster Fire Resistance
++#% Monster Lightning Resistance
++#% Monster Physical Damage Reduction
++#% to all Elemental Resistances
++#% to all maximum Elemental Resistances during flask effect
++#% to all maximum Resistances
++#% to Chaos Resistance
++#% to Cold and Lightning Resistances
++#% to Cold Resistance
++#% to Cold Resistance when Socketed with a Green Gem
++#% to Fire and Cold Resistances
++#% to Fire and Lightning Resistances
++#% to Fire Resistance
++#% to Fire Resistance when Socketed with a Red Gem
++#% to Lightning Resistance
++#% to Lightning Resistance when Socketed with a Blue Gem
++#% to maximum Block Chance
++#% to maximum Cold Resistance
++#% to maximum Fire Resistance
++#% to maximum Lightning Resistance
++#% to Quality of Socketed Support Gems
++25% additional Block Chance against Projectiles
+-# Chaos Damage taken
+-# Maximum Endurance Charges
+-# Maximum Frenzy Charges
+-# Maximum Power Charges
+-# Physical Damage taken from Attacks
+-# Physical Damage taken from Projectile Attacks
+-# Physical Damage taken when hit by Animals
+-# to Mana Cost of Skills
+-#% Chance to Block
+-#% maximum Player Resistances
+-#% to all Elemental Resistances
+-#% to all maximum Resistances
+-#% to Cold Resistance
+-#% to Fire Resistance
+-#% to Lightning Resistance
+-#% to maximum Fire Resistance
+-100 to Accuracy Rating
+1% increased Attack Damage per 450 Evasion Rating
+10% increased Effect of Auras on You
+10% increased Effect of Auras on your Minions
+10% increased Radius of Area Skills
+100% increased Accuracy Rating when on Low Life
+100% increased Claw Physical Damage when on Low Life
+100% increased Recovery when on Low Life
+100% More Bow Damage at Close Range
+100% of Lightning Damage Converted to Chaos Damage
+135% increased Recovery Speed
+15% increased Skill Effect Duration
+20% reduced Strength Requirement
+200% increased Armour against Projectiles
+25% chance to Avoid being Chilled
+25% increased Attack Speed when on Low Life
+25% increased Strength Requirement
+3% reduced Attack and Cast Speed per Frenzy Charge
+30% increased Movement Speed for 9 seconds on Throwing a Trap
+30% of Melee Physical Damage taken reflected to Attacker
+30% reduced Damage
+30% reduced Endurance Charge Duration
+30% reduced Power Charge Duration
+33% reduced Recovery Speed
+5% chance to Curse Enemies with Enfeeble on Hit
+50% chance to Avoid being Frozen
+50% increased Amount Recovered
+50% increased Global Evasion Rating when on Low Life
+50% increased Recovery Speed
+50% of Recovery applied Instantly
+50% reduced Damage when on Low Life
+50% reduced number of Zombies allowed
+60% increased Life Recovered
+60% increased Mana Recovered
+60% increased Melee Damage when on Full Life
+8% reduced Mana Reserved
+80% reduced Spell Damage
+<corrupted>{Corrupted}
+<currencyitem>{#x Cartographer's Chisel}
+<currencyitem>{#x Chaos Orb}
+<currencyitem>{#x Currency}
+<currencyitem>{#x Exalted Orb}
+<currencyitem>{#x Gemcutter's Prism}
+<currencyitem>{#x Orb of Alchemy}
+<currencyitem>{#x Orb of Fusing}
+<currencyitem>{#x Orb of Regret}
+<currencyitem>{#x Regal Orb}
+<currencyitem>{#x Scroll of Wisdom}
+<currencyitem>{#x Vaal Orb}
+<currencyitem>{Chaos Orb}
+<currencyitem>{Exalted Orb}
+<currencyitem>{Gemcutter's Prism}
+<currencyitem>{Mirror of Kalandra}
+<currencyitem>{Vaal Orb}
+<default>{Item Level:} <normal>{#}
+<default>{Item Level:} <normal>{#}}
+<default>{Map Tier:} <normal>{#}
+<default>{Quality:} <augmented>{+#%}
+<divination>{Divination Card}
+<gemitem>{Level # Empower}
+<gemitem>{Level # Enhance}
+<gemitem>{Level # Enlighten}
+<gemitem>{Level # Gem}
+<gemitem>{Level # Spell Gem}
+<gemitem>{Level # Support Gem}
+<gemitem>{Summon Raging Spirit}
+<gemitem>{Superior Gem}
+<gemitem>{Superior Minion Gem}
+<gemitem>{Superior Mirror Arrow}
+<gemitem>{Superior Vaal Gem}
+<magicitem>{Dictator's Prophecy Wand}
+<magicitem>{Gemini Claw of Celebration}
+<magicitem>{Life Armour}
+<magicitem>{Runic One-Hand Weapon}
+<magicitem>{Seraphim's Armour}
+<magicitem>{Surgeon's Flask}
+<rareitem>{Amulet}
+<rareitem>{Jewellery}
+<rareitem>{Map}
+<rareitem>{Two-Stone Ring}
+<size:#>{<magicitem>{Bloodthirsty Eternal Sword}
+<size:#>{<magicitem>{Merciless Two-Hand Weapon}
+<uniqueitem>{Alpha's Howl}
+<uniqueitem>{Atziri's Acuity}
+<uniqueitem>{Atziri's Disfavour}
+<uniqueitem>{Axe}
+<uniqueitem>{Blood of Corruption}
+<uniqueitem>{Bow}
+<uniqueitem>{Crown of Eyes}
+<uniqueitem>{Dagger}
+<uniqueitem>{Divination Distillate}
+<uniqueitem>{Doedre Item}
+<uniqueitem>{Doryani's Fist}
+<uniqueitem>{Drillneck}
+<uniqueitem>{Headhunter}
+<uniqueitem>{Item}
+<uniqueitem>{Kaom's Heart}
+<uniqueitem>{Le Heup of All}
+<uniqueitem>{League-Specific Item}
+<uniqueitem>{Lifesprig}
+<uniqueitem>{Maligaro's Virtuosity}
+<uniqueitem>{Mao Kun}
+<uniqueitem>{Map}
+<uniqueitem>{Midnight Bargain}
+<uniqueitem>{Mjölner}
+<uniqueitem>{Mon'tregul's Grasp}
+<uniqueitem>{Nightmare Bascinet}
+<uniqueitem>{Pledge of Hands}
+<uniqueitem>{Prismatic Ring}
+<uniqueitem>{Ring}
+<uniqueitem>{Rise of the Phoenix}
+<uniqueitem>{Romira's Banquet}
+<uniqueitem>{Shavronne Item}
+<uniqueitem>{Shavronne's Revelation}
+<uniqueitem>{Shield}
+<uniqueitem>{Song of the Sirens}
+<uniqueitem>{Staff}
+<uniqueitem>{Sword}
+<uniqueitem>{Tabula Rasa}
+<uniqueitem>{Taste of Hate}
+<uniqueitem>{The Whispering Ice}
+<uniqueitem>{Voll's Devotion}
+<uniqueitem>{Voltaxic Rift}
+<uniqueitem>{Wake of Destruction}
+<uniqueitem>{Windripper}
+<whiteitem>{Five-Link Staff}
+<whiteitem>{Map}
+<whiteitem>{Mortal Hope}
+<whiteitem>{Prismatic Ring}
+<whiteitem>{Six-Link Astral Plate}
+<whiteitem>{Six-Link Body Armour}
+<whiteitem>{Six-Link Harbinger Bow}
+<whiteitem>{Six-Link Staff}
+Acrobatics
+Adds # maximum Lightning Damage to Attacks per # Dexterity Allocated in Radius
+Adds # to Maximum Life per # Intelligence in Radius
+Adds #-# Chaos Damage
+Adds #-# Chaos Damage in Off Hand
+Adds #-# Chaos Damage to Attacks
+Adds #-# Chaos Damage to Spells
+Adds #-# Cold Damage
+Adds #-# Cold Damage in Off Hand
+Adds #-# Cold Damage to Attacks
+Adds #-# Cold Damage to Spells
+Adds #-# Fire Attack Damage per Buff on You
+Adds #-# Fire Damage
+Adds #-# Fire Damage in Main Hand
+Adds #-# Fire Damage to Attacks
+Adds #-# Fire Damage to Attacks against Ignited Enemies
+Adds #-# Fire Damage to Attacks with Bows
+Adds #-# Fire Damage to Spells
+Adds #-# Fire Spell Damage per Buff on You
+Adds #-# Lightning Damage
+Adds #-# Lightning Damage to Attacks
+Adds #-# Lightning Damage to Attacks while Unarmed
+Adds #-# Lightning Damage to Spells
+Adds #-# Lightning Damage to Spells and Attacks
+Adds #-# Lightning Damage to Spells while Unarmed
+Adds #-# Physical Damage
+Adds #-# Physical Damage to Attacks
+Adds #-# Physical Damage to Attacks against Frozen Enemies
+Adds #-# Physical Damage to Attacks with Bows
+Adds an additional Arrow
+Adds Knockback during flask effect
+Adds Knockback to Melee Attacks during flask effect
+All Attack Damage Chills when you Stun
+All Sockets are White
+Allies' Aura Buffs do not affect you
+Applies level # Elemental Weakness on Blocking a Spell
+Applies level # Punishment on Blocking a Melee Attack
+Applies level # Temporal Chains on Blocking a Projectile Attack
+Area becomes fatal after some time
+Area contains a Large Chest
+Area contains many Totems
+Area contains no monsters
+Area contains two Unique Bosses
+Area has # seconds between monster waves
+Area has # waves of monsters
+Area has increased monster variety
+Area has patches of burning ground
+Area has patches of chilled ground
+Area has patches of desecrated ground
+Area has patches of shocking ground
+Area is #% larger
+Area is a large Maze
+Area is a Maze
+Area is inhabited by # additional Invasion Boss
+Area is inhabited by # additional Rogue Exiles
+Area is inhabited by Animals
+Area is inhabited by Bandits
+Area is inhabited by Demons
+Area is inhabited by Goatmen
+Area is inhabited by Humanoids
+Area is inhabited by ranged monsters
+Area is inhabited by Sea Witches and their Spawn
+Area is inhabited by Skeletons
+Area is inhabited by Undead
+Arrows always Pierce
+Attack Projectiles Return to You after hitting targets
+Attacks with this Weapon have #% increased Elemental Damage
+Blood Magic
+Bow Knockback at Close Range
+Can have multiple Crafted Mods
+Can summon up to 1 additional totem
+Can't use Chest armour
+Can't use other Rings
+Cannot be Blinded
+Cannot be Chilled
+Cannot be Chilled while you have Onslaught
+Cannot be Frozen
+Cannot be Ignited
+Cannot be Ignited while on Low Life
+Cannot be Knocked Back
+Cannot be Shocked
+Cannot be Stunned
+Cannot be Stunned when on Low Life
+Cannot be used with Chaos Inoculation
+Cannot Block Attacks
+Cannot Evade Enemy Attacks
+Cannot gain Power Charges
+Cannot Knock Enemies Back
+Cannot Leech
+Cannot Leech Life from Monsters
+Cannot Leech Mana
+Cannot Leech Mana from Monsters
+Cannot Leech when on Low Life
+Cannot roll Attack Mods
+Cannot roll Caster Mods
+Cannot roll Mods with Required Level above #
+Cast Socketed Minion Spells on Kill with this Weapon
+Causes Bleeding on Hit
+Chaos Damage does not bypass Energy Shield
+Chests have #% increased Item Rarity
+Chill and Freeze duration on you is based on #% of Energy Shield
+Conduit
+Contains the Immortalised Grandmasters
+Counts as Dual Wielding
+Creates a Smoke Cloud on Rampage
+Creates Consecrated Ground on Critical Strike
+Culling Strike
+Culling Strike against Burning Enemies
+Curse Enemies with Flammability on Hit
+Curse Enemies with level # Vulnerability on Block
+Curse Enemies with Temporal Chains on Hit
+Curse Reflection
+Curses have #% reduced effect on Monsters
+Curses in this item are reflected back to you
+Curses on Slain Enemies are transferred to a nearby Enemy
+Damage Penetrates #% Cold Resistance
+Damage Penetrates #% Fire Resistance
+Damage Penetrates #% Lightning Resistance
+Deal no Physical Damage
+Deals # Chaos Damage per second to nearby Enemies
+Dexterity and Intelligence from passives in Radius count towards Strength Melee Damage bonus
+Dexterity from Passives in Radius is Transformed to Intelligence
+Dexterity from Passives in Radius is Transformed to Strength
+Dispels Elemental Status Ailments on Rampage
+Elemental Resistances are Zero
+Enemies can have 1 additional Curse
+Enemies Cannot Leech Life From You
+Enemies Cannot Leech Mana From You
+Enemies Chilled by you take #% increased Burning Damage
+Enemies Frozen by you take 20% increased Damage
+Enemies Ignited by an Attack Burn #% faster
+Enemies killed by Zombies explode dealing Fire Damage
+Enemies killed explode dealing 10% of their Life as Fire Damage
+Eternal Iron Hook
+Extra gore
+Ezomite Shell Hook
+Final Boss drops higher Level Items
+Gain # Life when an Endurance Charge expires or is consumed
+Gain # Souls for Vaal Skills on Rampage
+Gain #% of Bow Physical Damage as Extra Damage of an Element
+Gain #% of Elemental Damage as Extra Chaos Damage during effect
+Gain #% of Physical Damage as Extra Chaos Damage
+Gain #% of Physical Damage as Extra Chaos Damage during effect
+Gain #% of Physical Damage as Extra Cold Damage
+Gain #% of Physical Damage as Extra Cold Damage during effect
+Gain +# Life when you Taunt an Enemy
+Gain +# Mana when you hit a Taunted Enemy
+Gain a Frenzy Charge if an Attack Ignites an Enemy
+Gain a Frenzy Charge on Critical Strike
+Gain a Power Charge for each Enemy you hit with a Critical Strike
+Gain a Power Charge on non-Critical Strike
+Gain an Endurance Charge when a Power Charge expires or is consumed
+Gain an Endurance Charge when you take a Critical Strike
+Gain Flask Charges when you deal a Critical Strike
+Gain Immunity to Physical Damage for # seconds on Rampage
+Gain Soul Eater during Flask Effect
+Gain Unholy Might for # seconds on Critical Strike
+Gain Unholy Might for # seconds on Rampage
+Ghost Reaver
+Gore Footprints
+Grants #% of Life Recovery to Minions
+Grants level # Bear Trap Skill
+Grants level # Gluttony of Elements Skill
+Grants level # Icestorm Skill
+Grants level # Lightning Warp Skill
+Grants level # Purity of Elements Skill
+Has no Sockets
+Hits can't be Evaded
+If # Notables are Allocated in Radius, When you Kill a Rare monster, you gain # of its mods for # seconds
+Ignite a nearby Enemy on Killing an Ignited Enemy
+Ignited Enemies Burn #% faster
+Ignited Enemies you hit are destroyed on Kill
+Immunity to Bleeding during flask effect
+Immunity to Curses during flask effect
+Immunity to Freeze and Chill during flask effect
+Immunity to Ignite during flask effect
+Immunity to Shock during flask effect
+Increases and Reductions to Cold Damage in Radius are Transformed to apply to Physical Damage
+Increases and Reductions to Energy Shield in Radius are Transformed to apply to Armour at #% of their value
+Increases and Reductions to Life in Radius are Transformed to apply to Energy Shield
+Increases and Reductions to Life in Radius are Transformed to apply to Mana at #% of their value
+Increases and Reductions to other Damage Types in Radius are Transformed to apply to Fire Damage
+Increases and Reductions to Physical Damage in Radius are Transformed to apply to Cold Damage
+Increases and Reductions to Spell Damage also apply to Attacks
+Inflicts a random level 20 Curse on you when your Totems die
+Instant Recovery
+Instant Recovery when on Low Life
+Insufficient Mana doesn't prevent your Melee Attacks
+Intelligence from Passives in Radius is Transformed to Dexterity
+Intelligence from Passives in Radius is Transformed to Strength
+Item drops on Death if equipped by an Animated Guardian
+Items and Gems have #% reduced Attribute Requirements
+Items and Gems have 25% reduced Attribute Requirements
+Karui Stone Hook
+Knockback direction is reversed
+Knocks Back Enemies in an Area on Flask use
+Leech applies instantly on Critical Strike
+Left ring slot: #% reduced Reflected Elemental Damage taken
+Left ring slot: 100% increased Mana Regeneration Rate
+Left ring slot: You cannot Recharge or Regenerate Energy Shield
+Life Leech from Hits with this Weapon applies instantly
+Light Radius is based on Energy Shield instead of Life
+Lose all Power Charges on Critical Strike
+Lose Souls gained from Soul Eater on Flask Use
+Magic Monster Packs each have a Bloodline Mod
+Melee and Melee Weapon Type modifiers in Radius are Transformed to Bow Modifiers
+Melee Critical Strikes cause Bleeding
+Melee Critical Strikes have #% chance to cause Bleeding
+Melee Critical Strikes have #% chance to Poison the Enemy
+Mercury Footprints
+Mind Over Matter
+Mines can be Detonated an additional time
+Minions deal #% increased Damage
+Minions deal #% increased Damage per # Dexterity
+Minions gain Unholy Might for # seconds on Kill
+Minions have #% additional chance to Dodge Attacks
+Minions have #% Chance to Block
+Minions have #% increased maximum Life
+Minions have #% increased Movement Speed
+Minions have #% increased Radius of Area Skills
+Minions have #% reduced maximum Life
+Minions have +# to Armour
+Minions have +#% to all Elemental Resistances
+Minions Recover #% of their Maximum Life when they Block
+Minions Regenerate #% Life per Second
+Monsters are Immune to Curses
+Monsters are immune to Elemental Status Ailments
+Monsters are immune to randomly chosen elemental status ailments or stun
+Monsters cannot be Stunned
+Monsters deal #% extra Damage as Cold
+Monsters deal #% extra Damage as Fire
+Monsters deal #% extra Damage as Lightning
+Monsters fire # additional Projectiles
+Monsters Fracture
+Monsters gain # Endurance Charge every # seconds
+Monsters gain # Endurance Charges every # seconds
+Monsters gain # Frenzy Charge every # seconds
+Monsters gain # Frenzy Charges every # seconds
+Monsters gain # Power Charge every # seconds
+Monsters gain # Power Charges every # seconds
+Monsters have #% chance to Avoid Elemental Status Ailments
+Monsters have #% increased Area of Effect
+Monsters have #% increased Critical Strike Chance
+Monsters have #% increased Critical Strike Multiplier
+Monsters Poison on Hit
+Monsters reflect #% of Elemental Damage
+Monsters reflect #% of Physical Damage
+Monsters reflect Curses
+Monsters' Melee Attacks apply random Curses on Hit
+Monsters' skills Chain 2 additional times
+Moving while Bleeding doesn't cause you to take extra Damage
+Nearby allies gain #% increased Damage
+Nearby Allies gain #% increased Mana Regeneration Rate
+Nearby Allies gain #% of Life Regenerated per Second
+Nearby Allies have #% increased Item Rarity
+Nearby allies Recover #% of your maximum Life when you Die
+Nearby Allies' spells have Culling Strike
+Nearby Enemies have #% increased Effect of Curses on them
+Never deal Critical Strikes
+No Life Recovery Applies during flask effect
+No Physical Damage
+Non-critical strikes deal #% Damage
+On Killing a Poisoned Enemy, nearby Allies Regenerate Life
+On Killing a Poisoned Enemy, nearby Enemies are Poisoned
+Pain Attunement
+Passives in Radius can be Allocated without being connected to your tree
+Players are cursed with Elemental Weakness
+Players are cursed with Enfeeble
+Players are cursed with Temporal Chains
+Players are cursed with Vulnerability
+Players are cursed with Warlord's Mark
+Players have Blood Magic
+Players have Elemental Equilibrium
+Players have no Life or Mana Regeneration
+Players Recover Life, Mana and Energy Shield #% slower
+Players take # Chaos Damage per second
+Poisonous Hit
+Prefixes Cannot Be Changed
+Projectile Damage increased by Arrow Pierce Chance
+Rare Monsters each have a Nemesis Mod
+Recharges 1 Charge when you deal a Critical Strike
+Recharges 3 Charges when you take a Critical Strike
+Recover #% of your Maximum Life on Rampage
+Recover #% of your maximum Life on use
+Recover Full Life at the end of the flask effect
+Reflects # Chaos Damage to Melee Attackers
+Reflects # Cold Damage to Melee Attackers
+Reflects # Fire Damage to Melee Attackers
+Reflects # Physical Damage to Attackers on Block
+Reflects # Physical Damage to Melee Attackers
+Reflects #-# Lightning Damage to Attackers on Block
+Reflects #-# Lightning Damage to Melee Attackers
+Reflects #-# Physical Damage to Attackers on Block
+Reflects #-# Physical Damage to Melee Attackers
+Reflects 200-250 Physical Damage to Attackers on Block
+Regenerate # Life over # second for each Spell you Cast
+Removes #% of maximum Energy Shield on Kill
+Removes #% of maximum Life on Kill
+Removes #% of your maximum Energy Shield on use
+Removes 10% of Life Recovered from Mana when used
+Removes 15% of Mana Recovered from Life when used
+Removes Bleeding on use
+Removes Burning on use
+Removes Curses on use
+Removes Freeze and Chill on use
+Removes Shock on use
+Replenishes Energy Shield by #% of Armour when you Block
+Reserves 30% of Life
+Restless Dead
+Rhoa Feather Lure
+Right ring slot: #% of Energy Shield Regenerated per second
+Right ring slot: #% reduced Reflected Physical Damage taken
+Right ring slot: You cannot Regenerate Mana
+Share Endurance Charges with nearby party members
+Shock a nearby Enemy for # seconds on Killing a Shocked Enemy
+Shocks you cause are reflected back to you
+Siren Worm Bait
+Skills Chain +# times
+Slaying Enemies close together can attract monsters from Beyond
+Socketed Gems are Supported by level # Added Chaos Damage
+Socketed Gems are Supported by level # Added Fire Damage
+Socketed Gems are Supported by level # Added Lightning Damage
+Socketed Gems are supported by level # Blind
+Socketed Gems are Supported by level # Blood Magic
+Socketed Gems are supported by level # Cast on Death
+Socketed Gems are supported by level # Chance to Flee
+Socketed Gems are Supported by level # Cold to Fire
+Socketed Gems are Supported by level # Concentrated Effect
+Socketed Gems are Supported by level # Elemental Proliferation
+Socketed Gems are Supported by level # Faster Attacks
+Socketed Gems are Supported by level # Fire Penetration
+Socketed Gems are Supported by level # Generosity
+Socketed Gems are Supported by level # Increased Area of Effect
+Socketed Gems are Supported by level # Increased Minion Damage
+Socketed Gems are Supported by level # Increased Minion Life
+Socketed Gems are Supported by level # Increased Minion Speed
+Socketed Gems are Supported by level # Iron Will
+Socketed Gems are Supported by level # Knockback
+Socketed Gems are Supported by level # Lesser Multiple Projectiles
+Socketed Gems are Supported by level # Melee Physical Damage
+Socketed Gems are supported by level # Multistrike
+Socketed Gems are Supported by level # Pierce
+Socketed Gems are Supported by level # Remote Mine
+Socketed Gems are Supported by level # Spell Echo
+Socketed Gems are Supported by level # Spell Totem
+Socketed Gems are Supported by level # Trap
+Socketed Gems fire # additional Projectiles
+Socketed Gems fire an additional Projectile
+Socketed Gems fire Projectiles in a Nova
+Socketed Gems have #% chance to cause Enemies to Flee on Hit
+Socketed Gems have #% reduced Elemental Equilibrium effect
+Socketed Gems have #% reduced Mana Cost
+Socketed Gems have #% reduced Mana Reservation
+Socketed Gems have Blood Magic
+Socketed Gems have Elemental Equilibrium
+Socketed Melee Gems have #% increased Area of Effect Radius
+Socketed Red Gems get #% Physical Damage as Extra Fire Damage
+Spreads Tar when you take a Critical Strike
+Strength from Passives in Radius is Transformed to Dexterity
+Strength from Passives in Radius is Transformed to Intelligence
+Take # Physical Damage when hit by Attacks
+Temporal Chains has #% reduced Effect on You
+Totemic Wood Lure
+Totems cannot be Stunned
+Totems fire # additional Projectiles
+Totems gain +#% to all Elemental Resistances
+Traps trigger at the end of their Duration
+Unaffected by Burning Ground
+Unaffected by Chilled Ground
+Unaffected by Desecrated Ground
+Unaffected by Shocked Ground
+Unique Boss deals #% increased Damage
+Unique Boss drops # additional Rare Amulets
+Unique Boss drops # additional Rare Belts
+Unique Boss drops # additional Rare Body Armours
+Unique Boss drops # additional Rare Boots
+Unique Boss drops # additional Rare Bows
+Unique Boss drops # additional Rare Claws
+Unique Boss drops # additional Rare Daggers
+Unique Boss drops # additional Rare Gloves
+Unique Boss drops # additional Rare Helmets
+Unique Boss drops # additional Rare One Handed Axes
+Unique Boss drops # additional Rare One Handed Maces
+Unique Boss drops # additional Rare One Handed Swords
+Unique Boss drops # additional Rare One Handed Thrusting Swords
+Unique Boss drops # additional Rare Quivers
+Unique Boss drops # additional Rare Rings
+Unique Boss drops # additional Rare Sceptres
+Unique Boss drops # additional Rare Shields
+Unique Boss drops # additional Rare Staves
+Unique Boss drops # additional Rare Two Handed Axes
+Unique Boss drops # additional Rare Two Handed Maces
+Unique Boss drops # additional Rare Two Handed Swords
+Unique Boss drops # additional Rare Wands
+Unique Boss gives #% increased Experience
+Unique Boss has #% increased Area of Effect
+Unique Boss has #% increased Attack and Cast Speed
+Unique Boss has #% increased Life
+Unwavering Stance
+Uses both hand slots
+Vaal Soul Hook
+Weapons you Animate create an additional copy
+When at maximum Frenzy Charges, Attacks Poison Enemies
+When Hit, #% of Damage is taken from Mana before Life
+When you Kill a Rare monster, you gain its mods for # seconds
+While on Low Life, Enemies are Unlucky when Damaging you
+With # Corrupted Items Equipped: #% of Chaos Damage does not bypass Energy Shield, and #% of Physical Damage bypasses Energy Shield
+With # Corrupted Items Equipped: Life Leech recovers based on your Chaos Damage instead
+You and nearby allies gain 15% increased Damage
+You can catch Exotic Fish
+You can have one additional Curse
+You can inflict multiple Ignites on an Enemy
+You can inflict up to # Ignites on an Enemy
+You can only deal Damage with this Weapon and Ignite
+You cannot be Chilled for # seconds after being Chilled
+You cannot be Frozen for # seconds after being Frozen
+You cannot be Ignited for # seconds after being Ignited
+You cannot be Shocked for # second after being Shocked
+You cannot be Shocked for # seconds after being Shocked
+You cannot be Shocked while Frozen
+You gain # Evasion Rating when on Full Life
+You gain # Evasion Rating when on Low Life
+You gain a Frenzy Charge on use
+You gain a Power Charge on use
+You gain an Endurance Charge on Kill
+You gain an Endurance Charge on use
+You gain Onslaught for # second per Endurance Charge when Hit
+You gain Onslaught for # seconds on Critical Strike
+You gain Onslaught for # seconds on Culling Strike
+You gain Onslaught for # seconds on Killing Taunted Enemies
+You gain Onslaught for # seconds on using a Vaal Skill
+You gain Onslaught for 2 seconds on Kill
+You grant # Frenzy Charges to allies on Death
+You lose all Endurance Charges when Hit
+You take # Chaos Damage per second for # seconds on Kill
+You take #% of your maximum Life as Chaos Damage on use
+You take #% reduced Extra Damage from Critical Strikes
+You take 450 Chaos Damage per second for 10 seconds on Kill
+Your Aura Buffs do not affect allies
+Your Chaos Damage can Shock
+Your Chaos Damage Poisons Enemies
+Your Cold Damage can Ignite but not Freeze or Chill
+Your Critical Strikes do not deal increased Damage
+Your Critical Strikes have Culling Strike
+Your Fire Damage can Shock but not Ignite
+Your Flasks grant #% chance to Freeze during flask effect
+Your Flasks grant #% chance to Ignite during flask effect
+Your Flasks grant #% chance to Shock during flask effect
+Your Flasks grant #% increased Rarity of Items found during flask effect
+Your Flasks grant #% reduced Enemy Stun Threshold during flask effect
+Your Flasks grant +#% to Chaos Resistance during flask effect
+Your Hits can only Kill Frozen enemies
+Your Lightning Damage can Freeze but not Shock
+Your Physical Damage can Chill
+Your Skills deal you #% of Mana Cost as Physical Damage
+Your Skills have no Mana Cost during flask effect
+Your spells have #% chance to Shock against Frozen enemies
+Your Spells have Culling Strike
+Zombies deal #% increased Physical Damage
+# Life Regenerated per second
+# Life Regenerated per second per Endurance Charge
+# Mana Regenerated per second
+# Physical Damage taken on Minion Death
+#% additional Block Chance
+#% additional Block Chance while Dual Wielding
+#% additional Block Chance while Dual Wielding Claws
+#% additional chance for Slain monsters to drop Scrolls of Wisdom
+#% additional Chance to Block Spells while Dual Wielding
+#% additional Chance to Block Spells with Shields
+#% additional Chance to Block Spells with Staves
+#% additional Chance to Block with Shields
+#% additional Chance to Block with Staves
+#% additional Elemental Resistances during flask effect
+#% chance of Projectiles Piercing
+#% chance on Block to create Consecrated Ground
+#% chance on Block to create Desecrated Ground
+#% chance to Avoid being Chilled
+#% chance to Avoid being Chilled during flask effect
+#% chance to Avoid being Frozen
+#% chance to Avoid being Frozen during flask effect
+#% chance to Avoid being Knocked Back
+#% chance to Avoid being Stunned
+#% chance to Avoid Elemental Status Ailments
+#% chance to Blind Enemies on hit
+#% Chance to Block
+#% Chance to Block during flask effect
+#% Chance to Block Spells
+#% Chance to Block Spells during flask effect
+#% chance to Cast Socketed Lightning Spells on Hit
+#% chance to cause Bleeding on Hit
+#% chance to cause Enemies to Flee on use
+#% Chance to Cause Monster to Flee on Block
+#% chance to Cause Monsters to Flee
+#% chance to create a Smoke Cloud when Hit
+#% chance to create Shocked Ground when Hit
+#% chance to Curse Enemies with a random Curse on Hit
+#% chance to Curse Enemies with Enfeeble on Hit
+#% chance to Dodge Attacks
+#% chance to Dodge Attacks per Frenzy Charge
+#% chance to Dodge Spell Damage
+#% chance to Freeze
+#% chance to Freeze, Shock and Ignite
+#% chance to gain a Frenzy Charge on Kill
+#% chance to gain a Power Charge if you Knock an Enemy Back with Melee Damage
+#% chance to gain a Power Charge on Kill
+#% chance to gain a Power Charge on Throwing a Trap
+#% chance to gain a Power Charge when you Stun
+#% chance to gain an additional Vaal Soul on Kill
+#% chance to gain an additional Vaal Soul per Enemy Shattered
+#% chance to gain an Endurance Charge when you Block
+#% chance to Gain Unholy Might for # seconds on Melee Kill
+#% chance to gain Unholy Might on block for # seconds
+#% chance to Ignite
+#% chance to Ignite when in Main Hand
+#% chance to Knock Enemies Back on hit
+#% chance to Recharge # Flask Charge when you take a Critical Strike
+#% chance to Shock
+#% chance to Steal Power, Frenzy, and Endurance Charges on Hit
+#% faster start of Energy Shield Recharge
+#% Global chance to Blind Enemies on hit
+#% increased Accuracy Rating
+#% increased Accuracy Rating per Frenzy Charge
+#% increased Amount Recovered
+#% increased Area Damage
+#% increased Area of Effect for Skills used by Totems
+#% increased Area of Effect Radius per 20 Intelligence
+#% Increased Area of Effect while Unarmed
+#% increased Armour
+#% increased Armour and Energy Shield
+#% increased Armour and Evasion
+#% increased Armour during flask effect
+#% increased Armour per # Strength when in Off Hand
+#% increased Armour while not Ignited, Frozen or Shocked
+#% increased Armour, Evasion and Energy Shield
+#% increased Attack and Cast Speed
+#% increased Attack Damage
+#% increased Attack Damage against Bleeding Enemies
+#% increased Attack Speed
+#% increased Attack Speed per 10 Dexterity
+#% increased Attack Speed per Frenzy Charge
+#% increased Attack Speed when on Full Life
+#% increased Attack Speed while Dual Wielding
+#% increased Attack Speed while holding a Shield
+#% increased Attack Speed while Ignited
+#% increased Attack Speed with Axes
+#% increased Attack Speed with Bows
+#% increased Attack Speed with Claws
+#% increased Attack Speed with Daggers
+#% increased Attack Speed with Maces
+#% increased Attack Speed with Movement Skills
+#% increased Attack Speed with One Handed Melee Weapons
+#% increased Attack Speed with Staves
+#% increased Attack Speed with Swords
+#% increased Attack Speed with Two Handed Melee Weapons
+#% increased Attack Speed with Wands
+#% increased Burning Damage
+#% increased Cast Speed
+#% increased Cast Speed while Dual Wielding
+#% increased Cast Speed while holding a Shield
+#% increased Cast Speed while Ignited
+#% increased Cast Speed while wielding a Staff
+#% increased Cast Speed with Cold Skills
+#% increased Cast Speed with Fire Skills
+#% increased Cast Speed with Lightning Skills
+#% increased Chaos Damage
+#% increased Chaos damage per # Intelligence from Allocated Passives in Radius
+#% increased Chaos Damage per Level
+#% increased Character Size
+#% increased Charge Recovery
+#% increased Charges used
+#% increased Chill Duration on Enemies
+#% increased Chill Duration on Enemies when in Off Hand
+#% increased Claw Physical Damage per # Dexterity Allocated in Radius
+#% increased Cold Damage
+#% increased Cold Damage with Weapons
+#% increased Critical Strike Chance
+#% increased Critical Strike Chance for Spells
+#% increased Critical Strike Chance with Cold Skills
+#% increased Critical Strike Chance with Elemental Skills
+#% increased Critical Strike Chance with Fire Skills
+#% increased Critical Strike Chance with Lightning Skills
+#% increased Critical Strike Chance with One Handed Melee Weapons
+#% increased Critical Strike Chance with Two Handed Melee Weapons
+#% increased Critical Strike Multiplier for Spells
+#% increased Critical Strike Multiplier while Dual Wielding
+#% increased Critical Strike Multiplier with Cold Skills
+#% increased Critical Strike Multiplier with Elemental Skills
+#% increased Critical Strike Multiplier with Fire Skills
+#% increased Critical Strike Multiplier with Lightning Skills
+#% increased Critical Strike Multiplier with One Handed Melee Weapons
+#% increased Critical Strike Multiplier with Two Handed Melee Weapons
+#% increased Curse Duration
+#% increased Damage
+#% increased Damage against Blinded Enemies
+#% increased Damage against Enemies on Low Life per Frenzy Charge
+#% increased Damage against Frozen Enemies
+#% increased Damage against Ignited Enemies
+#% increased Damage against Rare monsters
+#% increased Damage against Shocked Enemies
+#% increased Damage for each Magic Item you have equipped
+#% increased Damage on Burning Ground
+#% increased Damage over Time
+#% increased Damage per # Strength when in Main Hand
+#% increased Damage per Curse on Enemy
+#% increased Damage per Curse on You
+#% increased Damage per Freeze, Shock and Ignite on Enemy
+#% increased Damage taken
+#% increased Damage taken from Ghosts
+#% increased Damage taken from Skeletons
+#% increased Damage taken per Frenzy Charge
+#% increased Damage Taken while Energy Shield is Full
+#% increased Damage when on Low Life
+#% increased Damage when you have no Energy Shield
+#% increased Damage while Ignited
+#% increased Damage while Shocked
+#% increased Damage with Movement Skills
+#% increased Dexterity
+#% increased Duration of Curses on you
+#% increased Duration of Elemental Status Ailments on Enemies
+#% increased Duration of Shrine Effects on you
+#% increased effect of Auras you Cast
+#% increased Effect of Buffs on You
+#% increased effect of Flasks
+#% increased Effect of Shrine Buffs on you
+#% increased Effect of your Curses
+#% increased Elemental Damage
+#% increased Elemental Damage per Frenzy Charge
+#% increased Elemental Damage per Level
+#% increased Elemental Damage with Weapons
+#% increased Elemental Damage with Weapons during flask effect
+#% increased Elemental Resistances while on Low Life
+#% increased Endurance Charge Duration
+#% increased Endurance, Frenzy and Power Charge Duration
+#% increased Energy Shield
+#% increased Energy Shield Recharge Rate
+#% increased Evasion and Energy Shield
+#% increased Evasion Rating
+#% increased Evasion Rating during flask effect
+#% increased Evasion Rating per # Dexterity Allocated in Radius
+#% increased Experience gain
+#% increased Experience Gain for Corrupted Gems
+#% increased Fire Damage
+#% increased Fire Damage taken
+#% increased Fire Resistance while on Low Life
+#% increased Fishing Line Strength
+#% increased Fishing Range
+#% increased Flask Charges gained
+#% increased Flask effect duration
+#% increased Flask Life Recovery rate
+#% increased Flask Mana Recovery rate
+#% increased Freeze Duration on Enemies
+#% increased Global Attack Speed per Green Socket
+#% increased Global Critical Strike Chance
+#% increased Global Critical Strike Chance per Level
+#% increased Global Critical Strike Multiplier
+#% increased Global Defences
+#% increased Ignite Duration on Enemies
+#% increased Ignite Duration on You
+#% increased Intelligence
+#% increased Intelligence for each Unique Item you have equipped
+#% increased Intelligence Requirement
+#% increased Item Quantity per White Socket
+#% increased Life Leeched per second
+#% increased Life Recovered
+#% increased Life Recovery from Flasks
+#% increased Light Radius
+#% increased Light Radius during flask effect
+#% increased Lightning Damage
+#% increased Lightning Damage per Frenzy Charge
+#% increased Lightning Damage with Weapons
+#% increased Mana Cost of Skills
+#% increased Mana Leeched per second
+#% increased Mana Recovery from Flasks
+#% increased Mana Regeneration Rate
+#% increased maximum Energy Shield
+#% increased maximum Life
+#% increased maximum Mana
+#% increased Melee Critical Strike Chance
+#% increased Melee Critical Strike Multiplier
+#% increased Melee Damage
+#% increased Melee Damage when on Full Life
+#% increased Melee Physical Damage while holding a Shield
+#% increased Melee Physical Damage while Unarmed per # Dexterity Allocated in Radius
+#% increased Mine Damage
+#% increased Mine Laying Speed
+#% increased Monster Attack Speed
+#% increased Monster Cast Speed
+#% increased Monster Damage
+#% increased Monster Movement Speed
+#% increased Movement Speed
+#% increased Movement Speed during flask effect
+#% increased Movement Speed on Shocked Ground
+#% increased Movement Speed per # Evasion Rating
+#% increased Movement Speed per Frenzy Charge
+#% increased Movement Speed when on Full Energy Shield
+#% increased Movement Speed when on Full Life
+#% increased Movement Speed when on Low Life
+#% increased Movement Speed while Ignited
+#% increased Movement Speed while Shocked
+#% increased Physical Damage
+#% increased Physical Damage per Endurance Charge
+#% increased Physical Damage taken
+#% increased Physical Damage while Frozen
+#% increased Physical Damage with Axes
+#% increased Physical Damage with Bows
+#% increased Physical Damage with Claws
+#% increased Physical Damage with Daggers
+#% increased Physical Damage with Maces
+#% increased Physical Damage with One Handed Melee Weapons
+#% increased Physical Damage with Ranged Weapons
+#% increased Physical Damage with Staves
+#% increased Physical Damage with Swords
+#% increased Physical Damage with Two Handed Melee Weapons
+#% increased Physical Damage with Wands
+#% increased Physical Damage with Weapons per Red Socket
+#% increased Physical Weapon Damage per 10 Strength
+#% increased Physical Weapon Damage while Dual Wielding
+#% increased Projectile Damage
+#% increased Projectile Damage per Power Charge
+#% increased Projectile Speed
+#% increased Projectile Speed per Frenzy Charge
+#% increased Quantity of Fish Caught
+#% increased Quantity of Items Dropped by Slain Frozen Enemies
+#% increased Quantity of Items found
+#% increased Quantity of Items found during flask effect
+#% increased Radius of Area Skills
+#% increased Radius of Auras
+#% increased Radius of Curses
+#% increased Rarity of Fish Caught
+#% increased Rarity of Items Dropped by Enemies killed with a Critical Strike
+#% increased Rarity of Items Dropped by Frozen Enemies
+#% increased Rarity of Items Dropped by Slain Shocked Enemies
+#% increased Rarity of Items found
+#% increased Rarity of Items found during flask effect
+#% increased Rarity of Items found when on Low Life
+#% increased Recovery Speed
+#% increased Shock Duration on Enemies
+#% increased Shock Duration on You
+#% increased Skeleton Duration
+#% increased Skill Effect Duration
+#% increased Spell Damage
+#% increased Spell Damage per # Intelligence
+#% increased Spell Damage per 5% Block Chance
+#% increased Spell Damage per Power Charge
+#% increased Spell Damage taken when on Low Mana
+#% increased Spell Damage while Dual Wielding
+#% increased Spell Damage while holding a Shield
+#% increased Spell Damage while no Mana is Reserved
+#% increased Spell Damage while wielding a Staff
+#% increased Strength
+#% increased Strength Requirement
+#% increased Stun Duration on Enemies
+#% increased Stun Recovery
+#% increased Stun Recovery during flask effect
+#% increased Taunt Duration
+#% increased Totem Damage
+#% increased Totem Life
+#% increased Totem Life per # Strength Allocated in Radius
+#% increased Trap Damage
+#% increased Trap Throwing Speed
+#% increased Vaal Skill Critical Strike Chance
+#% increased Vaal Skill Effect Duration
+#% increased Weapon Critical Strike Chance while Dual Wielding
+#% increased Zombie Resistances
+#% increased Zombie Size
+#% less Animate Weapon Duration
+#% less Burning damage
+#% less Critical Strike Chance
+#% less Mine Damage
+#% less Weapon Damage
+#% more Magic Monsters
+#% more Melee Physical Damage during effect
+#% more Monster Life
+#% more Rare Monsters
+#% more Unarmed Physical Damage
+#% of Attack Damage Leeched as Life against Bleeding enemies
+#% of Block Chance applied to Spells
+#% of Block Chance applied to Spells when on Low Life
+#% of Chaos Damage Leeched as Life
+#% of Chaos Damage Leeched as Life during flask effect
+#% of Cold Damage Converted to Fire Damage
+#% of Cold Damage Leeched as Life
+#% of Damage against Frozen Enemies Leeched as Life
+#% of Damage against Shocked Enemies Leeched as Mana
+#% of Damage Leeched as Life against Shocked Enemies
+#% of Damage Leeched as Life for Skills used by Totems
+#% of Damage Leeched as Life on Critical Strike
+#% of Damage taken Gained as Mana when Hit
+#% of Damage you Reflect to enemies is gained as Life
+#% of Elemental Damage Leeched as Life
+#% of Elemental Damage taken as Chaos Damage
+#% of Fire Damage Converted to Chaos Damage
+#% of Fire Damage Leeched as Life
+#% of Fire Damage taken as Physical Damage
+#% of Life Regenerated per Second
+#% of Life Regenerated Per Second on Chilled Ground
+#% of Life Regenerated per Second per Frenzy Charge
+#% of Life Regenerated per Second while on Low Life
+#% of Lightning Damage Converted to Cold Damage
+#% of Lightning Damage Leeched as Life
+#% of maximum Life taken as Chaos Damage per Second
+#% of maximum Mana gained on Kill
+#% of Melee Physical Damage taken reflected to Attacker
+#% of Physical Attack Damage Leeched as Life
+#% of Physical Attack Damage Leeched as Mana
+#% of Physical Attack Damage Leeched as Mana per Blue Socket
+#% of Physical Attack Damage Leeched as Mana per Power Charge
+#% of Physical Damage Converted to Chaos Damage
+#% of Physical Damage Converted to Cold Damage
+#% of Physical Damage Converted to Fire Damage
+#% of Physical Damage Converted to Lightning Damage
+#% of Physical Damage Leeched as Life
+#% of Physical Damage taken as Chaos Damage
+#% of Physical Damage taken as Cold Damage during flask effect
+#% of Physical Damage taken as Fire Damage
+#% of Physical Damage taken as Lightning Damage
+#% reduced Accuracy Rating
+#% reduced Amount Recovered
+#% reduced Attack Speed
+#% reduced Attribute Requirements
+#% reduced Cast Speed
+#% reduced Chance to Block Attacks and Spells
+#% reduced Character Size
+#% reduced Chill Duration on You
+#% reduced Damage taken from Damage Over Time
+#% reduced Duration of Curses on you
+#% reduced Effect of Chill on You
+#% reduced Effect of Curses on You
+#% reduced Endurance, Frenzy and Power Charge Duration
+#% reduced Enemy Block Chance
+#% reduced Enemy Stun Threshold
+#% reduced Enemy Stun Threshold with this Weapon
+#% reduced Energy Shield Recharge Rate
+#% reduced Experience gain
+#% reduced Fishing Pool Consumption
+#% reduced Flask Charges used
+#% reduced Flask effect duration
+#% reduced Freeze Duration on You
+#% reduced Frenzy Charge Duration
+#% reduced Frenzy Charge Duration per Frenzy Charge
+#% reduced Global Critical Strike Multiplier
+#% reduced Ignite Duration on Enemies
+#% reduced Intelligence
+#% reduced Life Leeched per second
+#% reduced Light Radius
+#% reduced Mana Cost of Skills
+#% reduced Mana Cost of Skills when on Low Life
+#% reduced Mana Cost of Totem Skills that cast an Aura
+#% reduced Mana Regeneration Rate
+#% reduced Mana Reserved
+#% reduced maximum Energy Shield
+#% reduced maximum Life
+#% reduced maximum Mana
+#% reduced Movement Speed
+#% reduced Movement Speed when on Low Life
+#% reduced Physical Damage
+#% reduced Projectile Speed
+#% reduced Quantity of Fish Caught
+#% reduced Quantity of Items found
+#% reduced Radius of Curses
+#% reduced Rarity of Items found
+#% reduced Recovery Speed
+#% reduced Skeleton Duration
+#% reduced Skill Effect Duration
+#% reduced Strength Requirement
+#% reduced Stun Recovery
+#% reduced Totem Damage
+#% reduced Trap Duration
+#% slower start of Energy Shield Recharge
+#.#% of Attack Damage Leeched as Life against Chilled enemies
+#.#% of Physical Attack Damage Leeched as Life during Flask Effect
+#.#% of Physical Attack Damage Leeched as Mana during Flask Effect
++# Energy Shield gained for each Enemy hit by your Attacks
++# Energy Shield gained on Kill
++# Energy Shield gained on Kill per Level
++# Energy Shield gained on Killing a Shocked Enemy
++# Extra Charges
++# Intelligence Requirement
++# Life gained for each Enemy hit by Attacks
++# Life gained for each Enemy hit by your Attacks
++# Life gained for each Enemy hit by your Spells
++# Life gained for each Ignited Enemy hit by your Attacks
++# Life gained on Kill
++# Life gained on Kill per Frenzy Charge
++# Life gained on Kill per Level
++# Life gained on Killing Ignited Enemies
++# Life gained when you Block
++# Mana gained for each Enemy hit by your Attacks
++# Mana Gained on Kill
++# Mana gained on Kill per Level
++# Mana gained when you Block
++# Maximum Endurance Charge
++# Maximum Frenzy Charge
++# Maximum Power Charge
++# Strength Requirement
++# to Accuracy Rating
++# to all Attributes
++# to Armour
++# to Armour while Frozen
++# to Dexterity
++# to Dexterity and Intelligence
++# to Evasion Rating
++# to Intelligence
++# to Level of Active Socketed Skill Gems
++# to Level of Socketed Aura Gems
++# to Level of Socketed Bow Gems
++# to Level of Socketed Cold Gems
++# to Level of Socketed Curse Gems
++# to Level of Socketed Dexterity Gems
++# to Level of Socketed Elemental Gems
++# to Level of Socketed Fire Gems
++# to Level of Socketed Gems
++# to Level of Socketed Golem Gems
++# to Level of Socketed Lightning Gems
++# to Level of Socketed Melee Gems
++# to Level of Socketed Minion Gems
++# to Level of Socketed Movement Gems
++# to Level of Socketed Spell Gems
++# to Level of Socketed Strength Gems
++# to Level of Socketed Support Gems
++# to Level of Socketed Vaal Gems
++# to Level of Socketed Warcry Gems
++# to maximum Energy Shield
++# to Maximum Energy Shield per Blue Socket
++# to maximum Life
++# to Maximum Life per Red Socket
++# to maximum Mana
++# to Maximum Mana per Green Socket
++# to maximum number of Skeletons
++# to maximum number of Spectres
++# to maximum number of Zombies
++# to Melee Weapon and Unarmed range
++# to Melee Weapon Range per White Socket
++# to Strength
++# to Strength and Dexterity
++# to Strength and Intelligence
++# to Weapon range
++# to Zombie maximum Life
++#% chance to be Ignited
++#% chance to be Pierced by Projectiles
++#% Chance to Block
++#% Chance to Block with Shields
++#% Chance to Block@
++#% Chaos Resistance when on Low Life
++#% Monster Cold Resistance
++#% Monster Fire Resistance
++#% Monster Lightning Resistance
++#% Monster Physical Damage Reduction
++#% to all Elemental Resistances
++#% to all maximum Elemental Resistances during flask effect
++#% to all maximum Resistances
++#% to Chaos Resistance
++#% to Cold and Lightning Resistances
++#% to Cold Resistance
++#% to Cold Resistance when Socketed with a Green Gem
++#% to Fire and Cold Resistances
++#% to Fire and Lightning Resistances
++#% to Fire Resistance
++#% to Fire Resistance when Socketed with a Red Gem
++#% to Lightning Resistance
++#% to Lightning Resistance when Socketed with a Blue Gem
++#% to maximum Block Chance
++#% to maximum Cold Resistance
++#% to maximum Fire Resistance
++#% to maximum Lightning Resistance
++#% to Quality of Socketed Support Gems
++25% additional Block Chance against Projectiles
+-# Chaos Damage taken
+-# Maximum Endurance Charges
+-# Maximum Frenzy Charges
+-# Maximum Power Charges
+-# Physical Damage taken from Attacks
+-# Physical Damage taken from Projectile Attacks
+-# Physical Damage taken when hit by Animals
+-# to Mana Cost of Skills
+-#% Chance to Block
+-#% maximum Player Resistances
+-#% to all Elemental Resistances
+-#% to all maximum Resistances
+-#% to Cold Resistance
+-#% to Fire Resistance
+-#% to Lightning Resistance
+-#% to maximum Fire Resistance
+-100 to Accuracy Rating
+1% increased Attack Damage per 450 Evasion Rating
+10% increased Effect of Auras on You
+10% increased Effect of Auras on your Minions
+10% increased Radius of Area Skills
+100% increased Accuracy Rating when on Low Life
+100% increased Claw Physical Damage when on Low Life
+100% increased Recovery when on Low Life
+100% More Bow Damage at Close Range
+100% of Lightning Damage Converted to Chaos Damage
+135% increased Recovery Speed
+15% increased Skill Effect Duration
+20% reduced Strength Requirement
+200% increased Armour against Projectiles
+25% chance to Avoid being Chilled
+25% increased Attack Speed when on Low Life
+25% increased Strength Requirement
+3% reduced Attack and Cast Speed per Frenzy Charge
+30% increased Movement Speed for 9 seconds on Throwing a Trap
+30% of Melee Physical Damage taken reflected to Attacker
+30% reduced Damage
+30% reduced Endurance Charge Duration
+30% reduced Power Charge Duration
+33% reduced Recovery Speed
+5% chance to Curse Enemies with Enfeeble on Hit
+50% chance to Avoid being Frozen
+50% increased Amount Recovered
+50% increased Global Evasion Rating when on Low Life
+50% increased Recovery Speed
+50% of Recovery applied Instantly
+50% reduced Damage when on Low Life
+50% reduced number of Zombies allowed
+60% increased Life Recovered
+60% increased Mana Recovered
+60% increased Melee Damage when on Full Life
+8% reduced Mana Reserved
+80% reduced Spell Damage
+<corrupted>{Corrupted}
+<currencyitem>{#x Cartographer's Chisel}
+<currencyitem>{#x Chaos Orb}
+<currencyitem>{#x Currency}
+<currencyitem>{#x Exalted Orb}
+<currencyitem>{#x Gemcutter's Prism}
+<currencyitem>{#x Orb of Alchemy}
+<currencyitem>{#x Orb of Fusing}
+<currencyitem>{#x Orb of Regret}
+<currencyitem>{#x Regal Orb}
+<currencyitem>{#x Scroll of Wisdom}
+<currencyitem>{#x Vaal Orb}
+<currencyitem>{Chaos Orb}
+<currencyitem>{Exalted Orb}
+<currencyitem>{Gemcutter's Prism}
+<currencyitem>{Mirror of Kalandra}
+<currencyitem>{Vaal Orb}
+<default>{Item Level:} <normal>{#}
+<default>{Item Level:} <normal>{#}}
+<default>{Map Tier:} <normal>{#}
+<default>{Quality:} <augmented>{+#%}
+<divination>{Divination Card}
+<gemitem>{Level # Empower}
+<gemitem>{Level # Enhance}
+<gemitem>{Level # Enlighten}
+<gemitem>{Level # Gem}
+<gemitem>{Level # Spell Gem}
+<gemitem>{Level # Support Gem}
+<gemitem>{Summon Raging Spirit}
+<gemitem>{Superior Gem}
+<gemitem>{Superior Minion Gem}
+<gemitem>{Superior Mirror Arrow}
+<gemitem>{Superior Vaal Gem}
+<magicitem>{Dictator's Prophecy Wand}
+<magicitem>{Gemini Claw of Celebration}
+<magicitem>{Life Armour}
+<magicitem>{Runic One-Hand Weapon}
+<magicitem>{Seraphim's Armour}
+<magicitem>{Surgeon's Flask}
+<rareitem>{Amulet}
+<rareitem>{Jewellery}
+<rareitem>{Map}
+<rareitem>{Two-Stone Ring}
+<size:#>{<magicitem>{Bloodthirsty Eternal Sword}
+<size:#>{<magicitem>{Merciless Two-Hand Weapon}
+<uniqueitem>{Alpha's Howl}
+<uniqueitem>{Atziri's Acuity}
+<uniqueitem>{Atziri's Disfavour}
+<uniqueitem>{Axe}
+<uniqueitem>{Blood of Corruption}
+<uniqueitem>{Bow}
+<uniqueitem>{Crown of Eyes}
+<uniqueitem>{Dagger}
+<uniqueitem>{Divination Distillate}
+<uniqueitem>{Doedre Item}
+<uniqueitem>{Doryani's Fist}
+<uniqueitem>{Drillneck}
+<uniqueitem>{Headhunter}
+<uniqueitem>{Item}
+<uniqueitem>{Kaom's Heart}
+<uniqueitem>{Le Heup of All}
+<uniqueitem>{League-Specific Item}
+<uniqueitem>{Lifesprig}
+<uniqueitem>{Maligaro's Virtuosity}
+<uniqueitem>{Mao Kun}
+<uniqueitem>{Map}
+<uniqueitem>{Midnight Bargain}
+<uniqueitem>{Mjölner}
+<uniqueitem>{Mon'tregul's Grasp}
+<uniqueitem>{Nightmare Bascinet}
+<uniqueitem>{Pledge of Hands}
+<uniqueitem>{Prismatic Ring}
+<uniqueitem>{Ring}
+<uniqueitem>{Rise of the Phoenix}
+<uniqueitem>{Romira's Banquet}
+<uniqueitem>{Shavronne Item}
+<uniqueitem>{Shavronne's Revelation}
+<uniqueitem>{Shield}
+<uniqueitem>{Song of the Sirens}
+<uniqueitem>{Staff}
+<uniqueitem>{Sword}
+<uniqueitem>{Tabula Rasa}
+<uniqueitem>{Taste of Hate}
+<uniqueitem>{The Whispering Ice}
+<uniqueitem>{Voll's Devotion}
+<uniqueitem>{Voltaxic Rift}
+<uniqueitem>{Wake of Destruction}
+<uniqueitem>{Windripper}
+<whiteitem>{Five-Link Staff}
+<whiteitem>{Map}
+<whiteitem>{Mortal Hope}
+<whiteitem>{Prismatic Ring}
+<whiteitem>{Six-Link Astral Plate}
+<whiteitem>{Six-Link Body Armour}
+<whiteitem>{Six-Link Harbinger Bow}
+<whiteitem>{Six-Link Staff}
+Acrobatics
+Adds # maximum Lightning Damage to Attacks per # Dexterity Allocated in Radius
+Adds # to Maximum Life per # Intelligence in Radius
+Adds #-# Chaos Damage
+Adds #-# Chaos Damage in Off Hand
+Adds #-# Chaos Damage to Attacks
+Adds #-# Chaos Damage to Spells
+Adds #-# Cold Damage
+Adds #-# Cold Damage in Off Hand
+Adds #-# Cold Damage to Attacks
+Adds #-# Cold Damage to Spells
+Adds #-# Fire Attack Damage per Buff on You
+Adds #-# Fire Damage
+Adds #-# Fire Damage in Main Hand
+Adds #-# Fire Damage to Attacks
+Adds #-# Fire Damage to Attacks against Ignited Enemies
+Adds #-# Fire Damage to Attacks with Bows
+Adds #-# Fire Damage to Spells
+Adds #-# Fire Spell Damage per Buff on You
+Adds #-# Lightning Damage
+Adds #-# Lightning Damage to Attacks
+Adds #-# Lightning Damage to Attacks while Unarmed
+Adds #-# Lightning Damage to Spells
+Adds #-# Lightning Damage to Spells and Attacks
+Adds #-# Lightning Damage to Spells while Unarmed
+Adds #-# Physical Damage
+Adds #-# Physical Damage to Attacks
+Adds #-# Physical Damage to Attacks against Frozen Enemies
+Adds #-# Physical Damage to Attacks with Bows
+Adds an additional Arrow
+Adds Knockback during flask effect
+Adds Knockback to Melee Attacks during flask effect
+All Attack Damage Chills when you Stun
+All Sockets are White
+Allies' Aura Buffs do not affect you
+Applies level # Elemental Weakness on Blocking a Spell
+Applies level # Punishment on Blocking a Melee Attack
+Applies level # Temporal Chains on Blocking a Projectile Attack
+Area becomes fatal after some time
+Area contains a Large Chest
+Area contains many Totems
+Area contains no monsters
+Area contains two Unique Bosses
+Area has # seconds between monster waves
+Area has # waves of monsters
+Area has increased monster variety
+Area has patches of burning ground
+Area has patches of chilled ground
+Area has patches of desecrated ground
+Area has patches of shocking ground
+Area is #% larger
+Area is a large Maze
+Area is a Maze
+Area is inhabited by # additional Invasion Boss
+Area is inhabited by # additional Rogue Exiles
+Area is inhabited by Animals
+Area is inhabited by Bandits
+Area is inhabited by Demons
+Area is inhabited by Goatmen
+Area is inhabited by Humanoids
+Area is inhabited by ranged monsters
+Area is inhabited by Sea Witches and their Spawn
+Area is inhabited by Skeletons
+Area is inhabited by Undead
+Arrows always Pierce
+Attack Projectiles Return to You after hitting targets
+Attacks with this Weapon have #% increased Elemental Damage
+Blood Magic
+Bow Knockback at Close Range
+Can have multiple Crafted Mods
+Can summon up to 1 additional totem
+Can't use Chest armour
+Can't use other Rings
+Cannot be Blinded
+Cannot be Chilled
+Cannot be Chilled while you have Onslaught
+Cannot be Frozen
+Cannot be Ignited
+Cannot be Ignited while on Low Life
+Cannot be Knocked Back
+Cannot be Shocked
+Cannot be Stunned
+Cannot be Stunned when on Low Life
+Cannot be used with Chaos Inoculation
+Cannot Block Attacks
+Cannot Evade Enemy Attacks
+Cannot gain Power Charges
+Cannot Knock Enemies Back
+Cannot Leech
+Cannot Leech Life from Monsters
+Cannot Leech Mana
+Cannot Leech Mana from Monsters
+Cannot Leech when on Low Life
+Cannot roll Attack Mods
+Cannot roll Caster Mods
+Cannot roll Mods with Required Level above #
+Cast Socketed Minion Spells on Kill with this Weapon
+Causes Bleeding on Hit
+Chaos Damage does not bypass Energy Shield
+Chests have #% increased Item Rarity
+Chill and Freeze duration on you is based on #% of Energy Shield
+Conduit
+Contains the Immortalised Grandmasters
+Counts as Dual Wielding
+Creates a Smoke Cloud on Rampage
+Creates Consecrated Ground on Critical Strike
+Culling Strike
+Culling Strike against Burning Enemies
+Curse Enemies with Flammability on Hit
+Curse Enemies with level # Vulnerability on Block
+Curse Enemies with Temporal Chains on Hit
+Curse Reflection
+Curses have #% reduced effect on Monsters
+Curses in this item are reflected back to you
+Curses on Slain Enemies are transferred to a nearby Enemy
+Damage Penetrates #% Cold Resistance
+Damage Penetrates #% Fire Resistance
+Damage Penetrates #% Lightning Resistance
+Deal no Physical Damage
+Deals # Chaos Damage per second to nearby Enemies
+Dexterity and Intelligence from passives in Radius count towards Strength Melee Damage bonus
+Dexterity from Passives in Radius is Transformed to Intelligence
+Dexterity from Passives in Radius is Transformed to Strength
+Dispels Elemental Status Ailments on Rampage
+Elemental Resistances are Zero
+Enemies can have 1 additional Curse
+Enemies Cannot Leech Life From You
+Enemies Cannot Leech Mana From You
+Enemies Chilled by you take #% increased Burning Damage
+Enemies Frozen by you take 20% increased Damage
+Enemies Ignited by an Attack Burn #% faster
+Enemies killed by Zombies explode dealing Fire Damage
+Enemies killed explode dealing 10% of their Life as Fire Damage
+Eternal Iron Hook
+Extra gore
+Ezomite Shell Hook
+Final Boss drops higher Level Items
+Gain # Life when an Endurance Charge expires or is consumed
+Gain # Souls for Vaal Skills on Rampage
+Gain #% of Bow Physical Damage as Extra Damage of an Element
+Gain #% of Elemental Damage as Extra Chaos Damage during effect
+Gain #% of Physical Damage as Extra Chaos Damage
+Gain #% of Physical Damage as Extra Chaos Damage during effect
+Gain #% of Physical Damage as Extra Cold Damage
+Gain #% of Physical Damage as Extra Cold Damage during effect
+Gain +# Life when you Taunt an Enemy
+Gain +# Mana when you hit a Taunted Enemy
+Gain a Frenzy Charge if an Attack Ignites an Enemy
+Gain a Frenzy Charge on Critical Strike
+Gain a Power Charge for each Enemy you hit with a Critical Strike
+Gain a Power Charge on non-Critical Strike
+Gain an Endurance Charge when a Power Charge expires or is consumed
+Gain an Endurance Charge when you take a Critical Strike
+Gain Flask Charges when you deal a Critical Strike
+Gain Immunity to Physical Damage for # seconds on Rampage
+Gain Soul Eater during Flask Effect
+Gain Unholy Might for # seconds on Critical Strike
+Gain Unholy Might for # seconds on Rampage
+Ghost Reaver
+Gore Footprints
+Grants #% of Life Recovery to Minions
+Grants level # Bear Trap Skill
+Grants level # Gluttony of Elements Skill
+Grants level # Icestorm Skill
+Grants level # Lightning Warp Skill
+Grants level # Purity of Elements Skill
+Has no Sockets
+Hits can't be Evaded
+If # Notables are Allocated in Radius, When you Kill a Rare monster, you gain # of its mods for # seconds
+Ignite a nearby Enemy on Killing an Ignited Enemy
+Ignited Enemies Burn #% faster
+Ignited Enemies you hit are destroyed on Kill
+Immunity to Bleeding during flask effect
+Immunity to Curses during flask effect
+Immunity to Freeze and Chill during flask effect
+Immunity to Ignite during flask effect
+Immunity to Shock during flask effect
+Increases and Reductions to Cold Damage in Radius are Transformed to apply to Physical Damage
+Increases and Reductions to Energy Shield in Radius are Transformed to apply to Armour at #% of their value
+Increases and Reductions to Life in Radius are Transformed to apply to Energy Shield
+Increases and Reductions to Life in Radius are Transformed to apply to Mana at #% of their value
+Increases and Reductions to other Damage Types in Radius are Transformed to apply to Fire Damage
+Increases and Reductions to Physical Damage in Radius are Transformed to apply to Cold Damage
+Increases and Reductions to Spell Damage also apply to Attacks
+Inflicts a random level 20 Curse on you when your Totems die
+Instant Recovery
+Instant Recovery when on Low Life
+Insufficient Mana doesn't prevent your Melee Attacks
+Intelligence from Passives in Radius is Transformed to Dexterity
+Intelligence from Passives in Radius is Transformed to Strength
+Item drops on Death if equipped by an Animated Guardian
+Items and Gems have #% reduced Attribute Requirements
+Items and Gems have 25% reduced Attribute Requirements
+Karui Stone Hook
+Knockback direction is reversed
+Knocks Back Enemies in an Area on Flask use
+Leech applies instantly on Critical Strike
+Left ring slot: #% reduced Reflected Elemental Damage taken
+Left ring slot: 100% increased Mana Regeneration Rate
+Left ring slot: You cannot Recharge or Regenerate Energy Shield
+Life Leech from Hits with this Weapon applies instantly
+Light Radius is based on Energy Shield instead of Life
+Lose all Power Charges on Critical Strike
+Lose Souls gained from Soul Eater on Flask Use
+Magic Monster Packs each have a Bloodline Mod
+Melee and Melee Weapon Type modifiers in Radius are Transformed to Bow Modifiers
+Melee Critical Strikes cause Bleeding
+Melee Critical Strikes have #% chance to cause Bleeding
+Melee Critical Strikes have #% chance to Poison the Enemy
+Mercury Footprints
+Mind Over Matter
+Mines can be Detonated an additional time
+Minions deal #% increased Damage
+Minions deal #% increased Damage per # Dexterity
+Minions gain Unholy Might for # seconds on Kill
+Minions have #% additional chance to Dodge Attacks
+Minions have #% Chance to Block
+Minions have #% increased maximum Life
+Minions have #% increased Movement Speed
+Minions have #% increased Radius of Area Skills
+Minions have #% reduced maximum Life
+Minions have +# to Armour
+Minions have +#% to all Elemental Resistances
+Minions Recover #% of their Maximum Life when they Block
+Minions Regenerate #% Life per Second
+Monsters are Immune to Curses
+Monsters are immune to Elemental Status Ailments
+Monsters are immune to randomly chosen elemental status ailments or stun
+Monsters cannot be Stunned
+Monsters deal #% extra Damage as Cold
+Monsters deal #% extra Damage as Fire
+Monsters deal #% extra Damage as Lightning
+Monsters fire # additional Projectiles
+Monsters Fracture
+Monsters gain # Endurance Charge every # seconds
+Monsters gain # Endurance Charges every # seconds
+Monsters gain # Frenzy Charge every # seconds
+Monsters gain # Frenzy Charges every # seconds
+Monsters gain # Power Charge every # seconds
+Monsters gain # Power Charges every # seconds
+Monsters have #% chance to Avoid Elemental Status Ailments
+Monsters have #% increased Area of Effect
+Monsters have #% increased Critical Strike Chance
+Monsters have #% increased Critical Strike Multiplier
+Monsters Poison on Hit
+Monsters reflect #% of Elemental Damage
+Monsters reflect #% of Physical Damage
+Monsters reflect Curses
+Monsters' Melee Attacks apply random Curses on Hit
+Monsters' skills Chain 2 additional times
+Moving while Bleeding doesn't cause you to take extra Damage
+Nearby allies gain #% increased Damage
+Nearby Allies gain #% increased Mana Regeneration Rate
+Nearby Allies gain #% of Life Regenerated per Second
+Nearby Allies have #% increased Item Rarity
+Nearby allies Recover #% of your maximum Life when you Die
+Nearby Allies' spells have Culling Strike
+Nearby Enemies have #% increased Effect of Curses on them
+Never deal Critical Strikes
+No Life Recovery Applies during flask effect
+No Physical Damage
+Non-critical strikes deal #% Damage
+On Killing a Poisoned Enemy, nearby Allies Regenerate Life
+On Killing a Poisoned Enemy, nearby Enemies are Poisoned
+Pain Attunement
+Passives in Radius can be Allocated without being connected to your tree
+Players are cursed with Elemental Weakness
+Players are cursed with Enfeeble
+Players are cursed with Temporal Chains
+Players are cursed with Vulnerability
+Players are cursed with Warlord's Mark
+Players have Blood Magic
+Players have Elemental Equilibrium
+Players have no Life or Mana Regeneration
+Players Recover Life, Mana and Energy Shield #% slower
+Players take # Chaos Damage per second
+Poisonous Hit
+Prefixes Cannot Be Changed
+Projectile Damage increased by Arrow Pierce Chance
+Rare Monsters each have a Nemesis Mod
+Recharges 1 Charge when you deal a Critical Strike
+Recharges 3 Charges when you take a Critical Strike
+Recover #% of your Maximum Life on Rampage
+Recover #% of your maximum Life on use
+Recover Full Life at the end of the flask effect
+Reflects # Chaos Damage to Melee Attackers
+Reflects # Cold Damage to Melee Attackers
+Reflects # Fire Damage to Melee Attackers
+Reflects # Physical Damage to Attackers on Block
+Reflects # Physical Damage to Melee Attackers
+Reflects #-# Lightning Damage to Attackers on Block
+Reflects #-# Lightning Damage to Melee Attackers
+Reflects #-# Physical Damage to Attackers on Block
+Reflects #-# Physical Damage to Melee Attackers
+Reflects 200-250 Physical Damage to Attackers on Block
+Regenerate # Life over # second for each Spell you Cast
+Removes #% of maximum Energy Shield on Kill
+Removes #% of maximum Life on Kill
+Removes #% of your maximum Energy Shield on use
+Removes 10% of Life Recovered from Mana when used
+Removes 15% of Mana Recovered from Life when used
+Removes Bleeding on use
+Removes Burning on use
+Removes Curses on use
+Removes Freeze and Chill on use
+Removes Shock on use
+Replenishes Energy Shield by #% of Armour when you Block
+Reserves 30% of Life
+Restless Dead
+Rhoa Feather Lure
+Right ring slot: #% of Energy Shield Regenerated per second
+Right ring slot: #% reduced Reflected Physical Damage taken
+Right ring slot: You cannot Regenerate Mana
+Share Endurance Charges with nearby party members
+Shock a nearby Enemy for # seconds on Killing a Shocked Enemy
+Shocks you cause are reflected back to you
+Siren Worm Bait
+Skills Chain +# times
+Slaying Enemies close together can attract monsters from Beyond
+Socketed Gems are Supported by level # Added Chaos Damage
+Socketed Gems are Supported by level # Added Fire Damage
+Socketed Gems are Supported by level # Added Lightning Damage
+Socketed Gems are supported by level # Blind
+Socketed Gems are Supported by level # Blood Magic
+Socketed Gems are supported by level # Cast on Death
+Socketed Gems are supported by level # Chance to Flee
+Socketed Gems are Supported by level # Cold to Fire
+Socketed Gems are Supported by level # Concentrated Effect
+Socketed Gems are Supported by level # Elemental Proliferation
+Socketed Gems are Supported by level # Faster Attacks
+Socketed Gems are Supported by level # Fire Penetration
+Socketed Gems are Supported by level # Generosity
+Socketed Gems are Supported by level # Increased Area of Effect
+Socketed Gems are Supported by level # Increased Minion Damage
+Socketed Gems are Supported by level # Increased Minion Life
+Socketed Gems are Supported by level # Increased Minion Speed
+Socketed Gems are Supported by level # Iron Will
+Socketed Gems are Supported by level # Knockback
+Socketed Gems are Supported by level # Lesser Multiple Projectiles
+Socketed Gems are Supported by level # Melee Physical Damage
+Socketed Gems are supported by level # Multistrike
+Socketed Gems are Supported by level # Pierce
+Socketed Gems are Supported by level # Remote Mine
+Socketed Gems are Supported by level # Spell Echo
+Socketed Gems are Supported by level # Spell Totem
+Socketed Gems are Supported by level # Trap
+Socketed Gems fire # additional Projectiles
+Socketed Gems fire an additional Projectile
+Socketed Gems fire Projectiles in a Nova
+Socketed Gems have #% chance to cause Enemies to Flee on Hit
+Socketed Gems have #% reduced Elemental Equilibrium effect
+Socketed Gems have #% reduced Mana Cost
+Socketed Gems have #% reduced Mana Reservation
+Socketed Gems have Blood Magic
+Socketed Gems have Elemental Equilibrium
+Socketed Melee Gems have #% increased Area of Effect Radius
+Socketed Red Gems get #% Physical Damage as Extra Fire Damage
+Spreads Tar when you take a Critical Strike
+Strength from Passives in Radius is Transformed to Dexterity
+Strength from Passives in Radius is Transformed to Intelligence
+Take # Physical Damage when hit by Attacks
+Temporal Chains has #% reduced Effect on You
+Totemic Wood Lure
+Totems cannot be Stunned
+Totems fire # additional Projectiles
+Totems gain +#% to all Elemental Resistances
+Traps trigger at the end of their Duration
+Unaffected by Burning Ground
+Unaffected by Chilled Ground
+Unaffected by Desecrated Ground
+Unaffected by Shocked Ground
+Unique Boss deals #% increased Damage
+Unique Boss drops # additional Rare Amulets
+Unique Boss drops # additional Rare Belts
+Unique Boss drops # additional Rare Body Armours
+Unique Boss drops # additional Rare Boots
+Unique Boss drops # additional Rare Bows
+Unique Boss drops # additional Rare Claws
+Unique Boss drops # additional Rare Daggers
+Unique Boss drops # additional Rare Gloves
+Unique Boss drops # additional Rare Helmets
+Unique Boss drops # additional Rare One Handed Axes
+Unique Boss drops # additional Rare One Handed Maces
+Unique Boss drops # additional Rare One Handed Swords
+Unique Boss drops # additional Rare One Handed Thrusting Swords
+Unique Boss drops # additional Rare Quivers
+Unique Boss drops # additional Rare Rings
+Unique Boss drops # additional Rare Sceptres
+Unique Boss drops # additional Rare Shields
+Unique Boss drops # additional Rare Staves
+Unique Boss drops # additional Rare Two Handed Axes
+Unique Boss drops # additional Rare Two Handed Maces
+Unique Boss drops # additional Rare Two Handed Swords
+Unique Boss drops # additional Rare Wands
+Unique Boss gives #% increased Experience
+Unique Boss has #% increased Area of Effect
+Unique Boss has #% increased Attack and Cast Speed
+Unique Boss has #% increased Life
+Unwavering Stance
+Uses both hand slots
+Vaal Soul Hook
+Weapons you Animate create an additional copy
+When at maximum Frenzy Charges, Attacks Poison Enemies
+When Hit, #% of Damage is taken from Mana before Life
+When you Kill a Rare monster, you gain its mods for # seconds
+While on Low Life, Enemies are Unlucky when Damaging you
+With # Corrupted Items Equipped: #% of Chaos Damage does not bypass Energy Shield, and #% of Physical Damage bypasses Energy Shield
+With # Corrupted Items Equipped: Life Leech recovers based on your Chaos Damage instead
+You and nearby allies gain 15% increased Damage
+You can catch Exotic Fish
+You can have one additional Curse
+You can inflict multiple Ignites on an Enemy
+You can inflict up to # Ignites on an Enemy
+You can only deal Damage with this Weapon and Ignite
+You cannot be Chilled for # seconds after being Chilled
+You cannot be Frozen for # seconds after being Frozen
+You cannot be Ignited for # seconds after being Ignited
+You cannot be Shocked for # second after being Shocked
+You cannot be Shocked for # seconds after being Shocked
+You cannot be Shocked while Frozen
+You gain # Evasion Rating when on Full Life
+You gain # Evasion Rating when on Low Life
+You gain a Frenzy Charge on use
+You gain a Power Charge on use
+You gain an Endurance Charge on Kill
+You gain an Endurance Charge on use
+You gain Onslaught for # second per Endurance Charge when Hit
+You gain Onslaught for # seconds on Critical Strike
+You gain Onslaught for # seconds on Culling Strike
+You gain Onslaught for # seconds on Killing Taunted Enemies
+You gain Onslaught for # seconds on using a Vaal Skill
+You gain Onslaught for 2 seconds on Kill
+You grant # Frenzy Charges to allies on Death
+You lose all Endurance Charges when Hit
+You take # Chaos Damage per second for # seconds on Kill
+You take #% of your maximum Life as Chaos Damage on use
+You take #% reduced Extra Damage from Critical Strikes
+You take 450 Chaos Damage per second for 10 seconds on Kill
+Your Aura Buffs do not affect allies
+Your Chaos Damage can Shock
+Your Chaos Damage Poisons Enemies
+Your Cold Damage can Ignite but not Freeze or Chill
+Your Critical Strikes do not deal increased Damage
+Your Critical Strikes have Culling Strike
+Your Fire Damage can Shock but not Ignite
+Your Flasks grant #% chance to Freeze during flask effect
+Your Flasks grant #% chance to Ignite during flask effect
+Your Flasks grant #% chance to Shock during flask effect
+Your Flasks grant #% increased Rarity of Items found during flask effect
+Your Flasks grant #% reduced Enemy Stun Threshold during flask effect
+Your Flasks grant +#% to Chaos Resistance during flask effect
+Your Hits can only Kill Frozen enemies
+Your Lightning Damage can Freeze but not Shock
+Your Physical Damage can Chill
+Your Skills deal you #% of Mana Cost as Physical Damage
+Your Skills have no Mana Cost during flask effect
+Your spells have #% chance to Shock against Frozen enemies
+Your Spells have Culling Strike
+Zombies deal #% increased Physical Damage
