@@ -1,0 +1,139 @@
+body {
+	font-size: 13px;
+}
+
+.wrapper_page {
+	width: 95%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.wrapper_help {
+	width: 100%;
+
+	.dataTables_length{
+		width: 50%;
+		float: right;
+		text-align: right;
+	}
+	.dataTables_filter {
+		width: 50%;
+		float: left;
+		text-align: left !important;
+		label {
+			width: 100%;
+			input {
+				width: 90% !important;
+			}
+		}
+	}
+}
+
+.wrapper_validate {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.wrapper_fileFilter {
+	width: 100%;
+	a, span {
+		display: inline-block;
+		//width: 100%;
+	}
+	a {
+		cursor:pointer;
+		&:hover {
+			text-decoration: none;
+		}
+		&.reset {
+			color: #870000;
+		}
+	}
+}
+
+a {
+	&.link_github {
+		font-size: 18px;
+		margin-bottom: 20px;
+		display: inline-block;
+	}
+
+	&.toggle-vis {
+		float:right;
+		margin-top: 10px;
+		cursor: pointer;
+	}
+}
+
+.wrapper_headline {
+	margin: 10px 0 20px 0;
+	.icon {
+		display: inline-block;
+		width: 60px;
+		height: 60px;
+		background-size: cover;
+		background-image: url('../q.png');
+		margin-right: 10px;
+	}
+}
+
+.wrapper_headline > * {
+	vertical-align: middle;
+}
+
+h1 {
+	&.headline{
+		display: inline-block;
+		margin: 0;
+	}
+}
+
+#accordion, #accordion2 {
+	.panel-body {
+		padding: 0;
+	}
+	.panel-heading {
+		cursor: pointer;
+	}
+	margin-bottom: 10px;
+}
+
+#accordion2 {
+	label {
+		padding: 8px;
+	}
+	input {
+		margin: 0 auto;
+		width: 98%;
+	}
+	.panel-body {
+		padding-bottom: 10px;
+	}
+}
+
+.container {
+	width: 100%;
+	margin: 0;
+	.row {
+		padding-top: 8px;
+		padding-bottom:  8px;
+	}
+	.row div span {
+		font-family: 'Inconsolata';
+	}
+	.row:nth-child(even){
+		background-color: #f9f9f9;
+	}
+}
+
+table {
+	font-size: 12px;
+	tbody tr, thead tr, tfoot tr {
+		td, th, {
+			padding: 8px;
+			line-height: 1.42857143;
+			vertical-align: top;
+		}
+	}
+}
+

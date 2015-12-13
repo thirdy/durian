@@ -1,0 +1,98 @@
+body {
+  font-size: 13px; }
+
+.wrapper_page {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 20px; }
+
+.wrapper_help {
+  width: 100%; }
+  .wrapper_help .dataTables_length {
+    width: 50%;
+    float: right;
+    text-align: right; }
+  .wrapper_help .dataTables_filter {
+    width: 50%;
+    float: left;
+    text-align: left !important; }
+    .wrapper_help .dataTables_filter label {
+      width: 100%; }
+      .wrapper_help .dataTables_filter label input {
+        width: 90% !important; }
+
+.wrapper_validate {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.wrapper_fileFilter {
+  width: 100%; }
+  .wrapper_fileFilter a, .wrapper_fileFilter span {
+    display: inline-block; }
+  .wrapper_fileFilter a {
+    cursor: pointer; }
+    .wrapper_fileFilter a:hover {
+      text-decoration: none; }
+    .wrapper_fileFilter a.reset {
+      color: #870000; }
+
+a.link_github {
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: inline-block; }
+a.toggle-vis {
+  float: right;
+  margin-top: 10px;
+  cursor: pointer; }
+
+.wrapper_headline {
+  margin: 10px 0 20px 0; }
+  .wrapper_headline .icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-image: url("../durian128.png");
+    margin-right: 10px; }
+
+.wrapper_headline > * {
+  vertical-align: middle; }
+
+h1.headline {
+  display: inline-block;
+  margin: 0; }
+
+#accordion, #accordion2 {
+  margin-bottom: 10px; }
+  #accordion .panel-body, #accordion2 .panel-body {
+    padding: 0; }
+  #accordion .panel-heading, #accordion2 .panel-heading {
+    cursor: pointer; }
+
+#accordion2 label {
+  padding: 8px; }
+#accordion2 input {
+  margin: 0 auto;
+  width: 98%; }
+#accordion2 .panel-body {
+  padding-bottom: 10px; }
+
+.container {
+  width: 100%;
+  margin: 0; }
+  .container .row {
+    padding-top: 8px;
+    padding-bottom: 8px; }
+  .container .row div span {
+    font-family: 'Inconsolata'; }
+  .container .row:nth-child(even) {
+    background-color: #f9f9f9; }
+
+table {
+  font-size: 12px; }
+  table tbody tr td, table tbody tr th, table thead tr td, table thead tr th, table tfoot tr td, table tfoot tr th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top; }
+
+/*# sourceMappingURL=custom.css.map */

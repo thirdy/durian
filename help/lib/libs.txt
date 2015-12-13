@@ -1,0 +1,8 @@
+autofill
+bootstrap
+datatables
+fixedcolumns
+fixedheader
+jquery
+responsive
+scroller

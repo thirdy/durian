@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+	<Title>Durian Help</Title>
+	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="lib/datatables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/custom.css"/>
+	<link href="../resource/q-tray.ico" rel="shortcut icon" type="image/x-icon" />
+
+	<script type="text/javascript" src="lib/datatables.min.js"></script>
+	<script type="text/javascript" src="js/help-data.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+</HEAD>
+<BODY>
+<div class="wrapper_page">
+	<div class="header">
+		<div class="wrapper_headline">
+			<span class="icon"></span>
+			<h1 class="headline">Durian Help</h1>
+		</div>
+	</div>
+
+	<div class="wrapper_commands">
+
+		<!--  Accordion  -->
+		<div id="accordion" class="panel-group">
+			<div class="panel panel-default">
+				<div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne">
+					<h4 class="panel-title">
+						<a  href="#collapseOne">Commands</a>
+					</h4>
+				</div>
+				<!--  Collapsible 1  -->
+				<div id="collapseOne" class="panel-collapse collapse">
+					<div class="panel-body">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-4">
+									<span>reload</span>
+								</div>
+								<div class="col-sm-8">
+									Reloads overlay_config.ini and the GUI.
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<span>searchexit</span> or <span>sexit</span>
+								</div>
+								<div class="col-sm-8">
+									Stops QIC. You'll need to run <span>qic.ahk</span> again to execute commands.
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<span>0</span>,<span>1</span>,<span>2</span>..<span>#</span>
+								</div>
+								<div class="col-sm-8">
+									Generate WTB message for <span>item #</span> and paste to chat (You have to send it yourself).
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<span>swtb#</span>
+								</div>
+								<div class="col-sm-8">
+									Saves WTB <span>message #</span> to savedWTB_messages.txt.
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<span>who#</span>
+								</div>
+								<div class="col-sm-8">
+									Sends <span>/whois</span> for seller of <span>item #</span>.
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<span>sort*</span>
+								</div>
+								<div class="col-sm-8">
+									Sort current results (see terms/sort.txt).
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<span>view#</span>
+								</div>
+								<div class="col-sm-8">
+									View all stats for item <span>#</span>.
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<span>page#</span>
+								</div>
+								<div class="col-sm-8">
+									Jump to search result <span>page #</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<span>listleagues</span>
+								</div>
+								<div class="col-sm-8">
+									Displays a List of all available Leagues you can search in.
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<span>setleague#</span>
+								</div>
+								<div class="col-sm-8">
+									Writes <span>league #</span> to config file.
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<span>setps#</span>
+								</div>
+								<div class="col-sm-8">
+									Writes <span>PageSize #</span> to config file.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--  Collapsibe 2 -->
+			<div class="panel panel-default">
+				<div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo">
+					<h4 class="panel-title">
+						<a href="#collapseTwo">Shortcuts</a>
+					</h4>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-4">
+									<span>ctrl+q</span>
+								</div>
+								<div class="col-sm-8">
+									Toggle the GUI ON/OFF.
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<span>PageUp / PageDown</span>
+								</div>
+								<div class="col-sm-8">
+									Browse through search results.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<a class="link_github" href="http://poeqic.github.io/">GitHub Page</a>
+
+	<div class="wrapper_fileFilter">
+		<span>Filter by File:</span>
+		<a class="filterFile" data-column="1" data-filter="attributes.txt">Attributes |</a>
+		<a class="filterFile" data-column="1" data-filter="buyout.txt">Buyout |</a>
+		<a class="filterFile" data-column="1" data-filter="currencies.txt">Currencies |</a>
+		<a class="filterFile" data-column="1" data-filter="explicitmods.txt">Explicitmods |</a>
+		<a class="filterFile" data-column="1" data-filter="explicitmodgroups.txt">Explicitmodgroups |</a>
+		<a class="filterFile" data-column="1" data-filter="gems.txt">Gems |</a>
+		<a class="filterFile" data-column="1" data-filter="itemtypes.txt">Itemtypes |</a>
+		<a class="filterFile" data-column="1" data-filter="leagues.txt">Leagues |</a>
+		<a class="filterFile" data-column="1" data-filter="seller.txt">Seller |</a>
+		<a class="filterFile" data-column="1" data-filter="socketslinks.txt">Socketslinks |</a>
+		<a class="filterFile" data-column="1" data-filter="sort.txt">Sort |</a>
+		<a class="filterFile" data-column="1" data-filter="uniques.txt">Uniques |</a>
+		<a class="filterFile reset" data-column="1" data-filter="">Reset |</a>
+	</div>
+
+	<!--  DataTable-->
+	<div class="wrapper_help">
+		<table id="helptable" class="display table-striped table-bordered datatable" width="100%"></table>
+	</div>
+
+	<div class="wrapper_validate">
+		<!--  Accordion  -->
+		<div id="accordion2" class="panel-group">
+			<div class="panel panel-default">
+				<div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapseValidation">
+					<h4 class="panel-title">
+						<a href="#collapseValidation">Search Term Validation</a>
+					</h4>
+				</div>
+				<!--  Collapsible 1  -->
+				<div id="collapseValidation" class="panel-collapse collapse">
+					<div class="panel-body">
+						<label>Input search query (as you would ingame):</label>
+						<input type="text" id="validateTerm" class="form-control input-sm">
+						<div class="validateOutput container">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</BODY>
+</HTML>
+
