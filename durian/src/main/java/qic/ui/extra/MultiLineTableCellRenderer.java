@@ -1,4 +1,4 @@
-package qic.ui;
+package qic.ui.extra;
 
 import java.awt.Component;
 import java.awt.Dimension;

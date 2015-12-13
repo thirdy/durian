@@ -40,10 +40,12 @@ public class QicFrame extends JFrame {
 
 		ManualPanel manualPanel = new ManualPanel(main);
 		AutomatedPanel automatedPanel = new AutomatedPanel(main);
+		LoggerPanel loggerPanel  = new LoggerPanel();
 		
 		JTabbedPane tabbedPane = new JTabbedPane();
 		tabbedPane.addTab("Manual", manualPanel);
 		tabbedPane.addTab("Automated", automatedPanel);
+		tabbedPane.addTab("Log", loggerPanel);
 
 		setContentPane(tabbedPane);
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -60,6 +62,9 @@ public class QicFrame extends JFrame {
                 automatedPanel.saveToFile();
             }
 		});
+		
+		manualPanel.initSplitPaneDivider();
+		automatedPanel.initSplitPaneDivider();
 	}
 
 

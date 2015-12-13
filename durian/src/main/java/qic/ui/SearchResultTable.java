@@ -29,6 +29,7 @@ import javax.swing.table.TableColumnModel;
 import com.porty.swing.table.model.BeanPropertyTableModel;
 
 import qic.SearchPageScraper.SearchResultItem;
+import qic.ui.extra.MultiLineTableCellRenderer;
 import qic.util.SwingUtil;
 
 /**
@@ -47,7 +48,7 @@ public class SearchResultTable extends JTable {
 				asList("id", "buyout", "item", "seller", "reqs", "mods", "q","APS","PDPS","EDPS","DPS","ele","phys","ar","ev","ES","blk","crit","lvl"));
 		this.setModel(model);
 		setColumnWidths(this.getColumnModel(), 
-				asList( 1,    15,        280,    230,      50,          420));
+				asList( 1,    15,        220,    150,      50,          350));
 		
 		this.getSelectionModel().addListSelectionListener(e -> {
 			if(e.getValueIsAdjusting()) {

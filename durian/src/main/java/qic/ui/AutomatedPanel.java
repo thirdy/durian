@@ -33,6 +33,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import javax.swing.JSplitPane;
 import javax.swing.JTextArea;
 import javax.swing.SwingWorker;
 
@@ -59,17 +60,21 @@ public class AutomatedPanel extends JPanel {
 	
 	private final Logger logger = LoggerFactory.getLogger(this.getClass().getName());
 	
-	JLabel statusLbl = new JLabel("Status");
+	JLabel statusLbl = new JLabel("Waiting for (0) seconds..");
 	JButton runBtn = new JButton("Force");
 
 	private Main main;
 	private JTextArea searchListTa = new JTextArea(10, 15);
 	private SearchResultTable table = new SearchResultTable();
 	
-	private int waitMins = Integer.parseInt(Config.getPropety(Config.AUTOMATED_SEARCH_WAIT_MINUTES, "10"));
-	private int UPDATE_FREQ = waitMins * 60 * 1000;
+	private static int waitMins = Integer.parseInt(Config.getPropety(Config.AUTOMATED_SEARCH_WAIT_MINUTES, "10"));
+	private static int waitSeconds = waitMins * 60;
+	private static int countdown = 0;
+	
 	private ActionListener runCommand = e -> (new QueryTask(this)).execute();
 	private javax.swing.Timer timer = new javax.swing.Timer(0, runCommand);
+	
+	private JSplitPane splitPane;
 	
 	public AutomatedPanel(Main main) {
 		super(new BorderLayout(5, 5));
@@ -77,26 +82,36 @@ public class AutomatedPanel extends JPanel {
 		
 		JPanel controlPanel = new JPanel();
 		controlPanel.setLayout(new BoxLayout(controlPanel, BoxLayout.X_AXIS));
-		controlPanel.add(statusLbl);
 		controlPanel.add(runBtn);
+		controlPanel.add(statusLbl);
 		
 		List<String> searchList = Util.loadSearchList(AUTOMATED_TXT_FILENAME);
 		searchListTa.setText(searchList
 				.stream()
 				.collect(joining(lineSeparator())));
 
-		runBtn.addActionListener(runCommand);
+		runBtn.addActionListener(e -> {
+			countdown = 0;
+			timer.restart();
+		});
 
 		JPanel eastPanel = new JPanel(new BorderLayout(5, 5));
 		eastPanel.add(controlPanel, BorderLayout.NORTH);
-		eastPanel.add(searchListTa, BorderLayout.CENTER);
+		eastPanel.add(new JScrollPane(searchListTa), BorderLayout.CENTER);
 
-		this.add(new JScrollPane(table), BorderLayout.CENTER);
-		this.add(eastPanel, BorderLayout.EAST);
+		splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,
+				new JScrollPane(table), eastPanel);
 		
-		timer.setDelay(UPDATE_FREQ);
+		this.add(splitPane, BorderLayout.CENTER);
+		
+		timer.setDelay(1000);
 		logger.info("Starting timer...");
-		timer.restart();    
+		timer.restart();
+	}
+	
+	public void initSplitPaneDivider() {
+		splitPane.setResizeWeight(.85d);
+		splitPane.setDividerLocation(.85d);
 	}
 	
 
@@ -111,6 +126,17 @@ public class AutomatedPanel extends JPanel {
 
 		@Override
         protected Void doInBackground() {
+			panel.statusLbl.setText("Waiting for (" + countdown + ") seconds..");
+			if (countdown == 0) {
+				countdown = waitSeconds;
+				runJob();
+			} else {
+				countdown--;
+			}
+            return null;
+        }
+
+		private void runJob() {
 			panel.runBtn.setEnabled(false);
 			panel.table.clear();
 			String text = panel.searchListTa.getText();
@@ -138,8 +164,7 @@ public class AutomatedPanel extends JPanel {
 				}
 			}
 			panel.runBtn.setEnabled(true);
-            return null;
-        }
+		}
 
         @Override
         protected void process(List<Command> command) {

@@ -11,28 +11,14 @@
 			<directory>${project.basedir}</directory>
 			<outputDirectory>/</outputDirectory>
 			<includes>
-				<include>qic.ahk</include>
-				<include>runjar.bat</include>
+				<include>automated.txt</include>
+				<include>manual.txt</include>
+				<include>config.properties</include>
 			</includes>
-		</fileSet>
-		<fileSet>
-			<directory>${project.basedir}/lib</directory>
-			<outputDirectory>/lib</outputDirectory>
-			<includes/>
 		</fileSet>
 		<fileSet>
 			<directory>${project.basedir}/terms</directory>
 			<outputDirectory>/terms</outputDirectory>
-			<includes/>
-		</fileSet>
-		<fileSet>
-			<directory>${project.basedir}/resource</directory>
-			<outputDirectory>/resource</outputDirectory>
-			<includes/>
-		</fileSet>
-		<fileSet>
-			<directory>${project.basedir}/help</directory>
-			<outputDirectory>/help</outputDirectory>
 			<includes/>
 		</fileSet>
 		<fileSet>

@@ -21,6 +21,7 @@ import static java.lang.System.lineSeparator;
 import static org.apache.commons.lang3.StringUtils.trimToEmpty;
 
 import java.awt.BorderLayout;
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -35,6 +36,7 @@ import javax.swing.JButton;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import javax.swing.JSplitPane;
 import javax.swing.JTextField;
 import javax.swing.KeyStroke;
 
@@ -43,6 +45,7 @@ import org.slf4j.LoggerFactory;
 
 import qic.Command;
 import qic.Main;
+import qic.ui.extra.Worker;
 import qic.util.Config;
 import qic.util.SwingUtil;
 import qic.util.Util;
@@ -61,6 +64,8 @@ public class ManualPanel extends JPanel {
 	private JList<String> searchJList = new JList<>();
 	private DefaultListModel<String> searchJListModel = new DefaultListModel<>();
 
+	private JSplitPane splitPane;
+
 	@SuppressWarnings("serial")
 	public ManualPanel(Main main) {
 		super(new BorderLayout(5, 5));
@@ -75,9 +80,7 @@ public class ManualPanel extends JPanel {
 		
 		List<String> searchList = Util.loadSearchList(MANUAL_TXT_FILENAME);
 		searchList.stream().forEach(searchJListModel::addElement);
-
 		searchJList.setModel(searchJListModel);
-		this.add(searchJList, BorderLayout.EAST);
 		
 		searchJList.addListSelectionListener(e -> {
 			if (e.getValueIsAdjusting()) {
@@ -136,7 +139,15 @@ public class ManualPanel extends JPanel {
 		searchTf.addActionListener(runCommand);
 		runBtn.addActionListener(runCommand);
 
-		this.add(new JScrollPane(table), BorderLayout.CENTER);
+		splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,
+				new JScrollPane(table), new JScrollPane(searchJList));
+		
+		this.add(splitPane, BorderLayout.CENTER);
+	}
+	
+	public void initSplitPaneDivider() {
+		splitPane.setResizeWeight(.85d);
+		splitPane.setDividerLocation(.85d);
 	}
 	
 	private void saveSearchToList(String tfText) {
