@@ -18,6 +18,7 @@
 package qic.ui;
 
 import java.awt.Dimension;
+import java.awt.Image;
 import java.awt.Toolkit;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -37,6 +38,9 @@ public class QicFrame extends JFrame {
 	
 	public QicFrame(Main main, String query) {
 		super("Durian 0.3");
+		
+	    Image icon = Toolkit.getDefaultToolkit().getImage(QicFrame.class.getResource("/durian128.png"));
+	    this.setIconImage(icon);
 
 		ManualPanel manualPanel = new ManualPanel(main);
 		AutomatedPanel automatedPanel = new AutomatedPanel(main);
