@@ -17,22 +17,28 @@
  */
 package qic.ui;
 
+import static java.lang.String.format;
 import static java.lang.System.lineSeparator;
+import static java.util.stream.Collectors.joining;
 import static org.apache.commons.lang3.StringUtils.trimToEmpty;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import javax.swing.AbstractAction;
 import javax.swing.BoxLayout;
 import javax.swing.DefaultListModel;
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -72,9 +78,19 @@ public class ManualPanel extends JPanel {
 
 		JTextField searchTf = new JTextField(100);
 		JButton runBtn = new JButton("Run");
+		runBtn.setPreferredSize(new Dimension(200, 10));
+		JLabel invalidTermsLblLbl = new JLabel();
+		invalidTermsLblLbl.setFont(invalidTermsLblLbl.getFont().deriveFont(Font.BOLD));
+		JLabel invalidTermsLbl = new JLabel();
+		invalidTermsLbl.setForeground(Color.RED);
 		JPanel northPanel = new JPanel();
 		northPanel.setLayout(new BoxLayout(northPanel, BoxLayout.X_AXIS));
+		JLabel searchLbl = new JLabel(" Search: ");
+		searchLbl.setFont(searchLbl.getFont().deriveFont(Font.BOLD));
+		northPanel.add(searchLbl);
 		northPanel.add(searchTf);
+		northPanel.add(invalidTermsLblLbl);
+		northPanel.add(invalidTermsLbl);
 		northPanel.add(runBtn);
 		this.add(northPanel, BorderLayout.NORTH);
 		
@@ -114,7 +130,6 @@ public class ManualPanel extends JPanel {
 		});
 		
 		SearchResultTable table = new SearchResultTable();
-
 		ActionListener runCommand = e -> {
 			String tfText = searchTf.getText().trim();
 			if (!tfText.isEmpty()) {
@@ -125,14 +140,22 @@ public class ManualPanel extends JPanel {
 						},
 						command -> {
 							table.setData(command.itemResults);
-							saveSearchToList(tfText);
+							if (command.invalidSearchTerms.isEmpty()) {
+								saveSearchToList(tfText);
+								invalidTermsLbl.setText("");
+								invalidTermsLblLbl.setText("");
+							} else {
+								String invalidTermsStr = command.invalidSearchTerms.stream().collect(joining(", "));
+								invalidTermsLbl.setText(invalidTermsStr + " ");
+								invalidTermsLblLbl.setText(" Invalid: ");
+							}
 							runBtn.setEnabled(true);
-						} , ex -> {
+						}, ex -> {
 							runBtn.setEnabled(true);
 							logger.error("Exception occured: ", e);
 							SwingUtil.showError(ex);
 						});
-					pathNotesWorker.execute();
+				pathNotesWorker.execute();
 			}
 		};
 

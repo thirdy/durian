@@ -25,6 +25,7 @@ import static qic.Command.Status.ERROR;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URLEncoder;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -164,6 +165,9 @@ public class Main {
 
 	private List<SearchResultItem> runSearch(String terms, boolean sortOnly) throws Exception {
 		String html = downloadHtml(terms, sortOnly);
+		if (html == null) {
+			return Collections.emptyList();
+		}
 		SearchPageScraper scraper = new SearchPageScraper(html);
 		List<SearchResultItem> items = scraper.parse();
 		logger.info("items found: " + items.size());
@@ -190,20 +194,27 @@ public class Main {
 			ParseResult queryParseResult = language.parse(query);
 			String payload = queryParseResult.result;
 			invalidSearchTerms.addAll(queryParseResult.invalidSearchTerms);
-			payload = asList(payload, customHttpKeyVal).stream().filter(StringUtils::isNotBlank).collect(joining("&"));
-			logger.info("Unencoded payload: " + payload);
-			payload = asList(payload.split("&")).stream().map(Util::encodeQueryParm).collect(joining("&"));
-			String location  = submitSearchForm(payload);
-			String league = language.parseLeagueToken(query);
-			sessProp.setLocation(location);
-			sessProp.setLeague(league);
-			sessProp.saveToFile();
+			if (invalidSearchTerms.isEmpty()) {
+				payload = asList(payload, customHttpKeyVal).stream().filter(StringUtils::isNotBlank).collect(joining("&"));
+				logger.info("Unencoded payload: " + payload);
+				payload = asList(payload.split("&")).stream().map(Util::encodeQueryParm).collect(joining("&"));
+				String location  = submitSearchForm(payload);
+				String league = language.parseLeagueToken(query);
+				sessProp.setLocation(location);
+				sessProp.setLeague(league);
+				sessProp.saveToFile();
+			}
 		}
 
-		logger.info("sort: " + sort);
-		String searchPage = ajaxSort(sort);
+		String searchPage = null;
+		if (invalidSearchTerms.isEmpty()) {
+			logger.info("sort: " + sort);
+			searchPage = ajaxSort(sort);
+		} else {
+			logger.info("invalidSearchTerms: " + invalidSearchTerms.toString());
+		}
+		
 		long end = System.currentTimeMillis();
-
 		long duration = end - start;
 		logger.info("Took " + duration + " ms");
 		searchDuration = Long.valueOf(duration);

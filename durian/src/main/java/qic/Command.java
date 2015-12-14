@@ -41,7 +41,7 @@ public class Command {
 	String errorMessage;
 	String errorStackTrace;
 	
-	List<String> invalidSearchTerms;
+	public List<String> invalidSearchTerms;
 	
 	public Long searchDuration;
 	
