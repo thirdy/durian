@@ -199,7 +199,7 @@ public class Main {
 			String payload = queryParseResult.result;
 			invalidSearchTerms.addAll(queryParseResult.invalidSearchTerms);
 			if (invalidSearchTerms.isEmpty()) {
-				payload = asList(payload, customHttpKeyVal).stream().filter(StringUtils::isNotBlank).collect(joining("&"));
+				payload = asList(payload, customHttpKeyVal, "capquality=x").stream().filter(StringUtils::isNotBlank).collect(joining("&"));
 				logger.info("Unencoded payload: " + payload);
 				payload = asList(payload.split("&")).stream().map(Util::encodeQueryParm).collect(joining("&"));
 				String location  = submitSearchForm(payload);

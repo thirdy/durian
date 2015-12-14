@@ -5,4 +5,4 @@ chest 30life 50res
 1h 300pDPS 1hsword sortpdps 3ex
 chaos
 name="veil of the night"
-1h 200pDPS 1hsword sortpdps 3ex
+body 4L 100ar 100es lvl55 5ch
