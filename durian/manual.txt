@@ -1,2 +1,4 @@
 ring 30life 50res
 mirror
+chest 30life 50res
+1h 300pDPS sword

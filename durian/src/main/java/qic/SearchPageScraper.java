@@ -16,7 +16,6 @@ import static org.apache.commons.lang3.StringUtils.trimToEmpty;
 import static org.apache.commons.lang3.StringUtils.trimToNull;
 import static org.apache.commons.lang3.StringUtils.upperCase;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -256,10 +255,32 @@ public class SearchPageScraper {
 		public List<String> getItem() {
 			return labelList(
 					labelVal("Name", name), 
+					labelVal("Quality", quality), 
 					labelVal("Identified", String.valueOf(identified)), 
 					labelVal("Corrupted", String.valueOf(corrupted)), 
 					labelVal("SocketsRaw", socketsRaw),
-					labelVal("StackSize", stackSize));
+					labelVal("StackSize", stackSize),
+					labelVal("MapQuantity", mapQuantity));
+		}
+		
+		public List<String> getOffense() {
+			return labelList(
+					labelVal("pDPS", physDmgAtMaxQuality), 
+					labelVal("eDPS", eleDmg), 
+					labelVal("DPS", dmgAtMaxQuality), 
+					labelVal("APS", attackSpeed), 
+					labelVal("ele", eleDmgRange),
+					labelVal("phys", physDmgRangeAtMaxQuality));
+		}
+		
+		public List<String> getDefense() {
+			return labelList(
+					labelVal("Armour", armourAtMaxQuality), 
+					labelVal("Evasion", evasionAtMaxQuality), 
+					labelVal("ES", energyShieldAtMaxQuality), 
+					labelVal("Block", block), 
+					labelVal("Crit", crit),
+					labelVal("Map-Gem Lvl", level));
 		}
 		
 		private List<String> labelList(String ... labels) {
@@ -293,22 +314,8 @@ public class SearchPageScraper {
 //					getIgn(), getName(), getBuyout(), getLeague(), mods);
 			return String.format(
 					"@%s Hi, WTB your \"%s\" listed for %s in %s league.",
-					ign, name, upperCase(getBuyout()), league);
+					ign, name, upperCase(buyout), league);
 		}
-
-//		private String buildWTBModsMessage() {
-//			StringBuilder sb = new StringBuilder();
-//			if (implicitMod != null) {
-//				sb.append("--- [Implicit] " + implicitMod.toStringDisplay());
-//			}
-//			if (explicitMods.size() > 0) {
-//				sb.append("--- [Explicit]");
-//				for (Mod mod : explicitMods) {
-//					sb.append(" --- " + mod.toStringDisplay());
-//				}
-//			}
-//			return sb.toString();
-//		}
 
 		/**
 		 * @author thirdy
@@ -517,7 +524,7 @@ public class SearchPageScraper {
 			return id;
 		}
 
-		public String getBuyout() {
+		public String getBo() {
 			String str = buyout;
 			str = StringUtils.replace(str, "alteration", "alt");
 			str = StringUtils.replace(str, "fusing", "fuse");
@@ -527,134 +534,6 @@ public class SearchPageScraper {
 			str = StringUtils.replace(str, "chaos", "ch");
 			return str;
 		}
-
-//		public String getName() {
-//			return name;
-//		}
-
-//		public String getIgn() {
-//			return ign;
-//		}
-
-//		public String getSocketsRaw() {
-//			return socketsRaw;
-//		}
-//		
-//		public String getStackSize() {
-//			return stackSize;
-//		}
-
-		public String getQ() {
-			return quality;
-		}
-
-		public String getAPS() {
-			return attackSpeed;
-		}
-
-		public String getPDPS() {
-			return physDmgAtMaxQuality;
-		}
-		
-		public String getEDPS() {
-			return eleDmg;
-		}
-		
-		public String getDPS() {
-			return dmgAtMaxQuality;
-		}
-
-		public String getEle() {
-			return eleDmgRange;
-		}
-		
-		public String getPhys() {
-			return physDmgRangeAtMaxQuality;
-		}
-
-		public String getAr() {
-			return armourAtMaxQuality;
-		}
-
-		public String getEv() {
-			return evasionAtMaxQuality;
-		}
-
-		public String getES() {
-			return energyShieldAtMaxQuality;
-		}
-
-		public String getBlk() {
-			return block;
-		}
-
-		public String getCrit() {
-			return crit;
-		}
-		
-		public String getLvl() {
-			return level;
-		}
-
-//		public String getReqLvl() {
-//			return reqLvl;
-//		}
-//
-//		public String getReqStr() {
-//			return reqStr;
-//		}
-//
-//		public String getReqInt() {
-//			return reqInt;
-//		}
-//
-//		public String getReqDex() {
-//			return reqDex;
-//		}
-		
-		public String getMapQty() {
-			return mapQuantity;
-		}
-
-//		public String getAgeAndHighLvl() {
-//			return ageAndHighLvl;
-//		}
-//
-//		public String getLeague() {
-//			return league;
-//		}
-//
-//		public String getSeller() {
-//			return seller;
-//		}
-//
-//		public String getThread() {
-//			return thread;
-//		}
-//
-//		public String getSellerid() {
-//			return sellerid;
-//		}
-//
-//		public String getThreadUrl() {
-//			return threadUrl;
-//		}
-
-//		public Mod getImplicitMod() {
-//			return implicitMod;
-//		}
-		
-//		public String getOnline() {
-//			return online;
-//		}
-//
-//		public void setOnline(String online) {
-//			this.online = online;
-//		}
-		
-//		public String getImageUrl() {
-//			return imageUrl;
-//		}
 
 //		public String getPseudoEleResistance() {
 //			return getExplicitModValueByName("#(pseudo) +#% total Elemental Resistance");

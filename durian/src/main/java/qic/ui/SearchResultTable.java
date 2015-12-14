@@ -20,7 +20,6 @@ package qic.ui;
 import static java.util.Arrays.asList;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import javax.swing.JTable;
@@ -45,15 +44,14 @@ public class SearchResultTable extends JTable {
 	public SearchResultTable() {
 		model = new BeanPropertyTableModel<>(SearchResultItem.class);
 		model.setOrderedProperties(
-				asList("id", "buyout", "item", "seller", "reqs", "mods", "q","APS","PDPS","EDPS","DPS","ele","phys","ar","ev","ES","blk","crit","lvl"));
+				asList("id", "bo", "item", "seller", "reqs", "mods", "offense", "defense"));
 		this.setModel(model);
 		setColumnWidths(this.getColumnModel(), 
-				asList( 1,    15,        220,    150,      50,          350));
+				asList( 1,    5,        220,    150,      50,    300,	  100,        100));
 		
 		this.getSelectionModel().addListSelectionListener(e -> {
 			if(e.getValueIsAdjusting()) {
 				int selectedRow = this.getSelectedRow();
-				System.out.println("selectedRow ----  " + selectedRow);
 				if (selectedRow > -1) {
 					SearchResultItem searchResultItem = model.getData().get(selectedRow);
 					SwingUtil.copyToClipboard(searchResultItem.wtb());
