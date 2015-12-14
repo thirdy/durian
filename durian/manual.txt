@@ -6,3 +6,4 @@ chest 30life 50res
 chaos
 name="veil of the night"
 body 4L 100ar 100es lvl55 5ch
+ring 40life 40eleres 40manaregen 15ch

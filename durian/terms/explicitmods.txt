@@ -43,6 +43,10 @@ spelldmg|sdmg						=		mod_name=(pseudo) (total) #% increased Spell Damage&mod_mi
 (\d+)(spelldmg|sdmg)				=		mod_name=(pseudo) (total) #% increased Spell Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
 (\d+)-(\d+)(spelldmg|sdmg)			=		mod_name=(pseudo) (total) #% increased Spell Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
 
+manaregen|mregen					=		mod_name=(pseudo) (total) #% increased Mana Regeneration Rate&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)(manaregen|mregen)				=		mod_name=(pseudo) (total) #% increased Mana Regeneration Rate&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)(manaregen|mregen)		=		mod_name=(pseudo) (total) #% increased Mana Regeneration Rate&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
 (\d+)dex							=		mod_name=(pseudo) (total) +# to Dexterity&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
 (\d+)str							=		mod_name=(pseudo) (total) +# to Strength&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
 (\d+)int							=		mod_name=(pseudo) (total) +# to Intelligence&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
