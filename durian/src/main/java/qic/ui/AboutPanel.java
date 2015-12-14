@@ -21,6 +21,7 @@ import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.io.File;
+import java.io.InputStream;
 
 import javax.swing.BorderFactory;
 import javax.swing.Box;
@@ -32,6 +33,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -95,8 +97,10 @@ public class AboutPanel extends JPanel {
 		JTextArea textArea = new JTextArea();
 		textArea.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 12));
 		try {
-			String str = FileUtils.readFileToString(new File(this.getClass().getResource("/help.txt").toURI()));
+			InputStream input = this.getClass().getResource("/help.txt").openStream();
+			String str = IOUtils.toString(input);
 			textArea.setText(str);
+			input.close();
 		} catch (Exception e) {
 			logger.error("Error while reading help file", e);
 		}
