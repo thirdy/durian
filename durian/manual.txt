@@ -1,4 +1,7 @@
 ring 30life 50res
 mirror
+name="humility"
 chest 30life 50res
-1h 300pDPS sword
+1h 300pDPS 1hsword sortpdps 3ex
+chaos
+name="veil of the night"

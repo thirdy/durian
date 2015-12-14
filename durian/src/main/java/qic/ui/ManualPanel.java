@@ -17,7 +17,6 @@
  */
 package qic.ui;
 
-import static java.lang.String.format;
 import static java.lang.System.lineSeparator;
 import static java.util.stream.Collectors.joining;
 import static org.apache.commons.lang3.StringUtils.trimToEmpty;
@@ -32,7 +31,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import javax.swing.AbstractAction;
 import javax.swing.BoxLayout;
@@ -46,6 +44,7 @@ import javax.swing.JSplitPane;
 import javax.swing.JTextField;
 import javax.swing.KeyStroke;
 
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -185,8 +184,14 @@ public class ManualPanel extends JPanel {
 
 	private Command runQuery(Main main, String tfText) {
 		try {
-			String prefix = Config.getPropety(Config.MANUAL_SEARCH_PREFIX, "tmpsc online bo").trim();
-			String line = String.format("s %s %s", prefix, tfText);
+			String line = null;
+			if (StringUtils.startsWithIgnoreCase(tfText, "sort")) {
+				line = tfText;
+			} else {
+				String prefix = Config.getPropety(Config.MANUAL_SEARCH_PREFIX, "tmpsc online bo").trim();
+				line = String.format("s %s %s", prefix, tfText);
+			}
+			
 			logger.info("Now running search: " + line);
 			return main.processLine(line);
 		} catch (IOException e) {
