@@ -297,8 +297,8 @@ public class SearchPageScraper {
 					labelVal("Joined ", age),
 					labelVal("HighestLvl ", highestLvl),
 					labelVal("IGN", ign),
+					labelVal("Account", seller),
 					labelVal("Thread", thread),
-//					labelVal("", sellerid),
 //					labelVal("", threadUrl),
 					labelVal("Online", String.valueOf(containsIgnoreCase("online", online))));
 		}
@@ -573,6 +573,10 @@ public class SearchPageScraper {
 			item.ign = e.getClass().getName();
 			item.socketsRaw = e.getCause().getMessage();
 			return item;
+		}
+
+		public String seller() {
+			return seller;
 		}
 
 	}

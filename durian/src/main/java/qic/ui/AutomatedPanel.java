@@ -19,10 +19,12 @@ package qic.ui;
 
 import static java.lang.System.lineSeparator;
 import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+import static qic.util.Config.AUTOMATED_SEARCH_BLACKLIST;
+import static qic.util.DurianUtils.notBlacklisted;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionListener;
-import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
@@ -40,12 +42,10 @@ import javax.swing.SwingWorker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
 import qic.Command;
 import qic.Main;
+import qic.SearchPageScraper.SearchResultItem;
 import qic.util.Config;
-import qic.util.Dialogs;
 import qic.util.SoundUtils;
 import qic.util.Util;
 
@@ -169,7 +169,11 @@ public class AutomatedPanel extends JPanel {
         @Override
         protected void process(List<Command> command) {
         	for (Command cmd : command) {
-        		panel.table.addData(cmd.itemResults);
+        		List<SearchResultItem> itemResults = cmd.itemResults;
+        		itemResults = itemResults.stream()
+						.filter(item -> notBlacklisted(AUTOMATED_SEARCH_BLACKLIST, item))
+						.collect(toList());
+				panel.table.addData(itemResults);
 			}
         }
         

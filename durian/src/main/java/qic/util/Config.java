@@ -36,6 +36,9 @@ public class Config {
 	public static final String AUTOMATED_SEARCH_SOUND_FILENAME = "automated.search.sound.filename";
 	public static final String AUTOMATED_SEARCH_SOUND_VOLUME = "automated.search.sound.volume";
 	
+	public static final String AUTOMATED_SEARCH_BLACKLIST = "automated.search.blacklist";
+	public static final String MANUAL_SEARCH_BLACKLIST = "manual.search.blacklist";
+	
 	private static Properties config;
 	
 	public static void loadConfig() throws IOException, FileNotFoundException {

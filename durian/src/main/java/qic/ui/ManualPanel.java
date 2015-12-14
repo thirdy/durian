@@ -19,7 +19,10 @@ package qic.ui;
 
 import static java.lang.System.lineSeparator;
 import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
 import static org.apache.commons.lang3.StringUtils.trimToEmpty;
+import static qic.util.Config.MANUAL_SEARCH_BLACKLIST;
+import static qic.util.DurianUtils.notBlacklisted;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -50,6 +53,7 @@ import org.slf4j.LoggerFactory;
 
 import qic.Command;
 import qic.Main;
+import qic.SearchPageScraper.SearchResultItem;
 import qic.ui.extra.Worker;
 import qic.util.Config;
 import qic.util.SwingUtil;
@@ -138,7 +142,10 @@ public class ManualPanel extends JPanel {
 							return runQuery(main, tfText);
 						},
 						command -> {
-							table.setData(command.itemResults);
+							List<SearchResultItem> itemResults = command.itemResults.stream()
+									.filter(item -> notBlacklisted(MANUAL_SEARCH_BLACKLIST, item))
+									.collect(toList());
+							table.setData(itemResults);
 							if (command.invalidSearchTerms.isEmpty()) {
 								saveSearchToList(tfText);
 								invalidTermsLbl.setText("");
