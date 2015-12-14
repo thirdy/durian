@@ -162,7 +162,7 @@ public class ManualPanel extends JPanel {
 
 	private Command runQuery(Main main, String tfText) {
 		try {
-			String prefix = Config.getPropety(Config.AUTOMATED_SEARCH_PREFIX, "tmpsc online bo").trim();
+			String prefix = Config.getPropety(Config.MANUAL_SEARCH_PREFIX, "tmpsc online bo").trim();
 			String line = String.format("s %s %s", prefix, tfText);
 			logger.info("Now running search: " + line);
 			return main.processLine(line);
