@@ -17,13 +17,23 @@
  */
 package qic.ui;
 
+import java.awt.BorderLayout;
 import java.awt.Dimension;
+import java.awt.Font;
+import java.io.File;
 
+import javax.swing.BorderFactory;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
+import org.apache.commons.io.FileUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import qic.util.SwingUtil;
 
@@ -33,6 +43,8 @@ import qic.util.SwingUtil;
  */
 public class AboutPanel extends JPanel {
 	private static final long serialVersionUID = 1L;
+	
+	private final Logger logger = LoggerFactory.getLogger(this.getClass().getName());
 
 	public AboutPanel() {
 		BoxLayout boxLayout = new BoxLayout(this, BoxLayout.PAGE_AXIS);
@@ -66,9 +78,9 @@ public class AboutPanel extends JPanel {
 		forum.addActionListener(e -> SwingUtil.openUrlViaBrowser(forumUrl));
 		
 		String helpUrl = "http://thirdy.github.io/durian/help/help.htm";
-		JButton help = new JButton("Help: " + helpUrl );
+		JButton help = new JButton("Search Term Helper: " + helpUrl );
 		help.addActionListener(e -> SwingUtil.openUrlViaBrowser(helpUrl));
-		
+
 		add(Box.createRigidArea(new Dimension(5,10)));
 		add(aboutLbl);
 		add(Box.createRigidArea(new Dimension(5,10)));
@@ -77,5 +89,19 @@ public class AboutPanel extends JPanel {
 		add(forum);
 		add(Box.createRigidArea(new Dimension(5,10)));
 		add(help);
+		
+		JPanel helpPanel = new JPanel(new BorderLayout());
+		helpPanel.setBorder(BorderFactory.createTitledBorder("Help"));
+		JTextArea textArea = new JTextArea();
+		textArea.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 12));
+		try {
+			String str = FileUtils.readFileToString(new File(this.getClass().getResource("/help.txt").toURI()));
+			textArea.setText(str);
+		} catch (Exception e) {
+			logger.error("Error while reading help file", e);
+		}
+		helpPanel.add(new JScrollPane(textArea), BorderLayout.CENTER);
+		add(Box.createRigidArea(new Dimension(5,10)));
+		add(helpPanel);
 	}
 }

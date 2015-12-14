@@ -52,13 +52,11 @@ public class ConfigPanel extends JScrollPane {
 			
 			@Override
 			public void focusLost(FocusEvent e) {
-				logger.info("Saving " + CONFIG_PROPERTIES_FILENAME);
 				saveAndReloadConfig();
 			}
 			
 			@Override
 			public void focusGained(FocusEvent e) {
-				logger.info("Loading " + CONFIG_PROPERTIES_FILENAME);
 				loadConfigToTextArea();
 			}
 

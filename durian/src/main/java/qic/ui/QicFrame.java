@@ -56,7 +56,7 @@ public class QicFrame extends JFrame {
 		tabbedPane.addTab("Automated", automatedPanel);
 		tabbedPane.addTab("Log", loggerPanel);
 		tabbedPane.addTab("Config", configPanel);
-		tabbedPane.addTab("About", aboutPanel);
+		tabbedPane.addTab("About/Help", aboutPanel);
 		tabbedPane.addChangeListener(new ChangeListener() {
 			
 			@Override
