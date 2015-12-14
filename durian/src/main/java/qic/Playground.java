@@ -17,6 +17,8 @@
  */
 package qic;
 
+import java.util.Date;
+
 /**
  * @author thirdy
  *
@@ -107,12 +109,13 @@ public class Playground {
 //			+ "mapq_max=&rarity=&seller=&thread=&identified=&corrupted=&online=x&buyout=x&altart=&capquality=x&"
 //			+ "buyout_min=&buyout_max=&buyout_currency=&crafted=";
 
-//	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception {
 //        BackendClient backendClient = new BackendClient();
 //        String searchPage = backendClient.search(
 //        		SAMPLE_PAYLOAD
 //        		, true);
 ////        System.out.println(searchPage);
 //        System.out.println("Done");
-//    }
+		System.out.println(new Date(1450079321791l));
+    }
 }

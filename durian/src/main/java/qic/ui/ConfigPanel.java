@@ -19,13 +19,11 @@ package qic.ui;
 
 import static qic.util.Config.CONFIG_PROPERTIES_FILENAME;
 
-import java.awt.BorderLayout;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.io.File;
 import java.io.IOException;
 
-import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 

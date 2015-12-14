@@ -10,7 +10,8 @@ import java.lang.reflect.Method;
  */
 public class DynamicBeanUtils {
 
-    public static <T> T getPropertyValue(Object instance, PropertyDescriptor descriptor) {
+    @SuppressWarnings("unchecked")
+	public static <T> T getPropertyValue(Object instance, PropertyDescriptor descriptor) {
         try {
             Method m = descriptor.getReadMethod();
             Object result = m.invoke(instance);
@@ -20,7 +21,8 @@ public class DynamicBeanUtils {
         }
     }
 
-    public static <T> T getPropertyValue(Object instance, String propertyName) {
+    @SuppressWarnings("unchecked")
+	public static <T> T getPropertyValue(Object instance, String propertyName) {
         try {
             Method m = instance.getClass().getMethod(getPropertyGetterName(propertyName));
             Object result = m.invoke(instance);

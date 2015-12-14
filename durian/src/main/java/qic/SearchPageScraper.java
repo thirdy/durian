@@ -125,6 +125,12 @@ public class SearchPageScraper {
 					.map(s -> StringUtils.removePattern(s, "[^\\d]"))
 					.orElse("")
 					.replaceAll(regex_horizontal_whitespace,"").trim();
+			
+			// ----- Verify ----- //
+			item.dataHash = element.getElementsByAttributeValue("onclick", "verify_modern(this)").stream()
+					.findFirst()
+					.map(n -> n.attr("data-hash"))
+					.orElse("").trim();
 
 			// ----- Mods ----- //
 			Elements itemModsElements = element.getElementsByClass("item-mods");
@@ -195,6 +201,8 @@ public class SearchPageScraper {
 		String ign;
 		public boolean corrupted;
 		public boolean identified;
+		
+		String dataHash; // use for verify
 		
 		String socketsRaw;
 		String stackSize;
@@ -578,7 +586,14 @@ public class SearchPageScraper {
 		public String seller() {
 			return seller;
 		}
+		
+		public String dataHash() {
+			return dataHash;
+		}
+
+		public String toShortDebugInfo() {
+			return String.format("id=%s name=%s account=%s thread=%s", id, name, seller, thread);
+		}
 
 	}
-
 }

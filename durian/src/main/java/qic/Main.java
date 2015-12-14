@@ -21,6 +21,8 @@ import static java.util.Arrays.asList;
 import static java.util.stream.Collectors.joining;
 import static org.apache.commons.lang3.StringUtils.substringAfter;
 import static qic.Command.Status.ERROR;
+import static qic.util.Config.AUTO_VERIFY;
+import static qic.util.Config.getBooleanProperty;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -45,6 +47,7 @@ import qic.SearchPageScraper.SearchResultItem;
 import qic.ui.QicFrame;
 import qic.util.CommandLine;
 import qic.util.Config;
+import qic.util.DurianUtils;
 import qic.util.SessProp;
 import qic.util.Util;
 
@@ -130,20 +133,9 @@ public class Main {
 		searchDuration = null;
 		invalidSearchTerms = new LinkedList<>();
 		try {
-			if (line.equalsIgnoreCase("searchend") || line.equalsIgnoreCase("se")) {
-				command.status = Status.EXIT;
-				sessProp.clear();
-			} else if (line.equalsIgnoreCase("reload")) {
-				reloadConfig();
-			} else if (line.startsWith("sort")&& !sessProp.getLocation().isEmpty()) {
+			if (line.startsWith("sort")&& !sessProp.getLocation().isEmpty()) {
 				command.itemResults = runSearch(line, true);
 				command.searchDuration = searchDuration;
-			} else if (line.startsWith("search")) {
-				String terms = substringAfter(line, "search").trim();
-				if (!terms.isEmpty()) {
-					command.itemResults = runSearch(terms, false);
-					command.searchDuration = searchDuration;
-				}
 			} else if (line.startsWith("s ")) {
 				String terms = substringAfter(line, "s ").trim();
 				if (!terms.isEmpty()) {
@@ -151,6 +143,18 @@ public class Main {
 					command.searchDuration = searchDuration;
 				}
 			}
+			boolean autoVerify = getBooleanProperty(AUTO_VERIFY, false);
+			if (autoVerify) {
+				command.itemResults= command.itemResults.parallelStream()
+					.filter(item -> {
+						logger.info(String.format("Verifying item %s", item.toShortDebugInfo()));
+						boolean verified = DurianUtils.verify(item.thread, item.dataHash);
+						logger.info(String.format("Verify result for item %s: %s", item.toShortDebugInfo(), verified));
+						return verified;
+					})
+					.collect(Collectors.toList());
+			}
+			
 			command.league = sessProp.getLeague();
 			command.invalidSearchTerms = invalidSearchTerms;
 			command.status = Status.SUCCESS;

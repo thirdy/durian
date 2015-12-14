@@ -25,9 +25,6 @@ import java.net.URI;
 
 import javax.swing.JOptionPane;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
  * @author thirdy
  *

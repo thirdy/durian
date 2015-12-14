@@ -113,7 +113,6 @@ public class AutomatedPanel extends JPanel {
 		splitPane.setResizeWeight(.85d);
 		splitPane.setDividerLocation(.85d);
 	}
-	
 
     private static class QueryTask extends SwingWorker<Void, Command> {
     	private final Logger logger = LoggerFactory.getLogger(this.getClass().getName());

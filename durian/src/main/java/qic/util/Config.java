@@ -41,6 +41,8 @@ public class Config {
 	public static final String AUTOMATED_SEARCH_BLACKLIST = "automated.search.blacklist";
 	public static final String MANUAL_SEARCH_BLACKLIST = "manual.search.blacklist";
 	
+	public static final String AUTO_VERIFY = "auto.verify";
+	
 	private static Properties config;
 	
 	public static void loadConfig() throws IOException, FileNotFoundException {
@@ -53,4 +55,9 @@ public class Config {
     public static String getPropety(String key, String defaultValue) {
     	return config.getProperty(key, defaultValue).trim();
     }
+
+	public static boolean getBooleanProperty(String key, boolean defaultValue) {
+		String propety = getPropety(key, String.valueOf(defaultValue));
+		return Boolean.parseBoolean(propety);
+	}
 }

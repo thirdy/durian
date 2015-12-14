@@ -18,7 +18,8 @@ import javax.swing.table.TableCellRenderer;
    */
   public class MultiLineTableCellRenderer extends JTextArea 
     implements TableCellRenderer {
-    private List<List<Integer>> rowColHeight = new ArrayList<List<Integer>>();
+	private static final long serialVersionUID = 1L;
+	private List<List<Integer>> rowColHeight = new ArrayList<List<Integer>>();
    
     public MultiLineTableCellRenderer() {
       setLineWrap(true);
@@ -48,7 +49,9 @@ import javax.swing.table.TableCellRenderer;
       }
       if (value != null) {
         if (value instanceof List) {
-        	List list = (List)value;
+        	@SuppressWarnings("rawtypes")
+			List list = (List)value;
+			@SuppressWarnings("unchecked")
 			Object str = list.stream().map(Objects::toString).collect(Collectors.joining(System.lineSeparator()));
 			setText(str.toString());
 		} else {

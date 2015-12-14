@@ -75,6 +75,8 @@ public class ManualPanel extends JPanel {
 
 	private JSplitPane splitPane;
 
+	private SearchResultTable table;
+
 	@SuppressWarnings("serial")
 	public ManualPanel(Main main) {
 		super(new BorderLayout(5, 5));
@@ -132,7 +134,7 @@ public class ManualPanel extends JPanel {
 			}
 		});
 		
-		SearchResultTable table = new SearchResultTable();
+		table = new SearchResultTable();
 		ActionListener runCommand = e -> {
 			String tfText = searchTf.getText().trim();
 			if (!tfText.isEmpty()) {
@@ -142,9 +144,7 @@ public class ManualPanel extends JPanel {
 							return runQuery(main, tfText);
 						},
 						command -> {
-							List<SearchResultItem> itemResults = command.itemResults.stream()
-									.filter(item -> notBlacklisted(MANUAL_SEARCH_BLACKLIST, item))
-									.collect(toList());
+							List<SearchResultItem> itemResults = filterResults(command.itemResults);
 							table.setData(itemResults);
 							if (command.invalidSearchTerms.isEmpty()) {
 								saveSearchToList(tfText);
@@ -172,6 +172,13 @@ public class ManualPanel extends JPanel {
 				new JScrollPane(table), new JScrollPane(searchJList));
 		
 		this.add(splitPane, BorderLayout.CENTER);
+	}
+
+	private List<SearchResultItem> filterResults(List<SearchResultItem> itemResults) {
+		itemResults = itemResults.stream()
+				.filter(item -> notBlacklisted(MANUAL_SEARCH_BLACKLIST, item))
+				.collect(toList());
+		return itemResults;
 	}
 	
 	public void initSplitPaneDivider() {
