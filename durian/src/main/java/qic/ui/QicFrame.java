@@ -17,6 +17,7 @@
  */
 package qic.ui;
 
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.Toolkit;
@@ -25,6 +26,8 @@ import java.awt.event.WindowEvent;
 
 import javax.swing.JFrame;
 import javax.swing.JTabbedPane;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
 import qic.Main;
 
@@ -45,13 +48,26 @@ public class QicFrame extends JFrame {
 		ManualPanel manualPanel = new ManualPanel(main);
 		AutomatedPanel automatedPanel = new AutomatedPanel(main);
 		LoggerPanel loggerPanel  = new LoggerPanel();
+		ConfigPanel configPanel  = new ConfigPanel();
 		
 		JTabbedPane tabbedPane = new JTabbedPane();
 		tabbedPane.addTab("Manual", manualPanel);
 		tabbedPane.addTab("Automated", automatedPanel);
 		tabbedPane.addTab("Log", loggerPanel);
-
+		tabbedPane.addTab("Config", configPanel);
+		tabbedPane.addChangeListener(new ChangeListener() {
+			
+			@Override
+			public void stateChanged(ChangeEvent e) {
+				Component tab = tabbedPane.getSelectedComponent();
+				if (tab instanceof ConfigPanel) {
+					((ConfigPanel) tab).tabSelected();
+				}
+			}
+		});
+		
 		setContentPane(tabbedPane);
+		
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		setSize(screenSize.width-50,screenSize.height-50);
 		setLocationRelativeTo(null);

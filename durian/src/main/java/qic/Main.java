@@ -74,7 +74,7 @@ public class Main {
 		}
     }
 
-	private static void reloadConfig() throws IOException, FileNotFoundException {
+	public static void reloadConfig() throws IOException, FileNotFoundException {
 		language = new BlackmarketLanguage();
 		Config.loadConfig();
 	}
