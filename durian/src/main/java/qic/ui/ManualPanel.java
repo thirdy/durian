@@ -144,9 +144,9 @@ public class ManualPanel extends JPanel {
 							return runQuery(main, tfText);
 						},
 						command -> {
-							List<SearchResultItem> itemResults = filterResults(command.itemResults);
-							table.setData(itemResults);
 							if (command.invalidSearchTerms.isEmpty()) {
+								List<SearchResultItem> itemResults = filterResults(command.itemResults);
+								table.setData(itemResults);
 								saveSearchToList(tfText);
 								invalidTermsLbl.setText("");
 								invalidTermsLblLbl.setText("");
