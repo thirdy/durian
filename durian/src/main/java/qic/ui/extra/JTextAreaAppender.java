@@ -17,6 +17,12 @@ public class JTextAreaAppender extends AppenderSkeleton {
     protected void append(LoggingEvent event) {
     	String text = textArea.getText();
     	text += event.getRenderedMessage() + System.lineSeparator();
+    	String[] throwableStrRep = event.getThrowableStrRep();
+		if (throwableStrRep != null) {
+			for (String stacktrace : throwableStrRep) {
+				text += stacktrace + System.lineSeparator();
+			}
+		}
     	textArea.setText(text);
     }
 

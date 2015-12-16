@@ -17,11 +17,16 @@
  */
 package qic.ui;
 
+import static java.lang.String.format;
 import static java.lang.System.lineSeparator;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 import static qic.util.Config.AUTOMATED_SEARCH_BLACKLIST;
+import static qic.util.Config.AUTO_VERIFY;
+import static qic.util.Config.getBooleanProperty;
 import static qic.util.DurianUtils.notBlacklisted;
+import static qic.util.Util.sleep;
+import static qic.util.Verify.SOLD;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionListener;
@@ -46,8 +51,10 @@ import qic.Command;
 import qic.Main;
 import qic.SearchPageScraper.SearchResultItem;
 import qic.util.Config;
+import qic.util.DurianUtils;
 import qic.util.SoundUtils;
 import qic.util.Util;
+import qic.util.Verify;
 
 /**
  * @author thirdy
@@ -114,7 +121,7 @@ public class AutomatedPanel extends JPanel {
 		splitPane.setDividerLocation(.85d);
 	}
 
-    private static class QueryTask extends SwingWorker<Void, Command> {
+    private static class QueryTask extends SwingWorker<Void, SearchResultItem> {
     	private final Logger logger = LoggerFactory.getLogger(this.getClass().getName());
 
     	AutomatedPanel panel;
@@ -151,8 +158,20 @@ public class AutomatedPanel extends JPanel {
 	            	logger.info("Now running search: " + line);
 					Command command = runQuery(line);
 	                idx++;
-	                total += command.itemResults.size();
-	                publish(command);
+	                List<SearchResultItem> itemResults = command.itemResults;
+	                
+	        		itemResults = itemResults.stream()
+							.filter(item -> notBlacklisted(AUTOMATED_SEARCH_BLACKLIST, item))
+							.collect(toList());
+	        		
+	    			if (getBooleanProperty(AUTO_VERIFY, false)) {
+	    				int countAfterVerify = runVerify(itemResults);
+	    				int difference = itemResults.size() - countAfterVerify;
+						logger.info(format("Verified %d items, %d was confirmed verified. A difference of %d.", itemResults.size(), countAfterVerify, difference));
+	    			} else {
+	    				total += itemResults.size();
+		    			itemResults.stream().forEach(this::publish);
+	    			}
 	            }
 	            if (total > 0) {
 	            	try {
@@ -165,15 +184,32 @@ public class AutomatedPanel extends JPanel {
 			panel.runBtn.setEnabled(true);
 		}
 
+		private int runVerify(List<SearchResultItem> itemResults) {
+			return itemResults.stream()
+				.mapToInt(item -> {
+					int result = 0;
+					
+					logger.info(format("Verifying item %s", item.toShortDebugInfo()));
+					Verify verified = DurianUtils.verify(item.thread(), item.dataHash());
+					item.verified(verified);
+					logger.info(format("Verify result for item %s: %s", item.toShortDebugInfo(), verified));
+					long sleep = Config.getLongProperty(Config.AUTO_VERIFY_SLEEP, 100);
+					
+					if (verified != SOLD) {
+						result = 1;
+						publish(item);
+					}
+					
+					logger.info(format("Auto-verify - now sleeping for %s millisec", sleep));
+					sleep(sleep);
+					
+					return result;
+				}).sum();
+		}
+
         @Override
-        protected void process(List<Command> command) {
-        	for (Command cmd : command) {
-        		List<SearchResultItem> itemResults = cmd.itemResults;
-        		itemResults = itemResults.stream()
-						.filter(item -> notBlacklisted(AUTOMATED_SEARCH_BLACKLIST, item))
-						.collect(toList());
+        protected void process(List<SearchResultItem> itemResults) {
 				panel.table.addData(itemResults);
-			}
         }
         
     	private Command runQuery(String line) {
@@ -182,7 +218,7 @@ public class AutomatedPanel extends JPanel {
     		while(true) {
     		    try {
     		    	return panel.main.processLine(line);
-    		    } catch (IOException e) {
+    		    } catch (Exception e) {
     		        if (++count == maxTries) throw new RuntimeException(e);
     		    }
     		}

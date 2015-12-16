@@ -42,6 +42,8 @@ public class Config {
 	public static final String MANUAL_SEARCH_BLACKLIST = "manual.search.blacklist";
 	
 	public static final String AUTO_VERIFY = "auto.verify";
+	public static final String AUTO_VERIFY_SLEEP = "auto.verify.sleep";
+
 	
 	private static Properties config;
 	
@@ -59,5 +61,15 @@ public class Config {
 	public static boolean getBooleanProperty(String key, boolean defaultValue) {
 		String propety = getPropety(key, String.valueOf(defaultValue));
 		return Boolean.parseBoolean(propety);
+	}
+
+	public static int getIntegerProperty(String key, int i) {
+		String propety = getPropety(key, String.valueOf(i));
+		return Integer.parseInt(propety);
+	}
+
+	public static long getLongProperty(String key, long i) {
+		String propety = getPropety(key, String.valueOf(i));
+		return Long.parseLong(propety);
 	}
 }

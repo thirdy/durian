@@ -18,6 +18,7 @@
 package qic.util;
 
 import static java.util.Arrays.asList;
+import static qic.util.Verify.*;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -48,7 +49,7 @@ public class DurianUtils {
 		return !isBlacklisted;
 	}
 
-	public static boolean verify(String thread, String dataHash) {
+	public static Verify verify(String thread, String dataHash) {
 		// http://verify.xyz.is/1504841/d571ac1d216e9e84dd1f44172c73abcb?callback=__callback_1450079321791_659&_=735.8083963058672
 		
 //		function query(thread, hash, callback) {
@@ -74,13 +75,13 @@ public class DurianUtils {
 		try {
 			verifyRaw = getVerifyAndRetry(url, parameters, verifyRaw);
 		} catch (UnirestException e) {
-			return true; // default to verified if call to verify failed
+			return FAILED; // default to verified if call to verify failed
 		}
 
 //		__callback_1450079321791_659(true);
 		String result = StringUtils.substringBetween(verifyRaw, callback_name + "(", ");");
 		boolean verified = Boolean.parseBoolean(result);
-		return verified;
+		return verified ? VERIFIED : SOLD;
 	}
 
 	private static String getVerifyAndRetry(String url, Map<String, Object> parameters, String verifyRaw) throws UnirestException {

@@ -31,6 +31,7 @@ import org.jsoup.select.Elements;
 
 import qic.SearchPageScraper.SearchResultItem.Mod;
 import qic.util.Util;
+import qic.util.Verify;
 
 /**
  *
@@ -241,6 +242,7 @@ public class SearchPageScraper {
 
 		Mod implicitMod;
 		List<Mod> explicitMods = new ArrayList<>();
+		Verify verified = Verify.UKNOWN;
 		
 		
 		public List<Mod> getMods() {
@@ -303,11 +305,12 @@ public class SearchPageScraper {
 			String age = substringBetween(ageAndHighLvl, "a", "h");
 			age = StringUtils.isNumeric(age) ? now().minusDays(parseInt(age)).format(ofPattern("MMM dd uuuu")) : age;
 			return labelList(
+					labelVal("IGN", ign),
 					labelVal("Joined", age),
 					labelVal("HighestLvl", highestLvl),
-					labelVal("IGN", ign),
 					labelVal("Account", seller),
 					labelVal("Thread", thread),
+					labelVal("Verified", verified.name()),
 //					labelVal("", threadUrl),
 					labelVal("Online", String.valueOf(containsIgnoreCase("online", online))));
 		}
@@ -591,9 +594,17 @@ public class SearchPageScraper {
 		public String dataHash() {
 			return dataHash;
 		}
+		
+		public String thread() {
+			return thread;
+		}
 
 		public String toShortDebugInfo() {
 			return String.format("id=%s name=%s account=%s thread=%s", id, name, seller, thread);
+		}
+
+		public void verified(Verify verified) {
+			this.verified = verified;
 		}
 
 	}
