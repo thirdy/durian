@@ -177,8 +177,10 @@ public class AutomatedPanel extends JPanel {
 		    			itemResults.stream().forEach(this::publish);
 	    			}
 	    			
-	    			logger.info(format("Automated Search - now sleep for %d seconds", waitSecondsInBetween));
-	    			sleep(waitSecondsInBetween * 1000);
+	    			if (idx < searches.length) {
+	    				logger.info(format("Automated Search - now sleep for %d seconds", waitSecondsInBetween));
+		    			sleep(waitSecondsInBetween * 1000);
+					}
 	            }
 	            if (total > 0) {
 	            	try {
