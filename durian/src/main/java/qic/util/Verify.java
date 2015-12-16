@@ -22,5 +22,5 @@ package qic.util;
  *
  */
 public enum Verify {
-	VERIFIED, SOLD, FAILED, UKNOWN
+	VERIFIED, SOLD, ERROR, UKNOWN
 }

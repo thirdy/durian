@@ -275,8 +275,11 @@ public class ManualPanel extends JPanel {
 					long sleep = Config.getLongProperty(Config.AUTO_VERIFY_SLEEP, 100);
 					
 					if (verified != SOLD) {
-						result = 1;
 						publish(item);
+					}
+					
+					if (verified == Verify.VERIFIED) {
+						result = 1;
 					}
 					
 					logger.info(format("Auto-verify - now sleeping for %s millisec", sleep));

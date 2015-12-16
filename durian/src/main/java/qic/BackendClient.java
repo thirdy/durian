@@ -1,11 +1,15 @@
 package qic;
 
+import static java.lang.String.format;
+
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 
 import org.apache.commons.lang3.RandomUtils;
 import org.apache.http.Header;
 import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.HttpGet;
@@ -62,7 +66,7 @@ public class BackendClient {
 
         logger.info("Sending 'POST' request to URL : " + url);
         // bombs away!
-        HttpResponse response = client.execute(post);
+        HttpResponse response = postWithRetry(post);
 
         int responseCode = response.getStatusLine().getStatusCode();
 
@@ -117,7 +121,7 @@ public class BackendClient {
     	
     	logger.info("Sending 'POST' request to URL : " + url);
     	// bombs away!
-    	HttpResponse response = client.execute(post);
+    	HttpResponse response = postWithRetry(post);
     	
     	int responseCode = response.getStatusLine().getStatusCode();
     	
@@ -203,7 +207,27 @@ public class BackendClient {
     	    "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20130401 Firefox/31.0",
     	    "Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0",
     	    "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20120101 Firefox/29.0",
-    	    "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:25.0) Gecko/20100101 Firefox/29.0"
+    	    "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:25.0) Gecko/20100101 Firefox/29.0",
+    	    "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0"
     };
+    
+	private HttpResponse postWithRetry(HttpPost post) throws IOException, ClientProtocolException {
+		int count = 0;
+		int maxTries = 10;
+		while(true) {
+		    try {
+		    	return client.execute(post);
+		    } catch (Exception e) {
+		    	++count;
+		    	logger.info(format("Http post failed, gonna try again. Number of retries so far: %d", count));
+		        if (count == maxTries) {
+		        	String msg = format("Http post failed after %d max retries.", maxTries);
+					logger.info(msg);
+		        	throw new RuntimeException(msg, e);
+		        }
+		    }
+		}
+		
+	}
 
 }
