@@ -18,11 +18,13 @@
 package qic.util;
 
 import static java.util.Arrays.asList;
+import static qic.util.Verify.*;
 
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.commons.lang3.RandomUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,6 +32,7 @@ import org.slf4j.LoggerFactory;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 
+import qic.BackendClient;
 import qic.SearchPageScraper.SearchResultItem;
 
 /**
@@ -48,7 +51,7 @@ public class DurianUtils {
 		return !isBlacklisted;
 	}
 
-	public static boolean verify(String thread, String dataHash) {
+	public static Verify verify(String thread, String dataHash) {
 		// http://verify.xyz.is/1504841/d571ac1d216e9e84dd1f44172c73abcb?callback=__callback_1450079321791_659&_=735.8083963058672
 		
 //		function query(thread, hash, callback) {
@@ -74,23 +77,24 @@ public class DurianUtils {
 		try {
 			verifyRaw = getVerifyAndRetry(url, parameters, verifyRaw);
 		} catch (UnirestException e) {
-			return true; // default to verified if call to verify failed
+			return ERROR; // default to verified if call to verify failed
 		}
 
 //		__callback_1450079321791_659(true);
 		String result = StringUtils.substringBetween(verifyRaw, callback_name + "(", ");");
 		boolean verified = Boolean.parseBoolean(result);
-		return verified;
+		return verified ? VERIFIED : SOLD;
 	}
 
 	private static String getVerifyAndRetry(String url, Map<String, Object> parameters, String verifyRaw) throws UnirestException {
 		int count = 0;
 		int maxTries = 10;
+		String[] userAgents = BackendClient.userAgents;
 		while(true) {
 			try {
 				return verifyRaw = Unirest.get(url)
 						.header("Host","verify.xyz.is")
-						.header("User-Agent","Mozilla/5.0 (Windows NT 6.1 WOW64 rv:41.0) Gecko/20100101 Firefox/41.0")
+						.header("User-Agent", userAgents[RandomUtils.nextInt(0, userAgents.length)])
 						.header("Accept","*/*")
 						.header("Accept-Language","en-US,enq=0.5")
 						.header("Connection","keep-alive")

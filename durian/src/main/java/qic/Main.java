@@ -21,8 +21,6 @@ import static java.util.Arrays.asList;
 import static java.util.stream.Collectors.joining;
 import static org.apache.commons.lang3.StringUtils.substringAfter;
 import static qic.Command.Status.ERROR;
-import static qic.util.Config.AUTO_VERIFY;
-import static qic.util.Config.getBooleanProperty;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -47,7 +45,6 @@ import qic.SearchPageScraper.SearchResultItem;
 import qic.ui.QicFrame;
 import qic.util.CommandLine;
 import qic.util.Config;
-import qic.util.DurianUtils;
 import qic.util.SessProp;
 import qic.util.Util;
 
@@ -77,12 +74,12 @@ public class Main {
 		}
     }
 
-	public static void reloadConfig() throws IOException, FileNotFoundException {
+	public static void reloadConfig() throws Exception, FileNotFoundException {
 		language = new BlackmarketLanguage();
 		Config.loadConfig();
 	}
 
-	public Main(String[] args) throws IOException, InterruptedException {
+	public Main(String[] args) throws Exception {
 		CommandLine cmd = new CommandLine(args);
 		boolean guiEnabled = cmd.hasFlag("-gui");
 		guiEnabled = guiEnabled || cmd.getNumberOfArguments() == 0;
@@ -128,7 +125,7 @@ public class Main {
 		Util.overwriteFile("results.json", contents);
 	}
 
-	public Command processLine(String line) throws IOException {
+	public Command processLine(String line) throws Exception {
 		Command command = new Command(line);
 		searchDuration = null;
 		invalidSearchTerms = new LinkedList<>();
@@ -143,18 +140,6 @@ public class Main {
 					command.searchDuration = searchDuration;
 				}
 			}
-			boolean autoVerify = getBooleanProperty(AUTO_VERIFY, false);
-			if (autoVerify) {
-				command.itemResults= command.itemResults.parallelStream()
-					.filter(item -> {
-						logger.info(String.format("Verifying item %s", item.toShortDebugInfo()));
-						boolean verified = DurianUtils.verify(item.thread, item.dataHash);
-						logger.info(String.format("Verify result for item %s: %s", item.toShortDebugInfo(), verified));
-						return verified;
-					})
-					.collect(Collectors.toList());
-			}
-			
 			command.league = sessProp.getLeague();
 			command.invalidSearchTerms = invalidSearchTerms;
 			command.status = Status.SUCCESS;
@@ -163,6 +148,7 @@ public class Main {
 			command.status = ERROR;
 			command.errorMessage = e.getMessage();
 			command.errorStackTrace = ExceptionUtils.getStackTrace(e);
+			throw e;
 		}
 		return command;
 	}

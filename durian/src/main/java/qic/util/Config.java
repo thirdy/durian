@@ -33,6 +33,7 @@ public class Config {
 	public static final String CONFIG_PROPERTIES_FILENAME = "config.properties";
 	
 	public static final String AUTOMATED_SEARCH_WAIT_MINUTES = "automated.search.wait.minutes";
+	public static final String AUTOMATED_SEARCH_INBETWEEN_WAIT_SECONDS = "automated.search.inbetween.wait.seconds";
 	public static final String MANUAL_SEARCH_PREFIX = "manual.search.prefix";
 	public static final String AUTOMATED_SEARCH_PREFIX = "automated.search.prefix";
 	public static final String AUTOMATED_SEARCH_SOUND_FILENAME = "automated.search.sound.filename";
@@ -42,6 +43,8 @@ public class Config {
 	public static final String MANUAL_SEARCH_BLACKLIST = "manual.search.blacklist";
 	
 	public static final String AUTO_VERIFY = "auto.verify";
+	public static final String AUTO_VERIFY_SLEEP = "auto.verify.sleep";
+
 	
 	private static Properties config;
 	
@@ -59,5 +62,15 @@ public class Config {
 	public static boolean getBooleanProperty(String key, boolean defaultValue) {
 		String propety = getPropety(key, String.valueOf(defaultValue));
 		return Boolean.parseBoolean(propety);
+	}
+
+	public static int getIntegerProperty(String key, int i) {
+		String propety = getPropety(key, String.valueOf(i));
+		return Integer.parseInt(propety);
+	}
+
+	public static long getLongProperty(String key, long i) {
+		String propety = getPropety(key, String.valueOf(i));
+		return Long.parseLong(propety);
 	}
 }

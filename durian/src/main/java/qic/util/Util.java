@@ -16,11 +16,15 @@ import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 public class Util {
+	
+	private static final Logger logger = LoggerFactory.getLogger(Util.class.getName());
 	
 	public static String removeThoseDamnWhiteSpace(String s) {
 		s = StringUtils.deleteWhitespace(s);
@@ -77,6 +81,15 @@ public class Util {
 					.collect(toList());
 				return lines;
 		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
+	}
+
+	public static void sleep(long millis) {
+		try {
+			Thread.sleep(millis);
+		} catch (InterruptedException e) {
+			logger.error(e.getMessage(), e);
 			throw new RuntimeException(e);
 		}
 	}
