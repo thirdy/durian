@@ -178,7 +178,7 @@ public class AutomatedPanel extends JPanel {
 	    			}
 	    			
 	    			logger.info(format("Automated Search - now sleep for %d seconds", waitSecondsInBetween));
-	    			sleep(waitSecondsInBetween);
+	    			sleep(waitSecondsInBetween * 1000);
 	            }
 	            if (total > 0) {
 	            	try {

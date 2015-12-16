@@ -31,6 +31,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import javax.swing.JOptionPane;
+import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
 
@@ -118,7 +119,7 @@ public class Main {
 		        // not worth my time
 		    }
 		}
-		new QicFrame(this, query);
+	    SwingUtilities.invokeLater(() -> new QicFrame(Main.this, query));
 	}
 
 	public void writeToFile(String contents) throws IOException {

@@ -186,6 +186,7 @@ public class ManualPanel extends JPanel {
 	private void addDataToTable(Command command) {
 		List<SearchResultItem> itemResults = filterResults(command.itemResults);
 		if (getBooleanProperty(AUTO_VERIFY, false)) {
+			table.clear();
 			new VerifierTask(itemResults, table::addData).execute();
 		} else {
 			table.setData(itemResults);
@@ -292,7 +293,7 @@ public class ManualPanel extends JPanel {
 
         @Override
         protected void process(List<SearchResultItem> itemResults) {
-				consumer.accept(itemResults);
+        	consumer.accept(itemResults);
         }
     }
 }
