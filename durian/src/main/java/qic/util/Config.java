@@ -33,6 +33,7 @@ public class Config {
 	public static final String CONFIG_PROPERTIES_FILENAME = "config.properties";
 	
 	public static final String AUTOMATED_SEARCH_WAIT_MINUTES = "automated.search.wait.minutes";
+	public static final String AUTOMATED_SEARCH_INBETWEEN_WAIT_SECONDS = "automated.search.inbetween.wait.seconds";
 	public static final String MANUAL_SEARCH_PREFIX = "manual.search.prefix";
 	public static final String AUTOMATED_SEARCH_PREFIX = "automated.search.prefix";
 	public static final String AUTOMATED_SEARCH_SOUND_FILENAME = "automated.search.sound.filename";

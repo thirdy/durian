@@ -74,8 +74,6 @@ public class AutomatedPanel extends JPanel {
 	private JTextArea searchListTa = new JTextArea(10, 15);
 	private SearchResultTable table = new SearchResultTable();
 	
-	private static int waitMins = Integer.parseInt(Config.getPropety(Config.AUTOMATED_SEARCH_WAIT_MINUTES, "10"));
-	private static int waitSeconds = waitMins * 60;
 	private static int countdown = 0;
 	
 	private ActionListener runCommand = e -> (new QueryTask(this)).execute();
@@ -86,6 +84,8 @@ public class AutomatedPanel extends JPanel {
 	public AutomatedPanel(Main main) {
 		super(new BorderLayout(5, 5));
 		this.main = main;
+		
+		table.setDoubleBuffered(true);
 		
 		JPanel controlPanel = new JPanel();
 		controlPanel.setLayout(new BoxLayout(controlPanel, BoxLayout.X_AXIS));
@@ -125,6 +125,10 @@ public class AutomatedPanel extends JPanel {
     	private final Logger logger = LoggerFactory.getLogger(this.getClass().getName());
 
     	AutomatedPanel panel;
+    	int waitMins = Integer.parseInt(Config.getPropety(Config.AUTOMATED_SEARCH_WAIT_MINUTES, "15"));
+    	int waitSeconds = waitMins * 60;
+    	
+    	int waitSecondsInBetween = Integer.parseInt(Config.getPropety(Config.AUTOMATED_SEARCH_INBETWEEN_WAIT_SECONDS, "10"));
     	
         public QueryTask(AutomatedPanel panel) {
 			this.panel = panel;
@@ -172,6 +176,9 @@ public class AutomatedPanel extends JPanel {
 	    				total += itemResults.size();
 		    			itemResults.stream().forEach(this::publish);
 	    			}
+	    			
+	    			logger.info(format("Automated Search - now sleep for %d seconds", waitSecondsInBetween));
+	    			sleep(waitSecondsInBetween);
 	            }
 	            if (total > 0) {
 	            	try {

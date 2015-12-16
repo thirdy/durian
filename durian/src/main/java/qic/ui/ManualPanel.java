@@ -84,11 +84,13 @@ public class ManualPanel extends JPanel {
 
 	private JSplitPane splitPane;
 
-	private SearchResultTable table;
+	private SearchResultTable table = new SearchResultTable();
 
 	@SuppressWarnings("serial")
 	public ManualPanel(Main main) {
 		super(new BorderLayout(5, 5));
+		
+		table.setDoubleBuffered(true);
 
 		JTextField searchTf = new JTextField(100);
 		JButton runBtn = new JButton("Run");
@@ -143,7 +145,6 @@ public class ManualPanel extends JPanel {
 			}
 		});
 		
-		table = new SearchResultTable();
 		ActionListener runCommand = e -> {
 			String tfText = searchTf.getText().trim();
 			if (!tfText.isEmpty()) {
