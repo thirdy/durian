@@ -326,7 +326,7 @@ public class SearchPageScraper {
 //					getIgn(), getName(), getBuyout(), getLeague(), mods);
 			return String.format(
 					"@%s Hi, WTB your \"%s\" listed for %s in %s league.",
-					ign, name, upperCase(buyout), league);
+					ign, name, buyout, league);
 		}
 
 		/**
