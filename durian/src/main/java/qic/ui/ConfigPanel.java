@@ -79,6 +79,7 @@ public class ConfigPanel extends JScrollPane {
 		try {
 			String str = FileUtils.readFileToString(new File(CONFIG_PROPERTIES_FILENAME));
 			textArea.setText(str);
+			textArea.setCaretPosition(0);
 		} catch (IOException e) {
 			logger.error("Error while reading " + CONFIG_PROPERTIES_FILENAME);
 			showError(e);

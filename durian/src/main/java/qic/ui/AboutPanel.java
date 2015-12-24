@@ -96,6 +96,7 @@ public class AboutPanel extends JPanel {
 			InputStream input = this.getClass().getResource("/help.txt").openStream();
 			String str = IOUtils.toString(input);
 			textArea.setText(str);
+			textArea.setCaretPosition(0);
 			input.close();
 		} catch (Exception e) {
 			logger.error("Error while reading help file", e);
