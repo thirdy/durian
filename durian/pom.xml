@@ -62,6 +62,11 @@
 			<artifactId>tablefilter-swing</artifactId>
 			<version>5.2.1</version>
 		</dependency>
+		<dependency>
+			<groupId>com.github.insubstantial</groupId>
+			<artifactId>substance</artifactId>
+			<version>7.3</version>
+		</dependency>
 		<!-- Why can't logging be simpler? -->
 		<!-- Read the 2 page slf4j manual to undestand this stuff: http://www.slf4j.org/manual.html -->
 		<dependency>

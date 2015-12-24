@@ -49,6 +49,8 @@ public class Config {
 	public static final String AUTOMATED_AUTO_VERIFY_SLEEP = "automated.auto.verify.wait.millisec";
 	public static final String MANUAL_AUTO_VERIFY_SLEEP = "manual.auto.verify.wait.millisec";
 
+	public static final String LOOK_AND_FEEL = "lookandfeel";
+
 	private static Properties config;
 	
 	public static void loadConfig() throws IOException, FileNotFoundException {

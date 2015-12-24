@@ -32,6 +32,7 @@ import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import qic.Main;
 import qic.util.Config;
 import qic.util.Util;
 
@@ -53,6 +54,7 @@ public class ConfigPanel extends JScrollPane {
 			@Override
 			public void focusLost(FocusEvent e) {
 				saveAndReloadConfig();
+				Main.reloadLookAndFeel();
 			}
 			
 			@Override

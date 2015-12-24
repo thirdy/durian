@@ -22,6 +22,7 @@ import static java.util.stream.Collectors.joining;
 import static org.apache.commons.lang3.StringUtils.substringAfter;
 import static qic.Command.Status.ERROR;
 
+import java.awt.Window;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URLEncoder;
@@ -33,7 +34,6 @@ import java.util.stream.Collectors;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
-import javax.swing.UIManager.LookAndFeelInfo;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
@@ -79,6 +79,24 @@ public class Main {
 		language = new BlackmarketLanguage();
 		Config.loadConfig();
 	}
+	
+	public static void reloadLookAndFeel() {
+		
+		try {
+			String lookAndFeel = Config.getPropety(Config.LOOK_AND_FEEL, "com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+			UIManager.setLookAndFeel(lookAndFeel);
+		} catch (Exception e) {
+		    try {
+		        UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
+		    } catch (Exception ex) {
+		    	throw new RuntimeException(ex);
+		    }
+		}
+		
+		for (Window window : Window.getWindows()) {
+			SwingUtilities.updateComponentTreeUI(window);
+		}
+	}
 
 	public Main(String[] args) throws Exception {
 		CommandLine cmd = new CommandLine(args);
@@ -104,21 +122,7 @@ public class Main {
 	}
 
 	private void showGui(String query) {
-		try {
-		    for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
-		        if ("Windows".equals(info.getName())) {
-		            UIManager.setLookAndFeel(info.getClassName());
-		            break;
-		        }
-		    }
-		} catch (Exception e) {
-		    // If Nimbus is not available, fall back to cross-platform
-		    try {
-		        UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
-		    } catch (Exception ex) {
-		        // not worth my time
-		    }
-		}
+		reloadLookAndFeel();
 	    SwingUtilities.invokeLater(() -> new QicFrame(Main.this, query));
 	}
 
@@ -225,6 +229,5 @@ public class Main {
 		String location = backendClient.post(url, payload);
 		return location;
 	}
-
 
 }
