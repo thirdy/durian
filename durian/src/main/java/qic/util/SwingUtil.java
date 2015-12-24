@@ -25,8 +25,6 @@ import java.net.URI;
 
 import javax.swing.JOptionPane;
 
-import qic.ui.extra.CaptchaDetectedException;
-
 /**
  * @author thirdy
  *

@@ -56,7 +56,6 @@ import org.slf4j.LoggerFactory;
 import qic.Command;
 import qic.Main;
 import qic.SearchPageScraper.SearchResultItem;
-import qic.ui.extra.VerifierTask;
 import qic.ui.extra.Worker;
 import qic.util.Config;
 import qic.util.SwingUtil;
