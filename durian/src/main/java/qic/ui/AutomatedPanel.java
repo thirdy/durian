@@ -180,6 +180,7 @@ public class AutomatedPanel extends JPanel {
 	        		
 	    			if (getBooleanProperty(AUTOMATED_AUTO_VERIFY, false)) {
 	    				int countAfterVerify = runVerify(itemResults);
+	    				total += countAfterVerify; 
 	    				int difference = itemResults.size() - countAfterVerify;
 						logger.info(format("Verified %d items, %d was confirmed verified. A difference of %d.", itemResults.size(), countAfterVerify, difference));
 	    			} else {

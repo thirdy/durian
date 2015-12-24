@@ -8,4 +8,7 @@ ring 40life 40eleres 40manaregen 15ch
 2haxe 300pdps
 dualreslifedex
 jwl 30bowchaostrap
+hitscantbeevaded dagger magic
+soultaker 10ex
+ring 25wed 60life
 mirror
