@@ -40,7 +40,7 @@ public class QicFrame extends JFrame {
 	private static final long serialVersionUID = 1L;
 	
 	public QicFrame(Main main, String query) {
-		super("Durian 0.3.6");
+		super("Durian 0.4");
 		
 	    Image icon = Toolkit.getDefaultToolkit().getImage(QicFrame.class.getResource("/durian128.png"));
 	    this.setIconImage(icon);

@@ -88,12 +88,10 @@ public class SearchResultTable extends JTable {
 		data.clear();
 		data.addAll(itemResults);
 		model.fireTableDataChanged();
-		System.out.println("model.fireTableDataChanged");
 	}
 
 	public void updateData(int index) {
 		model.fireTableRowsUpdated(index, index);
-		System.out.println("model.fireTableRowsUpdated: " + index);
 	}
 	
 	public void addData(List<SearchResultItem> itemResults) {
@@ -103,13 +101,11 @@ public class SearchResultTable extends JTable {
 		int eidx = data.size() - 1;
 		repaint();
 		model.fireTableRowsInserted(sidx, eidx);
-		System.out.println("model.fireTableRowsInserted: " + sidx + " " + eidx);
 	}
 
 	public void clear() {
 		model.getData().clear();
 		model.fireTableDataChanged();
-		System.out.println("model.fireTableDataChanged");
 	}
 
 	public void runAutoVerify(long sleep) {

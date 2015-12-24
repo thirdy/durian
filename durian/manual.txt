@@ -1,9 +1,11 @@
 ring 30life 50res
-mirror
 name="humility"
 chest 30life 50res
 1h 300pDPS 1hsword sortpdps 3ex
-chaos
 name="veil of the night"
 body 4L 100ar 100es lvl55 5ch
 ring 40life 40eleres 40manaregen 15ch
+2haxe 300pdps
+dualreslifedex
+jwl 30bowchaostrap
+mirror
