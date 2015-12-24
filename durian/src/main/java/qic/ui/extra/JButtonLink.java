@@ -17,22 +17,19 @@
  */
 package qic.ui.extra;
 
+import javax.swing.JButton;
+
+import qic.util.SwingUtil;
+
 /**
  * @author thirdy
  *
  */
-public class CaptchaDetectedException extends Exception {
-
+public class JButtonLink extends JButton {
 	private static final long serialVersionUID = 1L;
-	private String url;
 
-	public CaptchaDetectedException(String url) {
-		super("Captcha detected. Try not to search too much. Captcha page: " + url);
-		this.url = url;
+	public JButtonLink(String label, String url) {
+		super(label);
+		addActionListener(e -> SwingUtil.openUrlViaBrowser(url));
 	}
-
-	public String getUrl() {
-		return url;
-	}
-
 }

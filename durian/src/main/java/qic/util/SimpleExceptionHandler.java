@@ -35,6 +35,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.UIManager;
 
+import qic.ui.extra.CaptchaDetectedException;
+import qic.ui.extra.JButtonLink;
+
 /**
  * Simple, generic exception handler that could be installed either as an {@link UncaughtExceptionHandler} or used
  * standalone.
@@ -135,6 +138,13 @@ public class SimpleExceptionHandler implements UncaughtExceptionHandler {
                 messagePnl.add(createRigidArea(new Dimension(0, 10))); // some spacing before the exception message
                 messagePnl.add(new JLabel(exceptionMessage));
             }
+            
+            // TODO, refactor this, this code is too specific here
+            if (throwable instanceof CaptchaDetectedException) {
+            	messagePnl.add(createRigidArea(new Dimension(0, 10))); // some spacing
+            	CaptchaDetectedException captchaEx = (CaptchaDetectedException) throwable;
+				messagePnl.add(new JButtonLink("Open Captcha Page", captchaEx.getUrl()));
+			}
 
             messagePnl.add(createRigidArea(new Dimension(0, 10)));
             String details = simpleFormat(thread, throwable);

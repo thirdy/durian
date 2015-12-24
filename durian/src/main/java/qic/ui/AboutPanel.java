@@ -35,6 +35,7 @@ import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import qic.ui.extra.JButtonLink;
 import qic.util.SwingUtil;
 
 /**
@@ -70,16 +71,13 @@ public class AboutPanel extends JPanel {
 				+ "</html>");
 		
 		String websiteUrl = "http://thirdy.github.io/durian/";
-		JButton website = new JButton("Website: " + websiteUrl);
-		website.addActionListener(e -> SwingUtil.openUrlViaBrowser(websiteUrl));
+		JButton website = new JButtonLink("Website: " + websiteUrl, websiteUrl);
 		
 		String forumUrl = "https://www.pathofexile.com/forum/view-thread/1507190";
-		JButton forum = new JButton("Forum Thread: " + forumUrl );
-		forum.addActionListener(e -> SwingUtil.openUrlViaBrowser(forumUrl));
+		JButton forum = new JButtonLink("Forum Thread: " + forumUrl, forumUrl);
 		
 		String helpUrl = "http://thirdy.github.io/durian/help/help.htm";
-		JButton help = new JButton("Search Term Helper: " + helpUrl );
-		help.addActionListener(e -> SwingUtil.openUrlViaBrowser(helpUrl));
+		JButton help = new JButtonLink("Search Term Helper: " + helpUrl, helpUrl);
 
 		add(Box.createRigidArea(new Dimension(5,10)));
 		add(aboutLbl);
