@@ -1,5 +1,11 @@
-Search Terms
+* How to Run
+    1. manual.txt and automated.txt are where your searches are loaded/saved when you open/close Durian.
+    2. Left-click on a row will automatically copy the WTB message to your clipboard. Note that if you ctrl+c, you'll copy the values from the row instead.
+    3. Right-click on a row will run verify to see if the item was already SOLD, VERIFIED or UNKNOWN (failed to verify).
+    4. On manual mode, double clicking on the search list will run the search. Pressing delete key will remove the selected entry.
+    5. On automated mode, each line in the text area is equivalent to 1 search.
 
+* Search Terms
     1. Open the terms directory and you'll see text files. These text files contain the 'search terms' that Durian will understand.
     2. One line in the txt file is equivalent to a one search term.
     3. The format is {search term} = {http key-value pair(s)}. Whitespace between the = are ignored.
@@ -8,10 +14,3 @@ Search Terms
     6. For examle: (\d{1,2})(ch|chaos) = buyout_currency=chaos&buyout_max=$GROUP1
     7. There is also a special syntax for explicitly defining a 'raw' search term.
        a. For example, name="Loath Bane Ambusher" can be used for searching by name (since it's impractical to have a search terms for rare names).
-
-How to Run
-
-    1. automated.txt and manual.txt are where your searches are loaded/saved when you open/close Durian.
-    2. Clicking on a row will automatically copy the WTB message to your clipboard. Note that if you ctrl+c, you'll copy the values from the row instead.
-    3. On manual mode, double clicking on the search list will run the search. Pressing delete key will remove the selected entry.
-    4. On automated mode, each line in the text area is equivalent to 1 search.
