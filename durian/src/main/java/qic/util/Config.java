@@ -42,7 +42,9 @@ public class Config {
 	public static final String AUTOMATED_SEARCH_BLACKLIST = "automated.search.blacklist";
 	public static final String MANUAL_SEARCH_BLACKLIST = "manual.search.blacklist";
 	
-	public static final String AUTO_VERIFY = "auto.verify";
+	public static final String AUTOMATED_AUTO_VERIFY = "automated.auto.verify";
+	public static final String MANUAL_AUTO_VERIFY = "manual.auto.verify";
+	
 	public static final String AUTO_VERIFY_SLEEP = "auto.verify.sleep";
 
 	

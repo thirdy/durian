@@ -21,8 +21,8 @@ import static java.lang.String.format;
 import static java.lang.System.lineSeparator;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
+import static qic.util.Config.AUTOMATED_AUTO_VERIFY;
 import static qic.util.Config.AUTOMATED_SEARCH_BLACKLIST;
-import static qic.util.Config.AUTO_VERIFY;
 import static qic.util.Config.getBooleanProperty;
 import static qic.util.DurianUtils.notBlacklisted;
 import static qic.util.Util.sleep;
@@ -168,7 +168,7 @@ public class AutomatedPanel extends JPanel {
 							.filter(item -> notBlacklisted(AUTOMATED_SEARCH_BLACKLIST, item))
 							.collect(toList());
 	        		
-	    			if (getBooleanProperty(AUTO_VERIFY, false)) {
+	    			if (getBooleanProperty(AUTOMATED_AUTO_VERIFY, false)) {
 	    				int countAfterVerify = runVerify(itemResults);
 	    				int difference = itemResults.size() - countAfterVerify;
 						logger.info(format("Verified %d items, %d was confirmed verified. A difference of %d.", itemResults.size(), countAfterVerify, difference));

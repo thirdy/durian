@@ -22,7 +22,7 @@ import static java.lang.System.lineSeparator;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 import static org.apache.commons.lang3.StringUtils.trimToEmpty;
-import static qic.util.Config.AUTO_VERIFY;
+import static qic.util.Config.MANUAL_AUTO_VERIFY;
 import static qic.util.Config.MANUAL_SEARCH_BLACKLIST;
 import static qic.util.Config.getBooleanProperty;
 import static qic.util.DurianUtils.notBlacklisted;
@@ -185,7 +185,7 @@ public class ManualPanel extends JPanel {
 
 	private void addDataToTable(Command command) {
 		List<SearchResultItem> itemResults = filterResults(command.itemResults);
-		if (getBooleanProperty(AUTO_VERIFY, false)) {
+		if (getBooleanProperty(MANUAL_AUTO_VERIFY, false)) {
 			table.clear();
 			new VerifierTask(itemResults, table::addData).execute();
 		} else {
