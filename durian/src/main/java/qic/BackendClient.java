@@ -28,7 +28,7 @@ public class BackendClient {
 
     private HttpClient client = HttpClientBuilder.create().build();
     
-    int timeout = 30;
+    int timeout = 15;
 	int CONNECTION_TIMEOUT = timeout  * 1000; // timeout in millis
     RequestConfig requestConfig = RequestConfig.custom()
         .setConnectionRequestTimeout(CONNECTION_TIMEOUT)
