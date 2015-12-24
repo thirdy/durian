@@ -212,7 +212,7 @@ public class AutomatedPanel extends JPanel {
 					Verify verified = DurianUtils.verify(item.thread(), item.dataHash());
 					item.verified(verified);
 					logger.info(format("Verify result for item %s: %s", item.toShortDebugInfo(), verified));
-					long sleep = Config.getLongProperty(Config.AUTO_VERIFY_SLEEP, 100);
+					long sleep = Config.getLongProperty(Config.AUTOMATED_AUTO_VERIFY_SLEEP, 5000);
 					
 					if (verified != SOLD) {
 						publish(item);

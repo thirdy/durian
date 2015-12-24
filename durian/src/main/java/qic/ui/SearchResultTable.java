@@ -22,8 +22,9 @@ import static java.util.Arrays.asList;
 import java.awt.Point;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
+import java.util.function.Consumer;
 
 import javax.swing.JTable;
 import javax.swing.SwingUtilities;
@@ -44,7 +45,7 @@ public class SearchResultTable extends JTable {
 	
 	private static final long serialVersionUID = 1L;
 	private BeanPropertyTableModel<SearchResultItem> model;
-
+	private VerifierTask autoVerifierTask;
 
 	public SearchResultTable() {
 		model = new BeanPropertyTableModel<>(SearchResultItem.class);
@@ -55,7 +56,8 @@ public class SearchResultTable extends JTable {
 				asList( 1,    5,        220,    150,      50,    300,	  100,        100));
 		
 		this.addMouseListener(new MouseAdapter() {
-		    public void mousePressed(MouseEvent me) {
+
+			public void mousePressed(MouseEvent me) {
 		        JTable table =(JTable) me.getSource();
 		        Point p = me.getPoint();
 		        int row = table.rowAtPoint(p);
@@ -66,9 +68,8 @@ public class SearchResultTable extends JTable {
 			        }
 		        	if (SwingUtilities.isRightMouseButton(me)) {
 		        		SearchResultItem searchResultItem  = model.getData().get(row);
-		        		new VerifierTask(Arrays.asList(searchResultItem), results -> {
-		        			SearchResultTable.this.updateData(row, results.get(0));
-		        		}).execute();
+		        		VerifierTask manualVerifierTask = new VerifierTask(asList(searchResultItem), results -> updateData(row));
+						manualVerifierTask.execute();
 		        	}
 				}
 		    }
@@ -76,7 +77,6 @@ public class SearchResultTable extends JTable {
 		
 		this.setDefaultRenderer(List.class, new MultiLineTableCellRenderer());
 	}
-	
 
 	private void setColumnWidths(TableColumnModel columnModel, List<Integer> widths) {
 		for (int i = 0; i < widths.size(); i++) {
@@ -92,14 +92,11 @@ public class SearchResultTable extends JTable {
 		System.out.println("model.fireTableDataChanged");
 	}
 
-	public void updateData(int index, SearchResultItem itemResult) {
-//		List<SearchResultItem> data = model.getData();
-//		data.remove(index);
-//		data.add(index, itemResult);
+	public void updateData(int index) {
 		model.fireTableRowsUpdated(index, index);
 		System.out.println("model.fireTableRowsUpdated: " + index);
 	}
-
+	
 	public void addData(List<SearchResultItem> itemResults) {
 		List<SearchResultItem> data = model.getData();
 		int sidx = data.size() - 1;
@@ -110,10 +107,18 @@ public class SearchResultTable extends JTable {
 		System.out.println("model.fireTableRowsInserted: " + sidx + " " + eidx);
 	}
 
-
 	public void clear() {
 		model.getData().clear();
 		model.fireTableDataChanged();
 		System.out.println("model.fireTableDataChanged");
+	}
+
+	public void runAutoVerify(long sleep) {
+		Consumer<List<SearchResultItem>> consumer = itemList -> itemList.stream()
+				.map(item -> model.getData().indexOf(item))
+				.forEach(this::updateData);
+		if(autoVerifierTask != null) autoVerifierTask.cancel(true);
+		autoVerifierTask = new VerifierTask(model.getData(), consumer, sleep, false);
+		autoVerifierTask.execute();
 	}
 }

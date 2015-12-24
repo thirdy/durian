@@ -153,6 +153,10 @@ public class ManualPanel extends JPanel {
 								saveSearchToList(tfText);
 								invalidTermsLbl.setText("");
 								invalidTermsLblLbl.setText("");
+								if (getBooleanProperty(MANUAL_AUTO_VERIFY, false)) {
+									long sleep = Config.getLongProperty(Config.MANUAL_AUTO_VERIFY_SLEEP, 5000);
+									table.runAutoVerify(sleep);
+								}
 							} else {
 								String invalidTermsStr = command.invalidSearchTerms.stream().collect(joining(", "));
 								invalidTermsLbl.setText(invalidTermsStr + " ");
@@ -179,13 +183,8 @@ public class ManualPanel extends JPanel {
 
 	private void addDataToTable(Command command) {
 		List<SearchResultItem> itemResults = filterResults(command.itemResults);
-		if (getBooleanProperty(MANUAL_AUTO_VERIFY, false)) {
-			table.clear();
-			long sleep = Config.getLongProperty(Config.AUTO_VERIFY_SLEEP, 100);
-			new VerifierTask(itemResults, table::addData, sleep, true).execute();
-		} else {
-			table.setData(itemResults);
-		}
+		table.clear();
+		table.setData(itemResults);
 	}
 
 	private List<SearchResultItem> filterResults(List<SearchResultItem> itemResults) {

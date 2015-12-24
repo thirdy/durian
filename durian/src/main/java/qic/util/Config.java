@@ -46,10 +46,9 @@ public class Config {
 	public static final String AUTOMATED_AUTO_VERIFY = "automated.auto.verify";
 	public static final String MANUAL_AUTO_VERIFY = "manual.auto.verify";
 	
-	public static final String AUTO_VERIFY_SLEEP = "auto.verify.sleep";
+	public static final String AUTOMATED_AUTO_VERIFY_SLEEP = "automated.auto.verify.wait.millisec";
+	public static final String MANUAL_AUTO_VERIFY_SLEEP = "manual.auto.verify.wait.millisec";
 
-
-	
 	private static Properties config;
 	
 	public static void loadConfig() throws IOException, FileNotFoundException {

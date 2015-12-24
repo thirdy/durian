@@ -148,11 +148,6 @@ public class BackendClient {
     	
     	rd.close();
     	
-        boolean captchaDetected = containsCaptchaKeyword(result.toString());
-        if (captchaDetected) {
-			throw new CaptchaDetectedException(url);
-		}
-    	
 //    	String location = null;
     	
 //    	final Header[] allHeaders = response.getAllHeaders();
@@ -161,6 +156,11 @@ public class BackendClient {
 //    			location = header.getValue();
 //    		}
 //    	}
+    	
+    	boolean captchaDetected = containsCaptchaKeyword(result.toString());
+    	if (captchaDetected) {
+    		throw new CaptchaDetectedException(url);
+    	}
     	
     	return result.toString();
     }
