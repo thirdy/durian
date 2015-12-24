@@ -26,7 +26,6 @@ import static qic.util.Config.AUTOMATED_SEARCH_BLACKLIST;
 import static qic.util.Config.getBooleanProperty;
 import static qic.util.DurianUtils.notBlacklisted;
 import static qic.util.Util.sleep;
-import static qic.util.Verify.SOLD;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionListener;
@@ -46,6 +45,8 @@ import javax.swing.SwingWorker;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.porty.swing.table.model.BeanPropertyTableModel;
 
 import qic.Command;
 import qic.Main;
@@ -163,8 +164,8 @@ public class AutomatedPanel extends JPanel {
 			if (!text.isEmpty()) {
 				String[] searches = text.split("\n");
 				logger.info("searches: " + Arrays.toString(searches));
-				int total = 0;
 	            int idx = 0;
+	            int total = 0;
 	            while (!isCancelled() && idx < searches.length) {
 	            	String prefix = Config.getPropety(Config.AUTOMATED_SEARCH_PREFIX, "tmpsc online bo").trim();
 					String search = searches[idx].trim();
@@ -177,15 +178,18 @@ public class AutomatedPanel extends JPanel {
 	        		itemResults = itemResults.stream()
 							.filter(item -> notBlacklisted(AUTOMATED_SEARCH_BLACKLIST, item))
 							.collect(toList());
+
+	    			itemResults.stream().forEach(this::publish);
 	        		
 	    			if (getBooleanProperty(AUTOMATED_AUTO_VERIFY, false)) {
-	    				int countAfterVerify = runVerify(itemResults);
-	    				total += countAfterVerify; 
-	    				int difference = itemResults.size() - countAfterVerify;
-						logger.info(format("Verified %d items, %d was confirmed verified. A difference of %d.", itemResults.size(), countAfterVerify, difference));
+	    				long sleep = Config.getLongProperty(Config.AUTOMATED_AUTO_VERIFY_SLEEP, 5000);
+	    				total += runVerify(itemResults, sleep);
 	    			} else {
-	    				total += itemResults.size();
-		    			itemResults.stream().forEach(this::publish);
+						total += itemResults.size();
+					}
+
+	    			if (total > 0) {
+	    				panel.playsound();
 	    			}
 	    			
 	    			if (idx < searches.length) {
@@ -193,46 +197,13 @@ public class AutomatedPanel extends JPanel {
 		    			sleep(waitSecondsInBetween * 1000);
 					}
 	            }
-	            if (total > 0) {
-	            	try {
-						SoundUtils.tone(5000,100);
-					} catch (LineUnavailableException e) {
-						e.printStackTrace();
-					}
-				}
 			}
 			panel.runBtn.setEnabled(true);
 		}
 
-		private int runVerify(List<SearchResultItem> itemResults) {
-			return itemResults.stream()
-				.mapToInt(item -> {
-					int result = 0;
-					
-					logger.info(format("Verifying item %s", item.toShortDebugInfo()));
-					Verify verified = DurianUtils.verify(item.thread(), item.dataHash());
-					item.verified(verified);
-					logger.info(format("Verify result for item %s: %s", item.toShortDebugInfo(), verified));
-					long sleep = Config.getLongProperty(Config.AUTOMATED_AUTO_VERIFY_SLEEP, 5000);
-					
-					if (verified != SOLD) {
-						publish(item);
-					}
-					
-					if (verified == Verify.VERIFIED) {
-						result = 1;
-					}
-					
-					logger.info(format("Auto-verify - now sleeping for %s millisec", sleep));
-					sleep(sleep);
-					
-					return result;
-				}).sum();
-		}
-
         @Override
         protected void process(List<SearchResultItem> itemResults) {
-				panel.table.setData(itemResults);
+				panel.table.addData(itemResults);
         }
         
     	private Command runQuery(String line) throws CaptchaDetectedException {
@@ -248,6 +219,24 @@ public class AutomatedPanel extends JPanel {
     		    }
     		}
     	}
+    	
+    	private int runVerify(List<SearchResultItem> itemResults, long sleep) {
+    		return itemResults.stream()
+    			.mapToInt(item -> {
+    				logger.info(format("Verifying item %s", item.toShortDebugInfo()));
+    				Verify verified = DurianUtils.verify(item.thread(), item.dataHash());
+    				item.verified(verified);
+    				logger.info(format("Verify result for item %s: %s", item.toShortDebugInfo(), verified));
+    				@SuppressWarnings("unchecked")
+					BeanPropertyTableModel<SearchResultItem> model = (BeanPropertyTableModel<SearchResultItem>) panel.table.getModel();
+					int index = model.getData().indexOf(item);
+					panel.table.updateData(index);
+    				logger.info(format("Verify - now sleeping for %s millisec", sleep));
+    				sleep(sleep);
+    				int result = verified == Verify.VERIFIED ? 1 : 0;
+    				return result;
+    			}).sum();
+    	}
     }
     
 	public void saveToFile() {
@@ -255,6 +244,14 @@ public class AutomatedPanel extends JPanel {
 			Util.overwriteFile(AUTOMATED_TXT_FILENAME, searchListTa.getText());
 		} catch (IOException e) {
 			throw new RuntimeException(e);
+		}
+	}
+	
+	private void playsound() {
+		try {
+			SoundUtils.tone(5000,100);
+		} catch (LineUnavailableException e) {
+			e.printStackTrace();
 		}
 	}
 

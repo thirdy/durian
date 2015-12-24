@@ -16,31 +16,35 @@ import qic.SearchPageScraper.SearchResultItem;
 import qic.util.DurianUtils;
 import qic.util.Verify;
 
-public class VerifierTask extends SwingWorker<Void, SearchResultItem> {
+public class VerifierTask extends SwingWorker<Integer, SearchResultItem> {
 	private final Logger logger = LoggerFactory.getLogger(this.getClass().getName());
+	private Consumer<Integer> resultConsumer;
+	private Consumer<Exception> onException;
 	private Consumer<List<SearchResultItem>> consumer;
 	private List<SearchResultItem> itemResults;
 	private long sleep = -1;
 	private boolean skipIfSold = false;
 
-	public VerifierTask(List<SearchResultItem> itemResults, Consumer<List<SearchResultItem>> consumer, long sleep, boolean skipIfSold) {
+	public VerifierTask(List<SearchResultItem> itemResults, Consumer<List<SearchResultItem>> consumer, Consumer<Integer> resultConsumer, Consumer<Exception> onException, long sleep, boolean skipIfSold) {
 		this.itemResults = itemResults;
 		this.consumer = consumer;
+		this.resultConsumer = resultConsumer;
+		this.onException = onException;
 		this.sleep = sleep;
 		this.skipIfSold = skipIfSold;
 	}
 	
-	public VerifierTask(List<SearchResultItem> itemResults, Consumer<List<SearchResultItem>> consumer) {
+	public VerifierTask(List<SearchResultItem> itemResults, Consumer<List<SearchResultItem>> consumer, Consumer<Integer> resultConsumer, Consumer<Exception> onException) {
 		this.itemResults = itemResults;
 		this.consumer = consumer;
+		this.resultConsumer = resultConsumer;
+		this.onException = onException;
 	}
 
 	@Override
-    protected Void doInBackground() {
+    protected Integer doInBackground() {
 		int countAfterVerify = runVerify(itemResults);
-		int difference = itemResults.size() - countAfterVerify;
-		logger.info(format("Verified %d items, %d was confirmed verified. A difference of %d.", itemResults.size(), countAfterVerify, difference));
-        return null;
+        return countAfterVerify;
     }
 
 	private int runVerify(List<SearchResultItem> itemResults) {
@@ -73,5 +77,14 @@ public class VerifierTask extends SwingWorker<Void, SearchResultItem> {
     @Override
     protected void process(List<SearchResultItem> itemResults) {
     	consumer.accept(itemResults);
+    }
+    
+    @Override
+    protected void done() {
+		try {
+			resultConsumer.accept(get());
+		} catch (Exception e) {
+			onException.accept(e);
+		}
     }
 }

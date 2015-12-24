@@ -17,6 +17,7 @@
  */
 package qic.ui;
 
+import static java.lang.String.format;
 import static java.util.Arrays.asList;
 
 import java.awt.Point;
@@ -28,6 +29,9 @@ import java.util.function.Consumer;
 import javax.swing.JTable;
 import javax.swing.SwingUtilities;
 import javax.swing.table.TableColumnModel;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.porty.swing.table.model.BeanPropertyTableModel;
 
@@ -43,6 +47,9 @@ import qic.util.SwingUtil;
 public class SearchResultTable extends JTable {
 	
 	private static final long serialVersionUID = 1L;
+	
+	private final Logger logger = LoggerFactory.getLogger(this.getClass().getName());
+	
 	private BeanPropertyTableModel<SearchResultItem> model;
 	private VerifierTask autoVerifierTask;
 
@@ -67,7 +74,10 @@ public class SearchResultTable extends JTable {
 			        }
 		        	if (SwingUtilities.isRightMouseButton(me)) {
 		        		SearchResultItem searchResultItem  = model.getData().get(row);
-		        		VerifierTask manualVerifierTask = new VerifierTask(asList(searchResultItem), results -> updateData(row));
+		        		VerifierTask manualVerifierTask = new VerifierTask(asList(searchResultItem),
+		        				results -> updateData(row),
+		        				verified -> {},
+		        				ex -> { logger.error("Error while running manual verify", ex); });
 						manualVerifierTask.execute();
 		        	}
 				}
@@ -95,13 +105,13 @@ public class SearchResultTable extends JTable {
 		model.fireTableRowsUpdated(index, index);
 	}
 	
-//	public void addData(List<SearchResultItem> itemResults) {
-//		List<SearchResultItem> data = model.getData();
-//		int sidx = data.size() - 1;
-//		data.addAll(itemResults);
-//		int eidx = data.size() - 1;
-//		model.fireTableRowsInserted(sidx, eidx);
-//	}
+	public void addData(List<SearchResultItem> itemResults) {
+		List<SearchResultItem> data = model.getData();
+		int sidx = data.size() - 1;
+		data.addAll(itemResults);
+		int eidx = data.size() - 1;
+		model.fireTableRowsInserted(sidx, eidx);
+	}
 
 	public void clear() {
 		model.getData().clear();
@@ -109,11 +119,23 @@ public class SearchResultTable extends JTable {
 	}
 
 	public void runAutoVerify(long sleep) {
+		runAutoVerify(sleep, i -> {
+			logger.info(format("Verified %d items.", i));
+		}, ex -> {
+			logger.error("Error while running Automated Verify", ex);
+		});
+	}
+	
+	public void runAutoVerify(long sleep, Consumer<Integer> onComplete, Consumer<Exception> onException) {
 		Consumer<List<SearchResultItem>> consumer = itemList -> itemList.stream()
 				.map(item -> model.getData().indexOf(item))
 				.forEach(this::updateData);
 		if(autoVerifierTask != null) autoVerifierTask.cancel(true);
-		autoVerifierTask = new VerifierTask(model.getData(), consumer, sleep, false);
+		autoVerifierTask = new VerifierTask(model.getData(), consumer, 
+				onComplete,
+				onException,
+				sleep, false);
 		autoVerifierTask.execute();
 	}
+
 }
