@@ -17,7 +17,6 @@
  */
 package qic.ui;
 
-import static java.lang.String.format;
 import static java.lang.System.lineSeparator;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
@@ -26,8 +25,6 @@ import static qic.util.Config.MANUAL_AUTO_VERIFY;
 import static qic.util.Config.MANUAL_SEARCH_BLACKLIST;
 import static qic.util.Config.getBooleanProperty;
 import static qic.util.DurianUtils.notBlacklisted;
-import static qic.util.Util.sleep;
-import static qic.util.Verify.SOLD;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -39,7 +36,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.util.List;
-import java.util.function.Consumer;
 
 import javax.swing.AbstractAction;
 import javax.swing.BoxLayout;
@@ -52,7 +48,6 @@ import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTextField;
 import javax.swing.KeyStroke;
-import javax.swing.SwingWorker;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -61,12 +56,11 @@ import org.slf4j.LoggerFactory;
 import qic.Command;
 import qic.Main;
 import qic.SearchPageScraper.SearchResultItem;
+import qic.ui.extra.VerifierTask;
 import qic.ui.extra.Worker;
 import qic.util.Config;
-import qic.util.DurianUtils;
 import qic.util.SwingUtil;
 import qic.util.Util;
-import qic.util.Verify;
 
 /**
  * @author thirdy
@@ -187,7 +181,8 @@ public class ManualPanel extends JPanel {
 		List<SearchResultItem> itemResults = filterResults(command.itemResults);
 		if (getBooleanProperty(MANUAL_AUTO_VERIFY, false)) {
 			table.clear();
-			new VerifierTask(itemResults, table::addData).execute();
+			long sleep = Config.getLongProperty(Config.AUTO_VERIFY_SLEEP, 100);
+			new VerifierTask(itemResults, table::addData, sleep, true).execute();
 		} else {
 			table.setData(itemResults);
 		}
@@ -245,55 +240,4 @@ public class ManualPanel extends JPanel {
 			throw new RuntimeException(e);
 		}
 	}
-	
-
-    private static class VerifierTask extends SwingWorker<Void, SearchResultItem> {
-    	private final Logger logger = LoggerFactory.getLogger(this.getClass().getName());
-		private Consumer<List<SearchResultItem>> consumer;
-		private List<SearchResultItem> itemResults;
-
-		public VerifierTask(List<SearchResultItem> itemResults, Consumer<List<SearchResultItem>> consumer) {
-			this.itemResults = itemResults;
-			this.consumer = consumer;
-		}
-
-		@Override
-        protected Void doInBackground() {
-			int countAfterVerify = runVerify(itemResults);
-			int difference = itemResults.size() - countAfterVerify;
-			logger.info(format("Verified %d items, %d was confirmed verified. A difference of %d.", itemResults.size(), countAfterVerify, difference));
-            return null;
-        }
-
-		private int runVerify(List<SearchResultItem> itemResults) {
-			return itemResults.stream()
-				.mapToInt(item -> {
-					int result = 0;
-					
-					logger.info(format("Verifying item %s", item.toShortDebugInfo()));
-					Verify verified = DurianUtils.verify(item.thread(), item.dataHash());
-					item.verified(verified);
-					logger.info(format("Verify result for item %s: %s", item.toShortDebugInfo(), verified));
-					long sleep = Config.getLongProperty(Config.AUTO_VERIFY_SLEEP, 100);
-					
-					if (verified != SOLD) {
-						publish(item);
-					}
-					
-					if (verified == Verify.VERIFIED) {
-						result = 1;
-					}
-					
-					logger.info(format("Auto-verify - now sleeping for %s millisec", sleep));
-					sleep(sleep);
-					
-					return result;
-				}).sum();
-		}
-
-        @Override
-        protected void process(List<SearchResultItem> itemResults) {
-        	consumer.accept(itemResults);
-        }
-    }
 }

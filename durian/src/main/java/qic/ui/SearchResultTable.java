@@ -19,16 +19,22 @@ package qic.ui;
 
 import static java.util.Arrays.asList;
 
+import java.awt.Point;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import javax.swing.JTable;
+import javax.swing.SwingUtilities;
 import javax.swing.table.TableColumnModel;
 
 import com.porty.swing.table.model.BeanPropertyTableModel;
 
 import qic.SearchPageScraper.SearchResultItem;
 import qic.ui.extra.MultiLineTableCellRenderer;
+import qic.ui.extra.VerifierTask;
 import qic.util.SwingUtil;
 
 /**
@@ -49,14 +55,34 @@ public class SearchResultTable extends JTable {
 		setColumnWidths(this.getColumnModel(), 
 				asList( 1,    5,        220,    150,      50,    300,	  100,        100));
 		
-		this.getSelectionModel().addListSelectionListener(e -> {
-			if(e.getValueIsAdjusting()) {
-				int selectedRow = this.getSelectedRow();
-				if (selectedRow > -1) {
-					SearchResultItem searchResultItem = model.getData().get(selectedRow);
-					SwingUtil.copyToClipboard(searchResultItem.wtb());
+//		this.getSelectionModel().addListSelectionListener(e -> {
+//			if(e.getValueIsAdjusting()) {
+//				int selectedRow = this.getSelectedRow();
+//				if (selectedRow > -1) {
+//					SearchResultItem searchResultItem = model.getData().get(selectedRow);
+//					SwingUtil.copyToClipboard(searchResultItem.wtb());
+//				}
+//			}
+//		});
+		
+		this.addMouseListener(new MouseAdapter() {
+		    public void mousePressed(MouseEvent me) {
+		        JTable table =(JTable) me.getSource();
+		        Point p = me.getPoint();
+		        int row = table.rowAtPoint(p);
+		        if (row > -1) {
+		        	if (SwingUtilities.isLeftMouseButton(me)) {
+		        		SearchResultItem searchResultItem = model.getData().get(row);
+						SwingUtil.copyToClipboard(searchResultItem.wtb());
+			        }
+		        	if (SwingUtilities.isRightMouseButton(me)) {
+		        		SearchResultItem searchResultItem  = model.getData().get(row);
+		        		new VerifierTask(Arrays.asList(searchResultItem), results -> {
+		        			SearchResultTable.this.updateData(row, results.get(0));
+		        		}).execute();
+		        	}
 				}
-			}
+		    }
 		});
 		
 		this.setDefaultRenderer(List.class, new MultiLineTableCellRenderer());
@@ -72,6 +98,13 @@ public class SearchResultTable extends JTable {
 
 	public void setData(List<SearchResultItem> itemResults) {
 		model.setData(itemResults);
+	}
+	
+	public void updateData(int index, SearchResultItem itemResult) {
+		List<SearchResultItem> data = model.getData();
+		data.remove(index);
+		data.add(index, itemResult);
+		setData(data);
 	}
 
 
