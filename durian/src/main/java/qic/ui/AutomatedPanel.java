@@ -134,7 +134,7 @@ public class AutomatedPanel extends JPanel {
     	int waitMins = Integer.parseInt(Config.getPropety(Config.AUTOMATED_SEARCH_WAIT_MINUTES, "15"));
     	int waitSeconds = waitMins * 60;
     	
-    	int waitSecondsInBetween = Integer.parseInt(Config.getPropety(Config.AUTOMATED_SEARCH_INBETWEEN_WAIT_SECONDS, "10"));
+    	int waitSecondsInBetween = Integer.parseInt(Config.getPropety(Config.AUTOMATED_SEARCH_INBETWEEN_WAIT_SECONDS, "15"));
     	
         public QueryTask(AutomatedPanel panel) {
 			this.panel = panel;
@@ -232,7 +232,7 @@ public class AutomatedPanel extends JPanel {
 
         @Override
         protected void process(List<SearchResultItem> itemResults) {
-				panel.table.addData(itemResults);
+				panel.table.setData(itemResults);
         }
         
     	private Command runQuery(String line) throws CaptchaDetectedException {

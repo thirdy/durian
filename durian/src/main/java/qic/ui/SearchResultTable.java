@@ -95,14 +95,13 @@ public class SearchResultTable extends JTable {
 		model.fireTableRowsUpdated(index, index);
 	}
 	
-	public void addData(List<SearchResultItem> itemResults) {
-		List<SearchResultItem> data = model.getData();
-		int sidx = data.size() - 1;
-		data.addAll(itemResults);
-		int eidx = data.size() - 1;
-		repaint();
-		model.fireTableRowsInserted(sidx, eidx);
-	}
+//	public void addData(List<SearchResultItem> itemResults) {
+//		List<SearchResultItem> data = model.getData();
+//		int sidx = data.size() - 1;
+//		data.addAll(itemResults);
+//		int eidx = data.size() - 1;
+//		model.fireTableRowsInserted(sidx, eidx);
+//	}
 
 	public void clear() {
 		model.getData().clear();

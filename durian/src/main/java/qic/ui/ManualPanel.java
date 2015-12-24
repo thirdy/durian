@@ -141,7 +141,7 @@ public class ManualPanel extends JPanel {
 		ActionListener runCommand = e -> {
 			String tfText = searchTf.getText().trim();
 			if (!tfText.isEmpty()) {
-				Worker<Command> pathNotesWorker = new Worker<Command>(
+				Worker<Command> worker = new Worker<Command>(
 						() -> {
 							runBtn.setEnabled(false);
 							return runQuery(main, tfText);
@@ -167,7 +167,7 @@ public class ManualPanel extends JPanel {
 							logger.error("Exception occured: ", ex);
 							SwingUtil.showError(ex);
 						});
-				pathNotesWorker.execute();
+				worker.execute();
 			}
 		};
 
