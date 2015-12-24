@@ -31,6 +31,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.swing.JDialog;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
@@ -81,7 +83,11 @@ public class Main {
 	}
 	
 	public static void reloadLookAndFeel() {
-		
+		if (Config.getBooleanProperty(Config.LOOK_AND_FEEL_DECORATED, false)) {
+			JFrame.setDefaultLookAndFeelDecorated(true); 
+			JDialog.setDefaultLookAndFeelDecorated(true);
+			System.setProperty("sun.awt.noerasebackground", "true");
+		}
 		try {
 			String lookAndFeel = Config.getPropety(Config.LOOK_AND_FEEL, "com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
 			UIManager.setLookAndFeel(lookAndFeel);

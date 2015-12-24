@@ -24,6 +24,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.commons.lang3.StringUtils;
+
 /**
  * @author thirdy
  *
@@ -50,6 +52,7 @@ public class Config {
 	public static final String MANUAL_AUTO_VERIFY_SLEEP = "manual.auto.verify.wait.millisec";
 
 	public static final String LOOK_AND_FEEL = "lookandfeel";
+	public static final String LOOK_AND_FEEL_DECORATED = "lookandfeel.decorated.enabled";
 
 	private static Properties config;
 	
@@ -61,7 +64,7 @@ public class Config {
 	}
     
     public static String getPropety(String key, String defaultValue) {
-    	return config.getProperty(key, defaultValue).trim();
+    	return StringUtils.defaultIfBlank(config.getProperty(key, defaultValue), defaultValue);
     }
 
 	public static boolean getBooleanProperty(String key, boolean defaultValue) {

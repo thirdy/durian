@@ -75,6 +75,7 @@ public class SearchResultTable extends JTable {
 		});
 		
 		this.setDefaultRenderer(List.class, new MultiLineTableCellRenderer());
+		this.setDefaultRenderer(String.class, new MultiLineTableCellRenderer());
 	}
 
 	private void setColumnWidths(TableColumnModel columnModel, List<Integer> widths) {
