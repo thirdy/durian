@@ -38,6 +38,7 @@ public class Config {
 	public static final String AUTOMATED_SEARCH_PREFIX = "automated.search.prefix";
 	public static final String AUTOMATED_SEARCH_SOUND_FILENAME = "automated.search.sound.filename";
 	public static final String AUTOMATED_SEARCH_SOUND_VOLUME = "automated.search.sound.volume";
+	public static final String AUTOMATED_SEARCH_ENABLED = "automated.search.enabled";
 	
 	public static final String AUTOMATED_SEARCH_BLACKLIST = "automated.search.blacklist";
 	public static final String MANUAL_SEARCH_BLACKLIST = "manual.search.blacklist";
@@ -46,6 +47,7 @@ public class Config {
 	public static final String MANUAL_AUTO_VERIFY = "manual.auto.verify";
 	
 	public static final String AUTO_VERIFY_SLEEP = "auto.verify.sleep";
+
 
 	
 	private static Properties config;

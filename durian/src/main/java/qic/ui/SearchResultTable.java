@@ -22,7 +22,6 @@ import static java.util.Arrays.asList;
 import java.awt.Point;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -55,16 +54,6 @@ public class SearchResultTable extends JTable {
 		setColumnWidths(this.getColumnModel(), 
 				asList( 1,    5,        220,    150,      50,    300,	  100,        100));
 		
-//		this.getSelectionModel().addListSelectionListener(e -> {
-//			if(e.getValueIsAdjusting()) {
-//				int selectedRow = this.getSelectedRow();
-//				if (selectedRow > -1) {
-//					SearchResultItem searchResultItem = model.getData().get(selectedRow);
-//					SwingUtil.copyToClipboard(searchResultItem.wtb());
-//				}
-//			}
-//		});
-		
 		this.addMouseListener(new MouseAdapter() {
 		    public void mousePressed(MouseEvent me) {
 		        JTable table =(JTable) me.getSource();
@@ -95,27 +84,29 @@ public class SearchResultTable extends JTable {
 		}
 	}
 
-
 	public void setData(List<SearchResultItem> itemResults) {
-		model.setData(itemResults);
+		List<SearchResultItem> data = model.getData();
+		data.clear();
+		data.addAll(itemResults);
+		model.fireTableDataChanged();
 	}
-	
+
 	public void updateData(int index, SearchResultItem itemResult) {
 		List<SearchResultItem> data = model.getData();
 		data.remove(index);
 		data.add(index, itemResult);
-		setData(data);
+		repaint();
 	}
-
 
 	public void addData(List<SearchResultItem> itemResults) {
 		List<SearchResultItem> data = model.getData();
 		data.addAll(itemResults);
-		setData(data);
+		repaint();
 	}
 
 
 	public void clear() {
-		setData(new ArrayList<>());
+		model.getData().clear();
+		repaint();
 	}
 }

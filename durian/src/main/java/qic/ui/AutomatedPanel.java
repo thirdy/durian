@@ -96,7 +96,7 @@ public class AutomatedPanel extends JPanel {
 		searchListTa.setText(searchList
 				.stream()
 				.collect(joining(lineSeparator())));
-
+		
 		runBtn.addActionListener(e -> {
 			countdown = 0;
 			timer.restart();
@@ -111,9 +111,13 @@ public class AutomatedPanel extends JPanel {
 		
 		this.add(splitPane, BorderLayout.CENTER);
 		
-		timer.setDelay(1000);
-		logger.info("Starting timer...");
-		timer.restart();
+		if (Config.getBooleanProperty(Config.AUTOMATED_SEARCH_ENABLED, false)) {
+			timer.setDelay(1000);
+			logger.info("Starting timer...");
+			timer.restart();
+		} else {
+			runBtn.setEnabled(false);
+		}
 	}
 	
 	public void initSplitPaneDivider() {
