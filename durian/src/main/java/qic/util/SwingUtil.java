@@ -25,6 +25,8 @@ import java.net.URI;
 
 import javax.swing.JOptionPane;
 
+import qic.ui.extra.CaptchaDetectedException;
+
 /**
  * @author thirdy
  *
@@ -37,12 +39,12 @@ public class SwingUtil {
 			try {
 				Desktop.getDesktop().browse(new URI(s));
 			} catch (Exception e) {
-				Dialogs.showError(new BlackmarketException(
+				showError(new BlackmarketException(
 						"Error on opening browser, address: " + s + ": " + e.getMessage(), e
 							));
 			}
 		} else {
-			Dialogs.showError(new BlackmarketException("Launch browser failed, please manually visit: " + s));
+			showError(new BlackmarketException("Launch browser failed, please manually visit: " + s));
 		}
 	}
 	
@@ -59,4 +61,5 @@ public class SwingUtil {
 	public static void showError(Exception e) {
 		new qic.util.SimpleExceptionHandler().uncaughtException(Thread.currentThread(), e);
 	}
+
 }

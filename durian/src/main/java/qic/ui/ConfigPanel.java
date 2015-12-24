@@ -18,6 +18,7 @@
 package qic.ui;
 
 import static qic.util.Config.CONFIG_PROPERTIES_FILENAME;
+import static qic.util.SwingUtil.showError;
 
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
@@ -32,7 +33,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import qic.util.Config;
-import qic.util.Dialogs;
 import qic.util.Util;
 
 /**
@@ -69,7 +69,7 @@ public class ConfigPanel extends JScrollPane {
 			Config.loadConfig();
 		} catch (IOException e) {
 			logger.error("Error while saving to " + CONFIG_PROPERTIES_FILENAME);
-			Dialogs.showError(e);
+			showError(e);
 		}
 	}
 
@@ -79,7 +79,7 @@ public class ConfigPanel extends JScrollPane {
 			textArea.setText(str);
 		} catch (IOException e) {
 			logger.error("Error while reading " + CONFIG_PROPERTIES_FILENAME);
-			Dialogs.showError(e);
+			showError(e);
 		}
 	}
 

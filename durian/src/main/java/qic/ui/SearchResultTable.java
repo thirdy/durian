@@ -89,24 +89,31 @@ public class SearchResultTable extends JTable {
 		data.clear();
 		data.addAll(itemResults);
 		model.fireTableDataChanged();
+		System.out.println("model.fireTableDataChanged");
 	}
 
 	public void updateData(int index, SearchResultItem itemResult) {
-		List<SearchResultItem> data = model.getData();
-		data.remove(index);
-		data.add(index, itemResult);
-		repaint();
+//		List<SearchResultItem> data = model.getData();
+//		data.remove(index);
+//		data.add(index, itemResult);
+		model.fireTableRowsUpdated(index, index);
+		System.out.println("model.fireTableRowsUpdated: " + index);
 	}
 
 	public void addData(List<SearchResultItem> itemResults) {
 		List<SearchResultItem> data = model.getData();
+		int sidx = data.size() - 1;
 		data.addAll(itemResults);
+		int eidx = data.size() - 1;
 		repaint();
+		model.fireTableRowsInserted(sidx, eidx);
+		System.out.println("model.fireTableRowsInserted: " + sidx + " " + eidx);
 	}
 
 
 	public void clear() {
 		model.getData().clear();
-		repaint();
+		model.fireTableDataChanged();
+		System.out.println("model.fireTableDataChanged");
 	}
 }

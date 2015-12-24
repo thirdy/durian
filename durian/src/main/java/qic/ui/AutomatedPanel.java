@@ -50,9 +50,11 @@ import org.slf4j.LoggerFactory;
 import qic.Command;
 import qic.Main;
 import qic.SearchPageScraper.SearchResultItem;
+import qic.ui.extra.CaptchaDetectedException;
 import qic.util.Config;
 import qic.util.DurianUtils;
 import qic.util.SoundUtils;
+import qic.util.SwingUtil;
 import qic.util.Util;
 import qic.util.Verify;
 
@@ -143,14 +145,18 @@ public class AutomatedPanel extends JPanel {
 			panel.statusLbl.setText("Waiting for (" + countdown + ") seconds..");
 			if (countdown == 0) {
 				countdown = waitSeconds;
-				runJob();
+				try {
+					runJob();
+				} catch (CaptchaDetectedException e) {
+					SwingUtil.showError(e);
+				}
 			} else {
 				countdown--;
 			}
             return null;
         }
 
-		private void runJob() {
+		private void runJob() throws CaptchaDetectedException {
 			panel.runBtn.setEnabled(false);
 			panel.table.clear();
 			String text = panel.searchListTa.getText();
@@ -228,12 +234,14 @@ public class AutomatedPanel extends JPanel {
 				panel.table.addData(itemResults);
         }
         
-    	private Command runQuery(String line) {
+    	private Command runQuery(String line) throws CaptchaDetectedException {
     		int count = 0;
     		int maxTries = 10;
     		while(true) {
     		    try {
     		    	return panel.main.processLine(line);
+    		    } catch (CaptchaDetectedException e) {
+    		    	throw e;
     		    } catch (Exception e) {
     		        if (++count == maxTries) throw new RuntimeException(e);
     		    }

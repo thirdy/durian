@@ -19,6 +19,8 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import qic.ui.extra.CaptchaDetectedException;
+
 
 public class BackendClient {
 	
@@ -92,8 +94,16 @@ public class BackendClient {
             }
         }
         
+        boolean captchaDetected = containsCaptchaKeyword(result.toString());
+        if (captchaDetected) {
+			throw new CaptchaDetectedException(location);
+		}
+        
         return location;
     }
+	private boolean containsCaptchaKeyword(String line) {
+		return line.contains("recaptcha/api.js");
+	}
     
     public String postXMLHttpRequest(String url, String payload)
     		throws Exception {
@@ -137,6 +147,11 @@ public class BackendClient {
     	}
     	
     	rd.close();
+    	
+        boolean captchaDetected = containsCaptchaKeyword(result.toString());
+        if (captchaDetected) {
+			throw new CaptchaDetectedException(url);
+		}
     	
 //    	String location = null;
     	
