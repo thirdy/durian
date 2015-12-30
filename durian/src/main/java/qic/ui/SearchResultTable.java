@@ -58,8 +58,7 @@ public class SearchResultTable extends JTable {
 		model.setOrderedProperties(
 				asList("id", "bo", "item", "seller", "reqs", "mods", "offense", "defense"));
 		this.setModel(model);
-		setColumnWidths(this.getColumnModel(), 
-				asList( 1,    5,        220,    150,      50,    300,	  100,        100));
+		setupColumnWidths();
 		
 		this.addMouseListener(new MouseAdapter() {
 
@@ -88,6 +87,11 @@ public class SearchResultTable extends JTable {
 		this.setDefaultRenderer(String.class, new MultiLineTableCellRenderer());
 	}
 
+	private void setupColumnWidths() {
+		setColumnWidths(this.getColumnModel(), 
+				asList( 1,    5,        220,    150,      50,    300,	  100,        100));
+	}
+
 	private void setColumnWidths(TableColumnModel columnModel, List<Integer> widths) {
 		for (int i = 0; i < widths.size(); i++) {
 			columnModel.getColumn(i).setMinWidth(widths.get(i));
@@ -111,6 +115,7 @@ public class SearchResultTable extends JTable {
 		data.addAll(itemResults);
 		int eidx = data.size() - 1;
 		model.fireTableRowsInserted(sidx, eidx);
+		setupColumnWidths();
 	}
 
 	public void clear() {
