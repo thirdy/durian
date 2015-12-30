@@ -115,6 +115,7 @@ public class SearchResultTable extends JTable {
 		data.addAll(itemResults);
 		int eidx = data.size() - 1;
 		model.fireTableRowsInserted(sidx, eidx);
+		// https://community.oracle.com/thread/1486177?start=0&tstart=0
 		setupColumnWidths();
 	}
 

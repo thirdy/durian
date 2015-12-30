@@ -64,3 +64,11 @@ flatphys                            =       mod_name=Adds #-# Physical Damage&mo
 (\d+)-(\d+)flatphys                 =       mod_name=Adds #-# Physical Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
 
 hitscantbeevaded                    =       mod_name=Hits can't be Evaded&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+
+gcrit                               =       mod_name=(pseudo) (total) #% increased Global Critical Strike Chance&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)gcrit                          =       mod_name=(pseudo) (total) #% increased Global Critical Strike Chance&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)gcrit                    =       mod_name=(pseudo) (total) #% increased Global Critical Strike Chance&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
+castsp(ee)?d                        =       mod_name=(pseudo) (total) #% increased Cast Speed&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)castsp(ee)?d                   =       mod_name=(pseudo) (total) #% increased Cast Speed&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)castsp(ee)?d             =       mod_name=(pseudo) (total) #% increased Cast Speed&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
