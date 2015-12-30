@@ -23,6 +23,8 @@ rdex                            =       rdex_min=1
 (\d+)rdex                       =       rdex_max=$GROUP1
 rint                            =       rint_min=1
 (\d+)rint                       =       rint_max=$GROUP1
+glvl(\d+)                       =       level_min=$GROUP1
+glvl(\d{1,2})-(\d{1,2})         =       level_min=$GROUP1&level_max=$GROUP2
 
 (\d+)dps                        =       dps_min=$GROUP1
 (\d+)edps                       =       edps_min=$GROUP1

@@ -7,6 +7,10 @@ life                                =       mod_name=(pseudo) (total) +# to maxi
 (\d+)life                           =       mod_name=(pseudo) (total) +# to maximum Life&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
 (\d+)-(\d+)life                     =       mod_name=(pseudo) (total) +# to maximum Life&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
 
+mlife                               =       mod_name=#% increased maximum Life&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)mlife                          =       mod_name=#% increased maximum Life&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)mlife                    =       mod_name=#% increased maximum Life&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
 mana                                =       mod_name=(pseudo) (total) +# to maximum Mana&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
 (\d+)mana                           =       mod_name=(pseudo) (total) +# to maximum Mana&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
 (\d+)-(\d+)mana                     =       mod_name=(pseudo) (total) +# to maximum Mana&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
@@ -72,3 +76,7 @@ gcrit                               =       mod_name=(pseudo) (total) #% increas
 castsp(ee)?d                        =       mod_name=(pseudo) (total) #% increased Cast Speed&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
 (\d+)castsp(ee)?d                   =       mod_name=(pseudo) (total) #% increased Cast Speed&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
 (\d+)-(\d+)castsp(ee)?d             =       mod_name=(pseudo) (total) #% increased Cast Speed&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
+incprojdmg                          =       mod_name=#% increased Projectile Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)incprojdmg                     =       mod_name=#% increased Projectile Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)incprojdmg               =       mod_name=#% increased Projectile Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
