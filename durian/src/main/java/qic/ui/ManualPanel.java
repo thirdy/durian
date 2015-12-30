@@ -144,28 +144,33 @@ public class ManualPanel extends JPanel {
 				Worker<Command> worker = new Worker<Command>(
 						() -> {
 							runBtn.setEnabled(false);
-							return runQuery(main, tfText);
+							Command result = null;
+							try {
+								result = runQuery(main, tfText);
+							} catch (Exception ex) {
+								runBtn.setEnabled(true);
+								SwingUtil.showError(ex);
+							}
+							return result;
 						},
 						command -> {
-							if (command.invalidSearchTerms.isEmpty()) {
-								addDataToTable(command);
-								saveSearchToList(tfText);
-								invalidTermsLbl.setText("");
-								invalidTermsLblLbl.setText("");
-								if (getBooleanProperty(MANUAL_AUTO_VERIFY, false)) {
-									long sleep = Config.getLongProperty(Config.MANUAL_AUTO_VERIFY_SLEEP, 5000);
-									table.runAutoVerify(sleep);
+							if (command != null) {
+								if (command.invalidSearchTerms.isEmpty()) {
+									addDataToTable(command);
+									saveSearchToList(tfText);
+									invalidTermsLbl.setText("");
+									invalidTermsLblLbl.setText("");
+									if (getBooleanProperty(MANUAL_AUTO_VERIFY, false)) {
+										long sleep = Config.getLongProperty(Config.MANUAL_AUTO_VERIFY_SLEEP, 5000);
+										table.runAutoVerify(sleep);
+									}
+								} else {
+									String invalidTermsStr = command.invalidSearchTerms.stream().collect(joining(", "));
+									invalidTermsLbl.setText(invalidTermsStr + " ");
+									invalidTermsLblLbl.setText(" Invalid: ");
 								}
-							} else {
-								String invalidTermsStr = command.invalidSearchTerms.stream().collect(joining(", "));
-								invalidTermsLbl.setText(invalidTermsStr + " ");
-								invalidTermsLblLbl.setText(" Invalid: ");
 							}
 							runBtn.setEnabled(true);
-						}, ex -> {
-							runBtn.setEnabled(true);
-							logger.error("Exception occured: ", ex);
-							SwingUtil.showError(ex);
 						});
 				worker.execute();
 			}
@@ -208,21 +213,17 @@ public class ManualPanel extends JPanel {
 		searchJListModel.addElement(tfText);
 	}
 
-	private Command runQuery(Main main, String tfText) {
-		try {
-			String line = null;
-			if (StringUtils.startsWithIgnoreCase(tfText, "sort")) {
-				line = tfText;
-			} else {
-				String prefix = Config.getPropety(Config.MANUAL_SEARCH_PREFIX, "tmpsc online bo").trim();
-				line = String.format("s %s %s", prefix, tfText);
-			}
-			
-			logger.info("Now running search: " + line);
-			return main.processLine(line);
-		} catch (Exception e) {
-			throw new RuntimeException(e);
+	private Command runQuery(Main main, String tfText) throws Exception {
+		String line = null;
+		if (StringUtils.startsWithIgnoreCase(tfText, "sort")) {
+			line = tfText;
+		} else {
+			String prefix = Config.getPropety(Config.MANUAL_SEARCH_PREFIX, "tmpsc online bo").trim();
+			line = String.format("s %s %s", prefix, tfText);
 		}
+
+		logger.info("Now running search: " + line);
+		return main.processLine(line);
 	}
 	
 	public void saveToFile() {

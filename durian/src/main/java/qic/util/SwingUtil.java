@@ -56,7 +56,7 @@ public class SwingUtil {
 		JOptionPane.showMessageDialog(null, msg);
 	}
 	
-	public static void showError(Exception e) {
+	public static void showError(Throwable e) {
 		new qic.util.SimpleExceptionHandler().uncaughtException(Thread.currentThread(), e);
 	}
 

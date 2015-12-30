@@ -63,9 +63,6 @@ public class SearchPageScraper {
 			items = content.getElementsByClass("item");
 		}
 
-//		System.out.println(items.get(86).toString());
-
-//		System.out.println("Items");
 		for (Element element : items) {
 			
 			SearchResultItem item = new SearchResultItem();
@@ -311,7 +308,7 @@ public class SearchPageScraper {
 					labelVal("Thread", thread),
 					labelVal("Verified", verified.name()),
 //					labelVal("", threadUrl),
-					labelVal("Online", String.valueOf(containsIgnoreCase("online", online))));
+					labelVal("Online", String.valueOf(containsIgnoreCase(online, "online"))));
 		}
 		
 		private String labelVal(String label, String val) {

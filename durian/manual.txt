@@ -14,3 +14,4 @@ ring 25wed 60life
 1hsword 30flatphys
 2hsword 100ipd 20flatphys
 mirror
+2haxe 450pdps

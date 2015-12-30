@@ -32,6 +32,7 @@ import org.apache.commons.lang3.StringUtils;
  */
 public class Config {
 	
+
 	public static final String CONFIG_PROPERTIES_FILENAME = "config.properties";
 	
 	public static final String AUTOMATED_SEARCH_WAIT_MINUTES = "automated.search.wait.minutes";
@@ -40,6 +41,7 @@ public class Config {
 	public static final String AUTOMATED_SEARCH_PREFIX = "automated.search.prefix";
 	public static final String AUTOMATED_SEARCH_SOUND_FILENAME = "automated.search.sound.filename";
 	public static final String AUTOMATED_SEARCH_SOUND_VOLUME = "automated.search.sound.volume";
+	public static final String AUTOMATED_SEARCH_SOUND_MODE = "automated.search.sound.mode";
 	public static final String AUTOMATED_SEARCH_ENABLED = "automated.search.enabled";
 	
 	public static final String AUTOMATED_SEARCH_BLACKLIST = "automated.search.blacklist";
@@ -76,9 +78,23 @@ public class Config {
 		String propety = getPropety(key, String.valueOf(i));
 		return Integer.parseInt(propety);
 	}
-
+	
 	public static long getLongProperty(String key, long i) {
 		String propety = getPropety(key, String.valueOf(i));
 		return Long.parseLong(propety);
+	}
+
+	public static double getDoubleProperty(String key, double i) {
+		String propety = getPropety(key, String.valueOf(i));
+		return Double.parseDouble(propety);
+	}
+	
+	public static SoundMode getSoundMode() {
+		String propety = getPropety(AUTOMATED_SEARCH_SOUND_MODE, SoundMode.EACH_SEARCH.name());
+		return SoundMode.valueOf(propety);
+	}
+	
+	public static enum SoundMode {
+		EACH_SEARCH, ONCE
 	}
 }

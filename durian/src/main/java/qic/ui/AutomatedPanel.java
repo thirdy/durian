@@ -33,7 +33,6 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-import javax.sound.sampled.LineUnavailableException;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -53,8 +52,9 @@ import qic.Main;
 import qic.SearchPageScraper.SearchResultItem;
 import qic.ui.extra.CaptchaDetectedException;
 import qic.util.Config;
+import qic.util.Config.SoundMode;
 import qic.util.DurianUtils;
-import qic.util.SoundUtils;
+import qic.util.SoundUtilsFX;
 import qic.util.SwingUtil;
 import qic.util.Util;
 import qic.util.Verify;
@@ -148,8 +148,10 @@ public class AutomatedPanel extends JPanel {
 				countdown = waitSeconds;
 				try {
 					runJob();
-				} catch (CaptchaDetectedException e) {
+				} catch (Exception e) {
 					SwingUtil.showError(e);
+				} finally {
+					panel.runBtn.setEnabled(true);
 				}
 			} else {
 				countdown--;
@@ -181,24 +183,30 @@ public class AutomatedPanel extends JPanel {
 
 	    			itemResults.stream().forEach(this::publish);
 	        		
+	    			int count = 0;
 	    			if (getBooleanProperty(AUTOMATED_AUTO_VERIFY, false)) {
 	    				long sleep = Config.getLongProperty(Config.AUTOMATED_AUTO_VERIFY_SLEEP, 5000);
-	    				total += runVerify(itemResults, sleep);
+	    				count += runVerify(itemResults, sleep);
 	    			} else {
-						total += itemResults.size();
+						count += itemResults.size();
 					}
-
-	    			if (total > 0) {
+	    			
+	    			if (Config.getSoundMode() == SoundMode.EACH_SEARCH && count > 0) {
 	    				panel.playsound();
 	    			}
+	    			
+	    			total += count;
 	    			
 	    			if (idx < searches.length) {
 	    				logger.info(format("Automated Search - now sleep for %d seconds", waitSecondsInBetween));
 		    			sleep(waitSecondsInBetween * 1000);
 					}
 	            }
+
+    			if (Config.getSoundMode() == SoundMode.ONCE && total > 0) {
+    				panel.playsound();
+    			}
 			}
-			panel.runBtn.setEnabled(true);
 		}
 
         @Override
@@ -248,11 +256,9 @@ public class AutomatedPanel extends JPanel {
 	}
 	
 	private void playsound() {
-		try {
-			SoundUtils.tone(5000,100);
-		} catch (LineUnavailableException e) {
-			e.printStackTrace();
-		}
+		String pathToFile = Config.getPropety(Config.AUTOMATED_SEARCH_SOUND_FILENAME, "notification.wav");
+		double vol = Config.getDoubleProperty(Config.AUTOMATED_SEARCH_SOUND_VOLUME, 1.0);
+		new Thread(() -> SoundUtilsFX.play(pathToFile, vol)).run();
 	}
 
 }

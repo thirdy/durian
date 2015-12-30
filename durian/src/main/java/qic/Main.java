@@ -90,6 +90,9 @@ public class Main {
 		}
 		try {
 			String lookAndFeel = Config.getPropety(Config.LOOK_AND_FEEL, "com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+			if (lookAndFeel.startsWith("Substance")) {
+				lookAndFeel = "org.pushingpixels.substance.api.skin." + lookAndFeel;
+			}
 			UIManager.setLookAndFeel(lookAndFeel);
 		} catch (Exception e) {
 		    try {

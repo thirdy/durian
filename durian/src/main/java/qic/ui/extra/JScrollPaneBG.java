@@ -17,71 +17,71 @@
  */
 package qic.ui.extra;
 
-import java.awt.Component;
-import java.awt.Graphics;
-import java.awt.Image;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-
-import javax.imageio.ImageIO;
-import javax.swing.JFrame;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
-import javax.swing.table.DefaultTableCellRenderer;
+//import java.awt.Component;
+//import java.awt.Graphics;
+//import java.awt.Image;
+//import java.awt.image.BufferedImage;
+//import java.io.File;
+//import java.io.IOException;
+//
+//import javax.imageio.ImageIO;
+//import javax.swing.JFrame;
+//import javax.swing.JScrollPane;
+//import javax.swing.JTable;
+//import javax.swing.table.DefaultTableCellRenderer;
 
 /**
  * @author thirdy
  *
  */
-public class JScrollPaneBG extends JScrollPane {
-
-	private static final long serialVersionUID = 1L;
-	private Image image;
-	
-//	public JScrollPaneBG(Image image, Component component) {
-	public JScrollPaneBG(Component component) {
-		super(component);
-		setOpaque(false);
-        getViewport().setOpaque(false);
-        try {
-			this.image = ImageIO.read(new File("Path_of_Exile_Fan_Art_63.jpg"));
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
-	}
-	
-	@Override
-    protected void paintComponent(Graphics g) {
-        g.drawImage(image, 0, 0, getWidth(), getHeight(), this);
-        super.paintComponent(g);
-    }
-
-	public static void main(String[] args) throws IOException {
-	    JFrame frame = new JFrame("Test");
-	
-	    final BufferedImage image = ImageIO.read(new File("Lenna.png"));
-	
-	    JTable table = new JTable(16, 3) {{
-	        setOpaque(false);
-	        setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {{
-	            setOpaque(false);
-	        }});
-	    }};
-	
-	    frame.add(new JScrollPane(table) {{
-	            setOpaque(false);
-	            getViewport().setOpaque(false);
-	        }
-	        @Override
-	        protected void paintComponent(Graphics g) {
-	            g.drawImage(image, 0, 0, getWidth(), getHeight(), this);
-	            super.paintComponent(g);
-	        }
-	
-	    });
-	    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	    frame.pack();
-	    frame.setVisible(true);
-	}
-}
+//public class JScrollPaneBG extends JScrollPane {
+//
+//	private static final long serialVersionUID = 1L;
+//	private Image image;
+//	
+////	public JScrollPaneBG(Image image, Component component) {
+//	public JScrollPaneBG(Component component) {
+//		super(component);
+//		setOpaque(false);
+//        getViewport().setOpaque(false);
+//        try {
+//			this.image = ImageIO.read(new File("Path_of_Exile_Fan_Art_63.jpg"));
+//		} catch (IOException e) {
+//			throw new RuntimeException(e);
+//		}
+//	}
+//	
+//	@Override
+//    protected void paintComponent(Graphics g) {
+//        g.drawImage(image, 0, 0, getWidth(), getHeight(), this);
+//        super.paintComponent(g);
+//    }
+//
+//	public static void main(String[] args) throws IOException {
+//	    JFrame frame = new JFrame("Test");
+//	
+//	    final BufferedImage image = ImageIO.read(new File("Lenna.png"));
+//	
+//	    JTable table = new JTable(16, 3) {{
+//	        setOpaque(false);
+//	        setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {{
+//	            setOpaque(false);
+//	        }});
+//	    }};
+//	
+//	    frame.add(new JScrollPane(table) {{
+//	            setOpaque(false);
+//	            getViewport().setOpaque(false);
+//	        }
+//	        @Override
+//	        protected void paintComponent(Graphics g) {
+//	            g.drawImage(image, 0, 0, getWidth(), getHeight(), this);
+//	            super.paintComponent(g);
+//	        }
+//	
+//	    });
+//	    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//	    frame.pack();
+//	    frame.setVisible(true);
+//	}
+//}

@@ -30,6 +30,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import qic.Main;
+import qic.util.SoundUtilsFX;
 
 /**
  * @author thirdy
@@ -44,6 +45,7 @@ public class QicFrame extends JFrame {
 		
 	    Image icon = Toolkit.getDefaultToolkit().getImage(QicFrame.class.getResource("/durian128.png"));
 	    this.setIconImage(icon);
+	    SoundUtilsFX.init();
 
 		ManualPanel manualPanel = new ManualPanel(main);
 		AutomatedPanel automatedPanel = new AutomatedPanel(main);

@@ -27,6 +27,8 @@ import java.io.IOException;
 
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.Document;
 
 import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
@@ -67,9 +69,11 @@ public class ConfigPanel extends JScrollPane {
 
 	private void saveAndReloadConfig() {
 		try {
-			Util.overwriteFile(CONFIG_PROPERTIES_FILENAME, textArea.getText());
+			// directly calling getText() from TextArea is causing bad values, probably swing quirks
+			Document document = textArea.getDocument();
+			Util.overwriteFile(CONFIG_PROPERTIES_FILENAME, document.getText(0, document.getLength()));
 			Config.loadConfig();
-		} catch (IOException e) {
+		} catch (BadLocationException | IOException e) {
 			logger.error("Error while saving to " + CONFIG_PROPERTIES_FILENAME);
 			showError(e);
 		}
