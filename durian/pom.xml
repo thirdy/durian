@@ -14,7 +14,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<mainClass>qic.Main</mainClass>
 	</properties>
-	
+
 	<scm>
 		<url>https://github.com/thirdy/durian</url>
 		<connection>scm:git:git://github.com/thirdy/durian.git</connection>
@@ -58,16 +58,16 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
-<!-- 		<dependency> -->
-<!-- 			<groupId>com.fifesoft</groupId> -->
-<!-- 			<artifactId>rsyntaxtextarea</artifactId> -->
-<!-- 			<version>2.5.8</version> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>net.coderazzi</groupId> -->
-<!-- 			<artifactId>tablefilter-swing</artifactId> -->
-<!-- 			<version>5.2.1</version> -->
-<!-- 		</dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>com.fifesoft</groupId> -->
+		<!-- <artifactId>rsyntaxtextarea</artifactId> -->
+		<!-- <version>2.5.8</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>net.coderazzi</groupId> -->
+		<!-- <artifactId>tablefilter-swing</artifactId> -->
+		<!-- <version>5.2.1</version> -->
+		<!-- </dependency> -->
 		<dependency>
 			<groupId>com.github.insubstantial</groupId>
 			<artifactId>substance</artifactId>
@@ -86,9 +86,9 @@
 			<version>1.6.1</version>
 		</dependency>
 		<dependency>
-		  <groupId>com.google.guava</groupId>
-		  <artifactId>guava</artifactId>
-		  <version>19.0</version>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>19.0</version>
 		</dependency>
 	</dependencies>
 
@@ -139,9 +139,9 @@
 						<id>buildzip</id>
 						<phase>package</phase>
 						<configuration>
-								<descriptor>src/assembly/zip-assembly.xml</descriptor>
-								<finalName>${artifactId}-${durian.version}</finalName>
-								<appendAssemblyId>false</appendAssemblyId>
+							<descriptor>src/assembly/zip-assembly.xml</descriptor>
+							<finalName>${artifactId}-${durian.version}</finalName>
+							<appendAssemblyId>false</appendAssemblyId>
 						</configuration>
 						<goals>
 							<goal>single</goal>
@@ -150,24 +150,27 @@
 				</executions>
 			</plugin>
 			<plugin>
-				<groupId>com.github.github</groupId>
-				<artifactId>downloads-maven-plugin</artifactId>
-				<version>0.6</version>
-				<configuration>
-					<description>Official ${project.name} build of the ${project.version} release</description>
-					<override>true</override>
-					<includeAttached>true</includeAttached>
-					<server>github</server>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>upload</goal>
-						</goals>
-						<phase>install</phase>
-					</execution>
-				</executions>
-			</plugin>		
+			    <groupId>de.jutzig</groupId>
+			    <artifactId>github-release-plugin</artifactId>
+			    <version>1.1.1</version>
+			    <configuration>
+			        <description>Durian v${project.version}</description>
+			        <releaseName>Durian v${project.version}</releaseName>
+			        <tag>v${project.version}</tag>
+			
+			        <!-- If your project has additional artifacts, such as ones produced by
+			             the maven-assembly-plugin, you can define the following
+			             (requires version 1.1.1 of the plugin or higher): -->
+			        <fileSets>
+			            <fileSet>
+			                <directory>${project.build.directory}</directory>
+			                <includes>
+			                    <include>${artifactId}-${durian.version}.zip</include>
+			                </includes>
+			            </fileSet>
+			        </fileSets>
+			    </configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>
