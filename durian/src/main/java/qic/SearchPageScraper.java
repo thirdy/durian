@@ -612,6 +612,10 @@ public class SearchPageScraper {
 				throw new RuntimeException(e);
 			}
 		}
+		
+		public String toUUID() {
+			return thread + name + buyout;
+		}
 
 	}
 }

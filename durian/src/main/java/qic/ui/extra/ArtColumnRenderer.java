@@ -28,6 +28,7 @@ import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 
+import qic.util.Config;
 import qic.util.ImageCache;
 
 /**
@@ -52,16 +53,20 @@ public class ArtColumnRenderer extends DefaultTableCellRenderer {
 	@Override
     public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
         super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
-        ImageIcon image = defaultImage;
-        
-        Image img = ImageCache.getInstance().get(value.toString());
-        if (img != null) {
-        	image = new ImageIcon(img);
-		}
-        setIcon(image);
         setText("");
+        setIcon(null);
+
+        boolean artEnabled = Config.getBooleanProperty(Config.RESULT_TABLE_ART_ENABLED, true);
+        if (artEnabled) {
+        	ImageIcon image = defaultImage;
+            Image img = ImageCache.getInstance().get(value.toString());
+            if (img != null) {
+            	image = new ImageIcon(img);
+    		}
+            setIcon(image);
+            table.setRowHeight(row, image.getIconHeight());
+		}
         
-        table.setRowHeight(row, image.getIconHeight());
         return this;
     }
 

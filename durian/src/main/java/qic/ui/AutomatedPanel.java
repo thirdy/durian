@@ -24,6 +24,8 @@ import static java.util.stream.Collectors.toList;
 import static qic.util.Config.AUTOMATED_AUTO_VERIFY;
 import static qic.util.Config.AUTOMATED_SEARCH_BLACKLIST;
 import static qic.util.Config.getBooleanProperty;
+import static qic.util.Config.getLongProperty;
+import static qic.util.Config.getSoundMode;
 import static qic.util.DurianUtils.notBlacklisted;
 import static qic.util.Util.sleep;
 
@@ -160,10 +162,11 @@ public class AutomatedPanel extends JPanel {
         }
 
 		private void runJob() throws CaptchaDetectedException {
-			panel.runBtn.setEnabled(false);
-			panel.table.clear();
 			String text = panel.searchListTa.getText();
 			if (!text.isEmpty()) {
+				panel.runBtn.setEnabled(false);
+				List<String> previousData = getTableModel().getData().stream().map(SearchResultItem::toUUID).collect(toList());
+				panel.table.clear();
 				String[] searches = text.split("\n");
 				logger.info("searches: " + Arrays.toString(searches));
 	            int idx = 0;
@@ -185,13 +188,25 @@ public class AutomatedPanel extends JPanel {
 	        		
 	    			int count = 0;
 	    			if (getBooleanProperty(AUTOMATED_AUTO_VERIFY, false)) {
-	    				long sleep = Config.getLongProperty(Config.AUTOMATED_AUTO_VERIFY_SLEEP, 5000);
+	    				long sleep = getLongProperty(Config.AUTOMATED_AUTO_VERIFY_SLEEP, 5000);
 	    				count += runVerify(itemResults, sleep);
 	    			} else {
 						count += itemResults.size();
 					}
 	    			
-	    			if (Config.getSoundMode() == SoundMode.EACH_SEARCH && count > 0) {
+	    			if (count > 0 && getBooleanProperty(Config.AUTOMATED_SEARCH_NOTIFY_NEWONLY, true)) {
+	    				logger.info("Now checking if there are actually new items..");
+	    				logger.info("Previous items: " + previousData.toString());
+	    				List<String> newItemsUUID = itemResults.stream().map(SearchResultItem::toUUID).collect(toList());
+	    				logger.info("New items: " + newItemsUUID.toString());
+						boolean foundNew = newItemsUUID.stream().anyMatch(uuid -> !previousData.contains(uuid));
+						logger.info("foundNew: " + foundNew);
+	    				if (!foundNew) {
+							count = 0;
+						}
+					}
+	    			
+	    			if (getSoundMode() == SoundMode.EACH_SEARCH && count > 0) {
 	    				panel.playsound();
 	    			}
 	    			
@@ -209,7 +224,7 @@ public class AutomatedPanel extends JPanel {
 			}
 		}
 
-        @Override
+		@Override
         protected void process(List<SearchResultItem> itemResults) {
 				panel.table.addData(itemResults);
         }
@@ -235,8 +250,7 @@ public class AutomatedPanel extends JPanel {
     				Verify verified = DurianUtils.verify(item.thread(), item.dataHash());
     				item.verified(verified);
     				logger.info(format("Verify result for item %s: %s", item.toShortDebugInfo(), verified));
-    				@SuppressWarnings("unchecked")
-					BeanPropertyTableModel<SearchResultItem> model = (BeanPropertyTableModel<SearchResultItem>) panel.table.getModel();
+					BeanPropertyTableModel<SearchResultItem> model = getTableModel();
 					int index = model.getData().indexOf(item);
 					panel.table.updateData(index);
     				logger.info(format("Verify - now sleeping for %s millisec", sleep));
@@ -245,6 +259,11 @@ public class AutomatedPanel extends JPanel {
     				return result;
     			}).sum();
     	}
+
+    	@SuppressWarnings("unchecked")
+		private BeanPropertyTableModel<SearchResultItem> getTableModel() {
+			return (BeanPropertyTableModel<SearchResultItem>) panel.table.getModel();
+		}
     }
     
 	public void saveToFile() {
