@@ -4,124 +4,124 @@
 
 ;Belts
 
-rusticsash = base=Rustic Sash
-heavybelt = base=Heavy Belt
-chainbelt = base=Chain Belt
-leatherbelt = base=Leather Belt
-goldenobi = base=goldenobi
-studdedbelt = base=Studded Belt
-clothbelt = base=Cloth Belt
+rusticsash          =       base=Rustic Sash
+heavybelt           =       base=Heavy Belt
+chainbelt           =       base=Chain Belt
+leatherbelt         =       base=Leather Belt
+goldenobi           =       base=goldenobi
+studdedbelt         =       base=Studded Belt
+clothbelt           =       base=Cloth Belt
 
 ;Amulets
 
-amber = base=Amber Amulet
-lapis = base=Lapis Amulet
-jade = base=Jade Amulet
-goldammy = base=Gold Amulet
-turquoise = base=Turquoise Amulet
-agate = base=Agate Amulet
-citrine = base=Citrine Amulet
-onyx = base=Onyx Amulet
-coralammy = base=Coral Amulet
-pauaammy = base=Paua Amulet
+amber               =       base=Amber Amulet
+lapis               =       base=Lapis Amulet
+jade                =       base=Jade Amulet
+goldammy            =       base=Gold Amulet
+turquoise           =       base=Turquoise Amulet
+agate               =       base=Agate Amulet
+citrine             =       base=Citrine Amulet
+onyx                =       base=Onyx Amulet
+coralammy           =       base=Coral Amulet
+pauaammy            =       base=Paua Amulet
 
 ;Rings
 
-amethyst = base=Amethyst Ring
-coralring = base=Coral Ring
-diamond = base=Diamond Ring
-goldring = base=Gold Ring
-goldenhoop = base=Golden Hoop
-iron = base=Iron Ring
-moonstone = base=Moonstone Ring
-pauaring = base=Paua Ring
-prismatic = base=Prismatic Ring
-ruby = base=Ruby Ring
-sapphire = base=Sapphire Ring
-topaz = base=Topaz Ring
-twostone = base=Two-Stone Ring
-unset = base=Unset Ring
+amethyst            =       base=Amethyst Ring
+coralring           =       base=Coral Ring
+diamond             =       base=Diamond Ring
+goldring            =       base=Gold Ring
+goldenhoop          =       base=Golden Hoop
+iron                =       base=Iron Ring
+moonstone           =       base=Moonstone Ring
+pauaring            =       base=Paua Ring
+prismatic           =       base=Prismatic Ring
+ruby                =       base=Ruby Ring
+sapphire            =       base=Sapphire Ring
+topaz               =       base=Topaz Ring
+twostone            =       base=Two-Stone Ring
+unset               =       base=Unset Ring
 
 ;Body Armour
 
-saintlychainmail = base=Saintly Chainmail
-carnal armour = base=Carnar Armour
-astralplate = base=Astral Plate
-vaalregalia = base=Vaal Regalia
+saintlychainmail    =       base=Saintly Chainmail
+carnal armour       =       base=Carnar Armour
+astralplate         =       base=Astral Plate
+vaalregalia         =       base=Vaal Regalia
 
 ;Boots
 
-titangreaves = base=Titan Greaves
-slinkboots = base=Slink Boots
-sorcererboots = base=Sorcerer Boots
-muderboots = base=Murder Boots
-dragonscaleboots = base=Dragonscale boots
-crusaderboots = base=Crusader Boots
+titangreaves        =       base=Titan Greaves
+slinkboots          =       base=Slink Boots
+sorcererboots       =       base=Sorcerer Boots
+muderboots          =       base=Murder Boots
+dragonscaleboots    =       base=Dragonscale boots
+crusaderboots       =       base=Crusader Boots
 
 ;Gloves
 
-titangauntlets = base=Titan Gauntlets
-slinkgloves = base=Slink Gloves
-sorcerergloves = base=Sorcerer Gloves
-dragonscalegauntlets = base=Dragonscale Gauntlets
-mudermitts = base=Murder Mitts
-crusadergloves = base=Crusader Gloves
+titangauntlets      =       base=Titan Gauntlets
+slinkgloves         =       base=Slink Gloves
+sorcerergloves      =       base=Sorcerer Gloves
+dragonscalegauntlets =      base=Dragonscale Gauntlets
+mudermitts          =       base=Murder Mitts
+crusadergloves      =       base=Crusader Gloves
 
 ;Helmet
 
-nightmarebascinet = base=Nightmare Bascinet
-deicidemask = base=Deicide Mask
-praetorcrown = base=Praetor Crown
-eternalburgonet = base=Eternal Burgonet
-hubriscirclet = base=Hubris Circlet
-lionpelt = base=Lion Pelt
+nightmarebascinet   =       base=Nightmare Bascinet
+deicidemask         =       base=Deicide Mask
+praetorcrown        =       base=Praetor Crown
+eternalburgonet     =       base=Eternal Burgonet
+hubriscirclet       =       base=Hubris Circlet
+lionpelt            =       base=Lion Pelt
 
 ;Shield
 
-archonkite = base=Archon Kite Shield
-titaniumspirit = base=Titanium Spirit Shield
-imperialbuckler = base=Imperial Buckler
-elegantround = base=Elegant Round Shield
-supremespiked = base=Supreme Spiked Shield
-pinnacletower = base=Pinnacle Twoer Shield
+archonkite          =       base=Archon Kite Shield
+titaniumspirit      =       base=Titanium Spirit Shield
+imperialbuckler     =       base=Imperial Buckler
+elegantround        =       base=Elegant Round Shield
+supremespiked       =       base=Supreme Spiked Shield
+pinnacletower       =       base=Pinnacle Twoer Shield
 
 ;Bow
 
-harbinger = base=Harbinger Bow
-thicket = base=Thicket Bow
+harbinger           =       base=Harbinger Bow
+thicket             =       base=Thicket Bow
 
 ;Claw
 
-imperialclaw = base=Imperial Claw
-terrorclaw = base=Terror Claw
+imperialclaw        =       base=Imperial Claw
+terrorclaw          =       base=Terror Claw
 
 ;Dagger
 
-ambusher = base=Ambusher
+ambusher            =       base=Ambusher
 
 ;Axe
 
-siegeaxe = base=Siege Axe
+siegeaxe            =       base=Siege Axe
 
 ;Mace
 
-legionhammer = base=Legion Hammer
-nightmaremace = base=Nightmare Mace
+legionhammer        =       base=Legion Hammer
+nightmaremace       =       base=Nightmare Mace
 
 ;Sword
 
-corsairsword = base=Corsair Sword
-eternalsword = base=Eternal Sword
+corsairsword        =       base=Corsair Sword
+eternalsword        =       base=Eternal Sword
 
 ;Thrusting sword
 
-spiraledfoil = base=Spiraled Foil
-jeweledfoil = base=Jeweled Foil
+spiraledfoil        =       base=Spiraled Foil
+jeweledfoil         =       base=Jeweled Foil
 
 ;Sceptre
 
-vaalsceptre = base=Vaal Sceptre
+vaalsceptre         =       base=Vaal Sceptre
 
 ;Wand
 
-imbuedwand = base=Imbued Wand
+imbuedwand          =       base=Imbued Wand
