@@ -16,9 +16,9 @@ import javax.swing.table.TableCellRenderer;
 /**
    * Multiline Table Cell Renderer.
    */
-  public class MultiLineTableCellRenderer extends JTextArea 
-    implements TableCellRenderer {
+  public class MultiLineTableCellRenderer extends JTextArea implements TableCellRenderer {
 	private static final long serialVersionUID = 1L;
+	
 	private List<List<Integer>> rowColHeight = new ArrayList<List<Integer>>();
    
     public MultiLineTableCellRenderer() {
@@ -26,7 +26,8 @@ import javax.swing.table.TableCellRenderer;
       setWrapStyleWord(true);
       setOpaque(true);
     }
-   
+
+	@SuppressWarnings("unchecked")
     public Component getTableCellRendererComponent(
         JTable table, Object value, boolean isSelected, boolean hasFocus,
         int row, int column) {
@@ -38,6 +39,7 @@ import javax.swing.table.TableCellRenderer;
         setBackground(table.getBackground());
       }
       setFont(table.getFont());
+      
       if (hasFocus) {
         setBorder(UIManager.getBorder("Table.focusCellHighlightBorder"));
         if (table.isCellEditable(row, column)) {
@@ -47,11 +49,11 @@ import javax.swing.table.TableCellRenderer;
       } else {
         setBorder(new EmptyBorder(1, 2, 1, 2));
       }
+      
       if (value != null) {
         if (value instanceof List) {
         	@SuppressWarnings("rawtypes")
 			List list = (List)value;
-			@SuppressWarnings("unchecked")
 			Object str = list.stream().map(Objects::toString).collect(Collectors.joining(System.lineSeparator()));
 			setText(str.toString());
 		} else {
@@ -60,10 +62,11 @@ import javax.swing.table.TableCellRenderer;
       } else {
         setText("");
       }
+      
       adjustRowHeight(table, row, column);
       return this;
     }
-   
+    
     /**
      * Calculate the new preferred height for a given row, and sets the height on the table.
      */
@@ -90,7 +93,7 @@ import javax.swing.table.TableCellRenderer;
           maxH = colHeight;
         }
       }
-      if (table.getRowHeight(row) != maxH) {
+      if (table.getRowHeight(row) < maxH) {
         table.setRowHeight(row, maxH);
       }
     }

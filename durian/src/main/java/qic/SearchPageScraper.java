@@ -15,6 +15,8 @@ import static org.apache.commons.lang3.StringUtils.trim;
 import static org.apache.commons.lang3.StringUtils.trimToEmpty;
 import static org.apache.commons.lang3.StringUtils.trimToNull;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -528,9 +530,9 @@ public class SearchPageScraper {
 			return builder.toString();
 		}
 
-		public String getId() {
-			return id;
-		}
+//		public String getId() {
+//			return id;
+//		}
 
 		public String getBo() {
 			String str = buyout;
@@ -601,6 +603,14 @@ public class SearchPageScraper {
 
 		public void verified(Verify verified) {
 			this.verified = verified;
+		}
+		
+		public URL getArt() {
+			try {
+				return new URL(imageUrl);
+			} catch (MalformedURLException e) {
+				throw new RuntimeException(e);
+			}
 		}
 
 	}

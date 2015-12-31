@@ -15,11 +15,17 @@
 				<include>manual.txt</include>
 				<include>config.properties</include>
 				<include>notification.wav</include>
+				<include>default.wav</include>
 			</includes>
 		</fileSet>
 		<fileSet>
 			<directory>${project.basedir}/terms</directory>
 			<outputDirectory>/terms</outputDirectory>
+			<includes/>
+		</fileSet>
+		<fileSet>
+			<directory>${project.basedir}/images</directory>
+			<outputDirectory>/images</outputDirectory>
 			<includes/>
 		</fileSet>
 		<fileSet>

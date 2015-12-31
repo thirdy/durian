@@ -23,6 +23,7 @@ import static java.util.Arrays.asList;
 import java.awt.Point;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.net.URL;
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -36,6 +37,7 @@ import org.slf4j.LoggerFactory;
 import com.porty.swing.table.model.BeanPropertyTableModel;
 
 import qic.SearchPageScraper.SearchResultItem;
+import qic.ui.extra.ArtColumnRenderer;
 import qic.ui.extra.MultiLineTableCellRenderer;
 import qic.ui.extra.VerifierTask;
 import qic.util.SwingUtil;
@@ -56,7 +58,7 @@ public class SearchResultTable extends JTable {
 	public SearchResultTable() {
 		model = new BeanPropertyTableModel<>(SearchResultItem.class);
 		model.setOrderedProperties(
-				asList("id", "bo", "item", "seller", "reqs", "mods", "offense", "defense"));
+				asList("art", "bo", "item", "seller", "reqs", "mods", "offense", "defense"));
 		this.setModel(model);
 		setupColumnWidths();
 		
@@ -85,11 +87,12 @@ public class SearchResultTable extends JTable {
 		
 		this.setDefaultRenderer(List.class, new MultiLineTableCellRenderer());
 		this.setDefaultRenderer(String.class, new MultiLineTableCellRenderer());
+		this.setDefaultRenderer(URL.class, new ArtColumnRenderer());
 	}
 
 	private void setupColumnWidths() {
 		setColumnWidths(this.getColumnModel(), 
-				asList( 1,    5,        220,    150,      50,    300,	  100,        100));
+				asList( 110,    20,        210,    150,      50,    300,	  100,        100));
 	}
 
 	private void setColumnWidths(TableColumnModel columnModel, List<Integer> widths) {

@@ -29,7 +29,9 @@ import javax.swing.table.AbstractTableModel;
  */
 @SuppressWarnings("rawtypes")
 public class BeanPropertyTableModel<T> extends AbstractTableModel {
+	
 	private static final long serialVersionUID = 1L;
+	
 	/** class of the data in rows */
 	private final Class beanClass;
     /** collection of table rows */

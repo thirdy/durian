@@ -4,13 +4,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.thirdy</groupId>
 	<artifactId>durian</artifactId>
-	<version>0.4.5</version>
+	<version>0.4.6</version>
 	<packaging>jar</packaging>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<durian.version>0.4.5</durian.version>
+		<durian.version>0.4.6</durian.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<mainClass>qic.Main</mainClass>
 	</properties>
@@ -52,16 +52,16 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.fifesoft</groupId>
-			<artifactId>rsyntaxtextarea</artifactId>
-			<version>2.5.8</version>
-		</dependency>
-		<dependency>
-			<groupId>net.coderazzi</groupId>
-			<artifactId>tablefilter-swing</artifactId>
-			<version>5.2.1</version>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.fifesoft</groupId> -->
+<!-- 			<artifactId>rsyntaxtextarea</artifactId> -->
+<!-- 			<version>2.5.8</version> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>net.coderazzi</groupId> -->
+<!-- 			<artifactId>tablefilter-swing</artifactId> -->
+<!-- 			<version>5.2.1</version> -->
+<!-- 		</dependency> -->
 		<dependency>
 			<groupId>com.github.insubstantial</groupId>
 			<artifactId>substance</artifactId>
@@ -78,6 +78,11 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.6.1</version>
+		</dependency>
+		<dependency>
+		  <groupId>com.google.guava</groupId>
+		  <artifactId>guava</artifactId>
+		  <version>19.0</version>
 		</dependency>
 	</dependencies>
 
