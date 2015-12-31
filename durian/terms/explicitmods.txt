@@ -80,3 +80,27 @@ castsp(ee)?d                        =       mod_name=(pseudo) (total) #% increas
 incprojdmg                          =       mod_name=#% increased Projectile Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
 (\d+)incprojdmg                     =       mod_name=#% increased Projectile Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
 (\d+)-(\d+)incprojdmg               =       mod_name=#% increased Projectile Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
+flatlight                           =       mod_name=Adds #-# Lightning Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)flatlight                      =       mod_name=Adds #-# Lightning Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)flatlight                =       mod_name=Adds #-# Lightning Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
+flatfire                            =       mod_name=Adds #-# Fire Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)flatfire                       =       mod_name=Adds #-# Fire Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)flatfire                 =       mod_name=Adds #-# Fire Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
+flatcold                            =       mod_name=Adds #-# Cold Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)flatcold                       =       mod_name=Adds #-# Cold Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)flatcold                 =       mod_name=Adds #-# Cold Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
+spellflatlight|sflatlight           =       mod_name=Adds #-# Lightning Damage to Spells&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)(spellflatlight|sflatlight)    =       mod_name=Adds #-# Lightning Damage to Spells&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)(spellflatlight|sflatlight)=     mod_name=Adds #-# Lightning Damage to Spells&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
+spellflatfire|sflatfire             =       mod_name=Adds #-# Fire Damage to Spells&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)(spellflatfire|sflatfire)      =       mod_name=Adds #-# Fire Damage to Spells&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)(spellflatfire|sflatfire)=       mod_name=Adds #-# Fire Damage to Spells&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
+spellflatcold|sflatcold             =       mod_name=Adds #-# Cold Damage to Spells&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)(spellflatcold|sflatcold)      =       mod_name=Adds #-# Cold Damage to Spells&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)(spellflatcold|sflatcold)=       mod_name=Adds #-# Cold Damage to Spells&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
