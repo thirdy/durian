@@ -9,7 +9,7 @@
 	<fileSets>
 		<fileSet>
 			<directory>${project.basedir}</directory>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>.</outputDirectory>
 			<includes>
 				<include>automated.txt</include>
 				<include>manual.txt</include>
@@ -20,17 +20,17 @@
 		</fileSet>
 		<fileSet>
 			<directory>${project.basedir}/terms</directory>
-			<outputDirectory>/terms</outputDirectory>
+			<outputDirectory>terms</outputDirectory>
 			<includes/>
 		</fileSet>
 		<fileSet>
 			<directory>${project.basedir}/images</directory>
-			<outputDirectory>/images</outputDirectory>
+			<outputDirectory>images</outputDirectory>
 			<includes/>
 		</fileSet>
 		<fileSet>
 			<directory>${project.build.directory}</directory>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>.</outputDirectory>
 			<includes>
 				<include>*.jar</include>
 			</includes>
