@@ -35,6 +35,10 @@ lightres                            =       mod_name=(pseudo) (total) +#% to Lig
 (\d+)lightres                       =       mod_name=(pseudo) (total) +#% to Lightning Resistance&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
 (\d+)-(\d+)lightres                 =       mod_name=(pseudo) (total) +#% to Lightning Resistance&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
 
+chares                              =       mod_name=+#% to Chaos Resistance&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)chares                         =       mod_name=+#% to Chaos Resistance&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)chares                   =       mod_name=+#% to Chaos Resistance&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
 ms                                  =       mod_name=#% increased Movement Speed&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
 (\d+)ms                             =       mod_name=#% increased Movement Speed&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
 (\d+)-(\d+)ms                       =       mod_name=#% increased Movement Speed&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
