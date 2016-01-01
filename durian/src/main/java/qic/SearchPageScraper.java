@@ -194,53 +194,53 @@ public class SearchPageScraper {
 	 */
 	public static class SearchResultItem {
 
-		String id; // the id in the search result html page
-		String buyout;
-		String name;
-		String ign;
+		public String id; // the id in the search result html page
+		public String buyout;
+		public String name;
+		public String ign;
 		public boolean corrupted;
 		public boolean identified;
 		
-		String dataHash; // use for verify
+		public String dataHash; // use for verify
 		
-		String socketsRaw;
-		String stackSize;
+		public String socketsRaw;
+		public String stackSize;
 		
-		String quality;
+		public String quality;
 		
-		String physDmgRangeAtMaxQuality;
-		String physDmgAtMaxQuality;
-		String eleDmgRange;
-		String attackSpeed;
-		String dmgAtMaxQuality;
-		String crit;
-		String level;
-		String eleDmg;
+		public String physDmgRangeAtMaxQuality;
+		public String physDmgAtMaxQuality;
+		public String eleDmgRange;
+		public String attackSpeed;
+		public String dmgAtMaxQuality;
+		public String crit;
+		public String level;
+		public String eleDmg;
 		
-		String armourAtMaxQuality;
-		String evasionAtMaxQuality;
-		String energyShieldAtMaxQuality;
-		String block;
+		public String armourAtMaxQuality;
+		public String evasionAtMaxQuality;
+		public String energyShieldAtMaxQuality;
+		public String block;
 		
-		String reqLvl;
-		String reqStr;
-		String reqInt;
-		String reqDex;
-		String mapQuantity;
+		public String reqLvl;
+		public String reqStr;
+		public String reqInt;
+		public String reqDex;
+		public String mapQuantity;
 
-		String ageAndHighLvl;
-		String league;
-		String seller;
-		String thread;
-		String sellerid;
-		String threadUrl;
-		String online;
+		public String ageAndHighLvl;
+		public String league;
+		public String seller;
+		public String thread;
+		public String sellerid;
+		public String threadUrl;
+		public String online;
 		
-		String imageUrl;
+		public String imageUrl;
 
-		Mod implicitMod;
-		List<Mod> explicitMods = new ArrayList<>();
-		Verify verified = Verify.UKNOWN;
+		public Mod implicitMod;
+		public List<Mod> explicitMods = new ArrayList<>();
+		public Verify verified = Verify.UKNOWN;
 		
 		
 		public List<Mod> getMods() {
@@ -334,6 +334,7 @@ public class SearchPageScraper {
 		public static class Mod {
 			String name;
 			String value;
+			String forgottenMod;
 
 			public Mod(String name, String value) {
 				this.name = name;
@@ -347,10 +348,21 @@ public class SearchPageScraper {
 			public String getValue() {
 				return value;
 			}
+			
+			public String getForgottenMod() {
+				return forgottenMod;
+			}
+
+			public void setForgottenMod(String forgottenMod) {
+				this.forgottenMod = forgottenMod;
+			}
 
 			@Override
 			public String toString() {
 //				return System.lineSeparator() + "Mod [name=" + name + ", value=" + value + "]";
+				if (forgottenMod != null) {
+					return forgottenMod;
+				}
 				return toStringDisplay();
 			}
 

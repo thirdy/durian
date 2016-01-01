@@ -19,6 +19,8 @@ package qic.ui;
 
 import java.awt.BorderLayout;
 import java.awt.Font;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 import java.io.File;
 import java.io.IOException;
 
@@ -55,11 +57,20 @@ public class EditorPanel extends JPanel {
 	public EditorPanel() {
 		setLayout(new BorderLayout());
 		
-//		String websiteUrl = "http://thirdy.github.io/durian/";
-//		JButton website = new JButtonLink("Website: " + websiteUrl, websiteUrl);
-		
 		setupTextArea();
 		setupFileTree();
+		
+		textArea.addFocusListener(new FocusListener() {
+			
+			@Override
+			public void focusLost(FocusEvent e) {
+				saveCurrentScriptToFile();
+			}
+			
+			@Override
+			public void focusGained(FocusEvent e) {}
+
+		});
 		
 	}
 

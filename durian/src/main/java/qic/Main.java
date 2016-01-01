@@ -48,6 +48,7 @@ import qic.SearchPageScraper.SearchResultItem;
 import qic.ui.QicFrame;
 import qic.util.CommandLine;
 import qic.util.Config;
+import qic.util.FmJS;
 import qic.util.SessProp;
 import qic.util.Util;
 
@@ -164,6 +165,8 @@ public class Main {
 			command.errorStackTrace = ExceptionUtils.getStackTrace(e);
 			throw e;
 		}
+		FmJS fmJS = new FmJS(command.itemResults);
+		fmJS.process();
 		return command;
 	}
 

@@ -17,3 +17,6 @@ mirror
 2haxe 450pdps
 staff 15castspd 80sdmg 10gcrit
 onyx 50life 40eleres
+2hmace 450pdps
+wand 10flatcold
+wand 10flatcold name="Frigid Imbued Wand of Ruin"

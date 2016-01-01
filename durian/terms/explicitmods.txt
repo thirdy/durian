@@ -15,9 +15,9 @@ mana                                =       mod_name=(pseudo) (total) +# to maxi
 (\d+)mana                           =       mod_name=(pseudo) (total) +# to maximum Mana&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
 (\d+)-(\d+)mana                     =       mod_name=(pseudo) (total) +# to maximum Mana&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
 
-totalres|tres                       =       mod_name=(pseudo) +#% total Resistance&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)(totalres|tres)                =       mod_name=(pseudo) +#% total Resistance&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)(totalres|tres)          =       mod_name=(pseudo) +#% total Resistance&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+totalres|tres|res                   =       mod_name=(pseudo) +#% total Resistance&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)(totalres|tres|res)            =       mod_name=(pseudo) +#% total Resistance&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)(totalres|tres|res)      =       mod_name=(pseudo) +#% total Resistance&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
 
 eleres                              =       mod_name=(pseudo) +#% total Elemental Resistance&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
 (\d+)eleres                         =       mod_name=(pseudo) +#% total Elemental Resistance&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
