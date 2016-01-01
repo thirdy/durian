@@ -55,13 +55,17 @@ physdmg|pdmg                        =       mod_name=(pseudo) (total) #% increas
 (\d+)(physdmg|pdmg)                 =       mod_name=(pseudo) (total) #% increased Physical Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
 (\d+)-(\d+)(physdmg|pdmg)           =       mod_name=(pseudo) (total) #% increased Physical Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
 
-colddmg|cdmg                        =       mod_name=(pseudo) (total) #% increased Cold Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)(colddmg|cdmg)                 =       mod_name=(pseudo) (total) #% increased Cold Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)(colddmg|cdmg)           =       mod_name=(pseudo) (total) #% increased Cold Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+colddmg|cdmg                        =       mod_name=#% increased Cold Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)(colddmg|cdmg)                 =       mod_name=#% increased Cold Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)(colddmg|cdmg)           =       mod_name=#% increased Cold Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
 
-firedmg|fdmg                        =       mod_name=(pseudo) (total) #% increased Fire Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)(firedmg|fdmg)                 =       mod_name=(pseudo) (total) #% increased Fire Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)(firedmg|fdmg)           =       mod_name=(pseudo) (total) #% increased Fire Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+firedmg|fdmg                        =       mod_name=#% increased Fire Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)(firedmg|fdmg)                 =       mod_name=#% increased Fire Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)(firedmg|fdmg)           =       mod_name=#% increased Fire Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
+lightdmg|ldmg                       =       mod_name=#% increased Lightning Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)(lightdmg|ldmg)                =       mod_name=#% increased Lightning Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)(lightdmg|ldmg)          =       mod_name=#% increased Lightning Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
 
 manaregen|mregen                    =       mod_name=(pseudo) (total) #% increased Mana Regeneration Rate&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
 (\d+)(manaregen|mregen)             =       mod_name=(pseudo) (total) #% increased Mana Regeneration Rate&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
