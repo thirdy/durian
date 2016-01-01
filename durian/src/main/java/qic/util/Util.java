@@ -64,6 +64,10 @@ public class Util {
 
 	public static void overwriteFile(String fileName, String contents) throws IOException {
 		File file = new File(fileName);
+		overwriteFile(file, contents);
+	}
+	
+	public static void overwriteFile(File file, String contents) throws IOException {
 		FileUtils.writeStringToFile(file , contents, "UTF-8", false);
 	}
 

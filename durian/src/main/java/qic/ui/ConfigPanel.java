@@ -25,12 +25,13 @@ import java.awt.event.FocusListener;
 import java.io.File;
 import java.io.IOException;
 
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.Document;
 
 import org.apache.commons.io.FileUtils;
+import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
+import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
+import org.fife.ui.rtextarea.RTextScrollPane;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,13 +43,14 @@ import qic.util.Util;
  * @author thirdy
  *
  */
-public class ConfigPanel extends JScrollPane {
+public class ConfigPanel extends RTextScrollPane {
 	private static final long serialVersionUID = 1L;
 	private final Logger logger = LoggerFactory.getLogger(this.getClass().getName());
 
-	JTextArea textArea = new JTextArea();
+	RSyntaxTextArea textArea = new RSyntaxTextArea();
 
 	public ConfigPanel() {
+	    textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_PROPERTIES_FILE);
 		setViewportView(textArea);
 		
 		textArea.addFocusListener(new FocusListener() {

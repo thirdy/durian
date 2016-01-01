@@ -51,6 +51,7 @@ public class QicFrame extends JFrame {
 		AutomatedPanel automatedPanel = new AutomatedPanel(main);
 		LoggerPanel loggerPanel  = new LoggerPanel();
 		ConfigPanel configPanel  = new ConfigPanel();
+		EditorPanel editorPanel  = new EditorPanel();
 		AboutPanel aboutPanel  = new AboutPanel();
 		
 		JTabbedPane tabbedPane = new JTabbedPane();
@@ -58,6 +59,7 @@ public class QicFrame extends JFrame {
 		tabbedPane.addTab("Automated", automatedPanel);
 		tabbedPane.addTab("Log", loggerPanel);
 		tabbedPane.addTab("Config", configPanel);
+		tabbedPane.addTab("Editor", editorPanel);
 		tabbedPane.addTab("About/Help", aboutPanel);
 		tabbedPane.addChangeListener(new ChangeListener() {
 			
