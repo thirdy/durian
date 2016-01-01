@@ -340,6 +340,8 @@ baseTypes['Slaughter Knife']='Daggers'
 baseTypes['Stiletto']='Daggers'
 baseTypes['Trisula']='Daggers'
 
+baseTypes['Blunt Arrow Quiver']='Quivers'
+baseTypes['Broadhead Arrow Quiver']='Quivers'
 baseTypes['Conductive Quiver']='Quivers'
 baseTypes['Cured Quiver']='Quivers'
 baseTypes['Fire Arrow Quiver']='Quivers'
