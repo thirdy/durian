@@ -2577,7 +2577,7 @@ var affixes = [
     {
         "categories": "Armor",
         "description": "Local Armor Rating",
-        "mod": "# to Armour",
+        "mod": "+# to Armour",
         "tier": 1,
         "value": "3 to 10",
         "minvalue": 3,
@@ -2608,7 +2608,7 @@ var affixes = [
     {
         "categories": "Armor",
         "description": "Local Armor Rating",
-        "mod": "# to Armour",
+        "mod": "+# to Armour",
         "tier": 2,
         "value": "11 to 35",
         "minvalue": 11,
@@ -2639,7 +2639,7 @@ var affixes = [
     {
         "categories": "Armor",
         "description": "Local Armor Rating",
-        "mod": "# to Armour",
+        "mod": "+# to Armour",
         "tier": 3,
         "value": "36 to 60",
         "minvalue": 36,
@@ -2670,7 +2670,7 @@ var affixes = [
     {
         "categories": "Armor",
         "description": "Local Armor Rating",
-        "mod": "# to Armour",
+        "mod": "+# to Armour",
         "tier": 4,
         "value": "61 to 138",
         "minvalue": 61,
@@ -2701,7 +2701,7 @@ var affixes = [
     {
         "categories": "Armor",
         "description": "Local Armor Rating",
-        "mod": "# to Armour",
+        "mod": "+# to Armour",
         "tier": 5,
         "value": "139 to 322",
         "minvalue": 139,
@@ -2732,7 +2732,7 @@ var affixes = [
     {
         "categories": "Armor",
         "description": "Local Armor Rating",
-        "mod": "# to Armour",
+        "mod": "+# to Armour",
         "tier": 7,
         "value": "323 to 400",
         "minvalue": 323,
@@ -2980,7 +2980,7 @@ var affixes = [
     {
         "categories": "Armor",
         "description": "Armor Rating +%",
-        "mod": "# to Armour",
+        "mod": "+# to Armour",
         "tier": 1,
         "value": "2 to 4",
         "minvalue": 2,
@@ -3011,7 +3011,7 @@ var affixes = [
     {
         "categories": "Armor",
         "description": "Armor Rating +%",
-        "mod": "# to Armour",
+        "mod": "+# to Armour",
         "tier": 2,
         "value": "5 to 7",
         "minvalue": 5,
@@ -3042,7 +3042,7 @@ var affixes = [
     {
         "categories": "Armor",
         "description": "Armor Rating +%",
-        "mod": "# to Armour",
+        "mod": "+# to Armour",
         "tier": 3,
         "value": "8 to 10",
         "minvalue": 8,
@@ -3073,7 +3073,7 @@ var affixes = [
     {
         "categories": "Armor",
         "description": "Armor Rating +%",
-        "mod": "# to Armour",
+        "mod": "+# to Armour",
         "tier": 4,
         "value": "11 to 13",
         "minvalue": 11,
@@ -3104,7 +3104,7 @@ var affixes = [
     {
         "categories": "Armor",
         "description": "Armor Rating +%",
-        "mod": "# to Armour",
+        "mod": "+# to Armour",
         "tier": 5,
         "value": "14 to 16",
         "minvalue": 14,
@@ -3135,7 +3135,7 @@ var affixes = [
     {
         "categories": "Armor",
         "description": "Armor Rating +%",
-        "mod": "# to Armour",
+        "mod": "+# to Armour",
         "tier": 7,
         "value": "17 to 19",
         "minvalue": 17,
@@ -3166,7 +3166,7 @@ var affixes = [
     {
         "categories": "Armor",
         "description": "Armor Rating +%",
-        "mod": "# to Armour",
+        "mod": "+# to Armour",
         "tier": 8,
         "value": "20 to 22",
         "minvalue": 20,
@@ -3383,7 +3383,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Base Max Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 1,
         "value": "1 to 3",
         "minvalue": 1,
@@ -3414,7 +3414,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Base Max Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 2,
         "value": "4 to 8",
         "minvalue": 4,
@@ -3445,7 +3445,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Base Max Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 3,
         "value": "9 to 12",
         "minvalue": 9,
@@ -3476,7 +3476,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Base Max Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 4,
         "value": "13 to 15",
         "minvalue": 13,
@@ -3507,7 +3507,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Base Max Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 5,
         "value": "16 to 19",
         "minvalue": 16,
@@ -3538,7 +3538,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Base Max Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 6,
         "value": "20 to 22",
         "minvalue": 20,
@@ -3569,7 +3569,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Base Max Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 7,
         "value": "23 to 26",
         "minvalue": 23,
@@ -3600,7 +3600,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Base Max Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 8,
         "value": "27 to 31",
         "minvalue": 27,
@@ -3631,7 +3631,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Base Max Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 9,
         "value": "32 to 37",
         "minvalue": 32,
@@ -3662,7 +3662,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Base Max Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 10,
         "value": "38 to 43",
         "minvalue": 38,
@@ -3693,7 +3693,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Base Max Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 11,
         "value": "44 to 47",
         "minvalue": 44,
@@ -3724,7 +3724,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Base Max Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 12,
         "value": "48 to 51",
         "minvalue": 48,
@@ -3755,7 +3755,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Local Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 1,
         "value": "3 to 5",
         "minvalue": 3,
@@ -3786,7 +3786,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Local Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 2,
         "value": "6 to 8",
         "minvalue": 6,
@@ -3817,7 +3817,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Local Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 3,
         "value": "9 to 12",
         "minvalue": 9,
@@ -3848,7 +3848,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Local Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 4,
         "value": "13 to 15",
         "minvalue": 13,
@@ -3879,7 +3879,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Local Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 5,
         "value": "16 to 19",
         "minvalue": 16,
@@ -3910,7 +3910,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Local Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 6,
         "value": "20 to 29",
         "minvalue": 20,
@@ -3941,7 +3941,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Local Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 7,
         "value": "30 to 48",
         "minvalue": 30,
@@ -3972,7 +3972,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Local Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 8,
         "value": "49 to 72",
         "minvalue": 49,
@@ -4003,7 +4003,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Local Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 9,
         "value": "73 to 106",
         "minvalue": 73,
@@ -4034,7 +4034,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Local Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 10,
         "value": "107 to 135",
         "minvalue": 107,
@@ -4065,7 +4065,7 @@ var affixes = [
     {
         "categories": "Energy shield",
         "description": "Local Energy Shield",
-        "mod": "# to maximum Energy Shield",
+        "mod": "+# to maximum Energy Shield",
         "tier": 11,
         "value": "136 to 145",
         "minvalue": 136,
@@ -4716,7 +4716,7 @@ var affixes = [
     {
         "categories": "Evasion",
         "description": "Base Evasion Rating",
-        "mod": "# to Evasion Rating",
+        "mod": "+# to Evasion Rating",
         "tier": 1,
         "value": "3 to 10",
         "minvalue": 3,
@@ -4747,7 +4747,7 @@ var affixes = [
     {
         "categories": "Evasion",
         "description": "Base Evasion Rating",
-        "mod": "# to Evasion Rating",
+        "mod": "+# to Evasion Rating",
         "tier": 2,
         "value": "11 to 35",
         "minvalue": 11,
@@ -4778,7 +4778,7 @@ var affixes = [
     {
         "categories": "Evasion",
         "description": "Base Evasion Rating",
-        "mod": "# to Evasion Rating",
+        "mod": "+# to Evasion Rating",
         "tier": 3,
         "value": "36 to 60",
         "minvalue": 36,
@@ -4809,7 +4809,7 @@ var affixes = [
     {
         "categories": "Evasion",
         "description": "Base Evasion Rating",
-        "mod": "# to Evasion Rating",
+        "mod": "+# to Evasion Rating",
         "tier": 4,
         "value": "61 to 80",
         "minvalue": 61,
@@ -4840,7 +4840,7 @@ var affixes = [
     {
         "categories": "Evasion",
         "description": "Base Evasion Rating",
-        "mod": "# to Evasion Rating",
+        "mod": "+# to Evasion Rating",
         "tier": 5,
         "value": "81 to 120",
         "minvalue": 81,
@@ -4871,7 +4871,7 @@ var affixes = [
     {
         "categories": "Evasion",
         "description": "Base Evasion Rating",
-        "mod": "# to Evasion Rating",
+        "mod": "+# to Evasion Rating",
         "tier": 6,
         "value": "121 to 150",
         "minvalue": 121,
@@ -4902,7 +4902,7 @@ var affixes = [
     {
         "categories": "Evasion",
         "description": "Base Evasion Rating",
-        "mod": "# to Evasion Rating",
+        "mod": "+# to Evasion Rating",
         "tier": 7,
         "value": "151 to 170",
         "minvalue": 151,
@@ -5150,7 +5150,7 @@ var affixes = [
     {
         "categories": "Evasion",
         "description": "Local Evasion Rating",
-        "mod": "# to Evasion Rating",
+        "mod": "+# to Evasion Rating",
         "tier": 1,
         "value": "3 to 10",
         "minvalue": 3,
@@ -5181,7 +5181,7 @@ var affixes = [
     {
         "categories": "Evasion",
         "description": "Local Evasion Rating",
-        "mod": "# to Evasion Rating",
+        "mod": "+# to Evasion Rating",
         "tier": 2,
         "value": "11 to 35",
         "minvalue": 11,
@@ -5212,7 +5212,7 @@ var affixes = [
     {
         "categories": "Evasion",
         "description": "Local Evasion Rating",
-        "mod": "# to Evasion Rating",
+        "mod": "+# to Evasion Rating",
         "tier": 3,
         "value": "36 to 60",
         "minvalue": 36,
@@ -5243,7 +5243,7 @@ var affixes = [
     {
         "categories": "Evasion",
         "description": "Local Evasion Rating",
-        "mod": "# to Evasion Rating",
+        "mod": "+# to Evasion Rating",
         "tier": 4,
         "value": "61 to 138",
         "minvalue": 61,
@@ -5274,7 +5274,7 @@ var affixes = [
     {
         "categories": "Evasion",
         "description": "Local Evasion Rating",
-        "mod": "# to Evasion Rating",
+        "mod": "+# to Evasion Rating",
         "tier": 5,
         "value": "139 to 322",
         "minvalue": 139,
@@ -5305,7 +5305,7 @@ var affixes = [
     {
         "categories": "Evasion",
         "description": "Local Evasion Rating",
-        "mod": "# to Evasion Rating",
+        "mod": "+# to Evasion Rating",
         "tier": 6,
         "value": "323 to 400",
         "minvalue": 323,
@@ -5801,7 +5801,7 @@ var affixes = [
     {
         "categories": "Gem level",
         "description": "Local Socketed Bow Gem Level +",
-        "mod": "# to Level of Socketed Bow Gems",
+        "mod": "+# to Level of Socketed Bow Gems",
         "tier": 1,
         "value": 1,
         "minvalue": 1,
@@ -5832,7 +5832,7 @@ var affixes = [
     {
         "categories": "Gem level",
         "description": "Local Socketed Bow Gem Level +",
-        "mod": "# to Level of Socketed Bow Gems",
+        "mod": "+# to Level of Socketed Bow Gems",
         "tier": 2,
         "value": 2,
         "minvalue": 2,
@@ -5863,7 +5863,7 @@ var affixes = [
     {
         "categories": "Gem level",
         "description": "Local Socketed Cold Gem Level +",
-        "mod": "# to Level of Socketed Cold Gems",
+        "mod": "+# to Level of Socketed Cold Gems",
         "tier": 3,
         "value": 1,
         "minvalue": 1,
@@ -5894,7 +5894,7 @@ var affixes = [
     {
         "categories": "Gem level",
         "description": "Local Socketed Cold Gem Level +",
-        "mod": "# to Level of Socketed Cold Gems",
+        "mod": "+# to Level of Socketed Cold Gems",
         "tier": 4,
         "value": 2,
         "minvalue": 2,
@@ -5925,7 +5925,7 @@ var affixes = [
     {
         "categories": "Gem level",
         "description": "Local Socketed Fire Gem Level +",
-        "mod": "# to Level of Socketed Fire Gems",
+        "mod": "+# to Level of Socketed Fire Gems",
         "tier": 5,
         "value": 1,
         "minvalue": 1,
@@ -5956,7 +5956,7 @@ var affixes = [
     {
         "categories": "Gem level",
         "description": "Local Socketed Fire Gem Level +",
-        "mod": "# to Level of Socketed Fire Gems",
+        "mod": "+# to Level of Socketed Fire Gems",
         "tier": 6,
         "value": 2,
         "minvalue": 2,
@@ -5987,7 +5987,7 @@ var affixes = [
     {
         "categories": "Gem level",
         "description": "Local Socketed Lightning Gem Level +",
-        "mod": "# to Level of Socketed Lightning Gems",
+        "mod": "+# to Level of Socketed Lightning Gems",
         "tier": 1,
         "value": 1,
         "minvalue": 1,
@@ -6018,7 +6018,7 @@ var affixes = [
     {
         "categories": "Gem level",
         "description": "Local Socketed Lightning Gem Level +",
-        "mod": "# to Level of Socketed Lightning Gems",
+        "mod": "+# to Level of Socketed Lightning Gems",
         "tier": 2,
         "value": 2,
         "minvalue": 2,
@@ -6049,7 +6049,7 @@ var affixes = [
     {
         "categories": "Gem level",
         "description": "Local Socketed Melee Gem Level +",
-        "mod": "# to Level of Socketed Melee Gems",
+        "mod": "+# to Level of Socketed Melee Gems",
         "tier": 1,
         "value": 1,
         "minvalue": 1,
@@ -6080,7 +6080,7 @@ var affixes = [
     {
         "categories": "Gem level",
         "description": "Local Socketed Melee Gem Level +",
-        "mod": "# to Level of Socketed Melee Gems",
+        "mod": "+# to Level of Socketed Melee Gems",
         "tier": 2,
         "value": 2,
         "minvalue": 2,
@@ -6111,7 +6111,7 @@ var affixes = [
     {
         "categories": "Gem level",
         "description": "Local Socketed Minion Gem Level +",
-        "mod": "# to Level of Socketed Minion Gems",
+        "mod": "+# to Level of Socketed Minion Gems",
         "tier": 3,
         "value": 1,
         "minvalue": 1,
@@ -6142,7 +6142,7 @@ var affixes = [
     {
         "categories": "Gem level",
         "description": "Local Socketed Minion Gem Level +",
-        "mod": "# to Level of Socketed Minion Gems",
+        "mod": "+# to Level of Socketed Minion Gems",
         "tier": 4,
         "value": 2,
         "minvalue": 2,
@@ -6173,7 +6173,7 @@ var affixes = [
     {
         "categories": "Gem level",
         "description": "Local Socketed Gem Level +",
-        "mod": "# to Level of Socketed Gems",
+        "mod": "+# to Level of Socketed Gems",
         "tier": 1,
         "value": 1,
         "minvalue": 1,
@@ -11660,7 +11660,7 @@ var affixes = [
     {
         "categories": "Accuracy",
         "description": "Accuracy Rating",
-        "mod": "# to Accuracy Rating",
+        "mod": "+# to Accuracy Rating",
         "tier": 1,
         "value": "5 to 15",
         "minvalue": 5,
@@ -11691,7 +11691,7 @@ var affixes = [
     {
         "categories": "Accuracy",
         "description": "Accuracy Rating",
-        "mod": "# to Accuracy Rating",
+        "mod": "+# to Accuracy Rating",
         "tier": 2,
         "value": "16 to 60",
         "minvalue": 16,
@@ -11722,7 +11722,7 @@ var affixes = [
     {
         "categories": "Accuracy",
         "description": "Accuracy Rating",
-        "mod": "# to Accuracy Rating",
+        "mod": "+# to Accuracy Rating",
         "tier": 3,
         "value": "61 to 100",
         "minvalue": 61,
@@ -11753,7 +11753,7 @@ var affixes = [
     {
         "categories": "Accuracy",
         "description": "Accuracy Rating",
-        "mod": "# to Accuracy Rating",
+        "mod": "+# to Accuracy Rating",
         "tier": 4,
         "value": "101 to 130",
         "minvalue": 101,
@@ -11784,7 +11784,7 @@ var affixes = [
     {
         "categories": "Accuracy",
         "description": "Accuracy Rating",
-        "mod": "# to Accuracy Rating",
+        "mod": "+# to Accuracy Rating",
         "tier": 5,
         "value": "131 to 165",
         "minvalue": 131,
@@ -11815,7 +11815,7 @@ var affixes = [
     {
         "categories": "Accuracy",
         "description": "Accuracy Rating",
-        "mod": "# to Accuracy Rating",
+        "mod": "+# to Accuracy Rating",
         "tier": 6,
         "value": "166 to 200",
         "minvalue": 166,
@@ -11846,7 +11846,7 @@ var affixes = [
     {
         "categories": "Accuracy",
         "description": "Accuracy Rating",
-        "mod": "# to Accuracy Rating",
+        "mod": "+# to Accuracy Rating",
         "tier": 7,
         "value": "201 to 250",
         "minvalue": 201,
@@ -11877,7 +11877,7 @@ var affixes = [
     {
         "categories": "Accuracy",
         "description": "Accuracy Rating",
-        "mod": "# to Accuracy Rating",
+        "mod": "+# to Accuracy Rating",
         "tier": 8,
         "value": "251 to 320",
         "minvalue": 251,
@@ -11908,7 +11908,7 @@ var affixes = [
     {
         "categories": "Accuracy",
         "description": "Accuracy Rating",
-        "mod": "# to Accuracy Rating",
+        "mod": "+# to Accuracy Rating",
         "tier": 9,
         "value": "321 to 400",
         "minvalue": 321,
@@ -11939,7 +11939,7 @@ var affixes = [
     {
         "categories": "Accuracy",
         "description": "Local Accuracy Rating",
-        "mod": "# to Accuracy Rating",
+        "mod": "+# to Accuracy Rating",
         "tier": 1,
         "value": "5 to 15",
         "minvalue": 5,
@@ -11970,7 +11970,7 @@ var affixes = [
     {
         "categories": "Accuracy",
         "description": "Local Accuracy Rating",
-        "mod": "# to Accuracy Rating",
+        "mod": "+# to Accuracy Rating",
         "tier": 2,
         "value": "16 to 60",
         "minvalue": 16,
@@ -12001,7 +12001,7 @@ var affixes = [
     {
         "categories": "Accuracy",
         "description": "Local Accuracy Rating",
-        "mod": "# to Accuracy Rating",
+        "mod": "+# to Accuracy Rating",
         "tier": 3,
         "value": "61 to 100",
         "minvalue": 61,
@@ -12032,7 +12032,7 @@ var affixes = [
     {
         "categories": "Accuracy",
         "description": "Local Accuracy Rating",
-        "mod": "# to Accuracy Rating",
+        "mod": "+# to Accuracy Rating",
         "tier": 4,
         "value": "101 to 130",
         "minvalue": 101,
@@ -12063,7 +12063,7 @@ var affixes = [
     {
         "categories": "Accuracy",
         "description": "Local Accuracy Rating",
-        "mod": "# to Accuracy Rating",
+        "mod": "+# to Accuracy Rating",
         "tier": 5,
         "value": "131 to 165",
         "minvalue": 131,
@@ -12094,7 +12094,7 @@ var affixes = [
     {
         "categories": "Accuracy",
         "description": "Local Accuracy Rating",
-        "mod": "# to Accuracy Rating",
+        "mod": "+# to Accuracy Rating",
         "tier": 6,
         "value": "166 to 200",
         "minvalue": 166,
@@ -12125,7 +12125,7 @@ var affixes = [
     {
         "categories": "Accuracy",
         "description": "Local Accuracy Rating",
-        "mod": "# to Accuracy Rating",
+        "mod": "+# to Accuracy Rating",
         "tier": 7,
         "value": "201 to 250",
         "minvalue": 201,
@@ -12156,7 +12156,7 @@ var affixes = [
     {
         "categories": "Accuracy",
         "description": "Local Accuracy Rating",
-        "mod": "# to Accuracy Rating",
+        "mod": "+# to Accuracy Rating",
         "tier": 8,
         "value": "251 to 320",
         "minvalue": 251,
@@ -12187,7 +12187,7 @@ var affixes = [
     {
         "categories": "Accuracy",
         "description": "Local Accuracy Rating",
-        "mod": "# to Accuracy Rating",
+        "mod": "+# to Accuracy Rating",
         "tier": 9,
         "value": "321 to 360",
         "minvalue": 321,
@@ -12683,7 +12683,7 @@ var affixes = [
     {
         "categories": "All attribute increase",
         "description": "Additional All Attributes",
-        "mod": "# to all Attributes",
+        "mod": "+# to all Attributes",
         "tier": 1,
         "value": "1 to 4",
         "minvalue": 1,
@@ -12714,7 +12714,7 @@ var affixes = [
     {
         "categories": "All attribute increase",
         "description": "Additional All Attributes",
-        "mod": "# to all Attributes",
+        "mod": "+# to all Attributes",
         "tier": 2,
         "value": "5 to 8",
         "minvalue": 5,
@@ -12745,7 +12745,7 @@ var affixes = [
     {
         "categories": "All attribute increase",
         "description": "Additional All Attributes",
-        "mod": "# to all Attributes",
+        "mod": "+# to all Attributes",
         "tier": 3,
         "value": "9 to 12",
         "minvalue": 9,
@@ -12776,7 +12776,7 @@ var affixes = [
     {
         "categories": "All attribute increase",
         "description": "Additional All Attributes",
-        "mod": "# to all Attributes",
+        "mod": "+# to all Attributes",
         "tier": 4,
         "value": "13 to 16",
         "minvalue": 13,
@@ -12807,7 +12807,7 @@ var affixes = [
     {
         "categories": "All attribute increase",
         "description": "Additional All Attributes",
-        "mod": "# to all Attributes",
+        "mod": "+# to all Attributes",
         "tier": 5,
         "value": "17 to 20",
         "minvalue": 17,
@@ -12838,7 +12838,7 @@ var affixes = [
     {
         "categories": "All attribute increase",
         "description": "Additional All Attributes",
-        "mod": "# to all Attributes",
+        "mod": "+# to all Attributes",
         "tier": 6,
         "value": "21 to 24",
         "minvalue": 21,
@@ -12869,7 +12869,7 @@ var affixes = [
     {
         "categories": "All attribute increase",
         "description": "Additional All Attributes",
-        "mod": "# to all Attributes",
+        "mod": "+# to all Attributes",
         "tier": 7,
         "value": "25 to 28",
         "minvalue": 25,
@@ -12900,7 +12900,7 @@ var affixes = [
     {
         "categories": "All attribute increase",
         "description": "Additional All Attributes",
-        "mod": "# to all Attributes",
+        "mod": "+# to all Attributes",
         "tier": 8,
         "value": "29 to 32",
         "minvalue": 29,
@@ -12931,7 +12931,7 @@ var affixes = [
     {
         "categories": "Dexterity increase",
         "description": "Additional Dexterity",
-        "mod": "# to Dexterity",
+        "mod": "+# to Dexterity",
         "tier": 1,
         "value": "8 to 12",
         "minvalue": 8,
@@ -12962,7 +12962,7 @@ var affixes = [
     {
         "categories": "Dexterity increase",
         "description": "Additional Dexterity",
-        "mod": "# to Dexterity",
+        "mod": "+# to Dexterity",
         "tier": 2,
         "value": "13 to 17",
         "minvalue": 13,
@@ -12993,7 +12993,7 @@ var affixes = [
     {
         "categories": "Dexterity increase",
         "description": "Additional Dexterity",
-        "mod": "# to Dexterity",
+        "mod": "+# to Dexterity",
         "tier": 3,
         "value": "18 to 22",
         "minvalue": 18,
@@ -13024,7 +13024,7 @@ var affixes = [
     {
         "categories": "Dexterity increase",
         "description": "Additional Dexterity",
-        "mod": "# to Dexterity",
+        "mod": "+# to Dexterity",
         "tier": 4,
         "value": "23 to 27",
         "minvalue": 23,
@@ -13055,7 +13055,7 @@ var affixes = [
     {
         "categories": "Dexterity increase",
         "description": "Additional Dexterity",
-        "mod": "# to Dexterity",
+        "mod": "+# to Dexterity",
         "tier": 5,
         "value": "28 to 32",
         "minvalue": 28,
@@ -13086,7 +13086,7 @@ var affixes = [
     {
         "categories": "Dexterity increase",
         "description": "Additional Dexterity",
-        "mod": "# to Dexterity",
+        "mod": "+# to Dexterity",
         "tier": 6,
         "value": "33 to 37",
         "minvalue": 33,
@@ -13117,7 +13117,7 @@ var affixes = [
     {
         "categories": "Dexterity increase",
         "description": "Additional Dexterity",
-        "mod": "# to Dexterity",
+        "mod": "+# to Dexterity",
         "tier": 7,
         "value": "38 to 42",
         "minvalue": 38,
@@ -13148,7 +13148,7 @@ var affixes = [
     {
         "categories": "Dexterity increase",
         "description": "Additional Dexterity",
-        "mod": "# to Dexterity",
+        "mod": "+# to Dexterity",
         "tier": 8,
         "value": "43 to 50",
         "minvalue": 43,
@@ -13179,7 +13179,7 @@ var affixes = [
     {
         "categories": "Dexterity increase",
         "description": "Additional Dexterity",
-        "mod": "# to Dexterity",
+        "mod": "+# to Dexterity",
         "tier": 9,
         "value": "51 to 55",
         "minvalue": 51,
@@ -13210,7 +13210,7 @@ var affixes = [
     {
         "categories": "Intelligence increase",
         "description": "Additional Intelligence",
-        "mod": "# to Intelligence",
+        "mod": "+# to Intelligence",
         "tier": 1,
         "value": "8 to 12",
         "minvalue": 8,
@@ -13241,7 +13241,7 @@ var affixes = [
     {
         "categories": "Intelligence increase",
         "description": "Additional Intelligence",
-        "mod": "# to Intelligence",
+        "mod": "+# to Intelligence",
         "tier": 2,
         "value": "13 to 17",
         "minvalue": 13,
@@ -13272,7 +13272,7 @@ var affixes = [
     {
         "categories": "Intelligence increase",
         "description": "Additional Intelligence",
-        "mod": "# to Intelligence",
+        "mod": "+# to Intelligence",
         "tier": 3,
         "value": "18 to 22",
         "minvalue": 18,
@@ -13303,7 +13303,7 @@ var affixes = [
     {
         "categories": "Intelligence increase",
         "description": "Additional Intelligence",
-        "mod": "# to Intelligence",
+        "mod": "+# to Intelligence",
         "tier": 4,
         "value": "23 to 27",
         "minvalue": 23,
@@ -13334,7 +13334,7 @@ var affixes = [
     {
         "categories": "Intelligence increase",
         "description": "Additional Intelligence",
-        "mod": "# to Intelligence",
+        "mod": "+# to Intelligence",
         "tier": 5,
         "value": "28 to 32",
         "minvalue": 28,
@@ -13365,7 +13365,7 @@ var affixes = [
     {
         "categories": "Intelligence increase",
         "description": "Additional Intelligence",
-        "mod": "# to Intelligence",
+        "mod": "+# to Intelligence",
         "tier": 6,
         "value": "33 to 37",
         "minvalue": 33,
@@ -13396,7 +13396,7 @@ var affixes = [
     {
         "categories": "Intelligence increase",
         "description": "Additional Intelligence",
-        "mod": "# to Intelligence",
+        "mod": "+# to Intelligence",
         "tier": 7,
         "value": "38 to 42",
         "minvalue": 38,
@@ -13427,7 +13427,7 @@ var affixes = [
     {
         "categories": "Intelligence increase",
         "description": "Additional Intelligence",
-        "mod": "# to Intelligence",
+        "mod": "+# to Intelligence",
         "tier": 8,
         "value": "43 to 50",
         "minvalue": 43,
@@ -13458,7 +13458,7 @@ var affixes = [
     {
         "categories": "Intelligence increase",
         "description": "Additional Intelligence",
-        "mod": "# to Intelligence",
+        "mod": "+# to Intelligence",
         "tier": 9,
         "value": "51 to 55",
         "minvalue": 51,
@@ -13489,7 +13489,7 @@ var affixes = [
     {
         "categories": "Strenght increase",
         "description": "Additional Strength",
-        "mod": "# to Strength",
+        "mod": "+# to Strength",
         "tier": 1,
         "value": "8 to 12",
         "minvalue": 8,
@@ -13520,7 +13520,7 @@ var affixes = [
     {
         "categories": "Strenght increase",
         "description": "Additional Strength",
-        "mod": "# to Strength",
+        "mod": "+# to Strength",
         "tier": 2,
         "value": "13 to 17",
         "minvalue": 13,
@@ -13551,7 +13551,7 @@ var affixes = [
     {
         "categories": "Strenght increase",
         "description": "Additional Strength",
-        "mod": "# to Strength",
+        "mod": "+# to Strength",
         "tier": 3,
         "value": "18 to 22",
         "minvalue": 18,
@@ -13582,7 +13582,7 @@ var affixes = [
     {
         "categories": "Strenght increase",
         "description": "Additional Strength",
-        "mod": "# to Strength",
+        "mod": "+# to Strength",
         "tier": 4,
         "value": "23 to 27",
         "minvalue": 23,
@@ -13613,7 +13613,7 @@ var affixes = [
     {
         "categories": "Strenght increase",
         "description": "Additional Strength",
-        "mod": "# to Strength",
+        "mod": "+# to Strength",
         "tier": 5,
         "value": "28 to 32",
         "minvalue": 28,
@@ -13644,7 +13644,7 @@ var affixes = [
     {
         "categories": "Strenght increase",
         "description": "Additional Strength",
-        "mod": "# to Strength",
+        "mod": "+# to Strength",
         "tier": 6,
         "value": "33 to 37",
         "minvalue": 33,
@@ -13675,7 +13675,7 @@ var affixes = [
     {
         "categories": "Strenght increase",
         "description": "Additional Strength",
-        "mod": "# to Strength",
+        "mod": "+# to Strength",
         "tier": 7,
         "value": "38 to 42",
         "minvalue": 38,
@@ -13706,7 +13706,7 @@ var affixes = [
     {
         "categories": "Strenght increase",
         "description": "Additional Strength",
-        "mod": "# to Strength",
+        "mod": "+# to Strength",
         "tier": 8,
         "value": "43 to 50",
         "minvalue": 43,
@@ -13737,7 +13737,7 @@ var affixes = [
     {
         "categories": "Strenght increase",
         "description": "Additional Strength",
-        "mod": "# to Strength",
+        "mod": "+# to Strength",
         "tier": 9,
         "value": "51 to 55",
         "minvalue": 51,
@@ -15690,7 +15690,7 @@ var affixes = [
     {
         "categories": "Life gain per target",
         "description": "Life Gain Per Target",
-        "mod": "# Life gained for each Enemy hit by your Attacks",
+        "mod": "+# Life gained for each Enemy hit by your Attacks",
         "tier": 1,
         "value": 2,
         "minvalue": 2,
@@ -15721,7 +15721,7 @@ var affixes = [
     {
         "categories": "Life gain per target",
         "description": "Life Gain Per Target",
-        "mod": "# Life gained for each Enemy hit by your Attacks",
+        "mod": "+# Life gained for each Enemy hit by your Attacks",
         "tier": 2,
         "value": 3,
         "minvalue": 3,
@@ -15752,7 +15752,7 @@ var affixes = [
     {
         "categories": "Life gain per target",
         "description": "Life Gain Per Target",
-        "mod": "# Life gained for each Enemy hit by your Attacks",
+        "mod": "+# Life gained for each Enemy hit by your Attacks",
         "tier": 3,
         "value": 4,
         "minvalue": 4,
@@ -15783,7 +15783,7 @@ var affixes = [
     {
         "categories": "Life gain per target",
         "description": "Life Gain Per Target",
-        "mod": "# Life gained for each Enemy hit by your Attacks",
+        "mod": "+# Life gained for each Enemy hit by your Attacks",
         "tier": 4,
         "value": 5,
         "minvalue": 5,
@@ -15814,7 +15814,7 @@ var affixes = [
     {
         "categories": "Life gained on enemy death",
         "description": "Life Gained On Enemy Death",
-        "mod": "# Life gained on Kill",
+        "mod": "+# Life gained on Kill",
         "tier": 1,
         "value": "3 to 6",
         "minvalue": 3,
@@ -15845,7 +15845,7 @@ var affixes = [
     {
         "categories": "Life gained on enemy death",
         "description": "Life Gained On Enemy Death",
-        "mod": "# Life gained on Kill",
+        "mod": "+# Life gained on Kill",
         "tier": 2,
         "value": "7 to 10",
         "minvalue": 7,
@@ -15876,7 +15876,7 @@ var affixes = [
     {
         "categories": "Life gained on enemy death",
         "description": "Life Gained On Enemy Death",
-        "mod": "# Life gained on Kill",
+        "mod": "+# Life gained on Kill",
         "tier": 3,
         "value": "11 to 14",
         "minvalue": 11,
@@ -16372,7 +16372,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Cold Dmg Resistance %",
-        "mod": "#% to Cold Resistance",
+        "mod": "+#% to Cold Resistance",
         "tier": 1,
         "value": "6 to 11",
         "minvalue": 6,
@@ -16403,7 +16403,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Cold Dmg Resistance %",
-        "mod": "#% to Cold Resistance",
+        "mod": "+#% to Cold Resistance",
         "tier": 2,
         "value": "12 to 17",
         "minvalue": 12,
@@ -16434,7 +16434,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Cold Dmg Resistance %",
-        "mod": "#% to Cold Resistance",
+        "mod": "+#% to Cold Resistance",
         "tier": 3,
         "value": "18 to 23",
         "minvalue": 18,
@@ -16465,7 +16465,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Cold Dmg Resistance %",
-        "mod": "#% to Cold Resistance",
+        "mod": "+#% to Cold Resistance",
         "tier": 4,
         "value": "24 to 29",
         "minvalue": 24,
@@ -16496,7 +16496,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Cold Dmg Resistance %",
-        "mod": "#% to Cold Resistance",
+        "mod": "+#% to Cold Resistance",
         "tier": 5,
         "value": "30 to 35",
         "minvalue": 30,
@@ -16527,7 +16527,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Cold Dmg Resistance %",
-        "mod": "#% to Cold Resistance",
+        "mod": "+#% to Cold Resistance",
         "tier": 6,
         "value": "36 to 41",
         "minvalue": 36,
@@ -16558,7 +16558,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Cold Dmg Resistance %",
-        "mod": "#% to Cold Resistance",
+        "mod": "+#% to Cold Resistance",
         "tier": 7,
         "value": "42 to 45",
         "minvalue": 42,
@@ -16589,7 +16589,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Cold Dmg Resistance %",
-        "mod": "#% to Cold Resistance",
+        "mod": "+#% to Cold Resistance",
         "tier": 8,
         "value": "46 to 48",
         "minvalue": 46,
@@ -16620,7 +16620,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Fire Dmg Resistance %",
-        "mod": "#% to Fire Resistance",
+        "mod": "+#% to Fire Resistance",
         "tier": 1,
         "value": "6 to 11",
         "minvalue": 6,
@@ -16651,7 +16651,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Fire Dmg Resistance %",
-        "mod": "#% to Fire Resistance",
+        "mod": "+#% to Fire Resistance",
         "tier": 2,
         "value": "12 to 17",
         "minvalue": 12,
@@ -16682,7 +16682,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Fire Dmg Resistance %",
-        "mod": "#% to Fire Resistance",
+        "mod": "+#% to Fire Resistance",
         "tier": 3,
         "value": "18 to 23",
         "minvalue": 18,
@@ -16713,7 +16713,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Fire Dmg Resistance %",
-        "mod": "#% to Fire Resistance",
+        "mod": "+#% to Fire Resistance",
         "tier": 4,
         "value": "24 to 29",
         "minvalue": 24,
@@ -16744,7 +16744,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Fire Dmg Resistance %",
-        "mod": "#% to Fire Resistance",
+        "mod": "+#% to Fire Resistance",
         "tier": 5,
         "value": "30 to 35",
         "minvalue": 30,
@@ -16775,7 +16775,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Fire Dmg Resistance %",
-        "mod": "#% to Fire Resistance",
+        "mod": "+#% to Fire Resistance",
         "tier": 6,
         "value": "36 to 41",
         "minvalue": 36,
@@ -16806,7 +16806,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Fire Dmg Resistance %",
-        "mod": "#% to Fire Resistance",
+        "mod": "+#% to Fire Resistance",
         "tier": 7,
         "value": "42 to 45",
         "minvalue": 42,
@@ -16837,7 +16837,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Fire Dmg Resistance %",
-        "mod": "#% to Fire Resistance",
+        "mod": "+#% to Fire Resistance",
         "tier": 8,
         "value": "46 to 48",
         "minvalue": 46,
@@ -16868,7 +16868,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Lightning Dmg Resistance %",
-        "mod": "#% to Lightning Resistance",
+        "mod": "+#% to Lightning Resistance",
         "tier": 1,
         "value": "6 to 11",
         "minvalue": 6,
@@ -16899,7 +16899,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Lightning Dmg Resistance %",
-        "mod": "#% to Lightning Resistance",
+        "mod": "+#% to Lightning Resistance",
         "tier": 2,
         "value": "12 to 17",
         "minvalue": 12,
@@ -16930,7 +16930,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Lightning Dmg Resistance %",
-        "mod": "#% to Lightning Resistance",
+        "mod": "+#% to Lightning Resistance",
         "tier": 3,
         "value": "18 to 23",
         "minvalue": 18,
@@ -16961,7 +16961,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Lightning Dmg Resistance %",
-        "mod": "#% to Lightning Resistance",
+        "mod": "+#% to Lightning Resistance",
         "tier": 4,
         "value": "24 to 29",
         "minvalue": 24,
@@ -16992,7 +16992,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Lightning Dmg Resistance %",
-        "mod": "#% to Lightning Resistance",
+        "mod": "+#% to Lightning Resistance",
         "tier": 5,
         "value": "30 to 35",
         "minvalue": 30,
@@ -17023,7 +17023,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Lightning Dmg Resistance %",
-        "mod": "#% to Lightning Resistance",
+        "mod": "+#% to Lightning Resistance",
         "tier": 6,
         "value": "36 to 41",
         "minvalue": 36,
@@ -17054,7 +17054,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Lightning Dmg Resistance %",
-        "mod": "#% to Lightning Resistance",
+        "mod": "+#% to Lightning Resistance",
         "tier": 7,
         "value": "42 to 45",
         "minvalue": 42,
@@ -17085,7 +17085,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Lightning Dmg Resistance %",
-        "mod": "#% to Lightning Resistance",
+        "mod": "+#% to Lightning Resistance",
         "tier": 8,
         "value": "46 to 48",
         "minvalue": 46,
@@ -17116,7 +17116,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Chaos Dmg Resistance %",
-        "mod": "#% to Chaos Resistance",
+        "mod": "+#% to Chaos Resistance",
         "tier": 1,
         "value": "5 to 10",
         "minvalue": 5,
@@ -17147,7 +17147,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Chaos Dmg Resistance %",
-        "mod": "#% to Chaos Resistance",
+        "mod": "+#% to Chaos Resistance",
         "tier": 2,
         "value": "11 to 15",
         "minvalue": 11,
@@ -17178,7 +17178,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Chaos Dmg Resistance %",
-        "mod": "#% to Chaos Resistance",
+        "mod": "+#% to Chaos Resistance",
         "tier": 3,
         "value": "16 to 20",
         "minvalue": 16,
@@ -17209,7 +17209,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Chaos Dmg Resistance %",
-        "mod": "#% to Chaos Resistance",
+        "mod": "+#% to Chaos Resistance",
         "tier": 4,
         "value": "21 to 25",
         "minvalue": 21,
@@ -17240,7 +17240,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Chaos Dmg Resistance %",
-        "mod": "#% to Chaos Resistance",
+        "mod": "+#% to Chaos Resistance",
         "tier": 5,
         "value": "26 to 30",
         "minvalue": 26,
@@ -17271,7 +17271,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Chaos Dmg Resistance %",
-        "mod": "#% to Chaos Resistance",
+        "mod": "+#% to Chaos Resistance",
         "tier": 6,
         "value": "31 to 35",
         "minvalue": 31,
@@ -17302,7 +17302,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Resist All Elements %",
-        "mod": "#% to all Elemental Resistances",
+        "mod": "+#% to all Elemental Resistances",
         "tier": 1,
         "value": "3 to 5",
         "minvalue": 3,
@@ -17333,7 +17333,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Resist All Elements %",
-        "mod": "#% to all Elemental Resistances",
+        "mod": "+#% to all Elemental Resistances",
         "tier": 2,
         "value": "6 to 8",
         "minvalue": 6,
@@ -17364,7 +17364,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Resist All Elements %",
-        "mod": "#% to all Elemental Resistances",
+        "mod": "+#% to all Elemental Resistances",
         "tier": 3,
         "value": "9 to 11",
         "minvalue": 9,
@@ -17395,7 +17395,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Resist All Elements %",
-        "mod": "#% to all Elemental Resistances",
+        "mod": "+#% to all Elemental Resistances",
         "tier": 4,
         "value": "12 to 14",
         "minvalue": 12,
@@ -17426,7 +17426,7 @@ var affixes = [
     {
         "categories": "Resistance",
         "description": "Base Resist All Elements %",
-        "mod": "#% to all Elemental Resistances",
+        "mod": "+#% to all Elemental Resistances",
         "tier": 5,
         "value": "15 to 16",
         "minvalue": 15,

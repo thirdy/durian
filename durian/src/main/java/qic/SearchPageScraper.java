@@ -31,6 +31,7 @@ import org.jsoup.nodes.TextNode;
 import org.jsoup.select.Elements;
 
 import qic.SearchPageScraper.SearchResultItem.Mod;
+import qic.SearchPageScraper.SearchResultItem.Rarity;
 import qic.util.Util;
 import qic.util.Verify;
 
@@ -125,6 +126,25 @@ public class SearchPageScraper {
 					.orElse("")
 					.replaceAll(regex_horizontal_whitespace,"").trim();
 			
+			// ----- Rarity by checking the item name link class ----- //
+			// itemframe0 - normal
+			// itemframe1 - magic
+			// itemframe2 - rare
+			// itemframe3 - unique
+			// itemframe4 - gems
+			// itemframe5 - currency
+			// itemframe6 - divination card
+			String itemframeStr = element.getElementsByClass("title").stream()
+					.findFirst()
+					.map(n -> n.attr("class")).orElse(null);
+			itemframeStr = Util.regexMatch("itemframe(\\d)", itemframeStr, 1);
+			if (itemframeStr != null) {
+				int frame = Integer.parseInt(itemframeStr);
+				item.rarity = Rarity.valueOf(frame);
+			} else {
+				item.rarity = Rarity.unknown; 
+			}
+			
 			// ----- Verify ----- //
 			item.dataHash = element.getElementsByAttributeValue("onclick", "verify_modern(this)").stream()
 					.findFirst()
@@ -200,6 +220,7 @@ public class SearchPageScraper {
 		public String ign;
 		public boolean corrupted;
 		public boolean identified;
+		public Rarity rarity;
 		
 		public String dataHash; // use for verify
 		
@@ -554,6 +575,7 @@ public class SearchPageScraper {
 			str = StringUtils.replace(str, "exalted", "ex");
 			str = StringUtils.replace(str, "alchemy", "alch");
 			str = StringUtils.replace(str, "chaos", "ch");
+			str = StringUtils.replace(str, "chrome", "chrm");
 			return str;
 		}
 
@@ -629,5 +651,22 @@ public class SearchPageScraper {
 			return thread + name + buyout;
 		}
 
+		public static enum Rarity {
+			normal,
+			magic,
+			rare,
+			unique,
+			gem,
+			currency,
+			divinationcard, 
+			unknown;
+			
+			public static Rarity valueOf(int ordinal) {
+				for (Rarity r : values()) {
+					if (r.ordinal() == ordinal) return r;
+				}
+				return unknown;
+			}
+		}
 	}
 }

@@ -23,9 +23,9 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 public class Util {
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(Util.class.getName());
-	
+
 	public static String removeThoseDamnWhiteSpace(String s) {
 		s = StringUtils.deleteWhitespace(s);
 		StringBuilder sb = new StringBuilder();
@@ -37,27 +37,37 @@ public class Util {
 		}
 		return sb.toString();
 	}
+
+	public static String regexMatch(String regex, String s, int group) {
+		if (s != null) {
+			List<String> matches = regexMatches(regex, s, group, Pattern.CASE_INSENSITIVE);
+			if (!matches.isEmpty()) {
+				return matches.get(0);
+			}
+		}
+		return null;
+	}
 	
-	 public static List<String> regexMatches(String regex, String s, int group) {
-		 return regexMatches(regex, s, group, Pattern.CASE_INSENSITIVE);
-	 }
+	public static List<String> regexMatches(String regex, String s, int group) {
+		return regexMatches(regex, s, group, Pattern.CASE_INSENSITIVE);
+	}
+
 	public static List<String> regexMatches(String regex, String s, int group, int flags) {
-		 List<String> allMatches = new ArrayList<String>();
-		 Matcher m = Pattern.compile(regex, flags)
-		     .matcher(s);
-		 while (m.find()) {
-		   allMatches.add(m.group(group));
-		 }
-		 return allMatches;
-	 }
-	
+		List<String> allMatches = new ArrayList<String>();
+		Matcher m = Pattern.compile(regex, flags).matcher(s);
+		while (m.find()) {
+			allMatches.add(m.group(group));
+		}
+		return allMatches;
+	}
+
 	public static String encodeQueryParm(String queryParam) {
 		String key = substringBefore(queryParam, "=");
 		String value = substringAfter(queryParam, "=");
 		try {
 			value = URLEncoder.encode(value, "UTF-8");
 		} catch (UnsupportedEncodingException e) {
-			throw new RuntimeException(e); 
+			throw new RuntimeException(e);
 		}
 		return key + "=" + value;
 	}
@@ -66,24 +76,22 @@ public class Util {
 		File file = new File(fileName);
 		overwriteFile(file, contents);
 	}
-	
+
 	public static void overwriteFile(File file, String contents) throws IOException {
-		FileUtils.writeStringToFile(file , contents, "UTF-8", false);
+		FileUtils.writeStringToFile(file, contents, "UTF-8", false);
 	}
 
 	public static String toJsonPretty(Object obj) {
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		return gson.toJson(obj);
 	}
-	
+
 	public static List<String> loadSearchList(String filename) {
 		List<String> lines;
 		try {
 			lines = FileUtils.readLines(new File(filename));
-			lines = lines.stream()
-					.filter(s -> isNotBlank(s) && !s.startsWith(";"))
-					.collect(toList());
-				return lines;
+			lines = lines.stream().filter(s -> isNotBlank(s) && !s.startsWith(";")).collect(toList());
+			return lines;
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}

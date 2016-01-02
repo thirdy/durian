@@ -17,8 +17,9 @@ function process(_logger, items) {
 	logger = _logger
 	for (idx in items) {
 		item = items[idx]
-		logger.info('name: ' + item.name)
-		processExplicitMods(item)
+		//logger.info('name: ' + item.name + " rarity: " + item.rarity.name())
+		if (item.rarity.name() == "magic" || item.rarity.name() == "rare") 
+			processExplicitMods(item)
 	}
 	return 'success'
 }
@@ -28,17 +29,15 @@ function processExplicitMods(item) {
 	explicitMods = item.explicitMods
 
 	baseType = determineBaseType(name)
-	logger.info('baseType: ' + baseType)
+	//logger.info('baseType: ' + baseType)
 	if(!baseType) return
 
-	// isUnique = true TODO, do we handle uniques?
-	
 	for(idx in explicitMods) {
 		var mod = explicitMods[idx]
-		logger.info('explicit mod: ' + mod.name + ' mod value: ' + mod.value)
+		//logger.info('explicit mod: ' + mod.name + ' mod value: ' + mod.value)
 		var affix = affixesLookup(baseType, mod.name, mod.value)
 		if(affix) {
-			logger.info('affix found:' + affix.mod + ' tier: ' + affix.tier)
+			//logger.info('affix found:' + affix.mod + ' tier: ' + affix.tier)
 			affixLabel = affix.affix == 'Prefix' ? '[prefix]' : '[suffix]'
 			tierLabel = '[T' + affix.tier + ']'
 			valueLabel = mod.value
