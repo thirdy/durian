@@ -20,3 +20,5 @@ onyx 50life 40eleres
 2hmace 450pdps
 wand 10flatcold
 wand 10flatcold name="Frigid Imbued Wand of Ruin"
+name="Prophet Crown"
+name="Dread Visage Prophet Crown"

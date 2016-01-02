@@ -7537,7 +7537,7 @@ var affixes = [
     {
         "categories": "Life",
         "description": "Base Max Life",
-        "mod": "# to maximum Life",
+        "mod": "+# to maximum Life",
         "tier": 2,
         "value": "3 to 9",
         "minvalue": 3,
@@ -7568,7 +7568,7 @@ var affixes = [
     {
         "categories": "Life",
         "description": "Base Max Life",
-        "mod": "# to maximum Life",
+        "mod": "+# to maximum Life",
         "tier": 3,
         "value": "10 to 19",
         "minvalue": 10,
@@ -7599,7 +7599,7 @@ var affixes = [
     {
         "categories": "Life",
         "description": "Base Max Life",
-        "mod": "# to maximum Life",
+        "mod": "+# to maximum Life",
         "tier": 4,
         "value": "20 to 29",
         "minvalue": 20,
@@ -7630,7 +7630,7 @@ var affixes = [
     {
         "categories": "Life",
         "description": "Base Max Life",
-        "mod": "# to maximum Life",
+        "mod": "+# to maximum Life",
         "tier": 5,
         "value": "30 to 39",
         "minvalue": 30,
@@ -7661,7 +7661,7 @@ var affixes = [
     {
         "categories": "Life",
         "description": "Base Max Life",
-        "mod": "# to maximum Life",
+        "mod": "+# to maximum Life",
         "tier": 6,
         "value": "40 to 49",
         "minvalue": 40,
@@ -7692,7 +7692,7 @@ var affixes = [
     {
         "categories": "Life",
         "description": "Base Max Life",
-        "mod": "# to maximum Life",
+        "mod": "+# to maximum Life",
         "tier": 7,
         "value": "50 to 59",
         "minvalue": 50,
@@ -7723,7 +7723,7 @@ var affixes = [
     {
         "categories": "Life",
         "description": "Base Max Life",
-        "mod": "# to maximum Life",
+        "mod": "+# to maximum Life",
         "tier": 8,
         "value": "60 to 69",
         "minvalue": 60,
@@ -7754,7 +7754,7 @@ var affixes = [
     {
         "categories": "Life",
         "description": "Base Max Life",
-        "mod": "# to maximum Life",
+        "mod": "+# to maximum Life",
         "tier": 9,
         "value": "70 to 79",
         "minvalue": 70,
@@ -7785,7 +7785,7 @@ var affixes = [
     {
         "categories": "Life",
         "description": "Base Max Life",
-        "mod": "# to maximum Life",
+        "mod": "+# to maximum Life",
         "tier": 10,
         "value": "80 to 89",
         "minvalue": 80,
@@ -7816,7 +7816,7 @@ var affixes = [
     {
         "categories": "Life",
         "description": "Base Max Life",
-        "mod": "# to maximum Life",
+        "mod": "+# to maximum Life",
         "tier": 11,
         "value": "90 to 99",
         "minvalue": 90,
@@ -7847,7 +7847,7 @@ var affixes = [
     {
         "categories": "Life",
         "description": "Base Max Life",
-        "mod": "# to maximum Life",
+        "mod": "+# to maximum Life",
         "tier": 12,
         "value": "100 to 109",
         "minvalue": 100,
@@ -7878,7 +7878,7 @@ var affixes = [
     {
         "categories": "Life",
         "description": "Base Max Life",
-        "mod": "# to maximum Life",
+        "mod": "+# to maximum Life",
         "tier": 13,
         "value": "110 to 119",
         "minvalue": 110,
