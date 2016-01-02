@@ -126,5 +126,9 @@ spellflatcold|sflatcold             =       mod_name=Adds #-# Cold Damage to Spe
 (\d+)-(\d+)(spellflatcold|sflatcold)=       mod_name=Adds #-# Cold Damage to Spells&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
 
 atkspeed|attackspeed                =       mod_name=(pseudo) (total) #% increased Attack Speed&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)(atkspeed|attackspeed)       =       mod_name=(pseudo) (total) #% increased Attack Speed&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)(atkspeed|attackspeed) =       mod_name=(pseudo) (total) #% increased Attack Speed&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+(\d+)(atkspeed|attackspeed)         =       mod_name=(pseudo) (total) #% increased Attack Speed&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)(atkspeed|attackspeed)   =       mod_name=(pseudo) (total) #% increased Attack Speed&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+
+minusmana                           =       mod_name=-# to Mana Cost of Skillss&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)minusmana                      =       mod_name=-# to Mana Cost of Skills&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)-(\d+)minusmana                =       mod_name=-# to Mana Cost of Skills&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
