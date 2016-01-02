@@ -165,7 +165,7 @@ public class AutomatedPanel extends JPanel {
 			String text = panel.searchListTa.getText();
 			if (!text.isEmpty()) {
 				panel.runBtn.setEnabled(false);
-				List<String> previousData = getTableModel().getData().stream().map(SearchResultItem::toUUID).collect(toList());
+				List<Integer> previousData = getTableModel().getData().stream().map(SearchResultItem::toUUID).collect(toList());
 				panel.table.clear();
 				String[] searches = text.split("\n");
 				logger.info("searches: " + Arrays.toString(searches));
@@ -196,9 +196,7 @@ public class AutomatedPanel extends JPanel {
 	    			
 	    			if (count > 0 && getBooleanProperty(Config.AUTOMATED_SEARCH_NOTIFY_NEWONLY, true)) {
 	    				logger.info("Now checking if there are actually new items..");
-	    				logger.info("Previous items: " + previousData.toString());
-	    				List<String> newItemsUUID = itemResults.stream().map(SearchResultItem::toUUID).collect(toList());
-	    				logger.info("New items: " + newItemsUUID.toString());
+	    				List<Integer> newItemsUUID = itemResults.stream().map(SearchResultItem::toUUID).collect(toList());
 						boolean foundNew = newItemsUUID.stream().anyMatch(uuid -> !previousData.contains(uuid));
 						logger.info("foundNew: " + foundNew);
 	    				if (!foundNew) {

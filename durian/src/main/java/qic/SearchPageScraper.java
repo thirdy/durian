@@ -405,6 +405,10 @@ public class SearchPageScraper {
 				}
 				return display;
 			}
+			
+			public String toUUID() {
+				return name + ":" + value;
+			}
 		}
 		
 		public String toDisplay(String newLine) {
@@ -648,8 +652,14 @@ public class SearchPageScraper {
 			}
 		}
 		
-		public String toUUID() {
-			return thread + name + buyout;
+		public int toUUID() {
+			String explicitModsUUID = explicitMods.stream().map(Mod::toUUID).collect(Collectors.joining(":"));
+			String implicitModuuid = implicitMod != null ? implicitMod.toUUID() : null;
+			List<String> uuidList = asList(thread, name, buyout, String.valueOf(corrupted), socketsRaw, quality, 
+					physDmgRangeAtMaxQuality, physDmgAtMaxQuality, eleDmgRange, attackSpeed, dmgAtMaxQuality, crit, level, eleDmg,
+					armourAtMaxQuality, evasionAtMaxQuality, energyShieldAtMaxQuality, block, mapQuantity, implicitModuuid, explicitModsUUID);
+			String uuid = uuidList.stream().collect(Collectors.joining(":"));
+			return Integer.valueOf(uuid.hashCode());
 		}
 
 		public static enum Rarity {
