@@ -3,132 +3,132 @@
 ;
 
  
-life                                =       mod_name=(pseudo) (total) +# to maximum Life&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)life                           =       mod_name=(pseudo) (total) +# to maximum Life&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)life                     =       mod_name=(pseudo) (total) +# to maximum Life&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+life                                =       mod_name=(pseudo) (total) +# to maximum Life&mod_min=&mod_max=&$MG
+(\d+)life                           =       mod_name=(pseudo) (total) +# to maximum Life&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)life                     =       mod_name=(pseudo) (total) +# to maximum Life&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-mlife                               =       mod_name=#% increased maximum Life&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)mlife                          =       mod_name=#% increased maximum Life&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)mlife                    =       mod_name=#% increased maximum Life&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+mlife                               =       mod_name=#% increased maximum Life&mod_min=&mod_max=&$MG
+(\d+)mlife                          =       mod_name=#% increased maximum Life&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)mlife                    =       mod_name=#% increased maximum Life&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-mana                                =       mod_name=(pseudo) (total) +# to maximum Mana&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)mana                           =       mod_name=(pseudo) (total) +# to maximum Mana&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)mana                     =       mod_name=(pseudo) (total) +# to maximum Mana&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+mana                                =       mod_name=(pseudo) (total) +# to maximum Mana&mod_min=&mod_max=&$MG
+(\d+)mana                           =       mod_name=(pseudo) (total) +# to maximum Mana&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)mana                     =       mod_name=(pseudo) (total) +# to maximum Mana&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-totalres|tres|res                   =       mod_name=(pseudo) +#% total Resistance&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)(totalres|tres|res)            =       mod_name=(pseudo) +#% total Resistance&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)(totalres|tres|res)      =       mod_name=(pseudo) +#% total Resistance&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+totalres|tres|res                   =       mod_name=(pseudo) +#% total Resistance&mod_min=&mod_max=&$MG
+(\d+)(totalres|tres|res)            =       mod_name=(pseudo) +#% total Resistance&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(totalres|tres|res)      =       mod_name=(pseudo) +#% total Resistance&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-eleres                              =       mod_name=(pseudo) +#% total Elemental Resistance&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)eleres                         =       mod_name=(pseudo) +#% total Elemental Resistance&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)eleres                   =       mod_name=(pseudo) +#% total Elemental Resistance&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+eleres                              =       mod_name=(pseudo) +#% total Elemental Resistance&mod_min=&mod_max=&$MG
+(\d+)eleres                         =       mod_name=(pseudo) +#% total Elemental Resistance&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)eleres                   =       mod_name=(pseudo) +#% total Elemental Resistance&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-fireres                             =       mod_name=(pseudo) (total) +#% to Fire Resistance&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)fireres                        =       mod_name=(pseudo) (total) +#% to Fire Resistance&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)fireres                  =       mod_name=(pseudo) (total) +#% to Fire Resistance&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+fireres                             =       mod_name=(pseudo) (total) +#% to Fire Resistance&mod_min=&mod_max=&$MG
+(\d+)fireres                        =       mod_name=(pseudo) (total) +#% to Fire Resistance&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)fireres                  =       mod_name=(pseudo) (total) +#% to Fire Resistance&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-coldres                             =       mod_name=(pseudo) (total) +#% to Cold Resistance&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)coldres                        =       mod_name=(pseudo) (total) +#% to Cold Resistance&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)coldres                  =       mod_name=(pseudo) (total) +#% to Cold Resistance&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+coldres                             =       mod_name=(pseudo) (total) +#% to Cold Resistance&mod_min=&mod_max=&$MG
+(\d+)coldres                        =       mod_name=(pseudo) (total) +#% to Cold Resistance&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)coldres                  =       mod_name=(pseudo) (total) +#% to Cold Resistance&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-lightres                            =       mod_name=(pseudo) (total) +#% to Lightning Resistance&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)lightres                       =       mod_name=(pseudo) (total) +#% to Lightning Resistance&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)lightres                 =       mod_name=(pseudo) (total) +#% to Lightning Resistance&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+lightres                            =       mod_name=(pseudo) (total) +#% to Lightning Resistance&mod_min=&mod_max=&$MG
+(\d+)lightres                       =       mod_name=(pseudo) (total) +#% to Lightning Resistance&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)lightres                 =       mod_name=(pseudo) (total) +#% to Lightning Resistance&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-chaosres|chres|chares               =       mod_name=+#% to Chaos Resistance&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)(chaosres|chres|chares)        =       mod_name=+#% to Chaos Resistance&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)(chaosres|chres|chares)  =       mod_name=+#% to Chaos Resistance&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+chaosres|chres|chares               =       mod_name=+#% to Chaos Resistance&mod_min=&mod_max=&$MG
+(\d+)(chaosres|chres|chares)        =       mod_name=+#% to Chaos Resistance&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(chaosres|chres|chares)  =       mod_name=+#% to Chaos Resistance&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-ms                                  =       mod_name=#% increased Movement Speed&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)ms                             =       mod_name=#% increased Movement Speed&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)ms                       =       mod_name=#% increased Movement Speed&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+ms                                  =       mod_name=#% increased Movement Speed&mod_min=&mod_max=&$MG
+(\d+)ms                             =       mod_name=#% increased Movement Speed&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)ms                       =       mod_name=#% increased Movement Speed&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-iir                                 =       mod_name=#% increased Rarity of Items found&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)iir                            =       mod_name=#% increased Rarity of Items found&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)iir                      =       mod_name=#% increased Rarity of Items found&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+iir                                 =       mod_name=#% increased Rarity of Items found&mod_min=&mod_max=&$MG
+(\d+)iir                            =       mod_name=#% increased Rarity of Items found&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)iir                      =       mod_name=#% increased Rarity of Items found&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-totaliir|tiir                       =       mod_name=(pseudo) (total) #% increased Rarity of Items found&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)(totaliir|tiir)                =       mod_name=(pseudo) (total) #% increased Rarity of Items found&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)(totaliir|tiir)          =       mod_name=(pseudo) (total) #% increased Rarity of Items found&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+totaliir|tiir                       =       mod_name=(pseudo) (total) #% increased Rarity of Items found&mod_min=&mod_max=&$MG
+(\d+)(totaliir|tiir)                =       mod_name=(pseudo) (total) #% increased Rarity of Items found&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(totaliir|tiir)          =       mod_name=(pseudo) (total) #% increased Rarity of Items found&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-spelldmg|sdmg                       =       mod_name=(pseudo) (total) #% increased Spell Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)(spelldmg|sdmg)                =       mod_name=(pseudo) (total) #% increased Spell Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)(spelldmg|sdmg)          =       mod_name=(pseudo) (total) #% increased Spell Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+spelldmg|sdmg                       =       mod_name=(pseudo) (total) #% increased Spell Damage&mod_min=&mod_max=&$MG
+(\d+)(spelldmg|sdmg)                =       mod_name=(pseudo) (total) #% increased Spell Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(spelldmg|sdmg)          =       mod_name=(pseudo) (total) #% increased Spell Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-colddmg|cdmg                        =       mod_name=#% increased Cold Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)(colddmg|cdmg)                 =       mod_name=#% increased Cold Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)(colddmg|cdmg)           =       mod_name=#% increased Cold Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+colddmg|cdmg                        =       mod_name=#% increased Cold Damage&mod_min=&mod_max=&$MG
+(\d+)(colddmg|cdmg)                 =       mod_name=#% increased Cold Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(colddmg|cdmg)           =       mod_name=#% increased Cold Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-firedmg|fdmg                        =       mod_name=#% increased Fire Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)(firedmg|fdmg)                 =       mod_name=#% increased Fire Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)(firedmg|fdmg)           =       mod_name=#% increased Fire Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+firedmg|fdmg                        =       mod_name=#% increased Fire Damage&mod_min=&mod_max=&$MG
+(\d+)(firedmg|fdmg)                 =       mod_name=#% increased Fire Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(firedmg|fdmg)           =       mod_name=#% increased Fire Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-lightdmg|ldmg                       =       mod_name=#% increased Lightning Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)(lightdmg|ldmg)                =       mod_name=#% increased Lightning Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)(lightdmg|ldmg)          =       mod_name=#% increased Lightning Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+lightdmg|ldmg                       =       mod_name=#% increased Lightning Damage&mod_min=&mod_max=&$MG
+(\d+)(lightdmg|ldmg)                =       mod_name=#% increased Lightning Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(lightdmg|ldmg)          =       mod_name=#% increased Lightning Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-manaregen|mregen                    =       mod_name=(pseudo) (total) #% increased Mana Regeneration Rate&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)(manaregen|mregen)             =       mod_name=(pseudo) (total) #% increased Mana Regeneration Rate&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)(manaregen|mregen)       =       mod_name=(pseudo) (total) #% increased Mana Regeneration Rate&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+manaregen|mregen                    =       mod_name=(pseudo) (total) #% increased Mana Regeneration Rate&mod_min=&mod_max=&$MG
+(\d+)(manaregen|mregen)             =       mod_name=(pseudo) (total) #% increased Mana Regeneration Rate&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(manaregen|mregen)       =       mod_name=(pseudo) (total) #% increased Mana Regeneration Rate&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-(\d+)dex                            =       mod_name=(pseudo) (total) +# to Dexterity&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)str                            =       mod_name=(pseudo) (total) +# to Strength&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)int                            =       mod_name=(pseudo) (total) +# to Intelligence&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+(\d+)dex                            =       mod_name=(pseudo) (total) +# to Dexterity&mod_min=$GROUP1&mod_max=&$MG
+(\d+)str                            =       mod_name=(pseudo) (total) +# to Strength&mod_min=$GROUP1&mod_max=&$MG
+(\d+)int                            =       mod_name=(pseudo) (total) +# to Intelligence&mod_min=$GROUP1&mod_max=&$MG
 
-wed                                 =       mod_name=(pseudo) (total) #% increased Elemental Damage with Weapons&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)wed                            =       mod_name=(pseudo) (total) #% increased Elemental Damage with Weapons&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)wed                      =       mod_name=(pseudo) (total) #% increased Elemental Damage with Weapons&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+wed                                 =       mod_name=(pseudo) (total) #% increased Elemental Damage with Weapons&mod_min=&mod_max=&$MG
+(\d+)wed                            =       mod_name=(pseudo) (total) #% increased Elemental Damage with Weapons&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)wed                      =       mod_name=(pseudo) (total) #% increased Elemental Damage with Weapons&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-ipd|physdmg|pdmg                    =       mod_name=(pseudo) (total) #% increased Physical Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)(ipd|physdmg|pdmg)             =       mod_name=(pseudo) (total) #% increased Physical Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)(ipd|physdmg|pdmg)       =       mod_name=(pseudo) (total) #% increased Physical Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+ipd|physdmg|pdmg                    =       mod_name=(pseudo) (total) #% increased Physical Damage&mod_min=&mod_max=&$MG
+(\d+)(ipd|physdmg|pdmg)             =       mod_name=(pseudo) (total) #% increased Physical Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(ipd|physdmg|pdmg)       =       mod_name=(pseudo) (total) #% increased Physical Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-flatphys                            =       mod_name=Adds #-# Physical Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)flatphys                       =       mod_name=Adds #-# Physical Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)flatphys                 =       mod_name=Adds #-# Physical Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+flatphys                            =       mod_name=Adds #-# Physical Damage&mod_min=&mod_max=&$MG
+(\d+)flatphys                       =       mod_name=Adds #-# Physical Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)flatphys                 =       mod_name=Adds #-# Physical Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-hitscantbeevaded                    =       mod_name=Hits can't be Evaded&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
+hitscantbeevaded                    =       mod_name=Hits can't be Evaded&mod_min=&mod_max=&$MG
 
-gcrit                               =       mod_name=(pseudo) (total) #% increased Global Critical Strike Chance&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)gcrit                          =       mod_name=(pseudo) (total) #% increased Global Critical Strike Chance&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)gcrit                    =       mod_name=(pseudo) (total) #% increased Global Critical Strike Chance&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+gcrit                               =       mod_name=(pseudo) (total) #% increased Global Critical Strike Chance&mod_min=&mod_max=&$MG
+(\d+)gcrit                          =       mod_name=(pseudo) (total) #% increased Global Critical Strike Chance&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)gcrit                    =       mod_name=(pseudo) (total) #% increased Global Critical Strike Chance&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-castsp(ee)?d                        =       mod_name=(pseudo) (total) #% increased Cast Speed&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)castsp(ee)?d                   =       mod_name=(pseudo) (total) #% increased Cast Speed&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)castsp(ee)?d             =       mod_name=(pseudo) (total) #% increased Cast Speed&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+castsp(ee)?d                        =       mod_name=(pseudo) (total) #% increased Cast Speed&mod_min=&mod_max=&$MG
+(\d+)castsp(ee)?d                   =       mod_name=(pseudo) (total) #% increased Cast Speed&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)castsp(ee)?d             =       mod_name=(pseudo) (total) #% increased Cast Speed&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-incprojdmg                          =       mod_name=#% increased Projectile Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)incprojdmg                     =       mod_name=#% increased Projectile Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)incprojdmg               =       mod_name=#% increased Projectile Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+incprojdmg                          =       mod_name=#% increased Projectile Damage&mod_min=&mod_max=&$MG
+(\d+)incprojdmg                     =       mod_name=#% increased Projectile Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)incprojdmg               =       mod_name=#% increased Projectile Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-flatlight                           =       mod_name=Adds #-# Lightning Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)flatlight                      =       mod_name=Adds #-# Lightning Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)flatlight                =       mod_name=Adds #-# Lightning Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+flatlight                           =       mod_name=Adds #-# Lightning Damage&mod_min=&mod_max=&$MG
+(\d+)flatlight                      =       mod_name=Adds #-# Lightning Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)flatlight                =       mod_name=Adds #-# Lightning Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-flatfire                            =       mod_name=Adds #-# Fire Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)flatfire                       =       mod_name=Adds #-# Fire Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)flatfire                 =       mod_name=Adds #-# Fire Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+flatfire                            =       mod_name=Adds #-# Fire Damage&mod_min=&mod_max=&$MG
+(\d+)flatfire                       =       mod_name=Adds #-# Fire Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)flatfire                 =       mod_name=Adds #-# Fire Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-flatcold                            =       mod_name=Adds #-# Cold Damage&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)flatcold                       =       mod_name=Adds #-# Cold Damage&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)flatcold                 =       mod_name=Adds #-# Cold Damage&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+flatcold                            =       mod_name=Adds #-# Cold Damage&mod_min=&mod_max=&$MG
+(\d+)flatcold                       =       mod_name=Adds #-# Cold Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)flatcold                 =       mod_name=Adds #-# Cold Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-spellflatlight|sflatlight           =       mod_name=Adds #-# Lightning Damage to Spells&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)(spellflatlight|sflatlight)    =       mod_name=Adds #-# Lightning Damage to Spells&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)(spellflatlight|sflatlight)=     mod_name=Adds #-# Lightning Damage to Spells&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+spellflatlight|sflatlight           =       mod_name=Adds #-# Lightning Damage to Spells&mod_min=&mod_max=&$MG
+(\d+)(spellflatlight|sflatlight)    =       mod_name=Adds #-# Lightning Damage to Spells&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(spellflatlight|sflatlight)=     mod_name=Adds #-# Lightning Damage to Spells&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-spellflatfire|sflatfire             =       mod_name=Adds #-# Fire Damage to Spells&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)(spellflatfire|sflatfire)      =       mod_name=Adds #-# Fire Damage to Spells&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)(spellflatfire|sflatfire)=       mod_name=Adds #-# Fire Damage to Spells&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+spellflatfire|sflatfire             =       mod_name=Adds #-# Fire Damage to Spells&mod_min=&mod_max=&$MG
+(\d+)(spellflatfire|sflatfire)      =       mod_name=Adds #-# Fire Damage to Spells&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(spellflatfire|sflatfire)=       mod_name=Adds #-# Fire Damage to Spells&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-spellflatcold|sflatcold             =       mod_name=Adds #-# Cold Damage to Spells&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)(spellflatcold|sflatcold)      =       mod_name=Adds #-# Cold Damage to Spells&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)(spellflatcold|sflatcold)=       mod_name=Adds #-# Cold Damage to Spells&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+spellflatcold|sflatcold             =       mod_name=Adds #-# Cold Damage to Spells&mod_min=&mod_max=&$MG
+(\d+)(spellflatcold|sflatcold)      =       mod_name=Adds #-# Cold Damage to Spells&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(spellflatcold|sflatcold)=       mod_name=Adds #-# Cold Damage to Spells&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-atkspeed|attackspeed                =       mod_name=(pseudo) (total) #% increased Attack Speed&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)(atkspeed|attackspeed)         =       mod_name=(pseudo) (total) #% increased Attack Speed&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)(atkspeed|attackspeed)   =       mod_name=(pseudo) (total) #% increased Attack Speed&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+atkspeed|attackspeed                =       mod_name=(pseudo) (total) #% increased Attack Speed&mod_min=&mod_max=&$MG
+(\d+)(atkspeed|attackspeed)         =       mod_name=(pseudo) (total) #% increased Attack Speed&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(atkspeed|attackspeed)   =       mod_name=(pseudo) (total) #% increased Attack Speed&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-minusmana                           =       mod_name=-# to Mana Cost of Skillss&mod_min=&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)minusmana                      =       mod_name=-# to Mana Cost of Skills&mod_min=$GROUP1&mod_max=&group_type=And&group_min=&group_max=&group_count=1
-(\d+)-(\d+)minusmana                =       mod_name=-# to Mana Cost of Skills&mod_min=$GROUP1&mod_max=$GROUP2&group_type=And&group_min=&group_max=&group_count=1
+minusmana                           =       mod_name=-# to Mana Cost of Skillss&mod_min=&mod_max=&$MG
+(\d+)minusmana                      =       mod_name=-# to Mana Cost of Skills&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)minusmana                =       mod_name=-# to Mana Cost of Skills&mod_min=$GROUP1&mod_max=$GROUP2&$MG

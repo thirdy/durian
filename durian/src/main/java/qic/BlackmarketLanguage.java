@@ -11,6 +11,7 @@ import static org.apache.commons.lang3.StringUtils.substringBefore;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -30,6 +31,9 @@ public class BlackmarketLanguage {
 	// all tokens dictionary per keyword file
 	Map<String, Map<String, String>> dictionaries = new LinkedHashMap<>();
 	
+	// macro map
+	Map<String, String> macroMap = new HashMap<>();
+	
 	public BlackmarketLanguage() throws IOException {
 		File terms = new File("terms");
 		File[] files = terms.listFiles();
@@ -44,6 +48,7 @@ public class BlackmarketLanguage {
 			dictionary.putAll(map);
 			dictionaries.put(file.getName(), map);
 		}
+		macroMap.put("$MG", "group_type=And&group_min=&group_max=&group_count=1");
 	}
 
 	public ParseResult parse(String input) {
@@ -112,6 +117,11 @@ public class BlackmarketLanguage {
 					String placeholder = "$GROUP" + i;
 					if (result.contains(placeholder)) {
 						result = result.replace(placeholder, matcher.group(i));
+					}
+					for (Entry<String, String> macroEntry : macroMap.entrySet()) {
+						if (result.contains(macroEntry.getKey())) {
+							result = result.replace(macroEntry.getKey(), macroEntry.getValue());
+						}
 					}
 				}
 			}
