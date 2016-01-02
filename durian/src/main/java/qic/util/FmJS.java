@@ -55,7 +55,7 @@ public class FmJS {
 		try {
 			engine.eval(new FileReader(scriptFile));
 			Invocable invocable = (Invocable) engine;
-			Object result = invocable.invokeFunction("process", itemResults);
+			Object result = invocable.invokeFunction("process", logger, itemResults);
 			logger.info(format("Script %s process result: %s", script, result));
 		} catch (FileNotFoundException | ScriptException | NoSuchMethodException e) {
 			logger.error(format("Error while running %s script", script), e);

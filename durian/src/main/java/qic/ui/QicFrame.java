@@ -29,6 +29,9 @@ import javax.swing.JTabbedPane;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import qic.Main;
 import qic.util.SoundUtilsFX;
 
@@ -39,6 +42,8 @@ import qic.util.SoundUtilsFX;
 public class QicFrame extends JFrame {
 
 	private static final long serialVersionUID = 1L;
+	
+	private final Logger logger = LoggerFactory.getLogger(this.getClass().getName());
 	
 	public QicFrame(Main main, String query) {
 		super("Durian 0.4.8");
@@ -51,7 +56,8 @@ public class QicFrame extends JFrame {
 		AutomatedPanel automatedPanel = new AutomatedPanel(main);
 		LoggerPanel loggerPanel  = new LoggerPanel();
 		ConfigPanel configPanel  = new ConfigPanel();
-		EditorPanel editorPanel  = new EditorPanel();
+		TermsPanel termsPanel  = new TermsPanel();
+		ScriptsPanel scriptsPanel  = new ScriptsPanel();
 		AboutPanel aboutPanel  = new AboutPanel();
 		
 		JTabbedPane tabbedPane = new JTabbedPane();
@@ -59,7 +65,8 @@ public class QicFrame extends JFrame {
 		tabbedPane.addTab("Automated", automatedPanel);
 		tabbedPane.addTab("Log", loggerPanel);
 		tabbedPane.addTab("Config", configPanel);
-		tabbedPane.addTab("Editor", editorPanel);
+		tabbedPane.addTab("Terms", termsPanel);
+		tabbedPane.addTab("Scripts", scriptsPanel);
 		tabbedPane.addTab("About/Help", aboutPanel);
 		tabbedPane.addChangeListener(new ChangeListener() {
 			
@@ -84,8 +91,12 @@ public class QicFrame extends JFrame {
 			@Override
             public void windowClosing(WindowEvent e)
             {
+				logger.info("windowClosing: now saving file changes");
                 manualPanel.saveToFile();
                 automatedPanel.saveToFile();
+				termsPanel.saveCurrentScriptToFile();
+				scriptsPanel.saveCurrentScriptToFile();
+				configPanel.saveAndReloadConfig();
             }
 		});
 		

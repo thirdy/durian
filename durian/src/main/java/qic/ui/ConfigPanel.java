@@ -52,6 +52,7 @@ public class ConfigPanel extends RTextScrollPane {
 	public ConfigPanel() {
 	    textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_PROPERTIES_FILE);
 		setViewportView(textArea);
+		loadConfigToTextArea();
 		
 		textArea.addFocusListener(new FocusListener() {
 			
@@ -69,7 +70,7 @@ public class ConfigPanel extends RTextScrollPane {
 		});
 	}
 
-	private void saveAndReloadConfig() {
+	void saveAndReloadConfig() {
 		try {
 			// directly calling getText() from TextArea is causing bad values, probably swing quirks
 			Document document = textArea.getDocument();

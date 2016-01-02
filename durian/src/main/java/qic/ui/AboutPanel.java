@@ -75,8 +75,8 @@ public class AboutPanel extends JPanel {
 		String forumUrl = "https://www.pathofexile.com/forum/view-thread/1507190";
 		JButton forum = new JButtonLink("Forum Thread: " + forumUrl, forumUrl);
 		
-		String helpUrl = "http://thirdy.github.io/durian/help/help.htm";
-		JButton help = new JButtonLink("Search Term Helper: " + helpUrl, helpUrl);
+//		String helpUrl = "http://thirdy.github.io/durian/help/help.htm";
+//		JButton help = new JButtonLink("Search Term Helper: " + helpUrl, helpUrl);
 
 		add(Box.createRigidArea(new Dimension(5,10)));
 		add(aboutLbl);
@@ -84,8 +84,8 @@ public class AboutPanel extends JPanel {
 		add(website);
 		add(Box.createRigidArea(new Dimension(5,10)));
 		add(forum);
-		add(Box.createRigidArea(new Dimension(5,10)));
-		add(help);
+//		add(Box.createRigidArea(new Dimension(5,10)));
+//		add(help);
 		
 		JPanel helpPanel = new JPanel(new BorderLayout());
 		helpPanel.setBorder(BorderFactory.createTitledBorder("Help"));

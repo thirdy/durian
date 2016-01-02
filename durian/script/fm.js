@@ -6,14 +6,18 @@
 
  load('script/basetypes.js');
  load('script/affixes.js');
-
+ 
+ var logger
+ 
 /*
- * items - a list of SearchResultItem objects
+ * items  - a list of SearchResultItem objects
+ * _logger - logger, an instance of org.slf4j.Logger
  */
-function process(items) {	
+function process(_logger, items) {
+	logger = _logger
 	for (idx in items) {
 		item = items[idx]
-		print('name: ' + item.name)
+		logger.info('name: ' + item.name)
 		processExplicitMods(item)
 	}
 	return 'success'
@@ -24,17 +28,18 @@ function processExplicitMods(item) {
 	explicitMods = item.explicitMods
 
 	baseType = determineBaseType(name)
-	print('baseType: ' + baseType)
+	logger.info('baseType: ' + baseType)
 	if(!baseType) return
 
 	// isUnique = true TODO, do we handle uniques?
 	
 	for(idx in explicitMods) {
 		var mod = explicitMods[idx]
+		logger.info('explicit mod: ' + mod.name + ' mod value: ' + mod.value)
 		var affix = affixesLookup(baseType, mod.name, mod.value)
 		if(affix) {
-			print('affix found:' + affix.mod + ' tier: ' + affix.tier)
-			affixLabel = affix.affix == 'Prefix' ? '[P]' : '[S]'
+			logger.info('affix found:' + affix.mod + ' tier: ' + affix.tier)
+			affixLabel = affix.affix == 'Prefix' ? '[prefix]' : '[suffix]'
 			tierLabel = '[T' + affix.tier + ']'
 			valueLabel = mod.value
 			modNameLabel = mod.name
@@ -52,7 +57,7 @@ function affixesLookup(baseType, modName, modValue) {
 		baseTypeFlag = affix[baseType]
 		// print(baseTypeFlag + ':' + modName + ' = ' + affix.mod)
 		if(baseTypeFlag && baseTypeFlag == 'Yes' && affix.mod == modName) {
-			print('modValue:' + modValue + ' affix.minvalue: ' + affix.minvalue + ' affix.maxvalue: ' + affix.maxvalue)
+			// logger.info('modValue:' + modValue + ' affix.minvalue: ' + affix.minvalue + ' affix.maxvalue: ' + affix.maxvalue)
 			if(affix.minvalue <= modValue && affix.maxvalue >= modValue)
 			  return affix 
 		}

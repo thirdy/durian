@@ -45,7 +45,7 @@ import qic.util.Util;
  * @author thirdy
  *
  */
-public class EditorPanel extends JPanel {
+public class TermsPanel extends JPanel {
 	private static final long serialVersionUID = 1L;
 	
 	private final Logger logger = LoggerFactory.getLogger(this.getClass().getName());
@@ -54,11 +54,11 @@ public class EditorPanel extends JPanel {
 	private JTree fileTree;
 	private File currentScript;
 
-	public EditorPanel() {
+	public TermsPanel() {
 		setLayout(new BorderLayout());
 		
 		setupTextArea();
-		setupFileTree();
+		setupFileTree();	
 		
 		textArea.addFocusListener(new FocusListener() {
 			
@@ -75,7 +75,7 @@ public class EditorPanel extends JPanel {
 	}
 
 	private void setupFileTree() {
-		TreeModel model = new FileTreeModel(new File("."));
+		TreeModel model = new FileTreeModel(new File("terms"));
 		fileTree = new JTree(model);
 		fileTree.getSelectionModel().setSelectionMode(TreeSelectionModel.SINGLE_TREE_SELECTION);
 		fileTree.addTreeSelectionListener(tse -> {
@@ -86,7 +86,7 @@ public class EditorPanel extends JPanel {
 				 loadFileToTextArea(file);
 			 }
 		});
-		fileTree.setSelectionRow(0);
+		fileTree.setSelectionRow(1);
 		add(new JScrollPane(fileTree), BorderLayout.EAST);
 	}
 
@@ -106,7 +106,7 @@ public class EditorPanel extends JPanel {
 		add(new RTextScrollPane(textArea), BorderLayout.CENTER);
 	}
 	
-	private void saveCurrentScriptToFile() {
+	void saveCurrentScriptToFile() {
 		if (currentScript != null) {
 			try {
 				Util.overwriteFile(currentScript, textArea.getText());
