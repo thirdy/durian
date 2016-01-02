@@ -1,0 +1,37 @@
+;
+; Corrupted Mods
+;
+
+addarrow                        =       mod_name=(implicit) Adds an additional Arrow&mod_min=&mod_max=&$MG
+
+mfc                             =       mod_name=(implicit) +# Maximum Frenzy Charge&mod_min=&mod_max=&$MG
+(\d+)mfc                        =       mod_name=(implicit) +# Maximum Frenzy Charge&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)mfc                  =       mod_name=(implicit) +# Maximum Frenzy Charge&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+mpc                             =       mod_name=(implicit) +# Maximum Power Charge&mod_min=&mod_max=&$MG
+(\d+)mpc                        =       mod_name=(implicit) +# Maximum Power Charge&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)mpc                  =       mod_name=(implicit) +# Maximum Power Charge&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+mec                             =       mod_name=(implicit) +# Maximum Endurance Charge&mod_min=&mod_max=&$MG
+(\d+)mec                        =       mod_name=(implicit) +# Maximum Endurance Charge&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)mec                  =       mod_name=(implicit) +# Maximum Endurance Charge&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+addcurse                        =       mod_name=(implicit) Enemies can have # additional Curse&mod_min=&mod_max=&$MG
+(\d+)addcurse                   =       mod_name=(implicit) Enemies can have # additional Curse&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)addcurse             =       mod_name=(implicit) Enemies can have # additional Curse&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+blockchance|bc                  =       mod_name=(implicit) #% Chance to Block&mod_min=&mod_max=&$MG
+(\d+)(blockchance|bc)           =       mod_name=(implicit) #% Chance to Block&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(blockchance|bc)     =       mod_name=(implicit) #% Chance to Block&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+spellblockchance|sbc            =       mod_name=(implicit) #% Chance to Block Spells&mod_min=&mod_max=&$MG
+(\d+)(spellblockchance|sbc)     =       mod_name=(implicit) #% Chance to Block Spells&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(spellblockchance|sbc) =     mod_name=(implicit) #% Chance to Block Spells&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+plusgemlvl                      =       mod_name=(implicit) +# to Level of Socketed Gems&mod_min=&mod_max=&$MG
+(\d+)plusgemlvl                 =       mod_name=(implicit) +# to Level of Socketed Gems&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)plusgemlvl           =       mod_name=(implicit) +# to Level of Socketed Gems&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+implicitchaosres|impchres|impchares               =       mod_name=(implicit) +#% to Chaos Resistance&mod_min=&mod_max=&$MG
+(\d+)(implicitchaosres|impchres|impchares)        =       mod_name=(implicit) +#% to Chaos Resistance=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(implicitchaosres|impchres|impchares)  =       mod_name=(implicit) +#% to Chaos Resistance&mod_min=$GROUP1&mod_max=$GROUP2&$MG

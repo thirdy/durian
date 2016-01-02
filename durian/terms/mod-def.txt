@@ -1,0 +1,60 @@
+;
+; Defensive Mods
+;
+
+life                                =       mod_name=(pseudo) (total) +# to maximum Life&mod_min=&mod_max=&$MG
+(\d+)life                           =       mod_name=(pseudo) (total) +# to maximum Life&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)life                     =       mod_name=(pseudo) (total) +# to maximum Life&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+mlife                               =       mod_name=#% increased maximum Life&mod_min=&mod_max=&$MG
+(\d+)mlife                          =       mod_name=#% increased maximum Life&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)mlife                    =       mod_name=#% increased maximum Life&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+mana                                =       mod_name=(pseudo) (total) +# to maximum Mana&mod_min=&mod_max=&$MG
+(\d+)mana                           =       mod_name=(pseudo) (total) +# to maximum Mana&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)mana                     =       mod_name=(pseudo) (total) +# to maximum Mana&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+totalres|tres|res                   =       mod_name=(pseudo) +#% total Resistance&mod_min=&mod_max=&$MG
+(\d+)(totalres|tres|res)            =       mod_name=(pseudo) +#% total Resistance&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(totalres|tres|res)      =       mod_name=(pseudo) +#% total Resistance&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+eleres                              =       mod_name=(pseudo) +#% total Elemental Resistance&mod_min=&mod_max=&$MG
+(\d+)eleres                         =       mod_name=(pseudo) +#% total Elemental Resistance&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)eleres                   =       mod_name=(pseudo) +#% total Elemental Resistance&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+fireres                             =       mod_name=(pseudo) (total) +#% to Fire Resistance&mod_min=&mod_max=&$MG
+(\d+)fireres                        =       mod_name=(pseudo) (total) +#% to Fire Resistance&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)fireres                  =       mod_name=(pseudo) (total) +#% to Fire Resistance&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+coldres                             =       mod_name=(pseudo) (total) +#% to Cold Resistance&mod_min=&mod_max=&$MG
+(\d+)coldres                        =       mod_name=(pseudo) (total) +#% to Cold Resistance&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)coldres                  =       mod_name=(pseudo) (total) +#% to Cold Resistance&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+lightres                            =       mod_name=(pseudo) (total) +#% to Lightning Resistance&mod_min=&mod_max=&$MG
+(\d+)lightres                       =       mod_name=(pseudo) (total) +#% to Lightning Resistance&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)lightres                 =       mod_name=(pseudo) (total) +#% to Lightning Resistance&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+chaosres|chres|chares               =       mod_name=+#% to Chaos Resistance&mod_min=&mod_max=&$MG
+(\d+)(chaosres|chres|chares)        =       mod_name=+#% to Chaos Resistance&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(chaosres|chres|chares)  =       mod_name=+#% to Chaos Resistance&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+ms                                  =       mod_name=#% increased Movement Speed&mod_min=&mod_max=&$MG
+(\d+)ms                             =       mod_name=#% increased Movement Speed&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)ms                       =       mod_name=#% increased Movement Speed&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+iir                                 =       mod_name=#% increased Rarity of Items found&mod_min=&mod_max=&$MG
+(\d+)iir                            =       mod_name=#% increased Rarity of Items found&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)iir                      =       mod_name=#% increased Rarity of Items found&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+totaliir|tiir                       =       mod_name=(pseudo) (total) #% increased Rarity of Items found&mod_min=&mod_max=&$MG
+(\d+)(totaliir|tiir)                =       mod_name=(pseudo) (total) #% increased Rarity of Items found&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(totaliir|tiir)          =       mod_name=(pseudo) (total) #% increased Rarity of Items found&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+manaregen|mregen                    =       mod_name=(pseudo) (total) #% increased Mana Regeneration Rate&mod_min=&mod_max=&$MG
+(\d+)(manaregen|mregen)             =       mod_name=(pseudo) (total) #% increased Mana Regeneration Rate&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(manaregen|mregen)       =       mod_name=(pseudo) (total) #% increased Mana Regeneration Rate&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+(\d+)dex                            =       mod_name=(pseudo) (total) +# to Dexterity&mod_min=$GROUP1&mod_max=&$MG
+(\d+)str                            =       mod_name=(pseudo) (total) +# to Strength&mod_min=$GROUP1&mod_max=&$MG
+(\d+)int                            =       mod_name=(pseudo) (total) +# to Intelligence&mod_min=$GROUP1&mod_max=&$MG
+
