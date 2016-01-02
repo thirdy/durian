@@ -20,6 +20,7 @@ package qic.ui;
 import java.awt.BorderLayout;
 import java.awt.Font;
 
+import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
@@ -47,7 +48,11 @@ public class LoggerPanel extends JPanel {
 		appender.setLayout(new PatternLayout(PATTERN));
 		appender.activateOptions();
 		Logger.getRootLogger().addAppender(appender);
+		
+		JButton clearBtn = new JButton("Clear");
+		clearBtn.addActionListener(e -> textArea.setText(""));
 
 		add(new JScrollPane(textArea), BorderLayout.CENTER);
+		add(clearBtn, BorderLayout.NORTH);
 	}
 }

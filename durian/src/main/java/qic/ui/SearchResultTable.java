@@ -92,7 +92,7 @@ public class SearchResultTable extends JTable {
 
 	private void setupColumnWidths() {
 		setColumnWidths(this.getColumnModel(), 
-				asList( 110,    20,        210,    150,      50,    300,	  100,        100));
+				asList( 115,    20,        205,    130,      50,    345,	  90,        90));
 	}
 
 	private void setColumnWidths(TableColumnModel columnModel, List<Integer> widths) {

@@ -34,7 +34,6 @@ function processExplicitMods(item) {
 
 	for(idx in explicitMods) {
 		var mod = explicitMods[idx]
-		//logger.info('explicit mod: ' + mod.name + ' mod value: ' + mod.value)
 		var affix = affixesLookup(baseType, mod.name, mod.value)
 		if(affix) {
 			//logger.info('affix found:' + affix.mod + ' tier: ' + affix.tier)
@@ -44,6 +43,8 @@ function processExplicitMods(item) {
 			modNameLabel = mod.name
 			if(modNameLabel.startsWith('#')) modNameLabel = modNameLabel.substring(1)
 			mod.forgottenMod = affixLabel + tierLabel + ' ' + valueLabel + ' ' + modNameLabel
+		} else {
+			//logger.info('explicit mod: ' + mod.name + ' mod value: ' + mod.value)
 		}
 	}
 }
@@ -55,7 +56,7 @@ function affixesLookup(baseType, modName, modValue) {
 		affix = affixes[idx]
 		baseTypeFlag = affix[baseType]
 		// print(baseTypeFlag + ':' + modName + ' = ' + affix.mod)
-		if(baseTypeFlag && baseTypeFlag == 'Yes' && affix.mod == modName) {
+		if(baseTypeFlag && baseTypeFlag.indexOf('Yes') != -1 && affix.mod == modName) {
 			// logger.info('modValue:' + modValue + ' affix.minvalue: ' + affix.minvalue + ' affix.maxvalue: ' + affix.maxvalue)
 			if(affix.minvalue <= modValue && affix.maxvalue >= modValue)
 			  return affix 

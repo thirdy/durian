@@ -575,7 +575,8 @@ public class SearchPageScraper {
 			str = StringUtils.replace(str, "exalted", "ex");
 			str = StringUtils.replace(str, "alchemy", "alch");
 			str = StringUtils.replace(str, "chaos", "ch");
-			str = StringUtils.replace(str, "chrome", "chrm");
+			str = StringUtils.replace(str, "chromatic", "chrm");
+			str = StringUtils.replace(str, "chance", "chan");
 			return str;
 		}
 
