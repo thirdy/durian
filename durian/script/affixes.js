@@ -8746,7 +8746,7 @@ var affixes = [
     {
         "categories": "Weapon Elemental Dmg",
         "description": "Weapon Elemental Dmg +%",
-        "mod": "#% increased Elemental Damage",
+        "mod": "#% increased Elemental Damage with Weapons",
         "tier": 1,
         "value": "5 to 10",
         "minvalue": 5,
@@ -8777,7 +8777,7 @@ var affixes = [
     {
         "categories": "Weapon Elemental Dmg",
         "description": "Weapon Elemental Dmg +%",
-        "mod": "#% increased Elemental Damage",
+        "mod": "#% increased Elemental Damage with Weapons",
         "tier": 2,
         "value": "11 to 20",
         "minvalue": 11,
@@ -8808,7 +8808,7 @@ var affixes = [
     {
         "categories": "Weapon Elemental Dmg",
         "description": "Weapon Elemental Dmg +%",
-        "mod": "#% increased Elemental Damage",
+        "mod": "#% increased Elemental Damage with Weapons",
         "tier": 3,
         "value": "21 to 30",
         "minvalue": 21,
@@ -8839,7 +8839,7 @@ var affixes = [
     {
         "categories": "Weapon Elemental Dmg",
         "description": "Weapon Elemental Dmg +%",
-        "mod": "#% increased Elemental Damage",
+        "mod": "#% increased Elemental Damage with Weapons",
         "tier": 4,
         "value": "31 to 36",
         "minvalue": 31,
@@ -8870,7 +8870,7 @@ var affixes = [
     {
         "categories": "Weapon Elemental Dmg",
         "description": "Weapon Elemental Dmg +%",
-        "mod": "#% increased Elemental Damage",
+        "mod": "#% increased Elemental Damage with Weapons",
         "tier": 5,
         "value": "37 to 42",
         "minvalue": 37,
