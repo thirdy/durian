@@ -62,7 +62,6 @@ public class Main {
 	
 	private final static Logger logger = LoggerFactory.getLogger(Main.class.getName());
 	
-	public static BlackmarketLanguage language;
 	BackendClient backendClient = new BackendClient();
 	SessProp sessProp = new SessProp();
 	Long searchDuration = null; 
@@ -79,7 +78,6 @@ public class Main {
     }
 
 	public static void reloadConfig() throws Exception, FileNotFoundException {
-		language = new BlackmarketLanguage();
 		Config.loadConfig();
 	}
 	
@@ -191,6 +189,7 @@ public class Main {
 				.collect(Collectors.joining("&")); 
 		String query = terms.replaceAll(regex, " ");
 		
+		BlackmarketLanguage language = new BlackmarketLanguage();
 		ParseResult sortParseResult = language.parseSortToken(query);
 		String sort = sortParseResult.result;
 		sort = sort == null ? "price_in_chaos" : sort;
