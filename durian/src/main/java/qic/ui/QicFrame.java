@@ -46,7 +46,7 @@ public class QicFrame extends JFrame {
 	private final Logger logger = LoggerFactory.getLogger(this.getClass().getName());
 	
 	public QicFrame(Main main, String query) {
-		super("Durian 0.4.8");
+		super("Durian 0.4.9");
 		
 	    Image icon = Toolkit.getDefaultToolkit().getImage(QicFrame.class.getResource("/durian128.png"));
 	    this.setIconImage(icon);
