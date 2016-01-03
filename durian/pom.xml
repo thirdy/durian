@@ -4,13 +4,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.thirdy</groupId>
 	<artifactId>durian</artifactId>
-	<version>0.4.10</version>
+	<version>0.5</version>
 	<packaging>jar</packaging>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<durian.version>0.4.10</durian.version>
+		<durian.version>0.5</durian.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<mainClass>qic.Main</mainClass>
 	</properties>
