@@ -98,4 +98,8 @@ public class Config {
 	public static enum SoundMode {
 		EACH_SEARCH, ONCE
 	}
+
+	public static Properties getProperties() {
+		return config;
+	}
 }

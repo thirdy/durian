@@ -74,7 +74,8 @@ public class ConfigPanel extends RTextScrollPane {
 		try {
 			// directly calling getText() from TextArea is causing bad values, probably swing quirks
 			Document document = textArea.getDocument();
-			Util.overwriteFile(CONFIG_PROPERTIES_FILENAME, document.getText(0, document.getLength()));
+			String content = document.getText(0, document.getLength());
+			Util.overwriteFile(CONFIG_PROPERTIES_FILENAME, content);
 			Config.loadConfig();
 		} catch (BadLocationException | IOException e) {
 			logger.error("Error while saving to " + CONFIG_PROPERTIES_FILENAME);

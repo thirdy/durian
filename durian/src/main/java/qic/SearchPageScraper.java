@@ -283,6 +283,7 @@ public class SearchPageScraper {
 		
 		public List<String> getItem() {
 			return labelList(
+					labelVal("Id: ", id),
 					labelVal("Name", name), 
 					labelVal("League", league),
 					labelVal("Quality", quality), 

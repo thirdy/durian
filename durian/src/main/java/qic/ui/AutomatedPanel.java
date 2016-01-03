@@ -106,7 +106,7 @@ public class AutomatedPanel extends JPanel {
 			countdown = 0;
 			timer.restart();
 		});
-
+		
 		JPanel eastPanel = new JPanel(new BorderLayout(5, 5));
 		eastPanel.add(controlPanel, BorderLayout.NORTH);
 		eastPanel.add(new JScrollPane(searchListTa), BorderLayout.CENTER);
