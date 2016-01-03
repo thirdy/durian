@@ -18,6 +18,18 @@ lightdmg|ldmg                       =       mod_name=#% increased Lightning Dama
 (\d+)(lightdmg|ldmg)                =       mod_name=#% increased Lightning Damage&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)(lightdmg|ldmg)          =       mod_name=#% increased Lightning Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
+coldspelldmg|csdmg                  =       mod_name=(pseudo) (total) #% increased Cold Spell Damage&mod_min=&mod_max=&$MG
+(\d+)(coldspelldmg|csdmg)           =       mod_name=(pseudo) (total) #% increased Cold Spell Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(coldspelldmg|csdmg)     =       mod_name=(pseudo) (total) #% increased Cold Spell Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+firespelldmg|fsdmg                  =       mod_name=(pseudo) (total) #% increased Fire Spell Damage&mod_min=&mod_max=&$MG
+(\d+)(firespelldmg|fsdmg)           =       mod_name=(pseudo) (total) #% increased Fire Spell Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(firespelldmg|fsdmg)     =       mod_name=(pseudo) (total) #% increased Fire Spell Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+lightspelldmg|lsdmg                 =       mod_name=(pseudo) (total) #% increased Lightning Spell Damage&mod_min=&mod_max=&$MG
+(\d+)(lightspelldmg|lsdmg)          =       mod_name=(pseudo) (total) #% increased Lightning Spell Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(lightspelldmg|lsdmg)    =       mod_name=(pseudo) (total) #% increased Lightning Spell Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
 manaregen|mregen                    =       mod_name=(pseudo) (total) #% increased Mana Regeneration Rate&mod_min=&mod_max=&$MG
 (\d+)(manaregen|mregen)             =       mod_name=(pseudo) (total) #% increased Mana Regeneration Rate&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)(manaregen|mregen)       =       mod_name=(pseudo) (total) #% increased Mana Regeneration Rate&mod_min=$GROUP1&mod_max=$GROUP2&$MG
