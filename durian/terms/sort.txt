@@ -25,5 +25,5 @@ sortcrit            =       crit
 sortlvl             =       level
 sortmapq            =       mapq
 
-; This is used as sorting key for explicit mod groups, e.g. 'bowchaostrap' 
+; This is used as sorting key for explicit mod groups, e.g. 'bowchaostrap'
 sortgrp0        =       #|0
