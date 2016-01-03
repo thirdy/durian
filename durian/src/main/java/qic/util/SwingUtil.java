@@ -23,8 +23,6 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.net.URI;
 
-import javax.swing.JOptionPane;
-
 /**
  * @author thirdy
  *
@@ -52,10 +50,6 @@ public class SwingUtil {
 			clpbrd.setContents(stringSelection, null);
 	}
 
-	public static void showErrorMessage(String msg) {
-		JOptionPane.showMessageDialog(null, msg);
-	}
-	
 	public static void showError(Throwable e) {
 		new qic.util.SimpleExceptionHandler().uncaughtException(Thread.currentThread(), e);
 	}
