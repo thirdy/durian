@@ -2,28 +2,32 @@
 ; Sort, note that this is a special case since this is not actually part of the normal POST payload
 ; Note that all sort keywords should start by 'sort'
 ;
-sortprice           =       price_in_chaos
-sortlife            =       #(pseudo) (total) +# to maximum Life
-sortcoldres         =       #(pseudo) (total) +#% to Cold Resistance
-sortfireres         =       #(pseudo) (total) +#% to Fire Resistance
-sortlight(ning)?res =       #(pseudo) (total) +#% to Lightning Resistance
-sortdex             =       #(pseudo) (total) +# to Dexterity
-sortstr             =       #(pseudo) (total) +# to Strength
-sortint             =       #(pseudo) (total) +# to Intelligence
+sortprice                               =       price_in_chaos
+sortlife                                =       #(pseudo) (total) +# to maximum Life
+sortcoldres                             =       #(pseudo) (total) +#% to Cold Resistance
+sortfireres                             =       #(pseudo) (total) +#% to Fire Resistance
+sortlight(ning)?res                     =       #(pseudo) (total) +#% to Lightning Resistance
+sortdex                                 =       #(pseudo) (total) +# to Dexterity
+sortstr                                 =       #(pseudo) (total) +# to Strength
+sortint                                 =       #(pseudo) (total) +# to Intelligence
+sortsdmg|sortspelldmg                   =       #(pseudo) (total) #% increased Spell Damage
+sortcsdmg|sortcoldspelldmg			        =	      #(pseudo) (total) #% increased Cold Spell Damage
+sortfsdmg|sortfirespelldmg			        =	      #(pseudo) (total) #% increased Fire Spell Damage
+sortlsdmg|sortlightspelldmg			        =	      #(pseudo) (total) #% increased Lightning Spell Damage
 
-sortq               =       q
-sortpd              =       quality_pd
-sorted              =       ed
-sortaps             =       aps
-sortpdps            =       quality_pdps
-sortedps            =       edps
-sortar              =       quality_armour
-sortev              =       quality_evasion
-sortes              =       quality_shield
-sortbl(oc)?k        =       block
-sortcrit            =       crit
-sortlvl             =       level
-sortmapq            =       mapq
+sortq                                   =       q
+sortpd                                  =       quality_pd
+sorted                                  =       ed
+sortaps                                 =       aps
+sortpdps                                =       quality_pdps
+sortedps                                =       edps
+sortar                                  =       quality_armour
+sortev                                  =       quality_evasion
+sortes                                  =       quality_shield
+sortbl(oc)?k                            =       block
+sortcrit                                =       crit
+sortlvl                                 =       level
+sortmapq                                =       mapq
 
 ; This is used as sorting key for explicit mod groups, e.g. 'bowchaostrap'
 sortgrp0        =       #|0
