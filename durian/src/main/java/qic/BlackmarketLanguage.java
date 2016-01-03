@@ -118,11 +118,14 @@ public class BlackmarketLanguage {
 					if (result.contains(placeholder)) {
 						result = result.replace(placeholder, matcher.group(i));
 					}
-					for (Entry<String, String> macroEntry : macroMap.entrySet()) {
-						if (result.contains(macroEntry.getKey())) {
-							result = result.replace(macroEntry.getKey(), macroEntry.getValue());
-						}
-					}
+				}
+			}
+		}
+		if (result != null) {
+			// replace macro map place holders
+			for (Entry<String, String> macroEntry : macroMap.entrySet()) {
+				if (result.contains(macroEntry.getKey())) {
+					result = result.replace(macroEntry.getKey(), macroEntry.getValue());
 				}
 			}
 		}
