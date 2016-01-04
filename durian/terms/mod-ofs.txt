@@ -52,6 +52,10 @@ gcrit                               =       mod_name=(pseudo) (total) #% increas
 (\d+)gcrit                          =       mod_name=(pseudo) (total) #% increased Global Critical Strike Chance&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)gcrit                    =       mod_name=(pseudo) (total) #% increased Global Critical Strike Chance&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
+gcritmulti                          =       mod_name=(pseudo) (total) #% increased Global Critical Strike Multiplier&mod_min=&mod_max=&$MG
+(\d+)gcritmulti                     =       mod_name=(pseudo) (total) #% increased Global Critical Strike Multiplier&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)gcritmulti               =       mod_name=(pseudo) (total) #% increased Global Critical Strike Multiplier&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
 castsp(ee)?d                        =       mod_name=(pseudo) (total) #% increased Cast Speed&mod_min=&mod_max=&$MG
 (\d+)castsp(ee)?d                   =       mod_name=(pseudo) (total) #% increased Cast Speed&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)castsp(ee)?d             =       mod_name=(pseudo) (total) #% increased Cast Speed&mod_min=$GROUP1&mod_max=$GROUP2&$MG
