@@ -58,3 +58,6 @@ manaregen|mregen                    =       mod_name=(pseudo) (total) #% increas
 (\d+)str                            =       mod_name=(pseudo) (total) +# to Strength&mod_min=$GROUP1&mod_max=&$MG
 (\d+)int                            =       mod_name=(pseudo) (total) +# to Intelligence&mod_min=$GROUP1&mod_max=&$MG
 
+allatri|atri                        =       mod_name=(pseudo) (total) +# to all Attributes&mod_min=&mod_max=&$MG
+(\d+)(allatri|atri)                 =       mod_name=(pseudo) (total) +# to all Attributes&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(allatri|atri)           =       mod_name=(pseudo) (total) +# to all Attributes&mod_min=$GROUP1&mod_max=$GROUP2&$MG
