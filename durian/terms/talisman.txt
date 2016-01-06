@@ -1,0 +1,119 @@
+;
+; Talisman
+;
+
+ashscale                            	=       mod_name=(implicit) #% increased Fire Damage&mod_min=&mod_max=&$MG
+(\d+)ashscale                           =       mod_name=(implicit) #% increased Fire Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)ashscale                     =       mod_name=(implicit) #% increased Fire Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+blackmaw                                =       mod_name=(implicit) Has 1 Socket&mod_min=&mod_max=&$MG
+(\d+)blackmaw                           =       mod_name=(implicit) Has 1 Socket&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)blackmaw                     =       mod_name=(implicit) Has 1 Socket&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+bonespire                               =       mod_name=(implicit) #% increased maximum Mana&mod_min=&mod_max=&$MG
+(\d+)bonespire                          =       mod_name=(implicit) #% increased maximum Mana&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)bonespire                    =       mod_name=(implicit) #% increased maximum Mana&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+breakrib                                =       mod_name=(implicit) #% increased Physical Damage&mod_min=&mod_max=&$MG
+(\d+)breakrib                           =       mod_name=(implicit) #% increased Physical Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)breakrib                     =       mod_name=(implicit) #% increased Physical Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+undyingflesh                            =       mod_name=(implicit) +# to maximum number of Zombies&mod_min=&mod_max=&$MG
+(\d+)undyingflesh                       =       mod_name=(implicit) +# to maximum number of Zombies&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)undyingflesh                 =       mod_name=(implicit) +# to maximum number of Zombies&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+wereclaw                                =       mod_name=(implicit) #% increased Global Critical Strike Multiplier&mod_min=&mod_max=&$MG
+(\d+)wereclaw                           =       mod_name=(implicit) #% increased Global Critical Strike Multiplier&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)wereclaw                     =       mod_name=(implicit) #% increased Global Critical Strike Multiplier&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+deadhand                                =       mod_name=(implicit) #% increased Chaos Damage&mod_min=&mod_max=&$MG
+(\d+)deadhand                           =       mod_name=(implicit) #% increased Chaos Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)deadhand                     =       mod_name=(implicit) #% increased Chaos Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+deepone                                 =       mod_name=(implicit) #% increased Cold Damage&mod_min=&mod_max=&$MG
+(\d+)deepone                            =       mod_name=(implicit) #% increased Cold Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)deepone                      =       mod_name=(implicit) #% increased Cold Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+loneantler                              =       mod_name=(implicit) #% increased Lightning Damage&mod_min=&mod_max=&$MG
+(\d+)loneantler                         =       mod_name=(implicit) #% increased Lightning Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)loneantler                   =       mod_name=(implicit) #% increased Lightning Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+fangjaw                                 =       mod_name=(implicit) #% increased maximum Life&mod_min=&mod_max=&$MG
+(\d+)fangjaw                            =       mod_name=(implicit) #% increased maximum Life&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)fangjaw                      =       mod_name=(implicit) #% increased maximum Life&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+splitnewt                               =       mod_name=(implicit) #% chance to Freeze, Shock and Ignite&mod_min=&mod_max=&$MG
+(\d+)splitnewt                          =       mod_name=(implicit) #% chance to Freeze, Shock and Ignite&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)splitnewt                    =       mod_name=(implicit) #% chance to Freeze, Shock and Ignite&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+hexclaw                                 =       mod_name=(implicit) #% increased Global Critical Strike Chance&mod_min=&mod_max=&$MG
+(\d+)hexclaw                            =       mod_name=(implicit) #% increased Global Critical Strike Chance&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)hexclaw                      =       mod_name=(implicit) #% increased Global Critical Strike Chance&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+aviancoldtofire                         =       mod_name=(implicit) #% of Cold Damage taken as Fire Damage&mod_min=&mod_max=&$MG
+(\d+)aviancoldtofire                    =       mod_name=(implicit) #% of Cold Damage taken as Fire Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)aviancoldtofire              =       mod_name=(implicit) #% of Cold Damage taken as Fire Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+aviancoldtolight                        =       mod_name=(implicit) #% of Cold Damage taken as Lightning Damage&mod_min=&mod_max=&$MG
+(\d+)aviancoldtolight                   =       mod_name=(implicit) #% of Cold Damage taken as Lightning Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)aviancoldtolight             =       mod_name=(implicit) #% of Cold Damage taken as Lightning Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+avianfiretocold                         =       mod_name=(implicit) #% of Fire Damage taken as Cold Damage&mod_min=&mod_max=&$MG
+(\d+)avianfiretocold                    =       mod_name=(implicit) #% of Fire Damage taken as Cold Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)avianfiretocold              =       mod_name=(implicit) #% of Fire Damage taken as Cold Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+avianfiretolight                        =       mod_name=(implicit) #% of Fire Damage taken as Lightning Damage&mod_min=&mod_max=&$MG
+(\d+)avianfiretolight                   =       mod_name=(implicit) #% of Fire Damage taken as Lightning Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)avianfiretolight             =       mod_name=(implicit) #% of Fire Damage taken as Lightning Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+avianlighttocold                        =       mod_name=(implicit) #% of Lightning Damage taken as Cold Damage&mod_min=&mod_max=&$MG
+(\d+)avianlighttocold                   =       mod_name=(implicit) #% of Lightning Damage taken as Cold Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)avianlighttocold             =       mod_name=(implicit) #% of Lightning Damage taken as Cold Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+avianlighttofire                        =       mod_name=(implicit) #% of Lightning Damage taken as Fire Damage&mod_min=&mod_max=&$MG
+(\d+)avianlighttofire                   =       mod_name=(implicit) #% of Lightning Damage taken as Fire Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)avianlighttofire             =       mod_name=(implicit) #% of Lightning Damage taken as Fire Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+rotfeather                              =       mod_name=(implicit) #% increased Damage&mod_min=&mod_max=&$MG
+(\d+)rotfeather                         =       mod_name=(implicit) #% increased Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)rotfeather                   =       mod_name=(implicit) #% increased Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+primaskull                              =       mod_name=(implicit) #% of Life Regenerated per Second&mod_min=&mod_max=&$MG
+(\d+)primaskull                         =       mod_name=(implicit) #% of Life Regenerated per Second&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)primaskull                   =       mod_name=(implicit) #% of Life Regenerated per Second&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+clutching                               =       mod_name=(implicit) #% increased Global Defences&mod_min=&mod_max=&$MG
+(\d+)clutching                          =       mod_name=(implicit) #% increased Global Defences&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)clutching                    =       mod_name=(implicit) #% increased Global Defences&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+longtooth                               =       mod_name=(implicit) #% additional Physical Damage Reduction&mod_min=&mod_max=&$MG
+(\d+)longtooth                          =       mod_name=(implicit) #% additional Physical Damage Reduction&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)longtooth                    =       mod_name=(implicit) #% additional Physical Damage Reduction&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+monkeytwins                             =       mod_name=(implicit) #% increased Radius of Area Skills&mod_min=&mod_max=&$MG
+(\d+)monkeytwins                        =       mod_name=(implicit) #% increased Radius of Area Skills&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)monkeytwins                  =       mod_name=(implicit) #% increased Radius of Area Skills&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+spinefuse                               =       mod_name=(implicit) #% increased Quantity of Items found&mod_min=&mod_max=&$MG
+(\d+)spinefuse                          =       mod_name=(implicit) #% increased Quantity of Items found&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)spinefuse                    =       mod_name=(implicit) #% increased Quantity of Items found&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+threehands                              =       mod_name=(implicit) Gain #% of Physical Damage as Extra Damage of a random Element&mod_min=&mod_max=&$MG
+(\d+)threehands                         =       mod_name=(implicit) Gain #% of Physical Damage as Extra Damage of a random Element&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)threehands                   =       mod_name=(implicit) Gain #% of Physical Damage as Extra Damage of a random Element&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+threerat                                =       mod_name=(implicit) #% increased Attributes&mod_min=&mod_max=&$MG
+(\d+)threerat                           =       mod_name=(implicit) #% increased Attributes&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)threerat                     =       mod_name=(implicit) #% increased Attributes&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+monkeypower                             =       mod_name=(implicit) #% chance to gain a Power Charge on Kill&mod_min=&mod_max=&$MG
+(\d+)monkeypower                        =       mod_name=(implicit) #% chance to gain a Power Charge on Kill&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)monkeypower                  =       mod_name=(implicit) #% chance to gain a Power Charge on Kill&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+monkeyendurance                         =       mod_name=(implicit) #% chance to gain an Endurance Charge on Kill&mod_min=&mod_max=&$MG
+(\d+)monkeyendurance                    =       mod_name=(implicit) #% chance to gain an Endurance Charge on Kill&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)monkeyendurance              =       mod_name=(implicit) #% chance to gain an Endurance Charge on Kill&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+monkeyfrenzy                            =       mod_name=(implicit) #% chance to gain a Frenzy Charge on Kill&mod_min=&mod_max=&$MG
+(\d+)monkeyfrenzy                       =       mod_name=(implicit) #% chance to gain a Frenzy Charge on Kill&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)monkeyfrenzy                 =       mod_name=(implicit) #% chance to gain a Frenzy Charge on Kill&mod_min=$GROUP1&mod_max=$GROUP2&$MG
