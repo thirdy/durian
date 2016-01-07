@@ -7,8 +7,6 @@ ashscale                            	=       mod_name=(implicit) #% increased Fi
 (\d+)-(\d+)ashscale                     =       mod_name=(implicit) #% increased Fire Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
 blackmaw                                =       mod_name=(implicit) Has 1 Socket&mod_min=&mod_max=&$MG
-(\d+)blackmaw                           =       mod_name=(implicit) Has 1 Socket&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)blackmaw                     =       mod_name=(implicit) Has 1 Socket&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
 bonespire                               =       mod_name=(implicit) #% increased maximum Mana&mod_min=&mod_max=&$MG
 (\d+)bonespire                          =       mod_name=(implicit) #% increased maximum Mana&mod_min=$GROUP1&mod_max=&$MG
