@@ -160,6 +160,18 @@ flatcoldattacks                     =       mod_name=(pseudo) (total) Adds # Col
 (\d+)(flatcoldattacks)              =       mod_name=(pseudo) (total) Adds # Cold Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)(flatcoldattacks)        =       mod_name=(pseudo) (total) Adds # Cold Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-flatlightattacks                    =       mod_name=(pseudo) (total) Adds # Light Damage to Attacks&mod_min=&mod_max=&$MG
-(\d+)(flatlightattacks)             =       mod_name=(pseudo) (total) Adds # Light Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(flatlightattacks)       =       mod_name=(pseudo) (total) Adds # Light Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+flatlightattacks                    =       mod_name=(pseudo) (total) Adds # Lightning Damage to Attacks&mod_min=&mod_max=&$MG
+(\d+)(flatlightattacks)             =       mod_name=(pseudo) (total) Adds # Lightning Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(flatlightattacks)       =       mod_name=(pseudo) (total) Adds # Lightning Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+flatlightquiver                    =       mod_name=Adds #-# Lightning Damage to Attacks&mod_min=&mod_max=&$MG
+(\d+)(flatlightquiver)             =       mod_name=Adds #-# Lightning Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(flatlightquiver)       =       mod_name=Adds #-# Lightning Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+flatfirequiver                     =       mod_name=Adds #-# Fire Damage to Attacks&mod_min=&mod_max=&$MG
+(\d+)(flatfirequiver)              =       mod_name=Adds #-# Fire Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(flatfirequiver)        =       mod_name=Adds #-# Fire Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+flatcoldquiver                     =       mod_name=Adds #-# Cold Damage to Attacks&mod_min=&mod_max=&$MG
+(\d+)(flatcoldquiver)              =       mod_name=Adds #-# Cold Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(flatcoldquiver)        =       mod_name=Adds #-# Cold Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
