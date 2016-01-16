@@ -61,3 +61,7 @@ manaregen|mregen                    =       mod_name=(pseudo) (total) #% increas
 allatri|atri                        =       mod_name=(pseudo) (total) +# to all Attributes&mod_min=&mod_max=&$MG
 (\d+)(allatri|atri)                 =       mod_name=(pseudo) (total) +# to all Attributes&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)(allatri|atri)           =       mod_name=(pseudo) (total) +# to all Attributes&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+maximumenergyshield|maxes           =       mod_name=+# to maximum Energy Shield&mod_min=&mod_max=&$MG
+(\d+)(maximumenergyshield|maxes)    =       mod_name=+# to maximum Energy Shield&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(maximumenergyshield|maxes) =    mod_name=+# to maximum Energy Shield&mod_min=$GROUP1&mod_max=$GROUP2&$MG
