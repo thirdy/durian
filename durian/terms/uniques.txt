@@ -1,37 +1,37 @@
 ;
 ; Uniques
 ;
-Feastbind 								=	  name=Feastbind
-Faminebind 								=  	  name=Faminebind
-(The)?Retc								=	  name=The Retch
-Night'?s?Hold 							=	  name=Night's Hold
-Blightwell 								=	  name=Blightwell
-NaturalHierarchy 						=	  name=Natural Hierarchy
-Rigwald'?s?Curse 						=	  name=Rigwald's Curse
-Eyes(of)?(the)?Greatwolf				=	  name=Eyes of the Greatwolf
-Rigwald'?s?Crest 						=	  name=Rigwald's Crest
-Rigwald'?s?Command 						=	  name=Rigwald's Command
-Rigwald'?s?Savagery						=	  name=Rigwald's Savagery
-Rigwald'?s?Quills 						=	  name=Rigwald's Quills
+Feastbind 								              =	    name=Feastbind
+Faminebind 							              	=  	  name=Faminebind
+(The)?Retc							              	=	    name=The Retch
+Night'?s?Hold 							            =	    name=Night's Hold
+Blightwell                							=     name=Blightwell
+NaturalHierarchy             						=	    name=Natural Hierarchy
+Rigwald'?s?Curse             						= 	  name=Rigwald's Curse
+Eyes(of)?(the)?Greatwolf        				=	    name=Eyes of the Greatwolf
+Rigwald'?s?Crest 				       	      	=	    name=Rigwald's Crest
+Rigwald'?s?Command        		   				=	    name=Rigwald's Command
+Rigwald'?s?Savagery         						=	    name=Rigwald's Savagery
+Rigwald'?s?Quills                       =	    name=Rigwald's Quills
 Skyforth                                =     name=Skyforth
-(The)?Aylardex							=	  name=The Aylardex
-ExtractorMentis							= 	  name=Extractor Mentis
-Allure									=	  name=Allure
-AgnerodWest								=	  name=Agnerod West
-Femurs(of)?(the)?Saints					=	  name=Femurs of the Saints
-Hezmana'?sBloodlust						= 	  name=Hezmana's Bloodlust
-Vessel(of)?Vinktar 						=	  name=Vessel of Vinktar
-CoruscatingElixir 						= 	  name=Coruscating Elixir
-Rotgut									= 	  name=Rotgut
-Kongming'?s?Stratagem 					= 	  name=Kongming's Stratagem
-Roth'?s?Reac							=	  name=Roth's Reach
-StormPriso								=     name=Storm Prison
-Eclipse Solaris							= 	  name=Eclipse Solaris
-Bitterdream 							= 	  name=Bitterdream
-Repentance 								= 	  name=Repentance
-(The)?GoddessUnleashed 					=	  name=The Goddess Unleashed
-(The)?VinktarSquare						= 	  name=The Vinktar Square
-CaerBlaidd,?Wolfpack'?s?Den 			= 	  name=Caer Blaidd, Wolfpack's Den
+(The)?Aylardex                          =	    name=The Aylardex
+ExtractorMentis                         =     name=Extractor Mentis
+Allure                                  =	    name=Allure
+AgnerodWest                             =	    name=Agnerod West
+Femurs(of)?(the)?Saints                 =	    name=Femurs of the Saints
+Hezmana'?sBloodlust                     = 	  name=Hezmana's Bloodlust
+Vessel(of)?Vinktar                      =	    name=Vessel of Vinktar
+CoruscatingElixir                       = 	  name=Coruscating Elixir
+Rotgut                                  = 	  name=Rotgut
+Kongming'?s?Stratagem          					= 	  name=Kongming's Stratagem
+Roth'?s?Reac							              =	    name=Roth's Reach
+StormPriso								              =     name=Storm Prison
+Eclipse Solaris							            = 	  name=Eclipse Solaris
+Bitterdream 						              	= 	  name=Bitterdream
+Repentance 								              = 	  name=Repentance
+(The)?GoddessUnleashed 					        =	    name=The Goddess Unleashed
+(The)?VinktarSquare				          		= 	  name=The Vinktar Square
+CaerBlaidd,?Wolfpack'?s?Den       			= 	  name=Caer Blaidd, Wolfpack's Den
 ArakuTiki                               =     name=Araku Tiki
 Sidhebreath                             =     name=Sidhebreath
 KaruiWard                               =     name=Karui Ward
