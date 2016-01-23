@@ -1,29 +1,29 @@
 Scroll(of)?Wisdom                       =     name=Scroll of Wisdom
 PortalScroll                            =     name=Portal Scroll
-Armourer'?s?Scrap                       =     name=Armourer's Scrap
-Whetstone|Blacksmith'?s?Whetstone       =     name=Blacksmith's Whetstone
-Glassblower'?s?Bauble                   =     name=Glassblower's Bauble
-Chis|Cartographer'?s?Chisel             =     name=Cartographer's Chisel
-Gemcutter'?s?Prism                      =     name=Gemcutter's Prism
-Jeweller'?s?(Orb)?                      =     name=Jeweller's Orb
-Chromatic(Orb)?                         =     name=Chromatic Orb
-Fuse|Orb(of)?Fusing                     =     name=Orb of Fusing
-Transmute|Transmutation|Orb(of)?Transmutation                   =     name=Orb of Transmutation
-Chance|Orb(of)?Chance                   =     name=Orb of Chance
-Alch|(Orb)?(of)?Alchemy                 =     name=Orb of Alchemy
+(A(rm)?(ourer)?'?s?)?Scrap              =     name=Armourer's Scrap
+(Blacksmith)?'?s?Whet(stone)?           =     name=Blacksmith's Whetstone
+(Glassblower)?'?s?Bauble                =     name=Glassblower's Bauble
+(Cartographer)?'?s?Chis(el)?            =     name=Cartographer's Chisel
+(Gemcutter'?s?)?Prism                   =     name=Gemcutter's Prism
+Jew(eller)?'?s?(Orb)?                   =     name=Jeweller's Orb
+Chrom(atic)?(Orb)?                      =     name=Chromatic Orb
+(Orb)?(of)?Fus(ing|e)?                  =     name=Orb of Fusing
+(Orb)?(of)?Trans(mut(ation|e))?         =     name=Orb of Transmutation
+(Orb)?(of)?Chance                       =     name=Orb of Chance
+(Orb)?(of)?Alch(emy)?                   =     name=Orb of Alchemy
 Regal(Orb)?                             =     name=Regal Orb
 Orb(of)?Augmentation                    =     name=Orb of Augmentation
 Exalt|Ex|Exalted(Orb)?                  =     name=Exalted Orb
 Alt|(Orb)?(of)?Alteration               =     name=Orb of Alteration
-Ch|Chaos(Orb)?                          =     name=Chaos Orb
+Ch?(aos)?(Orb)?                         =     name=Chaos Orb
 Bless|Blessed(Orb)?                     =     name=Blessed Orb
 Divine(Orb)?                            =     name=Divine Orb
 Scour|(Orb)?(of)?Scouring               =     name=Orb of Scouring
-Mirror|Mirror(of)?Kalandra              =     name=Mirror of Kalandra
+Mir+(or)?(of)?(Kalandra)?               =     name=Mirror of Kalandra
 (Orb)?(of)?Regret                       =     name=Orb of Regret
 Vaal(Orb)?                              =     name=Vaal Orb
 Eternal(Orb)?                           =     name=Eternal Orb
 ScrollFragment                          =     name=Scroll Fragment
 TransmutationShard                      =     name=Transmutation Shard
-AlterationShard                         =     name=Alteration Shard
+Alt(eration)?Shard                      =     name=Alteration Shard
 AlchemyShard                            =     name=Alchemy Shard
