@@ -24,6 +24,6 @@ Mir+(or)?(of)?(Kalandra)?               =     name=Mirror of Kalandra
 Vaal(Orb)?                              =     name=Vaal Orb
 Eternal(Orb)?                           =     name=Eternal Orb
 ScrollFragment                          =     name=Scroll Fragment
-TransmutationShard                      =     name=Transmutation Shard
+Trans(mutation)?Shard                      =     name=Transmutation Shard
 Alt(eration)?Shard                      =     name=Alteration Shard
 AlchemyShard                            =     name=Alchemy Shard
