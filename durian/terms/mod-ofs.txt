@@ -56,6 +56,11 @@ gcritmulti                          =       mod_name=(pseudo) (total) #% increas
 (\d+)gcritmulti                     =       mod_name=(pseudo) (total) #% increased Global Critical Strike Multiplier&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)gcritmulti               =       mod_name=(pseudo) (total) #% increased Global Critical Strike Multiplier&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
+
+sp?(ell)?c(rit)?c?(hance)?          =       mod_name=(pseudo) (total) #% increased Critical Strike Chance for Spells&mod_min=&mod_max=&$MG
+(\d+)sp?(ell)?c(rit)?c?(hance)?     =       mod_name=(pseudo) (total) #% increased Critical Strike Chance for Spells&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(sp?(ell)?c(rit)?c?(hance)?)=     mod_name=(pseudo) (total) #% increased Critical Strike Chance for Spells&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
 castsp(ee)?d                        =       mod_name=(pseudo) (total) #% increased Cast Speed&mod_min=&mod_max=&$MG
 (\d+)castsp(ee)?d                   =       mod_name=(pseudo) (total) #% increased Cast Speed&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)castsp(ee)?d             =       mod_name=(pseudo) (total) #% increased Cast Speed&mod_min=$GROUP1&mod_max=$GROUP2&$MG
