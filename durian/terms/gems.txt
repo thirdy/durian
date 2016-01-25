@@ -245,7 +245,7 @@ VoidManipulation                        =     name=Void Manipulation
 Vuln(erability)?                        =     name=Vulnerability
 Warlord'?sMark                          =     name=Warlord's Mark
 WeaponElementalDamage|WED               =     name=Weapon Elemental Damage
-WhirlingBlades                          =     name=Whirling Blades
+WhirlingBlades|WB                       =     name=Whirling Blades
 WildStrike                              =     name=Wild Strike
 Wither                                  =     name=Wither
 Wrath                                   =     name=Wrath
