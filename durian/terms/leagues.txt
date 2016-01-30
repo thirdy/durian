@@ -1,7 +1,7 @@
 ;
 ; Leagues
 ;
-standard|sc             =   league=Standard
-hardcore|hc             =   league=Hardcore
-te?mpstandard|te?mpsc   =   league=Talisman
-te?mphardcore|te?mphc   =   league=Hardcore Talisman
+standard|sc               =   league=Standard
+hardcore|hc               =   league=Hardcore
+t(e?mp)?(st(andar)?d|sc)  =   league=Talisman
+t(e?mp)?(hardcore|hc)     =   league=Hardcore Talisman
