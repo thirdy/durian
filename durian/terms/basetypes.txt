@@ -14,33 +14,33 @@ clothbelt           =       base=Cloth Belt
 
 ;Amulets
 
-amber               =       base=Amber Amulet
-lapis               =       base=Lapis Amulet
-jade                =       base=Jade Amulet
-goldammy            =       base=Gold Amulet
-turquoise           =       base=Turquoise Amulet
-agate               =       base=Agate Amulet
-citrine             =       base=Citrine Amulet
-onyx                =       base=Onyx Amulet
-coralammy           =       base=Coral Amulet
-pauaammy            =       base=Paua Amulet
+amber(Am+(ulet|y))?     =       base=Amber Amulet
+lapis(Am+(ulet|y))?     =       base=Lapis Amulet
+jade(Am+(ulet|y))?      =       base=Jade Amulet
+goldAm+(ulet|y)         =       base=Gold Amulet
+turquoise?(Am+(ulet|y))?=       base=Turquoise Amulet
+agate?(Am+(ulet|y))?    =       base=Agate Amulet
+citrine?(Am+(ulet|y))?  =       base=Citrine Amulet
+onyx(Am+(ulet|y))?      =       base=Onyx Amulet
+coralAm+(ulet|y)        =       base=Coral Amulet
+pauaAm+(ulet|y)         =       base=Paua Amulet
 
 ;Rings
 
-amethyst            =       base=Amethyst Ring
-coralring           =       base=Coral Ring
-diamond             =       base=Diamond Ring
-goldring            =       base=Gold Ring
-goldenhoop          =       base=Golden Hoop
-iron                =       base=Iron Ring
-moonstone           =       base=Moonstone Ring
-pauaring            =       base=Paua Ring
-prismatic           =       base=Prismatic Ring
-ruby                =       base=Ruby Ring
-sapphire            =       base=Sapphire Ring
-topaz               =       base=Topaz Ring
-twostone            =       base=Two-Stone Ring
-unset               =       base=Unset Ring
+amethyst(ring)?        =       base=Amethyst Ring
+coralring              =       base=Coral Ring
+diamond(ring)?         =       base=Diamond Ring
+goldring(ring)?        =       base=Gold Ring
+goldenhoop             =       base=Golden Hoop
+iron(ring)?            =       base=Iron Ring
+moonstone(ring)?       =       base=Moonstone Ring
+pauaring               =       base=Paua Ring
+prismatic(ring)?       =       base=Prismatic Ring
+ruby(ring)?            =       base=Ruby Ring
+sapphire(ring)?        =       base=Sapphire Ring
+topaz(ring)?           =       base=Topaz Ring
+twostone(ring)?        =       base=Two-Stone Ring
+unset(ring)?           =       base=Unset Ring
 
 ;Body Armour
 
@@ -120,8 +120,49 @@ jeweledfoil         =       base=Jeweled Foil
 
 ;Sceptre
 
-vaalsceptre         =       base=Vaal Sceptre
+DriftwoodSceptre    =       base=Driftwood Sceptre
+darkwoodSceptre     =       base=Darkwood Sceptre
+bronzeSceptre       =       base=Bronze Sceptre
+quartzSceptre       =       base=Quartz Sceptre 
+ironSceptre         =       base=Iron Sceptre
+ochreSceptre        =       base=Ochre Sceptre
+ritualSceptre       =       base=Ritual Sceptre
+shadowSceptre       =       base=Shadow Sceptre
+GrinningSceptre     =       base=Grinning Sceptre 
+HornedSceptre       =       base=Horned Sceptre 
+Sekhem              =       base=Sekhem
+CrystalSceptre      =       base=Crystal Sceptre 
+LeadSceptre         =       base=Lead Sceptre 
+BloodSceptre        =       base=Blood Sceptre
+RoyalSceptre        =       base=Royal Sceptre 
+StagSceptre         =       base=Stag Sceptre 
+karuiSceptre        =       base=Karui Sceptre
+Tyrant'?s?Sekhem    =       base=Tyrant's Sekhem
+OpalSceptre         =       base=Opal Sceptre 
+PlatinumSceptre     =       base=Platinum Sceptre
+VaalSceptre         =       base=Vaal Sceptre
+CarnalSceptre       =       base=Carnal Sceptre
+VoidSceptre         =       base=Void Sceptre 
+SambarSceptre       =       base=Sambar Sceptre
 
 ;Wand
 
+DriftwoodWand       =       base=DriftwoodWand
+Goat'?s?Horn        =       base=Goat's Horn
+carvedwand          =       base=Carved Wand 
+quartzwand          =       base=Quartz Wand
+spiraledwand        =       base=Spiraled Wand 
+sagewand            =       base=Sage Wand 
+paganwand           =       base=Pagan Wand
+faun'?s?horn        =       base=Faun's Horn 
+engravedWand        =       base=Engraved Wand
+crystalwand         =       base=Crystal Wand
+serpentwand         =       base=Serpent Wand
+omenwand            =       base=Omen Wand
+heathenwand         =       base=Heathen Wand 
+Demon'?s?horn       =       base=Demon's Horn
 imbuedwand          =       base=Imbued Wand
+OpalWand            =       base=Opal Wand 
+TronadoWand         =       base=Tronado Wand
+ProphecyWand        =       base=Prophecy Wand
+ProfaneWand         =       base=Profane Wand 
