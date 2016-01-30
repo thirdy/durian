@@ -4,7 +4,7 @@
 
 ;Belts
 
-sash|rustic(sash)?      =       base=Rustic Sash
+(rustic|sash)+          =       base=Rustic Sash
 heavyb(elt)?            =       base=Heavy Belt
 chainb(elt)?            =       base=Chain Belt
 leatherb(elt)?          =       base=Leather Belt
