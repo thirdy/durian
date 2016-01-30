@@ -180,3 +180,7 @@ flatfirequiver                     =       mod_name=Adds #-# Fire Damage to Atta
 flatcoldquiver                     =       mod_name=Adds #-# Cold Damage to Attacks&mod_min=&mod_max=&$MG
 (\d+)(flatcoldquiver)              =       mod_name=Adds #-# Cold Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)(flatcoldquiver)        =       mod_name=Adds #-# Cold Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+f(lat)?acc(uarcy)?                 =       mod_name=+# to Accuracy Rating&mod_min=&mod_max=&$MG
+(\d+)(f(lat)?acc(uarcy)?)          =       mod_name=+# to Accuracy Rating&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(f(lat)?acc(uarcy)?)    =       mod_name=+# to Accuracy Rating&mod_min=$GROUP1&mod_max=$GROUP2&$MG
