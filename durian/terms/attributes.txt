@@ -1,41 +1,41 @@
 ;
 ; Attributes
 ;
-altart                          =       altart=x
-corrupt|corrupted               =       corrupted=1
-pure|(not|un)corrupt(ed)?       =       corrupted=0
-identified                      =       identified=1
-unid|unidentified               =       identified=0
-notcrafted                      =       crafted=0
-crafted                         =       crafted=1
-rare                            =       rarity=rare
-normal                          =       rarity=normal
-magic                           =       rarity=magic
-unique                          =       rarity=unique
-q(\d{1,2})                      =       q_min=$GROUP1
-q(\d{1,2})-(\d{1,2})            =       q_min=$GROUP1&q_max=$GROUP2
+altart                              =       altart=x
+corrupt(ed)?                        =       corrupted=1
+pure|(not|un)corrupt(ed)?|clea(n|r) =       corrupted=0
+id(entified)?                       =       identified=1
+unid(entified)?                     =       identified=0
+notcrafted                          =       crafted=0
+crafted                             =       crafted=1
+rare|yellow                         =       rarity=rare
+normal|white|gr(a|e)y               =       rarity=normal
+magic|blue                          =       rarity=magic
+uniq(ue)?|orange                    =       rarity=unique
+q(\d{1,2})                          =       q_min=$GROUP1
+q(\d{1,2})-(\d{1,2})                =       q_min=$GROUP1&q_max=$GROUP2
 
-lvl(\d+)                        =       rlevel_max=$GROUP1
-lvl(\d{1,2})-(\d{1,2})          =       rlevel_min=$GROUP1&rlevel_max=$GROUP2
-rstr                            =       rstr_min=1
-(\d+)rstr                       =       rstr_max=$GROUP1
-rdex                            =       rdex_min=1
-(\d+)rdex                       =       rdex_max=$GROUP1
-rint                            =       rint_min=1
-(\d+)rint                       =       rint_max=$GROUP1
-glvl(\d+)                       =       level_min=$GROUP1
-glvl(\d{1,2})-(\d{1,2})         =       level_min=$GROUP1&level_max=$GROUP2
+lvl(\d+)                            =       rlevel_max=$GROUP1
+lvl(\d{1,2})-(\d{1,2})              =       rlevel_min=$GROUP1&rlevel_max=$GROUP2
+rstr                                =       rstr_min=1
+(\d+)rstr                           =       rstr_max=$GROUP1
+rdex                                =       rdex_min=1
+(\d+)rdex                           =       rdex_max=$GROUP1
+rint                                =       rint_min=1
+(\d+)rint                           =       rint_max=$GROUP1
+glvl(\d+)                           =       level_min=$GROUP1
+glvl(\d{1,2})-(\d{1,2})             =       level_min=$GROUP1&level_max=$GROUP2
 
-(\d+)dps                        =       dps_min=$GROUP1
-(\d+)edps                       =       edps_min=$GROUP1
-(\d+)pdps                       =       pdps_min=$GROUP1
-(\d+)crit                       =       crit_min=$GROUP1
-(([0-9]+)?(\.)?([0-9]{1,2})?)aps=       aps_min=$GROUP1
+(\d+)dps                            =       dps_min=$GROUP1
+(\d+)edps                           =       edps_min=$GROUP1
+(\d+)pdps                           =       pdps_min=$GROUP1
+(\d+)crit                           =       crit_min=$GROUP1
+(([0-9]+)?(\.)?([0-9]{1,2})?)aps    =       aps_min=$GROUP1
 
-ar|armour                       =       armour_min=1
-(\d+)(ar|armour)                =       armour_min=$GROUP1
-ev|evasion                      =       evasion_min=1
-(\d+)(ev|evasion)               =       evasion_min=$GROUP1
-es|energyshield                 =       shield_min=1
-(\d+)(es|energyshield)          =       shield_min=$GROUP1
-(\d+)(blk|block)                =       block_min=$GROUP1
+ar|armour                           =       armour_min=1
+(\d+)(ar|armour)                    =       armour_min=$GROUP1
+ev|evasion                          =       evasion_min=1
+(\d+)(ev|evasion)                   =       evasion_min=$GROUP1
+es|energyshield                     =       shield_min=1
+(\d+)(es|energyshield)              =       shield_min=$GROUP1
+(\d+)(blo?c?k)                      =       block_min=$GROUP1
