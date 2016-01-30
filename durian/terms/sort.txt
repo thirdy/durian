@@ -21,6 +21,7 @@ sorted                                  =       ed
 sortaps                                 =       aps
 sortpdps                                =       quality_pdps
 sortedps                                =       edps
+sortdps                                 =       dps
 sortar                                  =       quality_armour
 sortev                                  =       quality_evasion
 sortes                                  =       quality_shield
