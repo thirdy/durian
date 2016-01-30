@@ -4,13 +4,13 @@
 
 ;Belts
 
-rusticsash          =       base=Rustic Sash
-heavybelt           =       base=Heavy Belt
-chainbelt           =       base=Chain Belt
-leatherbelt         =       base=Leather Belt
-goldenobi           =       base=goldenobi
-studdedbelt         =       base=Studded Belt
-clothbelt           =       base=Cloth Belt
+sash|rustic(sash)?      =       base=Rustic Sash
+heavyb(elt)?            =       base=Heavy Belt
+chainb(elt)?            =       base=Chain Belt
+leatherb(elt)?          =       base=Leather Belt
+goldenobi               =       base=goldenobi
+studded(b(elt)?)?       =       base=Studded Belt
+clothb(elt)?            =       base=Cloth Belt
 
 ;Amulets
 
@@ -115,8 +115,33 @@ eternalsword        =       base=Eternal Sword
 
 ;Thrusting sword
 
-spiraledfoil        =       base=Spiraled Foil
-jeweledfoil         =       base=Jeweled Foil
+RustedSpike         =       base=Rusted Spike
+WhaleboneRapier     =       base=Whalebone Rapier
+BatteredFoil        =       base=Battered Foil
+BasketRapier        =       base=Basket Rapier 
+JaggedFoil          =       base=Jagged Foil
+AntiqueRapier       =       base=Antique Rapier
+ElegantFoil         =       base=Elegant Foil
+ThornRapier         =       base=Thorn Rapier
+Smallsword          =       base=Smallsword 
+WyrmboneRapier      =       base=Wyrmbone Rapier
+BurnishedFoil       =       base=Burnished Foil
+Estoc               =       base=Estoc
+SerratedFoil        =       base=Serrated Foil
+PrimevalRapier      =       base=Primeval Rapier
+FancyFoil           =       base=Fancy Foil 
+ApexRapier          =       base=Apex Rapier 
+CourtesanSword      =       base=Courtesan Sword
+DragonboneRapier    =       base=Dragonbone Rapier
+TemperedFoil        =       base=Tempered Foil
+Pecoraro            =       base=Pecoraro 
+SpiraledFoil        =       base=Spiraled Foil
+VaalRapier          =       base=Vaal Rapier
+JeweledFoil         =       base=Jeweled Foil
+HarpyRapier         =       base=Harpy Rapier
+DragoonSword        =       base=Dragoon Sword
+
+
 
 ;Sceptre
 
