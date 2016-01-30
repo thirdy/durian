@@ -22,12 +22,12 @@ gloves?                         =       type=Gloves
 helm(et)?                       =       type=Helmet
 shield                          =       type=Shield
                                 
-amulet|am+y                     =       type=Amulet
+am+(ulet|y)                     =       type=Amulet
 belt                            =       type=Belt
 cur+(en)?(cy)?                  =       type=Currency
 Div(inatio)?(Card)?             =       type=Divination Card
 fish                            =       type=Fishing Rods
-flsk|flask                      =       type=Flask
+fla?sk                          =       type=Flask
 gem                             =       type=Gem
 je?we?l                         =       type=Jewel
 map                             =       type=Map
