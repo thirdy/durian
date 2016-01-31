@@ -185,9 +185,9 @@ f(lat)?acc(uarcy)?                      =       mod_name=+# to Accuracy Rating&m
 (\d+)(f(lat)?acc(uarcy)?)               =       mod_name=+# to Accuracy Rating&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)(f(lat)?acc(uarcy)?)         =       mod_name=+# to Accuracy Rating&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-inc(reased)?MineD(amage|mg)             =       mod_name=#% increased Mine Damage&mod_min=&mod_max=&$MG
-(\d+)(inc(reased)?MineD(amage|mg)       =       mod_name=#% increased Mine Damage&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(inc(reased)?MineD(amage|mg) =       mod_name=#% increased Mine Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+inc(reased)?MineD(amage|mg))            =       mod_name=#% increased Mine Damage&mod_min=&mod_max=&$MG
+(\d+)(inc(reased)?MineD(amage|mg))      =       mod_name=#% increased Mine Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(inc(reased)?MineD(amage|mg))=       mod_name=#% increased Mine Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
 Ign?(ite)?Ch(ance)?                     =       mod_name=#% chance to Ignite&mod_min=&mod_max=&$MG
 (\d+)(Ign?(ite)?Ch(ance)?)              =       mod_name=#% chance to Ignite&mod_min=$GROUP1&mod_max=&$MG
