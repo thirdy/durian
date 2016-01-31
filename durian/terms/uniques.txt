@@ -218,7 +218,7 @@ Gorebreaker                             =     name=Gorebreaker
 Goredrill                               =     name=Goredrill
 GreatOldOne'?s?Ward                     =     name=Great Old One's Ward
 Greed'?s?Embrace                        =     name=Greed's Embrace
-Hall(of)?Grandmasters                   =     name=Hall of Grandmasters
+(Hall)?(of)?Grandmasters?               =     name=Hall of Grandmasters
 Headhunter                              =     name=Headhunter
 HealthyMind                             =     name=Healthy Mind
 HeartboundLoop                          =     name=Heartbound Loop
