@@ -355,7 +355,6 @@ RedbladeBanner                          =     name=Redblade Banner
 RedbladeTramplers                       =     name=Redblade Tramplers
 RelentlessFury                          =     name=Relentless Fury
 Repentance                              =     name=Repentance
-Repentance                              =     name=Repentance
 ReverberationRod                        =     name=Reverberation Rod
 Rigvald'?s?Charge                       =     name=Rigvald's Charge
 Rigwald'?s?Command                      =     name=Rigwald's Command
