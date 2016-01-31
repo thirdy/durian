@@ -23,8 +23,8 @@ rdex                                            =       rdex_min=1
 (\d+)rdex                                       =       rdex_max=$GROUP1
 rint                                            =       rint_min=1
 (\d+)rint                                       =       rint_max=$GROUP1
-(g(em)?le?ve?l|(Map)?t(ier)?)(\d+)              =       level_min=$GROUP1
-(g(em)?le?ve?l|(Map)?t(ier)?)(\d{1,2})-(\d{1,2})=       level_min=$GROUP1&level_max=$GROUP2
+(g(em)?le?ve?l|(Map)?t(ier)?)(\d+)              =       level_min=$GROUP5
+(g(em)?le?ve?l|(Map)?t(ier)?)(\d{1,2})-(\d{1,2})=       level_min=$GROUP5&level_max=$GROUP6
  
 (\d+)dps                                        =       dps_min=$GROUP1
 (\d+)edps                                       =       edps_min=$GROUP1
