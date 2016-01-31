@@ -154,7 +154,7 @@ MultipleTraps                           =     name=Multiple Traps
 Multistrike                             =     name=Multistrike
 PhaseRun                                =     name=Phase Run
 PhysicalProjectileAttackDamage|PPAD     =     name=Physical Projectile Attack Damage
-Phys(ical)?(to|2)?Light?(ning9?         =     name=Physical to Lightning
+Phys(ical)?(to|2)?Light?(ning)?         =     name=Physical to Lightning
 Pierce                                  =     name=Pierce
 Poacher'?s?Mark                         =     name=Poacher's Mark
 PointBlank                              =     name=Point Blank
