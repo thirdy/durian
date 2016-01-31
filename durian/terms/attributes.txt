@@ -39,3 +39,7 @@ ev|evasion                                      =       evasion_min=1
 es|energyshield                                 =       shield_min=1
 (\d+)(es|energyshield)                          =       shield_min=$GROUP1
 (\d+)(blo?c?k)                                  =       block_min=$GROUP1
+
+(tier)?red(tier)?                               =       level_min=12
+yellowtier|tieryellow                           =       level_min=7&level_max=11
+whitetier|tierwhite                             =       level_min=&level_max=6
