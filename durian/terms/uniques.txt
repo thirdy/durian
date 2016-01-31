@@ -380,7 +380,7 @@ ShadowsandDust                          =     name=Shadows and Dust
 Shaper'?s?Seed                          =     name=Shaper's Seed
 Shavronne'?s?Pace                       =     name=Shavronne's Pace
 Shavronne'?s?Revelation                 =     name=Shavronne's Revelation
-Shavronne'?s?Wrappings                  =     name=Shavronne's Wrappings
+Shav(ronne'?s?Wrappings|s)              =     name=Shavronne's Wrappings
 Shiversting                             =     name=Shiversting
 Sibyl'?s?Lament                         =     name=Sibyl's Lament
 Sidhebreath                             =     name=Sidhebreath
