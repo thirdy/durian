@@ -97,9 +97,9 @@ atkspeed|attackspeed                =       mod_name=(pseudo) (total) #% increas
 (\d+)(atkspeed|attackspeed)         =       mod_name=(pseudo) (total) #% increased Attack Speed&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)(atkspeed|attackspeed)   =       mod_name=(pseudo) (total) #% increased Attack Speed&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-minusmana                           =       mod_name=-# to Mana Cost of Skillss&mod_min=&mod_max=&$MG
-(\d+)minusmana                      =       mod_name=-# to Mana Cost of Skills&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)minusmana                =       mod_name=-# to Mana Cost of Skills&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+minusmana|elreon                    =       mod_name=-# to Mana Cost of Skillss&mod_min=&mod_max=&$MG
+(\d+)minusmana|elreon               =       mod_name=-# to Mana Cost of Skills&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)minusmana|elreon         =       mod_name=-# to Mana Cost of Skills&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
 totalcoldspelldmg|tcsdmg            =       mod_name=(pseudo) (total) #% increased Cold Spell Damage&mod_min=&mod_max=&$MG
 (\d+)(totalcoldspelldmg|tcsdmg)     =       mod_name=(pseudo) (total) #% increased Cold Spell Damage&mod_min=$GROUP1&mod_max=&$MG
