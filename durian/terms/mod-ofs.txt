@@ -195,4 +195,8 @@ Ign?(ite)?Ch(ance)?                     =       mod_name=#% chance to Ignite&mod
 
 inc(reased)?TrapeD(amage|mg))            =       mod_name=#% increased Trap Damage&mod_min=&mod_max=&$MG
 (\d+)(inc(reased)?TrapeD(amage|mg))      =       mod_name=#% increased Trap Damage&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(inc(reased)?TrapD(amage|mg))=       mod_name=#% increased Trap Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+(\d+)-(\d+)(inc(reased)?TrapD(amage|mg)) =       mod_name=#% increased Trap Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+inc(reased)?AreaD(amage|mg))             =       mod_name=#% increased Area Damage&mod_min=&mod_max=&$MG
+(\d+)(inc(reased)?AreaD(amage|mg))       =       mod_name=#% increased Area Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(inc(reased)?AreaD(amage|mg)) =       mod_name=#% increased Area Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
