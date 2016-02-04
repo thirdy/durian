@@ -137,7 +137,7 @@ Crown(of)?Eyes                          =     name=Crown of Eyes
 Crown(of)?Thorns                        =     name=Crown of Thorns
 Cybil'?s?Paw                            =     name=Cybil's Paw
 Daresso'?s?Courage                      =     name=Daresso's Courage
-Daresso'?s?Defiance                     =     name=Daresso's Defiance
+D(aresso'?s?)?Defiance                  =     name=Daresso's Defiance
 Daresso'?s?Salute                       =     name=Daresso's Salute
 DarkrayVectors                          =     name=Darkray Vectors
 Darkscorn                               =     name=Darkscorn
