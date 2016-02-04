@@ -191,3 +191,14 @@ OpalWand            =       base=Opal Wand
 TronadoWand         =       base=Tronado Wand
 ProphecyWand        =       base=Prophecy Wand
 ProfaneWand         =       base=Profane Wand 
+
+;Fragments
+
+(Sac(rifice)?)?(At)?Dawn     =       base=Sacrifice at Dawn
+(Sac(rifice)?)?(At)?Dusk     =       base=Sacrifice at Dusk
+(Sac(rifice)?)?(At)?Noon     =       base=Sacrifice at Noon
+(Sac(rifice)?)?(At)?Midnight =       base=Sacrifice at Midnight
+(Mortal)?Hope                =       base=Mortal Hope
+(Mortal)?Grief               =       base=Mortal Grief
+(Mortal)?Rage                =       base=Mortal Rage 
+(Mortal)?Ignorance           =       base=Mortal Ignorance 
