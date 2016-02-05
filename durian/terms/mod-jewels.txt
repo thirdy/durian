@@ -1,0 +1,16 @@
+;
+; Jewel exclusive Mods
+;
+
+
+c(ast)?sp(eed)?(with)?staff                   =       mod_name=#% increased Cast Speed while wielding a Staff&mod_min=&mod_max=&$MG
+(\d+)(c(ast)?sp(eed)?(with)?staff)            =       mod_name=#% increased Cast Speed while wielding a Staffe&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(c(ast)?sp(eed)?(with)?staff)      =       mod_name=#% increased Cast Speed while wielding a Staff&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+c(ast)?sp(eed)?(with)?Fire(Skill)?            =       mod_name=#% increased Cast Speed with Fire Skills&mod_min=&mod_max=&$MG
+(\d+)c(ast)?sp(eed)?(with)?Fire(Skill)?       =       mod_name=#% increased Cast Speed with Fire Skills&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)c(ast)?sp(eed)?(with)?Fire(Skill)? =       mod_name=#% increased Cast Speed with Fire Skills&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+minionD(amage|mg)                             =       mod_name=Minions deal #% increased Damage&mod_min=&mod_max=&$MG
+(\d+)minionD(amage|mg)                        =       mod_name=Minions deal #% increased Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)minionD(amage|mg)                  =       mod_name=Minions deal #% increased Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG

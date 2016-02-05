@@ -11,9 +11,10 @@ sortdex                                 =       #(pseudo) (total) +# to Dexterit
 sortstr                                 =       #(pseudo) (total) +# to Strength
 sortint                                 =       #(pseudo) (total) +# to Intelligence
 sortsdmg|sortspelldmg                   =       #(pseudo) (total) #% increased Spell Damage
-sortcsdmg|sortcoldspelldmg			        =	      #(pseudo) (total) #% increased Cold Spell Damage
-sortfsdmg|sortfirespelldmg			        =	      #(pseudo) (total) #% increased Fire Spell Damage
-sortlsdmg|sortlightspelldmg			        =	      #(pseudo) (total) #% increased Lightning Spell Damage
+sortcsdmg|sortcoldspelldmg              =       #(pseudo) (total) #% increased Cold Spell Damage
+sortfsdmg|sortfirespelldmg              =       #(pseudo) (total) #% increased Fire Spell Damage
+sortlsdmg|sortlightspelldmg             =       #(pseudo) (total) #% increased Lightning Spell Damage
+sortgcrit                               =       #(pseudo) (total) #% increased Global Critical Strike Chance
 
 sortq                                   =       q
 sortpd                                  =       quality_pd
