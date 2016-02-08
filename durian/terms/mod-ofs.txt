@@ -193,10 +193,22 @@ Ign?(ite)?Ch(ance)?                     =       mod_name=#% chance to Ignite&mod
 (\d+)(Ign?(ite)?Ch(ance)?)              =       mod_name=#% chance to Ignite&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)(Ign?(ite)?Ch(ance)?)        =       mod_name=#% chance to Ignite&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-inc(reased)?TrapeD(amage|mg))            =       mod_name=#% increased Trap Damage&mod_min=&mod_max=&$MG
-(\d+)(inc(reased)?TrapeD(amage|mg))      =       mod_name=#% increased Trap Damage&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(inc(reased)?TrapD(amage|mg)) =       mod_name=#% increased Trap Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+inc(reased)?TrapeD(amage|mg))           =       mod_name=#% increased Trap Damage&mod_min=&mod_max=&$MG
+(\d+)(inc(reased)?TrapeD(amage|mg)      =       mod_name=#% increased Trap Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(inc(reased)?TrapD(amage|mg))=       mod_name=#% increased Trap Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-inc(reased)?AreaD(amage|mg))             =       mod_name=#% increased Area Damage&mod_min=&mod_max=&$MG
-(\d+)(inc(reased)?AreaD(amage|mg))       =       mod_name=#% increased Area Damage&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(inc(reased)?AreaD(amage|mg)) =       mod_name=#% increased Area Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+inc(reased)?AreaD(amage|mg))            =       mod_name=#% increased Area Damage&mod_min=&mod_max=&$MG
+(\d+)(inc(reased)?AreaD(amage|mg))      =       mod_name=#% increased Area Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(inc(reased)?AreaD(amage|mg))=       mod_name=#% increased Area Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+cold?dmg|cdmg                           =       mod_name=#% increased Cold Damage&mod_min=&mod_max=&$MG
+(\d+)(cold?dmg|cdmg)                    =       mod_name=#% increased Cold Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(cold?dmg|cdmg)              =       mod_name=#% increased Cold Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+firedmg|fdmg                            =       mod_name=#% increased Fire Damage&mod_min=&mod_max=&$MG 
+(\d+)(firedmg|fdmg)                     =       mod_name=#% increased Fire Damag&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(firedmg|fdmg)               =       mod_name=#% increased Fire Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+lightdmg|ldmg                           =       mod_name=#% increased Lightning Damage&mod_min=&mod_max=&$MG
+(\d+)(lightdmg|ldmg)                    =       mod_name=#% increased Lightning Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(lightdmg|ldmg)              =       mod_name=#% increased Lightning Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
