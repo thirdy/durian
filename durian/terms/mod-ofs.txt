@@ -200,3 +200,7 @@ inc(reased)?TrapeD(amage|mg))            =       mod_name=#% increased Trap Dama
 inc(reased)?AreaD(amage|mg))             =       mod_name=#% increased Area Damage&mod_min=&mod_max=&$MG
 (\d+)(inc(reased)?AreaD(amage|mg))       =       mod_name=#% increased Area Damage&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)(inc(reased)?AreaD(amage|mg)) =       mod_name=#% increased Area Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+(inc(reased)?)?Ele(mental)?D(amage|mg)   =       mod_name=#% increased Elemental Damage&mod_min=&mod_max=&$MG
+(\d+)((inc(reased)?)?Ele(mental)?D(amage|mg))=       mod_name=#% increased Elemental Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)((inc(reased)?)?Ele(mental)?D(amage|mg))=       mod_name=#% increased Elemental Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
