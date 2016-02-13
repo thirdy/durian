@@ -61,6 +61,9 @@ function affixesLookup(baseType, modName, modValue) {
 			// logger.info('modValue:' + modValue + ' affix.minvalue: ' + affix.minvalue + ' affix.maxvalue: ' + affix.maxvalue)
 			if(affix.minvalue <= modValue && affix.maxvalue >= modValue)
 			  return affix 
+		}else{
+			if(maxTier > 0)
+				return maxTier;
 		}
 	}
 	return null
