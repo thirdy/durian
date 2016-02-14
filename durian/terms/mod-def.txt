@@ -65,3 +65,7 @@ allatri|atri                        =       mod_name=(pseudo) (total) +# to all 
 maximumenergyshield|maxes           =       mod_name=+# to maximum Energy Shield&mod_min=&mod_max=&$MG
 (\d+)(maximumenergyshield|maxes)    =       mod_name=+# to maximum Energy Shield&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)(maximumenergyshield|maxes) =    mod_name=+# to maximum Energy Shield&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+sh(ield)?bloc?k                     =       mod_name=+#% Chance to Block with Shields&mod_min=&mod_max=&$MG
+(\d+)sh(ield)?bloc?k                =       mod_name=+#% Chance to Block with Shields&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)sh(ield)?bloc?k          =       mod_name=+#% Chance to Block with Shields&mod_min=$GROUP1&mod_max=$GROUP2&$MG
