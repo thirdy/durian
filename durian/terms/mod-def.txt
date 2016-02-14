@@ -69,3 +69,7 @@ maximumenergyshield|maxes           =       mod_name=+# to maximum Energy Shield
 sh(ield)?bloc?k                     =       mod_name=+#% Chance to Block with Shields&mod_min=&mod_max=&$MG
 (\d+)sh(ield)?bloc?k                =       mod_name=+#% Chance to Block with Shields&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)sh(ield)?bloc?k          =       mod_name=+#% Chance to Block with Shields&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+iiq                                 =       mod_name=#% increased Quantity of Items found&mod_min=&mod_max=&$MG
+(\d+)(iiq)                          =       mod_name=#% increased Quantity of Items found&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(iiq)                    =       mod_name=#% increased Quantity of Items found&mod_min=$GROUP1&mod_max=$GROUP2&$MG
