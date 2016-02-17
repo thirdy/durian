@@ -2,15 +2,61 @@
 ; Jewel exclusive Mods
 ;
 
+staffc(ast)?sp(eed)?(with)?                       =       mod_name=#% increased Cast Speed while wielding a Staff&mod_min=&mod_max=&$MG
+(\d+)(staffc(ast)?sp(eed)?(with)?)                =       mod_name=#% increased Cast Speed while wielding a Staffe&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(staffc(ast)?sp(eed)?(with)?)          =       mod_name=#% increased Cast Speed while wielding a Staff&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-c(ast)?sp(eed)?(with)?staff                   =       mod_name=#% increased Cast Speed while wielding a Staff&mod_min=&mod_max=&$MG
-(\d+)(c(ast)?sp(eed)?(with)?staff)            =       mod_name=#% increased Cast Speed while wielding a Staffe&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(c(ast)?sp(eed)?(with)?staff)      =       mod_name=#% increased Cast Speed while wielding a Staff&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+F(ire)?(Skill)? c(ast)?sp(eed)?(with)?            =       mod_name=#% increased Cast Speed with Fire Skills&mod_min=&mod_max=&$MG
+(\d+)F(ire)?(Skill)? c(ast)?sp(eed)?(with)?       =       mod_name=#% increased Cast Speed with Fire Skills&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)F(ire)?(Skill)? c(ast)?sp(eed)?(with)? =       mod_name=#% increased Cast Speed with Fire Skills&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-c(ast)?sp(eed)?(with)?Fire(Skill)?            =       mod_name=#% increased Cast Speed with Fire Skills&mod_min=&mod_max=&$MG
-(\d+)c(ast)?sp(eed)?(with)?Fire(Skill)?       =       mod_name=#% increased Cast Speed with Fire Skills&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)c(ast)?sp(eed)?(with)?Fire(Skill)? =       mod_name=#% increased Cast Speed with Fire Skills&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+minionD(amage|mg)                                 =       mod_name=Minions deal #% increased Damage&mod_min=&mod_max=&$MG
+(\d+)minionD(amage|mg)                            =       mod_name=Minions deal #% increased Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)minionD(amage|mg)                      =       mod_name=Minions deal #% increased Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-minionD(amage|mg)                             =       mod_name=Minions deal #% increased Damage&mod_min=&mod_max=&$MG
-(\d+)minionD(amage|mg)                        =       mod_name=Minions deal #% increased Damage&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)minionD(amage|mg)                  =       mod_name=Minions deal #% increased Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+d(ual)?w(ield)?c(ast)?sp(ee)?d                    =       mod_name=#% increased Cast Speed while Dual Wielding&mod_min=&mod_max=&$MG
+(\d+)d(ual)?w(ield)?c(ast)?sp(ee)?d               =       mod_name=#% increased Cast Speed while Dual Wielding&mod_min=$GROUP1&mod_max=&$MG       
+(\d+)-(\d+)d(ual)?w(ield)?c(ast)?sp(ee)?d         =       mod_name=#% increased Cast Speed while Dual Wielding&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+sh(ield)?c(ast)?sp(ee)?d                          =       mod_name=#% increased Cast Speed while holding a Shield&mod_min=&mod_max=&$MG
+(\d+)sh(ield)?c(ast)?sp(ee)?d                     =       mod_name=#% increased Cast Speed while holding a Shield&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)sh(ield)?c(ast)?sp(ee)?d               =       mod_name=#% increased Cast Speed while holding a Shield&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+st(aff)?tc(ast)?sp(ee)?d                          =       mod_name=#% increased Cast Speed while wielding a Staff&mod_min=&mod_max=&$MG
+(\d+)st(aff)?tc(ast)?sp(ee)?d                     =       mod_name=#% increased Cast Speed while wielding a Staff&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)st(aff)?tc(ast)?sp(ee)?d               =       mod_name=#% increased Cast Speed while wielding a Staff&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+c(old)?c(ast)?sp(ee)?d                            =       mod_name=#% increased Cast Speed with Cold Skills&mod_min=&mod_max=&$MG
+(\d+)c(old)?c(ast)?sp(ee)?d                       =       mod_name=#% increased Cast Speed with Cold Skills&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)c(old)?c(ast)?sp(ee)?d                 =       mod_name=#% increased Cast Speed with Cold Skills&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+f(ire)?c(ast)?sp(ee)?d                            =       mod_name=#% increased Cast Speed with Fire Skills&mod_min=&mod_max=&$MG
+(\d+)f(ire)?c(ast)?sp(ee)?d                       =       mod_name=#% increased Cast Speed with Fire Skills&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)f(ire)?c(ast)?sp(ee)?d                 =       mod_name=#% increased Cast Speed with Fire Skills&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+l(ight)?c(ast)?sp(ee)?d                           =       mod_name=#% increased Cast Speed with Lightning Skills&mod_min=&mod_max=&$MG
+(\d+)l(ight)?c(ast)?sp(ee)?d                      =       mod_name=#% increased Cast Speed with Lightning Skills&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)l(ight)?c(ast)?sp(ee)?d                =       mod_name=#% increased Cast Speed with Lightning Skills&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+dmg                                               =       mod_name=#% increased Damage&mod_min=&mod_max=&$MG
+(\d+)(dmg)                                        =       mod_name=#% increased Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(dmg)                                  =       mod_name=#% increased Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+a(rea)?dmg                                        =       mod_name=#% increased Area Damage&mod_min=&mod_max=&$MG
+(\d+)(a(rea)?dmg)                                 =       mod_name=#% increased Area Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(a(rea)?dmg)                           =       mod_name=#% increased Area Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+attc(ast)?sp(ee)?d                                =       mod_name=#% increased Attack and Cast Speed&mod_min=&mod_max=&$MG
+(\d+)attc(ast)?sp(ee)?d                           =       mod_name=#% increased Attack and Cast Speed&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)attc(ast)?sp(ee)?d                     =       mod_name=#% increased Attack and Cast Speed&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+ch(aos)?dmg                                       =       mod_name=#% increased Chaos Damage&mod_min=&mod_max=&$MG
+(\d+)(ch(aos)?dmg)                                =       mod_name=#% increased Chaos Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(ch(aos)?dmg)                          =       mod_name=#% increased Chaos Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+me(lee)?dmg                                       =       mod_name=#% increased Melee Damage&mod_min=&mod_max=&$MG
+(\d+)(me(lee)?dmg)                                =       mod_name=#% increased Melee Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(me(lee)?dmg)                          =       mod_name=#% increased Melee Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+
+

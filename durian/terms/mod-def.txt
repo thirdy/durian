@@ -65,3 +65,19 @@ allatri|atri                        =       mod_name=(pseudo) (total) +# to all 
 maximumenergyshield|maxes           =       mod_name=+# to maximum Energy Shield&mod_min=&mod_max=&$MG
 (\d+)(maximumenergyshield|maxes)    =       mod_name=+# to maximum Energy Shield&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)(maximumenergyshield|maxes) =    mod_name=+# to maximum Energy Shield&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+sh(ield)?bloc?k                     =       mod_name=+#% Chance to Block with Shields&mod_min=&mod_max=&$MG
+(\d+)sh(ield)?bloc?k                =       mod_name=+#% Chance to Block with Shields&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)sh(ield)?bloc?k          =       mod_name=+#% Chance to Block with Shields&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+iiq                                 =       mod_name=#% increased Quantity of Items found&mod_min=&mod_max=&$MG
+(\d+)(iiq)                          =       mod_name=#% increased Quantity of Items found&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(iiq)                    =       mod_name=#% increased Quantity of Items found&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+dodge                               =       mod_name=#% chance to Dodge Attacks&mod_min=&mod_max=&$MG
+(\d+)dodge                          =       mod_name=#% chance to Dodge Attacks&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)dodge                    =       mod_name=#% chance to Dodge Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+sp(ell)?dodge                       =       mod_name=#% chance to Dodge Spell Damage&mod_min=&mod_max=&$MG
+(\d+)sp(ell)?dodge                  =       mod_name=#% chance to Dodge Attacks&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)sp(ell)?dodge            =       mod_name=#% chance to Dodge Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
