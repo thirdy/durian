@@ -37,7 +37,7 @@ function processExplicitMods(item) {
 		var affix = affixesLookup(baseType, mod.name, mod.value)
 		var maxTier = affixMaxLookUp(baseType, mod.name)
 		if(affix) {
-			//logger.info('affix found:' + affix.mod + ' tier: ' + affix.tier)
+			//logger.info('affix found:' + affix.mod + ' tier: ' + affix.tier + ' maxTier: ' + maxTier)
 			affixLabel = affix.affix == 'Prefix' ? '[prefix]' : '[suffix]'
 			tierLabel = '[T' + affix.tier + '/T' + maxTier +']'
 			valueLabel = mod.value
@@ -61,9 +61,6 @@ function affixesLookup(baseType, modName, modValue) {
 			// logger.info('modValue:' + modValue + ' affix.minvalue: ' + affix.minvalue + ' affix.maxvalue: ' + affix.maxvalue)
 			if(affix.minvalue <= modValue && affix.maxvalue >= modValue)
 			  return affix 
-		}else{
-			if(maxTier > 0)
-				return maxTier;
 		}
 	}
 	return null
