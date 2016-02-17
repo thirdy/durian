@@ -35,10 +35,11 @@ function processExplicitMods(item) {
 	for(idx in explicitMods) {
 		var mod = explicitMods[idx]
 		var affix = affixesLookup(baseType, mod.name, mod.value)
+		var maxTier = affixMaxLookUp(baseType, mod.name)
 		if(affix) {
 			//logger.info('affix found:' + affix.mod + ' tier: ' + affix.tier)
 			affixLabel = affix.affix == 'Prefix' ? '[prefix]' : '[suffix]'
-			tierLabel = '[T' + affix.tier + ']'
+			tierLabel = '[T' + affix.tier + '/T' + maxTier +']'
 			valueLabel = mod.value
 			modNameLabel = mod.name
 			if(modNameLabel.startsWith('#')) modNameLabel = modNameLabel.substring(1)
@@ -60,9 +61,26 @@ function affixesLookup(baseType, modName, modValue) {
 			// logger.info('modValue:' + modValue + ' affix.minvalue: ' + affix.minvalue + ' affix.maxvalue: ' + affix.maxvalue)
 			if(affix.minvalue <= modValue && affix.maxvalue >= modValue)
 			  return affix 
+		}else{
+			if(maxTier > 0)
+				return maxTier;
 		}
 	}
 	return null
+}
+function affixMaxLookUp(baseType, modName) {
+	// extra # at the beginning
+	if(modName.startsWith('#')) modName = modName.substring(1)
+	var maxTier = 0;
+	for(idx in affixes) {
+		affix = affixes[idx]
+		baseTypeFlag = affix[baseType]
+		// print(baseTypeFlag + ':' + modName + ' = ' + affix.mod)
+		if(baseTypeFlag && baseTypeFlag.indexOf('Yes') != -1 && affix.mod == modName) {			
+			if(maxTier < affix.tier) maxTier = affix.tier;
+		}
+	}
+	return maxTier;
 }
 
 function determineBaseType(name) {
