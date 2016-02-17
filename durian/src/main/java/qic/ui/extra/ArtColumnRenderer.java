@@ -18,7 +18,6 @@
 package qic.ui.extra;
 
 import java.awt.Component;
-import java.awt.Image;
 import java.io.File;
 import java.io.IOException;
 
@@ -59,9 +58,9 @@ public class ArtColumnRenderer extends DefaultTableCellRenderer {
         boolean artEnabled = Config.getBooleanProperty(Config.RESULT_TABLE_ART_ENABLED, true);
         if (artEnabled) {
         	ImageIcon image = defaultImage;
-            Image img = ImageCache.getInstance().get(value.toString());
+        	ImageIcon img = ImageCache.getInstance().get(value.toString());
             if (img != null) {
-            	image = new ImageIcon(img);
+            	image = img;
     		}
             setIcon(image);
             table.setRowHeight(row, image.getIconHeight());
