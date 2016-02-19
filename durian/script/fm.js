@@ -75,6 +75,9 @@ function affixMaxLookUp(baseType, modName) {
 		// print(baseTypeFlag + ':' + modName + ' = ' + affix.mod)
 		if(baseTypeFlag && baseTypeFlag.indexOf('Yes') != -1 && affix.mod == modName) {			
 			if(maxTier < affix.tier) maxTier = affix.tier;
+		}else{
+			if(maxTier > 0)
+				return maxTier;
 		}
 	}
 	return maxTier;
