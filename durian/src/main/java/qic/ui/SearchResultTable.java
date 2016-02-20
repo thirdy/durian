@@ -20,6 +20,7 @@ package qic.ui;
 import static java.lang.String.format;
 import static java.util.Arrays.asList;
 
+import java.awt.Color;
 import java.awt.Point;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -40,6 +41,7 @@ import qic.SearchPageScraper.SearchResultItem;
 import qic.ui.extra.ArtColumnRenderer;
 import qic.ui.extra.MultiLineTableCellRenderer;
 import qic.ui.extra.VerifierTask;
+import qic.util.Config;
 import qic.util.SwingUtil;
 
 /**
@@ -84,10 +86,10 @@ public class SearchResultTable extends JTable {
 				}
 		    }
 		});
-		
-		this.setDefaultRenderer(List.class, new MultiLineTableCellRenderer());
-		this.setDefaultRenderer(String.class, new MultiLineTableCellRenderer());
-		this.setDefaultRenderer(URL.class, new ArtColumnRenderer());
+		Color guildColor = Color.decode(Config.getPropety(Config.GUILD_COLOR_HIGHLIGHT, "#f6b67f"));
+		this.setDefaultRenderer(List.class, new MultiLineTableCellRenderer(model, guildColor));
+		this.setDefaultRenderer(String.class, new MultiLineTableCellRenderer(model, guildColor));
+		this.setDefaultRenderer(URL.class, new ArtColumnRenderer(model, guildColor));
 	}
 
 	private void setupColumnWidths() {

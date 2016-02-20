@@ -262,7 +262,9 @@ public class SearchPageScraper {
 		public Mod implicitMod;
 		public List<Mod> explicitMods = new ArrayList<>();
 		public Verify verified = Verify.UKNOWN;
-		
+		public boolean guildItem = false;
+		public String wtb = null;
+		public String guildDiscount = null;
 		
 		public List<Mod> getMods() {
 			List<Mod> mods = explicitMods.stream().collect(Collectors.toList());
@@ -340,13 +342,24 @@ public class SearchPageScraper {
 		}
 
 		public String wtb() {
-//			String mods = buildWTBModsMessage();
-//			return String.format(
-//					"@%s Hi, I would like to buy your %s listed for %s in %s. With stats%s",
-//					getIgn(), getName(), getBuyout(), getLeague(), mods);
+			if (wtb != null) {
+				return wtb;
+			}
 			return String.format(
 					"@%s Hi, WTB your \"%s\" listed for %s in %s league.",
 					ign, name, buyout, league);
+		}
+		
+		public void wtb(String wtb) {
+			this.wtb = wtb;
+		}
+		
+		public void guildDiscount(String guildDiscount) {
+			this.guildDiscount = guildDiscount;
+		}
+		
+		public String guildDiscount() {
+			return guildDiscount;
 		}
 
 		/**
@@ -645,6 +658,10 @@ public class SearchPageScraper {
 			this.verified = verified;
 		}
 		
+		public void guildItem(boolean guildItem) {
+			this.guildItem = guildItem;
+		}
+		
 		public URL getArt() {
 			try {
 				return new URL(imageUrl);
@@ -661,6 +678,10 @@ public class SearchPageScraper {
 					armourAtMaxQuality, evasionAtMaxQuality, energyShieldAtMaxQuality, block, mapQuantity, implicitModuuid, explicitModsUUID);
 			String uuid = uuidList.stream().collect(Collectors.joining(":"));
 			return Integer.valueOf(uuid.hashCode());
+		}
+		
+		public boolean guildItem() {
+			return guildItem;
 		}
 
 		public static enum Rarity {

@@ -20,8 +20,31 @@ function process(_logger, items) {
 		//logger.info('name: ' + item.name + " rarity: " + item.rarity.name())
 		if (item.rarity.name() == "magic" || item.rarity.name() == "rare") 
 			processExplicitMods(item)
+		
+		setupWtbMessage(item)
 	}
 	return 'success'
+}
+
+function setupWtbMessage(item) {
+	// Look at class SearchResultItem in file SearchPageScraper.java
+	// for more variable to use
+	// vanilla js doesn't have format function :(
+	var wtbTemplate = '@%s Hi, I would like to buy your %s listed for %s in %s'
+	var buyout = item.buyout
+	if (item.guildItem()) {
+		buyout = java.lang.String.format(
+			"%s (less %s guildmate discount)",
+			item.buyout,
+			item.guildDiscount()) 
+	}
+	var wtb = java.lang.String.format(wtbTemplate,
+		item.ign, 
+		item.name, 
+		buyout, 
+		item.league
+	)
+	item.wtb(wtb)
 }
 
 function processExplicitMods(item) {
