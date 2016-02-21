@@ -31,7 +31,7 @@ function setupWtbMessage(item) {
 	// for more variable to use
 	// vanilla js doesn't have format function :(
 	if(item.buyout ==  ""){
-		var wtbTemplate = '@%s Heyo! I\'d like to buy your %s, quality %s, level %s listed in %s'
+		var wtbTemplate = '@%s Heyo! I\'d like to buy your %s listed in %s'
 		var name = item.name;
 		if(item.level != "" && (item.name.indexOf("Map") == -1)){
 			name = java.lang.String.format(
