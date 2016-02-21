@@ -23,3 +23,5 @@ name="Dread Visage Prophet Crown"
 quiver wed
 2haxe 450pdps 1.5ex
 0.4physlifeleech ring
+2haxe corrupt
+dreamfeather

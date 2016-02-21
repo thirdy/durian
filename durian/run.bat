@@ -1,1 +1,1 @@
-start jre1.8.0_66\bin\javaw.exe -jar durian.jar
+start jre1.8.0_66\bin\javaw.exe -Xmx512m -jar durian.jar

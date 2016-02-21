@@ -9,6 +9,7 @@ import java.net.URL;
 import java.util.concurrent.ExecutionException;
 
 import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -31,7 +32,7 @@ public class ImageCache {
 	// Private constructor prevents instantiation from other classes
 	private ImageCache() {
 		imageCache = CacheBuilder.newBuilder()
-				.maximumSize(1000)
+				.maximumSize(300)
 				.build(new ImageCacheLoader());
 	}
 
@@ -41,10 +42,10 @@ public class ImageCache {
 		return ImageCache.INSTANCE;
 	}
 
-	private LoadingCache<String, Image> imageCache;
+	private LoadingCache<String, ImageIcon> imageCache;
 
-	public Image get(String key) {
-		Image image = null;
+	public ImageIcon get(String key) {
+		ImageIcon image = null;
 		if (StringUtils.isNotBlank(key)) {
 			try {
 				image = imageCache.get(key);
@@ -61,10 +62,10 @@ public class ImageCache {
 		get(key);
 	}
 
-	private static class ImageCacheLoader extends CacheLoader<String, Image> {
+	private static class ImageCacheLoader extends CacheLoader<String, ImageIcon> {
 
 		@Override
-		public Image load(String key) throws Exception {
+		public ImageIcon load(String key) throws Exception {
 			File imagesDirectory = new File("images");
 			if(!imagesDirectory.exists()) imagesDirectory.mkdir();
 					
@@ -91,7 +92,7 @@ public class ImageCache {
 				}
 //			}
 
-			return image;
+			return new ImageIcon(image);
 		}
 
 		private void saveToDisk(String fileName, Image image, File imageFile) throws IOException {

@@ -17,19 +17,18 @@
  */
 package qic.ui.extra;
 
+import java.awt.Color;
 import java.awt.Component;
-import java.awt.Image;
-import java.io.File;
-import java.io.IOException;
 
-import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 
+import com.porty.swing.table.model.BeanPropertyTableModel;
+
+import qic.SearchPageScraper.SearchResultItem;
 import qic.util.Config;
-import qic.util.ImageCache;
 
 /**
  * @author thirdy
@@ -39,14 +38,17 @@ public class ArtColumnRenderer extends DefaultTableCellRenderer {
 	
 	private static final long serialVersionUID = 1L;
 	
-	private ImageIcon defaultImage;
+	private Color bgColor;
+	private Color guildColor;
+	private Color autoHighlightColor;
+	private BeanPropertyTableModel<SearchResultItem> model;
 
-	public ArtColumnRenderer() {
-		try {
-			this.defaultImage = new ImageIcon(ImageIO.read(new File("images/default.png")));
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
+
+	public ArtColumnRenderer(BeanPropertyTableModel<SearchResultItem> model, Color bgColor, Color guildColor, Color autoHighlightColor) {
+		this.bgColor = bgColor;
+		this.guildColor = guildColor;
+		this.autoHighlightColor = autoHighlightColor;
+		this.model = model;
 		setHorizontalAlignment(JLabel.CENTER);
 	}
 	
@@ -55,16 +57,31 @@ public class ArtColumnRenderer extends DefaultTableCellRenderer {
         super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
         setText("");
         setIcon(null);
+        
+		if (isSelected) {
+			setBackground(table.getSelectionBackground());
+		} else {
+			setBackground(bgColor != null ? bgColor : table.getBackground());
+			if (!model.getData().isEmpty()) {
+				SearchResultItem item = model.getData().get(row);
+				if (item.newInAutomated()) {
+					setBackground(autoHighlightColor);
+				} else if (item.guildItem()) {
+					setBackground(guildColor);
+				}
+			}
+		}
 
         boolean artEnabled = Config.getBooleanProperty(Config.RESULT_TABLE_ART_ENABLED, true);
-        if (artEnabled) {
-        	ImageIcon image = defaultImage;
-            Image img = ImageCache.getInstance().get(value.toString());
-            if (img != null) {
-            	image = new ImageIcon(img);
-    		}
+        if (artEnabled && value != null) {
+//        	ImageIcon image = defaultImage;
+//        	ImageIcon img = ImageCache.getInstance().get(value.toString());
+//            if (img != null) {
+//            	image = img;
+//    		}
+        	ImageIcon image = (ImageIcon) value;
             setIcon(image);
-            table.setRowHeight(row, image.getIconHeight());
+//            table.setRowHeight(row, image.getIconHeight());
 		}
         
         return this;

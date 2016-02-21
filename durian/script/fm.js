@@ -20,8 +20,31 @@ function process(_logger, items) {
 		//logger.info('name: ' + item.name + " rarity: " + item.rarity.name())
 		if (item.rarity.name() == "magic" || item.rarity.name() == "rare") 
 			processExplicitMods(item)
+		
+		setupWtbMessage(item)
 	}
 	return 'success'
+}
+
+function setupWtbMessage(item) {
+	// Look at class SearchResultItem in file SearchPageScraper.java
+	// for more variable to use
+	// vanilla js doesn't have format function :(
+	var wtbTemplate = '@%s Hi, I would like to buy your %s listed for %s in %s'
+	var buyout = item.buyout
+	if (item.guildItem()) {
+		buyout = java.lang.String.format(
+			"%s (less %s guildmate discount)",
+			item.buyout,
+			item.guildDiscount()) 
+	}
+	var wtb = java.lang.String.format(wtbTemplate,
+		item.ign, 
+		item.name, 
+		buyout, 
+		item.league
+	)
+	item.wtb(wtb)
 }
 
 function processExplicitMods(item) {
@@ -35,10 +58,11 @@ function processExplicitMods(item) {
 	for(idx in explicitMods) {
 		var mod = explicitMods[idx]
 		var affix = affixesLookup(baseType, mod.name, mod.value)
+		var maxTier = affixMaxLookUp(baseType, mod.name)
 		if(affix) {
-			//logger.info('affix found:' + affix.mod + ' tier: ' + affix.tier)
+			//logger.info('affix found:' + affix.mod + ' tier: ' + affix.tier + ' maxTier: ' + maxTier)
 			affixLabel = affix.affix == 'Prefix' ? '[prefix]' : '[suffix]'
-			tierLabel = '[T' + affix.tier + ']'
+			tierLabel = '[T' + affix.tier + '/T' + maxTier +']'
 			valueLabel = mod.value
 			modNameLabel = mod.name
 			if(modNameLabel.startsWith('#')) modNameLabel = modNameLabel.substring(1)
@@ -63,6 +87,23 @@ function affixesLookup(baseType, modName, modValue) {
 		}
 	}
 	return null
+}
+function affixMaxLookUp(baseType, modName) {
+	// extra # at the beginning
+	if(modName.startsWith('#')) modName = modName.substring(1)
+	var maxTier = 0;
+	for(idx in affixes) {
+		affix = affixes[idx]
+		baseTypeFlag = affix[baseType]
+		// print(baseTypeFlag + ':' + modName + ' = ' + affix.mod)
+		if(baseTypeFlag && baseTypeFlag.indexOf('Yes') != -1 && affix.mod == modName) {			
+			if(maxTier < affix.tier) maxTier = affix.tier;
+		}else{
+			if(maxTier > 0)
+				return maxTier;
+		}
+	}
+	return maxTier;
 }
 
 function determineBaseType(name) {

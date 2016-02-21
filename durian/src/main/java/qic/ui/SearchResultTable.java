@@ -20,13 +20,14 @@ package qic.ui;
 import static java.lang.String.format;
 import static java.util.Arrays.asList;
 
+import java.awt.Color;
 import java.awt.Point;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.net.URL;
 import java.util.List;
 import java.util.function.Consumer;
 
+import javax.swing.ImageIcon;
 import javax.swing.JTable;
 import javax.swing.SwingUtilities;
 import javax.swing.table.TableColumnModel;
@@ -40,6 +41,7 @@ import qic.SearchPageScraper.SearchResultItem;
 import qic.ui.extra.ArtColumnRenderer;
 import qic.ui.extra.MultiLineTableCellRenderer;
 import qic.ui.extra.VerifierTask;
+import qic.util.Config;
 import qic.util.SwingUtil;
 
 /**
@@ -84,12 +86,29 @@ public class SearchResultTable extends JTable {
 				}
 		    }
 		});
+		Color bgColor = Color.decode(Config.getPropety(Config.RESULT_TABLE_BG_COLOR, null));
+		Color guildColor = Color.decode(Config.getPropety(Config.GUILD_COLOR_HIGHLIGHT, "#f6b67f"));
+		Color autoHighlightColor = Color.decode(
+				Config.getPropety(Config.AUTOMATED_SEARCH_NOTIFY_NEWONLY_COLOR_HIGHLIGHT, "#ccff99"));
+		this.setDefaultRenderer(List.class, new MultiLineTableCellRenderer(model, bgColor, guildColor, autoHighlightColor));
+		this.setDefaultRenderer(String.class, new MultiLineTableCellRenderer(model, bgColor, guildColor, autoHighlightColor));
+		this.setDefaultRenderer(ImageIcon.class, new ArtColumnRenderer(model, bgColor, guildColor, autoHighlightColor));
 		
-		this.setDefaultRenderer(List.class, new MultiLineTableCellRenderer());
-		this.setDefaultRenderer(String.class, new MultiLineTableCellRenderer());
-		this.setDefaultRenderer(URL.class, new ArtColumnRenderer());
+		model.addTableModelListener(e -> {
+			boolean artEnabled = Config.getBooleanProperty(Config.RESULT_TABLE_ART_ENABLED, true);
+			if (artEnabled) {
+				for (int i = 0; i < model.getData().size(); i++) {
+					SearchResultItem item = model.getData().get(i);
+					ImageIcon art = item.getArt();
+					if (art != null) {
+						int height = art.getIconHeight();
+						setRowHeight(i, height);
+					}
+				}
+			}
+		});
 	}
-
+	
 	private void setupColumnWidths() {
 		setColumnWidths(this.getColumnModel(), 
 				asList( 115,    20,        205,    135,      50,    340,	  90,        90));
@@ -106,6 +125,8 @@ public class SearchResultTable extends JTable {
 		data.clear();
 		data.addAll(itemResults);
 		model.fireTableDataChanged();
+		// https://community.oracle.com/thread/1486177?start=0&tstart=0
+		setupColumnWidths();
 	}
 
 	public void updateData(int index) {

@@ -46,7 +46,7 @@ public class QicFrame extends JFrame {
 	private final Logger logger = LoggerFactory.getLogger(this.getClass().getName());
 	
 	public QicFrame(Main main, String query) {
-		super("Durian 0.5");
+		super("Durian 0.6.0");
 		
 	    Image icon = Toolkit.getDefaultToolkit().getImage(QicFrame.class.getResource("/durian128.png"));
 	    this.setIconImage(icon);
@@ -58,6 +58,7 @@ public class QicFrame extends JFrame {
 		ConfigPanel configPanel  = new ConfigPanel();
 		TermsPanel termsPanel  = new TermsPanel();
 		ScriptsPanel scriptsPanel  = new ScriptsPanel();
+		GuildPanel guildPanel  = new GuildPanel();
 		AboutPanel aboutPanel  = new AboutPanel();
 		
 		JTabbedPane tabbedPane = new JTabbedPane();
@@ -67,6 +68,7 @@ public class QicFrame extends JFrame {
 		tabbedPane.addTab("Config", configPanel);
 		tabbedPane.addTab("Terms", termsPanel);
 		tabbedPane.addTab("Scripts", scriptsPanel);
+		tabbedPane.addTab("Guild", guildPanel);
 		tabbedPane.addTab("About/Help", aboutPanel);
 		tabbedPane.addChangeListener(new ChangeListener() {
 			

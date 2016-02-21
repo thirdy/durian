@@ -188,7 +188,9 @@ public class ManualPanel extends JPanel {
 	private void addDataToTable(Command command) {
 		List<SearchResultItem> itemResults = filterResults(command.itemResults);
 		table.clear();
-		table.setData(itemResults);
+//		table.setData(itemResults);
+		table.addData(itemResults);
+		table.updateData(0);
 	}
 
 	private List<SearchResultItem> filterResults(List<SearchResultItem> itemResults) {

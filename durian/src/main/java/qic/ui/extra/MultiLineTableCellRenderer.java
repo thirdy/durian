@@ -1,17 +1,22 @@
 package qic.ui.extra;
 
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
-import java.util.stream.Collectors;
 
 import javax.swing.JTable;
 import javax.swing.JTextArea;
 import javax.swing.UIManager;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.TableCellRenderer;
+
+import org.apache.commons.lang3.StringUtils;
+
+import com.porty.swing.table.model.BeanPropertyTableModel;
+
+import qic.SearchPageScraper.SearchResultItem;
 
 /**
    * Multiline Table Cell Renderer.
@@ -20,52 +25,70 @@ import javax.swing.table.TableCellRenderer;
 	private static final long serialVersionUID = 1L;
 	
 	private List<List<Integer>> rowColHeight = new ArrayList<List<Integer>>();
+	private static final EmptyBorder EMPTY_BORDER = new EmptyBorder(1, 2, 1, 2);
+	
+	private Color bgColor;
+	private Color guildColor;
+	private Color autoHighlightColor;
+
+	private BeanPropertyTableModel<SearchResultItem> model;
+
    
-    public MultiLineTableCellRenderer() {
+    public MultiLineTableCellRenderer(BeanPropertyTableModel<SearchResultItem> model, Color bgColor, Color guildColor, Color autoHighlightColor) {
       setLineWrap(true);
       setWrapStyleWord(true);
       setOpaque(true);
+      this.bgColor = bgColor;
+      this.guildColor = guildColor;
+      this.autoHighlightColor = autoHighlightColor;
+      this.model = model;
     }
 
-	@SuppressWarnings("unchecked")
-    public Component getTableCellRendererComponent(
-        JTable table, Object value, boolean isSelected, boolean hasFocus,
-        int row, int column) {
-      if (isSelected) {
-        setForeground(table.getSelectionForeground());
-        setBackground(table.getSelectionBackground());
-      } else {
-        setForeground(table.getForeground());
-        setBackground(table.getBackground());
-      }
-      setFont(table.getFont());
-      
-      if (hasFocus) {
-        setBorder(UIManager.getBorder("Table.focusCellHighlightBorder"));
-        if (table.isCellEditable(row, column)) {
-          setForeground(UIManager.getColor("Table.focusCellForeground"));
-          setBackground(UIManager.getColor("Table.focusCellBackground"));
-        }
-      } else {
-        setBorder(new EmptyBorder(1, 2, 1, 2));
-      }
-      
-      if (value != null) {
-        if (value instanceof List) {
-        	@SuppressWarnings("rawtypes")
-			List list = (List)value;
-			Object str = list.stream().map(Objects::toString).collect(Collectors.joining(System.lineSeparator()));
-			setText(str.toString());
+	public Component getTableCellRendererComponent(JTable table, Object value, 
+			boolean isSelected, boolean hasFocus, int row, int column) {
+		if (isSelected) {
+			setForeground(table.getSelectionForeground());
+			setBackground(table.getSelectionBackground());
 		} else {
-			setText(value.toString());
+			setForeground(table.getForeground());
+			setBackground(bgColor != null ? bgColor : table.getBackground());
+			if (!model.getData().isEmpty()) {
+				SearchResultItem item = model.getData().get(row);
+				if (item.newInAutomated()) {
+					setBackground(autoHighlightColor);
+				} else if (item.guildItem()) {
+					setBackground(guildColor);
+				}
+			}
 		}
-      } else {
-        setText("");
-      }
-      
-      adjustRowHeight(table, row, column);
-      return this;
-    }
+		setFont(table.getFont());
+
+		if (hasFocus) {
+			setBorder(UIManager.getBorder("Table.focusCellHighlightBorder"));
+			if (table.isCellEditable(row, column)) {
+				setForeground(UIManager.getColor("Table.focusCellForeground"));
+				setBackground(UIManager.getColor("Table.focusCellBackground"));
+			}
+		} else {
+			setBorder(EMPTY_BORDER);
+		}
+
+		if (value != null) {
+			if (value instanceof List) {
+				@SuppressWarnings("rawtypes")
+				List list = (List) value;
+				String s = StringUtils.join(list, System.lineSeparator());
+				setText(s);
+			} else {
+				setText(value.toString());
+			}
+		} else {
+			setText("");
+		}
+
+		adjustRowHeight(table, row, column);
+		return this;
+	}
     
     /**
      * Calculate the new preferred height for a given row, and sets the height on the table.

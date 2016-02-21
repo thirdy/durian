@@ -33,6 +33,7 @@ import org.apache.commons.lang3.StringUtils;
 public class Config {
 	
 	public static final String CONFIG_PROPERTIES_FILENAME = "config.properties";
+	public static final String GUILD_LIST_FILENAME = "guild.txt";
 	
 	public static final String AUTOMATED_SEARCH_WAIT_MINUTES = "automated.search.wait.minutes";
 	public static final String AUTOMATED_SEARCH_INBETWEEN_WAIT_SECONDS = "automated.search.inbetween.wait.seconds";
@@ -43,7 +44,13 @@ public class Config {
 	public static final String AUTOMATED_SEARCH_SOUND_MODE = "automated.search.sound.mode";
 	public static final String AUTOMATED_SEARCH_ENABLED = "automated.search.enabled";
 	public static final String AUTOMATED_SEARCH_NOTIFY_NEWONLY = "automated.search.notify.newonly";
+	public static final String AUTOMATED_SEARCH_NOTIFY_NEWONLY_COLOR_HIGHLIGHT = "automated.search.notify.newonly.color.highlight";
 	public static final String RESULT_TABLE_ART_ENABLED = "result.table.art.enabled";
+	public static final String RESULT_TABLE_BG_COLOR = "result.table.bg.color";
+	
+	public static final String GUILD_DISCOUNT_STRING = "guild.discount.string";
+	public static final String GUILD_COLOR_HIGHLIGHT = "guild.color.highlight";
+	public static final String GUILD_DISCOUNT_STRING_DEFAULT = "1ch";
 	
 	public static final String AUTOMATED_SEARCH_BLACKLIST = "automated.search.blacklist";
 	public static final String MANUAL_SEARCH_BLACKLIST = "manual.search.blacklist";

@@ -42,9 +42,9 @@ ipd|physdmg|pdmg                    =       mod_name=(pseudo) (total) #% increas
 (\d+)(ipd|physdmg|pdmg)             =       mod_name=(pseudo) (total) #% increased Physical Damage&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)(ipd|physdmg|pdmg)       =       mod_name=(pseudo) (total) #% increased Physical Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-flatphys                            =       mod_name=Adds #-# Physical Damage&mod_min=&mod_max=&$MG
-(\d+)flatphys                       =       mod_name=Adds #-# Physical Damage&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)flatphys                 =       mod_name=Adds #-# Physical Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+f(lat)?phys                            =       mod_name=Adds #-# Physical Damage&mod_min=&mod_max=&$MG
+(\d+)f(lat)?phys                       =       mod_name=Adds #-# Physical Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)f(lat)?phys                 =       mod_name=Adds #-# Physical Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
 hitscantbeevaded                    =       mod_name=Hits can't be Evaded&mod_min=&mod_max=&$MG
 
@@ -69,29 +69,29 @@ incprojdmg                          =       mod_name=#% increased Projectile Dam
 (\d+)incprojdmg                     =       mod_name=#% increased Projectile Damage&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)incprojdmg               =       mod_name=#% increased Projectile Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-flatlight                           =       mod_name=Adds #-# Lightning Damage&mod_min=&mod_max=&$MG
-(\d+)flatlight                      =       mod_name=Adds #-# Lightning Damage&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)flatlight                =       mod_name=Adds #-# Lightning Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+f(lat)?light                           =       mod_name=Adds #-# Lightning Damage&mod_min=&mod_max=&$MG
+(\d+)f(lat)?light                      =       mod_name=Adds #-# Lightning Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)f(lat)?light                =       mod_name=Adds #-# Lightning Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-flatfire                            =       mod_name=Adds #-# Fire Damage&mod_min=&mod_max=&$MG
-(\d+)flatfire                       =       mod_name=Adds #-# Fire Damage&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)flatfire                 =       mod_name=Adds #-# Fire Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+f(lat)?fire                            =       mod_name=Adds #-# Fire Damage&mod_min=&mod_max=&$MG
+(\d+)f(lat)?fire                       =       mod_name=Adds #-# Fire Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)f(lat)?fire                 =       mod_name=Adds #-# Fire Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-flatcold                            =       mod_name=Adds #-# Cold Damage&mod_min=&mod_max=&$MG
-(\d+)flatcold                       =       mod_name=Adds #-# Cold Damage&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)flatcold                 =       mod_name=Adds #-# Cold Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+f(lat)?cold                            =       mod_name=Adds #-# Cold Damage&mod_min=&mod_max=&$MG
+(\d+)f(lat)?cold                       =       mod_name=Adds #-# Cold Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)f(lat)?cold                 =       mod_name=Adds #-# Cold Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-spellflatlight|sflatlight           =       mod_name=Adds #-# Lightning Damage to Spells&mod_min=&mod_max=&$MG
-(\d+)(spellflatlight|sflatlight)    =       mod_name=Adds #-# Lightning Damage to Spells&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(spellflatlight|sflatlight)=     mod_name=Adds #-# Lightning Damage to Spells&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+spellf(lat)?light|sf(lat)?light           =       mod_name=Adds #-# Lightning Damage to Spells&mod_min=&mod_max=&$MG
+(\d+)(spellf(lat)?light|sf(lat)?light)    =       mod_name=Adds #-# Lightning Damage to Spells&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(spellf(lat)?light|sf(lat)?light)=     mod_name=Adds #-# Lightning Damage to Spells&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-spellflatfire|sflatfire             =       mod_name=Adds #-# Fire Damage to Spells&mod_min=&mod_max=&$MG
-(\d+)(spellflatfire|sflatfire)      =       mod_name=Adds #-# Fire Damage to Spells&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(spellflatfire|sflatfire)=       mod_name=Adds #-# Fire Damage to Spells&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+spellf(lat)?fire|sf(lat)?fire             =       mod_name=Adds #-# Fire Damage to Spells&mod_min=&mod_max=&$MG
+(\d+)(spellf(lat)?fire|sf(lat)?fire)      =       mod_name=Adds #-# Fire Damage to Spells&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(spellf(lat)?fire|sf(lat)?fire)=       mod_name=Adds #-# Fire Damage to Spells&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-spellflatcold|sflatcold             =       mod_name=Adds #-# Cold Damage to Spells&mod_min=&mod_max=&$MG
-(\d+)(spellflatcold|sflatcold)      =       mod_name=Adds #-# Cold Damage to Spells&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(spellflatcold|sflatcold)=       mod_name=Adds #-# Cold Damage to Spells&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+spellf(lat)?cold|sf(lat)?cold             =       mod_name=Adds #-# Cold Damage to Spells&mod_min=&mod_max=&$MG
+(\d+)(spellf(lat)?cold|sf(lat)?cold)      =       mod_name=Adds #-# Cold Damage to Spells&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(spellf(lat)?cold|sf(lat)?cold)=       mod_name=Adds #-# Cold Damage to Spells&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
 atkspeed|attackspeed                =       mod_name=(pseudo) (total) #% increased Attack Speed&mod_min=&mod_max=&$MG
 (\d+)(atkspeed|attackspeed)         =       mod_name=(pseudo) (total) #% increased Attack Speed&mod_min=$GROUP1&mod_max=&$MG
@@ -121,71 +121,71 @@ p(hys)?manaleech|pml        =       mod_name=#% of Physical Attack Damage Leeche
 (([0-9]+)?(\.)?([0-9]{1,2})?)(p(hys)?manaleech|pml) = mod_name=#% of Physical Attack Damage Leeched as Mana&mod_min=$GROUP1&mod_max=&$MG
 (([0-9]+)?(\.)?([0-9]{1,2})?)-(([0-9]+)?(\.)?([0-9]{1,2})?)(p(hys)?manaleech|pml) = mod_name=#% of Physical Attack Damage Leeched as Mana&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-plusbowgems|\+bowg                     =       mod_name=(pseudo) (total) +# to Level of Socketed Bow Gems&mod_min=&mod_max=&$MG
-(\d+)(plusbowgems|\+bowg)              =       mod_name=(pseudo) (total) +# to Level of Socketed Bow Gems&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(plusbowgems|\+bowg)        =       mod_name=(pseudo) (total) +# to Level of Socketed Bow Gems&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+plusbowgems|\+bowg                      =       mod_name=(pseudo) (total) +# to Level of Socketed Bow Gems&mod_min=&mod_max=&$MG
+(\d+)(plusbowgems|\+bowg)               =       mod_name=(pseudo) (total) +# to Level of Socketed Bow Gems&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(plusbowgems|\+bowg)         =       mod_name=(pseudo) (total) +# to Level of Socketed Bow Gems&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-pluscoldgems|\+coldg                   =       mod_name=(pseudo) (total) +# to Level of Socketed Cold Gems&mod_min=&mod_max=&$MG
-(\d+)(pluscoldgems|\+coldg)            =       mod_name=(pseudo) (total) +# to Level of Socketed Cold Gems&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(pluscoldgems|\+coldg)      =       mod_name=(pseudo) (total) +# to Level of Socketed Cold Gems&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+pluscoldgems|\+coldg                    =       mod_name=(pseudo) (total) +# to Level of Socketed Cold Gems&mod_min=&mod_max=&$MG
+(\d+)(pluscoldgems|\+coldg)             =       mod_name=(pseudo) (total) +# to Level of Socketed Cold Gems&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(pluscoldgems|\+coldg)       =       mod_name=(pseudo) (total) +# to Level of Socketed Cold Gems&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-plusfiregems|\+fireg                   =       mod_name=(pseudo) (total) +# to Level of Socketed Fire Gems&mod_min=&mod_max=&$MG
-(\d+)(plusfiregems|\+fireg)            =       mod_name=(pseudo) (total) +# to Level of Socketed Fire Gems&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(plusfiregems|\+fireg)      =       mod_name=(pseudo) (total) +# to Level of Socketed Fire Gems&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+plusfiregems|\+fireg                    =       mod_name=(pseudo) (total) +# to Level of Socketed Fire Gems&mod_min=&mod_max=&$MG
+(\d+)(plusfiregems|\+fireg)             =       mod_name=(pseudo) (total) +# to Level of Socketed Fire Gems&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(plusfiregems|\+fireg)       =       mod_name=(pseudo) (total) +# to Level of Socketed Fire Gems&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-pluslightgems|\+lightg                 =       mod_name=(pseudo) (total) +# to Level of Socketed Lightning Gems&mod_min=&mod_max=&$MG
-(\d+)(pluslightgems|\+lightg)          =       mod_name=(pseudo) (total) +# to Level of Socketed Lightning Gems&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(pluslightgems|\+lightg)    =       mod_name=(pseudo) (total) +# to Level of Socketed Lightning Gems&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+pluslightgems|\+lightg                  =       mod_name=(pseudo) (total) +# to Level of Socketed Lightning Gems&mod_min=&mod_max=&$MG
+(\d+)(pluslightgems|\+lightg)           =       mod_name=(pseudo) (total) +# to Level of Socketed Lightning Gems&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(pluslightgems|\+lightg)     =       mod_name=(pseudo) (total) +# to Level of Socketed Lightning Gems&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-plusmeleegems|\+meleeg                 =       mod_name=(pseudo) (total) +# to Level of Socketed Melee Gems&mod_min=&mod_max=&$MG
-(\d+)(plusmeleegems|\+meleeg)          =       mod_name=(pseudo) (total) +# to Level of Socketed Melee Gems&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(plusmeleegems|\+meleeg)    =       mod_name=(pseudo) (total) +# to Level of Socketed Melee Gems&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+plusmeleegems|\+meleeg                  =       mod_name=(pseudo) (total) +# to Level of Socketed Melee Gems&mod_min=&mod_max=&$MG
+(\d+)(plusmeleegems|\+meleeg)           =       mod_name=(pseudo) (total) +# to Level of Socketed Melee Gems&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(plusmeleegems|\+meleeg)     =       mod_name=(pseudo) (total) +# to Level of Socketed Melee Gems&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-plusminiongems|\+miniong               =       mod_name=(pseudo) (total) +# to Level of Socketed Minion Gems&mod_min=&mod_max=&$MG
-(\d+)(plusminiongems|\+miniong)        =       mod_name=(pseudo) (total) +# to Level of Socketed Minion Gems&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(plusminiongems|\+miniong)  =     mod_name=(pseudo) (total) +# to Level of Socketed Minion Gems&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+plusminiongems|\+miniong                =       mod_name=(pseudo) (total) +# to Level of Socketed Minion Gems&mod_min=&mod_max=&$MG
+(\d+)(plusminiongems|\+miniong)         =       mod_name=(pseudo) (total) +# to Level of Socketed Minion Gems&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(plusminiongems|\+miniong)   =     mod_name=(pseudo) (total) +# to Level of Socketed Minion Gems&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-plusspellgems|\+spellg                 =       mod_name=(pseudo) (total) +# to Level of Socketed Spell Gems&mod_min=&mod_max=&$MG
-(\d+)(plusspellgems|\+spellg)          =       mod_name=(pseudo) (total) +# to Level of Socketed Spell Gems&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(plusspellgems|\+spellg)    =       mod_name=(pseudo) (total) +# to Level of Socketed Spell Gems&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+plusspellgems|\+spellg                  =       mod_name=(pseudo) (total) +# to Level of Socketed Spell Gems&mod_min=&mod_max=&$MG
+(\d+)(plusspellgems|\+spellg)           =       mod_name=(pseudo) (total) +# to Level of Socketed Spell Gems&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(plusspellgems|\+spellg)     =       mod_name=(pseudo) (total) +# to Level of Socketed Spell Gems&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-flateleattacks                         =       mod_name=(pseudo) (total) Adds # Elemental Damage to Attacks&mod_min=&mod_max=&$MG
-(\d+)(flateleattacks)                  =       mod_name=(pseudo) (total) Adds # Elemental Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(flateleattacks)            =       mod_name=(pseudo) (total) Adds # Elemental Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+f(lat)?eleattacks                       =       mod_name=(pseudo) (total) Adds # Elemental Damage to Attacks&mod_min=&mod_max=&$MG
+(\d+)(f(lat)?eleattacks)                =       mod_name=(pseudo) (total) Adds # Elemental Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(f(lat)?eleattacks)          =       mod_name=(pseudo) (total) Adds # Elemental Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-flatfireattacks                        =       mod_name=(pseudo) (total) Adds # Fire Damage to Attacks&mod_min=&mod_max=&$MG
-(\d+)(flatfireattacks)                 =       mod_name=(pseudo) (total) Adds # Fire Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(flatfireattacks)           =       mod_name=(pseudo) (total) Adds # Fire Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+f(lat)?fireattacks                      =       mod_name=(pseudo) (total) Adds # Fire Damage to Attacks&mod_min=&mod_max=&$MG
+(\d+)(f(lat)?fireattacks)               =       mod_name=(pseudo) (total) Adds # Fire Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(f(lat)?fireattacks)         =       mod_name=(pseudo) (total) Adds # Fire Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-flatphysattacks                        =       mod_name=(pseudo) (total) Adds # Physical Damage to Attacks&mod_min=&mod_max=&$MG
-(\d+)(flatphysattacks)                 =       mod_name=(pseudo) (total) Adds # Physical Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(flatphysattacks)           =       mod_name=(pseudo) (total) Adds # Physical Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+f(lat)?physattacks                      =       mod_name=(pseudo) (total) Adds # Physical Damage to Attacks&mod_min=&mod_max=&$MG
+(\d+)(f(lat)?physattacks)               =       mod_name=(pseudo) (total) Adds # Physical Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(f(lat)?physattacks)         =       mod_name=(pseudo) (total) Adds # Physical Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-flatcoldattacks                         =       mod_name=(pseudo) (total) Adds # Cold Damage to Attacks&mod_min=&mod_max=&$MG
-(\d+)(flatcoldattacks)                  =       mod_name=(pseudo) (total) Adds # Cold Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(flatcoldattacks)            =       mod_name=(pseudo) (total) Adds # Cold Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+f(lat)?coldattacks                      =       mod_name=(pseudo) (total) Adds # Cold Damage to Attacks&mod_min=&mod_max=&$MG
+(\d+)(f(lat)?coldattacks)               =       mod_name=(pseudo) (total) Adds # Cold Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(f(lat)?coldattacks)         =       mod_name=(pseudo) (total) Adds # Cold Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-flatlightattacks                        =       mod_name=(pseudo) (total) Adds # Lightning Damage to Attacks&mod_min=&mod_max=&$MG
-(\d+)(flatlightattacks)                 =       mod_name=(pseudo) (total) Adds # Lightning Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(flatlightattacks)           =       mod_name=(pseudo) (total) Adds # Lightning Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+f(lat)?lightattacks                     =       mod_name=(pseudo) (total) Adds # Lightning Damage to Attacks&mod_min=&mod_max=&$MG
+(\d+)(f(lat)?lightattacks)              =       mod_name=(pseudo) (total) Adds # Lightning Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(f(lat)?lightattacks)        =       mod_name=(pseudo) (total) Adds # Lightning Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-flatlightquiver                         =       mod_name=Adds #-# Lightning Damage to Attacks&mod_min=&mod_max=&$MG
-(\d+)(flatlightquiver)                  =       mod_name=Adds #-# Lightning Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(flatlightquiver)            =       mod_name=Adds #-# Lightning Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+f(lat)?lightquiver                      =       mod_name=Adds #-# Lightning Damage to Attacks&mod_min=&mod_max=&$MG
+(\d+)(f(lat)?lightquiver)               =       mod_name=Adds #-# Lightning Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(f(lat)?lightquiver)         =       mod_name=Adds #-# Lightning Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-flatfirequiver                          =       mod_name=Adds #-# Fire Damage to Attacks&mod_min=&mod_max=&$MG
-(\d+)(flatfirequiver)                   =       mod_name=Adds #-# Fire Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(flatfirequiver)             =       mod_name=Adds #-# Fire Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+f(lat)?firequiver                       =       mod_name=Adds #-# Fire Damage to Attacks&mod_min=&mod_max=&$MG
+(\d+)(f(lat)?firequiver)                =       mod_name=Adds #-# Fire Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(f(lat)?firequiver)          =       mod_name=Adds #-# Fire Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
  
-flatcoldquiver                          =       mod_name=Adds #-# Cold Damage to Attacks&mod_min=&mod_max=&$MG
-(\d+)(flatcoldquiver)                   =       mod_name=Adds #-# Cold Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(flatcoldquiver)             =       mod_name=Adds #-# Cold Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+f(lat)?coldquiver                       =       mod_name=Adds #-# Cold Damage to Attacks&mod_min=&mod_max=&$MG
+(\d+)(f(lat)?coldquiver)                =       mod_name=Adds #-# Cold Damage to Attacks&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(f(lat)?coldquiver)          =       mod_name=Adds #-# Cold Damage to Attacks&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
 f(lat)?acc(uarcy)?                      =       mod_name=+# to Accuracy Rating&mod_min=&mod_max=&$MG
 (\d+)(f(lat)?acc(uarcy)?)               =       mod_name=+# to Accuracy Rating&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)(f(lat)?acc(uarcy)?)         =       mod_name=+# to Accuracy Rating&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-inc(reased)?MineD(amage|mg))            =       mod_name=#% increased Mine Damage&mod_min=&mod_max=&$MG
+inc(reased)?MineD(amage|mg)             =       mod_name=#% increased Mine Damage&mod_min=&mod_max=&$MG
 (\d+)(inc(reased)?MineD(amage|mg))      =       mod_name=#% increased Mine Damage&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)(inc(reased)?MineD(amage|mg))=       mod_name=#% increased Mine Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
@@ -193,10 +193,14 @@ Ign?(ite)?Ch(ance)?                     =       mod_name=#% chance to Ignite&mod
 (\d+)(Ign?(ite)?Ch(ance)?)              =       mod_name=#% chance to Ignite&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)(Ign?(ite)?Ch(ance)?)        =       mod_name=#% chance to Ignite&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-inc(reased)?TrapeD(amage|mg))            =       mod_name=#% increased Trap Damage&mod_min=&mod_max=&$MG
-(\d+)(inc(reased)?TrapeD(amage|mg))      =       mod_name=#% increased Trap Damage&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(inc(reased)?TrapD(amage|mg)) =       mod_name=#% increased Trap Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+inc(reased)?TrapeD(amage|mg)            =       mod_name=#% increased Trap Damage&mod_min=&mod_max=&$MG
+(\d+)(inc(reased)?TrapeD(amage|mg))     =       mod_name=#% increased Trap Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(inc(reased)?TrapD(amage|mg))=       mod_name=#% increased Trap Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
 
-inc(reased)?AreaD(amage|mg))             =       mod_name=#% increased Area Damage&mod_min=&mod_max=&$MG
-(\d+)(inc(reased)?AreaD(amage|mg))       =       mod_name=#% increased Area Damage&mod_min=$GROUP1&mod_max=&$MG
-(\d+)-(\d+)(inc(reased)?AreaD(amage|mg)) =       mod_name=#% increased Area Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+inc(reased)?AreaD(amage|mg)             =       mod_name=#% increased Area Damage&mod_min=&mod_max=&$MG
+(\d+)(inc(reased)?AreaD(amage|mg))      =       mod_name=#% increased Area Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(inc(reased)?AreaD(amage|mg))=       mod_name=#% increased Area Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+(inc(reased)?)?Ele(mental)?D(amage|mg)  =       mod_name=#% increased Elemental Damage&mod_min=&mod_max=&$MG
+(\d+)((inc(reased)?)?Ele(mental)?D(amage|mg))=       mod_name=#% increased Elemental Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)((inc(reased)?)?Ele(mental)?D(amage|mg))=       mod_name=#% increased Elemental Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG

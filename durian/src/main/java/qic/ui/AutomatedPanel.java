@@ -30,6 +30,7 @@ import static qic.util.DurianUtils.notBlacklisted;
 import static qic.util.Util.sleep;
 
 import java.awt.BorderLayout;
+import java.awt.Font;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.util.Arrays;
@@ -98,6 +99,7 @@ public class AutomatedPanel extends JPanel {
 		controlPanel.add(statusLbl);
 		
 		List<String> searchList = Util.loadSearchList(AUTOMATED_TXT_FILENAME);
+		searchListTa.setFont(new Font("Consolas", Font.TRUETYPE_FONT, 12));
 		searchListTa.setText(searchList
 				.stream()
 				.collect(joining(lineSeparator())));
@@ -187,8 +189,9 @@ public class AutomatedPanel extends JPanel {
 	    			itemResults.stream().forEach(this::publish);
 	        		
 	    			int count = 0;
+	    			
 	    			if (getBooleanProperty(AUTOMATED_AUTO_VERIFY, false)) {
-	    				long sleep = getLongProperty(Config.AUTOMATED_AUTO_VERIFY_SLEEP, 5000);
+	    				long sleep = getLongProperty(Config.AUTOMATED_AUTO_VERIFY_SLEEP, 3000);
 	    				count += runVerify(itemResults, sleep);
 	    			} else {
 						count += itemResults.size();
@@ -196,10 +199,10 @@ public class AutomatedPanel extends JPanel {
 	    			
 	    			if (count > 0 && getBooleanProperty(Config.AUTOMATED_SEARCH_NOTIFY_NEWONLY, true)) {
 	    				logger.info("Now checking if there are actually new items..");
-	    				List<Integer> newItemsUUID = itemResults.stream().map(SearchResultItem::toUUID).collect(toList());
-						boolean foundNew = newItemsUUID.stream().anyMatch(uuid -> !previousData.contains(uuid));
-						logger.info("foundNew: " + foundNew);
-	    				if (!foundNew) {
+	    				List<SearchResultItem> newItems = itemResults.stream()
+	    						.filter(item -> !previousData.contains(item.toUUID())).collect(toList());
+	    				newItems.forEach(item -> item.newInAutomated = true);
+	    				if (newItems.isEmpty()) {
 							count = 0;
 						}
 					}
@@ -225,6 +228,7 @@ public class AutomatedPanel extends JPanel {
 		@Override
         protected void process(List<SearchResultItem> itemResults) {
 				panel.table.addData(itemResults);
+				panel.table.updateData(0);
         }
         
     	private Command runQuery(String line) throws CaptchaDetectedException {
@@ -242,20 +246,24 @@ public class AutomatedPanel extends JPanel {
     	}
     	
     	private int runVerify(List<SearchResultItem> itemResults, long sleep) {
-    		return itemResults.stream()
-    			.mapToInt(item -> {
-    				logger.info(format("Verifying item %s", item.toShortDebugInfo()));
-    				Verify verified = DurianUtils.verify(item.thread(), item.dataHash());
-    				item.verified(verified);
-    				logger.info(format("Verify result for item %s: %s", item.toShortDebugInfo(), verified));
-					BeanPropertyTableModel<SearchResultItem> model = getTableModel();
-					int index = model.getData().indexOf(item);
-					panel.table.updateData(index);
-    				logger.info(format("Verify - now sleeping for %s millisec", sleep));
-    				sleep(sleep);
-    				int result = verified == Verify.VERIFIED ? 1 : 0;
-    				return result;
-    			}).sum();
+    		int sum = 0;
+    		for (int i = 0; i < itemResults.size(); i++) {
+				SearchResultItem item = itemResults.get(i);
+				logger.info(format("Verifying item %s", item.toShortDebugInfo()));
+				Verify verified = DurianUtils.verify(item.thread(), item.dataHash());
+				item.verified(verified);
+				logger.info(format("Verify result for item %s: %s", item.toShortDebugInfo(), verified));
+				BeanPropertyTableModel<SearchResultItem> model = getTableModel();
+				int index = model.getData().indexOf(item);
+				panel.table.updateData(index);
+				if (i < itemResults.size() - 1) { // yeah code can be more readable than this
+					logger.info(format("Verify - now sleeping for %s millisec", sleep));
+					sleep(sleep);
+				}
+				int result = verified == Verify.VERIFIED ? 1 : 0;
+				sum += result;
+			}
+    		return sum;
     	}
 
     	@SuppressWarnings("unchecked")

@@ -41,7 +41,7 @@ public class LoggerPanel extends JPanel {
 
 	public LoggerPanel() {
 		super(new BorderLayout());
-		textArea.setFont(new Font("Consolas", Font.TRUETYPE_FONT, 14));
+		textArea.setFont(new Font("Consolas", Font.TRUETYPE_FONT, 12));
 		
 		JTextAreaAppender appender = new JTextAreaAppender(textArea);
 		String PATTERN = "%-4r [%t] %-5p %c %x - %m%n";

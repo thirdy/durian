@@ -21,11 +21,14 @@ import static java.util.Arrays.asList;
 import static java.util.stream.Collectors.joining;
 import static org.apache.commons.lang3.StringUtils.substringAfter;
 import static qic.Command.Status.ERROR;
+import static qic.util.Config.GUILD_LIST_FILENAME;
 
 import java.awt.Window;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URLEncoder;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
@@ -37,6 +40,7 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.slf4j.Logger;
@@ -61,7 +65,7 @@ import qic.util.Util;
 public class Main {
 	
 	private final static Logger logger = LoggerFactory.getLogger(Main.class.getName());
-	
+
 	BackendClient backendClient = new BackendClient();
 	SessProp sessProp = new SessProp();
 	Long searchDuration = null; 
@@ -163,9 +167,22 @@ public class Main {
 			command.errorStackTrace = ExceptionUtils.getStackTrace(e);
 			throw e;
 		}
+		setGuildInfo(command.itemResults);
 		FmJS fmJS = new FmJS(command.itemResults);
 		fmJS.process();
 		return command;
+	}
+
+	private void setGuildInfo(List<SearchResultItem> itemResults) throws IOException {
+		String nameList = FileUtils.readFileToString(new File(GUILD_LIST_FILENAME));
+		if (!nameList.isEmpty()) {
+			List<String> names = Arrays.asList(StringUtils.split(nameList));
+			itemResults.stream().forEach(item -> {
+				boolean guildmate = names.stream().anyMatch(name -> StringUtils.equalsIgnoreCase(name, item.seller()));
+				item.guildItem(guildmate);
+				item.guildDiscount(Config.getPropety(Config.GUILD_DISCOUNT_STRING, Config.GUILD_DISCOUNT_STRING_DEFAULT));
+			});
+		}
 	}
 
 	private List<SearchResultItem> runSearch(String terms, boolean sortOnly) throws Exception {
