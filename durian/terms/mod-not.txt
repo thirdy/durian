@@ -1,0 +1,8 @@
+;
+; Do not show items with these mods
+; I believe the obvious pattern for it is to start the mods with 'no'
+; If you want to add more, use the example bellow as your model
+; Notice that the 'group_type=Not' is what defines it as 'do-not-show mod'
+; 
+
+nolife                      =       mod_name=+# to maximum Life&mod_min=&mod_max=&group_type=Not&group_min=&group_max=&group_count=1
