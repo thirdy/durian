@@ -19,10 +19,7 @@ package qic.ui.extra;
 
 import java.awt.Color;
 import java.awt.Component;
-import java.io.File;
-import java.io.IOException;
 
-import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JTable;
@@ -32,7 +29,6 @@ import com.porty.swing.table.model.BeanPropertyTableModel;
 
 import qic.SearchPageScraper.SearchResultItem;
 import qic.util.Config;
-import qic.util.ImageCache;
 
 /**
  * @author thirdy
@@ -42,18 +38,17 @@ public class ArtColumnRenderer extends DefaultTableCellRenderer {
 	
 	private static final long serialVersionUID = 1L;
 	
-	private ImageIcon defaultImage;
+	private Color bgColor;
 	private Color guildColor;
+	private Color autoHighlightColor;
 	private BeanPropertyTableModel<SearchResultItem> model;
 
-	public ArtColumnRenderer(BeanPropertyTableModel<SearchResultItem> model, Color guildColor) {
+
+	public ArtColumnRenderer(BeanPropertyTableModel<SearchResultItem> model, Color bgColor, Color guildColor, Color autoHighlightColor) {
+		this.bgColor = bgColor;
 		this.guildColor = guildColor;
+		this.autoHighlightColor = autoHighlightColor;
 		this.model = model;
-		try {
-			this.defaultImage = new ImageIcon(ImageIO.read(new File("images/default.png")));
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
 		setHorizontalAlignment(JLabel.CENTER);
 	}
 	
@@ -63,27 +58,30 @@ public class ArtColumnRenderer extends DefaultTableCellRenderer {
         setText("");
         setIcon(null);
         
-        SearchResultItem item = model.getData().get(row);
-        
 		if (isSelected) {
 			setBackground(table.getSelectionBackground());
 		} else {
-			if (item.guildItem()) {
-				setBackground(guildColor);
-			} else {
-				setBackground(table.getBackground());
+			setBackground(bgColor != null ? bgColor : table.getBackground());
+			if (!model.getData().isEmpty()) {
+				SearchResultItem item = model.getData().get(row);
+				if (item.newInAutomated()) {
+					setBackground(autoHighlightColor);
+				} else if (item.guildItem()) {
+					setBackground(guildColor);
+				}
 			}
 		}
 
         boolean artEnabled = Config.getBooleanProperty(Config.RESULT_TABLE_ART_ENABLED, true);
-        if (artEnabled) {
-        	ImageIcon image = defaultImage;
-        	ImageIcon img = ImageCache.getInstance().get(value.toString());
-            if (img != null) {
-            	image = img;
-    		}
+        if (artEnabled && value != null) {
+//        	ImageIcon image = defaultImage;
+//        	ImageIcon img = ImageCache.getInstance().get(value.toString());
+//            if (img != null) {
+//            	image = img;
+//    		}
+        	ImageIcon image = (ImageIcon) value;
             setIcon(image);
-            table.setRowHeight(row, image.getIconHeight());
+//            table.setRowHeight(row, image.getIconHeight());
 		}
         
         return this;

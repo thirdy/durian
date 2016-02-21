@@ -44,7 +44,9 @@ public class Config {
 	public static final String AUTOMATED_SEARCH_SOUND_MODE = "automated.search.sound.mode";
 	public static final String AUTOMATED_SEARCH_ENABLED = "automated.search.enabled";
 	public static final String AUTOMATED_SEARCH_NOTIFY_NEWONLY = "automated.search.notify.newonly";
+	public static final String AUTOMATED_SEARCH_NOTIFY_NEWONLY_COLOR_HIGHLIGHT = "automated.search.notify.newonly.color.highlight";
 	public static final String RESULT_TABLE_ART_ENABLED = "result.table.art.enabled";
+	public static final String RESULT_TABLE_BG_COLOR = "result.table.bg.color";
 	
 	public static final String GUILD_DISCOUNT_STRING = "guild.discount.string";
 	public static final String GUILD_COLOR_HIGHLIGHT = "guild.color.highlight";

@@ -23,15 +23,21 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+import javax.swing.ImageIcon;
+
 import org.apache.commons.lang3.StringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.TextNode;
 import org.jsoup.select.Elements;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import qic.SearchPageScraper.SearchResultItem.Mod;
 import qic.SearchPageScraper.SearchResultItem.Rarity;
+import qic.util.Config;
+import qic.util.ImageCache;
 import qic.util.Util;
 import qic.util.Verify;
 
@@ -213,7 +219,9 @@ public class SearchPageScraper {
 	 * Models one item in the search results
 	 */
 	public static class SearchResultItem {
-
+		
+		private final Logger logger = LoggerFactory.getLogger(this.getClass().getName());
+		
 		public String id; // the id in the search result html page
 		public String buyout;
 		public String name;
@@ -265,6 +273,7 @@ public class SearchPageScraper {
 		public boolean guildItem = false;
 		public String wtb = null;
 		public String guildDiscount = null;
+		public boolean newInAutomated = false;
 		
 		public List<Mod> getMods() {
 			List<Mod> mods = explicitMods.stream().collect(Collectors.toList());
@@ -285,8 +294,8 @@ public class SearchPageScraper {
 		
 		public List<String> getItem() {
 			return labelList(
-					labelVal("No. ", id),
-					labelVal("Name", name), 
+					labelVal("No", idFinal()),
+					labelVal("Name", nameFinal()), 
 					labelVal("League", league),
 					labelVal("Quality", quality), 
 					labelVal("Identified", String.valueOf(identified)), 
@@ -360,6 +369,10 @@ public class SearchPageScraper {
 		
 		public String guildDiscount() {
 			return guildDiscount;
+		}
+		
+		public boolean newInAutomated() {
+			return newInAutomated;
 		}
 
 		/**
@@ -662,12 +675,29 @@ public class SearchPageScraper {
 			this.guildItem = guildItem;
 		}
 		
-		public URL getArt() {
-			try {
-				return new URL(imageUrl);
-			} catch (MalformedURLException e) {
-				throw new RuntimeException(e);
+		public String nameFinal() {
+			return name;
+		}
+		
+		public String idFinal() {
+			if (corrupted) {
+				return id + " [CORRUPTED]";
 			}
+			return id;
+		}
+		
+		public ImageIcon getArt() {
+			ImageIcon imageIcon = null;
+			try {
+				boolean artEnabled = Config.getBooleanProperty(Config.RESULT_TABLE_ART_ENABLED, true);
+				if (artEnabled) {
+					URL url = new URL(imageUrl);
+					imageIcon = ImageCache.getInstance().get(url.toString());
+				}
+			} catch (MalformedURLException e) {
+				logger.error("Error while grabbing art from: " + imageUrl, e);
+			}
+			return imageIcon;
 		}
 		
 		public int toUUID() {

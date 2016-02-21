@@ -65,7 +65,7 @@ import qic.util.Util;
 public class Main {
 	
 	private final static Logger logger = LoggerFactory.getLogger(Main.class.getName());
-	
+
 	BackendClient backendClient = new BackendClient();
 	SessProp sessProp = new SessProp();
 	Long searchDuration = null; 

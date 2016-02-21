@@ -27,31 +27,38 @@ import qic.SearchPageScraper.SearchResultItem;
 	private List<List<Integer>> rowColHeight = new ArrayList<List<Integer>>();
 	private static final EmptyBorder EMPTY_BORDER = new EmptyBorder(1, 2, 1, 2);
 	
+	private Color bgColor;
 	private Color guildColor;
+	private Color autoHighlightColor;
 
 	private BeanPropertyTableModel<SearchResultItem> model;
+
    
-    public MultiLineTableCellRenderer(BeanPropertyTableModel<SearchResultItem> model, Color guildColor) {
+    public MultiLineTableCellRenderer(BeanPropertyTableModel<SearchResultItem> model, Color bgColor, Color guildColor, Color autoHighlightColor) {
       setLineWrap(true);
       setWrapStyleWord(true);
       setOpaque(true);
+      this.bgColor = bgColor;
       this.guildColor = guildColor;
+      this.autoHighlightColor = autoHighlightColor;
       this.model = model;
     }
 
 	public Component getTableCellRendererComponent(JTable table, Object value, 
 			boolean isSelected, boolean hasFocus, int row, int column) {
-        SearchResultItem item = model.getData().get(row);
-
 		if (isSelected) {
 			setForeground(table.getSelectionForeground());
 			setBackground(table.getSelectionBackground());
 		} else {
 			setForeground(table.getForeground());
-			if (item.guildItem()) {
-				setBackground(guildColor);
-			} else {
-				setBackground(table.getBackground());
+			setBackground(bgColor != null ? bgColor : table.getBackground());
+			if (!model.getData().isEmpty()) {
+				SearchResultItem item = model.getData().get(row);
+				if (item.newInAutomated()) {
+					setBackground(autoHighlightColor);
+				} else if (item.guildItem()) {
+					setBackground(guildColor);
+				}
 			}
 		}
 		setFont(table.getFont());
