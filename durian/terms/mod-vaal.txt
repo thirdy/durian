@@ -6,6 +6,16 @@ addarrow                        =       mod_name=(implicit) Adds an additional A
 
 nosilence                       =       mod_name=(implicit) You are Immune to Silence&mod_min=&mod_max=&$MG
 
+witharea|supparea               =       mod_name=(implicit) Socketed Gems are Supported by level # Increased Area of Effect&mod_min=&mod_max=&$MG
+
+eleW(eak)?onHit|celew           =       mod_name=(implicit) Curse Enemies with level # Elemental Weakness on Hit&mod_min=&mod_max=&$MG
+
+vulnonHit|cvuln                 =       mod_name=(implicit) Curse Enemies with level # Vulnerability on Hit&mod_min=&mod_max=&$MG
+
+temponHit|ctemp                 =       mod_name=(implicit) Curse Enemies with level # Temporal Chains on Hit&mod_min=&mod_max=&$MG
+
+cull(ingstrike)?                =       mod_name=(implicit) Culling Strike&mod_min=&mod_max=&$MG
+
 mfc                             =       mod_name=(implicit) +# Maximum Frenzy Charge&mod_min=&mod_max=&$MG
 (\d+)mfc                        =       mod_name=(implicit) +# Maximum Frenzy Charge&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)mfc                  =       mod_name=(implicit) +# Maximum Frenzy Charge&mod_min=$GROUP1&mod_max=$GROUP2&$MG
