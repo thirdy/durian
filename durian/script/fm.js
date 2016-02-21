@@ -30,20 +30,30 @@ function setupWtbMessage(item) {
 	// Look at class SearchResultItem in file SearchPageScraper.java
 	// for more variable to use
 	// vanilla js doesn't have format function :(
-	var wtbTemplate = '@%s Hi, I would like to buy your %s listed for %s in %s'
-	var buyout = item.buyout
-	if (item.guildItem()) {
-		buyout = java.lang.String.format(
-			"%s (less %s guildmate discount)",
-			item.buyout,
-			item.guildDiscount()) 
+	if(item.buyout ==  ""){
+		var wtbTemplate = '@%s Hi, I would like to buy your %s listed in %s'
+		var wtb = java.lang.String.format(wtbTemplate,
+			item.ign, 
+			item.name, 
+			item.league
+		)
+	}else{
+		var wtbTemplate = '@%s Hi, I would like to buy your %s listed for %s in %s'
+		var buyout = item.buyout
+		if (item.guildItem()) {
+			buyout = java.lang.String.format(
+				"%s (less %s guildmate discount)",
+				item.buyout,
+				item.guildDiscount()) 
+		}
+
+		var wtb = java.lang.String.format(wtbTemplate,
+			item.ign, 
+			item.name, 
+			buyout, 
+			item.league
+		)
 	}
-	var wtb = java.lang.String.format(wtbTemplate,
-		item.ign, 
-		item.name, 
-		buyout, 
-		item.league
-	)
 	item.wtb(wtb)
 }
 
