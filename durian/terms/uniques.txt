@@ -1,6 +1,18 @@
 ;
 ; Uniques
 ;
+(Atziri'?s?)?Acuity                     =     name=Atziri's Acuity
+(Atziri'?s?)?Disfavour                  =     name=Atziri's Disfavour
+(Atziri'?s?)?Foible                     =     name=Atziri's Foible
+(Atziri'?s?)?Promise                    =     name=Atziri's Promise
+(Atziri'?s?)?Reign                      =     name=Atziri's Reign
+(Atziri'?s?)?Splendou?r                 =     name=Atziri's Splendour
+(Atziri'?s?)?Step                       =     name=Atziri's Step
+(Call(of)?(the)?)?Brotherhood           =     name=Call of the Brotherhood
+(Callinellus)?Malleus                   =     name=Callinellus Malleus
+(Chernobog'?s?)?Pillar                  =     name=Chernobog's Pillar
+(Cherrubim'?s?)?Maleficence             =     name=Cherrubim's Maleficence
+(Hall)?(of)?Grandmasters?               =     name=Hall of Grandmasters
 (The)?Anvil                             =     name=The Anvil
 (The)?Aylardex                          =     name=The Aylardex
 (The)?BloodDance                        =     name=The Blood Dance
@@ -38,13 +50,14 @@
 Abberath'?s?Horn                        =     name=Abberath's Horn
 Abyssus                                 =     name=Abyssus
 Acton'?s?Nightmare                      =     name=Acton's Nightmare
+AdvancingFortress                       =     name=Advancing Fortress
 AegisAurora                             =     name=Aegis Aurora
 AgnerodEast                             =     name=Agnerod East
 AgnerodNorth                            =     name=Agnerod North
 AgnerodSouth                            =     name=Agnerod South
 AgnerodWest                             =     name=Agnerod West
-AlDhih                                  =     name=Al Dhih
 Alberon'?s?Warpath                      =     name=Alberon's Warpath
+AlDhih                                  =     name=Al Dhih
 Allure                                  =     name=Allure
 Alpha'?s?Howl                           =     name=Alpha's Howl
 Ambu'?s?Charge                          =     name=Ambu's Charge
@@ -61,14 +74,7 @@ Ashrend                                 =     name=Ashrend
 Asphyxia'?s?Wrath                       =     name=Asphyxia's Wrath
 Assassin'?s?Haste                       =     name=Assassin's Haste
 Astramentis                             =     name=Astramentis
-(Atziri'?s?)?Acuity                     =     name=Atziri's Acuity
-(Atziri'?s?)?Disfavour                  =     name=Atziri's Disfavour
-(Atziri'?s?)?Foible                     =     name=Atziri's Foible
 Atziri'?s?Mirror                        =     name=Atziri's Mirror
-(Atziri'?s?)?Promise                    =     name=Atziri's Promise
-(Atziri'?s?)?Reign                      =     name=Atziri's Reign
-(Atziri'?s?)?Splendou?r                 =     name=Atziri's Splendour
-(Atziri'?s?)?Step                       =     name=Atziri's Step
 Aurseize                                =     name=Aurseize
 Aurumvorax                              =     name=Aurumvorax
 Auxium                                  =     name=Auxium
@@ -80,16 +86,16 @@ Berek'?s?Pass                           =     name=Berek's Pass
 Berek'?s?Respite                        =     name=Berek's Respite
 Bino'?s?(KitchenKnife)?                 =     name=Bino's Kitchen Knife
 Bitterdream                             =     name=Bitterdream
-BlackSunCrest                           =     name=Black Sun Crest
 Blackgleam                              =     name=Blackgleam
 Blackheart                              =     name=Blackheart
+BlackSunCrest                           =     name=Black Sun Crest
 Blightwell                              =     name=Blightwell
 Blood(of)?(the)?Karui                   =     name=Blood of the Karui
 Blood(of)?Corruption                    =     name=Blood of Corruption
-BloodSacrifice                          =     name=Blood Sacrifice
 Bloodboil                               =     name=Bloodboil
 Bloodgrip                               =     name=Bloodgrip
 Bloodplay                               =     name=Bloodplay
+BloodSacrifice                          =     name=Blood Sacrifice
 Bloodseeker                             =     name=Bloodseeker
 Bones(of)?Ullr                          =     name=Bones of Ullr
 Bramblejack                             =     name=Bramblejack
@@ -105,16 +111,13 @@ BrokenFaith                             =     name=Broken Faith
 Bronn'?s?Lithe                          =     name=Bronn's Lithe
 BruteForceSolution                      =     name=Brute Force Solution
 Brutus'?LeadSprinkler                   =     name=Brutus' Lead Sprinkler
-CaerBlaidd(,?Wolfpack'?s?Den)?          =     name=Caer Blaidd, Wolfpack's Den
-(Call(of)?(the)?)?Brotherhood           =     name=Call of the Brotherhood
-(Callinellus)?Malleus                   =     name=Callinellus Malleus
-Cameria'?s?Maul                         =     name=Cameria's Maul
 C(arcass)?Jack                          =     name=Carcass Jack
+CaerBlaidd(,?Wolfpack'?s?Den)?          =     name=Caer Blaidd, Wolfpack's Den
+Cameria'?s?Maul                         =     name=Cameria's Maul
 CarefulPlanning                         =     name=Careful Planning
 CarnageHeart                            =     name=Carnage Heart
 Chalice(of)?Horrors                     =     name=Chalice of Horrors
-(Chernobog'?s?)?Pillar                  =     name=Chernobog's Pillar
-(Cherrubim'?s?)?Maleficence             =     name=Cherrubim's Maleficence
+CheapConstruction                       =     name=Cheap Construction 
 Chill(of)?Corruption                    =     name=Chill of Corruption
 ChinSol                                 =     name=Chin Sol
 Chitus'?Apex                            =     name=Chitus' Apex
@@ -136,16 +139,16 @@ Crown(of)?(the)?PaleKing                =     name=Crown of the Pale King
 Crown(of)?Eyes                          =     name=Crown of Eyes
 Crown(of)?Thorns                        =     name=Crown of Thorns
 Cybil'?s?Paw                            =     name=Cybil's Paw
-Daresso'?s?Courage                      =     name=Daresso's Courage
 D(aresso'?s?)?Defiance                  =     name=Daresso's Defiance
+Daresso'?s?Courage                      =     name=Daresso's Courage
 Daresso'?s?Salute                       =     name=Daresso's Salute
 DarkrayVectors                          =     name=Darkray Vectors
 Darkscorn                               =     name=Darkscorn
 Death'?s?Hand                           =     name=Death's Hand
 Death'?s?Harp                           =     name=Death's Harp
 Death'?s?Oath                           =     name=Death's Oath
-DeathRush                               =     name=Death Rush
 DeathandTaxes                           =     name=Death and Taxes
+DeathRush                               =     name=Death Rush
 Deerstalker                             =     name=Deerstalker
 Deidbell                                =     name=Deidbell
 Demigod'?s?Beacon                       =     name=Demigod's Beacon
@@ -169,8 +172,8 @@ Doryani'?s?Catalyst                     =     name=Doryani's Catalyst
 Doryani'?s?Fist                         =     name=Doryani's Fist
 Doryani'?s?Invitation                   =     name=Doryani's Invitation
 Dreadarc                                =     name=Dreadarc
-DreamFragments                          =     name=Dream Fragments
 Dreamfeather                            =     name=Dreamfeather
+DreamFragments                          =     name=Dream Fragments
 Drillneck                               =     name=Drillneck
 Dusktoe                                 =     name=Dusktoe
 DyadianDawn                             =     name=Dyadian Dawn
@@ -185,6 +188,7 @@ Empire'?s?Grasp                         =     name=Empire's Grasp
 EnergisedArmour                         =     name=Energised Armour
 EnergyFromWithin                        =     name=Energy From Within
 EphemeralEdge                           =     name=Ephemeral Edge
+EssenceWorm                             =     name=Essence Worm 
 EssentiaSanguis                         =     name=Essentia Sanguis
 ExtractorMentis                         =     name=Extractor Mentis
 Eye(of)?Chayula                         =     name=Eye of Chayula
@@ -218,7 +222,7 @@ Gorebreaker                             =     name=Gorebreaker
 Goredrill                               =     name=Goredrill
 GreatOldOne'?s?Ward                     =     name=Great Old One's Ward
 Greed'?s?Embrace                        =     name=Greed's Embrace
-(Hall)?(of)?Grandmasters?               =     name=Hall of Grandmasters
+HairTrigger                             =     name=Hair Trigger 
 Headhunter                              =     name=Headhunter
 HealthyMind                             =     name=Healthy Mind
 HeartboundLoop                          =     name=Heartbound Loop
@@ -245,6 +249,7 @@ InfernalMantle                          =     name=Infernal Mantle
 Infractem                               =     name=Infractem
 InspiredLearning                        =     name=Inspired Learning
 IntuitiveLeap                           =     name=Intuitive Leap
+IronCommander                           =     name=Iron Commander
 Izaro'?s?Dilemma                        =     name=Izaro's Dilemma
 Izaro'?s?Turmoil                        =     name=Izaro's Turmoil
 Jack,(the)?Axe                          =     name=Jack, the Axe
@@ -265,8 +270,8 @@ Lakishu'?s?Blade                        =     name=Lakishu's Blade
 LastResort                              =     name=Last Resort
 Lavianga'?s?Spirit                      =     name=Lavianga's Spirit
 Lavianga'?s?Wisdom                      =     name=Lavianga's Wisdom
-LeHeup(of)?All                          =     name=Le Heup of All
 LeerCast                                =     name=Leer Cast
+LeHeup(of)?All                          =     name=Le Heup of All
 Lifesprig                               =     name=Lifesprig
 LightbaneRaiment                        =     name=Lightbane Raiment
 LightningCoil                           =     name=Lightning Coil
@@ -319,6 +324,7 @@ Null'?s?Inclination                     =     name=Null's Inclination
 NullandVoid                             =     name=Null and Void
 Nycta'?s?Lantern                        =     name=Nycta's Lantern
 Oba'?s?CursedTrove                      =     name=Oba's Cursed Trove
+Obliteration                            =     name=Obliteration
 Olmec'?s?Sanctum                        =     name=Olmec's Sanctum
 Ondar'?s?Clasp                          =     name=Ondar's Clasp
 Ornament(of)?(the)?East                 =     name=Ornament of the East
@@ -332,11 +338,12 @@ Pledge(of)?Hands                        =     name=Pledge of Hands
 Poacher'?s?Aim                          =     name=Poacher's Aim
 Poorjoy'?s?Asylum                       =     name=Poorjoy's Asylum
 Powerlessness                           =     name=Powerlessness
-PrismGuardian                           =     name=Prism Guardian
 PrismaticEclipse                        =     name=Prismatic Eclipse
+PrismGuardian                           =     name=Prism Guardian
 Prismweave                              =     name=Prismweave
 Pugilist                                =     name=Pugilist
 Pyre                                    =     name=Pyre
+qotf|Queen(of)?(the)?Forest             =     name=Queen of the Forest
 Quecholli                               =     name=Quecholli
 Queen'?s?Decree                         =     name=Queen's Decree
 QuillRain                               =     name=Quill Rain
@@ -349,6 +356,7 @@ Realmshaper                             =     name=Realmshaper
 Reaper'?s?Pursuit                       =     name=Reaper's Pursuit
 Rearguard                               =     name=Rearguard
 Rebuke(of)?(the)?Vaal                   =     name=Rebuke of the Vaal
+RecklessDefence                         =     name=Reckless Defence 
 Redbeak                                 =     name=Redbeak
 RedbladeBand                            =     name=Redblade Band
 RedbladeBanner                          =     name=Redblade Banner
@@ -377,13 +385,14 @@ Sentari'?s?Answer                       =     name=Sentari's Answer
 Shackles(of)?(the)?Wretched             =     name=Shackles of the Wretched
 ShadowsandDust                          =     name=Shadows and Dust
 Shaper'?s?Seed                          =     name=Shaper's Seed
+Shav(ronne'?s?Wrappings|s)              =     name=Shavronne's Wrappings
 Shavronne'?s?Pace                       =     name=Shavronne's Pace
 Shavronne'?s?Revelation                 =     name=Shavronne's Revelation
-Shav(ronne'?s?Wrappings|s)              =     name=Shavronne's Wrappings
 Shiversting                             =     name=Shiversting
 Sibyl'?s?Lament                         =     name=Sibyl's Lament
 Sidhebreath                             =     name=Sidhebreath
 Silverbranch                            =     name=Silverbranch
+Singularity                             =     name=Singularity   
 SinTrek                                 =     name=Sin Trek
 Sire(of)?Shards                         =     name=Sire of Shards
 Skullhead                               =     name=Skullhead
@@ -412,6 +421,7 @@ Surgebinders                            =     name=Surgebinders
 SurvivalInstincts                       =     name=Survival Instincts
 SurvivalSecrets                         =     name=Survival Secrets
 SurvivalSkills                          =     name=Survival Skills
+tabula|TabulaRasa                       =     name=Tabula Rasa
 Talisman(of)?(the)?Victor               =     name=Talisman of the Victor
 Taryn'?s?Shiver                         =     name=Taryn's Shiver
 Tasalio'?s?Sign                         =     name=Tasalio's Sign
@@ -429,6 +439,7 @@ TrolltimberSpire                        =     name=Trolltimber Spire
 Twyzel                                  =     name=Twyzel
 Ungil'?s?Gauche                         =     name=Ungil's Gauche
 Ungil'?s?Harmony                        =     name=Ungil's Harmony
+UnstablePayload                         =     name=Unstable Payload  
 VaalCaress                              =     name=Vaal Caress
 VaalSentencing                          =     name=Vaal Sentencing
 Valako'?s?Sign                          =     name=Valako's Sign
@@ -462,7 +473,6 @@ Windscream                              =     name=Windscream
 Wings(of)?Entropy                       =     name=Wings of Entropy
 Wondertrap                              =     name=Wondertrap
 Wurm'?s?Molt                            =     name=Wurm's Molt
+Wyrmsign                                =     name=Wyrmsign   
 Ylfeban'?s?Trickery                     =     name=Ylfeban's Trickery
 Zahndethus'?Cassock                     =     name=Zahndethus' Cassock
-qotf|Queen(of)?(the)?Forest             =     name=Queen of the Forest
-tabula|TabulaRasa                       =     name=Tabula Rasa
