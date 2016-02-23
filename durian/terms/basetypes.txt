@@ -202,3 +202,23 @@ ProfaneWand         =       base=Profane Wand
 (Mortal)?Grief               =       base=Mortal Grief
 (Mortal)?Rage                =       base=Mortal Rage 
 (Mortal)?Ignorance           =       base=Mortal Ignorance 
+
+;Utility Flasks
+
+AquamarineF(la?sk)?         =       base=Aquamarine Flask   
+BasaltF(la?sk)?             =       base=Basalt Flask 
+BismuthF(la?sk)?            =       base=Bismuth Flask  
+SilverF(la?sk)?             =       base=Silver Flask
+StibniteF(la?sk)?           =       base=Stibnite Flask
+QuicksilverF(la?sk)?        =       base=Quicksilver Flask
+RubyF(la?sk)?               =       base=Ruby Flask
+SapphireF(la?sk)?           =       base=Sapphire Flask 
+TopazF(la?sk)?              =       base=Topaz Flask 
+AmethystF(la?sk)?           =       base=Amethyst Flask  
+GraniteF(la?sk)?            =       base=Granite Flask 
+DiamondF(la?sk)?            =       base=Diamond Flask  
+JadeF(la?sk)?               =       base=Jade Flask 
+QuartzF(la?sk)?             =       base=Quartz Flask 
+
+
+Sulphur Flask

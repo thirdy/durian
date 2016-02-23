@@ -1,15 +1,23 @@
-AbyssalCry                              =     name=Abyssal Cry
-AddedChaosDamage                        =     name=Added Chaos Damage
+(Ele)?(mental)?Prolif(eration)?         =     name=Elemental Proliferation
+(Summon)?ChaosGolem                     =     name=Summon Chaos Golem
+(Summon)?FlameGolem                     =     name=Summon Flame Golem
+(Summon)?IceGolem                       =     name=Summon Ice Golem
+(Summon)?RagingSpirit|SRS               =     name=Summon Raging Spirit
+(Summon)?Skeletons                      =     name=Summon Skeletons
+(Summon)?StoneGolem                     =     name=Summon Stone Golem 
 A(dded)?ColdD(amage|mg)?                =     name=Added Cold Damage
 A(dded)?FireD(amage|mg)?                =     name=Added Fire Damage
 A(dded)?Light(ning)?D(amage|mg)?        =     name=Added Lightning Damage
+A(rc)?(tic)?A(rmour)?                   =     name=Arctic Armour
+A(rctic)?B(reath)?                      =     name=Arctic Breath
+AbyssalCry                              =     name=Abyssal Cry
 Add(itional)?Acc(uracy)?                =     name=Additional Accuracy
+AddedChaosDamage                        =     name=Added Chaos Damage
+AncestralProtector                      =     name=Ancestral Protector
 Anger                                   =     name=Anger
 AnimateGuardian                         =     name=Animate Guardian
 AnimateWeapon                           =     name=Animate Weapon
 Arc                                     =     name=Arc
-A(rc)?(tic)?A(rmour)?                   =     name=Arctic Armour
-A(rctic)?B(reath)?                      =     name=Arctic Breath
 As+(assin)?'?s?Mark                     =     name=Assassin's Mark
 BallLight(ning)?                        =     name=Ball Lightning
 Barrage                                 =     name=Barrage
@@ -36,13 +44,14 @@ ChancetoFlee                            =     name=Chance to Flee
 ChancetoIgnite                          =     name=Chance to Ignite
 Clarity                                 =     name=Clarity
 Cleave                                  =     name=Cleave
+ClusterTrap                             =     name=Cluster Trap
 ColdPen(etration)?                      =     name=Cold Penetration
 ColdSnap                                =     name=Cold Snap
 ColdtoFire                              =     name=Cold to Fire
+Con(trolled)?Des(truction)?             =     name=Controlled Destruction
 Conc(entrated)?Eff?(ect)?               =     name=Concentrated Effect
 Conduc(tivity)?                         =     name=Conductivity
 Contagion                               =     name=Contagion
-Con(trolled)?Des(truction)?             =     name=Controlled Destruction
 ConversionTrap                          =     name=Conversion Trap
 Convocation                             =     name=Convocation
 CullingStrike|CS                        =     name=Culling Strike
@@ -59,9 +68,9 @@ Discipline|Disc                         =     name=Discipline
 DominatingBlow                          =     name=Dominating Blow
 DoubleStrike                            =     name=Double Strike
 DualStrike                              =     name=Dual Strike
-ElementalHit                            =     name=Elemental Hit
-(Ele)?(mental)?Prolif(eration)?         =     name=Elemental Proliferation
+Earthquake                              =     name=Earthquake  
 Ele(mental)?Weakness|EW                 =     name=Elemental Weakness
+ElementalHit                            =     name=Elemental Hit
 Empower                                 =     name=Empower
 EnduranceChargeonMeleeStun              =     name=Endurance Charge on Melee Stun
 EnduringCry|EC                          =     name=Enduring Cry
@@ -93,6 +102,7 @@ FreezingPulse                           =     name=Freezing Pulse
 Frenzy                                  =     name=Frenzy
 Frostbite                               =     name=Frostbite
 FrostBlades                             =     name=Frost Blades
+FrostBomb                               =     name=Frost Bomb 
 FrostWall                               =     name=Frost Wall
 Generosity                              =     name=Generosity
 GlacialCascade                          =     name=Glacial Cascade
@@ -112,13 +122,14 @@ IceCrash                                =     name=Ice Crash
 IceNova                                 =     name=Ice Nova
 IceShot                                 =     name=Ice Shot
 IceSpear                                =     name=Ice Spear
+IceTrap                                 =     name=Ice Trap
 ImmortalCall|IC                         =     name=Immortal Call
+Inc(reased)?Dur(ation)?|ID              =     name=Increased Duration
 Incinerate                              =     name=Incinerate
 IncreasedAreaofEffect|IAOE              =     name=Increased Area of Effect
 IncreasedBurningDamage|IBD              =     name=Increased Burning Damage
 IncreasedCriticalDamage|ICD             =     name=Increased Critical Damage
 IncreasedCriticalStrikes|ICS            =     name=Increased Critical Strikes
-Inc(reased)?Dur(ation)?|ID              =     name=Increased Duration
 InfernalBlow                            =     name=Infernal Blow
 Innervate                               =     name=Innervate
 IronGrip                                =     name=Iron Grip
@@ -132,12 +143,12 @@ LessDuration                            =     name=Less Duration
 LesserMultipleProjectiles|LMP           =     name=Lesser Multiple Projectiles
 LifeGainonHit                           =     name=Life Gain on Hit
 LifeLeech                               =     name=Life Leech
-LightningArrow                          =     name=Lightning Arrow
 Light?(ning)?Pen(etration)?             =     name=Lightning Penetration
 Light?(ning)?Strike                     =     name=Lightning Strike
 Light?(ning)?Tendrils                   =     name=Lightning Tendrils
 Light?(ning)?Trap                       =     name=Lightning Trap
 Light?(ning)?Warp                       =     name=Lightning Warp
+LightningArrow                          =     name=Lightning Arrow
 MagmaOrb                                =     name=Magma Orb
 ManaLeech                               =     name=Mana Leech
 MeleeDamageonFullLife                   =     name=Melee Damage on Full Life
@@ -152,9 +163,10 @@ MoltenShell                             =     name=Molten Shell
 MoltenStrike                            =     name=Molten Strike
 MultipleTraps                           =     name=Multiple Traps
 Multistrike                             =     name=Multistrike
+Orb(of)?Storms                          =     name=Orb of Storms
 PhaseRun                                =     name=Phase Run
-PhysicalProjectileAttackDamage|PPAD     =     name=Physical Projectile Attack Damage
 Phys(ical)?(to|2)?Light?(ning)?         =     name=Physical to Lightning
+PhysicalProjectileAttackDamage|PPAD     =     name=Physical Projectile Attack Damage
 Pierce                                  =     name=Pierce
 Poacher'?s?Mark                         =     name=Poacher's Mark
 PointBlank                              =     name=Point Blank
@@ -198,17 +210,15 @@ SplitArrow                              =     name=Split Arrow
 StaticStrike                            =     name=Static Strike
 StormCall                               =     name=Storm Call
 Stun                                    =     name=Stun
-(Summon)?ChaosGolem                     =     name=Summon Chaos Golem
-(Summon)?FlameGolem                     =     name=Summon Flame Golem
-(Summon)?IceGolem                       =     name=Summon Ice Golem
-(Summon)?RagingSpirit|SRS               =     name=Summon Raging Spirit
-(Summon)?Skeletons                      =     name=Summon Skeletons
 Sweep                                   =     name=Sweep
 TempestShield                           =     name=Tempest Shield
 TemporalChains                          =     name=Temporal Chains
 TornadoShot                             =     name=Tornado Shot
 Trap                                    =     name=Trap
 TrapandMineDamage                       =     name=Trap and Mine Damage
+TrapC(oo)?ldo?wn                        =     name=Trap Cooldown 
+V(aal)?I(mmortal)?C(all)?               =     name=Vaal Immortal Call
+V(aal)?R(ighteous)?F(ire)?              =     name=Vaal Righteous Fire
 VaalArc                                 =     name=Vaal Arc
 VaalBurningArrow                        =     name=Vaal Burning Arrow
 VaalClarity                             =     name=Vaal Clarity
@@ -224,7 +234,6 @@ VaalGrace                               =     name=Vaal Grace
 VaalGroundSlam                          =     name=Vaal Ground Slam
 VaalHaste                               =     name=Vaal Haste
 VaalIceNova                             =     name=Vaal Ice Nova
-V(aal)?I(mmortal)?C(all)?               =     name=Vaal Immortal Call
 VaalLightningStrike                     =     name=Vaal Lightning Strike
 VaalLightningTrap                       =     name=Vaal Lightning Trap
 VaalLightningWarp                       =     name=Vaal Lightning Warp
@@ -232,7 +241,6 @@ VaalMoltenShell                         =     name=Vaal Molten Shell
 VaalPowerSiphon                         =     name=Vaal Power Siphon
 VaalRainofArrows                        =     name=Vaal Rain of Arrows
 VaalReave                               =     name=Vaal Reave
-V(aal)?R(ighteous)?F(ire)?              =     name=Vaal Righteous Fire
 VaalSpark                               =     name=Vaal Spark
 VaalSpectralThrow                       =     name=Vaal Spectral Throw
 VaalStormCall                           =     name=Vaal Storm Call
