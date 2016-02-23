@@ -47,6 +47,7 @@
 (The)?Vertex                            =     name=The Vertex
 (The)?VinktarSquare                     =     name=The Vinktar Square
 (The)?WhisperingIce                     =     name=The Whispering Ice
+(The)?WrithingJar                       =     name=The Writhing Jar
 Abberath'?s?Horn                        =     name=Abberath's Horn
 Abyssus                                 =     name=Abyssus
 Acton'?s?Nightmare                      =     name=Acton's Nightmare
@@ -141,6 +142,7 @@ Crown(of)?Thorns                        =     name=Crown of Thorns
 Cybil'?s?Paw                            =     name=Cybil's Paw
 D(aresso'?s?)?Defiance                  =     name=Daresso's Defiance
 Daresso'?s?Courage                      =     name=Daresso's Courage
+Daresso'?s?Passion                      =     name=Daresso's Passion
 Daresso'?s?Salute                       =     name=Daresso's Salute
 DarkrayVectors                          =     name=Darkray Vectors
 Darkscorn                               =     name=Darkscorn
@@ -216,6 +218,7 @@ Gang'?s?Momentum                        =     name=Gang's Momentum
 Geofri'?s?Baptism                       =     name=Geofri's Baptism
 Geofri'?s?Crest                         =     name=Geofri's Crest
 GiftsfromAbove                          =     name=Gifts from Above
+Glitterdisc                             =     name=Glitterdisc
 Goldrim                                 =     name=Goldrim
 Goldwyrm                                =     name=Goldwyrm
 Gorebreaker                             =     name=Gorebreaker
@@ -286,6 +289,7 @@ LochtonialCaress                        =     name=Lochtonial Caress
 Lori'?s?Lantern                         =     name=Lori's Lantern
 Maelstr[öo]m(of)?Chaos                  =     name=Maelström of Chaos
 Malachai'?s?Artifice                    =     name=Malachai's Artifice
+Malachai'?s?Loop                        =     name=Malachai's Loop 
 Malachai'?s?Simula                      =     name=Malachai's Simula
 MaliciousIntent                         =     name=Malicious Intent
 Maligaro'?s?Lens                        =     name=Maligaro's Lens
@@ -443,6 +447,7 @@ UnstablePayload                         =     name=Unstable Payload
 VaalCaress                              =     name=Vaal Caress
 VaalSentencing                          =     name=Vaal Sentencing
 Valako'?s?Sign                          =     name=Valako's Sign
+Varunastra                              =     name=Varunastra
 Vaults(of)?Atziri                       =     name=Vaults of Atziri
 Veil(of)?(the)?Night                    =     name=Veil of the Night
 Ventor'?s?Gamble                        =     name=Ventor's Gamble
