@@ -1,224 +1,887 @@
-;
-; Base Types
-;
+AventailHelmet              			= 		base=Aventail Helmet
+BarbuteHelmet               			= 		base=Barbute Helmet
+BatteredHelm                			= 		base=Battered Helm
+BoneCirclet                 			= 		base=Bone Circlet
+CallousMask                 			= 		base=Callous Mask
+CloseHelmet                 			= 		base=Close Helmet
+ConeHelmet                  			= 		base=Cone Helmet
+CrusaderHelmet              			= 		base=Crusader Helmet
+DeicideMask                 			= 		base=Deicide Mask
+EternalBurgonet             			= 		base=Eternal Burgonet
+EzomyteBurgonet             			= 		base=Ezomyte Burgonet
+FencerHelm                  			= 		base=Fencer Helm
+FestivalMask                			= 		base=Festival Mask
+FlutedBascinet              			= 		base=Fluted Bascinet
+GildedSallet                			= 		base=Gilded Sallet
+GladiatorHelmet             			= 		base=Gladiator Helmet
+GoldenMask                  			= 		base=Golden Mask
+GoldenWreath                			= 		base=Golden Wreath
+GreatCrown                  			= 		base=Great Crown
+GreatHelmet                 			= 		base=Great Helmet
+HarlequinMask               			= 		base=Harlequin Mask
+HubrisCirclet               			= 		base=Hubris Circlet
+HunterHood                  			= 		base=Hunter Hood
+IronCirclet                 			= 		base=Iron Circlet
+IronHat                     			= 		base=Iron Hat
+IronMask                    			= 		base=Iron Mask
+LacqueredHelmet             			= 		base=Lacquered Helmet
+LeatherCap                  			= 		base=Leather Cap
+LeatherHood                 			= 		base=Leather Hood
+LionPelt                    			= 		base=Lion Pelt
+LunarisCirclet              			= 		base=Lunaris Circlet
+MagistrateCrown             			= 		base=Magistrate Crown
+MindCage                    			= 		base=Mind Cage
+NecromancerCirclet          			= 		base=Necromancer Circlet
+NightmareBascinet           			= 		base=Nightmare Bascinet
+NobleTricorne               			= 		base=Noble Tricorne
+Pig-FacedBascinet           			= 		base=Pig-Faced Bascinet
+PlagueMask                  			= 		base=Plague Mask
+PraetorCrown                			= 		base=Praetor Crown
+ProphetCrown                			= 		base=Prophet Crown
+RavenMask                   			= 		base=Raven Mask
+ReaverHelmet                			= 		base=Reaver Helmet
+RegicideMask                			= 		base=Regicide Mask
+RoyalBurgonet               			= 		base=Royal Burgonet
+RustedCoif                  			= 		base=Rusted Coif
+Sallet                      			= 		base=Sallet
+SamiteHelmet                			= 		base=Samite Helmet
+ScareMask                   			= 		base=Scare Mask
+SecutorHelm                 			= 		base=Secutor Helm
+SiegeHelmet                 			= 		base=Siege Helmet
+SilkenHood                  			= 		base=Silken Hood
+SinnerTricorne              			= 		base=Sinner Tricorne
+SolarisCirclet              			= 		base=Solaris Circlet
+SoldierHelmet               			= 		base=Soldier Helmet
+SteelCirclet                			= 		base=Steel Circlet
+TortureCage                 			= 		base=Torture Cage
+TribalCirclet               			= 		base=Tribal Circlet
+Tricorne                    			= 		base=Tricorne
+UrsinePelt                  			= 		base=Ursine Pelt
+VaalMask                    			= 		base=Vaal Mask
+VineCirclet                 			= 		base=Vine Circlet
+VisoredSallet               			= 		base=Visored Sallet
+WolfPelt                    			= 		base=Wolf Pelt
+ZealotHelmet                			= 		base=Zealot Helmet
+ArmingAxe                   			= 		base=Arming Axe
+BoardingAxe                 			= 		base=Boarding Axe
+BroadAxe                    			= 		base=Broad Axe
+ButcherAxe                  			= 		base=Butcher Axe
+CeremonialAxe               			= 		base=Ceremonial Axe
+ChestSplitter               			= 		base=Chest Splitter
+Cleaver                     			= 		base=Cleaver
+DecorativeAxe               			= 		base=Decorative Axe
+EngravedHatchet             			= 		base=Engraved Hatchet
+EtchedHatchet               			= 		base=Etched Hatchet
+InfernalAxe                 			= 		base=Infernal Axe
+JadeHatchet                 			= 		base=Jade Hatchet
+JasperAxe                   			= 		base=Jasper Axe
+KaruiAxe                    			= 		base=Karui Axe
+ReaverAxe                   			= 		base=Reaver Axe
+RoyalAxe                    			= 		base=Royal Axe
+RunicHatchet                			= 		base=Runic Hatchet
+RustedHatchet               			= 		base=Rusted Hatchet
+SiegeAxe                    			= 		base=Siege Axe
+SpectralAxe                 			= 		base=Spectral Axe
+Tomahawk                    			= 		base=Tomahawk
+VaalHatchet                 			= 		base=Vaal Hatchet
+WarAxe                      			= 		base=War Axe
+WraithAxe                   			= 		base=Wraith Axe
+WristChopper                			= 		base=Wrist Chopper
+FishingRod                  			= 		base=Fishing Rod
+AncientSword                			= 		base=Ancient Sword
+AntiqueRapier               			= 		base=Antique Rapier
+ApexRapier                  			= 		base=Apex Rapier
+Baselard                    			= 		base=Baselard
+BasketRapier                			= 		base=Basket Rapier
+BatteredFoil                			= 		base=Battered Foil
+BattleSword                 			= 		base=Battle Sword
+BroadSword                  			= 		base=Broad Sword
+BurnishedFoil               			= 		base=Burnished Foil
+CopperSword                 			= 		base=Copper Sword
+CorsairSword                			= 		base=Corsair Sword
+CourtesanSword              			= 		base=Courtesan Sword
+Cutlass                     			= 		base=Cutlass
+DragonboneRapier            			= 		base=Dragonbone Rapier
+DragoonSword                			= 		base=Dragoon Sword
+DuskBlade                   			= 		base=Dusk Blade
+ElderSword                  			= 		base=Elder Sword
+ElegantFoil                 			= 		base=Elegant Foil
+ElegantSword                			= 		base=Elegant Sword
+Estoc                       			= 		base=Estoc
+EternalSword                			= 		base=Eternal Sword
+FancyFoil                   			= 		base=Fancy Foil
+GemstoneSword               			= 		base=Gemstone Sword
+Gladius                     			= 		base=Gladius
+GracefulSword               			= 		base=Graceful Sword
+Grappler                    			= 		base=Grappler
+HarpyRapier                 			= 		base=Harpy Rapier
+HookSword                   			= 		base=Hook Sword
+JaggedFoil                  			= 		base=Jagged Foil
+JewelledFoil                			= 		base=Jewelled Foil
+LegionSword                 			= 		base=Legion Sword
+MidnightBlade               			= 		base=Midnight Blade
+Pecoraro                    			= 		base=Pecoraro
+PrimevalRapier              			= 		base=Primeval Rapier
+RustedSpike                 			= 		base=Rusted Spike
+RustedSword                 			= 		base=Rusted Sword
+Sabre                       			= 		base=Sabre
+SerratedFoil                			= 		base=Serrated Foil
+Smallsword                  			= 		base=Smallsword
+SpiraledFoil                			= 		base=Spiraled Foil
+TemperedFoil                			= 		base=Tempered Foil
+ThornRapier                 			= 		base=Thorn Rapier
+TigerHook                   			= 		base=Tiger Hook
+TwilightBlade               			= 		base=Twilight Blade
+VaalBlade                   			= 		base=Vaal Blade
+VaalRapier                  			= 		base=Vaal Rapier
+VarisciteBlade              			= 		base=Variscite Blade
+WarSword                    			= 		base=War Sword
+WhaleboneRapier             			= 		base=Whalebone Rapier
+WyrmboneRapier              			= 		base=Wyrmbone Rapier
+Awl                         			= 		base=Awl
+Blinder                     			= 		base=Blinder
+Cat'?s?Paw                  			= 		base=Cat's Paw
+DoubleClaw                  			= 		base=Double Claw
+EagleClaw                   			= 		base=Eagle Claw
+EyeGouger                   			= 		base=Eye Gouger
+FrightClaw                  			= 		base=Fright Claw
+GeminiClaw                  			= 		base=Gemini Claw
+Gouger                      			= 		base=Gouger
+GreatWhiteClaw              			= 		base=Great White Claw
+GutRipper                   			= 		base=Gut Ripper
+Hellion'?s?Paw              			= 		base=Hellion's Paw
+ImperialClaw                			= 		base=Imperial Claw
+NailedFist                  			= 		base=Nailed Fist
+NobleClaw                   			= 		base=Noble Claw
+PrehistoricClaw             			= 		base=Prehistoric Claw
+SharktoothClaw              			= 		base=Sharktooth Claw
+SparklingClaw               			= 		base=Sparkling Claw
+TerrorClaw                  			= 		base=Terror Claw
+ThresherClaw                			= 		base=Thresher Claw
+ThroatStabber               			= 		base=Throat Stabber
+Tiger'?s?Paw                			= 		base=Tiger's Paw
+TimewornClaw                			= 		base=Timeworn Claw
+TwinClaw                    			= 		base=Twin Claw
+VaalClaw                    			= 		base=Vaal Claw
+ArenaPlate                  			= 		base=Arena Plate
+Assassin'?s?Garb            			= 		base=Assassin's Garb
+AstralPlate                 			= 		base=Astral Plate
+BattleLamellar              			= 		base=Battle Lamellar
+BattlePlate                 			= 		base=Battle Plate
+BloodRaiment                			= 		base=Blood Raiment
+BoneArmour                  			= 		base=Bone Armour
+BronzePlate                 			= 		base=Bronze Plate
+BuckskinTunic               			= 		base=Buckskin Tunic
+CabalistRegalia             			= 		base=Cabalist Regalia
+CarnalArmour                			= 		base=Carnal Armour
+ChainHauberk                			= 		base=Chain Hauberk
+ChainmailDoublet            			= 		base=Chainmail Doublet
+ChainmailTunic              			= 		base=Chainmail Tunic
+ChainmailVest               			= 		base=Chainmail Vest
+Chestplate                  			= 		base=Chestplate
+ColosseumPlate              			= 		base=Colosseum Plate
+Commander'?s?Brigandine     			= 		base=Commander's Brigandine
+Conjurer'?s?Vestment        			= 		base=Conjurer's Vestment
+ConquestChainmail           			= 		base=Conquest Chainmail
+CopperPlate                 			= 		base=Copper Plate
+CoronalLeather              			= 		base=Coronal Leather
+CrimsonRaiment              			= 		base=Crimson Raiment
+CrusaderChainmail           			= 		base=Crusader Chainmail
+CrusaderPlate               			= 		base=Crusader Plate
+CryptArmour                 			= 		base=Crypt Armour
+Cutthroat'?s?Garb           			= 		base=Cutthroat's Garb
+DesertBrigandine            			= 		base=Desert Brigandine
+DestinyLeather              			= 		base=Destiny Leather
+DestroyerRegalia            			= 		base=Destroyer Regalia
+DevoutChainmail             			= 		base=Devout Chainmail
+DragonscaleDoublet          			= 		base=Dragonscale Doublet
+EelskinTunic                			= 		base=Eelskin Tunic
+ElegantRingmail             			= 		base=Elegant Ringmail
+ExquisiteLeather            			= 		base=Exquisite Leather
+FieldLamellar               			= 		base=Field Lamellar
+FrontierLeather             			= 		base=Frontier Leather
+FullChainmail               			= 		base=Full Chainmail
+FullDragonscale             			= 		base=Full Dragonscale
+FullLeather                 			= 		base=Full Leather
+FullPlate                   			= 		base=Full Plate
+FullRingmail                			= 		base=Full Ringmail
+FullScaleArmour             			= 		base=Full Scale Armour
+FullWyrmscale               			= 		base=Full Wyrmscale
+General'?s?Brigandine       			= 		base=General's Brigandine
+GladiatorPlate              			= 		base=Gladiator Plate
+GloriousLeather             			= 		base=Glorious Leather
+GloriousPlate               			= 		base=Glorious Plate
+GoldenPlate                 			= 		base=Golden Plate
+HolyChainmail               			= 		base=Holy Chainmail
+HussarBrigandine            			= 		base=Hussar Brigandine
+InfantryBrigandine          			= 		base=Infantry Brigandine
+LacqueredGarb               			= 		base=Lacquered Garb
+LatticedRingmail            			= 		base=Latticed Ringmail
+LightBrigandine             			= 		base=Light Brigandine
+LordlyPlate                 			= 		base=Lordly Plate
+LoricatedRingmail           			= 		base=Loricated Ringmail
+Mage'?s?Vestment            			= 		base=Mage's Vestment
+MajesticPlate               			= 		base=Majestic Plate
+NecromancerSilks            			= 		base=Necromancer Silks
+Occultist'?s?Vestment       			= 		base=Occultist's Vestment
+OiledCoat                   			= 		base=Oiled Coat
+OiledVest                   			= 		base=Oiled Vest
+OrnateRingmail              			= 		base=Ornate Ringmail
+PaddedJacket                			= 		base=Padded Jacket
+PaddedVest                  			= 		base=Padded Vest
+PlateVest                   			= 		base=Plate Vest
+QuiltedJacket               			= 		base=Quilted Jacket
+RingmailCoat                			= 		base=Ringmail Coat
+SacrificialGarb             			= 		base=Sacrificial Garb
+SadistGarb                  			= 		base=Sadist Garb
+Sage'?s?Robe                			= 		base=Sage's Robe
+Saint'?s?Hauberk            			= 		base=Saint's Hauberk
+SaintlyChainmail            			= 		base=Saintly Chainmail
+Savant'?s?Robe              			= 		base=Savant's Robe
+ScaleDoublet                			= 		base=Scale Doublet
+ScaleVest                   			= 		base=Scale Vest
+ScarletRaiment              			= 		base=Scarlet Raiment
+Scholar'?s?Robe             			= 		base=Scholar's Robe
+SentinelJacket              			= 		base=Sentinel Jacket
+ShabbyJerkin                			= 		base=Shabby Jerkin
+SharkskinTunic              			= 		base=Sharkskin Tunic
+SilkRobe                    			= 		base=Silk Robe
+SilkenGarb                  			= 		base=Silken Garb
+SilkenVest                  			= 		base=Silken Vest
+SilkenWrap                  			= 		base=Silken Wrap
+SimpleRobe                  			= 		base=Simple Robe
+SleekCoat                   			= 		base=Sleek Coat
+Soldier'?s?Brigandine       			= 		base=Soldier's Brigandine
+SpidersilkRobe              			= 		base=Spidersilk Robe
+StrappedLeather             			= 		base=Strapped Leather
+SunLeather                  			= 		base=Sun Leather
+SunPlate                    			= 		base=Sun Plate
+Thief'?s?Garb               			= 		base=Thief's Garb
+TriumphantLamellar          			= 		base=Triumphant Lamellar
+VaalRegalia                 			= 		base=Vaal Regalia
+VarnishedCoat               			= 		base=Varnished Coat
+WarPlate                    			= 		base=War Plate
+WaxedGarb                   			= 		base=Waxed Garb
+WidowsilkRobe               			= 		base=Widowsilk Robe
+WildLeather                 			= 		base=Wild Leather
+WyrmscaleDoublet            			= 		base=Wyrmscale Doublet
+ZodiacLeather               			= 		base=Zodiac Leather
+DryPeninsula                			= 		base=Dry Peninsula
+AncestralClub               			= 		base=Ancestral Club
+AuricMace                   			= 		base=Auric Mace
+BarbedClub                  			= 		base=Barbed Club
+BattleHammer                			= 		base=Battle Hammer
+BehemothMace                			= 		base=Behemoth Mace
+BladedMace                  			= 		base=Bladed Mace
+CeremonialMace              			= 		base=Ceremonial Mace
+DragonMace                  			= 		base=Dragon Mace
+DreamMace                   			= 		base=Dream Mace
+DriftwoodClub               			= 		base=Driftwood Club
+FlangedMace                 			= 		base=Flanged Mace
+Gavel                       			= 		base=Gavel
+LegionHammer                			= 		base=Legion Hammer
+NightmareMace               			= 		base=Nightmare Mace
+OrnateMace                  			= 		base=Ornate Mace
+Pernarch                    			= 		base=Pernarch
+PetrifiedClub               			= 		base=Petrified Club
+PhantomMace                 			= 		base=Phantom Mace
+RockBreaker                 			= 		base=Rock Breaker
+SpikedClub                  			= 		base=Spiked Club
+StoneHammer                 			= 		base=Stone Hammer
+Tenderizer                  			= 		base=Tenderizer
+TribalClub                  			= 		base=Tribal Club
+WarHammer                   			= 		base=War Hammer
+WyrmMace                    			= 		base=Wyrm Mace
+AgateAmulet                 			= 		base=Agate Amulet
+AmberAmulet                 			= 		base=Amber Amulet
+CitrineAmulet               			= 		base=Citrine Amulet
+CoralAmulet                 			= 		base=Coral Amulet
+GoldAmulet                  			= 		base=Gold Amulet
+JadeAmulet                  			= 		base=Jade Amulet
+JetAmulet                   			= 		base=Jet Amulet
+LapisAmulet                 			= 		base=Lapis Amulet
+OnyxAmulet                  			= 		base=Onyx Amulet
+PauaAmulet                  			= 		base=Paua Amulet
+TurquoiseAmulet             			= 		base=Turquoise Amulet
+BrassMaul                   			= 		base=Brass Maul
+ColossusMallet              			= 		base=Colossus Mallet
+CoronalMaul                 			= 		base=Coronal Maul
+DreadMaul                   			= 		base=Dread Maul
+DriftwoodMaul               			= 		base=Driftwood Maul
+FrightMaul                  			= 		base=Fright Maul
+GreatMallet                 			= 		base=Great Mallet
+ImperialMaul                			= 		base=Imperial Maul
+JaggedMaul                  			= 		base=Jagged Maul
+KaruiMaul                   			= 		base=Karui Maul
+Mallet                      			= 		base=Mallet
+Meatgrinder                 			= 		base=Meatgrinder
+MorningStar                 			= 		base=Morning Star
+Piledriver                  			= 		base=Piledriver
+PlatedMaul                  			= 		base=Plated Maul
+Sledgehammer                			= 		base=Sledgehammer
+SolarMaul                   			= 		base=Solar Maul
+SpinyMaul                   			= 		base=Spiny Maul
+Steelhead                   			= 		base=Steelhead
+TerrorMaul                  			= 		base=Terror Maul
+TotemicMaul                 			= 		base=Totemic Maul
+TribalMaul                  			= 		base=Tribal Maul
+AbyssalSceptre              			= 		base=Abyssal Sceptre
+BloodSceptre                			= 		base=Blood Sceptre
+BronzeSceptre               			= 		base=Bronze Sceptre
+CarnalSceptre               			= 		base=Carnal Sceptre
+CrystalSceptre              			= 		base=Crystal Sceptre
+DarkwoodSceptre             			= 		base=Darkwood Sceptre
+DriftwoodSceptre            			= 		base=Driftwood Sceptre
+GrinningFetish              			= 		base=Grinning Fetish
+HornedSceptre               			= 		base=Horned Sceptre
+IronSceptre                 			= 		base=Iron Sceptre
+KaruiSceptre                			= 		base=Karui Sceptre
+LeadSceptre                 			= 		base=Lead Sceptre
+OchreSceptre                			= 		base=Ochre Sceptre
+OpalSceptre                 			= 		base=Opal Sceptre
+PlatinumSceptre             			= 		base=Platinum Sceptre
+QuartzSceptre               			= 		base=Quartz Sceptre
+RitualSceptre               			= 		base=Ritual Sceptre
+RoyalSceptre                			= 		base=Royal Sceptre
+SambarSceptre               			= 		base=Sambar Sceptre
+Sekhem                      			= 		base=Sekhem
+ShadowSceptre               			= 		base=Shadow Sceptre
+StagSceptre                 			= 		base=Stag Sceptre
+Tyrant'?s?Sekhem            			= 		base=Tyrant's Sekhem
+VaalSceptre                 			= 		base=Vaal Sceptre
+VoidSceptre                 			= 		base=Void Sceptre
+AbyssalAxe                  			= 		base=Abyssal Axe
+DaggerAxe                   			= 		base=Dagger Axe
+DespotAxe                   			= 		base=Despot Axe
+DoubleAxe                   			= 		base=Double Axe
+EzomyteAxe                  			= 		base=Ezomyte Axe
+Fleshripper                 			= 		base=Fleshripper
+GildedAxe                   			= 		base=Gilded Axe
+HeadsmanAxe                 			= 		base=Headsman Axe
+JadeChopper                 			= 		base=Jade Chopper
+JasperChopper               			= 		base=Jasper Chopper
+KaruiChopper                			= 		base=Karui Chopper
+Labrys                      			= 		base=Labrys
+NobleAxe                    			= 		base=Noble Axe
+Poleaxe                     			= 		base=Poleaxe
+ShadowAxe                   			= 		base=Shadow Axe
+StoneAxe                    			= 		base=Stone Axe
+SunderingAxe                			= 		base=Sundering Axe
+TalonAxe                    			= 		base=Talon Axe
+TimberAxe                   			= 		base=Timber Axe
+VaalAxe                     			= 		base=Vaal Axe
+VoidAxe                     			= 		base=Void Axe
+Woodsplitter                			= 		base=Woodsplitter
+CurseOnHit                  			= 		base=Curse On Hit
+BastardSword                			= 		base=Bastard Sword
+ButcherSword                			= 		base=Butcher Sword
+CorrodedBlade               			= 		base=Corroded Blade
+CurvedBlade                 			= 		base=Curved Blade
+EngravedGreatsword          			= 		base=Engraved Greatsword
+EtchedGreatsword            			= 		base=Etched Greatsword
+ExquisiteBlade              			= 		base=Exquisite Blade
+EzomyteBlade                			= 		base=Ezomyte Blade
+FootmanSword                			= 		base=Footman Sword
+Headman'?s?Sword            			= 		base=Headman's Sword
+HighlandBlade               			= 		base=Highland Blade
+InfernalSword               			= 		base=Infernal Sword
+LionSword                   			= 		base=Lion Sword
+LitheBlade                  			= 		base=Lithe Blade
+Longsword                   			= 		base=Longsword
+OrnateSword                 			= 		base=Ornate Sword
+ReaverSword                 			= 		base=Reaver Sword
+SpectralSword               			= 		base=Spectral Sword
+TigerSword                  			= 		base=Tiger Sword
+Two-HandedSword             			= 		base=Two-Handed Sword
+VaalGreatsword              			= 		base=Vaal Greatsword
+WraithSword                 			= 		base=Wraith Sword
+CobaltJewel                 			= 		base=Cobalt Jewel
+CrimsonJewel                			= 		base=Crimson Jewel
+ViridianJewel               			= 		base=Viridian Jewel
+AssassinBow                 			= 		base=Assassin Bow
+BoneBow                     			= 		base=Bone Bow
+CitadelBow                  			= 		base=Citadel Bow
+CompositeBow                			= 		base=Composite Bow
+CompoundBow                 			= 		base=Compound Bow
+CrudeBow                    			= 		base=Crude Bow
+DeathBow                    			= 		base=Death Bow
+DecimationBow               			= 		base=Decimation Bow
+DecurveBow                  			= 		base=Decurve Bow
+GroveBow                    			= 		base=Grove Bow
+HarbingerBow                			= 		base=Harbinger Bow
+HighbornBow                 			= 		base=Highborn Bow
+ImperialBow                 			= 		base=Imperial Bow
+IvoryBow                    			= 		base=Ivory Bow
+LongBow                     			= 		base=Long Bow
+MarakethBow                 			= 		base=Maraketh Bow
+RangerBow                   			= 		base=Ranger Bow
+RecurveBow                  			= 		base=Recurve Bow
+ReflexBow                   			= 		base=Reflex Bow
+RoyalBow                    			= 		base=Royal Bow
+ShortBow                    			= 		base=Short Bow
+SniperBow                   			= 		base=Sniper Bow
+SpineBow                    			= 		base=Spine Bow
+SteelwoodBow                			= 		base=Steelwood Bow
+ThicketBow                  			= 		base=Thicket Bow
+AmbushMitts                 			= 		base=Ambush Mitts
+AncientGauntlets            			= 		base=Ancient Gauntlets
+AntiqueGauntlets            			= 		base=Antique Gauntlets
+ArcanistGloves              			= 		base=Arcanist Gloves
+Assassin'?s?Mitts           			= 		base=Assassin's Mitts
+BronzeGauntlets             			= 		base=Bronze Gauntlets
+BronzescaleGauntlets        			= 		base=Bronzescale Gauntlets
+CarnalMitts                 			= 		base=Carnal Mitts
+ChainGloves                 			= 		base=Chain Gloves
+ClaspedMitts                			= 		base=Clasped Mitts
+ConjurerGloves              			= 		base=Conjurer Gloves
+CrusaderGloves              			= 		base=Crusader Gloves
+DeerskinGloves              			= 		base=Deerskin Gloves
+DragonscaleGauntlets        			= 		base=Dragonscale Gauntlets
+EelskinGloves               			= 		base=Eelskin Gloves
+EmbroideredGloves           			= 		base=Embroidered Gloves
+FishscaleGauntlets          			= 		base=Fishscale Gauntlets
+GoathideGloves              			= 		base=Goathide Gloves
+GoldenBracers               			= 		base=Golden Bracers
+GoliathGauntlets            			= 		base=Goliath Gauntlets
+HydrascaleGauntlets         			= 		base=Hydrascale Gauntlets
+IronGauntlets               			= 		base=Iron Gauntlets
+IronscaleGauntlets          			= 		base=Ironscale Gauntlets
+LegionGloves                			= 		base=Legion Gloves
+MeshGloves                  			= 		base=Mesh Gloves
+MurderMitts                 			= 		base=Murder Mitts
+NubuckGloves                			= 		base=Nubuck Gloves
+PlatedGauntlets             			= 		base=Plated Gauntlets
+RawhideGloves               			= 		base=Rawhide Gloves
+RingmailGloves              			= 		base=Ringmail Gloves
+RivetedGloves               			= 		base=Riveted Gloves
+SamiteGloves                			= 		base=Samite Gloves
+SatinGloves                 			= 		base=Satin Gloves
+SerpentscaleGauntlets       			= 		base=Serpentscale Gauntlets
+ShagreenGloves              			= 		base=Shagreen Gloves
+SharkskinGloves             			= 		base=Sharkskin Gloves
+SilkGloves                  			= 		base=Silk Gloves
+SlinkGloves                 			= 		base=Slink Gloves
+SoldierGloves               			= 		base=Soldier Gloves
+SorcererGloves              			= 		base=Sorcerer Gloves
+StealthGloves               			= 		base=Stealth Gloves
+SteelGauntlets              			= 		base=Steel Gauntlets
+SteelscaleGauntlets         			= 		base=Steelscale Gauntlets
+StrappedMitts               			= 		base=Strapped Mitts
+TitanGauntlets              			= 		base=Titan Gauntlets
+TrapperMitts                			= 		base=Trapper Mitts
+VaalGauntlets               			= 		base=Vaal Gauntlets
+VelvetGloves                			= 		base=Velvet Gloves
+WoolGloves                  			= 		base=Wool Gloves
+WrappedMitts                			= 		base=Wrapped Mitts
+WyrmscaleGauntlets          			= 		base=Wyrmscale Gauntlets
+ZealotGloves                			= 		base=Zealot Gloves
+BluntArrowQuiver            			= 		base=Blunt Arrow Quiver
+BroadheadArrowQuiver        			= 		base=Broadhead Arrow Quiver
+ConductiveQuiver            			= 		base=Conductive Quiver
+CuredQuiver                 			= 		base=Cured Quiver
+FireArrowQuiver             			= 		base=Fire Arrow Quiver
+HeavyQuiver                 			= 		base=Heavy Quiver
+LightQuiver                 			= 		base=Light Quiver
+PenetratingArrowQuiver      			= 		base=Penetrating Arrow Quiver
+RuggedQuiver                			= 		base=Rugged Quiver
+SerratedArrowQuiver         			= 		base=Serrated Arrow Quiver
+SharktoothArrowQuiver       			= 		base=Sharktooth Arrow Quiver
+Spike-PointArrowQuiver      			= 		base=Spike-Point Arrow Quiver
+Two-PointArrowQuiver        			= 		base=Two-Point Arrow Quiver
+AbandonedWealth             			= 		base=Abandoned Wealth
+Anarchy'?s?Price            			= 		base=Anarchy's Price
+Assassin'?s?Favour          			= 		base=Assassin's Favour
+Audacity                    			= 		base=Audacity
+BlindVenture                			= 		base=Blind Venture
+Bowyer'?s?Dream             			= 		base=Bowyer's Dream
+ChaoticDisposition          			= 		base=Chaotic Disposition
+CovetedPossession           			= 		base=Coveted Possession
+Death                       			= 		base=Death
+Doedre'?s?Madness           			= 		base=Doedre's Madness
+Emperor'?s?Luck             			= 		base=Emperor's Luck
+Gemcutter'?s?Promise        			= 		base=Gemcutter's Promise
+GiftoftheGemlingQueen       			= 		base=Gift of the Gemling Queen
+GraveKnowledge              			= 		base=Grave Knowledge
+Hope                        			= 		base=Hope
+HouseofMirrors              			= 		base=House of Mirrors
+Hubris                      			= 		base=Hubris
+Humility                    			= 		base=Humility
+Hunter'?s?Resolve           			= 		base=Hunter's Resolve
+Hunter'?s?Reward            			= 		base=Hunter's Reward
+JackintheBox                			= 		base=Jack in the Box
+Lantador'?s?LostLove        			= 		base=Lantador's Lost Love
+LastHope                    			= 		base=Last Hope
+Loyalty                     			= 		base=Loyalty
+LuckyConnections            			= 		base=Lucky Connections
+MercilessArmament           			= 		base=Merciless Armament
+PrideBeforetheFall          			= 		base=Pride Before the Fall
+RainofChaos                 			= 		base=Rain of Chaos
+ScholaroftheSeas            			= 		base=Scholar of the Seas
+TheAesthete                 			= 		base=The Aesthete
+TheArtist                   			= 		base=The Artist
+TheAvenger                  			= 		base=The Avenger
+TheBattleBorn               			= 		base=The Battle Born
+TheBetrayal                 			= 		base=The Betrayal
+TheBrittleEmperor           			= 		base=The Brittle Emperor
+TheCarrionCrow              			= 		base=The Carrion Crow
+TheCartographer             			= 		base=The Cartographer
+TheCataclysm                			= 		base=The Cataclysm
+TheCatalyst                 			= 		base=The Catalyst
+TheCelestialJusticar        			= 		base=The Celestial Justicar
+TheChainsthatBind           			= 		base=The Chains that Bind
+TheConduit                  			= 		base=The Conduit
+TheDarkMage                 			= 		base=The Dark Mage
+TheDoctor                   			= 		base=The Doctor
+TheDoppelganger             			= 		base=The Doppelganger
+TheDragon'?s?Heart          			= 		base=The Dragon's Heart
+TheDrunkenAristocrat        			= 		base=The Drunken Aristocrat
+TheEncroachingDarkness      			= 		base=The Encroaching Darkness
+TheEnlightened              			= 		base=The Enlightened
+TheExplorer                 			= 		base=The Explorer
+TheFeast                    			= 		base=The Feast
+TheFiend                    			= 		base=The Fiend
+TheFletcher                 			= 		base=The Fletcher
+TheFlora'?s?Gift            			= 		base=The Flora's Gift
+TheFox                      			= 		base=The Fox
+TheGambler                  			= 		base=The Gambler
+TheGemcutter                			= 		base=The Gemcutter
+TheGentleman                			= 		base=The Gentleman
+TheGladiator                			= 		base=The Gladiator
+TheHermit                   			= 		base=The Hermit
+TheHoarder                  			= 		base=The Hoarder
+TheHunger                   			= 		base=The Hunger
+TheIncantation              			= 		base=The Incantation
+TheInoculated               			= 		base=The Inoculated
+TheInventor                 			= 		base=The Inventor
+TheKing'?s?Blade            			= 		base=The King's Blade
+TheKing'?s?Heart            			= 		base=The King's Heart
+TheLastOneStanding          			= 		base=The Last One Standing
+TheLich                     			= 		base=The Lich
+TheLover                    			= 		base=The Lover
+TheMercenary                			= 		base=The Mercenary
+TheMetalsmith'?s?Gift       			= 		base=The Metalsmith's Gift
+TheOneWithAll               			= 		base=The One With All
+ThePackLeader               			= 		base=The Pack Leader
+ThePact                     			= 		base=The Pact
+ThePoet                     			= 		base=The Poet
+TheQueen                    			= 		base=The Queen
+TheRoadtoPower              			= 		base=The Road to Power
+TheScarredMeadow            			= 		base=The Scarred Meadow
+TheScholar                  			= 		base=The Scholar
+TheSiren                    			= 		base=The Siren
+TheSpoiledPrince            			= 		base=The Spoiled Prince
+TheSummoner                 			= 		base=The Summoner
+TheSun                      			= 		base=The Sun
+TheSurgeon                  			= 		base=The Surgeon
+TheSurveyor                 			= 		base=The Surveyor
+TheSurvivalist              			= 		base=The Survivalist
+TheThaumaturgist            			= 		base=The Thaumaturgist
+TheTower                    			= 		base=The Tower
+TheTrial                    			= 		base=The Trial
+TheTwins                    			= 		base=The Twins
+TheUnion                    			= 		base=The Union
+TheVast                     			= 		base=The Vast
+TheWarden                   			= 		base=The Warden
+TheWatcher                  			= 		base=The Watcher
+TheWind                     			= 		base=The Wind
+TheWrath                    			= 		base=The Wrath
+ThreeFacesintheDark         			= 		base=Three Faces in the Dark
+Time-LostRelic              			= 		base=Time-Lost Relic
+Vinia'?s?Token              			= 		base=Vinia's Token
+VolatilePower               			= 		base=Volatile Power
+WealthandPower              			= 		base=Wealth and Power
+Ambusher                    			= 		base=Ambusher
+BootBlade                   			= 		base=Boot Blade
+BootKnife                   			= 		base=Boot Knife
+ButcherKnife                			= 		base=Butcher Knife
+CarvingKnife                			= 		base=Carving Knife
+CopperKris                  			= 		base=Copper Kris
+DemonDagger                 			= 		base=Demon Dagger
+EzomyteDagger               			= 		base=Ezomyte Dagger
+FiendDagger                 			= 		base=Fiend Dagger
+FlayingKnife                			= 		base=Flaying Knife
+GlassShank                  			= 		base=Glass Shank
+GoldenKris                  			= 		base=Golden Kris
+GuttingKnife                			= 		base=Gutting Knife
+ImpDagger                   			= 		base=Imp Dagger
+ImperialSkean               			= 		base=Imperial Skean
+PlatinumKris                			= 		base=Platinum Kris
+Poignard                    			= 		base=Poignard
+ProngDagger                 			= 		base=Prong Dagger
+RoyalSkean                  			= 		base=Royal Skean
+Sai                         			= 		base=Sai
+Skean                       			= 		base=Skean
+SkinningKnife               			= 		base=Skinning Knife
+SlaughterKnife              			= 		base=Slaughter Knife
+Stiletto                    			= 		base=Stiletto
+Trisula                     			= 		base=Trisula
+AlderSpikedShield           			= 		base=Alder Spiked Shield
+AlloyedSpikedShield         			= 		base=Alloyed Spiked Shield
+AncientSpiritShield         			= 		base=Ancient Spirit Shield
+AngelicKiteShield           			= 		base=Angelic Kite Shield
+ArchonKiteShield            			= 		base=Archon Kite Shield
+BaroqueRoundShield          			= 		base=Baroque Round Shield
+BattleBuckler               			= 		base=Battle Buckler
+BoneSpiritShield            			= 		base=Bone Spirit Shield
+BrandedKiteShield           			= 		base=Branded Kite Shield
+BrassSpiritShield           			= 		base=Brass Spirit Shield
+BronzeTowerShield           			= 		base=Bronze Tower Shield
+BuckskinTowerShield         			= 		base=Buckskin Tower Shield
+BurnishedSpikedShield       			= 		base=Burnished Spiked Shield
+CardinalRoundShield         			= 		base=Cardinal Round Shield
+CedarTowerShield            			= 		base=Cedar Tower Shield
+CeremonialKiteShield        			= 		base=Ceremonial Kite Shield
+ChampionKiteShield          			= 		base=Champion Kite Shield
+ChimingSpiritShield         			= 		base=Chiming Spirit Shield
+ColossalTowerShield         			= 		base=Colossal Tower Shield
+CompoundSpikedShield        			= 		base=Compound Spiked Shield
+CopperTowerShield           			= 		base=Copper Tower Shield
+CorrodedTowerShield         			= 		base=Corroded Tower Shield
+CorrugatedBuckler           			= 		base=Corrugated Buckler
+CrestedTowerShield          			= 		base=Crested Tower Shield
+CrimsonRoundShield          			= 		base=Crimson Round Shield
+CrusaderBuckler             			= 		base=Crusader Buckler
+DriftwoodSpikedShield       			= 		base=Driftwood Spiked Shield
+EbonyTowerShield            			= 		base=Ebony Tower Shield
+ElegantRoundShield          			= 		base=Elegant Round Shield
+EnameledBuckler             			= 		base=Enameled Buckler
+EtchedKiteShield            			= 		base=Etched Kite Shield
+EzomyteSpikedShield         			= 		base=Ezomyte Spiked Shield
+EzomyteTowerShield          			= 		base=Ezomyte Tower Shield
+FirRoundShield              			= 		base=Fir Round Shield
+FossilisedSpiritShield      			= 		base=Fossilised Spirit Shield
+GildedBuckler               			= 		base=Gilded Buckler
+GirdedTowerShield           			= 		base=Girded Tower Shield
+GoathideBuckler             			= 		base=Goathide Buckler
+GoldenBuckler               			= 		base=Golden Buckler
+HammeredBuckler             			= 		base=Hammered Buckler
+HarmonicSpiritShield        			= 		base=Harmonic Spirit Shield
+ImperialBuckler             			= 		base=Imperial Buckler
+IronwoodBuckler             			= 		base=Ironwood Buckler
+IvorySpiritShield           			= 		base=Ivory Spirit Shield
+JinglingSpiritShield        			= 		base=Jingling Spirit Shield
+LacewoodSpiritShield        			= 		base=Lacewood Spirit Shield
+LacqueredBuckler            			= 		base=Lacquered Buckler
+LaminatedKiteShield         			= 		base=Laminated Kite Shield
+LayeredKiteShield           			= 		base=Layered Kite Shield
+LindenKiteShield            			= 		base=Linden Kite Shield
+MahoganyTowerShield         			= 		base=Mahogany Tower Shield
+MirroredSpikedShield        			= 		base=Mirrored Spiked Shield
+MosaicKiteShield            			= 		base=Mosaic Kite Shield
+OakBuckler                  			= 		base=Oak Buckler
+OrnateSpikedShield          			= 		base=Ornate Spiked Shield
+PaintedBuckler              			= 		base=Painted Buckler
+PaintedTowerShield          			= 		base=Painted Tower Shield
+PineBuckler                 			= 		base=Pine Buckler
+PinnacleTowerShield         			= 		base=Pinnacle Tower Shield
+PlankKiteShield             			= 		base=Plank Kite Shield
+PolishedSpikedShield        			= 		base=Polished Spiked Shield
+RawhideTowerShield          			= 		base=Rawhide Tower Shield
+RedwoodSpikedShield         			= 		base=Redwood Spiked Shield
+ReinforcedKiteShield        			= 		base=Reinforced Kite Shield
+ReinforcedTowerShield       			= 		base=Reinforced Tower Shield
+RottedRoundShield           			= 		base=Rotted Round Shield
+ScarletRoundShield          			= 		base=Scarlet Round Shield
+ShagreenTowerShield         			= 		base=Shagreen Tower Shield
+SovereignSpikedShield       			= 		base=Sovereign Spiked Shield
+SpikedBundle                			= 		base=Spiked Bundle
+SpikedRoundShield           			= 		base=Spiked Round Shield
+SpinyRoundShield            			= 		base=Spiny Round Shield
+SplendidRoundShield         			= 		base=Splendid Round Shield
+SplinteredTowerShield       			= 		base=Splintered Tower Shield
+SteelKiteShield             			= 		base=Steel Kite Shield
+StuddedRoundShield          			= 		base=Studded Round Shield
+SupremeSpikedShield         			= 		base=Supreme Spiked Shield
+TarnishedSpiritShield       			= 		base=Tarnished Spirit Shield
+TeakRoundShield             			= 		base=Teak Round Shield
+ThoriumSpiritShield         			= 		base=Thorium Spirit Shield
+TitaniumSpiritShield        			= 		base=Titanium Spirit Shield
+TwigSpiritShield            			= 		base=Twig Spirit Shield
+VaalBuckler                 			= 		base=Vaal Buckler
+VaalSpiritShield            			= 		base=Vaal Spirit Shield
+WalnutSpiritShield          			= 		base=Walnut Spirit Shield
+WarBuckler                  			= 		base=War Buckler
+YewSpiritShield             			= 		base=Yew Spirit Shield
+CarvedWand                  			= 		base=Carved Wand
+CrystalWand                 			= 		base=Crystal Wand
+Demon'?s?Horn               			= 		base=Demon's Horn
+DriftwoodWand               			= 		base=Driftwood Wand
+EngravedWand                			= 		base=Engraved Wand
+Faun'?s?Horn                			= 		base=Faun's Horn
+Goat'?s?Horn                			= 		base=Goat's Horn
+HeathenWand                 			= 		base=Heathen Wand
+ImbuedWand                  			= 		base=Imbued Wand
+OmenWand                    			= 		base=Omen Wand
+OpalWand                    			= 		base=Opal Wand
+PaganWand                   			= 		base=Pagan Wand
+ProfaneWand                 			= 		base=Profane Wand
+ProphecyWand                			= 		base=Prophecy Wand
+QuartzWand                  			= 		base=Quartz Wand
+SageWand                    			= 		base=Sage Wand
+SerpentWand                 			= 		base=Serpent Wand
+SpiraledWand                			= 		base=Spiraled Wand
+TornadoWand                 			= 		base=Tornado Wand
+AmbushBoots                 			= 		base=Ambush Boots
+AncientGreaves              			= 		base=Ancient Greaves
+AntiqueGreaves              			= 		base=Antique Greaves
+ArcanistSlippers            			= 		base=Arcanist Slippers
+Assassin'?s?Boots           			= 		base=Assassin's Boots
+BronzescaleBoots            			= 		base=Bronzescale Boots
+CarnalBoots                 			= 		base=Carnal Boots
+ChainBoots                  			= 		base=Chain Boots
+ClaspedBoots                			= 		base=Clasped Boots
+ConjurerBoots               			= 		base=Conjurer Boots
+CrusaderBoots               			= 		base=Crusader Boots
+DeerskinBoots               			= 		base=Deerskin Boots
+DragonscaleBoots            			= 		base=Dragonscale Boots
+EelskinBoots                			= 		base=Eelskin Boots
+GoathideBoots               			= 		base=Goathide Boots
+GoldenCaligae               			= 		base=Golden Caligae
+GoliathGreaves              			= 		base=Goliath Greaves
+HydrascaleBoots             			= 		base=Hydrascale Boots
+IronGreaves                 			= 		base=Iron Greaves
+IronscaleBoots              			= 		base=Ironscale Boots
+LeatherscaleBoots           			= 		base=Leatherscale Boots
+LegionBoots                 			= 		base=Legion Boots
+MeshBoots                   			= 		base=Mesh Boots
+MurderBoots                 			= 		base=Murder Boots
+NubuckBoots                 			= 		base=Nubuck Boots
+PlatedGreaves               			= 		base=Plated Greaves
+RawhideBoots                			= 		base=Rawhide Boots
+ReinforcedGreaves           			= 		base=Reinforced Greaves
+RingmailBoots               			= 		base=Ringmail Boots
+RivetedBoots                			= 		base=Riveted Boots
+SamiteSlippers              			= 		base=Samite Slippers
+SatinSlippers               			= 		base=Satin Slippers
+ScholarBoots                			= 		base=Scholar Boots
+SerpentscaleBoots           			= 		base=Serpentscale Boots
+ShackledBoots               			= 		base=Shackled Boots
+ShagreenBoots               			= 		base=Shagreen Boots
+SharkskinBoots              			= 		base=Sharkskin Boots
+SilkSlippers                			= 		base=Silk Slippers
+SlinkBoots                  			= 		base=Slink Boots
+SoldierBoots                			= 		base=Soldier Boots
+SorcererBoots               			= 		base=Sorcerer Boots
+StealthBoots                			= 		base=Stealth Boots
+SteelGreaves                			= 		base=Steel Greaves
+SteelscaleBoots             			= 		base=Steelscale Boots
+StrappedBoots               			= 		base=Strapped Boots
+TitanGreaves                			= 		base=Titan Greaves
+TrapperBoots                			= 		base=Trapper Boots
+VaalGreaves                 			= 		base=Vaal Greaves
+VelvetSlippers              			= 		base=Velvet Slippers
+WoolShoes                   			= 		base=Wool Shoes
+WrappedBoots                			= 		base=Wrapped Boots
+WyrmscaleBoots              			= 		base=Wyrmscale Boots
+ZealotBoots                 			= 		base=Zealot Boots
+AlbinoRhoaFeather           			= 		base=Albino Rhoa Feather
+Armourer'?s?Scrap           			= 		base=Armourer's Scrap
+Blacksmith'?s?Whetstone     			= 		base=Blacksmith's Whetstone
+Cartographer'?s?Chisel      			= 		base=Cartographer's Chisel
+Gemcutter'?s?Prism          			= 		base=Gemcutter's Prism
+Glassblower'?s?Bauble       			= 		base=Glassblower's Bauble
+MirrorofKalandra            			= 		base=Mirror of Kalandra
+PortalScroll                			= 		base=Portal Scroll
+ScrollofWisdom              			= 		base=Scroll of Wisdom
+AmethystRing                			= 		base=Amethyst Ring
+CoralRing                   			= 		base=Coral Ring
+DiamondRing                 			= 		base=Diamond Ring
+GoldRing                    			= 		base=Gold Ring
+GoldenHoop                  			= 		base=Golden Hoop
+IronRing                    			= 		base=Iron Ring
+MoonstoneRing               			= 		base=Moonstone Ring
+PauaRing                    			= 		base=Paua Ring
+PrismaticRing               			= 		base=Prismatic Ring
+RubyRing                    			= 		base=Ruby Ring
+SapphireRing                			= 		base=Sapphire Ring
+TopazRing                   			= 		base=Topaz Ring
+Two-StoneRing               			= 		base=Two-Stone Ring
+UnsetRing                   			= 		base=Unset Ring
+ChainBelt                   			= 		base=Chain Belt
+ClothBelt                   			= 		base=Cloth Belt
+GoldenObi                   			= 		base=Golden Obi
+HeavyBelt                   			= 		base=Heavy Belt
+LeatherBelt                 			= 		base=Leather Belt
+RusticSash                  			= 		base=Rustic Sash
+StuddedBelt                 			= 		base=Studded Belt
+CoiledStaff                 			= 		base=Coiled Staff
+CrescentStaff               			= 		base=Crescent Staff
+EclipseStaff                			= 		base=Eclipse Staff
+EzomyteStaff                			= 		base=Ezomyte Staff
+FoulStaff                   			= 		base=Foul Staff
+GnarledBranch               			= 		base=Gnarled Branch
+HighbornStaff               			= 		base=Highborn Staff
+ImperialStaff               			= 		base=Imperial Staff
+IronStaff                   			= 		base=Iron Staff
+JudgementStaff              			= 		base=Judgement Staff
+Lathi                       			= 		base=Lathi
+LongStaff                   			= 		base=Long Staff
+MaelströmStaff              			= 		base=Maelström Staff
+MilitaryStaff               			= 		base=Military Staff
+MoonStaff                   			= 		base=Moon Staff
+PrimitiveStaff              			= 		base=Primitive Staff
+PrimordialStaff             			= 		base=Primordial Staff
+Quarterstaff                			= 		base=Quarterstaff
+RoyalStaff                  			= 		base=Royal Staff
+SerpentineStaff             			= 		base=Serpentine Staff
+VileStaff                   			= 		base=Vile Staff
+WoodfulStaff                			= 		base=Woodful Staff
 
-;Belts
+;Flasks
 
-(rustic|sash)+          =       base=Rustic Sash
-heavyb(elt)?            =       base=Heavy Belt
-chainb(elt)?            =       base=Chain Belt
-leatherb(elt)?          =       base=Leather Belt
-goldenobi               =       base=goldenobi
-studded(b(elt)?)?       =       base=Studded Belt
-clothb(elt)?            =       base=Cloth Belt
-
-;Amulets
-
-amber(Am+(ulet|y))?     =       base=Amber Amulet
-lapis(Am+(ulet|y))?     =       base=Lapis Amulet
-jade(Am+(ulet|y))?      =       base=Jade Amulet
-goldAm+(ulet|y)         =       base=Gold Amulet
-turquoise?(Am+(ulet|y))?=       base=Turquoise Amulet
-agate?(Am+(ulet|y))?    =       base=Agate Amulet
-citrine?(Am+(ulet|y))?  =       base=Citrine Amulet
-onyx(Am+(ulet|y))?      =       base=Onyx Amulet
-coralAm+(ulet|y)        =       base=Coral Amulet
-pauaAm+(ulet|y)         =       base=Paua Amulet
-
-;Rings
-
-amethyst(ring)?        =       base=Amethyst Ring
-coralring              =       base=Coral Ring
-diamond(ring)?         =       base=Diamond Ring
-goldring(ring)?        =       base=Gold Ring
-goldenhoop             =       base=Golden Hoop
-iron(ring)?            =       base=Iron Ring
-moonstone(ring)?       =       base=Moonstone Ring
-pauaring               =       base=Paua Ring
-prismatic(ring)?       =       base=Prismatic Ring
-ruby(ring)?            =       base=Ruby Ring
-sapphire(ring)?        =       base=Sapphire Ring
-topaz(ring)?           =       base=Topaz Ring
-twostone(ring)?        =       base=Two-Stone Ring
-unset(ring)?           =       base=Unset Ring
-
-;Body Armour
-
-saintlychainmail    =       base=Saintly Chainmail
-carnal armour       =       base=Carnar Armour
-astralplate         =       base=Astral Plate
-vaalregalia         =       base=Vaal Regalia
-
-;Boots
-
-titangreaves        =       base=Titan Greaves
-slinkboots          =       base=Slink Boots
-sorcererboots       =       base=Sorcerer Boots
-muderboots          =       base=Murder Boots
-dragonscaleboots    =       base=Dragonscale boots
-crusaderboots       =       base=Crusader Boots
-
-;Gloves
-
-titangauntlets      =       base=Titan Gauntlets
-slinkgloves         =       base=Slink Gloves
-sorcerergloves      =       base=Sorcerer Gloves
-dragonscalegauntlets =      base=Dragonscale Gauntlets
-mudermitts          =       base=Murder Mitts
-crusadergloves      =       base=Crusader Gloves
-
-;Helmet
-
-nightmarebascinet   =       base=Nightmare Bascinet
-deicidemask         =       base=Deicide Mask
-praetorcrown        =       base=Praetor Crown
-eternalburgonet     =       base=Eternal Burgonet
-hubriscirclet       =       base=Hubris Circlet
-lionpelt            =       base=Lion Pelt
-
-;Shield
-
-archonkite          =       base=Archon Kite Shield
-titaniumspirit      =       base=Titanium Spirit Shield
-imperialbuckler     =       base=Imperial Buckler
-elegantround        =       base=Elegant Round Shield
-supremespiked       =       base=Supreme Spiked Shield
-pinnacletower       =       base=Pinnacle Twoer Shield
-
-;Bow
-
-harbinger           =       base=Harbinger Bow
-thicket             =       base=Thicket Bow
-
-;Claw
-
-imperialclaw        =       base=Imperial Claw
-terrorclaw          =       base=Terror Claw
-
-;Dagger
-
-ambusher            =       base=Ambusher
-
-;Axe
-
-siegeaxe            =       base=Siege Axe
-
-;Mace
-
-legionhammer        =       base=Legion Hammer
-nightmaremace       =       base=Nightmare Mace
-
-;Sword
-
-corsairsword        =       base=Corsair Sword
-eternalsword        =       base=Eternal Sword
-
-;Thrusting sword
-
-RustedSpike         =       base=Rusted Spike
-WhaleboneRapier     =       base=Whalebone Rapier
-BatteredFoil        =       base=Battered Foil
-BasketRapier        =       base=Basket Rapier 
-JaggedFoil          =       base=Jagged Foil
-AntiqueRapier       =       base=Antique Rapier
-ElegantFoil         =       base=Elegant Foil
-ThornRapier         =       base=Thorn Rapier
-Smallsword          =       base=Smallsword 
-WyrmboneRapier      =       base=Wyrmbone Rapier
-BurnishedFoil       =       base=Burnished Foil
-Estoc               =       base=Estoc
-SerratedFoil        =       base=Serrated Foil
-PrimevalRapier      =       base=Primeval Rapier
-FancyFoil           =       base=Fancy Foil 
-ApexRapier          =       base=Apex Rapier 
-CourtesanSword      =       base=Courtesan Sword
-DragonboneRapier    =       base=Dragonbone Rapier
-TemperedFoil        =       base=Tempered Foil
-Pecoraro            =       base=Pecoraro 
-SpiraledFoil        =       base=Spiraled Foil
-VaalRapier          =       base=Vaal Rapier
-JeweledFoil         =       base=Jeweled Foil
-HarpyRapier         =       base=Harpy Rapier
-DragoonSword        =       base=Dragoon Sword
-
-
-
-;Sceptre
-
-DriftwoodSceptre    =       base=Driftwood Sceptre
-darkwoodSceptre     =       base=Darkwood Sceptre
-bronzeSceptre       =       base=Bronze Sceptre
-quartzSceptre       =       base=Quartz Sceptre 
-ironSceptre         =       base=Iron Sceptre
-ochreSceptre        =       base=Ochre Sceptre
-ritualSceptre       =       base=Ritual Sceptre
-shadowSceptre       =       base=Shadow Sceptre
-GrinningSceptre     =       base=Grinning Sceptre 
-HornedSceptre       =       base=Horned Sceptre 
-Sekhem              =       base=Sekhem
-CrystalSceptre      =       base=Crystal Sceptre 
-LeadSceptre         =       base=Lead Sceptre 
-BloodSceptre        =       base=Blood Sceptre
-RoyalSceptre        =       base=Royal Sceptre 
-StagSceptre         =       base=Stag Sceptre 
-karuiSceptre        =       base=Karui Sceptre
-Tyrant'?s?Sekhem    =       base=Tyrant's Sekhem
-OpalSceptre         =       base=Opal Sceptre 
-PlatinumSceptre     =       base=Platinum Sceptre
-VaalSceptre         =       base=Vaal Sceptre
-CarnalSceptre       =       base=Carnal Sceptre
-VoidSceptre         =       base=Void Sceptre 
-SambarSceptre       =       base=Sambar Sceptre
-
-;Wand
-
-DriftwoodWand       =       base=DriftwoodWand
-Goat'?s?Horn        =       base=Goat's Horn
-carvedwand          =       base=Carved Wand 
-quartzwand          =       base=Quartz Wand
-spiraledwand        =       base=Spiraled Wand 
-sagewand            =       base=Sage Wand 
-paganwand           =       base=Pagan Wand
-faun'?s?horn        =       base=Faun's Horn 
-engravedWand        =       base=Engraved Wand
-crystalwand         =       base=Crystal Wand
-serpentwand         =       base=Serpent Wand
-omenwand            =       base=Omen Wand
-heathenwand         =       base=Heathen Wand 
-Demon'?s?horn       =       base=Demon's Horn
-imbuedwand          =       base=Imbued Wand
-OpalWand            =       base=Opal Wand 
-TronadoWand         =       base=Tronado Wand
-ProphecyWand        =       base=Prophecy Wand
-ProfaneWand         =       base=Profane Wand 
+AmethystF(la?sk)?              			= 		base=Amethyst Flask
+AquamarineF(la?sk)?         			=       base=Aquamarine Flask   
+BasaltF(la?sk)?            			    =       base=Basalt Flask 
+BismuthF(la?sk)?            			=       base=Bismuth Flask  
+ColossalHybridF(la?sk)?        			= 		base=Colossal Hybrid Flask
+ColossalLifeF(la?sk)?          			= 		base=Colossal Life Flask
+ColossalManaF(la?sk)?          			= 		base=Colossal Mana Flask
+DiamondF(la?sk)?               			= 		base=Diamond Flask
+DivineLifeF(la?sk)?            			= 		base=Divine Life Flask
+DivineManaF(la?sk)?            			= 		base=Divine Mana Flask
+EternalLifeF(la?sk)?           			= 		base=Eternal Life Flask
+EternalManaF(la?sk)?           			= 		base=Eternal Mana Flask
+GiantLifeF(la?sk)?             			= 		base=Giant Life Flask
+GiantManaF(la?sk)?             			= 		base=Giant Mana Flask
+GrandLifeF(la?sk)?             			= 		base=Grand Life Flask
+GrandManaF(la?sk)?             			= 		base=Grand Mana Flask
+GraniteF(la?sk)?               			= 		base=Granite Flask
+GreaterLifeF(la?sk)?           			= 		base=Greater Life Flask
+GreaterManaF(la?sk)?           			= 		base=Greater Mana Flask
+HallowedHybridF(la?sk)?        			= 		base=Hallowed Hybrid Flask
+HallowedLifeF(la?sk)?          			= 		base=Hallowed Life Flask
+HallowedManaF(la?sk)?          			= 		base=Hallowed Mana Flask
+JadeF(la?sk)?               			=       base=Jade Flask 
+LargeHybridF(la?sk)?           			= 		base=Large Hybrid Flask
+LargeLifeF(la?sk)?             			= 		base=Large Life Flask
+LargeManaF(la?sk)?             			= 		base=Large Mana Flask
+MediumHybridF(la?sk)?          			= 		base=Medium Hybrid Flask
+MediumLifeF(la?sk)?            			= 		base=Medium Life Flask
+MediumManaF(la?sk)?            			= 		base=Medium Mana Flask
+QuartzF(la?sk)?                			= 		base=Quartz Flask
+QuicksilverF(la?sk)?           			= 		base=Quicksilver Flask
+RubyF(la?sk)?                  			= 		base=Ruby Flask
+SacredHybridF(la?sk)?          			= 		base=Sacred Hybrid Flask
+SacredLifeF(la?sk)?            			= 		base=Sacred Life Flask
+SacredManaF(la?sk)?            			= 		base=Sacred Mana Flask
+SanctifiedLifeF(la?sk)?        			= 		base=Sanctified Life Flask
+SanctifiedManaF(la?sk)?        			= 		base=Sanctified Mana Flask
+SapphireF(la?sk)?              			= 		base=Sapphire Flask
+SilverF(la?sk)?            			 	=       base=Silver Flask
+SmallHybridF(la?sk)?           			= 		base=Small Hybrid Flask
+SmallLifeF(la?sk)?             			= 		base=Small Life Flask
+SmallManaF(la?sk)?             			= 		base=Small Mana Flask
+StibniteF(la?sk)?           			=       base=Stibnite Flask
+SulphurF(la?sk)?              			=       base=Sulphur Flask 
+TopazF(la?sk)?                 			= 		base=Topaz Flask
 
 ;Fragments
 
-(Sac(rifice)?)?(At)?Dawn     =       base=Sacrifice at Dawn
-(Sac(rifice)?)?(At)?Dusk     =       base=Sacrifice at Dusk
-(Sac(rifice)?)?(At)?Noon     =       base=Sacrifice at Noon
-(Sac(rifice)?)?(At)?Midnight =       base=Sacrifice at Midnight
-(Mortal)?Hope                =       base=Mortal Hope
-(Mortal)?Grief               =       base=Mortal Grief
-(Mortal)?Rage                =       base=Mortal Rage 
-(Mortal)?Ignorance           =       base=Mortal Ignorance 
-
-;Utility Flasks
-
-AquamarineF(la?sk)?         =       base=Aquamarine Flask   
-BasaltF(la?sk)?             =       base=Basalt Flask 
-BismuthF(la?sk)?            =       base=Bismuth Flask  
-SilverF(la?sk)?             =       base=Silver Flask
-StibniteF(la?sk)?           =       base=Stibnite Flask
-QuicksilverF(la?sk)?        =       base=Quicksilver Flask
-RubyF(la?sk)?               =       base=Ruby Flask
-SapphireF(la?sk)?           =       base=Sapphire Flask 
-TopazF(la?sk)?              =       base=Topaz Flask 
-AmethystF(la?sk)?           =       base=Amethyst Flask  
-GraniteF(la?sk)?            =       base=Granite Flask 
-DiamondF(la?sk)?            =       base=Diamond Flask  
-JadeF(la?sk)?               =       base=Jade Flask 
-QuartzF(la?sk)?             =       base=Quartz Flask 
-
-
-Sulphur Flask
+(Mortal)?Grief              			= 		base=Mortal Grief
+(Mortal)?Hope               			= 		base=Mortal Hope
+(Mortal)?Ignorance          			= 		base=Mortal Ignorance
+(Mortal)?Rage               			= 		base=Mortal Rage
+(Sac(rifice)?)?(At)?Dawn    			= 		base=Sacrifice at Dawn
+(Sac(rifice)?)?(At)?Dusk    			= 		base=Sacrifice at Dusk
+(Sac(rifice)?)?(At)?Midnight 			= 		base=Sacrifice at Midnight
+(Sac(rifice)?)?(At)?Noon    			= 		base=Sacrifice at Noon
