@@ -257,3 +257,6 @@ WhirlingBlades|WB                       =     name=Whirling Blades
 WildStrike                              =     name=Wild Strike
 Wither                                  =     name=Wither
 Wrath                                   =     name=Wrath
+ElementalFocus                          =     name=Elemental Focus 
+Minefield                               =     name=Minefield 
+Sunder                                  =     name=Sunder 
