@@ -1,3 +1,6 @@
+;
+;BaseTypes
+;
 AventailHelmet              			= 		base=Aventail Helmet
 BarbuteHelmet               			= 		base=Barbute Helmet
 BatteredHelm                			= 		base=Battered Helm
@@ -34,7 +37,7 @@ MindCage                    			= 		base=Mind Cage
 NecromancerCirclet          			= 		base=Necromancer Circlet
 NightmareBascinet           			= 		base=Nightmare Bascinet
 NobleTricorne               			= 		base=Noble Tricorne
-Pig-FacedBascinet           			= 		base=Pig-Faced Bascinet
+PigFacedBascinet            			= 		base=Pig-Faced Bascinet
 PlagueMask                  			= 		base=Plague Mask
 PraetorCrown                			= 		base=Praetor Crown
 ProphetCrown                			= 		base=Prophet Crown
@@ -62,82 +65,8 @@ VineCirclet                 			= 		base=Vine Circlet
 VisoredSallet               			= 		base=Visored Sallet
 WolfPelt                    			= 		base=Wolf Pelt
 ZealotHelmet                			= 		base=Zealot Helmet
-ArmingAxe                   			= 		base=Arming Axe
-BoardingAxe                 			= 		base=Boarding Axe
-BroadAxe                    			= 		base=Broad Axe
-ButcherAxe                  			= 		base=Butcher Axe
-CeremonialAxe               			= 		base=Ceremonial Axe
-ChestSplitter               			= 		base=Chest Splitter
-Cleaver                     			= 		base=Cleaver
-DecorativeAxe               			= 		base=Decorative Axe
-EngravedHatchet             			= 		base=Engraved Hatchet
-EtchedHatchet               			= 		base=Etched Hatchet
-InfernalAxe                 			= 		base=Infernal Axe
-JadeHatchet                 			= 		base=Jade Hatchet
-JasperAxe                   			= 		base=Jasper Axe
-KaruiAxe                    			= 		base=Karui Axe
-ReaverAxe                   			= 		base=Reaver Axe
-RoyalAxe                    			= 		base=Royal Axe
-RunicHatchet                			= 		base=Runic Hatchet
-RustedHatchet               			= 		base=Rusted Hatchet
-SiegeAxe                    			= 		base=Siege Axe
-SpectralAxe                 			= 		base=Spectral Axe
-Tomahawk                    			= 		base=Tomahawk
-VaalHatchet                 			= 		base=Vaal Hatchet
-WarAxe                      			= 		base=War Axe
-WraithAxe                   			= 		base=Wraith Axe
-WristChopper                			= 		base=Wrist Chopper
 FishingRod                  			= 		base=Fishing Rod
-AncientSword                			= 		base=Ancient Sword
-AntiqueRapier               			= 		base=Antique Rapier
-ApexRapier                  			= 		base=Apex Rapier
-Baselard                    			= 		base=Baselard
-BasketRapier                			= 		base=Basket Rapier
-BatteredFoil                			= 		base=Battered Foil
-BattleSword                 			= 		base=Battle Sword
-BroadSword                  			= 		base=Broad Sword
-BurnishedFoil               			= 		base=Burnished Foil
-CopperSword                 			= 		base=Copper Sword
-CorsairSword                			= 		base=Corsair Sword
-CourtesanSword              			= 		base=Courtesan Sword
-Cutlass                     			= 		base=Cutlass
-DragonboneRapier            			= 		base=Dragonbone Rapier
-DragoonSword                			= 		base=Dragoon Sword
-DuskBlade                   			= 		base=Dusk Blade
-ElderSword                  			= 		base=Elder Sword
-ElegantFoil                 			= 		base=Elegant Foil
-ElegantSword                			= 		base=Elegant Sword
-Estoc                       			= 		base=Estoc
-EternalSword                			= 		base=Eternal Sword
-FancyFoil                   			= 		base=Fancy Foil
-GemstoneSword               			= 		base=Gemstone Sword
-Gladius                     			= 		base=Gladius
-GracefulSword               			= 		base=Graceful Sword
 Grappler                    			= 		base=Grappler
-HarpyRapier                 			= 		base=Harpy Rapier
-HookSword                   			= 		base=Hook Sword
-JaggedFoil                  			= 		base=Jagged Foil
-JewelledFoil                			= 		base=Jewelled Foil
-LegionSword                 			= 		base=Legion Sword
-MidnightBlade               			= 		base=Midnight Blade
-Pecoraro                    			= 		base=Pecoraro
-PrimevalRapier              			= 		base=Primeval Rapier
-RustedSpike                 			= 		base=Rusted Spike
-RustedSword                 			= 		base=Rusted Sword
-Sabre                       			= 		base=Sabre
-SerratedFoil                			= 		base=Serrated Foil
-Smallsword                  			= 		base=Smallsword
-SpiraledFoil                			= 		base=Spiraled Foil
-TemperedFoil                			= 		base=Tempered Foil
-ThornRapier                 			= 		base=Thorn Rapier
-TigerHook                   			= 		base=Tiger Hook
-TwilightBlade               			= 		base=Twilight Blade
-VaalBlade                   			= 		base=Vaal Blade
-VaalRapier                  			= 		base=Vaal Rapier
-VarisciteBlade              			= 		base=Variscite Blade
-WarSword                    			= 		base=War Sword
-WhaleboneRapier             			= 		base=Whalebone Rapier
-WyrmboneRapier              			= 		base=Wyrmbone Rapier
 Awl                         			= 		base=Awl
 Blinder                     			= 		base=Blinder
 Cat'?s?Paw                  			= 		base=Cat's Paw
@@ -272,7 +201,6 @@ AuricMace                   			= 		base=Auric Mace
 BarbedClub                  			= 		base=Barbed Club
 BattleHammer                			= 		base=Battle Hammer
 BehemothMace                			= 		base=Behemoth Mace
-BladedMace                  			= 		base=Bladed Mace
 CeremonialMace              			= 		base=Ceremonial Mace
 DragonMace                  			= 		base=Dragon Mace
 DreamMace                   			= 		base=Dream Mace
@@ -292,17 +220,6 @@ Tenderizer                  			= 		base=Tenderizer
 TribalClub                  			= 		base=Tribal Club
 WarHammer                   			= 		base=War Hammer
 WyrmMace                    			= 		base=Wyrm Mace
-AgateAmulet                 			= 		base=Agate Amulet
-AmberAmulet                 			= 		base=Amber Amulet
-CitrineAmulet               			= 		base=Citrine Amulet
-CoralAmulet                 			= 		base=Coral Amulet
-GoldAmulet                  			= 		base=Gold Amulet
-JadeAmulet                  			= 		base=Jade Amulet
-JetAmulet                   			= 		base=Jet Amulet
-LapisAmulet                 			= 		base=Lapis Amulet
-OnyxAmulet                  			= 		base=Onyx Amulet
-PauaAmulet                  			= 		base=Paua Amulet
-TurquoiseAmulet             			= 		base=Turquoise Amulet
 BrassMaul                   			= 		base=Brass Maul
 ColossusMallet              			= 		base=Colossus Mallet
 CoronalMaul                 			= 		base=Coronal Maul
@@ -350,51 +267,7 @@ StagSceptre                 			= 		base=Stag Sceptre
 Tyrant'?s?Sekhem            			= 		base=Tyrant's Sekhem
 VaalSceptre                 			= 		base=Vaal Sceptre
 VoidSceptre                 			= 		base=Void Sceptre
-AbyssalAxe                  			= 		base=Abyssal Axe
-DaggerAxe                   			= 		base=Dagger Axe
-DespotAxe                   			= 		base=Despot Axe
-DoubleAxe                   			= 		base=Double Axe
-EzomyteAxe                  			= 		base=Ezomyte Axe
-Fleshripper                 			= 		base=Fleshripper
-GildedAxe                   			= 		base=Gilded Axe
-HeadsmanAxe                 			= 		base=Headsman Axe
-JadeChopper                 			= 		base=Jade Chopper
-JasperChopper               			= 		base=Jasper Chopper
-KaruiChopper                			= 		base=Karui Chopper
-Labrys                      			= 		base=Labrys
-NobleAxe                    			= 		base=Noble Axe
-Poleaxe                     			= 		base=Poleaxe
-ShadowAxe                   			= 		base=Shadow Axe
-StoneAxe                    			= 		base=Stone Axe
-SunderingAxe                			= 		base=Sundering Axe
-TalonAxe                    			= 		base=Talon Axe
-TimberAxe                   			= 		base=Timber Axe
-VaalAxe                     			= 		base=Vaal Axe
-VoidAxe                     			= 		base=Void Axe
-Woodsplitter                			= 		base=Woodsplitter
 CurseOnHit                  			= 		base=Curse On Hit
-BastardSword                			= 		base=Bastard Sword
-ButcherSword                			= 		base=Butcher Sword
-CorrodedBlade               			= 		base=Corroded Blade
-CurvedBlade                 			= 		base=Curved Blade
-EngravedGreatsword          			= 		base=Engraved Greatsword
-EtchedGreatsword            			= 		base=Etched Greatsword
-ExquisiteBlade              			= 		base=Exquisite Blade
-EzomyteBlade                			= 		base=Ezomyte Blade
-FootmanSword                			= 		base=Footman Sword
-Headman'?s?Sword            			= 		base=Headman's Sword
-HighlandBlade               			= 		base=Highland Blade
-InfernalSword               			= 		base=Infernal Sword
-LionSword                   			= 		base=Lion Sword
-LitheBlade                  			= 		base=Lithe Blade
-Longsword                   			= 		base=Longsword
-OrnateSword                 			= 		base=Ornate Sword
-ReaverSword                 			= 		base=Reaver Sword
-SpectralSword               			= 		base=Spectral Sword
-TigerSword                  			= 		base=Tiger Sword
-Two-HandedSword             			= 		base=Two-Handed Sword
-VaalGreatsword              			= 		base=Vaal Greatsword
-WraithSword                 			= 		base=Wraith Sword
 CobaltJewel                 			= 		base=Cobalt Jewel
 CrimsonJewel                			= 		base=Crimson Jewel
 ViridianJewel               			= 		base=Viridian Jewel
@@ -486,8 +359,8 @@ PenetratingArrowQuiver      			= 		base=Penetrating Arrow Quiver
 RuggedQuiver                			= 		base=Rugged Quiver
 SerratedArrowQuiver         			= 		base=Serrated Arrow Quiver
 SharktoothArrowQuiver       			= 		base=Sharktooth Arrow Quiver
-Spike-PointArrowQuiver      			= 		base=Spike-Point Arrow Quiver
-Two-PointArrowQuiver        			= 		base=Two-Point Arrow Quiver
+SpikePointArrowQuiver       			= 		base=Spike-Point Arrow Quiver
+TwoPointArrowQuiver         			= 		base=Two-Point Arrow Quiver
 AbandonedWealth             			= 		base=Abandoned Wealth
 Anarchy'?s?Price            			= 		base=Anarchy's Price
 Assassin'?s?Favour          			= 		base=Assassin's Favour
@@ -553,7 +426,6 @@ TheHunger                   			= 		base=The Hunger
 TheIncantation              			= 		base=The Incantation
 TheInoculated               			= 		base=The Inoculated
 TheInventor                 			= 		base=The Inventor
-TheKing'?s?Blade            			= 		base=The King's Blade
 TheKing'?s?Heart            			= 		base=The King's Heart
 TheLastOneStanding          			= 		base=The Last One Standing
 TheLich                     			= 		base=The Lich
@@ -586,12 +458,11 @@ TheWatcher                  			= 		base=The Watcher
 TheWind                     			= 		base=The Wind
 TheWrath                    			= 		base=The Wrath
 ThreeFacesintheDark         			= 		base=Three Faces in the Dark
-Time-LostRelic              			= 		base=Time-Lost Relic
+TimeLostRelic               			= 		base=Time-Lost Relic
 Vinia'?s?Token              			= 		base=Vinia's Token
 VolatilePower               			= 		base=Volatile Power
 WealthandPower              			= 		base=Wealth and Power
 Ambusher                    			= 		base=Ambusher
-BootBlade                   			= 		base=Boot Blade
 BootKnife                   			= 		base=Boot Knife
 ButcherKnife                			= 		base=Butcher Knife
 CarvingKnife                			= 		base=Carving Knife
@@ -775,35 +646,8 @@ WrappedBoots                			= 		base=Wrapped Boots
 WyrmscaleBoots              			= 		base=Wyrmscale Boots
 ZealotBoots                 			= 		base=Zealot Boots
 AlbinoRhoaFeather           			= 		base=Albino Rhoa Feather
-Armourer'?s?Scrap           			= 		base=Armourer's Scrap
-Blacksmith'?s?Whetstone     			= 		base=Blacksmith's Whetstone
-Cartographer'?s?Chisel      			= 		base=Cartographer's Chisel
-Gemcutter'?s?Prism          			= 		base=Gemcutter's Prism
-Glassblower'?s?Bauble       			= 		base=Glassblower's Bauble
-MirrorofKalandra            			= 		base=Mirror of Kalandra
-PortalScroll                			= 		base=Portal Scroll
-ScrollofWisdom              			= 		base=Scroll of Wisdom
-AmethystRing                			= 		base=Amethyst Ring
-CoralRing                   			= 		base=Coral Ring
-DiamondRing                 			= 		base=Diamond Ring
-GoldRing                    			= 		base=Gold Ring
 GoldenHoop                  			= 		base=Golden Hoop
-IronRing                    			= 		base=Iron Ring
-MoonstoneRing               			= 		base=Moonstone Ring
-PauaRing                    			= 		base=Paua Ring
-PrismaticRing               			= 		base=Prismatic Ring
-RubyRing                    			= 		base=Ruby Ring
-SapphireRing                			= 		base=Sapphire Ring
-TopazRing                   			= 		base=Topaz Ring
-Two-StoneRing               			= 		base=Two-Stone Ring
-UnsetRing                   			= 		base=Unset Ring
-ChainBelt                   			= 		base=Chain Belt
-ClothBelt                   			= 		base=Cloth Belt
 GoldenObi                   			= 		base=Golden Obi
-HeavyBelt                   			= 		base=Heavy Belt
-LeatherBelt                 			= 		base=Leather Belt
-RusticSash                  			= 		base=Rustic Sash
-StuddedBelt                 			= 		base=Studded Belt
 CoiledStaff                 			= 		base=Coiled Staff
 CrescentStaff               			= 		base=Crescent Staff
 EclipseStaff                			= 		base=Eclipse Staff
@@ -829,51 +673,51 @@ WoodfulStaff                			= 		base=Woodful Staff
 
 ;Flasks
 
-AmethystF(la?sk)?              			= 		base=Amethyst Flask
-AquamarineF(la?sk)?            			= 		base=Aquamarine Flask   
-BasaltF(la?sk)?                			= 		base=Basalt Flask 
-BismuthF(la?sk)?               			= 		base=Bismuth Flask  
-ColossalHybridF(la?sk)?        			= 		base=Colossal Hybrid Flask
-ColossalLifeF(la?sk)?          			= 		base=Colossal Life Flask
-ColossalManaF(la?sk)?          			= 		base=Colossal Mana Flask
-DiamondF(la?sk)?               			= 		base=Diamond Flask
-DivineLifeF(la?sk)?            			= 		base=Divine Life Flask
-DivineManaF(la?sk)?            			= 		base=Divine Mana Flask
-EternalLifeF(la?sk)?           			= 		base=Eternal Life Flask
-EternalManaF(la?sk)?           			= 		base=Eternal Mana Flask
-GiantLifeF(la?sk)?             			= 		base=Giant Life Flask
-GiantManaF(la?sk)?             			= 		base=Giant Mana Flask
-GrandLifeF(la?sk)?             			= 		base=Grand Life Flask
-GrandManaF(la?sk)?             			= 		base=Grand Mana Flask
-GraniteF(la?sk)?               			= 		base=Granite Flask
-GreaterLifeF(la?sk)?           			= 		base=Greater Life Flask
-GreaterManaF(la?sk)?           			= 		base=Greater Mana Flask
-HallowedHybridF(la?sk)?        			= 		base=Hallowed Hybrid Flask
-HallowedLifeF(la?sk)?          			= 		base=Hallowed Life Flask
-HallowedManaF(la?sk)?          			= 		base=Hallowed Mana Flask
-JadeF(la?sk)?                  			=		base=Jade Flask 
-LargeHybridF(la?sk)?           			= 		base=Large Hybrid Flask
-LargeLifeF(la?sk)?             			= 		base=Large Life Flask
-LargeManaF(la?sk)?             			= 		base=Large Mana Flask
-MediumHybridF(la?sk)?          			= 		base=Medium Hybrid Flask
-MediumLifeF(la?sk)?            			= 		base=Medium Life Flask
-MediumManaF(la?sk)?            			= 		base=Medium Mana Flask
-QuartzF(la?sk)?                			= 		base=Quartz Flask
-QuicksilverF(la?sk)?           			= 		base=Quicksilver Flask
-RubyF(la?sk)?                  			= 		base=Ruby Flask
-SacredHybridF(la?sk)?          			= 		base=Sacred Hybrid Flask
-SacredLifeF(la?sk)?            			= 		base=Sacred Life Flask
-SacredManaF(la?sk)?            			= 		base=Sacred Mana Flask
-SanctifiedLifeF(la?sk)?        			= 		base=Sanctified Life Flask
-SanctifiedManaF(la?sk)?        			= 		base=Sanctified Mana Flask
-SapphireF(la?sk)?              			= 		base=Sapphire Flask
-SilverF(la?sk)?                			=		base=Silver Flask
-SmallHybridF(la?sk)?           			= 		base=Small Hybrid Flask
-SmallLifeF(la?sk)?             			= 		base=Small Life Flask
-SmallManaF(la?sk)?             			= 		base=Small Mana Flask
-StibniteF(la?sk)?              			= 		base=Stibnite Flask
-SulphurF(la?sk)?              			= 		base=Sulphur Flask 
-TopazF(la?sk)?                 			= 		base=Topaz Flask
+AmethystF(la?sk)?           			= 		base=Amethyst Flask
+AquamarineF(la?sk)?         			= 		base=Aquamarine Flask
+BasaltF(la?sk)?             			= 		base=Basalt Flask
+BismuthF(la?sk)?            			= 		base=Bismuth Flask
+ColossalHybridF(la?sk)?     			= 		base=Colossal Hybrid Flask
+ColossalLifeF(la?sk)?       			= 		base=Colossal Life Flask
+ColossalManaF(la?sk)?       			= 		base=Colossal Mana Flask
+DiamondF(la?sk)?            			= 		base=Diamond Flask
+DivineLifeF(la?sk)?         			= 		base=Divine Life Flask
+DivineManaF(la?sk)?         			= 		base=Divine Mana Flask
+EternalLifeF(la?sk)?        			= 		base=Eternal Life Flask
+EternalManaF(la?sk)?        			= 		base=Eternal Mana Flask
+GiantLifeF(la?sk)?          			= 		base=Giant Life Flask
+GiantManaF(la?sk)?          			= 		base=Giant Mana Flask
+GrandLifeF(la?sk)?          			= 		base=Grand Life Flask
+GrandManaF(la?sk)?          			= 		base=Grand Mana Flask
+GraniteF(la?sk)?            			= 		base=Granite Flask
+GreaterLifeF(la?sk)?        			= 		base=Greater Life Flask
+GreaterManaF(la?sk)?        			= 		base=Greater Mana Flask
+HallowedHybridF(la?sk)?     			= 		base=Hallowed Hybrid Flask
+HallowedLifeF(la?sk)?       			= 		base=Hallowed Life Flask
+HallowedManaF(la?sk)?       			= 		base=Hallowed Mana Flask
+JadeF(la?sk)?               			= 		base=Jade Flask
+LargeHybridF(la?sk)?        			= 		base=Large Hybrid Flask
+LargeLifeF(la?sk)?          			= 		base=Large Life Flask
+LargeManaF(la?sk)?          			= 		base=Large Mana Flask
+MediumHybridF(la?sk)?       			= 		base=Medium Hybrid Flask
+MediumLifeF(la?sk)?         			= 		base=Medium Life Flask
+MediumManaF(la?sk)?         			= 		base=Medium Mana Flask
+QuartzF(la?sk)?             			= 		base=Quartz Flask
+QuicksilverF(la?sk)?        			= 		base=Quicksilver Flask
+RubyF(la?sk)?               			= 		base=Ruby Flask
+SacredHybridF(la?sk)?       			= 		base=Sacred Hybrid Flask
+SacredLifeF(la?sk)?         			= 		base=Sacred Life Flask
+SacredManaF(la?sk)?         			= 		base=Sacred Mana Flask
+SanctifiedLifeF(la?sk)?     			= 		base=Sanctified Life Flask
+SanctifiedManaF(la?sk)?     			= 		base=Sanctified Mana Flask
+SapphireF(la?sk)?           			= 		base=Sapphire Flask
+SilverF(la?sk)?             			= 		base=Silver Flask
+SmallHybridF(la?sk)?        			= 		base=Small Hybrid Flask
+SmallLifeF(la?sk)?          			= 		base=Small Life Flask
+SmallManaF(la?sk)?          			= 		base=Small Mana Flask
+StibniteF(la?sk)?           			= 		base=Stibnite Flask
+SulphurF(la?sk)?            			= 		base=Sulphur Flask
+TopazF(la?sk)?              			= 		base=Topaz Flask
 
 ;Fragments
 
@@ -885,3 +729,171 @@ TopazF(la?sk)?                 			= 		base=Topaz Flask
 (Sac(rifice)?)?(At)?Dusk    			= 		base=Sacrifice at Dusk
 (Sac(rifice)?)?(At)?Midnight 			= 		base=Sacrifice at Midnight
 (Sac(rifice)?)?(At)?Noon    			= 		base=Sacrifice at Noon
+
+;Swords
+
+AncientSword                			= 		base=Ancient Sword
+Baselard                    			= 		base=Baselard
+BattleSword                 			= 		base=Battle Sword
+BladedMace                  			= 		base=Bladed Mace
+BootBlade                   			= 		base=Boot Blade
+BroadSword                  			= 		base=Broad Sword
+CopperSword                 			= 		base=Copper Sword
+CorsairSword                			= 		base=Corsair Sword
+Cutlass                     			= 		base=Cutlass
+DuskBlade                   			= 		base=Dusk Blade
+ElderSword                  			= 		base=Elder Sword
+ElegantSword                			= 		base=Elegant Sword
+EternalSword                			= 		base=Eternal Sword
+GemstoneSword               			= 		base=Gemstone Sword
+Gladius                     			= 		base=Gladius
+GracefulSword               			= 		base=Graceful Sword
+HookSword                   			= 		base=Hook Sword
+LegionSword                 			= 		base=Legion Sword
+MidnightBlade               			= 		base=Midnight Blade
+OrnateSword                 			= 		base=Ornate Sword
+RustedSword                 			= 		base=Rusted Sword
+Sabre                       			= 		base=Sabre
+TheKing'?s?Blade            			= 		base=The King's Blade
+TigerHook                   			= 		base=Tiger Hook
+TigerSword                  			= 		base=Tiger Sword
+TwilightBlade               			= 		base=Twilight Blade
+VaalBlade                   			= 		base=Vaal Blade
+VarisciteBlade              			= 		base=Variscite Blade
+WarSword                    			= 		base=War Sword
+
+;Thrusting Swords
+
+AntiqueRapier               			= 		base=Antique Rapier
+ApexRapier                  			= 		base=Apex Rapier
+BasketRapier                			= 		base=Basket Rapier
+BatteredFoil                			= 		base=Battered Foil
+BurnishedFoil               			= 		base=Burnished Foil
+CourtesanSword              			= 		base=Courtesan Sword
+DragonboneRapier            			= 		base=Dragonbone Rapier
+DragoonSword                			= 		base=Dragoon Sword
+ElegantFoil                 			= 		base=Elegant Foil
+Estoc                       			= 		base=Estoc
+FancyFoil                   			= 		base=Fancy Foil
+HarpyRapier                 			= 		base=Harpy Rapier
+JaggedFoil                  			= 		base=Jagged Foil
+JewelledFoil                			= 		base=Jewelled Foil
+Pecoraro                    			= 		base=Pecoraro
+PrimevalRapier              			= 		base=Primeval Rapier
+RustedSpike                 			= 		base=Rusted Spike
+SerratedFoil                			= 		base=Serrated Foil
+Smallsword                  			= 		base=Smallsword
+SpiraledFoil                			= 		base=Spiraled Foil
+TemperedFoil                			= 		base=Tempered Foil
+ThornRapier                 			= 		base=Thorn Rapier
+VaalRapier                  			= 		base=Vaal Rapier
+WhaleboneRapier             			= 		base=Whalebone Rapier
+WyrmboneRapier              			= 		base=Wyrmbone Rapier
+
+;2-Handed Swords
+
+BastardSword                			= 		base=Bastard Sword
+ButcherSword                			= 		base=Butcher Sword
+CorrodedBlade               			= 		base=Corroded Blade
+CurvedBlade                 			= 		base=Curved Blade
+EngravedGreatsword          			= 		base=Engraved Greatsword
+EtchedGreatsword            			= 		base=Etched Greatsword
+ExquisiteBlade              			= 		base=Exquisite Blade
+EzomyteBlade                			= 		base=Ezomyte Blade
+FootmanSword                			= 		base=Footman Sword
+Headman'?s?Sword            			= 		base=Headman's Sword
+HighlandBlade               			= 		base=Highland Blade
+InfernalSword               			= 		base=Infernal Sword
+LionSword                   			= 		base=Lion Sword
+LitheBlade                  			= 		base=Lithe Blade
+Longsword                   			= 		base=Longsword
+ReaverSword                 			= 		base=Reaver Sword
+SpectralSword               			= 		base=Spectral Sword
+TwoHandedSword              			= 		base=Two-Handed Sword
+VaalGreatsword              			= 		base=Vaal Greatsword
+WraithSword                 			= 		base=Wraith Sword
+
+;jewelry
+
+Agate(Am+(ulet|y))?         			= 		base=Agate Amulet
+Amber(Am+(ulet|y))?         			= 		base=Amber Amulet
+AmethystR(ing)?             			= 		base=Amethyst Ring
+Citrine(Am+(ulet|y))?       			= 		base=Citrine Amulet
+Coral(Am+(ulet|y))?         			= 		base=Coral Amulet
+CoralR(ing)?                			= 		base=Coral Ring
+DiamondR(ing)?              			= 		base=Diamond Ring
+Gold(Am+(ulet|y))?          			= 		base=Gold Amulet
+GoldR(ing)?                 			= 		base=Gold Ring
+IronR(ing)?                 			= 		base=Iron Ring
+Jade(Am+(ulet|y))?          			= 		base=Jade Amulet
+Jet(Am+(ulet|y))?           			= 		base=Jet Amulet
+Lapis(Am+(ulet|y))?         			= 		base=Lapis Amulet
+MoonstoneR(ing)?            			= 		base=Moonstone Ring
+Onyx(Am+(ulet|y))?          			= 		base=Onyx Amulet
+Paua(Am+(ulet|y))?          			= 		base=Paua Amulet
+PauaR(ing)?                 			= 		base=Paua Ring
+RubyR(ing)?                 			= 		base=Ruby Ring
+SapphireR(ing)?             			= 		base=Sapphire Ring
+TopazR(ing)?                			= 		base=Topaz Ring
+Turquoise(Am+(ulet|y))?     			= 		base=Turquoise Amulet
+TwoStoneR(ing)?             			= 		base=Two-Stone Ring
+UnsetR(ing)?                			= 		base=Unset Ring
+
+;Axe
+
+AbyssalAxe                  			= 		base=Abyssal Axe
+ArmingAxe                   			= 		base=Arming Axe
+BoardingAxe                 			= 		base=Boarding Axe
+BroadAxe                    			= 		base=Broad Axe
+ButcherAxe                  			= 		base=Butcher Axe
+CeremonialAxe               			= 		base=Ceremonial Axe
+ChestSplitter               			= 		base=Chest Splitter
+Cleaver                     			= 		base=Cleaver
+DaggerAxe                   			= 		base=Dagger Axe
+DecorativeAxe               			= 		base=Decorative Axe
+DespotAxe                   			= 		base=Despot Axe
+DoubleAxe                   			= 		base=Double Axe
+EngravedHatchet             			= 		base=Engraved Hatchet
+EtchedHatchet               			= 		base=Etched Hatchet
+EzomyteAxe                  			= 		base=Ezomyte Axe
+Fleshripper                 			= 		base=Fleshripper
+GildedAxe                   			= 		base=Gilded Axe
+HeadsmanAxe                 			= 		base=Headsman Axe
+InfernalAxe                 			= 		base=Infernal Axe
+JadeChopper                 			= 		base=Jade Chopper
+JadeHatchet                 			= 		base=Jade Hatchet
+JasperAxe                   			= 		base=Jasper Axe
+JasperChopper               			= 		base=Jasper Chopper
+KaruiAxe                    			= 		base=Karui Axe
+KaruiChopper                			= 		base=Karui Chopper
+Labrys                      			= 		base=Labrys
+NobleAxe                    			= 		base=Noble Axe
+Poleaxe                     			= 		base=Poleaxe
+ReaverAxe                   			= 		base=Reaver Axe
+RoyalAxe                    			= 		base=Royal Axe
+RunicHatchet                			= 		base=Runic Hatchet
+RustedHatchet               			= 		base=Rusted Hatchet
+ShadowAxe                   			= 		base=Shadow Axe
+SiegeAxe                    			= 		base=Siege Axe
+SpectralAxe                 			= 		base=Spectral Axe
+StoneAxe                    			= 		base=Stone Axe
+SunderingAxe                			= 		base=Sundering Axe
+TalonAxe                    			= 		base=Talon Axe
+TimberAxe                   			= 		base=Timber Axe
+Tomahawk                    			= 		base=Tomahawk
+VaalAxe                     			= 		base=Vaal Axe
+VaalHatchet                 			= 		base=Vaal Hatchet
+VoidAxe                     			= 		base=Void Axe
+WarAxe                      			= 		base=War Axe
+Woodsplitter                			= 		base=Woodsplitter
+WraithAxe                   			= 		base=Wraith Axe
+WristChopper                			= 		base=Wrist Chopper
+
+;Belt
+
+ChainBelt                   			= 		base=Chain Belt
+ClothBelt                   			= 		base=Cloth Belt
+HeavyBelt                   			= 		base=Heavy Belt
+LeatherBelt                 			= 		base=Leather Belt
+RusticSash                  			= 		base=Rustic Sash
+StuddedBelt                 			= 		base=Studded Belt
