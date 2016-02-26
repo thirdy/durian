@@ -830,9 +830,9 @@ WoodfulStaff                			= 		base=Woodful Staff
 ;Flasks
 
 AmethystF(la?sk)?              			= 		base=Amethyst Flask
-AquamarineF(la?sk)?         			=       base=Aquamarine Flask   
-BasaltF(la?sk)?            			    =       base=Basalt Flask 
-BismuthF(la?sk)?            			=       base=Bismuth Flask  
+AquamarineF(la?sk)?            			= 		base=Aquamarine Flask   
+BasaltF(la?sk)?                			= 		base=Basalt Flask 
+BismuthF(la?sk)?               			= 		base=Bismuth Flask  
 ColossalHybridF(la?sk)?        			= 		base=Colossal Hybrid Flask
 ColossalLifeF(la?sk)?          			= 		base=Colossal Life Flask
 ColossalManaF(la?sk)?          			= 		base=Colossal Mana Flask
@@ -851,7 +851,7 @@ GreaterManaF(la?sk)?           			= 		base=Greater Mana Flask
 HallowedHybridF(la?sk)?        			= 		base=Hallowed Hybrid Flask
 HallowedLifeF(la?sk)?          			= 		base=Hallowed Life Flask
 HallowedManaF(la?sk)?          			= 		base=Hallowed Mana Flask
-JadeF(la?sk)?               			=       base=Jade Flask 
+JadeF(la?sk)?                  			=		base=Jade Flask 
 LargeHybridF(la?sk)?           			= 		base=Large Hybrid Flask
 LargeLifeF(la?sk)?             			= 		base=Large Life Flask
 LargeManaF(la?sk)?             			= 		base=Large Mana Flask
@@ -867,12 +867,12 @@ SacredManaF(la?sk)?            			= 		base=Sacred Mana Flask
 SanctifiedLifeF(la?sk)?        			= 		base=Sanctified Life Flask
 SanctifiedManaF(la?sk)?        			= 		base=Sanctified Mana Flask
 SapphireF(la?sk)?              			= 		base=Sapphire Flask
-SilverF(la?sk)?            			 	=       base=Silver Flask
+SilverF(la?sk)?                			=		base=Silver Flask
 SmallHybridF(la?sk)?           			= 		base=Small Hybrid Flask
 SmallLifeF(la?sk)?             			= 		base=Small Life Flask
 SmallManaF(la?sk)?             			= 		base=Small Mana Flask
-StibniteF(la?sk)?           			=       base=Stibnite Flask
-SulphurF(la?sk)?              			=       base=Sulphur Flask 
+StibniteF(la?sk)?              			= 		base=Stibnite Flask
+SulphurF(la?sk)?              			= 		base=Sulphur Flask 
 TopazF(la?sk)?                 			= 		base=Topaz Flask
 
 ;Fragments
