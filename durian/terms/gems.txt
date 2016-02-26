@@ -70,6 +70,7 @@ DoubleStrike                            =     name=Double Strike
 DualStrike                              =     name=Dual Strike
 Earthquake                              =     name=Earthquake  
 Ele(mental)?Weakness|EW                 =     name=Elemental Weakness
+ElementalFocus                          =     name=Elemental Focus 
 ElementalHit                            =     name=Elemental Hit
 Empower                                 =     name=Empower
 EnduranceChargeonMeleeStun              =     name=Endurance Charge on Melee Stun
@@ -154,6 +155,7 @@ ManaLeech                               =     name=Mana Leech
 MeleeDamageonFullLife                   =     name=Melee Damage on Full Life
 MeleePhysicalDamage                     =     name=Melee Physical Damage
 MeleeSplash                             =     name=Melee Splash
+Minefield                               =     name=Minefield 
 MinionandTotemElementalResistance|MT?ER =     name=Minion and Totem Elemental Resistance
 MinionDamage                            =     name=Minion Damage
 MinionLife                              =     name=Minion Life
@@ -210,6 +212,7 @@ SplitArrow                              =     name=Split Arrow
 StaticStrike                            =     name=Static Strike
 StormCall                               =     name=Storm Call
 Stun                                    =     name=Stun
+Sunder                                  =     name=Sunder 
 Sweep                                   =     name=Sweep
 TempestShield                           =     name=Tempest Shield
 TemporalChains                          =     name=Temporal Chains
@@ -257,6 +260,3 @@ WhirlingBlades|WB                       =     name=Whirling Blades
 WildStrike                              =     name=Wild Strike
 Wither                                  =     name=Wither
 Wrath                                   =     name=Wrath
-ElementalFocus                          =     name=Elemental Focus 
-Minefield                               =     name=Minefield 
-Sunder                                  =     name=Sunder 
