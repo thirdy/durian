@@ -1,6 +1,7 @@
 ;
 ;BaseTypes
 ;
+
 FishingRod                  			= 		base=Fishing Rod
 DryPeninsula                			= 		base=Dry Peninsula
 AbandonedWealth             			= 		base=Abandoned Wealth
@@ -198,99 +199,54 @@ WarSword                    			= 		base=War Sword
 
 ;Thrusting Swords
 
-AmethystF(la?sk)?           			= 		base=Amethyst Flask
-AquamarineF(la?sk)?         			= 		base=Aquamarine Flask
-BasaltF(la?sk)?             			= 		base=Basalt Flask
-BismuthF(la?sk)?            			= 		base=Bismuth Flask
-ColossalHybridF(la?sk)?     			= 		base=Colossal Hybrid Flask
-ColossalLifeF(la?sk)?       			= 		base=Colossal Life Flask
-ColossalManaF(la?sk)?       			= 		base=Colossal Mana Flask
-DiamondF(la?sk)?            			= 		base=Diamond Flask
-DivineLifeF(la?sk)?         			= 		base=Divine Life Flask
-DivineManaF(la?sk)?         			= 		base=Divine Mana Flask
-EternalLifeF(la?sk)?        			= 		base=Eternal Life Flask
-EternalManaF(la?sk)?        			= 		base=Eternal Mana Flask
-GiantLifeF(la?sk)?          			= 		base=Giant Life Flask
-GiantManaF(la?sk)?          			= 		base=Giant Mana Flask
-GrandLifeF(la?sk)?          			= 		base=Grand Life Flask
-GrandManaF(la?sk)?          			= 		base=Grand Mana Flask
-GraniteF(la?sk)?            			= 		base=Granite Flask
-GreaterLifeF(la?sk)?        			= 		base=Greater Life Flask
-GreaterManaF(la?sk)?        			= 		base=Greater Mana Flask
-HallowedHybridF(la?sk)?     			= 		base=Hallowed Hybrid Flask
-HallowedLifeF(la?sk)?       			= 		base=Hallowed Life Flask
-HallowedManaF(la?sk)?       			= 		base=Hallowed Mana Flask
-JadeF(la?sk)?               			= 		base=Jade Flask
-LargeHybridF(la?sk)?        			= 		base=Large Hybrid Flask
-LargeLifeF(la?sk)?          			= 		base=Large Life Flask
-LargeManaF(la?sk)?          			= 		base=Large Mana Flask
-MediumHybridF(la?sk)?       			= 		base=Medium Hybrid Flask
-MediumLifeF(la?sk)?         			= 		base=Medium Life Flask
-MediumManaF(la?sk)?         			= 		base=Medium Mana Flask
-QuartzF(la?sk)?             			= 		base=Quartz Flask
-QuicksilverF(la?sk)?        			= 		base=Quicksilver Flask
-RubyF(la?sk)?               			= 		base=Ruby Flask
-SacredHybridF(la?sk)?       			= 		base=Sacred Hybrid Flask
-SacredLifeF(la?sk)?         			= 		base=Sacred Life Flask
-SacredManaF(la?sk)?         			= 		base=Sacred Mana Flask
-SanctifiedLifeF(la?sk)?     			= 		base=Sanctified Life Flask
-SanctifiedManaF(la?sk)?     			= 		base=Sanctified Mana Flask
-SapphireF(la?sk)?           			= 		base=Sapphire Flask
-SilverF(la?sk)?             			= 		base=Silver Flask
-SmallHybridF(la?sk)?        			= 		base=Small Hybrid Flask
-SmallLifeF(la?sk)?          			= 		base=Small Life Flask
-SmallManaF(la?sk)?          			= 		base=Small Mana Flask
-StibniteF(la?sk)?           			= 		base=Stibnite Flask
-SulphurF(la?sk)?            			= 		base=Sulphur Flask
-TopazF(la?sk)?              			= 		base=Topaz Flask
+AntiqueRapier               			= 		base=Antique Rapier
+ApexRapier                  			= 		base=Apex Rapier
+BasketRapier                			= 		base=Basket Rapier
+BatteredFoil                			= 		base=Battered Foil
+BurnishedFoil               			= 		base=Burnished Foil
+CourtesanSword              			= 		base=Courtesan Sword
+DragonboneRapier            			= 		base=Dragonbone Rapier
+DragoonSword                			= 		base=Dragoon Sword
+ElegantFoil                 			= 		base=Elegant Foil
+Estoc                       			= 		base=Estoc
+FancyFoil                   			= 		base=Fancy Foil
+HarpyRapier                 			= 		base=Harpy Rapier
+JaggedFoil                  			= 		base=Jagged Foil
+JewelledFoil                			= 		base=Jewelled Foil
+Pecoraro                    			= 		base=Pecoraro
+PrimevalRapier              			= 		base=Primeval Rapier
+RustedSpike                 			= 		base=Rusted Spike
+SerratedFoil                			= 		base=Serrated Foil
+Smallsword                  			= 		base=Smallsword
+SpiraledFoil                			= 		base=Spiraled Foil
+TemperedFoil                			= 		base=Tempered Foil
+ThornRapier                 			= 		base=Thorn Rapier
+VaalRapier                  			= 		base=Vaal Rapier
+WhaleboneRapier             			= 		base=Whalebone Rapier
+WyrmboneRapier              			= 		base=Wyrmbone Rapier
 
 ;2-Handed Swords
 
-AmethystF(la?sk)?           			= 		base=Amethyst Flask
-AquamarineF(la?sk)?         			= 		base=Aquamarine Flask
-BasaltF(la?sk)?             			= 		base=Basalt Flask
-BismuthF(la?sk)?            			= 		base=Bismuth Flask
-ColossalHybridF(la?sk)?     			= 		base=Colossal Hybrid Flask
-ColossalLifeF(la?sk)?       			= 		base=Colossal Life Flask
-ColossalManaF(la?sk)?       			= 		base=Colossal Mana Flask
-DiamondF(la?sk)?            			= 		base=Diamond Flask
-DivineLifeF(la?sk)?         			= 		base=Divine Life Flask
-DivineManaF(la?sk)?         			= 		base=Divine Mana Flask
-EternalLifeF(la?sk)?        			= 		base=Eternal Life Flask
-EternalManaF(la?sk)?        			= 		base=Eternal Mana Flask
-GiantLifeF(la?sk)?          			= 		base=Giant Life Flask
-GiantManaF(la?sk)?          			= 		base=Giant Mana Flask
-GrandLifeF(la?sk)?          			= 		base=Grand Life Flask
-GrandManaF(la?sk)?          			= 		base=Grand Mana Flask
-GraniteF(la?sk)?            			= 		base=Granite Flask
-GreaterLifeF(la?sk)?        			= 		base=Greater Life Flask
-GreaterManaF(la?sk)?        			= 		base=Greater Mana Flask
-HallowedHybridF(la?sk)?     			= 		base=Hallowed Hybrid Flask
-HallowedLifeF(la?sk)?       			= 		base=Hallowed Life Flask
-HallowedManaF(la?sk)?       			= 		base=Hallowed Mana Flask
-JadeF(la?sk)?               			= 		base=Jade Flask
-LargeHybridF(la?sk)?        			= 		base=Large Hybrid Flask
-LargeLifeF(la?sk)?          			= 		base=Large Life Flask
-LargeManaF(la?sk)?          			= 		base=Large Mana Flask
-MediumHybridF(la?sk)?       			= 		base=Medium Hybrid Flask
-MediumLifeF(la?sk)?         			= 		base=Medium Life Flask
-MediumManaF(la?sk)?         			= 		base=Medium Mana Flask
-QuartzF(la?sk)?             			= 		base=Quartz Flask
-QuicksilverF(la?sk)?        			= 		base=Quicksilver Flask
-RubyF(la?sk)?               			= 		base=Ruby Flask
-SacredHybridF(la?sk)?       			= 		base=Sacred Hybrid Flask
-SacredLifeF(la?sk)?         			= 		base=Sacred Life Flask
-SacredManaF(la?sk)?         			= 		base=Sacred Mana Flask
-SanctifiedLifeF(la?sk)?     			= 		base=Sanctified Life Flask
-SanctifiedManaF(la?sk)?     			= 		base=Sanctified Mana Flask
-SapphireF(la?sk)?           			= 		base=Sapphire Flask
-SilverF(la?sk)?             			= 		base=Silver Flask
-SmallHybridF(la?sk)?        			= 		base=Small Hybrid Flask
-SmallLifeF(la?sk)?          			= 		base=Small Life Flask
-SmallManaF(la?sk)?          			= 		base=Small Mana Flask
-StibniteF(la?sk)?           			= 		base=Stibnite Flask
-SulphurF(la?sk)?            			= 		base=Sulphur Flask
-TopazF(la?sk)?              			= 		base=Topaz Flask
+BastardSword                			= 		base=Bastard Sword
+ButcherSword                			= 		base=Butcher Sword
+CorrodedBlade               			= 		base=Corroded Blade
+CurvedBlade                 			= 		base=Curved Blade
+EngravedGreatsword          			= 		base=Engraved Greatsword
+EtchedGreatsword            			= 		base=Etched Greatsword
+ExquisiteBlade              			= 		base=Exquisite Blade
+EzomyteBlade                			= 		base=Ezomyte Blade
+FootmanSword                			= 		base=Footman Sword
+Headman'?s?Sword            			= 		base=Headman's Sword
+HighlandBlade               			= 		base=Highland Blade
+InfernalSword               			= 		base=Infernal Sword
+Li(the)?Blade               			= 		base=Lithe Blade
+LionSword                   			= 		base=Lion Sword
+Longsword                   			= 		base=Longsword
+ReaverSword                 			= 		base=Reaver Sword
+SpectralSword               			= 		base=Spectral Sword
+TwoHandedSword              			= 		base=Two-Handed Sword
+VaalGreatsword              			= 		base=Vaal Greatsword
+WraithSword                 			= 		base=Wraith Sword
 
 ;Jewelry
 
@@ -373,38 +329,38 @@ WristChopper                			= 		base=Wrist Chopper
 ChainBelt                   			= 		base=Chain Belt
 ClothBelt                   			= 		base=Cloth Belt
 HeavyBelt                   			= 		base=Heavy Belt
-Lea(the)?rBelt              			= 		base=Leather Belt
+LeatherBelt                 			= 		base=Leather Belt
 RusticSash                  			= 		base=Rustic Sash
 StuddedBelt                 			= 		base=Studded Belt
 
 ;Bows
 
-AssassinBow                 			= 		base=Assassin Bow
-BoneBow                     			= 		base=Bone Bow
-Bowyer'?s?Dream             			= 		base=Bowyer's Dream
-CitadelBow                  			= 		base=Citadel Bow
-CompositeBow                			= 		base=Composite Bow
-CompoundBow                 			= 		base=Compound Bow
-CrudeBow                    			= 		base=Crude Bow
-DeathBow                    			= 		base=Death Bow
-DecimationBow               			= 		base=Decimation Bow
-DecurveBow                  			= 		base=Decurve Bow
-GroveBow                    			= 		base=Grove Bow
-HarbingerBow                			= 		base=Harbinger Bow
-HighbornBow                 			= 		base=Highborn Bow
-ImperialBow                 			= 		base=Imperial Bow
-IvoryBow                    			= 		base=Ivory Bow
-LongBow                     			= 		base=Long Bow
-MarakethBow                 			= 		base=Maraketh Bow
-RangerBow                   			= 		base=Ranger Bow
-RecurveBow                  			= 		base=Recurve Bow
-ReflexBow                   			= 		base=Reflex Bow
-RoyalBow                    			= 		base=Royal Bow
-ShortBow                    			= 		base=Short Bow
-SniperBow                   			= 		base=Sniper Bow
-SpineBow                    			= 		base=Spine Bow
-SteelwoodBow                			= 		base=Steelwood Bow
-ThicketBow                  			= 		base=Thicket Bow
+AssassinB(ow)?              			= 		base=Assassin Bow
+B(ow)?yer'?s?Dream          			= 		base=Bowyer's Dream
+BoneB(ow)?                  			= 		base=Bone Bow
+CitadelB(ow)?               			= 		base=Citadel Bow
+CompositeB(ow)?             			= 		base=Composite Bow
+CompoundB(ow)?              			= 		base=Compound Bow
+CrudeB(ow)?                 			= 		base=Crude Bow
+DeathB(ow)?                 			= 		base=Death Bow
+DecimationB(ow)?            			= 		base=Decimation Bow
+DecurveB(ow)?               			= 		base=Decurve Bow
+GroveB(ow)?                 			= 		base=Grove Bow
+HarbingerB(ow)?             			= 		base=Harbinger Bow
+HighbornB(ow)?              			= 		base=Highborn Bow
+ImperialB(ow)?              			= 		base=Imperial Bow
+IvoryB(ow)?                 			= 		base=Ivory Bow
+LongB(ow)?                  			= 		base=Long Bow
+MarakethB(ow)?              			= 		base=Maraketh Bow
+RangerB(ow)?                			= 		base=Ranger Bow
+RecurveB(ow)?               			= 		base=Recurve Bow
+ReflexB(ow)?                			= 		base=Reflex Bow
+RoyalB(ow)?                 			= 		base=Royal Bow
+ShortB(ow)?                 			= 		base=Short Bow
+SniperB(ow)?                			= 		base=Sniper Bow
+SpineB(ow)?                 			= 		base=Spine Bow
+SteelwoodB(ow)?             			= 		base=Steelwood Bow
+ThicketB(ow)?               			= 		base=Thicket Bow
 
 ;Claws
 
@@ -494,31 +450,31 @@ WyrmMace                    			= 		base=Wyrm Mace
 
 ;Sceptres
 
-AbyssalSceptre              			= 		base=Abyssal Sceptre
-BloodSceptre                			= 		base=Blood Sceptre
-BronzeSceptre               			= 		base=Bronze Sceptre
-CarnalSceptre               			= 		base=Carnal Sceptre
-CrystalSceptre              			= 		base=Crystal Sceptre
-DarkwoodSceptre             			= 		base=Darkwood Sceptre
-DriftwoodSceptre            			= 		base=Driftwood Sceptre
+AbyssalScep(tre)?           			= 		base=Abyssal Sceptre
+BloodScep(tre)?             			= 		base=Blood Sceptre
+BronzeScep(tre)?            			= 		base=Bronze Sceptre
+CarnalScep(tre)?            			= 		base=Carnal Sceptre
+CrystalScep(tre)?           			= 		base=Crystal Sceptre
+DarkwoodScep(tre)?          			= 		base=Darkwood Sceptre
+DriftwoodScep(tre)?         			= 		base=Driftwood Sceptre
 GrinningFetish              			= 		base=Grinning Fetish
-HornedSceptre               			= 		base=Horned Sceptre
-IronSceptre                 			= 		base=Iron Sceptre
-KaruiSceptre                			= 		base=Karui Sceptre
-LeadSceptre                 			= 		base=Lead Sceptre
-OchreSceptre                			= 		base=Ochre Sceptre
-OpalSceptre                 			= 		base=Opal Sceptre
-PlatinumSceptre             			= 		base=Platinum Sceptre
-QuartzSceptre               			= 		base=Quartz Sceptre
-RitualSceptre               			= 		base=Ritual Sceptre
-RoyalSceptre                			= 		base=Royal Sceptre
-SambarSceptre               			= 		base=Sambar Sceptre
+HornedScep(tre)?            			= 		base=Horned Sceptre
+IronScep(tre)?              			= 		base=Iron Sceptre
+KaruiScep(tre)?             			= 		base=Karui Sceptre
+LeadScep(tre)?              			= 		base=Lead Sceptre
+OchreScep(tre)?             			= 		base=Ochre Sceptre
+OpalScep(tre)?              			= 		base=Opal Sceptre
+PlatinumScep(tre)?          			= 		base=Platinum Sceptre
+QuartzScep(tre)?            			= 		base=Quartz Sceptre
+RitualScep(tre)?            			= 		base=Ritual Sceptre
+RoyalScep(tre)?             			= 		base=Royal Sceptre
+SambarScep(tre)?            			= 		base=Sambar Sceptre
 Sekhem                      			= 		base=Sekhem
-ShadowSceptre               			= 		base=Shadow Sceptre
-StagSceptre                 			= 		base=Stag Sceptre
+ShadowScep(tre)?            			= 		base=Shadow Sceptre
+StagScep(tre)?              			= 		base=Stag Sceptre
 Tyrant'?s?Sekhem            			= 		base=Tyrant's Sekhem
-VaalSceptre                 			= 		base=Vaal Sceptre
-VoidSceptre                 			= 		base=Void Sceptre
+VaalScep(tre)?              			= 		base=Vaal Sceptre
+VoidScep(tre)?              			= 		base=Void Sceptre
 
 ;2-Handed Maces
 
@@ -547,19 +503,19 @@ TribalMaul                  			= 		base=Tribal Maul
 
 ;Quivers
 
-BluntArrowQuiver            			= 		base=Blunt Arrow Quiver
-BroadheadArrowQuiver        			= 		base=Broadhead Arrow Quiver
-ConductiveQuiver            			= 		base=Conductive Quiver
-CuredQuiver                 			= 		base=Cured Quiver
-FireArrowQuiver             			= 		base=Fire Arrow Quiver
-HeavyQuiver                 			= 		base=Heavy Quiver
-LightQuiver                 			= 		base=Light Quiver
-PenetratingArrowQuiver      			= 		base=Penetrating Arrow Quiver
-RuggedQuiver                			= 		base=Rugged Quiver
-SerratedArrowQuiver         			= 		base=Serrated Arrow Quiver
-SharktoothArrowQuiver       			= 		base=Sharktooth Arrow Quiver
-SpikePointArrowQuiver       			= 		base=Spike-Point Arrow Quiver
-TwoPointArrowQuiver         			= 		base=Two-Point Arrow Quiver
+BluntArrowQuiv(er)?         			= 		base=Blunt Arrow Quiver
+BroadheadArrowQuiv(er)?     			= 		base=Broadhead Arrow Quiver
+ConductiveQuiv(er)?         			= 		base=Conductive Quiver
+CuredQuiv(er)?              			= 		base=Cured Quiver
+FireArrowQuiv(er)?          			= 		base=Fire Arrow Quiver
+HeavyQuiv(er)?              			= 		base=Heavy Quiver
+LightQuiv(er)?              			= 		base=Light Quiver
+PenetratingArrowQuiv(er)?   			= 		base=Penetrating Arrow Quiver
+RuggedQuiv(er)?             			= 		base=Rugged Quiver
+SerratedArrowQuiv(er)?      			= 		base=Serrated Arrow Quiver
+SharktoothArrowQuiv(er)?    			= 		base=Sharktooth Arrow Quiver
+SpikePointArrowQuiv(er)?    			= 		base=Spike-Point Arrow Quiver
+TwoPointArrowQuiv(er)?      			= 		base=Two-Point Arrow Quiver
 
 ;Staves
 
@@ -588,111 +544,25 @@ WoodfulStaff                			= 		base=Woodful Staff
 
 ;Wands
 
-AlderSpikedShield           			= 		base=Alder Spiked Shield
-AlloyedSpikedShield         			= 		base=Alloyed Spiked Shield
-AncientSpiritShield         			= 		base=Ancient Spirit Shield
-AngelicKiteShield           			= 		base=Angelic Kite Shield
-ArchonKiteShield            			= 		base=Archon Kite Shield
-BaroqueRoundShield          			= 		base=Baroque Round Shield
-BattleBuckler               			= 		base=Battle Buckler
-BoneSpiritShield            			= 		base=Bone Spirit Shield
-BrandedKiteShield           			= 		base=Branded Kite Shield
-BrassSpiritShield           			= 		base=Brass Spirit Shield
-BronzeTowerShield           			= 		base=Bronze Tower Shield
-BuckskinTowerShield         			= 		base=Buckskin Tower Shield
-BurnishedSpikedShield       			= 		base=Burnished Spiked Shield
-CardinalRoundShield         			= 		base=Cardinal Round Shield
 CarvedWand                  			= 		base=Carved Wand
-CedarTowerShield            			= 		base=Cedar Tower Shield
-CeremonialKiteShield        			= 		base=Ceremonial Kite Shield
-ChampionKiteShield          			= 		base=Champion Kite Shield
-ChimingSpiritShield         			= 		base=Chiming Spirit Shield
-ColossalTowerShield         			= 		base=Colossal Tower Shield
-CompoundSpikedShield        			= 		base=Compound Spiked Shield
-CopperTowerShield           			= 		base=Copper Tower Shield
-CorrodedTowerShield         			= 		base=Corroded Tower Shield
-CorrugatedBuckler           			= 		base=Corrugated Buckler
-CrestedTowerShield          			= 		base=Crested Tower Shield
-CrimsonRoundShield          			= 		base=Crimson Round Shield
-CrusaderBuckler             			= 		base=Crusader Buckler
 CrystalWand                 			= 		base=Crystal Wand
 Demon'?s?Horn               			= 		base=Demon's Horn
-DriftwoodSpikedShield       			= 		base=Driftwood Spiked Shield
 DriftwoodWand               			= 		base=Driftwood Wand
-EbonyTowerShield            			= 		base=Ebony Tower Shield
-ElegantRoundShield          			= 		base=Elegant Round Shield
-EnameledBuckler             			= 		base=Enameled Buckler
 EngravedWand                			= 		base=Engraved Wand
-EtchedKiteShield            			= 		base=Etched Kite Shield
-EzomyteSpikedShield         			= 		base=Ezomyte Spiked Shield
-EzomyteTowerShield          			= 		base=Ezomyte Tower Shield
 Faun'?s?Horn                			= 		base=Faun's Horn
-FirRoundShield              			= 		base=Fir Round Shield
-FossilisedSpiritShield      			= 		base=Fossilised Spirit Shield
-GildedBuckler               			= 		base=Gilded Buckler
-GirdedTowerShield           			= 		base=Girded Tower Shield
 Goat'?s?Horn                			= 		base=Goat's Horn
-GoathideBuckler             			= 		base=Goathide Buckler
-GoldenBuckler               			= 		base=Golden Buckler
-HarmonicSpiritShield        			= 		base=Harmonic Spirit Shield
 Hea(the)?nWand              			= 		base=Heathen Wand
 ImbuedWand                  			= 		base=Imbued Wand
-ImperialBuckler             			= 		base=Imperial Buckler
-IronwoodBuckler             			= 		base=Ironwood Buckler
-IvorySpiritShield           			= 		base=Ivory Spirit Shield
-JinglingSpiritShield        			= 		base=Jingling Spirit Shield
-LacewoodSpiritShield        			= 		base=Lacewood Spirit Shield
-LacqueredBuckler            			= 		base=Lacquered Buckler
-LaminatedKiteShield         			= 		base=Laminated Kite Shield
-LayeredKiteShield           			= 		base=Layered Kite Shield
-LindenKiteShield            			= 		base=Linden Kite Shield
-MahoganyTowerShield         			= 		base=Mahogany Tower Shield
-MirroredSpikedShield        			= 		base=Mirrored Spiked Shield
-MosaicKiteShield            			= 		base=Mosaic Kite Shield
-OakBuckler                  			= 		base=Oak Buckler
 OmenWand                    			= 		base=Omen Wand
 OpalWand                    			= 		base=Opal Wand
-OrnateSpikedShield          			= 		base=Ornate Spiked Shield
 PaganWand                   			= 		base=Pagan Wand
-PaintedBuckler              			= 		base=Painted Buckler
-PaintedTowerShield          			= 		base=Painted Tower Shield
-PineBuckler                 			= 		base=Pine Buckler
-PinnacleTowerShield         			= 		base=Pinnacle Tower Shield
-PlankKiteShield             			= 		base=Plank Kite Shield
-PolishedSpikedShield        			= 		base=Polished Spiked Shield
 Pr(of)?aneWand              			= 		base=Profane Wand
 ProphecyWand                			= 		base=Prophecy Wand
 QuartzWand                  			= 		base=Quartz Wand
-RawhideTowerShield          			= 		base=Rawhide Tower Shield
-RedwoodSpikedShield         			= 		base=Redwood Spiked Shield
-ReinforcedKiteShield        			= 		base=Reinforced Kite Shield
-ReinforcedTowerShield       			= 		base=Reinforced Tower Shield
-RottedRoundShield           			= 		base=Rotted Round Shield
 SageWand                    			= 		base=Sage Wand
-ScarletRoundShield          			= 		base=Scarlet Round Shield
 SerpentWand                 			= 		base=Serpent Wand
-ShagreenTowerShield         			= 		base=Shagreen Tower Shield
-SovereignSpikedShield       			= 		base=Sovereign Spiked Shield
-SpikedBundle                			= 		base=Spiked Bundle
-SpikedRoundShield           			= 		base=Spiked Round Shield
-SpinyRoundShield            			= 		base=Spiny Round Shield
 SpiraledWand                			= 		base=Spiraled Wand
-SplendidRoundShield         			= 		base=Splendid Round Shield
-SplinteredTowerShield       			= 		base=Splintered Tower Shield
-SteelKiteShield             			= 		base=Steel Kite Shield
-StuddedRoundShield          			= 		base=Studded Round Shield
-SupremeSpikedShield         			= 		base=Supreme Spiked Shield
-TarnishedSpiritShield       			= 		base=Tarnished Spirit Shield
-TeakRoundShield             			= 		base=Teak Round Shield
-ThoriumSpiritShield         			= 		base=Thorium Spirit Shield
-TitaniumSpiritShield        			= 		base=Titanium Spirit Shield
 TornadoWand                 			= 		base=Tornado Wand
-TwigSpiritShield            			= 		base=Twig Spirit Shield
-VaalBuckler                 			= 		base=Vaal Buckler
-VaalSpiritShield            			= 		base=Vaal Spirit Shield
-WalnutSpiritShield          			= 		base=Walnut Spirit Shield
-WarBuckler                  			= 		base=War Buckler
-YewSpiritShield             			= 		base=Yew Spirit Shield
 
 ;Boots
 
@@ -909,14 +779,14 @@ ZealotGloves                			= 		base=Zealot Gloves
 
 ;Helmets
 
-AventailHelmet              			= 		base=Aventail Helmet
-BarbuteHelmet               			= 		base=Barbute Helmet
+AventailHelm(et)?           			= 		base=Aventail Helmet
+BarbuteHelm(et)?            			= 		base=Barbute Helmet
 BatteredHelm                			= 		base=Battered Helm
 BoneCirclet                 			= 		base=Bone Circlet
 CallousMask                 			= 		base=Callous Mask
-CloseHelmet                 			= 		base=Close Helmet
-ConeHelmet                  			= 		base=Cone Helmet
-CrusaderHelmet              			= 		base=Crusader Helmet
+CloseHelm(et)?              			= 		base=Close Helmet
+ConeHelm(et)?               			= 		base=Cone Helmet
+CrusaderHelm(et)?           			= 		base=Crusader Helmet
 DeicideMask                 			= 		base=Deicide Mask
 EternalBurgonet             			= 		base=Eternal Burgonet
 EzomyteBurgonet             			= 		base=Ezomyte Burgonet
@@ -924,17 +794,17 @@ FencerHelm                  			= 		base=Fencer Helm
 FestivalMask                			= 		base=Festival Mask
 FlutedBascinet              			= 		base=Fluted Bascinet
 GildedSallet                			= 		base=Gilded Sallet
-GladiatorHelmet             			= 		base=Gladiator Helmet
+GladiatorHelm(et)?          			= 		base=Gladiator Helmet
 GoldenMask                  			= 		base=Golden Mask
 GreatCrown                  			= 		base=Great Crown
-GreatHelmet                 			= 		base=Great Helmet
+GreatHelm(et)?              			= 		base=Great Helmet
 HarlequinMask               			= 		base=Harlequin Mask
 HubrisCirclet               			= 		base=Hubris Circlet
 HunterHood                  			= 		base=Hunter Hood
 IronCirclet                 			= 		base=Iron Circlet
 IronHat                     			= 		base=Iron Hat
 IronMask                    			= 		base=Iron Mask
-LacqueredHelmet             			= 		base=Lacquered Helmet
+LacqueredHelm(et)?          			= 		base=Lacquered Helmet
 Lea(the)?rCap               			= 		base=Leather Cap
 Lea(the)?rHood              			= 		base=Leather Hood
 LionPelt                    			= 		base=Lion Pelt
@@ -949,19 +819,19 @@ PlagueMask                  			= 		base=Plague Mask
 PraetorCrown                			= 		base=Praetor Crown
 ProphetCrown                			= 		base=Prophet Crown
 RavenMask                   			= 		base=Raven Mask
-ReaverHelmet                			= 		base=Reaver Helmet
+ReaverHelm(et)?             			= 		base=Reaver Helmet
 RegicideMask                			= 		base=Regicide Mask
 RoyalBurgonet               			= 		base=Royal Burgonet
 RustedCoif                  			= 		base=Rusted Coif
 Sallet                      			= 		base=Sallet
-SamiteHelmet                			= 		base=Samite Helmet
+SamiteHelm(et)?             			= 		base=Samite Helmet
 ScareMask                   			= 		base=Scare Mask
 SecutorHelm                 			= 		base=Secutor Helm
-SiegeHelmet                 			= 		base=Siege Helmet
+SiegeHelm(et)?              			= 		base=Siege Helmet
 SilkenHood                  			= 		base=Silken Hood
 SinnerTricorne              			= 		base=Sinner Tricorne
 SolarisCirclet              			= 		base=Solaris Circlet
-SoldierHelmet               			= 		base=Soldier Helmet
+SoldierHelm(et)?            			= 		base=Soldier Helmet
 SteelCirclet                			= 		base=Steel Circlet
 TortureCage                 			= 		base=Torture Cage
 TribalCirclet               			= 		base=Tribal Circlet
@@ -971,16 +841,102 @@ VaalMask                    			= 		base=Vaal Mask
 VineCirclet                 			= 		base=Vine Circlet
 VisoredSallet               			= 		base=Visored Sallet
 WolfPelt                    			= 		base=Wolf Pelt
-ZealotHelmet                			= 		base=Zealot Helmet
+ZealotHelm(et)?             			= 		base=Zealot Helmet
 
 ;Shields
 
+AlderSpikedShield           			= 		base=Alder Spiked Shield
+AlloyedSpikedShield         			= 		base=Alloyed Spiked Shield
+AncientSpiritShield         			= 		base=Ancient Spirit Shield
+AngelicKiteShield           			= 		base=Angelic Kite Shield
+ArchonKiteShield            			= 		base=Archon Kite Shield
+BaroqueRoundShield          			= 		base=Baroque Round Shield
+BattleBuckler               			= 		base=Battle Buckler
+BoneSpiritShield            			= 		base=Bone Spirit Shield
+BrandedKiteShield           			= 		base=Branded Kite Shield
+BrassSpiritShield           			= 		base=Brass Spirit Shield
+BronzeTowerShield           			= 		base=Bronze Tower Shield
+BuckskinTowerShield         			= 		base=Buckskin Tower Shield
+BurnishedSpikedShield       			= 		base=Burnished Spiked Shield
+CardinalRoundShield         			= 		base=Cardinal Round Shield
+CedarTowerShield            			= 		base=Cedar Tower Shield
+CeremonialKiteShield        			= 		base=Ceremonial Kite Shield
+ChampionKiteShield          			= 		base=Champion Kite Shield
+ChimingSpiritShield         			= 		base=Chiming Spirit Shield
+ColossalTowerShield         			= 		base=Colossal Tower Shield
+CompoundSpikedShield        			= 		base=Compound Spiked Shield
+CopperTowerShield           			= 		base=Copper Tower Shield
+CorrodedTowerShield         			= 		base=Corroded Tower Shield
+CorrugatedBuckler           			= 		base=Corrugated Buckler
+CrestedTowerShield          			= 		base=Crested Tower Shield
+CrimsonRoundShield          			= 		base=Crimson Round Shield
+CrusaderBuckler             			= 		base=Crusader Buckler
+DriftwoodSpikedShield       			= 		base=Driftwood Spiked Shield
+EbonyTowerShield            			= 		base=Ebony Tower Shield
+ElegantRoundShield          			= 		base=Elegant Round Shield
+EnameledBuckler             			= 		base=Enameled Buckler
+EtchedKiteShield            			= 		base=Etched Kite Shield
+EzomyteSpikedShield         			= 		base=Ezomyte Spiked Shield
+EzomyteTowerShield          			= 		base=Ezomyte Tower Shield
+FirRoundShield              			= 		base=Fir Round Shield
+FossilisedSpiritShield      			= 		base=Fossilised Spirit Shield
+GildedBuckler               			= 		base=Gilded Buckler
+GirdedTowerShield           			= 		base=Girded Tower Shield
+GoathideBuckler             			= 		base=Goathide Buckler
+GoldenBuckler               			= 		base=Golden Buckler
+HarmonicSpiritShield        			= 		base=Harmonic Spirit Shield
+ImperialBuckler             			= 		base=Imperial Buckler
+IronwoodBuckler             			= 		base=Ironwood Buckler
+IvorySpiritShield           			= 		base=Ivory Spirit Shield
+JinglingSpiritShield        			= 		base=Jingling Spirit Shield
+LacewoodSpiritShield        			= 		base=Lacewood Spirit Shield
+LacqueredBuckler            			= 		base=Lacquered Buckler
+LaminatedKiteShield         			= 		base=Laminated Kite Shield
+LayeredKiteShield           			= 		base=Layered Kite Shield
+LindenKiteShield            			= 		base=Linden Kite Shield
+MahoganyTowerShield         			= 		base=Mahogany Tower Shield
+MirroredSpikedShield        			= 		base=Mirrored Spiked Shield
+MosaicKiteShield            			= 		base=Mosaic Kite Shield
+OakBuckler                  			= 		base=Oak Buckler
+OrnateSpikedShield          			= 		base=Ornate Spiked Shield
+PaintedBuckler              			= 		base=Painted Buckler
+PaintedTowerShield          			= 		base=Painted Tower Shield
+PineBuckler                 			= 		base=Pine Buckler
+PinnacleTowerShield         			= 		base=Pinnacle Tower Shield
+PlankKiteShield             			= 		base=Plank Kite Shield
+PolishedSpikedShield        			= 		base=Polished Spiked Shield
+RawhideTowerShield          			= 		base=Rawhide Tower Shield
+RedwoodSpikedShield         			= 		base=Redwood Spiked Shield
+ReinforcedKiteShield        			= 		base=Reinforced Kite Shield
+ReinforcedTowerShield       			= 		base=Reinforced Tower Shield
+RottedRoundShield           			= 		base=Rotted Round Shield
+ScarletRoundShield          			= 		base=Scarlet Round Shield
+ShagreenTowerShield         			= 		base=Shagreen Tower Shield
+SovereignSpikedShield       			= 		base=Sovereign Spiked Shield
+SpikedBundle                			= 		base=Spiked Bundle
+SpikedRoundShield           			= 		base=Spiked Round Shield
+SpinyRoundShield            			= 		base=Spiny Round Shield
+SplendidRoundShield         			= 		base=Splendid Round Shield
+SplinteredTowerShield       			= 		base=Splintered Tower Shield
+SteelKiteShield             			= 		base=Steel Kite Shield
+StuddedRoundShield          			= 		base=Studded Round Shield
+SupremeSpikedShield         			= 		base=Supreme Spiked Shield
+TarnishedSpiritShield       			= 		base=Tarnished Spirit Shield
+TeakRoundShield             			= 		base=Teak Round Shield
+ThoriumSpiritShield         			= 		base=Thorium Spirit Shield
+TitaniumSpiritShield        			= 		base=Titanium Spirit Shield
+TwigSpiritShield            			= 		base=Twig Spirit Shield
+VaalBuckler                 			= 		base=Vaal Buckler
+VaalSpiritShield            			= 		base=Vaal Spirit Shield
+WalnutSpiritShield          			= 		base=Walnut Spirit Shield
+WarBuckler                  			= 		base=War Buckler
+YewSpiritShield             			= 		base=Yew Spirit Shield
 
 ;Jewels
 
-CobaltJewel                 			= 		base=Cobalt Jewel
-CrimsonJewel                			= 		base=Crimson Jewel
-ViridianJewel               			= 		base=Viridian Jewel
+CobaltJe?we?l               			= 		base=Cobalt Jewel
+CrimsonJe?we?l              			= 		base=Crimson Jewel
+ViridianJe?we?l             			= 		base=Viridian Jewel
 
 ;Demigod Bases
 
