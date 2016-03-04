@@ -2,9 +2,22 @@
 ; Offensive Mods
 ;
 
-spelldmg|sdmg                       =       mod_name=(pseudo) (total) #% increased Spell Damage&mod_min=&mod_max=&$MG
+rspelldmg|rsdmg                       =       mod_name=#% reduced Spell Damage&mod_min=&mod_max=&$MG
+(\d+)(rspelldmg|rsdmg)                =       mod_name=#% reduced Spell Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(rspelldmg|rsdmg)          =       mod_name=#% reduced Spell Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+spelldmg|sdmg                       =       mod_name=(pseudo) (total) #% increased Spell Damage&mod_min=&mod_max=&$MG
 (\d+)(spelldmg|sdmg)                =       mod_name=(pseudo) (total) #% increased Spell Damage&mod_min=$GROUP1&mod_max=&$MG
 (\d+)-(\d+)(spelldmg|sdmg)          =       mod_name=(pseudo) (total) #% increased Spell Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+totemdmg|tdmg                       =       mod_name=#% increased Totem Damage&mod_min=&mod_max=&$MG
+(\d+)(totemdmg|tdmg)                =       mod_name=#% increased Totem Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(totemdmg|tdmg)          =       mod_name=#% increased Totem Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
+areadmg|admg                       =       mod_name=#% increased Area Damage&mod_min=&mod_max=&$MG
+(\d+)(areadmg|admg)                =       mod_name=#% increased Area Damage&mod_min=$GROUP1&mod_max=&$MG
+(\d+)-(\d+)(areadmg|admg)          =       mod_name=#% increased Area Damage&mod_min=$GROUP1&mod_max=$GROUP2&$MG
+
 
 colddmg|cdmg                        =       mod_name=#% increased Cold Damage&mod_min=&mod_max=&$MG
 (\d+)(colddmg|cdmg)                 =       mod_name=#% increased Cold Damage&mod_min=$GROUP1&mod_max=&$MG
