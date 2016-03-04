@@ -29,17 +29,19 @@ import qic.SearchPageScraper.SearchResultItem;
 	
 	private Color bgColor;
 	private Color guildColor;
+    private Color corruptedColor;
 	private Color autoHighlightColor;
 
 	private BeanPropertyTableModel<SearchResultItem> model;
 
    
-    public MultiLineTableCellRenderer(BeanPropertyTableModel<SearchResultItem> model, Color bgColor, Color guildColor, Color autoHighlightColor) {
+    public MultiLineTableCellRenderer(BeanPropertyTableModel<SearchResultItem> model, Color bgColor, Color guildColor, Color corruptedColor, Color autoHighlightColor) {
       setLineWrap(true);
       setWrapStyleWord(true);
       setOpaque(true);
       this.bgColor = bgColor;
       this.guildColor = guildColor;
+      this.corruptedColor=corruptedColor;
       this.autoHighlightColor = autoHighlightColor;
       this.model = model;
     }
@@ -59,6 +61,9 @@ import qic.SearchPageScraper.SearchResultItem;
 				} else if (item.guildItem()) {
 					setBackground(guildColor);
 				}
+                if(item.corrupted) {
+                    this.setForeground(corruptedColor);
+                }
 			}
 		}
 		setFont(table.getFont());
