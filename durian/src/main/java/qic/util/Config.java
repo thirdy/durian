@@ -51,6 +51,8 @@ public class Config {
 	public static final String GUILD_DISCOUNT_STRING = "guild.discount.string";
 	public static final String GUILD_COLOR_HIGHLIGHT = "guild.color.highlight";
 	public static final String GUILD_DISCOUNT_STRING_DEFAULT = "1ch";
+
+	public static final String CORRUPTED_COLOR_HIGHLIGHT = "corrupted.color.highlight";
 	
 	public static final String AUTOMATED_SEARCH_BLACKLIST = "automated.search.blacklist";
 	public static final String MANUAL_SEARCH_BLACKLIST = "manual.search.blacklist";

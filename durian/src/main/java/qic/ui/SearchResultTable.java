@@ -88,10 +88,11 @@ public class SearchResultTable extends JTable {
 		});
 		Color bgColor = Color.decode(Config.getPropety(Config.RESULT_TABLE_BG_COLOR, null));
 		Color guildColor = Color.decode(Config.getPropety(Config.GUILD_COLOR_HIGHLIGHT, "#f6b67f"));
+		Color corruptedColor = Color.decode(Config.getPropety(Config.CORRUPTED_COLOR_HIGHLIGHT, "#000000"));
 		Color autoHighlightColor = Color.decode(
 				Config.getPropety(Config.AUTOMATED_SEARCH_NOTIFY_NEWONLY_COLOR_HIGHLIGHT, "#ccff99"));
-		this.setDefaultRenderer(List.class, new MultiLineTableCellRenderer(model, bgColor, guildColor, autoHighlightColor));
-		this.setDefaultRenderer(String.class, new MultiLineTableCellRenderer(model, bgColor, guildColor, autoHighlightColor));
+		this.setDefaultRenderer(List.class, new MultiLineTableCellRenderer(model, bgColor, guildColor, corruptedColor, autoHighlightColor));
+		this.setDefaultRenderer(String.class, new MultiLineTableCellRenderer(model, bgColor, guildColor, corruptedColor, autoHighlightColor));
 		this.setDefaultRenderer(ImageIcon.class, new ArtColumnRenderer(model, bgColor, guildColor, autoHighlightColor));
 		
 		model.addTableModelListener(e -> {
